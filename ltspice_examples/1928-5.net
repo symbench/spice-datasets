@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1928-5.asc
+XU1 IN 0 OUT N001 N002 N003 LTC1928-5
+V1 IN 0 3
+C1 N002 N003 .47µ
+C2 OUT 0 4.7µ
+Rload OUT 0 300
+C3 0 N001 4.7µ
+.tran 1m startup
+.lib LTC1928-5.sub
+.backanno
+.end

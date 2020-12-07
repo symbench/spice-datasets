@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3476.asc
+L1 N003 N005 10µ Rpar=5K
+V1 N004 0 5
+C1 N007 0 5n Rser=4.7K
+D1 N002 N003 QTLP690C
+XU1 N007 N008 N006 N005 N002 N001 N004 N006 N004 N004 0 LT3476
+R2 N001 N002 .1
+C2 N001 N003 .1µ
+V3 N001 0 33
+R1 N008 0 21K
+D2 N005 N001 1N5817
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT3476.sub
+.backanno
+.end

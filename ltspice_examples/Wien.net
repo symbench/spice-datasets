@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\Wien.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N002 10K
+R2 N002 N001 4.9K
+R3 OUT N004 10K
+R4 0 N003 10K
+C1 N004 N003 .01µ
+C2 N003 0 .01µ
+J§Q1 N001 AGC 0 U309
+D1 AGC OUT 1N4148
+R5 AGC 0 1Meg
+C3 0 AGC .1µ
+XU1 N003 N002 +V -V OUT LT1001
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 0 .5 0 10u startup
+* This example schematic is supplied for informational/educational purposes only.
+.lib LTC.lib
+.backanno
+.end

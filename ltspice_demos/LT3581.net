@@ -1,0 +1,30 @@
+* Z:\mnt\spice-netlists\LT3581.asc
+XU1 N004 N007 N001 N006 IN N002 MP_01 MP_02 N002 MP_03 MP_04 MP_05 N005 N008 N009 MP_06 0 LT3581
+L1 IN N002 4.7µ Rser=.04
+D1 N002 N003 DFLS220L
+C1 N003 0 22µ Rser=10m
+R1 N003 N004 130K
+R2 N003 N001 6.8K
+M§Q1 OUT N001 N003 N003 Si4427DY
+R3 N008 0 84.5K
+C2 N009 0 .027µ
+R4 IN N006 100K
+R5 N005 0 10K
+R6 IN N005 22.1K
+C3 N007 0 2200p Rser=10K Cpar=100p
+C4 OUT 0 4.7µ Rser=5m
+D2 IN N001 MBR0520L
+Rload OUT 0 13.33
+V1 IN 0 PWL(0 0 0.1m 5)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+* Soft-start capacitor intentionally made small \nto speed-up the simulation. A 0.1µF value \nis recommended for typical applications to \navoid inducing a Fault.
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3581,  3.3A, Boost/Inverting DC/DC Converter with Fault Protection\nInput: 5V       Output: 12V @ 900mA
+.lib LT3581.sub
+.backanno
+.end

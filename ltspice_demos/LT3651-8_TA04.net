@@ -1,0 +1,37 @@
+* Z:\mnt\spice-netlists\LT3651-8_TA04.asc
+R1 N010 OUT 24m
+L1 N006 N010 3.3µ Rser=0.0172 Rpar=2464 Cpar=1.81p
+C1 N006 N008 1µ Rser=0.004
+R2 N001 N003 50K
+R3 N012 0 54.9K
+C2 N002 0 22µ Rser=10m
+D1 OUT N008 1N5819
+C3 OUT 0 100µF Rser=20m
+V§BAT OUT 0 7 rser=20m
+R4 N001 N005 50K
+C4 N015 0 .03µ
+C5 N014 0 .68µ
+R5 N001 N002 16m
+Iload N002 0 PWL(0 0 0.8m 0 1m 4 2m 7)
+R6 N013 0 R=({R0}*exp({Beta}*( (1/{temp+273})- (1/{T0}) ) ))
+R7 N001 N007 50K
+R8 N001 N009 50K
+V2 IN 0 15
+V3 N004 0 pulse 5 0 50u 1n 1n 1 1
+C6 N001 0 1µ Rser=5m
+D2 IN N001 B540C
+XU1 N013 N005 OUT N010 N008 0 N006 N014 N009 N007 N003 N011 N001 N002 N002 N015 N012 LT3651-8.4
+M§Q1 N003 N004 0 0 NDC7002N
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* R6: 10k thermistor @ B=3380\n0C    27.219k    1.3609V  \n5C    22.021k    1.101V\n35C  6.948k      0.347V\n40C  5.834k     0.2917V\n45C  4.917k    0.2458V\n50C  4.161k    0.208V
+.param R0=10k Beta=3380 T0=298
+* LT3651-8.4 - Monolithic 4A High Voltage 2-Cell Li-Ion Battery Charger\n2-Cell Li-Ion Charger with Input Current Limit & Charge Timeout\nInput: 9V to 32V, 6.2 Input Current Limit    Outputs: 8.4V @ 4A, 3hr Timeout
+* Notes:\n  A smaller SS capacitor is being used to reduce simulation time. Typical value should be 0.47µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3651-8.4.sub
+.backanno
+.end

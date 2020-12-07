@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTM8040.asc
+XU1 0 N001 N001 N003 N004 N004 N002 N006 N005 LTM8040
+V1 N001 0 12
+R1 N003 0 215K
+D1 N002 0 LXK2-PW14 N=2
+C1 N001 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+* LTM8040 36V Step-Down 1A LED Driver uModule\nInput: 12V       Output: 1A through a string of 2 LEDs\nfsw = 650kHz
+.lib LTM8040.sub
+.backanno
+.end

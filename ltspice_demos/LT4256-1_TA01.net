@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LT4256-1_TA01.asc
+R1 IN N003 64.9K
+R2 N003 0 8.06K
+C1 N006 0 33n
+C2 0 P001 10n
+R3 N002 N004 10
+R4 P001 N004 100
+R5 N001 IN 20m
+M§Q1 N001 N002 OUT OUT IRF530
+R6 OUT N005 36.5K
+R7 N005 0 4.02K
+R8 OUT N007 27K
+C3 OUT 0 220µ
+V1 IN 0 PWL(2.7m 0 +1u 48)
+C4 N003 0 .1µ
+Rload OUT 0 24
+XU2 N003 N005 N007 0 N006 N004 N001 IN LT4256-1
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 25m
+* LT4256-1 - Positive High Voltage Hot Swap Controllers\nSingle 48V, 2A Hot Swap Controller with Latch Off Operation Mode
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT4256-1.sub
+.backanno
+.end

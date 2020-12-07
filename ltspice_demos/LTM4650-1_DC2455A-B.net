@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTM4650-1_DC2455A-B.asc
+V1 IN 0 12
+C1 N009 0 .001µ
+C2 IN 0 22µ V=35 Rser=5m x12
+R1 N007 0 90.9K
+R2 N002 0 121K
+C3 OUT 0 220µ V=4 Irms=2.8 Rser=2m Lser=1.8n x24
+R3 N001 N003 10K
+R4 N011 0 121K
+R5 N015 0 121K
+Rload OUT 0 20m
+Iload OUT 0 PULSE(0 37.5 600u 1u 1u .1m .4m)
+C4 IN 0 150µ V=35 Rser=5m
+C5 N008 0 .015µ V=6.3 Rser=1.74k
+C6 OUT N007 330p
+XU1 N009 N008 N007 0 N007 N008 N009 OUT NC_01 OUT 0 N006 NC_02 OUT N006 N003 N003 0 N005 MP_03 MP_04 MP_05 MP_06 NC_07 N001 IN MP_08 MP_09 MP_10 MP_11 N004 N010 0 0 N002 MP_12 MP_13 NC_14 LTM4650-1
+XU2 N009 N008 N007 0 N007 N008 N009 OUT NC_15 NC_16 NC_17 NC_18 NC_19 OUT NC_20 N003 N003 0 N013 MP_21 MP_22 MP_23 MP_24 NC_25 N001 IN MP_26 MP_27 MP_28 MP_29 N012 N014 0 N010 N011 MP_30 MP_31 NC_32 LTM4650-1
+XU3 N009 N008 N007 0 N007 N008 N009 OUT NC_33 NC_34 NC_35 NC_36 NC_37 OUT NC_38 N003 N003 0 N017 MP_39 MP_40 MP_41 MP_42 NC_43 N001 IN MP_44 MP_45 MP_46 MP_47 N016 N018 NC_48 N014 N015 MP_49 MP_50 NC_51 LTM4650-1
+C7 OUT 0 100µ x6 Rser=2m Lser=0.8n
+.tran 800u startup
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LTM4650-1 - Dual 25A or Single 50A DC/DC µModule Regulator\nHigh Efficiency 6-Phase 150A Step-Down Regulator\nInput: 4.5V to 15V     Output: 1V @ 150A
+.lib LTM4650-1.sub
+.backanno
+.end

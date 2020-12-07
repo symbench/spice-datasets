@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LT8471_DC1854A.asc
+R1 N010 0 187K
+R2 0 N009 59K
+R3 N009 OUT2 316K
+R4 IN N005 499K
+C1 N006 0 .01µ
+C2 OUT2 0 47µ x2 Rser=.005
+V1 IN 0 22
+L1 N007 0 10µ Ipk=1.5 Rser=0.215 Rpar=6445.91 Cpar=6.04p mfg="Wurth Elektronik" pn="74437324100 WE-LHMI 4020"
+C3 N008 0 .01µ
+D1 OUT2 N007 MBRS360
+R5 N011 IN 100K
+R6 N012 IN 100K
+C4 N001 0 2.2µ
+C5 IN 0 2.2µ
+D2 0 N002 MBRS340
+L2 N002 OUT1 6.8µ Ipk=1.75 Rser=0.15 Rpar=4993.38 Cpar=5.8p mfg="Wurth Elektronik" pn="74437324068 WE-LHMI 4020"
+R7 N003 0 59K
+R8 OUT1 N003 316K
+C7 OUT1 0 47µ x2 Rser=.005
+L3 IN N004 15µ Ipk=0.72 Rser=0.356 Rpar=10373 Cpar=1.734p mfg="Wurth Elektronik" pn="744025150 WE-TPC 2828"
+XU1 IN N002 N001 N011 N003 N005 N010 N006 MP_01 0 MP_02 MP_03 N004 N001 N008 N009 N012 N001 N007 IN LT8471
+Rload1 OUT1 0 3.6
+Rload2 OUT2 0 6.25
+C6 IN 0 2.2µ
+C8 IN 0 47µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+* LT8471 - Dual Multitopology DC/DC Converters with 2A Switches and Synchronization\nDual Output Buck & Inverting Converter\nInput: 6V to 32V     Output: +5V @ 1.4A & -5V @ 800mA, Fsw = 450kHz
+* Note:\n  Smaller soft start capacitors (C1 & C3) are being used to speed up simulation. Typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* +5V @ 1.4A
+* -5V @ 800mA
+.lib LT8471.sub
+.backanno
+.end

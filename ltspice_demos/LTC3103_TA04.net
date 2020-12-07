@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LTC3103_TA04.asc
+V1 N001 0 3.6
+C1 N003 N006 22n
+L1 N006 OUT1 15µ
+R1 OUT1 N007 1.78Meg
+R2 N007 0 665K
+C2 OUT1 N007 22p
+C3 OUT1 0 22µ Rser=0.0008
+XU1 IN N006 N003 0 NC_01 N002 N005 N007 MP_02 IN LTC3103
+R3 IN N005 3.09Meg
+R4 N005 0 715K
+C4 N002 0 1µ
+C5 IN 0 10µ
+C6 IN 0 100µ
+D1 N001 IN B540C
+D2 N004 IN B540C
+XU2 0 N004 PhotoCell
+Rload OUT1 0 7.3
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.subckt PhotoCell B A
+C1 A B 1n
+V1 N001 B PWL(0 0 3u 4.8)
+D1 N001 A S2
+R1 A N001 75
+.model S2 D(Ron=.1 Ilimit=5.1 epsilon=.5)
+.ends
+* LTC3103 - 1.8µA Quiescent Current, 15V, 300mA Synchronous Step-Down DC/DC Converter\nSolar-Powered Buck Supply with Li Battery Backup\nInput: 3.2V to 15V (3.2V Bat Min)     Output: 2.2V @ 300mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3103.sub
+.backanno
+.end

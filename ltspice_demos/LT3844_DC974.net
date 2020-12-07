@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LT3844_DC974.asc
+M§Q1 IN N005 N007 N007 Si7852DP
+D1 N001 N004 1N4148
+C2 N004 N007 .22µ V=16
+R1 IN N002 1Meg
+C7 N009 0 680p
+D2 0 N007 PDS5100
+L1 N007 N008 15µ Rser=0.025
+R5 N008 OUT 15m
+R15 N006 0 49.9K
+C3 N003 0 2.2n
+V1 IN 0 36
+D5 OUT N001 1N4148
+R8 N011 OUT 130K
+R7 0 N011 14.7K
+C5 N001 0 1µ V=16
+R3 N002 0 113k
+Rload OUT 0 6
+XU1 IN N002 N003 0 N011 N010 MP_01 N006 0 OUT N008 0 N001 N007 N005 N004 LT3844
+CIN1 IN 0 68µ
+CIN2 IN 0 2.2µ
+C1 IN 0 1000p V=100
+C4 0 N001 0.1µ
+COUT1 OUT 0 180µ Rser=0.03
+R9 N010 N009 82.5K
+C6 N010 0 120p
+COUT2 OUT 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LT3844 - High Voltage, Current Mode Switching Regulator Controller with Programmable Operating Frequency\nInput: 15V to 60V       Output: 12V @ 4.2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3844.sub
+.backanno
+.end

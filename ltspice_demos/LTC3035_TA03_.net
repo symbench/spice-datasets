@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTC3035_TA03_.asc
+XU1 N003 N005 0 IN OUT1 N004 IN N001 LTC3035
+C1 N003 N005 0.1µ
+V1 IN 0 2.5
+C2 N001 0 1µ
+R1 OUT1 N004 140K
+R2 N004 0 40.2K
+Rload1 OUT1 0 6
+C3 OUT1 0 1µ
+C4 IN 0 1µ
+R3 OUT2 N002 110K
+R4 N002 0 40.2K
+C5 OUT2 0 1µ
+XU2 N001 0 IN OUT2 N002 IN LTC3025
+Rload2 OUT2 0 5
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011, 2014 Linear Technology Inc. All rights reserved.
+* LTC3035 - 300mA VLDO Linear Regulator with Charge Pump Bias Generator\nInput: 1.7V to 5.5V   Output: 1.8V @ 300mA, 1.5V @ 300mA
+.tran 4m startup
+.lib LTC3025.lib
+.lib LTC3035.sub
+.backanno
+.end

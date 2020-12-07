@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\Howland.asc
+V1 +V 0 +15
+V2 -V 0 -15
+R1 N002 N001 1K
+R2 N001 IN 1K
+V3 IN 0 SINE(0 1 1K)
+R3 N002 N003 1K
+R4 N003 0 1K
+Rload N003 0 {x}
+XU2 N003 N001 +V -V N002 LT1001
+.tran 3m
+.step param X list 1 10 100 1K
+* Iout = V(in)/1K
+* This example schematic is supplied for informational/educational purposes only.
+.lib LTC.lib
+.backanno
+.end

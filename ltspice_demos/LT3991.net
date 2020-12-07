@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT3991.asc
+R1 N005 0 118K
+R2 N007 0 562K
+L1 N006 OUT 10µ
+R3 OUT N007 1Meg
+C1 OUT 0 47µ
+Rload OUT 0 2.75
+V1 IN 0 12
+C2 N004 N006 .47µ
+C3 N002 0 .001µ
+C4 IN 0 4.7µ
+C5 OUT N007 10p
+D1 0 N006 DFLS220L
+R4 N003 N002 100K
+XU2 OUT N004 N006 IN IN N007 N003 N005 N001 MP_01 0 LT3991
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+* LT3991, 55V 1.2A 2MHz Step-Down Regulator with 2.8µA Quiescent Current\nInput: 12V       Output: 3.3V @ 1.2A
+.lib LT3991.sub
+.backanno
+.end

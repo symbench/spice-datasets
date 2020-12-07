@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\4363-1.asc
+R1 N004 N007 10
+R2 N002 N003 15m
+R3 N003 N008 221K
+R4 N008 0 4.02K
+M§Q1 N001 N004 N002 N002 IRLR2908
+C1 N007 0 47n
+C2 N010 0 6.8µ
+C3 N003 0 300µ
+V1 N001 N005 EXP(0 60 5m 10m 10m 150m)
+R5 N001 N006 1K
+D1 0 N006 1N5371B
+R6 N001 N009 604K
+R7 N009 0 23K
+C4 N006 0 0.1µ
+Rload N003 0 100
+XU1 N008 N003 N002 N007 N006 NC_01 N009 0 NC_02 NC_03 N010 LT4363-1
+V2 N005 0 40
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 30 startup
+.lib LT4363-1.sub
+.backanno
+.end

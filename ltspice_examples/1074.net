@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1074.asc
+R3 N005 N006 2K
+R2 N003 0 2.21K
+R1 OUT N003 2.8K
+L1 N001 OUT 50µ
+D1 0 N001 MBRS140
+C2 OUT 0 330µ Rser=0.07
+V1 IN 0 20
+C3 N006 0 .1µ
+XU1 IN N001 N004 0 N003 N005 N002 LT1074
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LT1074.sub
+.backanno
+.end

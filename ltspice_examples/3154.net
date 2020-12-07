@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3154.asc
+V1 IN 0 5
+L1 N001 N002 1µ Rser=80m
+R1 OUT N003 232k
+R2 N003 0 100k
+C5 N006 0 820p
+C6 OUT 0 100µ Rser=10m
+Rload OUT 0 .6
+R3 N004 0 90.9k
+XU1 0 N002 OUT IN IN N005 N003 0 N004 IN 0 OUT N001 IN LT3154
+R4 N006 N005 60.4k
+.tran 3m startup
+.lib LT3154.sub
+.backanno
+.end

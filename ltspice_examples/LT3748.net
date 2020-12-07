@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\LT3748.asc
+R1 N005 0 56.2K
+V1 IN 0 48
+C1 N008 N007 4.7n
+C2 0 N012 4.7µ
+R2 N004 N003 243K
+R3 N006 0 6.04K
+L1 IN N004 60.8µ Rpar=5K
+L2 0 N001 3.8µ Rpar=5K
+C3 OUT 0 100µ
+D1 N001 OUT 30BQ060
+R4 N007 0 10K
+C4 N010 0 2n
+R5 IN N002 412K
+R6 N002 0 15.4K
+XU1 0 MP_01 MP_02 N009 IN N012 N002 MP_03 MP_04 N010 N011 N008 N003 N006 N005 LT3748
+M§Q1 N004 N009 N011 N011 Si4490DY
+R7 N011 0 33m
+Rload OUT 0 6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 2.5m startup
+.lib LT3748.sub
+.backanno
+.end

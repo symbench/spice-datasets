@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LT1162_TA01.asc
+V1 N001 0 12
+R1 N001 N003 10K
+V2 N004 0 PULSE(0 3.3 0 1n 1n 1u 10u)
+V3 N006 0 PULSE(0 3.3 5u 1n 1n 1u 10u)
+M§Q1 IN N005 OUT OUT IRFZ44N
+M§Q2 OUT N007 0 0 IRFZ44N
+C1 N001 0 10µ
+D1 N001 N002 1N4148
+C2 N002 OUT 1µ
+V4 IN 0 24
+C3 IN 0 100µ
+Lload OUT 0 .7m Rser=.16
+XU2 N001 N004 N006 N003 0 0 MP_01 N007 N007 N001 OUT N005 N005 N002 LT1160
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LT1162 - Full-Bridge N-Channel Power MOSFET Drivers\n60V Max Supply Referenced DC Motor Half-Bridge Driver
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1160.sub
+.backanno
+.end

@@ -1,0 +1,48 @@
+* Z:\mnt\spice-netlists\LT3791-1_TA01A.asc
+C1 N026 0 33n
+C2 N023 0 10n Rser=5.1K
+V1 IN 0 24
+R1 IN N001 3m
+R2 IN N005 499K
+R3 N005 0 56.2K
+R4 N003 N001 51
+C3 IN N003 470n
+C4 N004 0 4.7µ
+R5 IN N007 499K
+R6 N007 0 27.4K
+R7 N022 0 147K
+C5 N021 0 .1µ
+M§Q1 N001 N010 N013 N013 RJK0651DPB
+M§Q2 N013 N016 N019 N019 RJK0651DPB
+L1 N013 N014 10µ Ipk=5 Rser=0.013 Rpar=942 Cpar=0 mfg="Coilcraft" pn="SER1360-103KX"
+C6 N008 N013 .1µ
+D1 N004 N008 BAT46WJ
+C7 N006 N014 .1µ
+D2 N004 N006 BAT46WJ
+M§Q3 N002 N011 N014 N014 RJK0451DPB
+M§Q4 N014 N017 N019 N019 RJK0451DPB
+R8 N019 0 4m
+R9 OUT N025 73.2K
+R10 N025 0 3.83K
+R11 N002 OUT 15m
+C8 N002 0 4.7µ x2 V=50 Rser=0.004 mfg="TDK" pn="C575OX7RIH475M" type="X7R"
+XU1 N021 N026 N021 N020 N018 N021 N015 N012 N005 IN N003 N001 N004 N010 N008 N013 0 N016 N017 MP_01 N014 N006 MP_02 N011 N002 OUT N019 0 MP_03 0 N024 N020 N009 0 N022 N023 N025 N007 LT3791-1
+C9 N002 0 220µ V=35 Rser=0.09
+R12 N004 N018 200K
+R13 N004 N020 100K
+R14 N021 N026 100K
+Rload OUT 0 4.8
+C11 N001 0 47µ V=80 Rser=0.37
+C12 N001 0 4.7µ V=100 Rser=0.004
+C10 N001 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+* LT3791-1 - 60V 4-Switch Synchronous Buck-Boost Controller\n120W Buck-Boost Voltage Regulator\nInput: 12V to 58V     Output: 24V @ 5A Fsw = 200kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3791-1.sub
+.backanno
+.end

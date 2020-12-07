@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\ADP2109-1.2.asc
+V1 IN 0 5
+L1 N001 OUT 1µ
+Rload OUT 0 4
+C1 OUT 0 10µ V=4 Irms=8.88 Rser=0.00522854 Lser=0 mfg="KEMET" pn="C0805C106K7PAC" type="X5R"
+XU1 IN IN N001 OUT 0 ADP2109-x.x Rtop=112K
+.tran .5m startup
+.lib ADP2109-x.x.sub
+.backanno
+.end

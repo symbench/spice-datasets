@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3958.asc
+R1 N006 0 41.2K
+R2 N009 0 15.8K
+R3 OUT N009 464K
+L1 IN N001 33µ Rser=0.05
+D1 N001 OUT MBRS360
+R4 N008 N007 10K
+C2 N007 0 .01µ
+V1 IN 0 24
+C4 N004 0 .01µ
+R5 N002 0 53.6K
+R6 IN N002 392K
+Rload OUT 0 96
+XU1 N008 N009 N004 N006 N001 N005 N005 N003 N002 IN 0 0 LT3958
+C1 OUT 0 10µ Rser=0.005
+C3 N003 0 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2.5m startup
+* LT3958 - Boost, Flyback, SEPIC and Inverting Converter\nInput: 24V       Output: 48V@500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3958.sub
+.backanno
+.end

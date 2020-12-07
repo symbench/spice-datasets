@@ -1,0 +1,40 @@
+* Z:\mnt\spice-netlists\LT3694-1_DC1541A.asc
+L1 N004 OUT1 4.7µ Rpar=2K
+C1 N004 N002 0.22µ
+R1 OUT1 N009 34K
+D1 N006 N004 MBRS340
+C2 OUT1 0 47µ
+C3 N017 0 1n
+V1 IN 0 12
+Q1 N011 N013 OUT3 0 2N2219A
+R2 OUT3 N015 15.4K
+R3 N015 0 11K
+C4 OUT3 0 2.2µ
+R4 N008 N007 41.2K
+C5 N016 0 1n
+C6 N018 0 1n
+R5 N005 0 51.1K
+C7 N007 0 330p
+R6 N009 0 10K
+R7 OUT1 N011 0.1
+Q2 N010 N012 OUT2 0 2N2219A
+R8 OUT2 N014 24.9K
+R9 N014 0 10.7K
+C8 OUT2 0 2.2µ
+R10 OUT1 N010 0.1
+R11 OUT1 N001 100K
+XU1 IN IN N003 N001 N005 N016 N017 N014 N012 N010 N011 N013 N015 N018 N009 N008 OUT1 N002 N006 N004 0 LT3694-1
+Rload2 OUT2 0 5.56
+Rload3 OUT3 0 4
+Rload1 OUT1 0 1.93
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 500u startup
+* LT3694-1 - 36V, 2.6A Monolithic Buck Regulator With Dual LDO and Clock Out\nInput: 12V    Outputs: 3.3V @ 1.7A, 2.5V @ 450mA and 1.8V @ 450mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3694-1.sub
+.backanno
+.end

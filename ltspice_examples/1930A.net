@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1930A.asc
+V1 IN 0 5
+R1 OUT N002 113K
+R2 N002 0 13.3K
+L1 IN N001 10µ Rser=0.182
+D1 N001 OUT MBRS130L
+C2 OUT 0 4.7µ Rser=.05
+XU1 N001 0 N002 IN IN LT1930A
+Rload OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 250u startup
+.lib LT1930A.sub
+.backanno
+.end

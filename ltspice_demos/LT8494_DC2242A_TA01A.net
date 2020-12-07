@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LT8494_DC2242A_TA01A.asc
+R1 N006 0 169K
+C5 OUT 0 47µ
+D1 N002 OUT MBRS1100
+R5 N005 OUT 100K
+XU1 OUT MP_01 N003 MP_02 MP_03 MP_04 N005 N004 MP_05 N006 MP_06 IN MP_07 0 MP_08 MP_09 MP_10 IN MP_11 N001 LT8494
+C2 OUT N003 4.7p
+C1 N004 0 47n
+C4 N002 N001 2.2µ Rser=1m
+R2 OUT N003 1Meg
+R3 N003 0 316K
+V1 IN 0 12
+L1 0 N002 15µ Rser=1m Rpar=10K
+L2 IN N001 15µ Ipk=6 Rser=0.1
+Rload OUT 0 5
+C3 OUT 0 47µ
+C6 IN 0 10µ V=63 Irms=55m Rser=2.1 Lser=0 mfg="Nichicon" pn="UPR1J100MAH" type="Al electrolytic"
+C7 IN 0 2.2µ V=100
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 .99
+.tran 5m startup
+* LT8494 - SEPIC/Boost DC/DC Converter with 2A, 70V Switch, and 7µA Quiescent Current\n450kHz, 5V Output SEPIC Converter\nInput: 3V to 60V       Output: 5V @ 1A (load current will decrease if Vin < 12V)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8494.sub
+.backanno
+.end

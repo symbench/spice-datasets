@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\IdealTransformer.asc
+V1 N002 0 PULSE(0 1 0 10n 10n 5u 10u)
+R1 N003 N002 1
+G1 0 N001 N003 0 1
+G2 0 N001 N004 0 {1/N}
+G3 N003 0 N001 0 1
+G4 N004 0 N001 0 {1/N}
+R2 N001 0 1G
+R3 N004 0 100
+.tran 100u
+* This example schematic is supplied for informational/educational purposes only.
+* A ideal transformer with two windings.\nWinding ratio specified with parameter N
+.param N=10 ; turns ratio
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3121.asc
+V1 IN 0 5
+L1 IN N001 6.8µ Rser=10m
+C1 N002 0 4.7µ
+R1 N005 0 57.6K
+C2 N006 0 390p Rser=210K Cpar=10p
+C3 OUT N003 .1µ
+R2 N004 0 113K
+R3 OUT N004 1.02Meg
+C4 OUT 0 22µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+Rload OUT 0 30
+XU1 N001 0 IN N002 N002 N005 N006 N004 IN 0 OUT N003 LTC3121
+.tran 3m startup
+.softstart .2
+* Note: Parameter "softstart", with the valid range of [0.1, 1],\n         can be used to reduce the internal startup timer,\n         for the purpose of simulation. The part has nominal \n         internal startup time of 10mSec.
+.lib LTC3121.sub
+.backanno
+.end

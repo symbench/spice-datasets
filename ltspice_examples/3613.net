@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\3613.asc
+R2 OUT N009 15K
+R3 N009 0 10K
+D1 N001 N003 1N5818
+L1 N005 N006 .47µ Rser=1.45m
+C2 OUT 0 330µ x2 V=10 Irms=4.1 Rser=0.01 Lser=0 mfg="KEMET" pn="T520X337M010ASE010" type="Tantalum"
+C3 N007 0 270p Rser=21K Cpar=47p
+V1 IN 0 16
+C4 N008 0 .001µ
+C5 N003 N005 .22µ
+Rload OUT 0 .1
+C7 0 N001 4.7µ
+R1 N004 0 115K
+XU1 0 N009 N008 N007 0 N004 NC_01 NC_02 0 IN N001 0 IN N005 MP_03 N003 N002 N006 OUT OUT 0 LTC3613
+R6 N001 N002 100K
+R4 N006 OUT 1.5m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 750u startup
+.lib LTC3613.sub
+.backanno
+.end

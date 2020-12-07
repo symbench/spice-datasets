@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1880.asc
+V1 +V 0 1.5
+V2 -V 0 -1.5
+R1 N003 N002 100K
+R2 N002 N001 1Meg
+V3 N001 0 SINE(0 13.5 1K)
+XU1 0 N002 +V -V N003 LT1880
+.tran 3m
+.lib LTC.lib
+.backanno
+.end

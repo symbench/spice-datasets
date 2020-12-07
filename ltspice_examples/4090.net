@@ -1,0 +1,35 @@
+* Z:\mnt\design.r\spice\examples\4090.asc
+C1 OUT 0 4.7µ Rser=5m
+M2 N010 N008 OUT OUT FDS4685
+Cbat N010 0 2.5 ic=2.78 Rser=200m
+R3 N012 N013 10K
+V2 IN 0 PWL(1m 0 +1u 5)
+C4 N009 0 0.1µ
+R4 N013 0 10K
+R5 0 N015 66.5K
+R6 N011 0 2K
+R7 OUT 0 100
+R8 IN N006 10K
+R2 N005 OUT 1K
+L1 N002 N003 6.8µ
+C2 N003 0 22µ
+M1 N003 N005 OUT OUT FDS4685
+R9 N016 0 40.2K
+C3 N007 0 270p Rser=59K
+V4 N001 0 PWL(7 0 +10u 12)
+R1 N004 N001 499K
+C5 N004 0 200p
+R10 OUT N014 1K
+D1 N014 N017 LXHL-BW02
+XU1 MP_01 NC_02 N016 N007 N013 N012 N005 N017 N015 N008 N010 IN OUT N011 N006 NC_03 N009 N003 MP_04 N002 N001 N004 0 LTC4090 L1=6.8uH TerminationCycles=400
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 11
+* NTC
+* USB or Wall Power
+.lib LTC4090.sub
+.backanno
+.end

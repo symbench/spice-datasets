@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3106.asc
+XU1 MP_01 OUT N004 N005 N005 0 NC_02 N005 NC_03 NC_04 IN N005 IN N003 0 IN N002 N001 N003 N003 LTC3106
+L1 N001 N002 10µ Rser=5m
+C1 N004 0 2.2µ
+C2 OUT 0 47µ Rser=10m
+C4 N003 0 1µ
+R1 OUT 0 66
+V1 IN 0 3.5
+V3 N003 0 3.6
+.tran .5m startup
+.lib LTC3106.sub
+.backanno
+.end

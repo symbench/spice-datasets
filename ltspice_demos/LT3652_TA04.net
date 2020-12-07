@@ -1,0 +1,40 @@
+* Z:\mnt\spice-netlists\LT3652_TA04.asc
+XU1 N001 N004 N001 N007 NC_01 N010 N011 N008 OUT N003 N005 N002 0 LT3652
+R1 N003 OUT 100m
+C1 N002 N005 1µ
+D1 N006 N005 1N914
+D2 0 N002 MBRS340
+D3 IN N001 MBRS140
+R2 N001 N004 499k
+R3 N004 0 100K
+R4 N013 N007 1Meg
+D4 N012 N013 1N4148
+R5 OUT N012 309K
+R6 N009 N008 910
+R7 N012 N011 174K
+R8 N012 0 100K
+R§NTC N009 0 10K
+C2 OUT 0 10µ Rser=0.003
+D5 N006 OUT BZX84C6V2L
+XU2 0 IN PhotoCell
+C4 N001 0 10µ
+C5 N010 0 4.7µ
+L1 N002 N003 22µ Ipk=1.7 Rser=0.11 Rpar=21068 Cpar=5.6p mfg="Wurth Elektronik" pn="7447779122 WE-PD M"
+C3 OUT 0 .15m Rser=0.15
+C6 OUT 0 100µ Rser=0.003
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m
+.subckt PhotoCell B A
+C1 A B 1n
+V1 N001 B  PWL(0 0 3u 17.7)
+D1 N001 A S2
+R1 A N001 75
+.model S2 D(Ron=.1 Ilimit=1.2 epsilon=.5)
+.ends
+* LT3652 - Power Tracking 2A Battery Charger for Solar Power\n1A Solar Panel Powered 3-Stage 12V Lead-Acid Fast/Float Charger\nInput: Up to 16V     Output: Up to 14.4V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.ic V(OUT)=9.9
+.lib LT3652.sub
+.backanno
+.end

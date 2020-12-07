@@ -1,0 +1,53 @@
+* Z:\mnt\spice-netlists\LT8310_LT1431_54V80W_.asc
+XU1 N003 MP_01 N006 MP_02 N008 N011 MP_03 N018 N020 N019 NC_04 MP_05 N012 N009 N004 N007 MP_06 IN MP_07 MP_08 0 LT8310
+V1 IN 0 12
+C1 N008 0 5.6n
+C2 N004 0 4.7µ
+R1 N004 N007 35.7K
+R2 N011 0 66.5K
+C3 N018 0 100n
+M§Q1 N005 N009 N012 N012 BSC082N10LS
+R3 N012 0 0.004
+L1 N005 IN 25µ Rser=5m Cpar=10n
+L2 0 N001 1345µ Rser=250m
+D1 0 N002 MUR460
+D2 N001 N002 MUR460
+L3 N002 OUT 220µ Rser=60m
+C4 OUT 0 47µ Rser=10m
+C5 N005 N012 180p
+XU2 N015 NC_09 N010 NC_10 0 0 NC_11 N017 LT1431
+R4 N019 0 10K
+R5 N004 N019 100K
+R6 OUT N017 95.3K
+R7 N017 0 4.64K
+C6 N016 N015 10n
+R8 N017 N016 28K
+R9 N010 N014 3.3K
+C7 N010 N014 3.3n
+R10 N004 N013 3K
+R11 N013 N020 61.9K
+R12 N020 0 20K
+R13 IN N003 47.5K
+R14 N003 N006 4.12K
+R15 N006 0 2.43K
+XU3 N014 N015 N013 0 NC_12 MOC205 Igain=2.44m
+Rload OUT 0 36
+C8 N020 0 1n
+C9 IN 0 1µ
+R16 OUT N010 2k
+D3 0 N010 BZX84C12L
+C10 0 N010 .22µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 10m startup
+* LT8310 - 100 Vin Forward Converter Controller\nLT1431 - Programmable Reference\n81 Watt Isolated Nonsynchronous Forward Converter with Opto Feedback\nInput: 10.8V to 26.4V       Output: 54V @ 1.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT1431.sub
+.lib LT8310.sub
+.lib MOC205.sub
+.backanno
+.end

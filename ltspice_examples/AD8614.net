@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD8614.asc
+Vin IN 0 SINE(0 1 10K)
+XU1 IN OUT +V -V OUT AD8614
+Cload OUT 0 47n
+Rx OUT N001 5
+Cx N001 0 10µ
+V1 +V 0 5
+V2 -V 0 -5
+.tran 1m
+.lib ADI.lib
+.backanno
+.end

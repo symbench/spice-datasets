@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\3995.asc
+R1 N004 0 182K
+C1 N002 0 .002µ
+V1 IN 0 48
+L1 N005 OUT 8.2µ Rser=10m
+C3 N003 N005 .47µ
+C4 OUT 0 47µ x2 V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT N006 1Meg
+R3 N006 0 576K
+C5 OUT N006 10p
+Rload OUT 0 1.1
+D1 0 N005 B560C
+XU1 N006 N002 OUT N003 N005 MP_01 MP_02 MP_03 MP_04 IN MP_05 MP_06 IN N004 N001 MP_07 0 LT3995
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT3995.sub
+.backanno
+.end

@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT3686A_DC1647A.asc
+L1 N003 OUT 6.8µ
+R1 OUT N007 31.6K
+R2 N007 0 10K
+R3 N002 0 61.9K
+C1 OUT 0 22µ
+V1 IN 0 12
+C2 IN 0 2.2µ
+XU1 IN OUT N007 N006 N002 IN N004 N001 N005 N003 0 LT3686A
+D1 N005 N003 MBRS140
+C3 N001 N003 0.22µ
+C4 N006 0 1n
+R4 N004 0 10K
+Rload OUT 0 2.75
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3686A - 37V, 1.2A Step-Down Regulator \nInput: 12V       Output: 3.3V @ 1.2A
+.tran 750u startup
+.lib LT3686A.sub
+.backanno
+.end

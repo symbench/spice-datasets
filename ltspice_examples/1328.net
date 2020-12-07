@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1328.asc
+V1 +V 0 5
+XU1 N001 N003 N004 0 N005 +V 0 N002 LT1328
+C1 N003 N004 10n Rser=.1
+C2 N003 0 330p Rser=.1
+C3 0 N002 1000p
+I1 N001 0 PULSE(7u 100u 0 10n 10n .5u 1u)
+.tran 10u
+.lib LTC.lib
+.backanno
+.end

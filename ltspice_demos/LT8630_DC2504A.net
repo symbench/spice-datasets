@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT8630_DC2504A.asc
+V1 IN 0 48
+C1 N001 N003 .1µ
+L1 N003 N005 22µ
+R1 OUT N008 1Meg
+C2 OUT N008 10p
+R2 N008 0 71.5K
+C3 OUT 0 47µ
+R3 N007 0 8.66K
+C4 N006 0 .005µ
+C5 N004 0 2.2µ
+XU1 IN MP_01 IN MP_02 N002 MP_03 MP_04 N007 MP_05 N006 N008 OUT MP_06 N005 MP_07 N004 MP_08 N001 MP_09 N003 0 LT8630
+C6 IN 0 2.2µ
+R5 N002 OUT 51.1K
+R4 OUT 0 20
+C7 IN 0 10µ
+.tran 2m startup
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values. \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LT8630 - 100V, 0.6A Synchronous Micropower Step-Down Regulator\nHigh Efficiency µPower Buck Regulator\nInput: 13V to 100V     Output: 12V @ 0.6A
+.lib LT8630.sub
+.backanno
+.end

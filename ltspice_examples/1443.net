@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\1443.asc
+V1 N001 0 3.3
+V2 IN 0 PULSE(1 1.3 0 50m 50m 0 100m)
+XU1 OUT N001 IN N002 N002 0 0 LTC1443
+.tran 300m
+.lib LTC.lib
+.backanno
+.end

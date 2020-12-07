@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT1302_TA07.asc
+D1 N002 OUT MBRS130L
+L1 IN N001 22µ Rser=0.02 Rpar=5000
+R1 N007 N008 20K
+R2 OUT N005 365K
+R3 N005 0 100K
+C1 N008 0 .01µ
+V1 IN 0 6.5 Rser=0.1
+XU1 0 N007 N004 N005 N006 N003 N001 0 LT1302 top=1K bot=1T
+R4 IN N003 10
+C2 N003 0 1µ
+L2 N002 0 22µ Rser=0.02 Rpar=5000
+C3 IN 0 100µ Rser=.1
+C4 OUT 0 220µ Rser=20m
+C5 N001 N002 220µ Rser=10m
+Rload OUT 0 9.7
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4m startup
+* LT1302 - µPower High Output Current Step-Up Converter\n2 Li-Ion Cell to 5.8V SEPIC Converter\nInput: 4V to 9V     Output: 5.8V @ 600mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1302.sub
+.backanno
+.end

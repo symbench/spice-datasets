@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\MeasureBW.asc
+Q1 OUT N002 N003 0 2N3904
+R3 N003 0 1K
+V3 IN 0 AC 1
+R1 0 N002 10K
+C1 N002 IN 1µ
+R2 N002 N001 100K
+V1 N001 0 9
+C2 N003 0 20µ
+R4 N001 OUT 20K
+C3 N002 OUT 100p
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.ac oct 10 1 10Meg
+* This example schematic is supplied for informational/educational purposes only.
+.measure tmp max mag(V(out))
+.measure BW trig mag(V(out))=tmp/sqrt(2) rise=1 targ mag(V(out))=tmp/sqrt(2) fall=last
+* Example of using a .measure script to measure the 3dB bandwidth of a response.\nExecute View=>SPICE Error Log after running the simulation to see the output of the\n.measure statements.
+.backanno
+.end

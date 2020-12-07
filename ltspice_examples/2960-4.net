@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\2960-4.asc
+R1 N001 N002 118K
+R2 N006 0 182K
+C1 OUT 0 1µ
+Vbat N001 0 PWL(0 0 10m 14 200 20 220 14 300 14 400 0)
+R3 N001 N004 10K
+R4 N005 N006 68K
+R5 N002 N005 7.32Meg
+XU1 N004 OUT _FAULT N003 0 N003 N005 N006 LTC2960-4
+XU2 N001 OUT OUT 0 N001 LT3008-5
+* Window Comparator for High Voltage Input
+* 6V to 8.4V
+* 5V
+.tran 400
+.lib LT3009.lib
+.lib LTC2960-4.sub
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1935.asc
+V1 IN 0 3.3
+R1 OUT N004 33.1K
+R2 N004 0 10K
+L1 IN N001 4.2µ Rser=0.182
+D1 N001 OUT 1N5817
+C1 OUT 0 20µ
+XU1 N001 0 N004 N003 IN LT1935
+R3 N003 N002 10K
+C3 N003 0 .22µ
+V2 N002 0 PWL(0 0 1m 3)
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m
+.lib LT1935.sub
+.backanno
+.end

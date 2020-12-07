@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\3331.asc
+I1 0 N001 4m
+R1 N001 N002 10
+R2 N001 0 5K
+D1 N001 0 SOLA
+C1 N007 0 22µ
+C2 N007 N008 1µ
+C3 N009 0 4.7µ
+C4 N013 0 .1µ
+L1 N003 N004 22µ Rser=50m
+L2 N005 N006 22µ Rser=50m
+C5 N004 0 4.7µ Rser=10m
+C6 N004 N011 10m
+C7 N011 0 10m
+R3 N004 0 1K
+V2 N014 0 5
+I2 N011 N004 pwl(0 0 20u 430 40u 0)
+I3 0 N011 pwl(0 0 20u 430 40u 0)
+XU1 N011 N004 N009 0 0 0 N014 N002 NC_01 N007 N008 N003 N004 N006 N005 N012 N014 N014 N014 N012 N015 0 0 0 NC_02 N013 N010 NC_03 NC_04 0 0 0 0 LTC3331
+R4 N010 N012 10K
+C8 N015 0 1m ic=3.4
+C9 N012 0 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model SOLA D(Ron=.5K Roff=1G Vfwd=4 epsilon=1.2)
+.tran 1 startup
+.lib LTC3331.sub
+.backanno
+.end

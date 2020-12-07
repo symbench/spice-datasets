@@ -1,0 +1,49 @@
+* Z:\mnt\design.r\spice\examples\3888-1.asc
+V1 IN 0 12
+C1 N002 0 2.2µ
+C3 N004 0 4.7µ
+R1 N002 N005 100K
+R2 N002 N012 100K
+XU5 N003 N015 N003 0 MP_01 MP_02 N020 N003 N003 IN N009 0 N007 N005 N005 N018 N014 LTC7050 RTon=5m RBon=1.2m OV=14.8
+L1 N009 OUT0 0.2µ
+C2 OUT0 0 1320µ Rser=2.5m
+R3 OUT0 0 300m
+R4 N018 N001 500
+R5 N007 N001 500
+R6 N002 N011 100K
+L2 N014 OUT0 0.2µ
+C4 N026 0 100p
+C5 N030 0 3300p
+C6 N027 0 100p
+C7 N031 0 3300p
+XU2 N003 N034 N003 0 MP_03 MP_04 N040 N003 N003 IN N032 0 N028 N005 N005 N038 N036 LTC7050 RTon=5m RBon=1.2m OV=14.8
+L3 N032 OUT0 0.2µ
+L4 N036 OUT0 0.2µ
+R8 N028 N001 500
+R9 N001 N038 500
+XU3 N003 N016 N003 0 MP_05 MP_06 N021 N003 N003 IN N010 0 N008 N006 N006 N019 N017 LTC7050 RTon=5m RBon=1.2m OV=14.8
+L5 N010 OUT1 0.2µ
+C8 OUT1 0 1320µ Rser=2.5m
+R10 OUT1 0 500m
+L6 N017 OUT1 0.2µ
+XU4 N003 N035 N003 0 MP_07 MP_08 N041 N003 N003 IN N033 0 N029 N006 N006 N039 N037 LTC7050 RTon=5m RBon=1.2m OV=14.8
+L7 N033 OUT1 0.2µ
+L8 N037 OUT1 0.2µ
+R11 N008 N001 500
+R12 N019 N001 500
+R13 N029 N001 500
+R14 N001 N039 500
+R15 N002 N013 10K
+V2 N003 0 6
+R7 N002 N006 100K
+R16 N022 N024 42.2K
+R17 0 N024 28K
+R18 N023 N025 97.6K
+R19 0 N025 28K
+XU1 N015 N016 N007 N008 N020 0 OUT0 N022 N026 N030 N011 N023 N024 0 N025 N013 MP_09 MP_10 MP_11 N005 N006 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 MP_18 MP_19 N002 N004 IN N001 MP_20 MP_21 N012 N031 N027 MP_22 OUT1 0 N034 N018 N028 N040 N041 N038 N039 N035 N021 N029 N019 0 LTC3888-1 LTC3888-1 Frequency_Switch=500 Vout0=2.5 Vout1=3 PWM_config=3 GM0=3m GM1=3m Vout_Trans_Rate0=1m Vout_Trans_Rate1=1m Vout_Scale_Loop0=2.507 Vout_Scale_Loop1=4.487 Ton_Delay0=0 Ton_Delay1=0 Toff_Delay0=0 Toff_Delay1=0 Rith0=5k Rith1=5k OC_Limit0=20 OC_Limit1=20 Ton_Min=45n VOUT_UV_Fault_Limit0=2.2 VOUT_UV_Fault_Limit1=2.8 VOUT_OV_Fault_Limit0=2.6 VOUT_OV_Fault_Limit1=3.1 Iout_Cal_Gain=5m Slave0=0 Slave1=0
+* *************** READ ME **********************************************************************\n \nThis model does not cover the PMBUS and SPI functions of this IC.\nTherefore, many things controlled by the PMBUS are configured by CTRL + right click on the IC.\nShare_CLK is NOT modelled. The SYNC pin can only be used as an input and\n   it?s grounded when it?s not used. CLK_OUT pin is provided to allow clock out function.\nResistor setting pins like Vout_CFG are not modeled.\nVout and PWM_config must be set by CTRL by right-clicking on the IC.\n \nFrequency_Switch=500 sets the frequency in kHz between 250 and 1000.\nPWM_config=3 controls the phasing and master/slave configuration of the 8 channels.\nA decimal number is used for the 3-bit binary number. The description starts on page 72 of the datasheet.\n \n# (PWM0: PWM1)\n7 (7 phase: 1 Phase)\n6 (6 phase: 2 Phase)\n5 (6 phase: 1 phase)\n4 (5 phase: 3 phase)\n3 (4 phase: 4 phase)\n2 (4 phase: 3 phase)\n1 (4 phase: 2 phase)\n0 (3 phase: 3 phase)\n \nVout0=2.5 and Vout1=3 program the output voltage in a range from 0.3 to 3.45V\nGM0=3m and GM1=3m program the gain the Error Amplifier in range from 1 to 5.73mS\nIout_Cal_Gain=5m should match the voltage gain of the chosen current sense (V/A)\nRith0=5k and Rith1=5k program the compensation resistor in series\n   with Cithr on the output of the error amplifier in a range from 1k to 62k\nTon_Min=45n programs the minimum on time of the PWM outputs\n \nOC_Limit0=20  OC_Limit1=20 program approximately the\n   DC the current limit of the each phase used for that converter. \n \nTon_Delay0=0 and Ton_Delay1=0 set the delay from when the RUN pin goes high until the soft-start begins\nToff_Delay0=0 and Toff_Delay1=0 set the delay from when the RUN pin goes low until the turn-off ramp begins\n \nVOUT_UV_Fault_Limit0=2.2 and VOUT_UV_Fault_Limit1=2.8 program the undervoltage fault limit for the Pgood output\nVOUT_OV_Fault_Limit0=2.6 and VOUT_OV_Fault_Limit1=3.1 program the overvoltage fault limit for the Pgood output\n \nSlave0 and Slave1 set slave channel. 0 disable,1 enable. If enabled the error amplifier is open circuit
+.tran 1m startup
+.lib LTC3888-1.sub
+.lib LTC7050.sub
+.backanno
+.end

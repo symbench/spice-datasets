@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\3863.asc
+C1 N004 0 2700p Rser=14.7K
+V1 IN 0 12
+C2 IN N001 .47µ
+R1 IN N003 16m
+M1 N007 N005 N003 N003 FDS6675
+D1 OUT N007 B540C
+L1 N007 0 10µ Rser=20m
+R3 OUT N006 511K
+R4 N006 N009 80.6K
+C3 0 OUT 33µ x2 Rser=.04
+Rload OUT 0 2.94
+V2 N002 0 PULSE(0 2 .2m 10n 10n 1u 2.86u)
+XU1 N002 N008 0 NC_01 N009 N004 N006 NC_02 N001 N003 IN N005 0 LTC3863
+R5 N008 0 61.9K
+C4 0 OUT 150µ x2 Rser=.1
+C5 N006 N009 68p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC3863.sub
+.backanno
+.end

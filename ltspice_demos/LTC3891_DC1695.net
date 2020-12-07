@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3891_DC1695.asc
+M§Q1 IN N002 N005 N005 Si7850DP
+L1 N005 N006 4.7µ Rser=1.5m
+C1 OUT 0 10µ Rser=1m
+R1 OUT N011 357K
+R2 N011 0 113K
+C2 N004 N005 .1µ
+C3 N001 0 4.7µ
+C4 N010 0 4700p Rser=15K Cpar=100p
+C5 N009 0 .01µ
+V1 IN 0 48
+D1 N001 N004 MBRS1100
+M§Q2 N005 N008 0 0 Si7850DP
+Rload OUT 0 .66
+XU1 OUT N007 MP_01 MP_02 0 0 IN MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 N001 NC_14 0 IN N008 N004 N005 N002 N003 NC_15 N009 N010 N011 N006 LTC3891
+R4 N006 OUT 8m
+R3 N007 0 41.2K
+C6 OUT 0 330µ Rser=10m
+R5 N001 N003 100K
+C7 IN 0 2.2µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3891 - 60V Low IQ, Single output, Synchronous Step-Down DC/DC Controller\nVIN: 4.5V up to 60V; Vout : 3.3V@5A
+.lib LTC3891.sub
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\spice-netlists\LT3021-1.5_TA01.asc
+V1 N001 0 PWL(0 0 1 10)
+Rload OUT 0 3
+C1 OUT 0 3.3µ
+XU1 MP_01 MP_02 OUT MP_03 MP_04 MP_05 OUT MP_06 N001 0 MP_07 N001 LT3021-1.5
+.tran 1
+* LT3021-1.5 - 500mA, Low Voltage, Very Low Dropout Linear Regulator\nLow Voltage µP/µC VLDO Regulator\nInput: 1.7V to 10V     Output: 1.5V @ 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3021.lib
+.backanno
+.end

@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT8613_DC2011_TA01.asc
+R1 N006 0 60.4K
+C1 N005 0 4.7n
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N003 N004 3.3µ Ipk=8 Rser=0.0199 Rpar=0 Cpar=0
+C3 N002 N003 .1µ
+C4 OUT 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0
+R2 OUT N007 1Meg
+R3 N007 0 243K
+C5 OUT N007 10p
+R4 N004 OUT 8m
+C6 IN 0 10µ
+Rload OUT 0 1.67
+XU1 NC_01 N005 N006 IN IN NC_02 0 N004 N003 OUT 0 N002 N001 OUT NC_03 N007 0 LT8613
+.tran 4m startup
+* LT8613 - 42V, 6A Synchronous Step-Down Regulator with Current Sense and 3µA Quiescent Current\n5V Step-Down Converter with 6A Output Current Limit\nInput: 5.8V to 42V      Output: 5V @ 6A, Fsw = 700kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8613.sub
+.backanno
+.end

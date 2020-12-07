@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LTC3112_DC1598A.asc
+XU1 0 N011 N009 N005 IN MP_01 N006 N013 OUT MP_02 MP_03 N002 MP_04 N004 N001 MP_05 N003 N008 N010 LTC3112
+R1 N013 0 42.2K
+C1 N013 0 100p
+C2 N008 0 1µ
+V1 IN 0 9
+C3 N001 N003 0.1µ
+L1 N001 N002 4.7µ
+C4 N002 N004 0.1µ
+R2 OUT N009 845K
+R3 N009 0 158K
+C5 OUT N007 47p
+C6 OUT 0 47µ
+R4 N006 IN 1Meg
+R5 N010 N008 1Meg
+R6 N007 N009 10K
+R7 OUT N005 1Meg
+R8 N005 0 133K
+R9 N012 N011 33K
+C8 N009 N012 680p
+C9 N009 N011 10p
+D1 OUT N008 BAT54
+C10 IN 0 47µ
+Rload OUT 0 2.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2.5m startup
+* LTC3112 - 15V, 2.5A Synchronous Buck-Boost DC/DC Converter\nWide Input Voltage Range Buck-Boost Regulator\nInput: 2.7V to 15V     Output: 5V @ 2.5A (Vin > 5V), Fsw = 750kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC3112.sub
+.backanno
+.end

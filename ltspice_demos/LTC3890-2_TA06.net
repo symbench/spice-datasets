@@ -1,0 +1,50 @@
+* Z:\mnt\spice-netlists\LTC3890-2_TA06.asc
+V1 N001 0 PWL(0 0 50us 12 1m 12 1.001m 5)
+M§Q1 N001 N007 N010 N010 Si4896DY
+M§Q2 N010 N013 0 0 Si4896DY
+D1 N002 N008 1N4148
+C1 N002 0 4.7µ
+C2 N008 N010 .1µ
+L1 N010 N011 3.3µ Rser=0.005
+R1 N011 OUT2 3m
+C3 OUT2 0 330µ
+R2 OUT2 N016 100K
+R3 N016 0 31.6K
+C4 N022 0 .001µ
+M§Q3 N012 N006 N014 N014 Si4896DY
+C5 N002 0 .1µ
+C6 N021 0 .001µ
+L2 N001 N012 4.7µ Rser=0.01
+L3 0 N009 4.7µ Rser=0.01
+C7 N012 N009 10µ
+C8 OUT1 0 220µ
+R4 N014 0 6m
+R5 OUT1 N015 100K
+R6 N015 0 7.15K
+R7 0 N023 42K
+D2 N009 OUT1 PDS760
+R8 N001 N003 511K
+XU1 0 N023 N024 NC_01 NC_02 0 N003 N003 OUT2 N011 N016 N019 N022 N005 N007 N010 N008 N013 N002 NC_03 0 N001 NC_04 N002 0 N006 N004 NC_05 N021 N018 N015 N014 LTC3890-2
+R9 N002 N005 10K
+R10 N002 N004 10K
+R11 N018 N017 9.09K
+C9 N017 0 10n
+C10 N018 0 47p
+R12 N020 N019 15K
+C11 0 N020 2n
+Rload2 OUT2 0 .33
+Rload1 OUT1 0 6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+K L2 L3 1
+* 3.3V @ 10A
+* 12V @ 2.0A
+* LTC3890-2 - 60V Low IQ, Dual, 2-Phase Synchronous Step-Down DC/DC Controller\nAutomotive 12V SEPIC and 3.3V Step-Down Converter\nInput: 5V to 35V     Output: 12V @ 2A and 3.3V @ 10A
+* Note: \n  Smaller TRACK/SS capacitors are being used to reduce simulation time. Typical value should be 0.01µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc.  All rights reserved.
+.lib LTC3890-2.sub
+.backanno
+.end

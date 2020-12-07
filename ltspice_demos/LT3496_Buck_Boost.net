@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LT3496_Buck_Boost.asc
+XU1 N006 N006 N009 N009 MP_01 MP_02 N012 N009 N010 N008 MP_03 N003 N001 N005 N007 MP_04 0 LT3496
+R1 N001 N003 0.5
+L1 N004 N007 15µ Ipk=1.72 Rser=0.07 Rpar=0 Cpar=0
+D1 N007 N002 PMEG6010AED
+C1 N011 0 1000p
+V1 N004 0 12
+V2 N006 0 5
+V3 N012 0 PULSE(5 0 0.6m 1u 1u 900u 1m)
+C2 N009 0 .1µ
+D2-D5 N002 N001 LXHL-BW02 N=4
+C3 N004 0 1µ
+C4 N006 0 1µ
+M§Q1 N004 N005 N003 N003 FDS4685
+R2 N004 N008 7.15Meg
+R3 N008 0 191K
+C5 N002 N004 2.2µ
+R4 N010 N011 36K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* LT3496 - Triple Output LED Driver In Buck-Boost Mode\nInput: 12V       Output: 4 LEDs @ 200mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LT3496.sub
+.backanno
+.end

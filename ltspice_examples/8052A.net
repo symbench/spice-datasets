@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\8052A.asc
+V1 IN 0 24
+R1 IN N001 510K
+R2 N007 0 90.9K
+R3 N004 0 9.09K
+C1 OUT 0 330µ V=6.3 Irms=3.9 Rser=0.01 Lser=0 mfg="KEMET" pn="T520D337M006ASE010" type="Tantalum"
+Rload OUT 0 .5
+XU1 0 N001 N002 N002 OUT N002 MP_01 N006 MP_02 N004 MP_03 MP_04 MP_05 N005 N007 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 IN LTM8052A
+C2 OUT 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C575OX5ROJI07M" type="X5R"
+.tran 1.2m startup
+.lib LTM8052A.sub
+.backanno
+.end

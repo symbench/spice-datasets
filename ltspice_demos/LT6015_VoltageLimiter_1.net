@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT6015_VoltageLimiter_1.asc
+V1 V+ 0 5
+V2 V- 0 -5
+XU1 N003 OUT V+ V- N001 LT6016
+V3 N003 0 4.096
+D1 OUT N001 1N4148
+V4 IN 0 SINE(2.5 3 10)
+R1 IN OUT 1K
+XU2 N004 OUT V+ V- N002 LT6016
+V5 N004 0 0
+D2 N002 OUT 1N4148
+XU3 OUT BUFFERED V+ V- BUFFERED LT6016
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1 startup
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LT6015/LT6016/LT6017 - 3.2MHz, 0.8V/µs Low Power, Over-The-Top Precision Op Amps\nPrecision Voltage Limiter/Clipper\nShunt clamping occurs for input signals above 4.096V or below 0V
+.lib LTC2.LIB
+.backanno
+.end

@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTC6406_DN454F03.asc
+V1 +V 0 3
+R1 OUT- N001 665
+R2 OUT+ N006 665
+R3 N006 N008 150
+R4 N002 IN 75
+V2 IN 0 SINE(2.5 .5 1Meg)
+XU1 N001 N004 +V OUT- OUT+ 0 NC_01 N006 N005 N003 LTC6406
+V3 N007 0 2.5
+R5 N002 N007 102
+C1 N007 0 10µ
+V4 N004 0 1.25
+R6 N008 N007 43.2
+R7 N001 N002 150
+C2 OUT- N001 1.8p
+C3 OUT+ N006 1.8p
+.tran 10u
+* LTC6406 - 3GHz, Low Noise, Rail-to-Rail Input Differential Amplifier/Driver\nDifferential Amplifier with Impedance Matching to a 75 Ohm Source & Level Shifting\nInput: ±1Vp-p, Centered at 2.5V     Output: ±1Vp-p, Centered at 1.25V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC7.lib
+.backanno
+.end

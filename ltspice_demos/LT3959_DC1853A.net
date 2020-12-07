@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3959_DC1853A.asc
+C1 N009 N005 18n Rser=10.5K
+R1 N008 N005 27.4K
+C2 N006 N005 .05µ
+V1 IN 0 PWL(0 0 .1m 10)
+C3 N003 N005 4.7µ
+R2 IN N002 200K
+R3 N002 N005 332K
+R4 IN N004 150K
+L1 N001 IN 3.3µ Rser=25m Cpar=50p
+D1 N001 OUT DFLS220L
+R5 OUT N007 102K
+R6 N007 N005 15.8K
+XU1 N009 N007 N006 N008 N001 N004 N005 MP_01 N003 OUT IN N002 0 LT3959
+C4 OUT 0 22µ x4 Rser=2m
+Rload OUT 0 12
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m
+* LT3959 - Wide Input Voltage Range Boost/SEPIC/Inverting Converter with 6A, 40V Switch\nWide Input Voltage Range Boost Converter\nInput: 2V to 10V       Output: 12V @ .5A to 2A ( 0.5A @ 2Vin, 1.0A @ 5Vin, 2.0A @ 9Vin)
+* Note:\n  To reduce simulation time, a smaller SS capacitor (C2) was used. Typical value should be .33µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3959.sub
+.backanno
+.end

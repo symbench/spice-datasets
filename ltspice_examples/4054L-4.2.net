@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\4054L-4.2.asc
+CBAT OUT 0 1
+R1 N001 0 1.69K
+V2 IN 0 PWL(0 0 20u 5)
+XU1 NC_01 0 OUT IN N001 LTC4054L-4.2
+.tran 600
+.lib LTC4054L-4.2.sub
+.backanno
+.end

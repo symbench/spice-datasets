@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1522.asc
+C1 N002 N001 .22µ
+V1 IN 0 3
+C2 OUT 0 10µ
+Rload OUT 0 200
+XU1 MP_01 IN OUT N001 N002 0 0 LTC1522
+.tran 1m startup
+.lib LTC1522.sub
+.backanno
+.end

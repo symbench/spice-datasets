@@ -1,0 +1,53 @@
+* Z:\mnt\spice-netlists\LTC3723-1_LT1431_130WIsoPushPull_.asc
+XU1 N008 IN N005 N013 0 N019 NC_01 N009 N010 N017 N012 0 N016 IN N007 N015 LTC3723-1
+M§Q1 N001 N005 N011 N011 BSC520N15NS3
+M§Q2 N004 N008 N011 N011 BSC520N15NS3
+R1 N011 0 15m
+R2 N011 N010 2K
+C1 N019 0 220p
+R3 N012 0 33K
+C2 N016 0 .1µ
+V1 IN 0 36
+L1 N001 IN 60µ Rpar=1K
+L2 IN N004 60µ Rpar=1K
+L3 N003 N006 167µ Rpar=1K
+R4 N007 N017 1.2K
+C3 OUT 0 47µ x3 Rser=30m
+C4 N010 0 22p
+D1 0 N006 RFN10BM3S
+D2 0 N002 RFN10BM3S
+R5 N009 N007 10K
+R6 N011 N007 270K
+R7 OUT N022 47.5K
+R8 N022 0 2.49K
+C5 N021 N020 .1µ
+R9 N025 N024 1K
+XU2 N024 N020 N017 0 NC_02 MOC205 Igain=2.44m
+XU3 N020 NC_03 N025 NC_04 0 0 NC_05 N022 LT1431
+C6 N022 N023 22n V=100
+R10 OUT N023 10K
+R11 N020 0 100K
+D3 0 N025 BZX84C8V2L
+R12 OUT N014 1.3K
+R13 N014 N018 1.3K
+R14 N018 N025 1.3K
+C7 N017 0 1500p
+C8 N007 0 1µ
+R15 N022 N021 2K
+Rload OUT 0 20
+L4 N002 N003 167µ Rpar=1K
+L5 N003 OUT 33µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 L3 L4 1
+.tran 20m startup
+* LTC3723-1 - Synchronous Push-Pull PWM Controllers\nLT1431 - Programmable Reference\n130W High Efficiency Isolated Non-Synchronous Push-Pull Converter for PoE Applications\nInput: 34V to 38V     Output: 50V @ 2.6A, 20mA Min Load
+* Notes:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc.  All rights reserved.
+.lib LT1431.sub
+.lib LTC3723-1.sub
+.lib MOC205.sub
+.backanno
+.end

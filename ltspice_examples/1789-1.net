@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1789-1.asc
+V1 +v 0 5
+V2 -V 0 -5
+R1 N001 N002 {R}
+V3 IN 0 AC 1
+XU1 N001 0 IN -V 0 OUT +v N002 LT1789-1
+.ac dec 100 100 1Meg
+.step PARAM R list 1e308 22.22K 2.0202K
+.lib LTC3.lib
+.backanno
+.end

@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\3741.asc
+XU1 0 N003 N005 N005 MP_01 N011 MP_02 N013 MP_03 N015 N009 N010 MP_04 N014 N007 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 N006 N008 N004 N012 N002 N001 LT3741
+V1 N001 0 24
+C1 0 N002 10µ
+C2 N004 N008 .22µ
+D1 N002 N004 1N5819
+M§Q1 N001 N006 N008 N008 Si7884DP
+M§Q2 N008 N012 0 0 Si7884DP
+L1 N008 N009 2.2µ
+R1 N009 N010 2.5m
+R2 N010 N015 88.7K
+R3 N015 0 12.1K
+C3 N010 0 300µ
+C4 N014 0 5.6n Rser=39.2K
+C5 N013 0 .01µ
+R4 N007 0 82.5K
+V2 N003 0 5
+V3 N011 0 1
+C6 N005 0 .01µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.25m startup
+.lib LT3741.sub
+.backanno
+.end

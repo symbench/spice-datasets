@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTM8052_DC1866A.asc
+XU1 0 N001 N002 N002 OUT N002 MP_01 N004 MP_02 N003 MP_03 MP_04 MP_05 NC_06 N005 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 MP_18 IN LTM8052
+C1 N004 0 1500p
+R1 N005 0 90.9K
+R2 IN N001 510K
+C2 IN 0 10µ V=50 Rser=0.002
+C3 OUT 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0
+C4 OUT 0 330µ V=4 Irms=3.16 Rser=0.015 Lser=0
+R3 N003 0 9.09K
+V1 IN 0 12
+Rload OUT 0 0.5
+.tran 1.5m startup
+* LTM8052 - 36V, 5A, 2-Quadrant CVCC Step-Down uModule Regulator\nInput: 6V to 36V       Output: 2.5V @ ±5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTM8052.sub
+.backanno
+.end

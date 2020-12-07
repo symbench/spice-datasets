@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\ADG919.asc
+V1 +V 0 {Vdd}
+V2 N001 0 PULSE({Vdd} 0 0 2n 2n 5u 10u)
+V3 IN 0 SINE({Vdd/2} 1 10Meg)
+XU1 +V N001 0 IN OUT2 MP_01 MP_02 OUT1 ADG919
+.tran 30u
+.param Vdd=2.75
+.lib ADG.lib
+.backanno
+.end

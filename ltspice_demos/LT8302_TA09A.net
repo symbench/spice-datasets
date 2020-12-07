@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT8302_TA09A.asc
+V1 IN 0 -42
+R1 N001 N003 121K
+D1 N001 0 MBRS360
+C1 0 OUT 47µ V=6.3 Rser=0.003
+Rload 0 OUT 6.67
+C2 N004 IN 1µ
+R3 N005 IN 10k
+XU1 N002 N004 OUT IN N001 N003 N005 NC_01 LT8302
+L1 N001 OUT 12µ
+R4 0 N002 806K
+R5 N002 IN 232K
+C3 IN 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 8m startup
+* LT8302 - 42Vin µPower No-Opto Isolated Flyback Converter with 65V/3.6A Switch\nUsed as a Negative to Negative Buck Converter\nInput: -18V to -42V       Output: -12V @ 1.8A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT8302.sub
+.backanno
+.end

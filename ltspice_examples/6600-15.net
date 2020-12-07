@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\6600-15.asc
+V1 N008 0 -2.5
+V2 N001 0 PULSE(0 500m 100n 5n 5n 10u 20u)
+C1 0 N006 .01µ
+V3 N007 0 2.5
+R1 N002 N004 536
+R2 N003 N005 536
+E1 N003 0 N001 0 .5
+E2 0 N002 N001 0 .5
+XU1 N004 0 N007 N009 N010 N008 N006 N005 LT6600-15
+.tran .5u
+.lib LT6600-15.sub
+.backanno
+.end

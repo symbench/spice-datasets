@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3580.asc
+XU1 N003 N005 IN N001 IN N004 N002 MP_01 0 LT3580
+L1 IN N001 4.2µ
+D1 N001 OUT 1N5818
+C1 OUT 0 10µ
+C2 0 N005 1000p Rser=10K
+R1 N004 0 75K
+C3 N002 0 .001µ
+V1 IN 0 5
+R2 OUT N003 130K
+Rload OUT 0 22
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT3580.sub
+.backanno
+.end

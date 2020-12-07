@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\8640S.asc
+R1 N002 0 41.2K
+V1 IN 0 24
+C2 N001 0 1µ
+L1 N003 OUT 3.3µ Rser=10m
+C4 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT N005 1Meg
+R3 N005 0 243K
+C5 OUT N005 4.7p
+Rload OUT 0 1
+C6 IN 0 1µ
+C7 IN 0 1µ
+C1 N004 0 1n
+XU2 OUT N001 NC_01 IN NC_02 0 MP_03 N003 MP_04 0 MP_05 MP_06 IN IN N002 N004 NC_07 0 NC_08 N005 LT8640S
+.tran 750u startup
+.lib LT8640S.sub
+.backanno
+.end

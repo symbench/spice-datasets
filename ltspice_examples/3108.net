@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3108.asc
+XU1 0 N007 N004 OUT NC_01 N008 N009 MP_02 MP_03 0 N007 NC_04 N003 N005 N006 LTC3108
+C1 N007 0 1µ
+V1 N001 0 PWL(.1m 0 .101m 30m)
+L1 N001 N006 7.5µ Rser=85m
+L2 N002 0 75m Rser=300
+C2 N002 N003 1n
+C3 N002 N005 330p
+C4 N004 0 1m
+C5 OUT 0 470µ
+C6 N008 0 2.2µ
+K1 L1 L2 1
+.tran 1 startup
+.ic V(out)=3.29
+.lib LTC3108.sub
+.backanno
+.end

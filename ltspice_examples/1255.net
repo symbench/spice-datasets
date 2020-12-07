@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\1255.asc
+V1 N001 0 5
+V2 N006 0 PULSE(0 5 0 100n 100n 2.5m 5m)
+R1 N001 N003 .036
+M§Q1 N003 N005 N009 N009 Si9936DY
+R2 N009 0 100
+XU1 N002 N004 0 N006 N007 N001 N005 N003 LTC1255
+R3 N001 N002 .036
+M§Q2 N002 N004 N008 N008 Si9936DY
+R4 N008 0 100
+D1 N008 N004 BZX84C12L
+D2 N009 N005 BZX84C12L
+V3 N007 0 PULSE(0 5 0 100n 100n 2.5m 5m)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 20m startup
+.lib LTC1255.sub
+.backanno
+.end

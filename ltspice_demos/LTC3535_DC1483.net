@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LTC3535_DC1483.asc
+XU1 Vout1 N002 0 Vout2 N001 0 IN IN N004 IN IN N003 LTC3535
+V1 IN 0 1.2
+L1 IN N002 4.7µ Rser=110m Rpar=10K
+L2 IN N001 4.7µ Rser=110m Rpar=10K
+C1 Vout1 0 10µ
+R1 Vout1 N003 511K
+R2 N003 0 1Meg
+C2 Vout2 0 10µ
+R3 Vout2 N004 1.78Meg
+R4 N004 0 1Meg
+Rload1 Vout1 0 18
+Rload2 Vout2 0 33
+C3 Vout1 N003 47p
+C4 Vout2 N004 20p
+C5 IN 0 4.7µ
+.tran .75m startup
+* 1.8V
+* 3.3V
+* LTC3535 - Dual Channel 550mA 1MHz Synchronous Step-Up DC/DC Converter\nInput: 0.7V to 5V     Output: 1.8V @ 100mA & 3.3V @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3535.sub
+.backanno
+.end

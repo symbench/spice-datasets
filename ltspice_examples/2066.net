@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\2066.asc
+XU1 N004 N001 +V 0 OUT +V LTC2066
+R1 OUT N001 1Meg
+R2 N001 0 10K
+R3 N004 N003 10K
+R4 N003 0 100m
+R5 N002 N003 {5/Iload}
+V2 N002 0 5
+V3 +V 0 3.3
+.op
+.step dec param Iload .1m 250m 2
+.lib LTC5.lib
+.backanno
+.end

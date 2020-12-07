@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT8610AC_TA01A.asc
+R1 N005 0 18.2K
+C1 N003 0 .001µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N004 OUT 2.2µ Ipk=12.9 Rser=0.0132 Rpar=207.24 Cpar=0 mfg="Coilcraft" pn="XAL5030-222"
+C3 N002 N004 0.1µ
+C4 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 Rpar=1000 Cpar=5p mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT N006 1Meg
+R3 N006 0 191K
+C5 OUT N006 10p
+C6 IN 0 4.7µ V=50
+Rload OUT 0 1.43
+C7 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 Rpar=1000 Cpar=5p mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+XU1 0 N003 N005 IN IN MP_01 0 MP_02 N004 MP_03 MP_04 N002 N001 OUT NC_05 N006 0 LT8610AC
+.tran 1m startup
+* LT8610AC - 42V, 2MHz, 3.5A µPower Synchronous Monolythic Step-Down Regulator\n5V 3.5A 2MHz Step-Down Converter\nInput: 5.5V to 42V       Output: 5V @ 3.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* (2MHz)
+.lib LT8610AC.sub
+.backanno
+.end

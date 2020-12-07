@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\1534-1.asc
+L1 N012 0 25n Rser=0.02 Rpar=5000
+D1 N001 OUT MBRS340
+R1 OUT N011 7.5K
+R2 N011 0 2.49K
+R3 N005 0 16.9K
+R4 N008 N007 6.8K
+R5 N006 0 24K
+R6 N009 0 24K
+C1 N004 0 3300p
+C2 N008 0 220p
+C3 N007 0 .015µ
+V1 IN 0 3.3
+L2 IN N001 50µ Rser=0.02 Rpar=5000
+C4 OUT 0 200µ Rser=0.05
+R7 N001 N003 10
+C6 N003 0 1000p
+XU1 MP_01 N001 MP_02 MP_03 N004 N005 N011 N010 0 N008 N002 N009 N006 IN MP_04 N012 LT1534-1
+Rload OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT1534-1.sub
+.backanno
+.end

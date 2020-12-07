@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\3834.asc
+M§Q1 IN N002 N005 N005 Si4840DY
+M§Q2 N005 N007 0 0 Si4840DY
+L1 N005 N006 3.2µ
+R1 N006 OUT .012
+C1 OUT 0 150µ Rser=10m
+R2 OUT N010 215K
+R3 N010 0 68.1K
+C2 N004 N005 .1µ
+D1 N001 N004 MBR0540
+C3 N001 0 4.7µ
+C4 N009 0 1200p Rser=9.53K Cpar=150p
+C5 N008 0 .001µ
+V1 IN 0 12
+V2 N003 0 2
+XU1 NC_01 NC_02 N009 N008 N010 0 0 N007 N001 NC_03 IN N005 N002 N004 NC_04 OUT N006 NC_05 N003 NC_06 LTC3834
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC3834.sub
+.backanno
+.end

@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LTC3527_DC1237A-A.asc
+L1 IN N002 4.7µ Rser=70m Rpar=2K
+XU1 IN N005 0 IN OUT1 N001 N002 OUT2 IN 0 N006 IN N004 0 IN N003 LTC3527
+R1 OUT2 N006 619K
+R2 N006 0 1.21Meg
+C1 OUT2 0 10µ
+L2 IN N001 4.7µ Rser=70m Rpar=2K
+R3 OUT1 N005 1.78Meg
+R4 N005 0 1Meg
+C2 OUT1 0 10µ
+V1 IN 0 2.5
+Rload1 OUT1 0 22
+Rload2 OUT2 0 12
+R5 IN N004 100K
+R6 IN N003 100K
+C3 IN 0 10µ
+C4 OUT1 N005 10p
+.tran 450u startup
+* LTC3527 - Dual 800mA/400mA 1.2MHz/2.2MHz Synchronous Step-Up DC/DC Converter\nInputs: 0.7V to 5.5V     Ouputs: 3.3V @ 150mA & 1.8V @ 150mA
+* 3.3V
+* 1.8V
+* Mode - Auto Burst\nFreq - 1.2MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3527.sub
+.backanno
+.end

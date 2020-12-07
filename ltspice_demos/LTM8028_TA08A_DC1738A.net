@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTM8028_TA08A_DC1738A.asc
+XU1 OUT N003 0 IN N002 N002 N002 NC_01 OUT N002 NC_02 N005 N006 N001 N004 LTM8028
+R1 N006 0 165K
+C1 N005 0 .01µ
+V1 IN 0 12
+R2 IN N001 402K
+Rload OUT 0 0.36
+C4 IN 0 10µ
+C2 OUT 0 22µ Rser=5m
+C5 OUT 0 10µ
+C6 OUT 0 4.7µ
+C3 N003 0 100µ Rser=3m
+C7 N003 0 470µ V=4 Rser=10m
+R3 N002 N004 100K
+.tran 3m startup
+* LTM8028 - 36Vin, UltraFast, Low Output Noise 5A µModule Regulator\nLow Output Noise, 1.8V, 5A Buck Regulator\nInput: 6V to 36V       Output: 1.8V @ 5A, Fsw = 250kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTM8028.sub
+.backanno
+.end

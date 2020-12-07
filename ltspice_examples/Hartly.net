@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\Hartly.asc
+J1 N003 N004 0 2N5484
+V1 N005 0 10.
+C4 N002 N001 250p
+L4 N003 N005 1m Rser=100
+L2 0 N002 30µ
+L1 N001 0 30µ
+C1 N002 N003 500p
+C2 N001 N004 30p
+D2 0 N004 1N4148
+L3 0 out 3µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 250µ startup
+K1 L1 L2 L3 1.
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

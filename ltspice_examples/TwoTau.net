@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\TwoTau.asc
+V1 N001 0 PULSE(-1 1 0 0 0 5m 10m) AC 1
+E2 B 0 N001 0 Laplace=1/(1+.001*s)**2
+E1 C 0 N001 0 Laplace=exp(-.001*s)/(1+.001*s)**2
+R1 N002 N001 1K
+C1 N002 0 1µ
+R2 A N002 100K
+C2 A 0 .01µ
+;ac oct 10 .001 1MEG
+.tran 30m
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

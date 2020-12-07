@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\2932.asc
+R1 N005 N006 53.6K
+R2 N006 0 47.5K
+V1 N002 0 PWL(500u 5 600u 5 600.001u 4.6161 900u 4.6161 901u 5)
+V2 N001 0 5
+XU1 NC_01 N001 NC_02 N003 N001 N002 NC_03 _RST 0 N001 0 0 N006 N005 N001 N001 NC_04 N004 N001 NC_05 LTC2932
+R3 N001 _RST 1K
+R4 N001 N003 1K
+R5 N001 N004 1K
+.tran 1600u startup uic
+* Transient Duration vs Comparator Overdrive (V1, V2) Test Jig\nThis circuit is for injecting variable lenght and duration pulses that are\nbelow the typical 5V comparator threshold on V1.  The actual threshold here\nhas been found to be about 4.6557V.  \n \nTo measure the transient duration before _RST is asserted a below threshold\npulse is driven into V1 and the time between that falling edge and the falling /RST\nedge is measured.
+.lib LTC2932.sub
+.backanno
+.end

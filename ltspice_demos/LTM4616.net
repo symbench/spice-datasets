@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LTM4616.asc
+V1 IN 0 5
+R1 N007 0 10K
+C1 OUT2 0 22µ Rser=5m
+C2 IN 0 22µ
+C3 OUT2 0 100µ Rser=3m x2
+C4 IN 0 150µ Rser=9m
+R2 N001 IN 100K
+XU1 OUT1 0 NC_01 IN NC_02 NC_03 N002 NC_04 NC_05 N003 NC_06 N003 0 N006 0 MP_07 0 IN NC_08 N005 NC_09 N001 N007 N005 NC_10 N008 N006 N006 N004 N003 NC_11 NC_12 0 N003 0 N009 N003 N002 OUT2 LTM4616
+C5 IN 0 22µ
+R3 IN N009 100K
+C6 OUT1 0 22µ Rser=5m
+C7 OUT1 0 100µ Rser=3m x2
+R4 N004 0 4.99k
+C8 OUT1 N004 47p
+C9 OUT2 N007 47p
+R5 N008 0 10K
+R6 N008 OUT1 10K
+Rload1 OUT1 0 0.225
+Rload2 OUT2 0 0.15
+R7 N005 0 50K
+R8 N005 IN 50K
+.tran 250u startup
+* LTM4616 - Dual 8A, Step-Down DC/DC µModule\nInput: 5V     Outputs: 1.8V@8A and 1.2V@8A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LTM4616.sub
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC6401-8_Gainof1.asc
+VS N002 N005 PULSE(0 1 100n 1p 1p 100n) AC 1 0
+V+ N001 0 3.0
+CB1 N001 0 1000p
+CB2 N001 0 0.1µ
+VOCM N006 0 1.25
+XU1 N003 N006 N001 OP OM 0 0 N004 NC_01 NC_02 LTC6401-8
+R1 N003 N002 294
+R2 N004 N005 294
+.ac dec 100 1Meg 3G
+* Differential Input resistance is \n294 (external) + 200 (internal)\nFeedback resistance is 500 (internal)\nTotal gain = 500/494=1.01
+* Warning: Gain can vary ±13% due to temp/process variations of internal resistors
+* Gain is V(OP,OM)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTC6401-8 - 2GHz Low Noise, Low Distortion Differential ADC Driver for DC-140MHz\nUnity Gain for Fully-Differential Amplifiers\nCircuit demonstrates how to select external resistors for a gain of 1\nMore overshoot will occur due to decreased phase margin
+.lib LTC6.lib
+.backanno
+.end

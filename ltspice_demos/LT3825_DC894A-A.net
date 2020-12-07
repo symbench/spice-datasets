@@ -1,0 +1,69 @@
+* Z:\mnt\spice-netlists\LT3825_DC894A-A.asc
+L1 N005 IN 38.5µ Rser=39m Rpar=50k
+L2 N001 N006 0.6µ Rser=2.5m
+M§Q1 N005 N013 N014 N014 Si4490DY
+R1 N014 0 20m
+C1 N018 N017 .1µ
+C2 N020 N019 .0022µ
+R2 N020 0 10K
+D1 0 N020 BAT54
+Q2 0 N011 N012 0 2N2907
+M§Q3 N006 N012 0 0 HAT2165H
+Q4 N010 N011 N012 0 2N2222
+C3 N010 0 1µ
+D2 N006 N009 MBR0540
+R3 N009 N010 47
+L4 0 N018 1.4m Rser=1.5
+L5 0 N019 1.4m Rser=1.5
+V1 IN 0 48
+C4 N015 0 47p
+R4 N025 0 169K
+R5 N027 0 887
+R6 N024 0 100K
+C5 N001 0 47µ Rser=4m x3
+R7 N008 N026 28.7K
+R8 0 N026 3.01K
+R9 0 N004 15K
+R10 N004 IN 412K
+L3 N008 0 9.6µ Rser=0.23
+R11 N023 N022 20K
+C6 N022 0 .0022µ
+C7 N023 0 .01µ
+R12 N017 N016 330
+C8 OUT 0 470µ Rser=10m
+XU1 N016 VCC N025 N024 0 NC_01 N015 N026 N022 N004 0 N014 N028 N027 N021 N013 0 LT3825
+R13 N011 N020 15
+C9 N001 N003 .0022µ
+R14 N003 0 4.7
+C10 N028 0 .1µ
+R15 N021 0 12K
+C11 IN N002 100p
+R16 N005 N002 56
+C12 VCC 0 .1µ
+C13 VCC 0 47µ
+R17 IN VCC 47K
+D3 N008 N007 1N4148
+R18 N007 VCC 20
+Rload OUT 0 .5
+L6 N001 OUT 100n Rser=0.24m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 L3 1
+K2 L4 L5 1
+.tran 7m startup
+* NOTES:\n - Substitued Parts for Simulation Purposes:\n   Q12/Q13, Q3, D2, and D7\n - If it is desired to see "trickle charge" start-up behavior, set\n   initial condition statement to ".ic V(Vcc)=0V" and the transient\n   statement to ".tran 1.24s startup"
+* PA1477NL (Pulse)
+* PA0184 (Pulse)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+* DC894 - LT3825 - Synchronous Flyback Controller\nInput:  36V to 72V     Output: 3.3V @ 12A
+.ic V(Vcc)=16V
+.options trtol=7
+.lib LT3825.sub
+.backanno
+.end

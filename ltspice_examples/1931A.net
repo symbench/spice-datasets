@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\1931A.asc
+D1 N002 0 MBRS140
+R1 N003 0 10.0K
+R2 OUT N003 29.4K
+V1 IN 0 5
+C1 N001 N002 1µ
+L1 IN N001 10µ
+L2 OUT N002 10µ
+C2 OUT N003 220p
+C4 0 OUT 22µ Rser=50m
+XU1 N001 0 N003 IN IN LT1931A
+Rload OUT 0 20
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+K1 L1 L2 1
+.lib LT1931A.sub
+.backanno
+.end

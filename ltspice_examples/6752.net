@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6752.asc
+V1 N003 N001 SINE(0 100m 200Meg 0 0 90)
+V2 N002 0 5
+B1 N001 0 V=.5+2.5*Random(time/50n)
+XU1 N003 N001 N002 0 Q LTC6752
+.tran 500n
+* Small differential input\nsignal with large common\nmode component
+* High Speed Differential Line Receiver
+.lib LTC7.lib
+.backanno
+.end

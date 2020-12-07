@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LTC3618_DC1726.asc
+V1 IN 0 3.3
+L1 N004 VTT 1µ Rser=11m
+R1 VDDQ N005 422K
+R2 N005 0 210K
+C1 VTT 0 100µ
+Rload2 VTT 0 .3
+L2 N003 VDDQ 1µ Rser=11m
+C2 VDDQ 0 47µ
+Rload1 VDDQ 0 .6
+XU1 0 VTT IN VDDQ 0 IN MP_01 N004 MP_02 IN IN N006 N002 VTTR N001 N003 MP_03 IN MP_04 IN IN N005 IN IN 0 LTC3618
+C3 VTTR 0 .1µ
+R5 N006 0 392K
+C4 IN 0 47µ
+C5 IN 0 47µ
+R3 IN N002 100K
+R4 IN N001 100K
+R6 VTTR 0 1K
+C6 VDDQ 0 20p
+.tran 1.5m startup
+* 1.8V
+* 900mV
+* f = 1MHz
+* Internal Compensation\nInternal Soft-Start\nForced Continuous Mode\n180 Out of Phase
+* VTT = VTTR =  VDDQin/2
+* 900mV
+* 10mA max
+* LTC3618 - Dual ±3A Monolithic Synchronous Step-Down Converter For DDR Termination\nInput: 2.25V to 5.5V     Outputs: VDDQ @ ±3A, VTTR @ ±10mA, VTT @ ±3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3618.sub
+.backanno
+.end

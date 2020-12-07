@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LT4356-1_TA03.asc
+S1 0 OUT N002 0 SHORT
+V1 IN 0 PWL(0 0 1m 12 80m 12 80.2m 80 90m 45 100m 26.9 120m 12)
+V2 N002 0 PWL(0 0 200m 0 201m 1 220m 1 221m 0)
+R1 IN N008 402K
+R2 N008 0 105K
+R3 IN N001 10m
+R4 N003 N004 10
+R5 OUT N009 294K
+R6 N009 0 24.9K
+C1 N010 0 .1µ
+XU1 N010 N009 N005 N004 N001 IN NC_01 NC_02 NC_03 0 N007 N008 LT4356-1
+M§Q1 N001 N003 OUT OUT IRF1310
+M§Q2 OUT N004 N005 N005 IRF1310
+R7 IN OUT 1K
+D1 0 OUT 1N5817
+D2 IN 0 MBRS360
+R8 N007 N006 47K
+V3 N006 0 5
+C2 N004 0 .047µ
+Rload OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 300m
+.model SHORT SW(Ron=10m Roff=1G Vt=0.5 Vh=-.1)
+* LT4356 - Surge Stopper\nOvervoltage Regulator with Low Battery Detection and Output Keep Alive During Shutdown
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT4356-1.sub
+.backanno
+.end

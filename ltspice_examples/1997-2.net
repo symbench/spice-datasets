@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1997-2.asc
+V1 +V 0 15
+V2 -V 0 -15
+XU1 LINE MP_01 0 MP_02 0 0 0 -V OUT NC_03 +V OUT MP_04 OUT MP_05 0 LT1997-2
+V4 0 LINE SINE(0 169.7 60)
+.tran 50m
+* Direct Line Voltage (120 VAC, 60Hz) Measurement
+.lib LTC6.lib
+.backanno
+.end

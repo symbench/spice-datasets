@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTM8068_DC2358A_TA01.asc
+V1 IN 0 24
+C1 0 OUT1 22µ Rser=30m
+R2 N001 0 162K
+XU1 IN 0 IN 0 OUT1 OUT2 N002 N001 MP_01 NC_02 LTM8068
+R1 N002 0 7.32K
+C2 OUT2 0 10µ Rser=5m
+Rload2 OUT2 0 16.67
+Rload1 OUT1 0 604
+C3 IN 0 2.2µ
+.tran 7m startup
+* LTM8068 - 2.8Vin to 40Vin Isolated µModule DC/DC Converter with LDO Post Regulator\n2kV AC Isolated Low Noise µModule Regulator with Post LDO Regulator\nInput: 4.5V to 40V       Output: 5.6V @ 460mA Max, 5V @ 300mA Max
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LTM8068.sub
+.backanno
+.end

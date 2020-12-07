@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3614.asc
+V1 IN 0 3.6
+L1 N001 OUT .33µ Rser=1m Rpar=5K
+C1 OUT 0 47µ x2 Rser=5m
+R1 OUT N002 665K
+R2 N002 0 210K
+Rload OUT 0 .62
+XU1 0 IN 0 MP_01 MP_02 MP_03 MP_04 IN MP_05 MP_06 N001 MP_07 MP_08 IN IN NC_09 0 N002 IN IN 0 LTC3614
+.tran 1.2m startup
+.lib LTC3614.sub
+.backanno
+.end

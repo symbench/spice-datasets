@@ -1,0 +1,59 @@
+* Z:\mnt\spice-netlists\LT3797_DC1784A_TA01.asc
+XU1 N015 N017 N021 N013 N013 N013 N013 N024 N024 N024 N012 0 MP_01 N016 N014 OUT1 N018 MP_02 N029 N005 0 N011 N010 N022 N023 0 N006 N030 MP_03 N027 OUT2 N025 N026 MP_04 N036 N038 OUT3 N032 MP_05 N031 N007 0 N034 N033 N004 MP_06 N001 N003 N002 IN N009 0 0 LT3797
+V1 IN 0 12
+L1 N001 N002 47µ Rser=.2
+C1 N002 N003 .1µ
+C2 0 N004 10µ
+C3 0 N005 .05µ
+C4 0 N006 .05µ
+C5 0 N007 .05µ
+R1 IN N009 100K
+R2 N009 0 105K
+R3 N012 0 47.5K
+R4 IN N024 1Meg
+R5 N024 0 140K
+C6 N029 0 6.8n Rser=3.9K
+L2 IN N008 10µ Rser=50m Rpar=2k
+M1 N008 N010 N011 N011 Si4470DY
+R6 N011 0 8m
+D1 N008 OUT1 MBRS360
+R7 OUT1 N014 .25
+M2 N019 N016 N014 N014 Si7113DN
+R8 OUT1 N018 23.2K
+R9 N018 0 1Meg
+C9 OUT1 0 4.7µ x3 Rser=5m
+D2 N019 0 LXK2-PW14 N=13
+L3 IN N020 10µ Rser=50m Rpar=2k
+M3 N020 N022 N023 N023 Si4470DY
+R10 N023 0 8m
+D3 N020 OUT2 MBRS360
+R11 OUT2 N025 .25
+M4 N028 N026 N025 N025 Si7113DN
+R12 OUT2 N027 23.2K
+R13 N027 0 1Meg
+C10 OUT2 0 4.7µ x3 Rser=5m
+D4 N028 0 LXK2-PW14 N=13
+L4 IN N035 10µ Rser=50m Rpar=2k
+M5 N035 N033 N034 N034 Si4470DY
+R14 N034 0 8m
+D5 N035 OUT3 MBRS360
+R15 OUT3 N038 .25
+M6 N037 N036 N038 N038 Si7113DN
+R16 OUT3 N032 23.2K
+R17 N032 0 1Meg
+C11 OUT3 0 4.7µ x3 Rser=5m
+D6 N037 0 LXK2-PW14 N=13
+C7 N030 0 6.8n Rser=3.9K
+C8 N031 0 6.8n Rser=3.9K
+C12 IN 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.5ms startup
+* LT3797 - Triple LED Controller\nTriple LED Boost Controller\nInput: 2.7V to 40V      Output: 3x 50V LED Strings @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT3797.sub
+.backanno
+.end

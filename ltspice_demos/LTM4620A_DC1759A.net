@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LTM4620A_DC1759A.asc
+V1 IN 0 12
+C1 OUT2 0 100µ Rser=5m Lser=0.8n
+R1 N009 0 13.3K
+C2 N010 0 .001µ
+C3 IN 0 22µ V=35 Rser=5m x4
+C4 N011 0 .001µ
+C5 OUT1 0 100µ Rser=5m Lser=0.8n
+C6 OUT1 0 330µ V=4 Irms=2.8 Rser=0.009 Lser=0
+R2 N008 0 8.25K
+R3 N002 0 190K
+C7 OUT2 0 330µ V=4 Irms=2.8 Rser=0.009 Lser=0
+R4 N001 N003 10K
+R5 N001 N004 10K
+Rload1 OUT1 0 0.5
+Rload2 OUT2 0 0.768
+XU1 N010 NC_01 N009 0 N008 NC_02 N011 OUT2 N007 OUT1 0 N007 NC_03 OUT1 OUT2 N003 N004 0 N006 MP_04 MP_05 MP_06 MP_07 NC_08 N001 IN MP_09 MP_10 MP_11 MP_12 N005 NC_13 NC_14 0 N002 MP_15 MP_16 NC_17 LTM4620A
+C8 N009 OUT1 47p
+C9 N008 OUT2 33p
+ILoad1 OUT2 0 PWL(0 0 0.7m 0 0.701m 6.5 0.8m 6.5 0.801m 0)
+ILoad2 OUT1 0 PWL(0 0 0.7m 0 0.701m 6.5 0.8m 6.5 0.801m 0)
+C10 0 N001 4.7µ
+.tran 900u startup
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LTM4620A - Dual 13A, Step-Down DC/DC µModule Regulator\nHigh Efficiency Dual 13A Step-Down Regulator\nInput : 5.5V to 16V     Outputs: 3.3 V @ 13A & 5V @ 13A
+.lib LTM4620A.sub
+.backanno
+.end

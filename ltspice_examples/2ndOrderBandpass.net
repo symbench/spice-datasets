@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\2ndOrderBandpass.asc
+L1 N003 0 {L1} Cpar={C1}
+G1 0 N002 1 0 {2/R1}
+R1 N002 0 {R1/2}
+R2 N003 N002 {R1/2}
+G2 0 2 N003 0 {10*H}
+R3 2 0 .1
+* .param f0= 1k Q=.5
+.param R1=1k
+.param L1=1/(C1*(2*pi*f0)**2)
+* Most efficient LTSPICE implementation for f0 and Q set by parameters >>>
+* R1 is arbitary >>>
+* This version puts 1/2 the R1 resistance in the capacitor
+.param C1=Q/(R1*2*pi*f0)
+* Vout
+* Vin
+.backanno
+.end

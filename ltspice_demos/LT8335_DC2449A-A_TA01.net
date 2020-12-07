@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT8335_DC2449A-A_TA01.asc
+C1 N003 0 1µ
+V1 IN 0 5
+L1 IN N001 1.2µ Rser=24m
+R1 OUT N002 1Meg
+R2 N002 0 154K
+C2 OUT N002 4.7p
+C3 OUT 0 22µ Rser=10m
+Rload OUT 0 44
+D1 N001 OUT DFLS220L
+XU1 N002 MP_01 N001 MP_02 0 IN N003 IN LT8335
+C4 IN 0 4.7µ Rser=10m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT8335 - Low Iq Boost/SEPIC/Inverting DC/DC Converter with 2A, 28V Switch\n12V Boost Converter\nInput: 3V to 10V     Output: 12V @ 275mA with 3Vin, Fsw = 2MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT8335.sub
+.backanno
+.end

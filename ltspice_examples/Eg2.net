@@ -1,0 +1,43 @@
+* Z:\mnt\design.r\spice\examples\Eg2.asc
+R1 OUT A 6.49K
+R2 A 0 4.99K
+D1 N001 N006 CMDSH2-3
+C1 N001 0 4.7µ
+L1 N004 OUT 2.2µ Rser=6m
+C2 OUT 0 200µ Rser=9m x2
+V1 IN 0 28
+C3 N005 0 .1µ
+C4 N004 N006 .22µ
+C5 IN 0 22µ Rser=1m Lser=.3n
+R3 N008 N009 24.9K
+C6 N009 0 1n
+C7 N008 0 10p
+V2 A B SINE(0 1m {Freq})
+XU1 0 MP_01 MP_02 N004 MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 IN MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 MP_18 MP_19 MP_20 MP_21 MP_22 MP_23 MP_24 0 N006 N005 MP_25 MP_26 MP_27 MP_28 N002 NC_29 N007 N008 N001 MP_30 N003 MP_31 B NC_32 MP_33 MP_34 MP_35 MP_36 MP_37 MP_38 MP_39 MP_40 N001 LTC3611
+R4 N001 N007 6.49K
+R5 N007 0 39.2K
+R6 IN N003 249K
+R7 N001 N002 15.0K
+R8 N002 0 4.99K
+C8 OUT 0 50µ Rser=1.5m Lser=.24n
+Rload OUT 0 0.25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.measure Aavg avg V(a)
+.measure Bavg avg V(b)
+.measure Are avg  (V(a)-Aavg)*cos(360*time*Freq)
+.measure Aim avg -(V(a)-Aavg)*sin(360*time*Freq)
+.measure Bre avg  (V(b)-Bavg)*cos(360*time*Freq)
+.measure Bim avg -(V(b)-Bavg)*sin(360*time*Freq)
+.measure GainMag param 20*log10(hypot(Are,Aim) / hypot(Bre,Bim))
+.measure GainPhi param mod(atan2(Aim, Are) - atan2(Bim, Bre)+180,360)-180
+* Loop crossover frequency: 125KHz\nPhase Margin: 92°
+.param Freq=125K ; iterate to 0dB gain or use the .step statement below
+.step oct param freq 50K 200K 5
+.save V(a) V(b)  I(L1)
+.option plotwinsize=0 numdgt=15
+.param t0=.2m
+.tran 0 {t0+25/freq} {t0}
+.lib LTC3611.sub
+.backanno
+.end

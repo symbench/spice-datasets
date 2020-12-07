@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LT1002_TA10.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N003 N001 10K
+R2 N001 0 100K
+V3 IN- IN+ SINE(0 1m 100)
+XU1 IN- N001 +V -V N003 LT1001
+XU2 IN+ N002 +V -V OUT LT1001
+R3 N002 N001 2.2K
+R4 N002 N003 10K
+R5 OUT N002 100K
+V4 IN+ 0 SINE(0 1 10)
+.tran 300m
+* LT1002 - Dual, Matched Precision Operational Amplifier\nTwo Op Amp Instrumentation Amplifier
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\2311-12.asc
+V2 N001 0 PWL(0 0 .1u 5)
+C1 OUT 0 10p
+Va+ N003 0 PWL(0 0 400u 4.096)
+Va- N005 0 PWL(0 4.096 400u 0)
+V1 N007 0 PULSE(0 1.8 227n .1n .1n 40n 199.5n)
+Vsclk1 sclk1 0 PULSE(0 1.8 9.5n .1n .1n 4.65n 9.5n)
+Bsclk N008 0 V=max(V(sclk1),V(sclk2))
+Vsclk2 sclk2 0 PULSE(0 1.81 11.875n .1n .1n 66.5n 199.5n)
+V3 N002 0 1.8
+C2 N004 0 10µ ic=4.096 Rser=10m
+C4 N006 0 10µ ic=1.25
+XU1 N001 N003 N005 N006 N004 N007 N008 OUT MP_01 N002 0 LTC2311-12
+.tran 400u
+* SCLK and _CNV\nare shown in timing\ndiagram on page 11\nof LTC2311-12 data sheet
+.lib LTC2311-12.sub
+.backanno
+.end

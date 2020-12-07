@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3375.asc
+V1 IN 0 5
+L1 N001 OUT 2.2µ Rser=20m
+C1 OUT 0 14µ Rser=2m
+R2 OUT N002 590K
+R3 N002 0 200K
+Rload OUT 0 3
+R4 N003 0 402K
+XU1 N003 NC_01 IN N002 N001 MP_02 IN 0 0 LTC3375
+.tran 2m startup
+.lib LTC3375.sub
+.backanno
+.end

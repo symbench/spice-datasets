@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT1074_TA01.asc
+R1 N003 N004 2.7K
+R2 N002 0 2.21K
+R3 OUT N002 2.8K
+L1 N001 OUT 50µ
+D1 0 N001 MBRS140
+C1 IN 0 230µ Rser=0.05
+C2 OUT 0 500µ Rser=0.07
+V1 IN 0 25 Rser=0.02
+C3 N004 0 .01µ
+XU1 IN N001 NC_01 0 N002 N003 NC_02 LT1074
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+* LT1074 - Step-Down Switching Regulator\nInput: 10V to 40V       Output: 5V @ 5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT1074.sub
+.backanno
+.end

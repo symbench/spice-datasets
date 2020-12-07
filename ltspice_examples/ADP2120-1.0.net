@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADP2120-1.0.asc
+L1 N002 OUT 1.5µ
+C1 OUT 0 22µ
+R1 OUT N001 100K
+V1 IN 0 5
+Rload OUT 0 1
+XU1 IN IN N002 0 0 OUT IN N001 IN IN ADP2120-1.0
+C2 OUT 0 22µ
+.tran 1m
+.lib ADP2120-1.0.sub
+.backanno
+.end

@@ -1,0 +1,85 @@
+* Z:\mnt\spice-netlists\LTC3853_DC1349A.asc
+XU1 N026 N027 N015 N017 N016 N018 N031 N032 N019 N022 0 N020 N023 N037 N028 N004 N003 N029 N034 N030 N035 N001 NC_01 IN N008 N006 N011 N014 N001 N013 N010 N005 N007 NC_02 NC_03 NC_04 0 N002 NC_05 N025 LTC3853
+V1 IN 0 12
+C1 N001 0 4.7µ
+R1 N001 N003 100K
+R2 N001 N004 100K
+M§Q1 IN N005 N010 N010 RJK0305DPB
+C2 N007 N010 .1µ
+D1 N001 N007 CMDSH2-3
+M§Q2 N010 N013 0 0 RJK0301DPB
+L1 N010 N009 560n Ipk=22 Rser=0.0016 Rpar=0 Cpar=0 mfg="Vishay" pn="IHLP4040DZ11-0R56"
+R3 N009 OUT1 2m
+R4 N009 N015 10
+R5 OUT1 N017 10
+C3 N015 N017 1000p
+C5 N021 0 1500p
+R6 OUT1 N019 24.9K
+R7 N019 0 20K
+C7 OUT1 N019 22p
+M§Q3 IN N006 N011 N011 RJK0305DPB
+C8 N008 N011 .1µ
+D2 N001 N008 CMDSH2-3
+M§Q4 N011 N014 0 0 RJK0301DPB
+R8 N012 OUT2 2m
+R9 N012 N016 10
+R10 OUT2 N018 10
+C9 N016 N018 1000p
+R11 OUT2 N020 10K
+R12 N020 0 20K
+M§Q5 IN N034 N030 N030 RJK0305DPB
+C13 N029 N030 .1µ
+D3 N001 N029 CMDSH2-3
+M§Q6 N030 N035 0 0 RJK0301DPB
+L3 N030 N036 780n Ipk=22 Rser=0.0018 Rpar=0 Cpar=0 mfg="Vishay" pn="IHLP4040DZ11-0R78"
+R13 N036 OUT3 2m
+R14 N036 N031 10
+R15 OUT3 N032 10
+C14 N031 N032 1000p
+C17 N027 0 .001µ
+R16 OUT3 N037 43.2K
+R17 N037 0 20K
+Rload3 OUT3 0 .17
+Cout1 OUT1 0 100µ Rser=2m
+Cout2 OUT1 0 330µ Rser=9m x2
+Rload1 OUT1 0 0.12
+R18 N001 N002 10K
+R19 0 N002 2.55K
+C4 N002 0 1000p
+L2 N011 N012 470n Ipk=30 Rser=0.00153 Rpar=0 Cpar=0 mfg="Vishay" pn="IHLP4040DZ11-0R47"
+Cout3 OUT2 0 100µ Rser=2m
+Cout4 OUT2 0 330µ Rser=9m x2
+Rload2 OUT2 0 0.08
+C10 OUT2 N020 47p
+Cout5 OUT3 0 100µ Rser=2m
+Cout6 OUT3 0 330µ Rser=9m x2
+R20 N025 0 20K
+R21 OUT3 N025 24.9K
+R22 N026 0 20K
+R23 N026 OUT3 10K
+C6 IN 0 10µ Rser=5m x2
+C12 IN 0 10µ Rser=5m x2
+C15 IN 0 10µ Rser=5m x2
+Cin IN 0 180µ Rser=30m
+C11 0 N024 1500p
+R24 N024 N023 10K
+C18 0 N023 220p
+C19 N022 0 330p
+R25 N021 N022 15K
+C16 N028 N033 1500p
+R26 0 N033 13K
+C20 N028 0 330p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+* LTC3853 - Triple Output, Multiphase Synchronous Step-Down Controller\nInput: 6.5V - 14V     Outputs: 1.8V @ 15A, 1.2V @ 15A, 2.5V @ 15A, Fsw = 400kHz
+* 1.8V @ 15A
+* 1.2V @ 15A
+* 2.5V @ 15A
+* Notes:\n  In this application, Vout1, Vout2 and Vout3 will start up with coincident tracking. If you want to disable this function, \n  please remove the voltage dividers at TK/SS1 and TK/SS2 pins, and add ceramic capacitors.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3853.sub
+.backanno
+.end

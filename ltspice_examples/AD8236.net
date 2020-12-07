@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD8236.asc
+XU1 N004 N003 N002 N001 0 N005 OUT +V AD8236
+Vcm N004 0 2.5
+Vref N005 0 2.5
+V1 +V 0 5
+Rload OUT 0 10K
+Vdiff N001 N004 SINE(0 .1 1K)
+Rgain N002 N003 84.5K
+.tran 100m
+.lib ADI1.lib
+.backanno
+.end

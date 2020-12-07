@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LT4356-1_TA01.asc
+S1 0 OUT N002 0 SHORT
+V1 IN 0 PWL(0 0 1m 12 80m 12 80.2m 80 90m 45 100m 26.9 120m 12)
+V2 N002 0 PWL(0 0 200m 0 201m 1 220m 1 221m 0)
+R1 IN N005 383K
+R2 N005 0 100K
+R3 IN N001 10m
+R4 N003 N004 10
+R5 OUT N006 102K
+R6 N006 0 4.99K
+C2 N007 0 .1µ
+XU1 N007 N006 OUT N004 N001 IN IN NC_01 NC_02 0 NC_03 N005 LT4356-1
+M§Q1 N001 N003 OUT OUT IRF1310
+Rload OUT 0 50
+C1 N004 0 .047µ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 300m
+.model SHORT SW(Ron=10m Roff=1G Vt=0.5 Vh=-.1)
+* LT4356 - Surge Stopper\n4A, 12V Overvoltage Output Regulator
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT4356-1.sub
+.backanno
+.end

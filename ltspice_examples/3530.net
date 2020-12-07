@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\3530.asc
+L1 N001 N002 4.7µ Rpar=1K
+V1 IN 0 2.8
+R1 IN N003 1Meg
+C1 N003 0 .002µ
+R2 OUT N005 340K
+R3 N005 0 200K
+C2 N005 N007 470p Rser=15K
+C3 OUT 0 22µ
+R4 N006 0 33.2K
+R5 N004 0 100K
+C4 N004 0 .01µ
+C5 OUT N005 100p Rser=4.7K
+XU1 N006 N004 N001 N002 0 OUT IN N003 N005 N007 LTC3530
+Rload OUT 0 6.6
+.tran 2m startup
+.lib LTC3530.sub
+.backanno
+.end

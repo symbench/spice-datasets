@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1812.asc
+V1 +V 0 5
+V2 -V 0 -5
+XU1 0 NC_01 +V -V N002 NC_02 LT1812
+C1 N002 N004 47p
+R3 N004 N001 665
+R4 N001 IN 232
+R1 N002 N001 232
+C2 N001 0 220p
+XU2 0 N005 +V -V OUT NC_03 LT1812
+C3 OUT N005 22p
+R2 N005 N003 665
+R5 N003 N002 274
+R6 OUT N003 274
+C4 N003 0 470p
+V3 IN 0 AC 1
+.ac oct 10 100K 100Meg
+* 4MHz, 4th Order Butterworth Filter
+.lib LTC.lib
+.backanno
+.end

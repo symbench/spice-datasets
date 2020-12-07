@@ -1,0 +1,30 @@
+* Z:\mnt\spice-netlists\LT3988_TA01_DC1677A.asc
+V1 IN 0 12
+C1 N003 N004 .22µ
+L2 N004 OUT2 15µ
+R1 OUT2 N008 34K
+R2 N008 0 10K
+D2 N006 N004 PMEG6010AED
+C2 OUT2 0 47µ
+C3 N002 N001 .22µ
+L1 N001 OUT1 22µ
+R4 OUT1 N007 57.6K
+R5 N007 0 10.2K
+D1 N005 N001 PMEG6010AED
+C4 OUT1 0 47µ
+R7 N011 0 200K
+C5 N009 0 1000p
+C6 N010 0 1000p
+XU1 N005 N001 N002 OUT2 IN N003 N004 N006 IN N010 N008 MP_01 N011 N007 N009 IN 0 LT3988
+C7 OUT2 N008 22p
+Rload1 OUT1 0 5
+Rload2 OUT2 0 3.3
+C8 IN 0 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+* LT3988 - Dual 60V Monolithic 1A Step-Down Switching Regulator\nDual 60V Step-Down Regulator\nInput: 7V to 60V      Output: 5V @ 1A & 3.3V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright  © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3988.sub
+.backanno
+.end

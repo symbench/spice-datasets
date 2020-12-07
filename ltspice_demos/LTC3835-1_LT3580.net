@@ -1,0 +1,44 @@
+* Z:\mnt\spice-netlists\LTC3835-1_LT3580.asc
+M§Q1 IN N006 N010 N010 Si4840DY
+M§Q2 N010 N014 OUT OUT Si4840DY
+L1 N010 N011 4.7µ Rser=0.002
+R1 N011 0 .012
+R2 0 N018 215K
+R3 N018 OUT 39.2K
+C1 N009 N010 .1µ
+D1 N001 N009 MBR0540
+C2 N001 OUT 4.7µ
+C3 N015 OUT 4.7n Rser=10K Cpar=100p
+C4 N013 OUT {0.01µ/10}
+V1 IN 0 11
+C5 0 OUT 300µ Rser=0.005
+C6 N003 OUT 10µ Rser=0.01
+R4 N011 N016 10
+R5 0 N017 10
+XU1 OUT N015 N013 N018 OUT OUT N014 N001 N003 N010 N006 N009 NC_01 N017 N016 N001 LTC3835-1
+D2 OUT N010 1N5818
+C7 IN 0 100µ
+XU2 N005 N008 IN N002 IN N007 N004 MP_02 OUT LT3580
+L2 IN N002 150µ
+R6 N003 N005 80.6k
+C8 N012 OUT .01µ
+R7 N007 OUT 84.5K
+C9 IN OUT 1µ
+C10 N004 OUT {0.01µ/10}
+R8 N008 N012 20K
+D3 N002 N003 1N5819
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+* -5.2V Rail
+* This is SPICE simulation of the wide input voltage range (2V to 20V) positive to negative converter.\nInput: 2 -20V       Output: -5.2V @ 1A
+* Synchronous buck controller LTC3835-1 U1 employed for actual Positive to Negative conversion and monolithic boost LT3580 used for biasing U1 at low voltages.
+* Notes:\n  The softstart caps have been reduced by a factor of 10 in the interest of shortening simulation time.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT3580.sub
+.lib LTC3835-1.sub
+.backanno
+.end

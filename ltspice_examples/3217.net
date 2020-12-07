@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3217.asc
+V1 N001 0 3.6
+C1 N003 N005 2.2µ
+C2 N007 N009 2.2µ
+D1 N002 N004 NSPW500BS
+R1 N011 0 19.6K
+R2 N012 0 6.49K
+C3 N002 0 4.7µ
+XU1 N003 N002 N001 N004 N006 N008 N010 0 N011 N012 N001 N009 0 N005 N001 N007 LTC3217
+D2 N002 N006 NSPW500BS
+D3 N002 N008 NSPW500BS
+D4 N002 N010 NSPW500BS
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LTC3217.sub
+.backanno
+.end

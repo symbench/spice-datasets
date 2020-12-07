@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\4274.asc
+Rclass N007 N004 30.9
+R2 N003 N006 100K
+R3 N003 N008 100K
+R1 N003 N005 100K
+Cload N003 N009 100µ Rser=10m
+C1 N003 N004 .22µ Rser=10m
+D1 0 N003 MURS120
+D2 N004 N013 MURS120
+Rload N003 N009 1.3K
+XU1 N004 N005 N007 MP_01 N004 N004 N009 N009 N008 N006 MP_02 N003 LTC4265
+XU2 N001 0 0 N011 N012 N010 N013 Status Class N002 NC_03 NC_04 NC_05 LTC4274
+V1 N002 0 3.3
+V2 N001 0 PWL(0 0 100u 3.3)
+M1 N013 N010 N012 N012 BSH114
+R4 N012 N011 .25
+V3 0 N011 56
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1
+* Diode Bridge
+* Set for Class 4 Load
+* Status Pin Voltage  Result  (see datasheet Table 3) \n \n0    Detect Status unknown  \n1    Detect Good                            \n2    Rsig too Low                        \n3    Rsig too High  \n4    Cpd too High                          \n5    Short Circuit \n6    Open Circuit
+* >Status and >Class are not pins of the LTC4274,\nthey substitute for I2C interface
+.lib LTC4265.sub
+.lib LTC4274.sub
+.backanno
+.end

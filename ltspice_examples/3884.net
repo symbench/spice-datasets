@@ -1,0 +1,47 @@
+* Z:\mnt\design.r\spice\examples\3884.asc
+V1 IN 0 12
+C1 0 N001 1µ
+M§Q1 IN N002 N004 N004 RJK0305DPB
+M§Q2 N004 N008 0 0 RJK0301DPB
+C2 N005 N004 .1µ
+D1 N001 N005 CMDSH2-3
+C3 N010 OUT1 .22µ
+R1 N004 N010 931
+C5 OUT1 0 330µ x2 Rser=5m
+R2 OUT1 0 .05
+M§Q3 IN N003 N007 N007 RJK0305DPB
+M§Q4 N007 N009 0 0 RJK0301DPB
+L2 N007 OUT0 .33µ Rser=.32m
+C7 N006 N007 .1µ
+D2 N001 N006 CMDSH2-3
+C8 N011 OUT0 .22µ
+R11 N007 N011 931
+C9 OUT0 0 330µ x2 Rser=5m
+R12 OUT0 0 .06
+L1 N004 OUT1 .33µ Rser=.32m
+XU1 OUT0 0 N010 OUT1 N015 N013 N011 OUT0 MP_01 MP_02 N021 MP_03 MP_04 MP_05 MP_06 MP_07 N022 N020 MP_08 MP_09 N017 N016 NC_10 N018 N019 MP_11 MP_12 N023 N012 N014 0 OUT1 NC_13 N004 N002 N005 N008 N001 IN 0 0 N009 N006 N003 N007 MP_14 MP_15 NC_16 0 LTC3884 VIN_ON=5.5 VIN_OFF=5 Vout_0=1.6 Vout_1=2.5 Ilim0_range=0 Ilim1_range=0 OC_limit0=1 OC_limit1=1 Mode_ll=2 Fault_response=0 Retry_delay=.1m gm0=3m gm1=3m Rth0=5K Rth1=5K LowDcr=1 Freq=500K PHs_0=0 PHs_1=180 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_range=0 Vout1_range=0 Sync=0
+C4 N013 0 220p
+C6 N015 0 4700p
+C10 N012 0 220p
+C11 N014 0 2200p
+R3 N020 N023 10K
+R4 N022 N023 10K
+R5 N021 N023 4.99K
+C12 N023 0 1µ
+R6 N017 0 17.8K
+R7 N019 N017 20K
+R8 N016 0 7.32K
+R9 N019 N016 24.9K
+R10 0 N018 11.3K
+R13 N019 N018 24.9K
+C13 N019 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran  1.2m startup
+* Please read the following notes carefully since the model behaves differently from the user \ninterface for the LTC3884.\n \n(1) PMBus communication and memory address related functions and pins are not modeled.\n \n(2) Changes to parameter values while the simulation is running will not take effect unless the\nsimulation is stopped and restarted. This is different from the way the part operates which will\nrespond to the changes while running.  \n \n(3) Share_clk is not modeled. The default time reference of LTspice is used as the common time \nbase for all time-related parameters.\n \n(4)The following parameters can be defined by right-clicking on the LTC3884 symbol.\nThe nomenclature used here differs from the one in the data sheet. If any value of these parameters is\nset beyond the scope described in the data sheet, the resulting simulation will not be meaningful.\n \n     VIN_ON & VIN_OFF -- in volts, set the unit start/stop input voltages; \n     Freq -- in Hz, sets switching frequency as one of values of 250k, 350k, 425k, 500k, 575k, 650k, \n                 750k,1000k. Freq_cfg pin needs to float or short to VDD25, to make the value be in effect;\n     PHs_0 & PHs_1 -- in degree, set phase angle related to SYNC signal. \n                Certain combinations are restricted as in data sheet. Phase_cfg pin needs to float or \n                short to VDD25, to make the value be in effect;  \n     Ton0_delay & Ton0_rise; Ton1_delay & Ton1_rise -- in sec, set delay and soft-start timers for \n                channel0 and channel1. Initialization time is not modeled; \n     Toff0_delay & Toff0_fall; Toff1_delay & Toff1_fall -- in sec, set delay and soft-off timers for \n                channel0 and channel1;\n     Vout_0 & Vout_1 -- in volt, set output voltages respectively. Vout_cfgn pin needs to float or \n                short to VDD25, to make the value be in effect;\n     Vout0_range & Vout1_range -- set maximum output range, with value 0\n                for 4.096V (CH0) and 5.5V (CH1), value 1 for 2.75V;\n     Ilim0_range & Ilim1_range -- set maximum sensed peak current range, with value 0\n               for low (45.14mV), and 1 for high (81.25mV);\n     OC_limit0 & OC_limit1 -- set ratio of peak current limit to the maximum value defined by Ilimit_range. \n               It must be one of values: 0.5, 0.572, 0.642, 0.714, 0.786, 0.858, 0.928, 1;\n     Mode_II -- sets light load operation mode: 0 for discontinuous, 1 for forced continuous;\n     Fault_response -- sets the response mode of the LTC3884 to occuring faults:\n              0 for ignore, 1 for latch up, 2 for Hiccup after Retry_delay time;\n     Retry_delay -- in sec, sets the timer before the LTC3884 turns on after a fault;\n     gm -- transconductance of the error amplifier. It must be between 1m mho and 5.73m mho;\n     Rth -- Compensation resistor. It must be set between 0k ohms and 62k ohms;\n     LowDCR -- set to 1 if DCR is below 1m ohm and make RC = L/(5*DCR), set to 0 if DCR is above \n               1m ohm and make RC = L/DCR.
+.lib LTC3884.sub
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\AD5770R.asc
+RLOAD iOUT 0 5
+CLOAD iOUT 0 4.7µ
+Vdac vDAC 0 PWL(0 0 10u 0 +10n 1.95 200u 1.95 +10n 0.9)
+V1 N001 0 1.95
+V2 N002 0 -1.5
+XU1 vDAC iOUT N001 N002 0 AD5770R AD5770R Range=1
+.tran 350u
+.lib AD5770R.sub
+.backanno
+.end

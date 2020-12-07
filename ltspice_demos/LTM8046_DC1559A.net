@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTM8046_DC1559A.asc
+V1 IN 0 12
+C1 N002 0 4.7µ
+R1 N004 0 8.45K
+C2 OUT 0 100µ Rser=10m
+XU1 0 OUT 0 N004 IN N002 N001 N003 LTM8046
+C3 N003 0 0.01µ
+R2 N001 0 90.9K
+R3 N001 IN 102K
+Rload OUT 0 14.3
+C4 IN 0 10µ
+.tran 15m startup
+* LTM8046 3.1Vin to 31Vin, 2kVAC Isolated DC/DC µModule Converter\n5V Isolated Flyback Converter\nInput: 3.2V to 26V  Output: 5V @ 350mA with Vin=12V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTM8046.sub
+.backanno
+.end

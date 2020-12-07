@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LT8331_TA06_SEPIC.asc
+XU1 N003 MP_01 IN MP_02 N004 MP_03 OUT MP_04 N005 N006 N007 0 MP_05 N001 MP_06 MP_07 0 LT8331
+C1 N007 0 10n
+R1 N006 0 63.4K
+V1 IN 0 48
+L1 N001 IN 220µ Rser=20m
+C2 N001 N002 2.2µ Rser=10m
+L2 N002 0 220µ Rser=20m
+R2 IN N003 1Meg
+R3 N003 0 59K
+D1 N002 OUT MBRS1100
+C3 OUT 0 4.7µ x4 V=63 Irms=1.73205 Rser=0.075 Lser=0 mfg="KEMET" pn="T521D475M063ATE075" type="Tantalum"
+R4 OUT N005 1Meg
+R5 N005 0 34.8K
+Rload OUT 0 290
+C4 N004 0 1µ
+C5 IN 0 2.2µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10m startup
+K1 L1 L2 1
+* LT8331 - Low Iq Boost/SEPIC/Flyback/Inverting DC/DC Converter with 500mA, 140V Switch\n48V SEPIC Converter\nInput: 36V to 72V     Output: 48V @ 165mA, Fsw = 450KHz
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT8331.sub
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADA4895.asc
+V1 +V 0 5
+Vin IN 0 PULSE(-0.1 0.1 20n 10n 10n 90n 200n 10)
+R1 N001 0 24.9
+R2 OUT N001 249
+V2 -V 0 -5
+Rload OUT 0 1K
+XU1 IN N001 +V -V OUT +V ADA4895
+.tran 2u
+.lib ADI.lib
+.backanno
+.end

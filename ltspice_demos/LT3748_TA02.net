@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LT3748_TA02.asc
+R1 N005 0 34.8K
+V1 IN 0 12
+C1 N007 0 100n
+C2 0 N012 4.7µ
+R2 N004 N003 52.3K
+R3 0 N006 6.04K
+L1 IN N004 20µ Rpar=50K
+L2 0 N001 5µ Rpar=50K
+C3 OUT 0 100µ V=10
+D1 N001 OUT PDS760
+R4 N008 N007 1K
+C4 0 N010 .002µ
+R5 IN N002 825K
+R6 N002 0 215K
+XU1 0 MP_01 MP_02 N009 IN N012 N002 MP_03 MP_04 N010 N011 N008 N003 N006 N005 LT3748
+M§Q1 N004 N009 N011 N011 Si4490DY
+R7 N011 0 6m
+Rload OUT 0 2.5
+C5 IN 0 10µ
+D2 0 OUT BZX84C6V2L
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 5m startup
+* LT3748 - 5V, 2A Isolated Output from Automotive Input with Continuous Operation from 6V to 45V \nInput: 6V to 45V    Output: 5V @ 2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT3748.sub
+.backanno
+.end

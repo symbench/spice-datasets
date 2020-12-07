@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3095_DC2270A.asc
+XU1 0 N003 MP_01 N007 MP_02 N003 MP_03 OUT1 N005 IN IN N006 OUT2 MP_04 N004 MP_05 N008 0 N004 MP_06 N002 IN MP_07 N001 LT3095
+V1 IN 0 4
+L1 IN N001 6.8µ Rser=340m
+L2 IN N002 10µ Rser=350m
+C1 N003 0 10µ Rser=10m
+C2 N004 0 10µ Rser=10m
+C3 N005 0 .001µ
+R1 N005 0 100K
+C4 N007 0 0.1µ
+C5 OUT1 0 2.2µ Rser=3m
+Rload1 OUT1 0 100
+C6 N006 0 .001µ
+R2 N006 0 300K
+C8 OUT2 0 2.2µ Rser=3m
+Rload2 OUT2 0 300
+R3 N008 0 100K
+C7 IN 0 2.2µ x2
+.tran 2m startup
+* LT3095 - Dual-Channel Low Noise Bias Generators\nDual Low Noise, Low Ripple Bias Generator\nInput: 3V to 20V     Output1: 5V @ 50mA; Output2: 15V @ 50mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT3095.sub
+.backanno
+.end

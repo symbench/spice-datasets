@@ -1,0 +1,47 @@
+* Z:\mnt\spice-netlists\LTC6362_LTC5599_Baseband_IQModulator.asc
+XU1 N001 Vocm Vcc N002 N008 0 NC_01 N007 LTC6362
+R1 N002 N001 2.49K
+R2 N001 SIGNAL 732
+R3 N007 VREF 732
+R4 N007 N008 2.49K
+R5 SIGNAL 0 1.87K
+R6 VREF 0 1.87K
+V1 SIGNAL 0 0.512 AC 1
+V2 VREF 0 0.512
+V3 Vocm 0 1.4
+V4 Vcc 0 3.3
+R7 N003 N002 133
+R8 N009 N008 133
+R9 N005 N006 267
+L1 N003 N004 470µ
+L2 N004 N005 220µH
+L3 N009 N010 470µ
+L4 N010 N006 220µH
+C1 N003 N009 .013µ
+C2 0 N003 .027µ
+C3 N009 0 .027µ
+C4 N004 N010 4.7n
+C5 0 N004 .01µ
+C6 N010 0 .01µ
+C7 N005 N006 1n
+C8 0 N005 2.2n
+C9 N006 0 2.2n
+E1 Vbb-diff 0 N005 N006 1
+C10 N001 N002 220p
+C11 N008 N007 220p
+.ac dec 1000 100 1000000
+* Notes:\n   If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n   It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n   Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n   Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n   Copyright © 2016 Linear Technology Inc. All rights reserved.
+* DAC Re-Construct LPF
+* Single-Ended to Diff. Driver
+* LTC5589 or LTC5599 \nIQ Modulator
+* LTC5599 - 30MHz to 1300MHz Low Power Direct Quadrature Modulator\nLTC6362 - Precision, Low Power Rail-to-Rail Input/Output Differential Op Amp/SAR ADC Driver\nExample Baseband Design for a Low-Power IQ Modulator
+* SIGNAL DAC
+* Single-ended \nDAC with \nvoltage output.
+* Fixed\nDC ref.\nat DAC\ncenter volt.
+* to opposite\nchannel
+* Vref DAC
+* +1.4V
+* Vcm= 1.4V
+.lib LTC7.lib
+.backanno
+.end

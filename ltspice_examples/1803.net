@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\1803.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N002 10K
+R2 N002 IN 1K
+R3 N005 N006 100K
+R4 N006 OUT 10K
+D1 N004 N005 1N4148
+D2 N004 N003 1N4148
+R5 +V N004 2K
+R6 N003 -V 1Meg
+C1 N003 0 .1µ
+V3 IN N001 PULSE(0 50m 10u 1u 1u 88u 100u) Rser=10
+V4 N001 0 PWL(0 0 1m .1)
+C2 IN 0 .1µ
+XU1 N003 N002 OUT +V -V LT1803
+XU2 0 N006 N005 +V -V LT1803
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m
+.options gminsteps=0 srcsteps=0
+* Inverting DC Restore
+.lib LTC2.LIB
+.backanno
+.end

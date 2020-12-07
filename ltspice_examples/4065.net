@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\4065.asc
+CBAT BATT 0 150m
+R1 N004 0 2K
+S1 0 BATT N001 0 LOAD
+R2 IN N002 510
+V3 N001 0 PWL(0 0 17 0 +100n 1 +0.5 1 +100n 0)
+V1 IN 0 PWL(0 0 20u 5)
+D2 N002 N003 NSCW100
+XU1 0 N003 BATT IN 0 N004 LTC4065
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 30
+.model LOAD SW( Ron=2 Roff=1G Vt=0.5 Vh=-0.3 )
+* Try ReduceBadBattTime=500
+.lib LTC4065.sub
+.backanno
+.end

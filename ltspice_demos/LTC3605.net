@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTC3605.asc
+L1 N004 OUT 1µ
+R1 OUT N005 2K
+V1 IN 0 12
+R2 N005 0 1K
+R3 N006 0 162K
+R4 N008 N007 16K
+C1 OUT 0 100µ
+C2 N007 0 10p
+C3 IN 0 22µ x2
+C4 N008 0 220p
+XU1 N006 N001 N001 N005 N002 N007 IN NC_01 OUT 0 N004 MP_02 MP_03 MP_04 MP_05 MP_06 IN MP_07 IN N003 N001 0 NC_08 0 LTC3605
+C5 N003 N004 0.1µ
+D1 N001 N003 CMDSH2-3
+C6 N001 0 2.2µ
+C7 N002 0 0.001µ
+Rload OUT 0 .36
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+* LTC3605 - 15V, 5A, 4MHz, Monolithic Synchronous Step-down Regulator\nInput: 12V     Output: 1.8V @ 5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LTC3605.sub
+.backanno
+.end

@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3863_DC1737A_F15A.asc
+C2 N003 0 27n
+V1 IN 0 12
+C5 IN N001 .47µ
+R7 IN N002 16m
+M§Q1 N008 N005 N002 N002 FDS6675
+D1 OUT N008 B540C
+L1 N008 0 10µ Rser=25m
+R5 OUT N007 1.21Meg
+R3 N007 N010 80.6K
+C12 0 OUT 33µ x2 Rser=5m
+Rload OUT 0 12
+XU1 NC_01 N009 0 N006 N010 N004 N007 NC_02 N001 N002 IN N005 0 LTC3863
+R1 N009 0 61.9K
+C34 0 OUT 150µ x2 Rser=25m
+C8 N007 N010 68p
+R2 N004 N003 14.7K
+C3 N004 0 390p
+C6 N006 0 100n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10m startup
+* Note:\n  A smaller value SS capacitor (C6) can be used to reduce simulation time. \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* 1- Parasitics not modeled\n2- Component substitutions have been made\n     based on available component models
+* LTC3863 - 60V, Low IQ Inverting DC/DC Controller\nLow Iq Inverting DC/DC Converter\nInput: 4.5V to 16V     Output: -12V @ 1A
+.lib LTC3863.sub
+.backanno
+.end

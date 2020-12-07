@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT1792_LT1464_LTJ1999SEPF3_.asc
+XU1 IN N002 +V -V OUT LT1792
+R1 OUT N001 3.9K
+R2 N002 N001 100Meg
+R3 N001 0 200
+R4 IN N005 100Meg
+R5 N005 0 1Meg
+R6 N003 N005 100K
+R7 OUT N004 1Meg
+R8 N006 0 1Meg
+C2 N004 N003 .47µ
+V1 IN 0 SINE(10m 10m 1K 3m) Rser=1m Cpar=10p
+V2 +V 0 10
+V3 -V 0 -10
+C1 N001 N002 100p
+XU3 N006 N004 +V -V N003 LT1464
+.tran 10m startup
+* LT1792 - Low Noise, Precision, JFET Input Op Amp\nLT1464 - Dual µPower, 1MHz C-Load pA Bias Current JFET Input Op Amps\nLow Noise Hydrophone Amplifier with DC Servo
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.backanno
+.end

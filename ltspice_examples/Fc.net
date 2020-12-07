@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\Fc.asc
+V1 bias 0 pwl(0 -10 1m 10)
+R9 bias N001 100
+D1 0 N001 DX
+B1 0 0 I={Cjo}/(1+max(V(bias),-.5*{Vj})/{Vj})**{m}
+XU1 N001 0 bias res cap capometer current=1m freq=3Meg C=.25µ
+B2 0 0 I=max(0.,({Cjo}/(1-{Fc})**{1+m})*({1-Fc*(1+m)}-{m/Vj}*V(bias)))
+B3 0 0 I=V(cap)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m
+.options maxstep=.0125u
+.params Cjo=930p m=.75 Vj=1.2 Fc=0.;-.5
+.include capometer.sub
+.model DX D(Is=0 Cjo={Cjo} m={m} vj={Vj} Fc={Fc} tt=.5u))
+*.model DX D(Is=0 Cjo={Cjo} m={m} vj={Vj} Fc={Fc} tt=.5u)
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\7103.asc
+L1 N001 OUT 18µ Rser=5m
+C1 OUT 0 100µ Rser=15m
+V1 IN 0 50
+Rload OUT 0 5
+XU1 MP_01 MP_02 IN MP_03 MP_04 0 0 NC_05 N002 OUT 0 0 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 0 OUT N002 MP_12 MP_13 N001 MP_14 MP_15 MP_16 MP_17 MP_18 IN MP_19 MP_20 MP_21 MP_22 0 LTC7103
+C6 N002 0 1µ IC=0 Rser=20m
+.tran 1.8m startup
+.lib LTC7103.sub
+.backanno
+.end

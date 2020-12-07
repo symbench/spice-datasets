@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC3026-1_TA01A.asc
+Vin IN 0 1.5
+R1 OUT N003 100K
+R2 OUT N002 8.06K
+R3 OUT 0 0.8
+R4 N002 0 4.02K
+C2 OUT 0 10µ
+XU1 IN MP_01 0 0 N001 IN N003 N002 OUT LTC3026-1
+Vbias N001 0 5
+C1 IN 0 4.7µ
+.tran 1m startup
+* LTC3026-1 - 1.5A Low Input Voltage VLDO Linear Regulator\nLow Input Voltage Linear Regulator\nInput: 1.14V to 5.5V     Output: 1.2V @ 1A
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC3026.lib
+.backanno
+.end

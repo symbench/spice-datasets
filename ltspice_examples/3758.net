@@ -1,0 +1,35 @@
+* Z:\mnt\design.r\spice\examples\3758.asc
+M§Q1 N006 N008 N009 N009 Si4848DY
+R1 N010 0 63.4K
+R2 N013 0 15.8K
+R3 OUT N013 105K
+L1 IN N006 28.8µ Rpar=3K
+D1 N003 OUT MBRS360
+R4 N012 N011 10K
+C2 N011 0 .01µ
+V1 IN 0 54
+C3 N001 0 4.7µ
+C4 N007 0 .01µ
+R5 N004 0 44.2K
+R6 IN N004 1Meg
+R7 N009 0 .03
+XU1 N012 N013 N007 N010 MP_01 N009 N008 N001 N004 IN 0 LT3758
+C5 N012 0 100p
+R8 IN N005 6.2K
+C6 IN N005 .022µ
+D2 N006 N005 ES1D
+L2 0 N003 3.2µ Rpar=1K
+D3 N002 N001 1N4148
+R9 OUT N002 5.1
+Rload OUT 0 10
+C1 OUT 0 47µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+K1 L1 L2 .99
+.lib LT3758.sub
+.backanno
+.end

@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTC6400-20_DIFF_Input.asc
+XU1 N002 N006 N001 N003 N005 0 0 N004 NC_01 NC_02 LTC6400-20
+VS1 N002 N004 AC 1 0 Rser=50
+V+ N001 0 3
+CB1 N001 0 1000p
+CB2 N001 0 0.1µ
+VOCM N006 0 1.25
+XU2 N008 N006 N001 N009 N011 0 0 N010 NC_03 NC_04 LTC6400-20
+XU3 N012 N006 N001 N013 N015 0 0 N014 NC_05 NC_06 LTC6400-20
+R1 N012 N014 68.1
+L1 N007 0 1m
+L2 N008 N010 4m
+VS2 N007 0 AC 1 0 Rser=50
+VS3 N012 N014 AC 1 0 Rser=50
+.ac dec 100 100K 1G
+* Differential Resistor Match
+K1 L1 L2 1
+* 1:4 Transformer\n Match
+* No Impedance Match
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LT6400-20 - 1.8 GHz Low Noise, Low Distortion Differential ADC Driver for 300 MHz IF \nDifferential Impedance Matching for Fully-Differential Amplifiers\nSimulation demonstrates a variety of matching methods for the LTC6400\nThe matching methods are also applicable to other fully-differential drivers\nMore matching information is available in AN123, the LTC6400-20 datasheet, and the LTC6403 datasheet
+* The resistance at the\nsecondary appears as\na 50 ohm differential\nload from the primary
+* The differential input\n resistance is 68.1 in\n parallel with 200
+* The differential\nload is 200 ohms
+.lib LTC6.lib
+.backanno
+.end

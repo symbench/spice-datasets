@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTM4624_DC1889A_TA01A.asc
+XU1 NC_01 N001 N001 N002 N003 NC_02 IN NC_03 OUT 0 0 IN IN LTM4624
+V1 IN 0 12
+C1 N003 0 .005µ
+R1 N002 0 40.2K
+C2 OUT 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+Rload OUT 0 .375
+C3 IN 0 10µ Rser=2m
+C4 IN 0 22µ x2 V=16 Irms=0 Rser=2m Lser=0
+C5 OUT N002 100p
+C6 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+C7 OUT 0 22µ V=6.3 Irms=0 Rser=0.002 Lser=0
+.tran 2m startup
+* LTM4624 - 14Vin, 4A Step-Down DC/DC µModule Regulator \n4A Buck µModule Regulator\nInput: 4V to 14V     Output: 1.5V @ 4A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTM4624.sub
+.backanno
+.end

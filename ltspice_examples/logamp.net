@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\logamp.asc
+R1 N001 IN 1K
+XU1 N001 0 N002 opamp Aol=100K GBW=10Meg
+XU2 N003 N004 OUT opamp Aol=100K GBW=10Meg
+C1 N002 N001 30p
+D1 N002 N001 1N4148
+Q1 N001 0 N002 0 2N3904
+Q2 N004 N004 N002 0 2N3904
+I1 0 N004 100µ
+R2 N003 0 1K
+R3 OUT N003 15K
+B1 IN 0 V=exp(time-7)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 10
+.include opamp.sub
+.options maxstep=2m
+* Log amp
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

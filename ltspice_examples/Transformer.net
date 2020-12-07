@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\Transformer.asc
+L1 0 N001 100µ
+L2 OUT 0 900µ
+V1 IN 0 PULSE(0 1 0 10n 10n 5u 10u)
+R1 N001 IN 10
+K1 L1 L2 1
+.tran 100u
+* This example schematic is supplied for informational/educational purposes only.
+* A transformer with two windings, 1 to 3 turns winding ratio
+.backanno
+.end

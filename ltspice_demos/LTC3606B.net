@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC3606B.asc
+V1 IN 0 5
+L1 N001 OUT 1.5µ
+R1 N004 0 105K
+C1 N004 0 1µ
+R2 OUT N003 1Meg
+R3 N003 0 210K
+C2 OUT 0 100µ
+XU1 0 N004 MP_01 N001 IN N002 IN N003 LTC3606B
+R4 IN N002 499K
+C3 IN 0 10µ Rser=5m x2
+C4 OUT 0 {2200µ/10} V=6.3 Rser=55m x2
+R5 OUT 0 10
+.tran 1.5m startup
+* LTC3606B - 800mA Synchronous Step-Down DC/DC with Average Input Current Limit\nInput: 4.5V - 5.5V     Outputs: 3.3V @ 2A (Pulse Load)
+* 3.3V @ 2A Pulse Load
+* Note:\n  C4s' values have been reduced 10 fold to shorten simulation time.  They are intended to be super caps that supports\n  a 2A pulsed load.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3606B.sub
+.backanno
+.end

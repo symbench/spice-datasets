@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\6104.asc
+XU1 N005 MP_01 MP_02 0 N002 N003 N004 N001 LTC6104
+R1 N002 N001 50m
+R2 N003 N001 100
+R3 N004 N002 100
+V1 N002 0 12
+I1 0 N001 sine(0 2 100)
+V2 N006 0 2
+R4 N005 N006 1K
+.tran 30m
+.lib LTC4.lib
+.backanno
+.end

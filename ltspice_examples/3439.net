@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\3439.asc
+L1 N005 0 500µ
+L2 IN N004 500µ
+L3 0 N002 500µ
+L4 N001 IN 500µ
+D1 N005 OUT MBRS140
+D2 N002 OUT MBRS140
+R1 N006 0 16.9K
+R2 N007 0 17K
+C1 0 N003 1000p
+V1 IN 0 5
+C2 OUT 0 47µ
+XU1 0 MP_01 N001 N007 MP_02 N003 N006 MP_03 MP_04 0 IN MP_05 IN N004 LT3439
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+K1 L1 L2 L3 L4 1.
+.lib LT3439.sub
+.backanno
+.end

@@ -1,0 +1,60 @@
+* Z:\mnt\spice-netlists\LTC3838-2_DC1997A_F18.asc
+R1 N025 0 133K
+V1 IN 0 12
+C1 0 N001 4.7µ
+R2 N001 N002 2.2
+M§Q1 IN N003 N008 N008 BSC050NE2LS
+M§Q2 N008 N011 0 0 BSC010NE2LSI
+D1 N001 N005 CMDSH2-3
+C2 N005 N008 .1µ
+L1 N008 N007 .47µ Rser=0.8m
+C3 N013 N015 1n
+CoBlk1 OUT1 0 330µ x2 Rser=9m
+C7 N021 0 1n
+R5 N023 OUT1 15K
+R6 0 N023 10K
+M§Q3 IN N004 N009 N009 BSC050NE2LS
+M§Q4 N009 N012 0 0 BSC010NE2LSI
+D2 N001 N006 CMDSH2-3
+C8 N006 N009 .1µ
+L2 N009 N010 .47µ Rser=0.8m
+C9 N014 N016 1n
+CoBlk2 OUT2 0 330µ x2 Rser=9m
+C13 N022 0 1n
+Rload1 OUT1 0 75m
+Rload2 OUT2 0 60m
+C14 N002 0 1µ
+XU1 N022 N019 N024 NC_01 N002 NC_02 0 N025 N026 N018 N021 N023 0 N013 N015 N002 NC_03 NC_04 N005 N003 N008 N011 N001 IN 0 N002 NC_05 N001 N012 N009 N004 N006 NC_06 NC_07 N002 N016 N014 0 LTC3838-2
+V2 N026 0 1.2
+CoCer1 OUT1 0 100µ x2 Rser=2m
+CoCer2 OUT2 0 100µ x2 Rser=2m
+R3 N013 N007 10
+R4 N015 OUT1 10
+Rsense1 N007 OUT1 1m
+C4 N018 0 47p
+R13 N018 N017 15K
+C5 N017 0 470p
+Rsense2 N010 OUT2 1m
+R7 OUT2 N016 10
+R8 N010 N014 10
+C6 N019 0 47p
+R12 N019 N020 5.23K
+C10 N020 0 680p
+R9 OUT2 N024 10K
+R10 N024 0 10K
+C11 IN 0 22µ Rser=4m m=4
+C12 IN 0 180µ Rser=30m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3838-2 - Dual, Fast, Accurate Step-Down DC/DC Controller with External Reference Voltage and Dual Differential Output Sensing\nHigh Current, Dual Output Synchronous Buck Converter\nInput: 4.5V to 14V     Outputs: 1.5V @ 20A & 1.2V @ 20A, Fswitch = 300kHz
+* GND for external reference
+* 1.5V @ 20A
+* 1.2V @ 20A
+* Note:\n  Small value are used for TRACK/SS capacitors to reduce simulation time. The typical value for actual applications will vary from 10nF to 100nF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3838-2.sub
+.backanno
+.end

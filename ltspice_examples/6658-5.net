@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\6658-5.asc
+C1 N001 0 1µ
+V3 IN 0 PWL(0 0 100u 0 +2u 7.5)
+C2 OUT2 0 1µ
+C3 OUT1 0 1µ
+XU2 IN IN IN IN N001 OUT1 OUT1 OUT2 OUT2 0 N002 LT6658-5
+.tran 500u
+.lib LT6658.lib
+.backanno
+.end

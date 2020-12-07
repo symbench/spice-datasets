@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT3474.asc
+V1 IN 0 12
+L1 N002 OUT 10µ Rser=.060
+C1 N001 N002 .22µ
+XU1 MP_01 OUT N007 IN N002 N001 OUT 0 N004 IN N003 N006 N003 NC_02 LT3474
+C2 N006 0 3300p
+R1 N004 0 80.6K
+D1 0 N002 1N5819
+C3 OUT 0 2.2µ Rser=.025
+D2 N007 0 LXHL-LW3C
+C4 IN 0 2.2µ Rser=.025
+C5 N005 0 0.1µ
+R2 N006 N005 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.model LXHL-LW3C D(Is=3.5e-17 Rs=0.725 N=3.12 Cjo=1.2n Iave=1.5 mfg=Lumileds type=LED)
+* LT3474 - 1A, Wide Input Range Step-Down LED Driver DC/DC Converter\nInput: 12V       Output: 1A through single 3.6V LED
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3474.sub
+.backanno
+.end

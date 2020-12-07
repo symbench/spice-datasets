@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1012S8.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N003 N002 10Meg
+R2 N002 N001 100Meg
+V3 N001 N004 SINE(0 100m 10)
+R3 0 N003 100
+R4 N003 OUT 100K
+R5 N005 N004 100Meg
+R6 N005 0 10Meg
+V4 N004 0 SINE(0 100 1)
+XU1 N005 N002 +V -V OUT LT1012
+.tran 3
+* Instrumentation Amplifier with ±100V Common Mode Range
+.lib LTC.lib
+.backanno
+.end

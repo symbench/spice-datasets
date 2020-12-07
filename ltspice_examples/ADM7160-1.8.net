@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\ADM7160-1.8.asc
+V1 IN 0 5
+Rload OUT 0 18
+XU1 IN 0 IN MP_01 OUT ADM7160-x.x T=800K
+C1 OUT 0 1µ
+.tran 500u startup
+.lib ADM7160-x.x.sub
+.backanno
+.end

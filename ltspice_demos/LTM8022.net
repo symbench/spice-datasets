@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTM8022.asc
+C1 IN 0 2.2µ
+R1 N004 0 154K
+V1 IN 0 24
+R2 N003 0 56.2K
+C2 OUT 0 22µ
+XU1 IN N001 N003 N004 0 NC_01 N002 N002 OUT LTM8022
+R3 IN N001 100K
+C3 N001 0 .1µ
+Rload OUT 0 3.3
+.tran 1m startup
+* LTM8022 - 36V, 1A, DC/DC µModule\nInput: 24V       Output: 3.3V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LTM8022.sub
+.backanno
+.end

@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\1735.asc
+R1 N009 0 10K
+R2 OUT N012 20K
+R3 N012 0 10K
+R4 N008 OUT .006
+C1 N010 N009 330p
+C2 N013 0 43p
+C3 N006 0 .001µ
+C4 OUT 0 180µ x4 Rser=.1
+V1 IN 0 6
+L1 N007 N008 1.5µ
+M§Q1 IN N005 N007 N007 Si4410DY
+M§Q2 N007 N011 0 0 Si4410DY
+C5 N001 0 4.7µ
+C6 N004 N007 .22µ
+D1 N001 N004 1N5818
+D2 0 N007 1N5818
+XU1 N013 N006 N010 N003 0 N012 OUT N008 N002 0 N011 N001 IN N007 N004 N005 LTC1735
+Rload OUT 0 .5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC1735.sub
+.backanno
+.end

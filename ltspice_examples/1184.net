@@ -1,0 +1,34 @@
+* Z:\mnt\design.r\spice\examples\1184.asc
+Q1 N003 N005 N009 0 NP
+Q2 N004 N006 N009 0 NP
+L1 N003 N002 20µ
+L2 N002 N004 20µ
+C1 N004 N003 .068µ
+L3 N006 N005 1µ
+V1 N002 0 28
+L4 N001 0 50m
+L5 N009 N011 50µ
+D1 N011 N002 1N5818
+R1 N002 N007 220K
+R2 N007 N009 100K
+C2 N002 N007 1000p
+R3 N008 N013 89.6K
+D2 0 N011 1N5818
+C3 N015 0 1µ
+V2 N008 0 5
+C4 N002 0 2.2µ
+R4 N002 N006 500
+XU1 0 N013 N010 N015 0 N014 MP_01 MP_02 MP_03 MP_04 N012 N008 MP_05 N002 N007 N011 LT1184
+R§Lamp N001 N010 70K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 10m
+K1 L1 L2 L3 L4 1
+* BAT
+.model NP NPN
+.lib LT1184.sub
+.backanno
+.end

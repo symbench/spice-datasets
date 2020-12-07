@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\1107-12.asc
+L1 IN N001 33µ Rser=0.02 Rpar=5000
+D1 N001 OUT MBRS140
+C1 OUT 0 100µ Rser=0.02
+V1 IN 0 6
+XU1 IN IN N001 0 0 N002 N003 OUT LT1107 top=220K bot=25.5K
+Rload OUT 0 30
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT1107.sub
+.backanno
+.end

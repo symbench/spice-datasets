@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\6416.asc
+V1 N001 0 3.6
+V3 N005 0 3.6
+V4 N006 0 PULSE(0 500m 10n .1n .1n 20n 40n)
+R4 P001 N003 50
+C2 N004 P001 .1µ
+C1 N007 P002 .1µ
+R1 P002 N008 50
+E1 N003 0 N006 0 .5
+E2 N008 0 0 N006 .5
+V2 N002 0 1.25
+XU1 N002 N005 N004 N007 0 0 OUT- OUT+ N001 LTC6416
+.tran 50n
+.lib LTC6.lib
+.backanno
+.end

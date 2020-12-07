@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LT3591.asc
+L1 IN N001 22µ Rpar=2K
+V1 IN 0 3.6
+C1 N004 0 2.2µ
+R1 N004 N002 10
+V2 N003 0 PULSE(.5 1.5 1m 1u 1u 1m 2m)
+XU1 IN 0 N001 N004 N002 N003 LT3591
+C2 IN 0 1µ
+D1 N002 0 NSPW500BS N=10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4m
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+* LT3591 - White LED Driver with Integrated Schottky in 3mm x 2mm DFN\nInput: 3.6V          Output: 20mA through 10 white LEDs
+* Diode instance parameter\n"N=10" means that this is\n10 diodes in series.
+.lib LT3591.sub
+.backanno
+.end

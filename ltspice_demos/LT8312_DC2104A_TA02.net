@@ -1,0 +1,54 @@
+* Z:\mnt\spice-netlists\LT8312_DC2104A_TA02.asc
+C1 N019 0 4.7µ
+C2 N021 0 470n
+M§Q1 N002 N016 N018 N018 IPB65R420CFD
+R1 N018 0 .015
+R2 N020 N021 4.7K
+L1 N001 N002 450µ
+L2 0 N004 4.5µ
+C3 N004 N009 27p
+C4 N003 0 10µ
+R3 N001 N012 1Meg
+D1 N006 N003 1N4148
+R4 N001 N005 300K
+D2 N002 OUT RFN5TF6S
+C5 OUT 0 10µ
+I1 0 N003 PWL(0 0 10u 38 20u 0)
+R5 N011 0 9.53K
+R6 OUT N011 3Meg
+D5 +IN N001 1N4007
+D6 0 -IN 1N4007
+D7 0 +IN 1N4007
+D8 -IN N001 1N4007
+V1 +IN -IN SINE(0 167 600)
+C6 N001 0 0.1µ
+C7 N020 0 68n
+R7 N014 N013 11.8K
+R8 N007 N006 47
+R9 N010 0 301K
+C8 N011 0 100p
+R10 N013 0 24.9K
+R11 N003 N010 2.4Meg
+R12 N009 N008 2K
+Rload OUT 0 2K
+XU2 0 MP_01 MP_02 N014 N013 N020 MP_03 MP_04 N011 N008 N003 N010 N019 N015 N017 N012 LT8312
+D9 N005 N003 1N4148
+C9 N004 N007 4.7n
+R13 N016 N015 10
+R14 N018 N017 100
+C10 N017 0 100p
+D3 0 N006 UMZ24K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 0.06
+.model 1N4007 D(Is=90p Rs=40m
++  Cjo=30p N=1.4 TT=5u)
+* LT8312 - Boost Controller with Power Factor Correction\nUniversal Input 150W PFC Boost Converter\nInput: 90VAC to 265VAC  Output: 400V @ 0.375A
+* Note:\n  Decrease in VC and output capacitances, I1 current injection and 600Hz source frequency is being used to speed up simulation.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT8312.sub
+.backanno
+.end

@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\3700.asc
+V1 IN 0 5
+XU1 IN N002 N004 N009 0 N003 IN N001 N007 N008 LTC3700
+R1 IN N001 .068
+M§Q1 N006 N003 N001 N001 FDC638P
+D1 0 N006 1N5818
+L1 N006 N005 10µ
+C1 N005 0 47µ Rser=50m
+R2 N002 N004 169K
+R3 N004 0 78.7K
+C2 N002 0 2.2µ
+R4 N007 0 80.6K
+R5 N005 N007 100K
+R6 N008 N010 10K
+R7 IN N009 100K
+C3 N010 0 220p
+Rload1 N002 0 16.7
+Rload2 N005 0 1.8
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 250u startup
+.lib LTC3700.sub
+.backanno
+.end

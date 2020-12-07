@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\ISO16750-2_example.asc
+XU1 N001 0 4-6-3_12V_StartingProfile
+XU2 N002 0 4-6-3_24V_StartingProfile
+.tran 0 20 0 1m
+* For documentation see:\n  LTspice Models of ISO 7637-2 & ISO 16750-2 Transients\n  http://www.linear.com/solutions/7719
+* ISO 16750-2 Transients
+.lib ISO16750-2.lib
+.backanno
+.end

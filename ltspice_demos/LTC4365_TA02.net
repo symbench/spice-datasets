@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTC4365_TA02.asc
+R1 N003 IN 510K
+R2 IN N004 1820K
+R3 N004 N006 243K
+R4 N006 0 59K
+M§Q1 IN N002 N001 N001 Si4850EY
+M§Q2 OUT N002 N001 N001 Si4850EY
+C1 OUT 0 4.7µ
+XU1 0 N006 N004 IN N002 OUT N005 N003 LTC4365
+V1 IN 0 PWL(0 0 10m 12 70m 12 80m -30 90m -30 100m 12 140m 12 150m 30 160m 30 170m 12)
+Rload OUT 0 34
+R5 OUT N005 10K
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 210m startup
+* LTC4365 - UV, OV and Reverse Supply Protection Controller\nProtects 12V Automotive System from -30V to 30V Vin Faults\nInput: 12V     Output: 3.5V UV to 18V OV Protection
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC4365.sub
+.backanno
+.end

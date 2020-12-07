@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3468.asc
+L1 IN N003 20µ Rpar=2K Rser=.1
+L2 0 N001 {20u*10.2*10.2} Rpar=1Meg
+C1 OUT 0 .1µ
+D1 N001 OUT D
+R3 N002 IN 10K
+V1 IN 0 5
+C3 N001 0 10p
+XU1 N003 0 N002 IN IN LT3468
+D2 0 N003 1N5817
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10m startup
+K1 L1 L2 1
+.lib LT3468.sub
+.backanno
+.end

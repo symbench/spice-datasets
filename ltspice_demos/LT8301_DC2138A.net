@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT8301_DC2138A.asc
+V1 IN 0 10
+L1 IN N002 40µ Rser=500m Cpar=1p
+L2 0 N001 4.444µ Rser=20m Cpar=0
+R3 N002 N004 154K
+D1 N001 OUT MBRS360
+C1 OUT 0 22µ V=10 Irms=2.2 Rser=0.025 Lser=0
+Rload OUT 0 7.14
+XU1 N003 0 N004 N002 IN LT8301
+R2 IN N003 1Meg
+R4 N003 0 210K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 .998
+.tran 6m startup
+* LT8301 - 42Vin µPower No-Opto Isolated Flyback Converter with 65V/1.2A Switch\nµPower Isolated Flyback Converter\nInput: 10V to 32V       Output: 5V @ 0.7A, Fsw = 190kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* 750313974\nWurth Electronics\nNps = 3:1\nLpri = 40µH
+.lib LT8301.sub
+.backanno
+.end

@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3439_TA01.asc
+L1 N005 0 500µ
+L2 N004 IN 500µ
+L3 0 N002 500µ
+L4 IN N001 500µ
+D1 N005 OUT MBRS140
+D2 N002 OUT MBRS140
+R1 N006 0 16.9K
+R2 N007 0 34K
+C1 0 N003 680p
+V1 IN 0 5
+XU1 0 MP_01 N001 N007 MP_02 N003 N006 MP_03 MP_04 0 IN MP_05 IN N004 LT3439
+Rload OUT 0 10
+C2 IN 0 22µ
+C3 OUT 0 47µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.2m startup
+K1 L1 L2 L3 L4 1
+* LT3439 - Slew Rate Controlled Ultralow Noise 1A Isolated DC/DC Transformer Driver\nLow Noise 5V to 5V Push-Pull DC/DC Transformer\nInput: 5V     Output: 5V @ 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3439.sub
+.backanno
+.end

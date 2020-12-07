@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\6090.asc
+V1 -V 0 -70
+XU1 NC_01 N002 IN -V NC_02 OUT +V NC_03 LTC6090
+V2 +V 0 70
+R1 OUT N002 435K
+C1 OUT N002 10p
+V3 N001 0 2.5
+R2 N001 N002 16.2K
+R3 N002 0 16.9K
+V4 IN 0 SINE(1.25 1.35 10K)
+.tran 250u
+.lib LTC5.lib
+.backanno
+.end

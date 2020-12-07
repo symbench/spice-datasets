@@ -1,0 +1,40 @@
+* Z:\mnt\spice-netlists\LTC3810_SwitchingSurgeStopper.asc
+R1 IN N003 2.7Meg
+M§Q1 IN N002 N004 N004 BSH114
+R2 IN N002 287K
+D1 N004 N005 MMSD4148
+C1 N005 N008 .1µ
+M§Q2 IN N007 N008 N008 BSC060N10NS3
+M§Q3 N008 N014 N012 N012 BSC060N10NS3
+C2 N004 0 1µ x2
+L1 N008 OUT 33µ Ipk=16.7 Rser=0.0187 Rpar=3108.6 Cpar=0 mfg="Coilcraft" pn="XAL1510-333"
+D2 N012 N008 MBRS1100
+R3 OUT N015 68.1K
+R4 N015 0 976
+C3 OUT 0 4.7µ Rser=0.004
+C4 N013 N015 10p
+C5 N009 0 1000p
+C6 N010 0 .01µ
+XU1 N003 MP_01 MP_02 N004 N004 N006 N004 N013 N015 N011 N009 0 N004 N001 N002 0 N004 N004 N014 0 0 MP_03 MP_04 MP_05 N012 N008 N007 N005 LTC3810
+R6 N013 N016 46.4K
+C7 N016 N015 1200p
+R7 N011 N010 10K
+V1 IN 0 PWL(0 0 +20u 60 +.8m 60 +1u 75 +.2m 75 +1u 60 +.1m 60 +.4m 40)
+Rload OUT 0 11.4
+C8 IN 0 33µ x2 Rser=0.46
+C9 OUT 0 33µ Rser=0.35
+C10 N003 0 100p
+R5 IN N001 464K
+R8 N001 0 13.3K
+R10 N012 0 30m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LTC3810 - 100V Current Mode Synchronous Switching Regulator Controller\nHigh Efficiency Switching Surge Stopper\nInput: 36V to 75V     Output: 57V @ 5A
+.lib LTC3810.sub
+.backanno
+.end

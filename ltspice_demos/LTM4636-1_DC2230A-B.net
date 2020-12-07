@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LTM4636-1_DC2230A-B.asc
+V1 IN 0 12
+C1 N011 0 100p
+C2 OUT 0 470µ x3 Rser=9m Lser=1.2n
+C3 OUT 0 100µ x8 Rser=1m
+R3 OUT 0 25m
+R4 N007 N010 15K
+C4 N010 0 .1µ
+R2 N012 0 7.5K
+R1 N006 0 34.8K
+C5 0 N008 100p
+C6 IN 0 150µ V=25 Rser=50m
+C8 IN 0 22µ x6 V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+R5 N013 N001 10k
+C7 N007 0 22µ V=6.3 Irms=14.4 Rser=0.002
+XU2 MP_01 N008 0 N012 N011 N001 MP_02 N008 N010 0 OUT N009 N009 N013 N007 IN NC_03 NC_04 OUT MP_05 0 MP_06 N004 N005 N002 N003 MP_07 MP_08 MP_09 NC_10 N006 0 NC_11 N001 IN LTM4636-1
+V2 N002 0 5
+C9 N002 0 1µ V=6.3 Rser=0.002
+R6 N002 N004 86.6K
+R7 N001 N003 10k
+M1 OUT N005 0 0 SUD40N04-10A
+C10 N005 0 10n
+R8 N005 0 100k
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+* LTM4636-1 - 40A ?Module Regulator with Overvoltage/ Overtemperature Protection\nHigh Current Step-Down ?Module Regulator\nInput: 4.7V to 15V     Outputs: 1.0V @ 40A, Fsw = 350kHz
+* Notes:\n  A smaller TRACK/SS capacitor is being used to reduce simulation time. Typical value should be 0.1µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTM4636-1.sub
+.backanno
+.end

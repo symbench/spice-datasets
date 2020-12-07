@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\8057.asc
+XU1 0 OUT 0 N002 IN N001 IN NC_01 LTM8057
+V1 IN 0 24
+C1 N001 0 4.7µ
+R1 N002 0 6.98K
+C2 OUT 0 22µ Rser=10m
+Rload OUT 0 16.7
+.tran 2m startup
+.lib LTM8057.sub
+.backanno
+.end

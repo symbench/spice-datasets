@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTC2063_F10_RTDSensor.asc
+V1 IN 0 2.6
+XU1 N002 N003 OUT IN 0 IN LTC2063
+XU2 0 IN N001 LT6656-2.048
+XU3 N001 N005 N005 N004 N003 N003 N004 N004 NC_01 LT5400-3
+C1 IN 0 .1µ
+C2 N001 0 10µ
+R1 N001 N002 110K tol=0.1
+R2 N005 0 11K
+Rfb OUT N003 1.58Meg
+RTD N002 N005 {rtd}
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LTC2063 - 2?A Supply Current, Low IB, Zero-Drift Operational Amplifier\nLT5400 - Quad Matched Resistor Network\nRTD Sensor Circuit with ±1°C Precision\nInput: 2.6V to 18V     Output: 10mV/°C (1V at 25 °C)
+.step param rtd 846 1.326k 10
+* VISHAY PTS Series 1kOhm PtRTD Class F0.3\n846 Ohm to 1.326kOhm covers -40°C to 85°C
+.op
+.lib LT5400.lib
+.lib LT6656.lib
+.lib LTC3.lib
+.backanno
+.end

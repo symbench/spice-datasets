@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3081.asc
+R1 N001 0 1K
+XU1 N003 N004 N002 OUT N001 IN LT3081
+R2 N002 0 1K
+R3 N004 0 30.1K
+R4 OUT N003 6.04K
+V1 IN 0 5
+C1 OUT 0 10µ V=6.3 Irms=0 Rser=0.001 Lser=0 mfg="TDK" pn="C3216X5ROJ106M" type="X5R"
+Rload OUT 0 1
+.tran .1 startup
+.lib LT3081.sub
+.backanno
+.end

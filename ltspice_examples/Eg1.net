@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\Eg1.asc
+V3 A B SINE(0 10m {Freq}) ac 1
+XU1 0 B +V -V N001 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+V1 +V 0 5
+V2 -V 0 -5
+R1 N001 A 10K
+R2 A 0 1K
+.tran 0 {5/Freq+.1m} .1m
+.step oct param Freq .1 10Meg 3
+.measure Aavg avg V(a)
+.measure Bavg avg V(b)
+.measure Are avg  (V(a)-Aavg)*cos(360*time*Freq)
+.measure Aim avg -(V(a)-Aavg)*sin(360*time*Freq)
+.measure Bre avg  (V(b)-Bavg)*cos(360*time*Freq)
+.measure Bim avg -(V(b)-Bavg)*sin(360*time*Freq)
+.measure GainMag param 20*log10(hypot(Are,Aim) / hypot(Bre,Bim))
+.measure GainPhi param mod(atan2(Aim, Are) - atan2(Bim, Bre)+180,360)-180
+.save V(a) V(b)
+.option nomarch
+.option plotwinsize=0 numdgt=15
+* .ac oct 10 .1 10Meg\n.param freq=0
+* This example shows the basic principle of extracting\nthe small signal AC characteristics from time domain simulation.\n \nAfter running the simulation, execute menu command\nView=>SPICE Error Log.  Then right click and select\n"Plot .step'ed .meas data".  Press "yes" to the dialog\nasking if it should combine the data to complex numbers.
+* To use this technique in your\nown simulations, include these\n.measure statements
+.lib UniversalOpamps2.sub
+.backanno
+.end

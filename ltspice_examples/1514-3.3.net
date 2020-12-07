@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1514-3.3.asc
+C5 N003 N004 1µ
+V2 IN 0 3
+C1 OUT 0 100µ
+Rload OUT 0 100
+XU1 IN N001 N002 0 N004 N003 IN OUT LTC1514-3.3
+.tran 5m startup
+.lib LTC1514-3.3.sub
+.backanno
+.end

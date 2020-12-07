@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3484-1.asc
+L1 IN N003 10µ Rpar=2K Rser=.1
+L2 0 N001 {10u*10.2*10.2} Rpar=1Meg
+C1 OUT 0 .01µ
+D1 N001 OUT D
+R1 N002 IN 10K
+V1 IN 0 5
+XU1 N002 IN IN N003 MP_01 IN 0 LT3484-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+K1 L1 L2 1
+.lib LT3484-1.sub
+.backanno
+.end

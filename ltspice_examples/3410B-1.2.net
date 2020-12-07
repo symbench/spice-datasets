@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3410B-1.2.asc
+V1 IN 0 5
+L1 N001 OUT 4.7µ
+Rload OUT 0 20
+C1 OUT 0 4.7µ
+XU1 IN 0 N001 IN MP_01 OUT LTC3410B-x.x top=180K bot=360K
+.tran 250u startup
+.lib LTC3410B-x.x.sub
+.backanno
+.end

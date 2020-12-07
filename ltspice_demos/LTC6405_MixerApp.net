@@ -1,0 +1,57 @@
+* Z:\mnt\spice-netlists\LTC6405_MixerApp.asc
+VRF RF 0 SINE(0 0.141 900Meg)
+R1 N001 N004 65
+V+ N001 0 5
+VLO LO 0 SINE(0 1 890Meg)
+C1 N001 N004 5p
+RRF RF 0 50
+RLO 0 LO 50
+R2 N003 N002 324
+R3 N011 N010 324
+C2 N003 N002 10p
+C3 N011 N010 10p
+R4 N001 N005 65
+C4 N001 N005 5p
+L1 N004 N002 15n
+L2 N005 N010 15n
+C5 N005 0 4.7p
+C6 N004 0 4.7p
+R5 N006 N003 49.9
+R6 N012 N011 49.9
+C7 N006 N012 4.7p
+C8 0 N006 4.7p
+C9 0 N012 4.7p
+R7 N007 N006 10
+R8 N013 N012 10
+S1 N014 ADC- N015 0 S
+S2 N008 ADC+ N015 0 S
+C12 ADC+ 0 4p
+C13 ADC- 0 4p
+R9 N008 N007 15
+R10 N014 N013 15
+C11 N014 0 1p
+C10 N008 0 1p
+VADC N015 0 PULSE(0 1 10n 200p 200p 6.25n 12.5n)
+V1 N009 0 1.25
+XU2 N010 N009 N001 N011 N003 0 NC_01 N002 NC_02 NC_03 LTC6405
+B1 N004 0 I=.0169 +0.021*(V(rf)*V(lo))
+B2 0 N005 I=-.0169 +0.021*(V(RF)*V(LO))
+.tran 210n
+* LT5575 Direct Down \nConversion Mixer
+* 890MHz LO
+* 80MHz Sampling Clock
+* LTC2249 14-bit ADC
+* 900MHz RF\n-7dBm Input Power
+* No voltage here because this is\nthe "virtual ground" for the LTC6405
+* 2Vpp to drive the ADC
+* Normally, would tie\nVocm to the VCM\nof the ADC
+* A simple RC filter to provide noise filtering\nand some isolation between ADC glitching\nand the op Amp.  For more stringent\n applications, more complex filters may be necessary
+* Sample and parasitic capacitor/resistor values for model\nare taken directly from the LTC2249 datasheet
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* A simplified model\nof the LT5575
+* LT6405 - 2.7GHz, 5V, Low Noise, Rail-to-Rail Input Differential Amplifier/Driver\nFully Differential ADC Driver with Simplified Mixer and ADC Models\nThis simulation demonstrates an application using a fully differential amplifier coupled with\nsimplified models of the LT5575, Direct Down Conversion Mixer, and the LTC2249\nMany non-idealities of the ADC are not modeled, such as quantization effects and clock feedthrough
+.model S SW(Ron=0.1 Roff=10Meg
++ Von=0.95 Voff=0.05)
+.lib LTC7.lib
+.backanno
+.end

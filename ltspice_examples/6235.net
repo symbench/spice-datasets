@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\6235.asc
+V1 +V 0 10
+R1 OUT N001 732
+R3 +V N003 10K
+R4 N003 0 10K
+C1 N003 0 .1µ
+C2 OUT N002 47p
+R5 N002 N001 732
+C3 N001 IN 1000p
+V2 IN 0 ac 1
+XU1 N003 N002 OUT +V 0 LT6234
+.ac oct 100 100K 10Meg
+* Single Supply, Low Noise, Low Power, Bandpass Filter with Gain=10
+.lib LTC2.LIB
+.backanno
+.end

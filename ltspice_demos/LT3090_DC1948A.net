@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LT3090_DC1948A.asc
+C1 OUT 0 4.7µ
+C2 IN 0 4.7µ
+Rload OUT 0 2.083
+V1 IN 0 -5
+R1 N003 0 2K
+R2 IN N002 10K
+R3 N004 0 24.9K
+C3 N004 0 100p
+XU2 IN MP_01 N002 N003 N001 IN N004 0 OUT LT3090
+V2 N001 0 3
+.tran 100u startup
+* LT3090 - -36V, 600mA Negative Linear Regulator with Programmable Current Limit\nNegative Linear Regulator with Current Monitor\nInput: -5V       Output: -1.25V @ 600mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3090.sub
+.backanno
+.end

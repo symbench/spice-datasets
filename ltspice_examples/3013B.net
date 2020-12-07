@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3013B.asc
+V1 N001 0 PWL(0 0 1 10)
+C1 OUT 0 3.3µ
+R1 OUT N002 750K
+R2 N002 0 249K
+Rload OUT 0 100
+R3 N001 N003 1.6Meg
+C2 0 N004 1000p
+XU1 MP_01 OUT MP_02 N002 0 N003 N004 MP_03 MP_04 N001 LT3013B
+.tran 1
+.lib LT3013.lib
+.backanno
+.end

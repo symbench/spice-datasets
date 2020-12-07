@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\Clapp.asc
+J1 N001 N002 OUT 2N5484
+V1 N001 0 10.
+L4 OUT 0 1m Rser=100
+C1 N002 OUT 750p
+C2 N003 0 50p
+C3 OUT 0 750p
+L1 N002 N003 100µ
+D2 0 N002 1N4148
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 250µ startup
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

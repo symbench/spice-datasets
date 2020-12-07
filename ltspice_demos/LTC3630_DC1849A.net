@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC3630_DC1849A.asc
+XU1 N001 MP_01 IN MP_02 N002 N003 0 0 OUT N003 NC_03 NC_04 LTC3630
+V1 IN 0 48
+L1 N001 OUT 68µ Rser=50m
+C1 OUT 0 100µ x2 V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C575OX5ROJI07M" type="X5R"
+Rload OUT 0 6.6
+R1 IN N002 200K
+R2 N002 0 10K
+C2 N003 0 47n
+C3 IN 0 4.7µ
+.tran 10m startup
+* LTC3630 - High Efficiency, 65V, 500mA Synchronous Step-Down Regulator\nHigh Voltage, High Efficiency 3.3V Buck Regulator\nInput: 4V to 65V     Output: 3.3V @ 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3630.sub
+.backanno
+.end

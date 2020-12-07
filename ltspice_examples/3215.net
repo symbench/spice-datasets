@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3215.asc
+XU1 N005 N004 N002 N003 N008 N001 N001 N007 0 N006 LTC3215
+C1 N004 N006 2.2µ
+C2 N005 N007 2.2µ
+R1 N008 0 20K
+D1 N002 N003 NSPW500BS
+V1 N001 0 3.6
+C3 N002 0 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4m startup
+.lib LTC3215.sub
+.backanno
+.end

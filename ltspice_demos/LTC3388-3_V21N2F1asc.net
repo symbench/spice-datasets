@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC3388-3_V21N2F1asc.asc
+XU1 N001 OUT2 NC_01 N001 N003 0 NC_02 N001 N001 NC_03 OUT2 LTC3388-3
+XU2 N001 0 NC_04 N001 N002 OUT1 NC_05 N001 N001 NC_06 0 LTC3388-3
+V1 N001 0 9
+C1 N001 0 2.2µ
+C2 OUT1 0 100µ Rser=.0002
+L1 N002 OUT1 100µ Rser=10m
+Rload1 OUT1 0 100
+C3 OUT2 0 100µ Rser=.04
+L2 N003 0 100µ Rser=10m
+Rload2 OUT2 0 100
+C4 N001 OUT2 2.2µ
+.tran 50m startup
+* 5V @ 50mA
+* -5V @ 50mA
+* LTC3388-3 - 20V High Efficiency Nanopower Step-Down Regulator\nNanopower Split-Voltage Power Supply\nInput: 6V to 12V     Output: 5V @ 50mA & -5V @ 50mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3388-3.sub
+.backanno
+.end

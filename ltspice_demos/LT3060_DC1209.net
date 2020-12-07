@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LT3060_DC1209.asc
+V1 IN 0 45
+C1 IN 0 10µ
+R1 N001 0 124K
+R2 OUT N001 909K
+C2 OUT 0 2.2µ
+Rload OUT 0 50
+XU1 P001 N001 OUT MP_01 IN MP_02 IN 0 LT3060
+C3 P001 0 .01µ
+C4 OUT N001 .01µ
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3060 - 45V Vin, µPower, Low Noise, 100mA Low Dropout, Linear Regulator\nInput: 45V       Output: 5V @ 100mA
+.tran 500m startup
+.lib LT3060.sub
+.backanno
+.end

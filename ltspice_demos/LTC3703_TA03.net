@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LTC3703_TA03.asc
+XU1 0 N002 N005 N007 N008 IN N011 0 0 N012 IN N009 N001 N006 N003 0 LTC3703
+M§Q1 OUT N006 N001 N001 Si7386DP
+M§Q2 N001 N012 0 0 Si7386DP
+V1 IN 0 12
+L1 IN N001 3.3µ Ipk=27 Rser=0.01069 Rpar=0 Cpar=0 mfg="Vishay" pn="IHLP5050CE06-3R3"
+C1 OUT 0 220µ x3 Rser=20m
+R1 N008 0 15K
+R2 N002 0 30.1K
+R3 N005 N004 50K
+C2 N004 N007 0.0025µ
+R4 OUT N007 113K
+C3 N011 0 .0047µ
+C4 N003 N001 .1µ
+R5 N007 0 3.92K
+C5 N005 N007 50p
+D1 N001 OUT 1N5817
+C6 OUT 0 10µ
+D2 IN N003 CMDSH2-3
+R6 N009 IN 10
+C7 N009 0 1µ
+C8 IN 0 10µ
+C9 IN 0 22µ
+C10 IN 0 100µ
+RLoad OUT 0 4.8
+C11 OUT N010 500p
+R7 N010 N007 20K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3703 - 100V Synchronous Switching Regulator Controller\n12V to 24V @ 5A Synchronous Boost Converter\nInput: 10V-15V     Output: 24V @ 5A
+.lib LTC3703.sub
+.backanno
+.end

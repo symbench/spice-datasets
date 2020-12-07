@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1263.asc
+C1 N001 N002 .47µ
+C2 N003 N004 .47µ
+C3 OUT 0 10µ
+V1 IN 0 5
+Rload OUT 0 1K
+XU1 N001 N002 N003 N004 IN OUT 0 0 LTC1263
+.tran 1m
+.lib LTC1263.sub
+.backanno
+.end

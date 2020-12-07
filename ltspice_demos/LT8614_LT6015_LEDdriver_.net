@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LT8614_LT6015_LEDdriver_.asc
+R1 N006 0 60.4K
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N003 OUT 4.7µ Rser=10m
+C3 N002 N003 .1µ
+C4 OUT 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C575OX5ROJI07M" type="X5R"
+XU1 OUT N001 N002 IN MP_01 0 MP_02 N003 MP_03 0 MP_04 MP_05 IN IN N006 N004 N001 0 NC_06 N005 LT8614
+C6 IN 0 .1µ
+C7 IN 0 .1µ
+C1 N004 0 1n
+D1 OUT N005 PT-121-B n=1
+V2 N011 0 PULSE(600m 0 1m 5m)
+C9 N005 0 10µ V=6.3 Irms=0 Rser=0.001 Lser=0 mfg="TDK" pn="C3216X5ROJ106M" type="X5R"
+R2 N008 0 200m
+M1 N005 N010 N008 N008 IRLML6244
+XU2 N011 N007 IN 0 N009 LT6016
+R3 N007 N008 2.2K
+C5 N007 N009 47p
+R4 N010 N009 2.2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 7m startup
+* LT8614 - 42V, 4A Synchronous Step-Down Silent Switcher with 2.5µA Quiescent Current\nLT6015 - 3.2MHz, 0.8V/µs Low Power, Over-The-Top Precision Op Amps\nHyrbrid Wide Dimming Ratio Linear LED Current Controller\nInput: 3.4V to 42V     Output: 3A Max
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT8614.sub
+.lib LTC2.LIB
+.backanno
+.end

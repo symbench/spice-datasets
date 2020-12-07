@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LT3641_DC1727A.asc
+C1 N015 0 1000p
+V1 IN 0 24
+R1 N013 0 32.4K
+C3 N011 0 15p
+C4 N010 0 15p
+D1 N007 N005 MBRS360
+L1 N005 OUT1 4.7µ Rser=5m
+R2 OUT1 N009 301K
+R3 N009 0 100K
+C5 OUT1 0 22µ Rser=5m
+Rload1 OUT1 0 5
+C6 N002 N003 .22µ
+D2 OUT1 N002 PMEG6010AED
+L2 N012 OUT2 1µ Rser=5m
+R4 OUT2 N014 100K
+R5 N014 0 49.9K
+C7 OUT2 0 22µ Rser=5m
+Rload2 OUT2 0 2.25
+C2 N016 0 1000p
+C8 IN 0 2.2µ Rser=5m
+R8 N001 OUT1 100K
+R6 N004 OUT1 100K
+R7 N006 OUT1 100K
+R9 N008 OUT1 100K
+XU1 MP_01 N015 N009 N013 N006 N004 N008 N010 N011 0 NC_02 0 MP_03 MP_04 N007 N005 N003 N002 IN MP_05 OUT1 N012 MP_06 OUT1 N016 N014 N001 IN LT3641
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LT3641 - 42V, Dual Monolithic Step-Down Regulator with Power-On Reset and Watchdog Timer\nDual High Voltage Buck with POR and WDT\nInput: 7V to 42V (Transient to 55V)      Output 1: 5V @ 1A         Output 2: 1.8V @ 0.8A
+.lib LT3641.sub
+.backanno
+.end

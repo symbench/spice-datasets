@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LTM8061-41_DC1645A.asc
+V1 IN 0 12
+XU1 N001 N001 N001 NC_01 NC_02 0 NC_03 NC_04 OUT IN OUT MP_05 0 LTM8061-4.1
+C3 N001 0 4.7µ
+V2 N002 0 2.7 Rser=.01
+C2 OUT N002 0.5m Rser=.01
+.tran 1m startup
+* LTM8061 - 32Vin, 2A µModule Battery Charger\n2A LiFePO4 µModule Battery Charger\nInput: 6.5V to 32V     Output: 4.1V @ 2A, C/10 Termination
+* BATTERY
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTM8061-4.1.sub
+.backanno
+.end

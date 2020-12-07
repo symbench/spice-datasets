@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\ADP5051.asc
+R1 IN N002 10K
+R2 N002 0 10K
+C1 N001 N003 0.1µ
+C2 OUT 0 8.12µ
+L1 N003 OUT 2.2µ
+R4 OUT N009 34.8K
+R5 N009 0 23.2K
+R6 N010 0 22K
+C3 N007 0 1µ
+R7 N011 0 31.6K
+C4 N005 N004 2.2n
+R3 N004 0 1.82K
+R8 N007 N008 10K
+C5 OUT N009 47p
+M1 N003 N006 0 0 BSC080N03MS
+XU1 N011 N007 N007 N002 IN N001 N003 N006 N009 N005 N008 0 N010 MP_01 N007 ADP505x_chan1_2
+Rload OUT 0 2
+V1 IN 0 12
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+* SS12 Configuration is correct for channel 1 \nwhen NOT paralleled with channel 2
+* Rlim is the resistor generally placed on DL pin to set current limit
+.lib ADP505x_chan1_2.sub
+.backanno
+.end

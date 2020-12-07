@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\4359.asc
+M§Q1 N002 N003 N001 N001 BSC060N10NS3
+V1 N001 0 PWL(0 0 1m 12 10m 12 10.001m 0)
+C1 N002 N004 1.5µ
+R1 N004 0 1K
+Rload N002 0 1
+C2 N002 0 300µ Rser=.01
+XU1 N002 N003 N001 N001 N001 N004 LTC4359
+D1 N001 N004 SMBJ24CA
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 20m
+.lib LTC4359.sub
+.backanno
+.end

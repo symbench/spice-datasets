@@ -1,0 +1,12 @@
+* Z:\mnt\spice-netlists\LTC3525-33_TA04.asc
+XU1 IN 0 IN OUT MP_01 N001 LTC3525-3.3
+L1 IN N001 6.8µ
+C1 OUT 0 10µ
+V1 IN 0 1
+Rload OUT 0 55
+.tran 1m startup
+* LTC3525-3.3 - 400mA µPower Synchronous Step-Up DC/DC Converter with Output Disconnect\nSingle Alkaline or NiMH to 3.3V Converter\nInput: 1V to 1.6V     Output: 3.3V @ 60mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3525-3.3.sub
+.backanno
+.end

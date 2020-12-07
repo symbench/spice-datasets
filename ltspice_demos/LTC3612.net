@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTC3612.asc
+L1 N001 OUT 0.47µ Rpar=10K
+R1 OUT N002 165K
+V1 IN 0 3.3
+R2 N002 0 82.5K
+C1 OUT 0 100µ
+C3 IN 0 22µ x2
+Rload OUT 0 .6
+XU2 0 IN 0 MP_01 MP_02 MP_03 MP_04 IN MP_05 MP_06 N001 MP_07 IN IN IN NC_08 IN N002 IN IN 0 LTC3612
+.tran 1.5m startup
+* LTC3612 - 3A, 4MHz Monolithic Synchronous Step-down Regulator\nInput: 3.3V     Output: 1.8V @ 3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LTC3612.sub
+.backanno
+.end

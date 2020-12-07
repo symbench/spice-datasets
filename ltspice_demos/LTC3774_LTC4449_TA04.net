@@ -1,0 +1,54 @@
+* Z:\mnt\spice-netlists\LTC3774_LTC4449_TA04.asc
+V1 IN 0 12
+C1 0 N001 4.7µ
+XU1 MP_01 MP_02 N009 N005 N013 0 N012 N001 N001 N004 LTC4449
+M§Q1 IN N009 N005 N005 BSC050NE2LS
+M§Q2 N005 N013 0 0 BSC010NE2LSI
+L1 N005 OUT2 .33µ Rser=.32m Rpar=5K
+R1 N005 N015 931
+C2 N015 OUT2 .22µ
+XU2 MP_03 MP_04 N008 N002 N010 0 N011 N001 N001 N003 LTC4449
+M§Q3 IN N008 N002 N002 BSC050NE2LS
+M§Q4 N002 N010 0 0 BSC010NE2LSI
+L2 N002 OUT2 .33µ Rser=.32m Rpar=5K
+R2 N002 N014 931
+C3 N014 OUT2 .22µ
+D1 N001 N003 1N5818
+C4 N003 N002 .22µ
+D2 N001 N004 1N5818
+C5 N004 N005 .22µ
+R3 N005 N017 4.64K
+C6 OUT2 N017 .22µ
+R4 N022 0 37.4K
+R5 N002 N016 4.64K
+C7 OUT2 N016 .22µ
+XU3 NC_05 N019 0 N018 N021 N007 NC_06 N012 NC_07 0 N017 OUT2 N015 NC_08 NC_09 N014 OUT2 N016 MP_10 NC_11 N011 NC_12 N006 N021 N018 0 N019 NC_13 NC_14 NC_15 N022 0 NC_16 N001 IN NC_17 LTC3774
+R6 OUT2 0 20m
+C8 OUT2 0 330µ X6 Rser=9m
+C9 OUT2 0 100µ X4 Rser=2m
+C10 N019 0 330p
+C11 N020 0 3.3n
+R7 N019 N020 3.01K
+C12 N021 0 .001µ
+R8 N018 0 10k
+R9 N018 OUT2 10K
+C13 N018 OUT2 22p
+C14 IN 0 22µ Rser=4m m=4
+C15 IN 0 180µ m=2 Rser=30m
+C16 N001 0 4.7µ
+C17 N001 0 4.7µ
+R10 IN N006 10K
+R11 IN N007 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+* LTC3774 - Dual, Multiphase Current Mode Synchronous Controller for Sub-Milliohm DCR Sensing\nLTC4449 - High Speed Synchronous N-Channel MOSFET Driver\nHigh Efficiency 2-Phase Buck Converter with Discrete MOSFET Drivers\nInput: 7V to 14V     Outputs: 1.2V @ 60A, Fsw = 400kHz
+* 1.2V @ 60A
+* Note:\n  Small value are used for TRACK/SS capacitors to reduce simulation time. The typical value for actual applications will vary from 10nF to 100nF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3774.sub
+.lib LTC4449.sub
+.backanno
+.end

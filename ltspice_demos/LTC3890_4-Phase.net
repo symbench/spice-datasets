@@ -1,0 +1,74 @@
+* Z:\mnt\spice-netlists\LTC3890_4-Phase.asc
+V1 IN 0 48
+M§Q1 IN G1 N008 N008 BSZ100N06LS3
+M§Q2 N008 N011 0 0 IPD048N06L3
+D1 N003 N005 MBRS1100
+C1 N003 0 4.7µ
+C2 N005 N008 .1µ
+L1 N008 N009 10µ
+R1 N009 OUT 3m
+C3 OUT 0 22µ
+M§Q3 IN G2 N007 N007 BSC100N06LS3
+M§Q4 N007 N010 0 0 IPD048N06L3
+D2 N003 N004 MBRS1100
+C4 N004 N007 .1µ
+L2 N007 N006 10µ
+R2 N006 OUT 3m
+C5 OUT 0 22µ
+R3 OUT N012 499K
+R4 N012 0 35.7K
+C6 N015 0 .001µ
+XU1 OUT N016 N018 N017 N003 0 N002 N002 OUT N009 N012 N014 N015 N001 G1 N008 N005 N011 N003 OUT 0 IN N010 N004 N007 G2 N001 NC_01 N015 N014 N012 N006 LTC3890
+C7 IN 0 2.2µ
+C8 IN 0 2.2µ
+C9 IN 0 2.2µ
+C10 IN 0 2.2µ
+R5 IN N002 499K
+R6 N002 0 40.2K
+C11 OUT N012 15p
+C12 OUT 0 150µ Rser=0.01
+C13 OUT 0 150µ Rser=0.01
+R7 N016 0 41.2K
+C14 IN 0 47µ Rser=0.01
+R8 N003 N001 100K
+M§Q5 IN G3 N025 N025 BSZ100N06LS3
+M§Q6 N025 N028 0 0 IPD048N06L3
+D3 N020 N022 MBRS1100
+C15 N020 0 4.7µ
+C16 N022 N025 .1µ
+L3 N025 N026 10µ
+R9 N026 OUT 3m
+C17 OUT 0 22µ
+M§Q7 IN G4 N024 N024 BSC100N06LS3
+M§Q8 N024 N027 0 0 IPD048N06L3
+D4 N020 N021 MBRS1100
+C18 N021 N024 .1µ
+L4 N024 N023 10µ
+R10 N023 OUT 3m
+C19 OUT 0 22µ
+XU2 OUT N029 N030 NC_02 N017 0 N002 N002 OUT N026 N012 N014 N015 N019 G3 N025 N022 N028 N020 OUT 0 IN N027 N021 N024 G4 N019 NC_03 N015 N014 N012 N023 LTC3890
+C20 IN 0 2.2µ
+C21 IN 0 2.2µ
+C22 IN 0 2.2µ
+C23 IN 0 2.2µ
+C24 0 N014 47p
+C25 OUT 0 150µ Rser=0.01
+C26 OUT 0 150µ Rser=0.01
+R11 N029 0 41.2K
+C27 IN 0 47µ Rser=0.01
+R12 N020 N019 100K
+C28 N013 0 4.7n
+R13 N014 N013 15.4K
+C29 N014 0 47p
+Rload OUT 0 .24
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 500u startup
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTC3890 - 60V Low IQ, Dual, 2-Phase Synchronous Step-Down DC/DC Controller\nHigh Voltage, High Output Current 4-Phase Synchronous Step-Down Converter\nInput: 16V up to 60V,   Output: 12V @ 50A
+.lib LTC3890.sub
+.backanno
+.end

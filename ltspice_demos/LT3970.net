@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LT3970.asc
+XU1 N005 IN IN 0 MP_01 N002 N001 OUT N003 N004 LT3970
+L1 N002 OUT 22µ
+R1 OUT N005 1Meg
+R2 N005 0 316K
+R3 N004 0 226K
+C1 N001 N002 .22µ
+C2 OUT 0 22µ
+R4 IN N003 100K
+C3 OUT N005 22p
+V1 IN 0 12
+C4 IN 0 2.2µ
+Rload OUT 0 14.3
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3970,  40V, 350mA Step-Down Regulator with 2.5µA Quiescent Current and Integrated Diodes\nInput: 12V       Output: 5V @ 0.35A
+.tran 1m startup
+.lib LT3970.sub
+.backanno
+.end

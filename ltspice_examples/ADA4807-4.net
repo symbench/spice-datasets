@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADA4807-4.asc
+V1 +V 0 5
+V2 IN 0 SINE(0 0.5 250K)
+R1 N001 0 1K
+R2 OUT N001 1K
+V3 -V 0 -5
+XU1 IN N001 +V -V OUT ADA4807-4
+.tran 50u
+.lib ADI.lib
+.backanno
+.end

@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT1962_DC339.asc
+V1 IN 0 PWL(0 0 1 20)
+C3 OUT 0 10µ
+R1 OUT N001 261K
+R2 N001 0 249K
+C2 N002 OUT 0.01µ
+C1 IN 0 1µ
+XU1 OUT N001 N002 0 IN MP_01 MP_02 IN LT1962
+Rload OUT 0 8.3
+.tran 1 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT1962 - 300mA, Low Noise, LDO µPower Regulators\nInput: 10V     Output: 2.5V @ 300mA
+.lib LT1962.lib
+.backanno
+.end

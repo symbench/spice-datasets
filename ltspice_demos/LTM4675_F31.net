@@ -1,0 +1,37 @@
+* Z:\mnt\spice-netlists\LTM4675_F31.asc
+C1 IN 0 10µ x4
+V1 IN 0 12
+R2 N002 N003 10K
+C2 OUT 0 100µ x2 Rser=2m
+C3 OUT 0 470µ Rser=10m
+C4 OUT 0 470µ Rser=10m
+C5 OUT 0 100µ x2 Rser=2m
+R3 N002 N001 10K
+Rload OUT 0 0.0278
+I1 OUT 0 PWL(1.4m 0 1.401m 36 1.6m 36 1.601m 0)
+XU1 OUT 0 MP_01 MP_02 N006 MP_03 MP_04 N001 IN MP_05 OUT MP_06 MP_07 N003 N003 N006 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 N006 IN N002 N006 OUT MP_14 N004 OUT MP_15 MP_16 NC_17 0 IN NC_18 NC_19 NC_20 N005 MP_21 0 LTM4675 VIN_ON=5.5 VIN_OFF=5 Vout_0=1 Vout_1=1 Ilim0_range=1 Ilim1_range=1 OC_limit0=1 OC_limit1=1 Mode_ll=2 Fault_response=0 Retry_delay=.1m Freq=500K PHs_0=0 PHs_1=180 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_range=0 Vout1_range=0
+C6 IN 0 10µ x4
+C7 OUT 0 100µ x2 Rser=2m
+C8 OUT 0 470µ Rser=10m
+C9 OUT 0 470µ Rser=10m
+C10 OUT 0 100µ x2 Rser=2m
+XU2 OUT 0 MP_22 MP_23 N006 MP_24 MP_25 N001 IN MP_26 OUT MP_27 MP_28 N003 N003 N006 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 N006 IN NC_35 N006 OUT MP_36 N007 OUT MP_37 MP_38 NC_39 0 IN NC_40 NC_41 NC_42 N008 MP_43 0 LTM4675 VIN_ON=5.5 VIN_OFF=5 Vout_0=1 Vout_1=1 Ilim0_range=1 Ilim1_range=1 OC_limit0=1 OC_limit1=1 Mode_ll=2 Fault_response=0 Retry_delay=.1m Freq=500K PHs_0=60 PHs_1=240 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_range=0 Vout1_range=0
+C11 IN 0 10µ x4
+C12 OUT 0 100µ x2 Rser=2m
+C13 OUT 0 470µ Rser=10m
+C14 OUT 0 470µ Rser=10m
+C15 OUT 0 100µ x2 Rser=2m
+XU3 OUT 0 MP_44 MP_45 N006 MP_46 MP_47 N001 IN MP_48 OUT MP_49 MP_50 N003 N003 N006 NC_51 NC_52 NC_53 NC_54 NC_55 NC_56 N006 IN NC_57 N006 OUT MP_58 N009 OUT MP_59 MP_60 NC_61 0 IN NC_62 NC_63 NC_64 N010 MP_65 0 LTM4675 VIN_ON=5.5 VIN_OFF=5 Vout_0=1 Vout_1=1 Ilim0_range=1 Ilim1_range=1 OC_limit0=1 OC_limit1=1 Mode_ll=2 Fault_response=0 Retry_delay=.1m Freq=500K PHs_0=120 PHs_1=300 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_range=0 Vout1_range=0
+C16 IN 0 10µ x4
+C17 OUT 0 100µ x2 Rser=2m
+C18 OUT 0 470µ Rser=10m
+C19 OUT 0 470µ Rser=10m
+C20 OUT 0 100µ x2 Rser=2m
+XU4 OUT 0 MP_66 MP_67 N006 MP_68 MP_69 N001 IN MP_70 OUT MP_71 MP_72 N003 N003 N006 NC_73 NC_74 NC_75 NC_76 NC_77 NC_78 N006 IN NC_79 N006 OUT MP_80 N011 OUT MP_81 MP_82 NC_83 0 IN NC_84 NC_85 NC_86 N012 MP_87 0 LTM4675 VIN_ON=5.5 VIN_OFF=5 Vout_0=1 Vout_1=1 Ilim0_range=1 Ilim1_range=1 OC_limit0=1 OC_limit1=1 Mode_ll=2 Fault_response=0 Retry_delay=.1m Freq=500K PHs_0=90 PHs_1=270 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_range=0 Vout1_range=0
+.tran 2m startup
+* LTM4675 - Dual 9A or Single 18A µModule Regulator with Digital Power System Management\n72A µModule Buck Regulator with Digital Interface for Control & Monitoring\nInput: 10V to 14V     Output: 1V @ 72A
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc.  All rights reserved.
+* Please read the following notes carefully, since the model presents different user interface than the real part does.\n(1) All PMBus communication and memory address related functions and pins are not modeled. \n(2) Changes to all parameter values during the simulation running will not be in effect, unless the simulation is stopped and restarted. This is different from the operation of the part, which will respond to the commanded changes while running. \n(3) Share_clk is not modeled. The default time reference of LTspice is used as the common time base for all time related parameters.\n(4) The following parameters can be defined, by right-clicking the symbol of LTC3880. Different nomenclature from the datasheet is adopted here. If any value of these parameters are set beyond the scope discribed in the datasheet, the resulting simulation outcomes are not meaningful.\n     VIN_ON & VIN_OFF -- in volts, set the unit start/stop input voltages;\n     Freq -- in Hz, sets switching frequency as one of values of 250K, 350K, 425K, 500K, 575K, 650K, 750K, 1000K. FREQ_CFG pin needs to float (or short to VDD25), to make the value be in effect;\n     PHs_0 & PHs_1 -- in degree,  set phase angle related to SYNC signal. Certain combinations are restricted as in datasheet. FREQ_CFG pin needs to float (or short to VDD25), to make the value be in effect;\n     Ton0_delay & Ton0_rise; Ton1_delay & Ton1_rise -- in sec, set delay and soft-start timers for channel0 and channel1. Initialization time is not modeled;\n     Toff0_delay & Toff0_fall; Toff1_delay & Toff1_fall -- in sec, set delay and soft-off timers for channel0 and channel1;\n     Vout_0 & Vout_1 -- in volt, set output voltages respectively;\n     Vout0_range & Vout1_range -- set maximum output range, with value 0 for 4.096V (CH0) and 5.5V (CH1); value 1 for 2.75V\n     Ilim0_range & Ilim1_range -- set maximum sensed peak current range, with value 0 for low 50mV, and 1 for high 75mV; \n     OC_limit0 & OC_limit1 -- set ratio of peak current limit to the maximum value defined by Ilimit_range. It must be one of values: 0.5, 0.572, 0.642, 0.714, 0.786, 0.858, 0.928, 1;\n     Mode_II -- sets light load operation mode: 0 for discontinuous, 1 for Burst, 2 for forced continuous;\n     Fault_response -- sets the response mode of the unit to occuring faults: 0 for ignore, 1 for latch up, 2 for Hiccup after Retry_delay time;\n     Retry_delay -- in sec, sets the timer before the unit turns on after a fault;
+.lib LTM4675.sub
+.backanno
+.end

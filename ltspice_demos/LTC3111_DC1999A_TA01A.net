@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTC3111_DC1999A_TA01A.asc
+XU1 0 N007 N005 0 IN 0 IN MP_01 OUT MP_02 MP_03 N002 MP_04 N004 N001 MP_05 N003 N009 IN LTC3111
+L1 N001 N002 10µ Ipk=4.9 Rser=.0409
+C1 N001 N003 .1µ
+C2 N002 N004 .1µ
+C3 OUT 0 100µ V=16V Rser=.01
+C5 OUT N006 47p
+R2 N006 N005 11.5K
+R3 OUT N005 845K
+R4 N005 0 158K
+C6 N005 N007 22p
+C7 N005 N008 1500p
+R5 N008 N007 41.2K
+C8 N009 0 1µ
+C9 IN 0 47µ V=16 Rser=.01
+V1 IN 0 12V
+Rload OUT 0 10
+.tran 4m startup
+* LTC3111- 15V, 1.5A Synchronous Buck-Boost DC/DC Converter\n5V, 800kHz Wide Input Voltage Buck-Boost Regulator\nInput: 2.5V to 15V     Output: 5V @ 1.5A for Vin > Vout
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc.  All rights reserved.
+.lib LTC3111.sub
+.backanno
+.end

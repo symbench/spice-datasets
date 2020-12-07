@@ -1,0 +1,54 @@
+* Z:\mnt\spice-netlists\LTC3869_DC1807A-A.asc
+V1 IN 0 12
+C1 IN 0 10µ x3 Rser=5m
+M§Q1 IN N002 N007 N007 RJK0305DPB
+M§Q2 N007 N010 0 0 RJK0301DPB
+D1 N001 N004 CMDSH2-3
+C2 N004 N007 .1µ
+L1 N007 N006 0.4µ Rser=0.47m
+C3 VOUT1 0 100µ Rser=2m
+R1 N006 N012 10
+C4 N012 N014 1n
+R2 VOUT1 N016 30.1K
+R3 N016 0 20K
+C5 N018 0 1.5n
+R4 N019 N018 5.9K
+C6 N019 0 100p
+C7 N022 0 1n
+R5 N024 0 100K
+C8 N023 0 1n
+M§Q3 IN N003 N008 N008 RJK0305DPB
+M§Q4 N008 N011 0 0 RJK0301DPB
+D2 N001 N005 CMDSH2-3
+C9 N005 N008 .1µ
+L2 N008 N009 0.4µ Rser=0.47m
+C10 OUT2 0 100µ Rser=2m
+R6 N009 N013 10
+C11 N013 N015 1n
+R7 OUT2 N017 20K
+R8 N017 0 20K
+C12 N021 0 1.5n
+R9 N020 N021 5.9K
+C13 N020 0 220p
+XU1 N022 N012 N014 N016 N024 0 NC_01 N019 0 NC_02 N020 N017 N015 N013 N023 N003 N008 N005 N011 0 N001 NC_03 N010 IN N004 N007 N002 NC_04 NC_05 LTC3869
+C14 VOUT1 0 330µ x2 Rser=9m
+C15 OUT2 0 330µ x2 Rser=9m
+R10 N006 VOUT1 2m
+R11 N009 OUT2 2m
+R12 VOUT1 N014 10
+R13 OUT2 N015 10
+Rload1 VOUT1 0 .1
+Rload2 OUT2 0 .08
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* 1.5V, MAX 15A
+* 1.2V, MAX 15A
+* LTC3869 - Dual, 2-Phase Synchronous Step-Down DC/DC Controller\nHigh Efficiency Dual 1.5V/1.2V Buck Converter using Rsense Current Sensing\nInput: 4.5V-14V     Outputs: 1.5V @ 15A and 1.2V @ 15A, Fsw = 400kHz
+* Notes:\n  A 100 Ohm & 1nF Rsense filter may be required to counter effects of Rsense ESL. Refer to the datasheet for details. \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.tran .7m startup
+.lib LTC3869.sub
+.backanno
+.end

@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\ADP5074.asc
+R1 N004 N005 15.8K
+R2 OUT N004 115K
+R3 N006 N007 10K
+L1 N001 0 4.7µ
+D1 OUT N001 MBRS140
+C2 OUT 0 12µ
+Rload OUT 0 200
+C3 0 N006 1µ
+C4 0 N005 1µ
+V1 IN 0 5
+R4 N003 N002 50K
+C1 N002 0 2n
+C5 N003 0 15p
+XU1 0 IN N005 IN N001 IN N003 N004 NC_01 0 N006 NC_02 N007 ADP5073_4 CL=2.75 CS=80m Ron=220m IQ=2.5m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4.5m startup
+.lib ADP5073_4.sub
+.backanno
+.end

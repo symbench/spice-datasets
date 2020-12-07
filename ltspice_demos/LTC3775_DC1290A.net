@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LTC3775_DC1290A.asc
+XU1 N004 N006 N011 N013 N007 N009 0 N010 N001 N003 IN N008 N005 N002 NC_01 N012 0 LTC3775
+V1 IN 0 12
+R1 IN N004 2.15K
+M§Q1 N003 N005 N008 N008 RJK0305DPB
+M§Q2 N008 N010 0 0 RJK0301DPB
+L1 N008 OUT .39µ Rser=1m Rpar=5K
+C1 N002 N008 .1µ
+D1 N001 N002 CMDSH2-3
+R2 IN N003 5m
+C2 OUT 0 470µ x2 Rser=.01
+C3 N001 0 4.7µ
+R3 N006 0 73.2K
+C4 N007 0 .001µ
+R4 N009 0 38.3K
+R5 IN N012 43.2K
+R6 N012 0 10K
+R7 OUT N011 10K
+R8 N011 0 10K
+C5 N011 N013 0.01µ Rser=1.5K Cpar=100p
+Rload OUT 0 .25
+C6 OUT N011 2200p Rser=1K
+C7 OUT 0 100µ Rser=3m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC3775 - High Frequency Synchronous Step-Down Voltage Mode DC/DC Controller\nVin: 5V-26V, Vout: 1.2V @ 15A
+* Notes:\n \n  C4 should be 0.01µF, not 0.001µF.  It is reduced in value here to speed up the time to simulate a soft start cycle.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3775.sub
+.backanno
+.end

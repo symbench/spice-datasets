@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3113.asc
+V1 IN 0 3.6
+L1 N001 N002 2.2µ
+C5 N003 N005 680p Rser=49.9K Cpar=12p
+R2 OUT N003 845K
+R3 N003 0 158K
+C6 OUT N003 47p Rser=6.49K
+C7 OUT 0 100µ
+Rload OUT 0 1.22
+XU1 N004 0 0 N001 0 MP_01 N002 OUT MP_02 IN MP_03 IN N003 N005 LTC3113
+R1 N004 0 90.9K
+.tran 2.5m startup
+.lib LTC3113.sub
+.backanno
+.end

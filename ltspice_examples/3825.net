@@ -1,0 +1,48 @@
+* Z:\mnt\design.r\spice\examples\3825.asc
+L1 N002 N001 200µ Rser=.2
+L2 OUT N003 3.125µ Rser=12m
+L3 N022 0 50µ Rser=.215
+M§Q1 N002 N009 N011 N011 Si4490DY
+R1 N011 0 .04
+C1 0 N019 1500p
+R2 N014 N015 330
+C2 N016 N015 .1µ
+C3 N007 N017 2200p
+R3 N007 0 10K
+D1 0 N007 BAT54
+Q2 0 N007 N010 0 2N2907
+M§Q3 N003 N010 0 0 Si4466DY
+Q4 N006 N007 N010 0 2N2222
+C4 N006 0 1µ
+D2 N003 N005 BAT54
+R4 N005 N006 47
+C5 OUT 0 150µ x3
+C8 OUT 0 1µ
+R7 N021 0 3.4K
+R8 N022 N021 33.8K
+L4 0 N016 1500µ Rser=1.5
+L5 0 N017 1500µ Rser=1.5
+V1 N001 0 48
+R9 N023 0 1.225K
+C9 N024 0 .1µ
+C10 N012 0 47p
+R10 N018 0 51K
+R11 N020 0 100K
+R12 N013 0 50K
+V2 N004 0 16
+Rload OUT 0 1
+XU1 N014 N004 N020 N018 0 N008 N012 N021 N019 N004 0 N011 N024 N023 N013 N009 0 LT3825
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 L3 1
+K2 L4 L5 1
+.tran 1m startup
+.lib LT3825.sub
+.backanno
+.end

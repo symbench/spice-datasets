@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\4358.asc
+V1 N001 0 PWL(0 12 50m 0 100m 12)
+V2 N003 0 PWL(0 0 50m 12 100m 0)
+XU1 N002 N001 N002 NC_01 N002 0 LTC4358
+XU2 N002 N003 N002 NC_02 N002 0 LTC4358
+Rload N002 0 2
+.tran 100m
+.lib LTC4358.sub
+.backanno
+.end

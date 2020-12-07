@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LTC3115-1_TA04A.asc
+R1 N010 0 35.7K
+C1 N009 0 4.7µ
+V1 IN 0 24
+L1 N001 N002 4.7µ Rser=5m
+C2 N001 N003 .1µ
+C3 N002 N004 .1µ
+R2 OUT N008 1Meg
+R3 N008 0 90.9K
+C4 N005 N008 820p Rser=40.2K
+C5 OUT N006 33p
+C6 OUT 0 47µ V=10 Irms=10.206 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C226K8PAC" type="X5R"
+XU1 0 N007 N002 OUT 0 MP_01 N005 N008 N010 MP_02 MP_03 N009 IN N009 N004 N003 IN N001 N009 LTC3115-1
+R4 IN N007 2Meg
+R5 N007 0 255K
+C7 IN 0 10µ
+R6 N006 N008 10K
+Rload OUT 0 8.6
+.tran 9m startup
+* LTC3115-1 - 40V, 2A Synchronous Buck-Boost DC/DC Converter\nIndustrial 12V 1MHz Regulator with Undervoltage Lockout Thresholds\nInput: 10V - 40V     Output: 12V @ 1.4A, UVLO Enabled/Disabled at 10.6V/8.7V
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc.  All rights reserved.
+.lib LTC3115-1.sub
+.backanno
+.end

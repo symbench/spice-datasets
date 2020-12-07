@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\9100.asc
+XU1 N013 N012 N010 MP_01 MP_02 N007 N007 N007 0 N006 N005 N004 MP_03 MP_04 N003 N002 COM MP_05 N017 N016 N001 N015 N014 N011 N008 COM N001 N001 LTM9100 OVRTRY=1 UVRTRY=1 OCRTRY=1
+V1 N010 0 PULSE(0 3.3 1m 5n 5n 1 2)
+V2 N007 0 5
+M§Q1 VBUS+ N014 N015 N015 IRF1310
+R1 N015 COM .008
+R2 VBUS+ N011 1Meg
+R3 N009 N008 1K
+C1 VBUS+ N009 47n
+C2 COM VBUS- 1500µ
+V3 VBUS+ VBUS- 48
+R4 N014 N018 10
+C3 N018 COM 47n
+R5 N001 N003 10K
+Visodiff COM 0 0
+R6 COM VBUS- 2Meg
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 500m startup
+* Set Visodiff non-zero to show operation with \ndifferent voltages on either side of the isolation barrier.
+.lib LTM9100.sub
+.backanno
+.end

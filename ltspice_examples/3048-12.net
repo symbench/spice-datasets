@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3048-12.asc
+V1 IN 0 3.3
+L1 IN N002 10µ Rser=.65
+C1 N001 0 4.7µ
+C2 OUT N003 .1n
+C3 OUT 0 1µ Rser=10m
+Rload OUT 0 413.8
+XU1 N002 IN 0 N003 OUT N001 IN N001 LT3048-12
+.tran 1.5m startup
+.lib LT3048-12.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1500-3.asc
+L1 N001 N002 33µ
+V1 IN 0 3
+C1 OUT 0 220µ Rser=0.05
+R3 N006 N005 100K
+C2 N005 0 2000p
+C3 N007 0 1000p
+R8 N007 0 1Meg
+D1 N002 OUT 1N5818
+XU1 IN N006 IN N001 MP_01 0 0 N002 0 N003 N004 N007 0 OUT LT1500-3
+Rload OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LT1500-3.sub
+.backanno
+.end

@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\7800.asc
+M§Q1 IN N003 N005 N005 RJK0305DPB
+L1 N005 N006 .33µ Rser=1.5m
+C1 OUT 0 150µ Rser=5m
+R1 OUT N011 357K
+R2 N011 0 115K
+C2 N004 N005 .1µ
+C3 N001 0 4.7µ
+C4 N010 0 820p Rser=2.49K
+C5 N009 0 .01µ
+V1 IN 0 12
+D1 N001 N004 CMDSH2-3
+M§Q2 N005 N008 0 0 RJK0301DPB
+Rload OUT 0 .66
+R4 N006 OUT 4m
+R3 N007 0 100K
+V2 N002 0 3.3
+XU1 OUT N007 MP_01 MP_02 NC_03 0 N002 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 N001 NC_15 0 IN N008 N004 N005 N003 NC_16 NC_17 N009 N010 N011 N006 LTC7800
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC7800.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\2960-3.asc
+R1 N001 N003 825K
+R2 N003 0 80.6K
+R3 OUT N004 6.04Meg
+R4 N004 0 1Meg
+Vbat N001 0 PWL(0 0 20 28 40 0)
+XU1 N001 OUT OUT 0 N001 LT3008-3.3
+XU2 OUT OUT _UV N002 0 N002 N004 N003 LTC2960-3
+C2 OUT 0 22µ
+* Automotive Supervisor (H-Grade)
+* 12V
+* 3.3V
+.tran 40
+.lib LT3009.lib
+.lib LTC2960-3.sub
+.backanno
+.end

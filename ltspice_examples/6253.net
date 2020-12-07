@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\6253.asc
+V2 +V 0 5
+V4 IN 0 SINE(2.5 1 250K)
+R1 OUT+ N001 1K
+R2 N001 IN 1K
+R3 OUT- N002 1K
+R4 N002 IN 1K
+R5 N003 +V 1K
+R6 0 N003 1K
+C1 N003 0 0.1µ
+XU1 OUT+ 0 IN N001 +V LTC6253
+XU2 OUT- 0 N003 N002 +V LTC6253
+.tran 25u
+* Single-ended in to differential out
+.lib LTC4.lib
+.backanno
+.end

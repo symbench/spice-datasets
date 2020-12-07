@@ -1,0 +1,63 @@
+* Z:\mnt\design.r\spice\examples\6373.asc
+C1 N006 0 180p
+V3 N005 0 {vocm}
+VDD V+ 0 {VS/2}
+VSS V- 0 {-VS/2}
+R1 OutP OutN {RL}
+E2 0 InN N004 0 0.5
+E3 OutDiff 0 OutP OutN 1
+V2 N001 0 5
+V1 N003 0 5
+V0 N002 0 0
+C2 OutP OutN {CL}
+Vin N004 0 SINE({vicm} {ampl} {sigfreq} 0 0 0) AC 1 0
+E1 InP 0 N004 0 0.5
+XU2 InN N002 N003 V+ V+ OutP OutN N005 N006 0 N001 InP V- LTC6373
+.param VS=30
+.param vicm=0
+.param vocm=2.5
+.param ampl=20
+.param sigfreq=1k
+.param CL=10p
+.param RL=2k
+.tran 2m
+;.ac oct 8 10k 100MEG
+* A2
+* A1
+* A0
+* Gain (V/V)
+* L
+* 16
+* H
+* 8
+* 4
+* 2
+* 1
+* 0.5
+* 0.25
+* SHDN
+* L
+* L
+* L
+* L
+* L
+* L
+* L
+* L
+* L
+* L
+* L
+* H
+* H
+* H
+* H
+* H
+* H
+* H
+* H
+* H
+* H
+* H
+.lib LTC6373.sub
+.backanno
+.end

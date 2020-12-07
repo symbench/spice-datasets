@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT8580_TA01A.asc
+L1 IN N001 15µ Rser=50m
+D1 N001 OUT MBRS130L
+C1 OUT 0 4.7µ Rser=5m
+C2 0 N006 3300p Rser=6.04K Cpar=47p
+R1 N005 0 56.2K
+C3 N003 0 .1µ
+V1 IN 0 5
+R2 OUT N004 130K
+Rload OUT 0 60
+XU1 N004 N006 IN N001 N002 N005 N003 MP_01 0 LT8580
+R3 IN N002 10K
+C4 IN 0 4.7µ Rser=5m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 15m startup
+* LT8580 - Boost/SEPIC/Inverting DC/DC Converter with 1A, 65V Switch, Soft-Start and Synchronization\n1.5MHz, 5V to 12V Boost Converter\nInput: 3.5V to 6V     Output: 12V @ 200mA, Fsw = 1MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8580.sub
+.backanno
+.end

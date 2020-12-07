@@ -1,0 +1,40 @@
+* Z:\mnt\design.r\spice\examples\3882.asc
+V1 IN 0 32
+XU1 MP_01 MP_02 N008 N003 N012 0 N010 N001 N005 N004 LTC4449
+M§Q1 IN N008 N003 N003 BSC050N04LS
+L1 N003 OUT .2µ Rser=.3m Rpar=5K
+R1 N003 N014 3.09K
+C1 N014 OUT .22µ
+C2 OUT 0 470µ X4 Rser=25m
+C3 OUT 0 100µ X2 Rser=3m
+D1 N005 N004 1N5818
+C4 N004 N003 .22µ
+C5 N017 OUT 200p Rser=1.07K
+M§Q2 N003 N012 0 0 BSC017N04NS
+XU3 MP_03 MP_04 N009 N007 N013 0 N011 N001 N005 N006 LTC4449
+L2 N007 OUT .2µ Rser=.3m Rpar=5K
+R4 N007 N015 3.09K
+C6 N015 OUT .22µ
+D2 N005 N006 1N5818
+C7 N006 N007 .22µ
+C8 N016 N017 270p Rser=100K Cpar=11p
+C9 N018 0 100p
+V2 N005 0 5
+Rload OUT 0 82.5m
+M§Q3 IN N009 N007 N007 BSC050N04LS
+M§Q4 N007 N013 0 0 BSC017N04NS
+C10 N001 0 2.2µ
+C11 N019 0 1µ
+R2 N002 N001 2K
+XU2 N017 N016 OUT 0 NC_05 NC_06 N018 OUT N016 N001 0 NC_07 N002 N019 NC_08 MP_09 NC_10 N010 N005 MP_11 0 N014 OUT OUT N015 N001 MP_12 N005 N011 NC_13 MP_14 N018 MP_15 IN MP_16 N005 LTC3882 Vout_0=1 Vout_1=1 Iout0_fault=29.75 Iout1_fault=29.75 Iout0_warn=20 Iout1_warn=20 Iout0_gain=1m Iout1_gain=1m Vout0_AVP=0 Vout1_AVP=1 PWM0_Protocol=0 PWM1_Protocol=0 Freq=500K PHAS_0=0 PHAS_1=180 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_rng=0 Vout1_rng=0
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* Please read the following notes carefully, since the model presents different user interface\nthan the real part does.\n \n(1) All PMBus communication and memory address related functions and pins are not modeled. \n \n(2) Changes to all parameter values during the simulation running will not be in effect, unless the\nsimulation is stopped and restarted. This is different from the operation of the part, which will\n respond to the commanded changes while running. \n \n(3) Share_clk is not modeled. The default time reference of LTspice is used as the common time \nbase for all time related parameters.\n \n(4) The following parameters can be defined, by right-clicking the symbol of LTC3882. Different \nnomenclature from the datasheet is adopted here. If any value of these parameters are set beyond \nthe scope discribed in the datasheet, the resulting simulation outcomes are not meaningful.\n \n    Freq -- in Hz, sets switching frequency as one of values of 250K, 300K, 350K, \n                400K, 450K, 500K, 600K, 750K, 900K, 1000K, 1250K. FREQ_CFG pin needs to float \n                (or short to VDD25), to make the value be in effect;\n     PHAS_0 & PHAS_1 -- in degree,  set phase angle related to SYNC signal. \n                Certain combinations are restricted as in datasheet. PHAS_CFG \n                pin needs to float (or short to VDD25), to make the value be in effect;\n     Ton0_delay & Ton0_rise; Ton1_delay & Ton1_rise -- in sec, set delay and soft-start timers for \n                channel0 and channel1. Initialization time is not modeled;\n     Toff0_delay & Toff0_fall; Toff1_delay & Toff1_fall -- in sec, set delay and soft-off timers for \n                channel0 and channel1;\n     Vout_0 & Vout_1 -- in volt, set output voltages respectively. Vout#_CFG pin needs to float \n                (or short to VDD25), to make the value be in effect;\n     Vout0_range & Vout1_range -- set maximum output range, with value 0\n                                                      for 5.5V; value 1 for 2.75V;\n     Iout0_fault & Iout1_fault -- in Amper, set maximum inductor peak current value, OC will be triggered \n                                               when the value is exceeded;\n     Iout0_warn & Iout1_warn -- in aMper, set the average load current maximum value, which will be used  \n                                                with Vout#_AVP to define the AVP operation;\n     Iout0_gain & Iout1_gain -- in Ohm, set sensing resistor or inductor DCR values used in the circuit;\n     Vout0_AVP & Vout1_AVP -- set the maximum value reference will reduce at Iout#_warn level:\n     PWM0_Protocol & PWM1_Protocol-- sets TG/BG output rules: 0 for 3-state PWM output; 1 for 2-state PWM output with active-high EN;\n                                 2 for 2-state PWM output with active-low open drain disable; 4 for indenpendent TG/BG outputs.
+.lib LTC3882.sub
+.lib LTC4449.sub
+.backanno
+.end

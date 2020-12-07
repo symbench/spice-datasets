@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\3014.asc
+XU1 OUT N002 MP_01 0 N001 MP_02 MP_03 N001 LT3014
+V1 N001 0 PWL(0 0 1 10)
+R1 OUT N002 3.92Meg
+R2 N002 0 1.27Meg
+Rload OUT 0 250
+C1 OUT 0 .47µ
+.tran 1
+.lib LT3014.lib
+.backanno
+.end

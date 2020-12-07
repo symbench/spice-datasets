@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\8584.asc
+XU1 0 MP_01 MP_02 MP_03 Vbatt 0 0 N004 N003 Vbatt N003 N005 N002 LT8584
+V1 Vbatt 0 4.2
+R1 N003 Vbatt 12m
+C1 N003 0 100µ Rser=10m
+D1 N001 Vpack MMSD4148
+C2 Vpack 0 1µ
+V2 Vpack 0 50
+C3 N004 0 47n
+V3 N005 0 PWL(.5m 0 .51m 2)
+L1 N003 N002 10µ Rser=10m Rpar=5K
+L2 0 N001 160µ Rser=.1 Rpar=2K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 .99
+.tran 1.5m startup
+.lib LT8584.sub
+.backanno
+.end

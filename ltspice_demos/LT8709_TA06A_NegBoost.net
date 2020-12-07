@@ -1,0 +1,41 @@
+* Z:\mnt\spice-netlists\LT8709_TA06A_NegBoost.asc
+XU1 N010 N011 N014 NC_01 N013 IN N004 INTVCC IN N007 N005 INTVCC 0 IN N006 N008 INTVCC N009 MP_02 IN LT8709
+V1 0 IN 7 Rser=1m
+L1 N001 0 2.2µ Ipk=12 Rser=0.0059 Rpar=2435 Cpar=5.45p
+R1 IN N004 7m
+R2 OUT N010 130K
+C1 0 OUT 200µ Rser=1m
+C2 N011 IN 100p
+C3 N012 IN 2.2n
+R3 N011 N012 37.4K
+C4 N014 IN 10n
+C5 N013 IN 68n
+R4 N009 IN 118K
+R5 N008 IN 10K
+R6 0 N008 13.3K
+C6 INTVCC IN 2.2µ
+C7 IN INTVCC 2.2µ
+R7 N006 IN 2m
+C8 0 IN 200µ Rser=2m
+C9 0 IN 330µ Rser=100m
+M§Q1 N002 N003 N004 N004 Si4835DY
+M§Q2 N001 N005 N006 N006 BSC0901NSI
+L2 N002 OUT 2.2µ Ipk=12 Rser=0.0059 Rpar=2435 Cpar=5.45p
+C10 N002 N001 22µ
+C11 N003 N007 0.47µ Rser=1m
+R8 N003 N004 499
+D1 N003 N004 1N5817
+C12 0 OUT 330µ Rser=100m
+Rload 0 OUT 2.7
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+K1 L1 L2 0.97
+* LT8709 - Negative Input Synchronous Multi-Topology DC/DC Controller\nNegative Boost Regulator with Output Current Monitor and Power Good Indication\nInput: -4.5V to -9V       Output: -12V @ 4.5A, Fsw = 300kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8709.sub
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\4257-1.asc
+VPSE 0 IN PWL(0 0 10m 6 250m 6 260m 5 500m 5 505m 17.5 515m 17.5 516m 57)
+Rclass N003 N002 30.9
+R2 N001 N004 100K
+Cload N001 OUT 100µ Rser=10m
+C1 N001 N002 .1µ Rser=10m
+D1 0 N001 MURS120
+D2 N002 IN MURS120
+Rload N001 OUT 1.3K
+XU1 NC_01 N003 NC_02 N002 OUT N004 N002 N001 LTC4257-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0.7
+* Diode Bridge
+* Set for Class 4 Load
+.lib LTC4257-1.sub
+.backanno
+.end

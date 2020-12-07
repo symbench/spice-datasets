@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3444.asc
+L1 N001 N002 2.2µ
+V1 IN 0 3.6
+R1 OUT N003 340K
+R2 N003 0 267K
+C1 OUT 0 4.7µ Rser=10m
+XU1 IN N001 0 N002 OUT IN 0 N003 LTC3444
+V2 N004 0 PULSE(.28 2.36 100u 10u 10u 140u 300u)
+R3 N004 N003 205K
+Iload OUT 0 100m
+.tran 650u startup
+.lib LTC3444.sub
+.backanno
+.end

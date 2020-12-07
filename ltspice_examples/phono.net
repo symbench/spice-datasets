@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\phono.asc
+C1 N002 N001 .1µ
+C2 OUT N002 .33µ
+R1 OUT N001 10K
+R2 N001 0 10
+R3 IN N003 10
+R4 N002 N001 787
+C3 IN 0 100p
+R5 IN 0 47K
+V1 +V 0 15
+V2 -V 0 -15
+V4 N003 0 PULSE(-1m 1m 0 0 0 5m 10m) AC 1
+XU1 IN N001 +V -V OUT LT1028
+* .tran 30m
+.ac oct 50  1 1Meg
+* This example schematic is supplied for informational/educational purposes only.
+.lib LTC.lib
+.backanno
+.end

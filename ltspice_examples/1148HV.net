@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\1148HV.asc
+M§Q1 N002 N001 IN IN FDC638P
+M§Q2 N002 N009 0 0 FDS6680A
+L1 N002 N003 50µ
+C1 OUT 0 390µ Rser=.01
+V1 IN 0 10
+C2 N008 0 470p
+C3 N005 0 3300p
+D1 0 N002 1N5818
+C4 N003 OUT 1000p
+R1 N006 N005 1K
+R2 OUT N007 164K
+R3 N007 0 100K
+R4 N003 OUT 50m
+XU1 N001 MP_01 IN N008 MP_02 N006 OUT N003 N007 N004 0 0 MP_03 N009 LTC1148
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC1148.sub
+.backanno
+.end

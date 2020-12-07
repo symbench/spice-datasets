@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTM4613.asc
+C1 OUT 0 47µ x4 Rser=4m
+C2 N008 0 10µ x3 Rser=2m
+V1 IN 0 36
+C3 N007 0 .002µ
+R4 N009 0 392K
+R5 N003 0 5.23K
+C4 OUT N003 47p
+Rload OUT 0 1.5
+XU1 IN 0 OUT N008 N004 N004 NC_01 0 N007 N009 N006 N003 0 0 0 N005 N001 N002 LTM4613
+C5 IN 0 100µ Rser=50m
+C6 IN 0 10µ Rser=2m
+C7 IN 0 10µ Rser=2m
+R1 N001 N004 51K
+R2 IN N002 51K
+.tran 1.5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTM4613 - 36 Vin, 15 Vout 8A Step Down DC/DC µModule Regulator\nInput: 36V     Output: 12V @ 8A
+.lib LTM4613.sub
+.backanno
+.end

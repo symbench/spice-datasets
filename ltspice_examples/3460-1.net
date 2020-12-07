@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3460-1.asc
+V1 IN 0 3.6
+L1 IN N001 22µ
+D1 N001 OUT CMDSH2-3
+R1 OUT N002 1.6Meg
+R2 N002 0 124K
+C1 OUT 0 1µ V=25 Irms=7.25 Rser=0.004 Lser=0 mfg="KEMET" pn="C1206C105K3PAC" type="X5R"
+Rload OUT 0 90K
+XU1 N001 0 N002 IN IN LT3460-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LT3460-1.sub
+.backanno
+.end

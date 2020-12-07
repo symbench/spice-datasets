@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LT3517.asc
+L1 IN N001 15µ Rser=.1
+R1 N002 N003 0.3
+C1 N006 0 1µ
+V1 N006 0 3.3
+D§LEDstring1 N004 0 LXHL-BW02 N=8
+R2 N008 0 16.5K
+M§Q1 N004 N005 N003 N003 FDS4685
+C2 N010 0 .0047µ
+C3 N011 0 0.01µ
+D1 N001 N002 ZLLS2000
+R3 N010 N009 3.3K
+C4 N002 0 2.2µ
+XU1 N006 N006 N007 N008 0 N011 N007 N007 N009 0 N007 N003 N002 N005 N001 MP_01 0 LT3517
+V2 IN 0 12
+C5 IN 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.6m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+* LT3517 - 45V 1.5A Internal Switch Adjustable Switching Frequency Boost Regulator LED Driver\nInput: 12V      Output: 330mA through a string of 8 LEDs
+.lib LT3517.sub
+.backanno
+.end

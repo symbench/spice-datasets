@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\ADP7159-01.asc
+V1 IN 0 2.4
+C3 OUT 0 10µ Rser=10m Lser=1n
+R1 N003 N005 50K
+R2 N005 0 100K
+C4 N003 0 1µ Rser=10m Lser=1n
+C1 N004 0 1µ Rser=10m Lser=1n
+C2 N002 0 1µ Rser=10m Lser=1n
+R3 IN N001 100K
+XU1 OUT MP_01 OUT N002 N001 N005 N003 N004 IN 0 ADP7158_9 Vreg=2.111 Vref=1.216
+R5 OUT 0 1.8
+.tran 5m startup
+.lib ADP7158_9.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3532.asc
+XU1 N006 N004 N001 N002 0 OUT IN IN N003 N005 LTC3532
+L1 N001 N002 4.7µ Rpar=1K
+V1 IN 0 3.2
+R1 N006 0 43.2K
+R2 N004 0 200K
+C1 N004 0 .01µ
+R3 OUT N003 340K
+R4 N003 0 200K
+C3 N005 N003 330p Rser=12.1K
+C4 OUT 0 10µ
+Rload OUT 0 30
+C5 OUT N003 33p Rser=1K
+.tran 500u startup
+.lib LTC3532.sub
+.backanno
+.end

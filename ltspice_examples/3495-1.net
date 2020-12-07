@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3495-1.asc
+R1 OUT N003 909K
+V1 IN 0 3.6 Rser=0.1
+L1 IN N001 10µ
+C1 N002 0 2.2µ
+C2 OUT 0 1µ
+D1 N001 N002 1N5817
+Rload OUT 0 500
+XU1 0 MP_01 IN IN IN N003 OUT N002 MP_02 N001 LT3495-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT3495-1.sub
+.backanno
+.end

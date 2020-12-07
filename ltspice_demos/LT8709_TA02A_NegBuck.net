@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LT8709_TA02A_NegBuck.asc
+XU1 N010 N011 N014 NC_01 N013 N002 OUT 0 N008 N003 N004 N007 0 IN N005 N006 N007 N009 MP_02 IN LT8709
+V1 0 IN 24 Rser=1m
+L1 N002 N001 7.3µ Ipk=12 Rser=0.0059 Rpar=2435 Cpar=5.45p mfg="Wurth Elektronik" pn="7443551730 WE-HCI 1365"
+R1 N002 OUT 4m
+R2 OUT N010 33K
+R3 N010 0 4.99K
+C1 OUT 0 66µ Rser=1m
+C2 N011 IN 100p
+C3 N012 IN 2.2n
+R4 N011 N012 5.9K
+C4 N014 IN 10n
+C5 N013 IN 68n
+R5 N009 IN 143K
+R6 N006 IN 10K
+R7 0 N006 62.5K
+C6 N007 IN 2.2µ
+C7 0 N008 2.2µ
+R8 N005 IN 2m
+C8 0 IN 60µ Rser=2m
+C9 0 IN 120µ Rser=100m
+C10 0 OUT 150µ Rser=30m
+M§Q1 N001 N003 0 0 FDS4685
+M§Q2 N001 N004 N005 N005 BSC027N04LS
+C11 0 IN 2.2µ
+Rload OUT 0 1.4
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LT8709 - Negative Input Synchronous Multi-Topology DC/DC Controller\nNegative Buck Regulator with Output Current Monitor and Power Good Indication\nInput: -16V to -30V       Output: -12V @ 8.5A, Fsw = 250kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8709.sub
+.backanno
+.end

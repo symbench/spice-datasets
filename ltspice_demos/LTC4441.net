@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LTC4441.asc
+XU1 0 N009 N008 0 N007 N004 N002 IN N003 N005 LTC4441
+M§Q1 N001 N005 N006 N006 Si7370DP
+R1 N006 0 5m
+R2 N008 0 100K
+R3 N002 0 86.6K
+R4 N003 N002 330K
+C1 N003 0 10µ
+R5 IN N004 100K
+R6 N004 0 20K
+L1 IN N001 10µ Rpar=2K
+D1 N001 OUT MBR745
+C2 OUT 0 100µ
+XU2 N011 0 N012 N009 IN N007 LTC3803
+R7 N006 N009 100
+V1 IN 0 15
+R8 N012 0 8.06K
+R9 OUT N012 511K
+C3 N010 0 .0047µ
+R10 N011 N010 56K
+R11 OUT 0 26
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10.m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006, 2014 Linear Technology Inc. All rights reserved.
+* LTC4441 - N-Channel MOSFET Gate Driver\nLTC3803 - Constant Frequency Current Mode Flyback DC/DC Controller\nBoost Converter with N-Channel MOSFET Gate Driver\nInput: 6V to 24V     Output: 52V @ 2A
+.lib LTC3803.sub
+.lib LTC4441.sub
+.backanno
+.end

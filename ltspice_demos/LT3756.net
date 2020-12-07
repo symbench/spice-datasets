@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LT3756.asc
+C1 N003 0 4.7µ
+M§Q1 N001 N006 N008 N008 SI7454DP
+R1 N008 0 .015
+L1 IN N001 47µ Rser=.07 Rpar=5K
+R2 N002 N009 1820K
+R3 N009 0 24.9K
+D1 N001 N002 PDS5100
+R4 N002 N011 .2
+C2 N002 0 8µ Rser=.005
+V1 IN 0 12
+R5 IN N004 499K
+R6 N004 0 93.1K
+C3 N013 0 .0047µ
+M§Q2 N016 N019 0 0 SI7454DP
+D2 N011 N016 LXK2-PW14 N=24
+C4 N015 0 0.1µ
+R7 N017 0 37.4K
+V2 N018 0 PULSE(0 5 0 1u 1u 125u 250u)
+R8 N003 N005 100K
+R9 IN N010 1000K
+R10 N010 0 130K
+R11 N014 N013 10K
+XU1 N007 N018 N005 N012 N017 N004 N003 IN N008 N006 N019 N009 N011 N002 N014 N010 0 LT3756
+R12 N012 N015 10K
+C5 IN 0 4.4µ
+D3 N012 N005 1N4148
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 14m startup
+* LT3756 - 100VIN 100VLED High Current LED Driver Controller\nInput: 8V to 80V       Output: 80VLED @ 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LT3756.sub
+.backanno
+.end

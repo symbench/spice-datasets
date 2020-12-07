@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1214.asc
+V1 +V 0 15
+V3 IN 0 3.75 AC 1
+R1 OUT N001 4.12K
+C1 OUT N001 5p
+R2 N001 0 4.12K
+R3 N004 N003 680
+R4 N003 N002 680
+C2 N004 0 150p
+C3 OUT N003 200p
+R5 N002 IN 680
+C4 N002 0 390p
+XU1 N004 N001 +V 0 OUT LT1213
+* Single Supply 3-Pole 1MHz Filter
+.ac oct 100 1K 10Meg
+.lib LTC.lib
+.backanno
+.end

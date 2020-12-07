@@ -1,0 +1,109 @@
+* Z:\mnt\design.r\spice\examples\S-param.asc
+Rout OUT5 0 50
+V4 N041 0 AC 2 Rser=50
+V2 N021 0 AC 2 Rser=50
+V1 N011 0 AC 1
+I1 0 N001 ac 1
+Rx OUT4 0 1e16
+V3 N031 0 AC 1 Rser=50
+C1 N001 N002 3.2p
+L1 N002 N003 200n
+C2 N003 0 3.8p
+C3 N003 N004 1.8p
+C4 N004 0 9p
+L2 N004 0 37n
+C5 N004 N005 1p
+C6 N005 0 3p
+L3 N005 N006 230n
+C7 N006 N007 6p
+C8 N007 0 4.5p
+C9 N007 N008 1.6p
+C10 N008 0 9p
+L4 N008 0 36n
+C11 N008 N009 2p
+C12 N009 0 4.3p
+L5 N009 N010 200n
+C14 N010 OUT1 3p
+C15 N011 N012 3.2p
+L6 N012 N013 200n
+C16 N013 0 3.8p
+C17 N013 N014 1.8p
+C18 N014 0 9p
+L7 N014 0 37n
+C19 N014 N015 1p
+C20 N015 0 3p
+L8 N015 N016 230n
+C21 N016 N017 6p
+C22 N017 0 4.5p
+C23 N017 N018 1.6p
+C24 N018 0 9p
+L9 N018 0 36n
+C25 N018 N019 2p
+C26 N019 0 4.3p
+L10 N019 N020 200n
+C27 N020 OUT2 3p
+C28 N021 N022 3.2p
+L11 N022 N023 200n
+C29 N023 0 3.8p
+C30 N023 N024 1.8p
+C31 N024 0 9p
+L12 N024 0 37n
+C32 N024 N025 1p
+C33 N025 0 3p
+L13 N025 N026 230n
+C34 N026 N027 6p
+C35 N027 0 4.5p
+C36 N027 N028 1.6p
+C37 N028 0 9p
+L14 N028 0 36n
+C38 N028 N029 2p
+C39 N029 0 4.3p
+L15 N029 N030 200n
+C40 N030 OUT3 3p
+C41 N031 N032 3.2p
+L16 N032 N033 200n
+C42 N033 0 3.8p
+C43 N033 N034 1.8p
+C44 N034 0 9p
+L17 N034 0 37n
+C45 N034 N035 1p
+C46 N035 0 3p
+L18 N035 N036 230n
+C47 N036 N037 6p
+C48 N037 0 4.5p
+C49 N037 N038 1.6p
+C50 N038 0 9p
+L19 N038 0 36n
+C51 N038 N039 2p
+C52 N039 0 4.3p
+L20 N039 N040 200n
+C53 N040 OUT4 3p
+C54 N041 N042 3.2p
+L21 N042 N043 200n
+C55 N043 0 3.8p
+C56 N043 N044 1.8p
+C57 N044 0 9p
+L22 N044 0 37n
+C58 N044 N045 1p
+C59 N045 0 3p
+L23 N045 N046 230n
+C60 N046 N047 6p
+C61 N047 0 4.5p
+C62 N047 N048 1.6p
+C63 N048 0 9p
+L24 N048 0 36n
+C64 N048 N049 2p
+C65 N049 0 4.3p
+L25 N049 N050 200n
+C13 N050 OUT5 3p
+.ac LIN 801 200Meg 300Meg
+.net I(Rout) V4  ; Rin & Rout determined from V4 and Rout
+.net V(out3) V2 Rout=50 ; Rin determined by V2's Rser
+.net V(out2) V1 Rout=50 Rin=50 ; Rin and Rout specified on the .net statement
+.net V(out1) I1 Rout=50 Rin=50 ; Rin and Rout specified on the .net statement
+.net I(Rx) V3  Rout=50 ; Rin determined from V3 but Rout specified on the .net statement
+* This is the preferred LTspice syntax because it allows you to plot the node voltages\nand currents with the same termination as used by the .net statement computation.
+* Five different ways of specifying source and termination impedances for S-parameter computation.
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

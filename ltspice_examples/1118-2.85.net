@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\1118-2.85.asc
+V1 N001 0 5
+C1 N002 0 1µ
+XU1 0 MP_01 N001 MP_02 N001 N002 LT1118-2.85
+.tran 3m startup
+.lib LT1118.lib
+.backanno
+.end

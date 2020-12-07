@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6200-5.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N001 5K
+R2 N001 0 1K
+V3 N002 0 SINE(0 .1 1K)
+XU1 N002 N001 OUT +V -V NC_01 LT6200-5
+.tran 3m
+.lib LTC2.LIB
+.backanno
+.end

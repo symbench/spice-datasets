@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3864_TA02A.asc
+XU1 N003 N011 0 N008 N009 N006 N012 N002 N001 N004 IN N007 0 LTC3864
+C1 N005 0 6.8n
+V1 IN 0 24
+C2 IN N001 .1µ
+R1 IN N004 50m
+M§Q1 N010 N007 N004 N004 Si7113DN
+D1 0 N010 B560C
+L1 N010 OUT 47µ Rser=20m
+R2 OUT N009 887K
+R3 N009 0 30.1K
+C3 OUT 0 10µ Rser=0.001
+R4 N011 0 97.6K
+C4 N006 0 100p
+R5 OUT N012 768K
+R6 N012 0 200K
+C5 IN 0 33µ Rser=0.018
+R7 N006 N005 30.1K
+C6 IN 0 2.2µ
+Rload OUT 0 24
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3864 - 60V Low Iq Step-Down DC/DC Controller with 100% Duty Cycle Capability\n24V Output Automotive Step-Down Converter\nInput: 24V to 60V     Output: 24V @ 1A, Fsw = 750KHz\nVout follows Vin when 3.5V <= Vin <= 24V
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3864.sub
+.backanno
+.end

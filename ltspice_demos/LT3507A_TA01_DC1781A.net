@@ -1,0 +1,59 @@
+* Z:\mnt\spice-netlists\LT3507A_TA01_DC1781A.asc
+L1 N003 OUT1 4.7µ Rpar=2K
+C1 N001 N003 .22µ
+R1 OUT1 N005 12.4K
+R2 N005 0 10K
+D1 0 N003 MBRS340
+C2 N007 0 680p
+C3 OUT1 0 100µ
+C4 N013 0 500p
+L2 N004 OUT2 8.2µ Rpar=2K
+C5 N004 N002 .22µ
+R3 OUT2 N006 31.6K
+R4 N006 0 10K
+D2 0 N004 MBRS340
+C6 N010 0 680p
+C7 OUT2 0 22µ
+C8 N014 0 500p
+R5 N028 0 107K
+R6 N023 N025 100K
+R7 N025 0 3.32K
+R8 N023 N026 49.9K
+R9 N026 0 18.7K
+L3 N017 OUT3 10µ Rpar=2K
+C9 N017 N015 .22µ
+R10 OUT3 N019 53.6K
+R11 N019 0 10.2K
+D3 0 N017 MBRS340
+C10 N021 0 680p
+C11 OUT3 0 22µ
+C12 N027 0 500p
+V1 IN 0 12
+Q1 OUT2 N016 OUT4 0 2N2219A
+R12 OUT4 N018 1.07K
+R13 N018 0 499
+C13 N020 0 500p
+C14 OUT4 0 2.2µ
+D4 OUT3 N001 PMEG4005AEA
+D5 OUT3 N002 PMEG4005AEA
+D6 OUT3 N015 PMEG4005AEA
+R14 N008 N007 20K
+R15 N022 N021 20K
+R16 N009 N010 20K
+Rload1 OUT1 0 .67
+Rload2 OUT2 0 2.2
+Rload3 OUT3 0 2.8
+Rload4 OUT4 0 8.3
+XU2 N001 IN MP_01 N023 N025 N026 N008 N013 N005 N011 N012 N024 N028 IN IN IN OUT2 N027 N022 N019 N014 N006 N009 N016 N018 N020 N002 N004 MP_02 IN MP_03 N015 N017 MP_04 IN MP_05 N003 MP_06 0 LT3507A
+C15 IN 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.tran 500u startup
+* LT3507A - Triple Monolithic Step-down Regulator with LDO\n5V, 3.3V, 2.5V & 1.8V Step-Down Regulator\nInput: 7V to 36V    Outputs: 1.8V @ 2.7A, 3.3V @ 1.5A, 5V @ 1.8A & 2.5V @ 0.3A
+.lib LT3507A.sub
+.backanno
+.end

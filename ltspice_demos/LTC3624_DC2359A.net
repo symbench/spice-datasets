@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC3624_DC2359A.asc
+C1 N002 0 2.2µ
+V1 IN 0 12
+L1 N001 OUT 3.3µ Rser=26m
+R1 OUT N003 619K
+C2 OUT N003 15p
+R2 N003 0 84.5K
+C3 OUT 0 47µ V=10 Rser=5m
+Rload OUT 0 2.5
+XU1 N001 IN IN N004 N003 N002 N002 0 0 LTC3624
+C4 IN 0 47µ V=25
+R3 N004 N002 1Meg
+.tran 1.5m startup
+* LTC3624 - 17V, 2A Synchronous Step-Down Regulator with 3.5µA Quiescent Current\nHigh Efficiency Buck Regulator with Ultralow Quiescent Current\nInput: 5.6V to 17V       Output: 5V @ 2A, Fsw = 1MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LTC3624.sub
+.backanno
+.end

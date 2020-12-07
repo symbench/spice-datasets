@@ -1,0 +1,36 @@
+* Z:\mnt\design.r\spice\examples\3723-1.asc
+XU1 N008 IN N005 N013 0 N019 N014 N006 N010 N017 N012 N009 N016 IN N007 N015 LTC3723-1
+M§Q1 N001 N005 N011 N011 IRF7201
+M§Q2 N004 N008 N011 N011 IRF7201
+R1 N011 0 75m
+R2 N011 N010 100
+C1 N019 0 270p
+R3 N007 N006 200K
+R4 N012 0 500K
+C2 N016 0 .1µ
+V1 IN 0 12
+L1 N001 IN 1m Rpar=1K
+L2 IN N004 1m Rpar=1K
+L3 N002 N003 1m Rpar=1K
+L4 N002 OUT 20µ
+L5 N003 OUT 20µ
+R5 OUT N009 15.8K
+R6 N009 0 5K
+C3 N009 N018 .006µ
+R7 N018 N017 5K
+C4 OUT 0 50µ
+R8 N014 0 10K
+C5 0 N010 .001µ
+Rload OUT 0 2.5
+D1 0 N003 DFLS220L
+D2 0 N002 DFLS220L
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 L3 1
+.tran 7m startup
+.lib LTC3723-1.sub
+.backanno
+.end

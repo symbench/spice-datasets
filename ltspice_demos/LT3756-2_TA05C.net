@@ -1,0 +1,44 @@
+* Z:\mnt\spice-netlists\LT3756-2_TA05C.asc
+C1 N001 0 4.7µ
+L1 N012 N018 33µ Rpar=2K
+V1 IN 0 50
+R1 IN N002 1Meg
+R2 N002 0 61.9K
+C2 N014 0 .001µ
+M§Q1 N018 N006 N009 N009 Si4982DY
+D1 N010 N012 LXK2-PW14 N=5
+C3 N017 0 .01µ
+R3 N020 0 28.7K
+V2 N021 0 PULSE(3.3 0 2.5m 1u 1u 125u 250u)
+XU1 N008 N021 N005 N017 N020 N002 N001 IN N009 N006 N007 N016 N003 IN N015 N008 0 LT3756
+R4 N001 N005 100K
+C4 IN 0 1µ x2
+R5 IN N004 1.5K
+Q2 N004 N007 N019 0 2N3904
+R6 N019 0 1K
+M§Q3 N010 N004 N003 N003 Si4835DY
+R7 IN N003 .1
+R8 N015 N014 47K
+R9 N009 0 33m
+Q4 N016 N013 N011 0 2N3906
+R10 N013 N012 200K
+D2 N018 IN MBRS1100
+C5 IN 0 4.7µ Rser=.003
+R11 N016 0 20K
+R12 IN N013 200K
+R13 IN N011 200K
+C6 N012 IN 4.7µ Rser=.003 x5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LT3756-2 - 100Vin, 100Vout LED Controller\nBuck Mode 1A LED Driver with High Dimming Ratio and Open LED Reporting\nInput: 24V to 80V     Output: 1A through 5 White LEDS
+.lib LT3756.sub
+.backanno
+.end

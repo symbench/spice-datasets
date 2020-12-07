@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTM4648_DC1856B-A.asc
+V1 IN 0 5
+C1 N002 0 .001µ
+R1 N003 0 6.65K
+C2 OUT 0 100µ x2 V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C575OX5ROJI07M" type="X5R"
+Rload OUT 0 .15
+C3 IN 0 150µ Rser=35m
+C4 IN 0 22µ x3 V=16 Irms=0 Rser=2m Lser=0
+C5 OUT 0 22µ V=6.3 Irms=0 Rser=2m Lser=0
+XU2 N002 NC_01 N003 MP_02 MP_03 MP_04 MP_05 MP_06 N001 OUT 0 N001 MP_07 OUT MP_08 NC_09 MP_10 0 MP_11 0 MP_12 MP_13 MP_14 MP_15 NC_16 IN MP_17 MP_18 MP_19 MP_20 NC_21 NC_22 NC_23 NC_24 NC_25 MP_26 MP_27 NC_28 LTM4648
+.tran 1m startup
+* LTM4648 - Low Vin, 10A DC/DC µModule Regulator\n10A Buck µModule Regulator\nInput: 2.375V to 5.5V     Output: 1.5V @ 10A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTM4648.sub
+.backanno
+.end

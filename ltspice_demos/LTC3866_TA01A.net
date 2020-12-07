@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LTC3866_TA01A.asc
+XU1 N010 N002 N012 N013 N018 N017 0 OUT N011 OUT N014 N008 N016 0 N009 N006 N005 N003 N001 IN NC_01 N015 N004 0 0 LTC3866
+V1 IN 0 12
+C1 0 N001 4.7µ
+R1 N010 0 100K
+C2 N013 0 1500p Rser=10K Cpar=220p
+C3 N012 0 0.001µ
+D1 N001 N003 CMDSH2-3
+C4 N003 N006 .1µ
+M§Q1 IN N005 N006 N006 BSC050NE2LS
+M§Q2 N006 N009 0 0 BSC010NE2LS
+L1 N006 OUT .33µ Rser=.32m
+R2 N006 N011 4.64K
+R3 N006 N014 931
+C5 N011 OUT 220n
+C6 OUT N014 220n
+R4 N017 N018 30.1K
+R5 N018 0 20K
+C7 IN 0 10µ x2
+R6 N001 N004 100k
+R7 N001 N008 3.01K
+R8 N008 0 1K
+C8 OUT 0 100µ Rser=0.002 x2
+C9 OUT 0 330µ Rser=0.009 x2
+V2 N007 0 PULSE(0 1 .7m 1u 1u .2m .4m)
+S§Load 0 OUT N007 0 load
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC3866 - Current Mode Synchronous Controller for Sub Milliohm DCR Sensing\nHigh Efficiency, 1.5V/30A Step-Down Converter with Very Low DCR Sensing\nInput: 4.5V to 20V     Output: 1.5V @ 30A, Fsw = 400kHz
+* Note:\n  Small value are used for TRACK/SS capacitors to reduce simulation time. Typical value will vary from 10nF to 100nF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.model LOAD SW(Ron=.05 Roff=.1 Vt=.5 Vh=-.4)
+.lib LTC3866.sub
+.backanno
+.end

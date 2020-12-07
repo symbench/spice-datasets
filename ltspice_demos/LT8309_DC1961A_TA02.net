@@ -1,0 +1,40 @@
+* Z:\mnt\spice-netlists\LT8309_DC1961A_TA02.asc
+R1 N009 0 60.4K
+V1 IN 0 48
+C1 N013 N012 33n
+C2 0 N018 4.7µ
+R2 N002 N005 160K
+R3 0 N010 6.04K
+L1 IN N002 20.5µ Rser=39m Rpar=5K
+L2 N003 OUT 2.87µ Rser=8.5m Rpar=5K
+C3 OUT 0 200µ
+R4 N012 0 7.5K
+C4 0 N016 .005µ
+R5 IN N004 412K
+R6 N004 0 15.4K
+XU1 0 MP_01 MP_02 N014 IN N018 N004 MP_03 MP_04 N016 N017 N013 N005 N010 N009 LT3748
+M§Q1 N002 N014 N017 N017 BSC320N20NS3
+R7 N017 0 10m
+XU2 N015 0 N008 N007 N011 LT8309
+M§Q2 N003 N015 0 0 BSC047N08NS3
+R8 N011 N003 2.49K
+D1 N003 N006 PMEG6010AED
+R9 N007 N006 3
+C5 N007 0 1µ
+C6 N008 0 4.7µ
+C7 IN N001 100p
+R10 N002 N001 100
+Rload OUT 0 2.4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 4m startup
+* LT8309 - Secondary-Side Synchronous Rectifier Driver\nLT3748 - 100V Isolated Flyback Controller\n60W, 12V Output, Isolated Telecom Supply\nInput: 36V to 72V       Output: 12V @ 5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT3748.sub
+.lib LT8309.sub
+.backanno
+.end

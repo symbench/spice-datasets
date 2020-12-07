@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3407-3.asc
+V1 IN 0 5
+C1 OUT1 0 10µ
+L1 N002 OUT1 2.2µ
+C3 OUT2 0 10µ
+L2 N001 OUT2 2.2µ
+Rload1 OUT1 0 3
+Rload2 OUT2 0 5
+XU1 OUT1 IN IN N002 0 IN N001 MP_01 IN OUT2 LTC3407-3
+.tran 200u startup
+.lib LTC3407-3.sub
+.backanno
+.end

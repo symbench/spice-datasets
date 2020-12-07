@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1779.asc
+V1 IN 0 5
+XU1 N002 0 N004 N003 IN N005 LTC1779
+R1 IN N003 2
+D1 0 N005 1N5818
+L1 N005 OUT 22µ Rpar=10K
+C1 OUT 0 47µ x2
+R2 OUT N004 169K
+R3 N004 0 78.7K
+Rload OUT 0 10
+C2 0 N001 500p
+R5 N002 N001 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LTC1779.sub
+.backanno
+.end

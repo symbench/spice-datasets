@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\8613.asc
+R1 N009 0 60.4K
+C1 N008 0 .001µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N005 N006 3.9µ Rser=3m
+C3 N004 N005 .1µ
+C4 OUT 0 100µ V=6.3 Irms=11.588 Rser=0.003 Lser=0
+R2 OUT N010 1Meg
+R3 N010 0 243K
+C5 OUT N010 10p
+Rload OUT 0 .833
+R4 N006 OUT 8m
+XU1 N003 N008 N009 IN IN N007 0 N006 N005 OUT N002 N004 N001 OUT NC_01 N010 0 LT8613
+.tran 1m startup
+.lib LT8613.sub
+.backanno
+.end

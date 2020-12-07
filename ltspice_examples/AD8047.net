@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD8047.asc
+R1 N001 0 200
+R2 OUT N001 200
+XU1 IN N001 +V -V OUT AD8047
+Rload OUT 0 150
+Vin IN 0 SINE(0 1 10Meg)
+V1 +V 0 5
+V2 -V 0 -5
+.tran 1u
+.lib ADI.lib
+.backanno
+.end

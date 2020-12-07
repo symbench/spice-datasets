@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\4251-1.asc
+M1 OUT N003 N007 N007 IRF530
+R6 N007 IN 20m
+R4 0 N002 442K
+C1 N002 IN 10n
+R7 N002 IN 34.8K
+V1 IN 0 PWL(0 0 1m 0 1.001m -48 220m -48 221m -70)
+C3 N008 IN 22n
+R2 N003 N008 10
+Rload 0 OUT 50
+C5 0 OUT 100µ
+C2 N005 IN 220n
+C4 N001 IN 1µ
+R1 0 N001 10K
+XU1 N006 IN N001 N005 N002 N003 LTC4251-1
+R3 N007 N006 22
+D1 N006 N004 BZX84C36
+R5 0 N004 31.6K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 400m
+.model BZX84C36 D(IS=110.88E-18 N=.92657 RS=.85899 IKF=149.75 CJO=18.666E-12 M=.36733 VJ=.74368 ISR=42.919E-12 BV=36.134 IBV=.37878 TT=810.79E-9)
+.lib LTC4251-1.sub
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\ADP2165-3.3.asc
+C1 N008 0 2n
+L1 N004 OUT 1.5µ Rser=6m
+C2 N003 N004 .1µ
+C3 OUT 0 60µ Rser=2m
+R1 N005 0 100K
+C5 N006 0 680p
+R2 N007 N006 36K
+V1 IN 0 5
+R3 OUT N001 100K
+C4 N002 0 1µ
+C6 N007 0 1p
+Rload OUT 0 .66
+XU1 N002 N005 N002 OUT 0 0 N004 IN IN IN N001 N008 N007 N003 N002 ADP2165-x.x Rtop=818K Rbot=182K
+.tran 1m startup
+.lib ADP2165-x.x.sub
+.backanno
+.end

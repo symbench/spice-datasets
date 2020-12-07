@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\1634-4.096.asc
+V1 N001 0 5
+R1 N001 N002 90K
+XU1 N002 0 LT1634-4.096
+.dc temp -40 80 .1
+.lib LTC3.lib
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\ADP1762-1.3.asc
+C1 N004 0 1µ
+V1 IN 0 1.6
+R2 N001 IN 50K
+C3 N002 0 1µ
+R1 OUT 0 1
+C4 OUT 0 10µ
+XU1 N002 IN IN OUT OUT N001 0 N003 N004 N005 ADP1762 Radj=8666.67
+C2 N003 0 10n
+.tran 1m startup
+.lib ADP7102.lib
+.backanno
+.end

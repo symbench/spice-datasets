@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1635.asc
+V1 +V 0 5
+R1 OUT N001 1K
+R2 N001 0 1K
+V3 IN 0 SINE(1.25 .5 1K)
+XU1 IN N001 +V 0 OUT REF REF LT1635
+.tran 3m
+.lib LTC.lib
+.backanno
+.end

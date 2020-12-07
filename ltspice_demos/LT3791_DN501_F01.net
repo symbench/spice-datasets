@@ -1,0 +1,47 @@
+* Z:\mnt\spice-netlists\LT3791_DN501_F01.asc
+XU1 N024 N026 N023 N020 N018 N023 N015 N012 N005 IN N003 N002 N001 N010 N008 N013 0 N016 N017 MP_01 N014 N006 MP_02 N011 N004 OUT N019 0 MP_03 0 N028 MP_04 N009 0 N021 N027 N022 N007 LT3791
+C1 N026 0 10n
+C2 N027 0 22n
+V1 IN 0 24
+R1 IN N002 3m
+R2 IN N005 499K
+R4 N002 N003 50
+C3 IN N003 470n
+C4 N001 0 4.7µ
+R5 N005 N007 499K
+R6 N007 0 27.4K
+R7 N021 0 86.6K
+C5 N023 0 .1µ
+M§Q1 N002 N010 N013 N013 RJK0651DPB
+M§Q2 N013 N016 N019 N019 RJK0651DPB
+L1 N013 N014 10µ Rser=10m Rpar=5K
+C6 N008 N013 .1µ
+C7 N006 N014 .1µ
+R8 N019 0 4m
+R9 N004 N022 1Meg
+R10 N022 0 34.2K
+R11 N004 OUT 33m
+D1 OUT N025 LUW-W5AP N=9
+C8 N004 0 4.7µ x5 Rser=.010
+R12 N001 N020 200K
+R13 N001 N018 200K
+C9 N002 0 2.2µ x4 Rser=.002
+C10 IN 0 1µ
+V2 N024 0 PWL(2.5m 2 3m 0 3.5m 0 4m 2)
+M§Q3 N014 N017 N019 N019 RJK0451DPB
+M§Q4 N004 N011 N014 N014 RJK0451DPB
+M§Q5 N025 N028 0 0 Si2318CDS
+D2 N001 N006 BAT46WJ
+D3 N001 N008 BAT46WJ
+R3 N005 0 43.2K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LT3791 - 60V 4-Switch Synchronous Buck-Boost LED Driver Controller\n98.5% Efficient 100W Buck-Boost LED Driver\nInput: 15V to 58V       Output: 33.3V LED @ 3A
+.lib LT3791.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\2ndOrderAllpass.asc
+G1 0 N002 1 0 {2/R1}
+L2 N002 0 {L1} Rpar={R1} Cpar={C1}
+G2 0 N003 1 0 {1/R1}
+G3 N003 0 N002 0 {1/R1}
+R1 N003 0 {R1}
+G4 0 2 N003 0 {10*H}
+R2 2 0 .1
+* .param f0=1k Q=.7
+* Most efficient LTSPICE implementation for f0 and Q set by parameters >>>
+.param R1=1k
+.param C1=Q/(2*pi*f0*R1)
+.param L1= 1/(C1*(2*pi*f0)**2)
+* Vin
+* Vout
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\spice-netlists\LT1121-3.3_TA02.asc
+V1 IN 0 PWL(0 0 1 20)
+Rload OUT 0 22
+C1 OUT 0 1µ
+XU1 OUT MP_01 0 MP_02 IN MP_03 MP_04 IN LT1121-3.3
+.tran 1
+* LT1121-3.3 - µPower Low Dropout Regulators with Shutdown\n5V Battery-Powered Supply with Shutdown\nInput: 3.7V to 20V     Output: 3.3 @ 150mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1121.lib
+.backanno
+.end

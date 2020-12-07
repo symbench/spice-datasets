@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\3959.asc
+C1 N009 0 22n Rser=7.5K
+R1 N007 0 27.4K
+C2 N006 0 .05µ
+V1 IN 0 12
+C3 N004 0 4.7µ
+R2 IN N003 124K
+R3 N003 0 121K
+R4 IN N005 150K
+L1 IN N001 15µ Rser=25m Cpar=50p
+L2 0 N002 15µ Rser=25m Cpar=50p
+C4 N001 N002 4.7µ Rser=5m
+D1 N002 OUT MBRS360
+R6 OUT N008 105K
+R7 N008 0 15.8K
+Rload OUT 0 8
+XU1 N009 N008 N006 N007 N001 N005 0 MP_01 N004 OUT IN N003 0 LT3959
+C5 OUT 0 47µ x2 Rser=2m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 4m startup
+.lib LT3959.sub
+.backanno
+.end

@@ -1,0 +1,55 @@
+* Z:\mnt\spice-netlists\LTC3838_DC1626A-B.asc
+XU1 N023 N021 N004 NC_01 N004 NC_02 0 N026 N004 N020 N022 N024 0 N016 N018 N004 NC_03 N003 N008 N006 N011 N014 N001 N002 0 N004 NC_04 N001 N015 N012 N007 N009 N005 NC_05 N004 N019 N017 N025 LTC3838
+R1 N026 0 137K
+V1 IN 0 12
+C1 0 N001 4.7µ
+R2 N001 N004 2.2
+M§Q1 IN N006 N011 N011 RJK0305DPB
+M§Q2 N011 N014 0 0 RJK0301DPB
+D1 N001 N008 MBRS140
+C2 N008 N011 .1µ
+L1 N011 N010 0.68µ Ipk=20 Rser=0.00135 Rpar=834.55 Cpar=2.167p mfg="Wurth Elektronik" pn="7443330068 WE-HCC 1090"
+C3 N016 N018 1n
+C4 N020 0 330p Rser=20K Cpar=47p
+C5 N022 0 1n
+R3 OUT1 N024 10K
+R4 N024 0 10K
+M§Q3 IN N007 N012 N012 RJK0305DPB
+M§Q4 N012 N015 0 0 RJK0301DPB
+D2 N001 N009 MBRS140
+C6 N009 N012 .1µ
+L2 N012 N013 0.68µ Ipk=20 Rser=0.00135 Rpar=834.55 Cpar=2.167p mfg="Wurth Elektronik" pn="7443330068 WE-HCC 1090"
+C7 N017 N019 1n
+C8 N021 0 330p Rser=45.3K Cpar=47p
+R5 OUT2 N025 15K
+R6 N025 0 10K
+C9 IN 0 100µ x2 V=35 Irms=1.8 Rser=30m
+C10 IN 0 10µ x3 V=35 Rser=3m
+C11 N002 0 0.1µ
+R7 N002 IN 2.2
+C12 OUT1 0 330µ x2 Rser=9m
+C13 OUT1 0 100µ x2 Rser=3m
+C14 OUT2 0 100µ x2 Rser=3m
+C15 OUT2 0 330µ x2 Rser=9m
+R8 N010 OUT1 2.5m
+R9 N016 N010 10
+R10 N018 OUT1 10
+R11 OUT2 N013 2.5m
+R12 OUT2 N019 10
+R13 N013 N017 10
+C16 0 N023 1n
+R14 N001 N005 100K
+R15 N001 N003 100K
+Rload1 OUT1 0 .08
+Rload2 OUT2 0 .1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+* LTC3838 - Dual, Fast, Accurate Step-Down DC/DC Controller with Differential Output Sensing\nWide Input Range, High Efficiency Step-Down DC/DC Converter with Rsense Current Sensing\nInput: 4.5V to 26V     Outputs: 1.2V @ 15A & 1.5V @ 15A, Fsw = 300kHz
+* Notes:\n  Small value is used for the TRACK/SS capacitors to reduce simulation time. Typical values will vary from 10nF to 100nF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3838.sub
+.backanno
+.end

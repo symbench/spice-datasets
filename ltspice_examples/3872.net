@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\3872.asc
+XU1 IN N005 N006 0 N003 IN N002 N001 LTC3872
+M§Q1 N001 N003 0 0 Si3460DV
+L1 IN N001 2.2µ
+V1 IN 0 3.3
+C1 N002 0 100p
+C2 N004 0 4700p
+D1 N001 OUT 1N5817
+C3 OUT 0 10µ
+R1 OUT N006 38K
+R2 N006 0 12K
+R3 N005 N004 6.81K
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LTC3872.sub
+.backanno
+.end

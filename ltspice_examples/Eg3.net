@@ -1,0 +1,43 @@
+* Z:\mnt\design.r\spice\examples\Eg3.asc
+R1 N007 0 10K
+R2 OUT A 20K
+R3 A 0 10K
+R4 N006 OUT .006
+C1 N008 N007 330p
+C2 N010 0 43p
+C3 N004 0 .001µ
+C4 OUT 0 180µ x4 Rser=.05
+V1 IN 0 6
+L1 N005 N006 1.5µ
+M§Q1 IN N003 N005 N005 Si4410DY
+M§Q2 N005 N009 0 0 Si4410DY
+C5 N001 0 4.7µ
+C6 N002 N005 .22µ
+D1 N001 N002 1N5818
+D2 0 N005 1N5818
+XU1 N010 N004 N008 NC_01 0 B OUT N006 NC_02 0 N009 N001 IN N005 N002 N003 LTC1735
+V2 A B SINE(0 10m {Freq})
+Rload OUT 0 .5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.param t0=.5m
+.tran 0 {t0+10/Freq} {t0} 10n
+.ic V(out)=2.4
+.save V(a) V(b)  I(L1)
+.measure Aavg avg V(a)
+.measure Bavg avg V(b)
+.measure Are avg  (V(a)-Aavg)*cos(360*time*Freq)
+.measure Aim avg -(V(a)-Aavg)*sin(360*time*Freq)
+.measure Bre avg  (V(b)-Bavg)*cos(360*time*Freq)
+.measure Bim avg -(V(b)-Bavg)*sin(360*time*Freq)
+.measure GainMag param 20*log10(hypot(Are,Aim) / hypot(Bre,Bim))
+.measure GainPhi param mod(atan2(Aim, Are) - atan2(Bim, Bre)+180,360)-180
+.param  freq=21K ; iterate to 0dB gain or use the .step statement below
+.step oct param Freq 15K 30K 4
+* Loop crossover frequency: 21KHz\nPhase Margin: 66°
+.lib LTC1735.sub
+.backanno
+.end

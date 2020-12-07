@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3092.asc
+R1 N003 N004 5
+XU1 MP_01 N002 N003 MP_02 N001 LT3092
+R2 N002 N004 20K
+V1 N001 0 PWL(0 0 1 40)
+Rload N004 0 10
+.tran 1
+.lib LT3092.sub
+.backanno
+.end

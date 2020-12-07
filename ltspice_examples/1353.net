@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1353.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 N002 N001 4.64K
+V3 IN 0 AC 1
+C1 N002 N004 470p
+R3 N004 N001 13.3K
+R4 N001 IN 4.64K
+C2 N001 0 2200p
+R2 OUT N003 5.49K
+C3 OUT N005 220p
+R5 N005 N003 11.3K
+R6 N003 N002 5.49K
+C4 N003 0 4700p
+XU1 0 N004 +V -V N002 LT1352
+XU2 0 N005 +V -V OUT LT1352
+.ac oct 10 100 100K
+* 20KHz, 4th Order Butterworth Filter
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\3511.asc
+XU1 N003 MP_01 IN MP_02 0 N010 MP_03 MP_04 MP_05 N009 N006 N007 MP_06 N004 MP_07 N005 LT3511
+L1 IN N005 300µ
+L2 0 N001 19µ
+C1 OUT 0 22µ
+D1 N005 N002 1N4148
+D2 IN N002 DFLZ33
+D3 N001 OUT MBR0540
+R1 IN N003 1Meg
+R2 N003 0 43.2K
+R3 N006 0 69.8K
+R4 N005 N004 169K
+R5 0 N007 10K
+C2 0 N010 4.7µ
+C3 N009 N008 2.2n
+R6 N008 0 16.9K
+V1 IN 0 50
+R7 OUT 0 15
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+K1 L1 L2 1.
+.lib LT3511.sub
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT3502A.asc
+V1 IN 0 12
+L1 N002 OUT 6.8µ Rser=0.157 Rpar=641
+R2 OUT N004 52.3K
+R3 N004 0 10K
+C2 OUT 0 10µ
+D1 N003 N002 PMEG4005AEA
+C3 N001 N002 .1µ
+XU1 IN OUT N004 IN 0 N003 N001 N002 LT3502A
+C1 OUT N004 22p
+C4 IN 0 1µ
+R1 OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 250u startup
+* LT3502A - 40V, 500mA, 2.2MHz Buck Regulator in 2×2 DFN\nInput: 7V to 40V       Output: 5V @ 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+.lib LT3502A.sub
+.backanno
+.end

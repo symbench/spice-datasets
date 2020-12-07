@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\6654-3.3.asc
+V1 IN 0 4
+C1 OUT 0 1µ
+S1 0 OUT N002 0 5mA
+V2 N002 0 PULSE(0 1 600u 10n 10n 200u 10m)
+S2 OUT IN N001 0 5mA
+V3 N001 0 PULSE(0 1 100u 10n 10n 200u 10m)
+XU1 0 IN OUT LT6654-3.3
+.tran 1m
+.model 5mA SW(Ron=10 Roff=1Meg Vt=.5 Vh=-.1 Ilimit=5m level=2)
+* Turn on and off 5mA of sink current\nand then on and off 5mA of source current
+.lib LT6654.lib
+.backanno
+.end

@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3491.asc
+V1 IN 0 3
+C1 IN 0 1µ Rser=0.005
+C2 N008 0 .47µ Rser=0.005
+R1 N008 N002 10
+L1 IN N001 15µ Rser=0.95
+D1 N002 N003 NSPW500BS
+XU1 IN 0 N001 N008 N002 IN LT3491
+D2 N003 N004 NSPW500BS
+D3 N004 N005 NSPW500BS
+D4 N005 N006 NSPW500BS
+D5 N006 N007 NSPW500BS
+D6 N007 0 NSPW500BS
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran .3m startup
+* LT3491 - LED Driver in SC70 With Build-in Schottky\nInput: 3V to 5V       Output: 20mA through 6 LEDs
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3491.sub
+.backanno
+.end

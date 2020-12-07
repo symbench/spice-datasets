@@ -1,0 +1,60 @@
+* Z:\mnt\spice-netlists\LTC3838-1_F19.asc
+R1 N029 0 137K
+V1 IN 0 12
+C1 0 N003 4.7µ
+R2 N003 N005 2.2
+M§Q1 IN N008 N013 N013 RJK0305DPB
+M§Q2 N013 N016 0 0 RJK0301DPB
+D1 N003 N010 MBRS140
+C2 N010 N013 .1µ
+L1 N013 N012 470n Ipk=20.5 Rser=0.0008 Rpar=532.74 Cpar=2.126p mfg="Wurth Elektronik" pn="7443330047 WE-HCC 1090"
+C3 N018 N020 1n
+C4 N022 0 470p Rser=23.2K Cpar=47p
+C5 N024 0 1n
+R3 OUT1 N027 10K
+R4 N027 0 10K
+M§Q3 IN N009 N014 N014 RJK0305DPB
+M§Q4 N014 N017 0 0 RJK0301DPB
+D2 N003 N011 MBRS140
+C6 N011 N014 .1µ
+L2 N014 N015 470n Ipk=20.5 Rser=0.0008 Rpar=532.74 Cpar=2.126p mfg="Wurth Elektronik" pn="7443330047 WE-HCC 1090"
+C7 N019 N021 1n
+C8 N023 0 471p Rser=17.4K Cpar=47p
+R5 OUT2 N026 10K
+R6 N026 0 20K
+C9 IN 0 180µ Rser=30m
+C10 IN 0 22µ x4 Rser=3m
+C11 N004 0 0.1µ
+R7 N004 N001 2.2
+C12 OUT1 0 330µ x2 Rser=9m
+C13 OUT1 0 100µ x2 Rser=3m
+C14 OUT2 0 100µ x2 Rser=3m
+C15 OUT2 0 330µ x2 Rser=9m
+R8 N012 OUT1 1.5m
+R9 N018 N012 100
+R10 N020 OUT1 100
+R11 OUT2 N015 1.5m
+R12 OUT2 N021 100
+R13 N015 N019 100
+C16 0 N025 1n
+R14 N003 N007 100K
+R15 N003 N006 100K
+XU1 N025 N023 N026 N030 N028 N031 0 N029 0 N022 N024 N027 0 N018 N020 N005 NC_01 N006 N010 N008 N013 N016 N003 N004 0 N005 N002 N003 N017 N014 N009 N011 N007 NC_02 N005 N021 N019 0 LTC3838-1
+R16 N026 0 20K
+R17 N026 0 10K
+V2 N002 0 5
+D3 IN N001 MBRS140
+D4 N002 N001 MBRS140
+Rload2 OUT2 0 .045
+Rload1 OUT1 0 .06
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+* LTC3838-1 - Dual, Fast, Accurate Step-Down DC/DC Controller with Dual Differential Output Sensing\nHigh Efficiency Step-Down DC/DC Converter with Rsense Current Sensing\nInput: 3.3V to 14V     Outputs: 1.2V @ 20A & 0.9V @ 20A, Fsw = 300kHz
+* Notes:\n  Smaller TRACK/SS capacitors are being used to reduce simulation time. Typical values should be 0.01µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3838-1.sub
+.backanno
+.end

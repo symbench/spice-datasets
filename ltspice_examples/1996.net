@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\1996.asc
+V1 -V 0 -5
+V2 +V 0 +5
+V4 N001 0 SINE(0 1m 10)
+XU1 NC_01 NC_02 N001 -V 0 OUT +V 0 NC_03 NC_04 LT1996
+.tran .5
+.lib LTC1.lib
+.backanno
+.end

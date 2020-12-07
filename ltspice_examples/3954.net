@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\3954.asc
+C1 N004 0 1µ
+L1 IN N001 22µ Rser=10m Rpar=2K
+R1 N002 N006 1Meg
+R2 N006 0 37.4K
+D1 N001 N002 MBRS360
+R3 N002 N008 .38
+C2 N002 0 4.7µ x3 Rser=10m
+V1 IN 0 PWL(0 0 .2m 16)
+R4 IN N003 499K
+R5 N003 0 147K
+C3 N014 0 4700p Rser=5.1K
+C4 N013 0 .01µ
+R6 N009 0 28.7K
+D2 N008 N011 LXK2-PW14 N=8
+C5 N015 0 47n
+M§Q1 N011 N010 0 0 IRF1310
+V2 N012 0 4
+R7 N012 N013 124K
+R8 IN N007 1Meg
+R9 N007 0 165K
+XU1 N005 N015 NC_01 N013 N009 N003 N004 IN N001 N010 N010 N006 N008 N002 N014 N007 0 0 0 LT3954
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 25m startup
+.lib LT3954.sub
+.backanno
+.end

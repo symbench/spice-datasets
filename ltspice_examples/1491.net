@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\1491.asc
+V1 +V 0 5
+R1 OUT N001 50K
+C1 N001 0 .1µ
+R2 OUT N002 59K
+R3 +V N002 100K
+R4 N002 0 100K
+XU1 N002 N001 +V 0 OUT LT1490A
+.tran 1 startup
+* Square Wave Oscillator
+.lib LTC.lib
+.backanno
+.end

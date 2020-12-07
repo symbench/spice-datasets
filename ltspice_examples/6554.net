@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6554.asc
+V1 +V 0 5
+V2 -V 0 -5
+V3 IN 0 SIN(0 1 10Meg) AC 1
+R1 0 OUTR 1K
+XU1 0 0 +V -V IN 0 0 OUTR OUTG OUTB LT6554
+C1 0 OUTR .1p
+.ac dec 50 10Meg 1G
+.lib LTC4.lib
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\astable.asc
+R1 N001 N002 2K
+R2 N001 N003 2K
+R3 N002 N004 101K
+R4 N003 N005 100K
+C1 N003 N004 .01µ
+C2 N005 N002 .01µ
+V1 N001 0 5
+Q1 N003 N005 0 0 2N3904
+Q2 N002 N004 0 0 2N3904
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 25m startup
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT6018__TA04.asc
+XU2 N005 N003 OUT +V -V LT1678
+V1 +V 0 15
+V3 -V 0 -15
+R8 OUT N003 5.11K tol=1 pwr=0.1
+R9 0 N005 5.11K tol=1 pwr=0.1
+R10 N003 N002 1.00K tol=1 pwr=0.1
+R11 N005 N006 1.00K tol=1 pwr=0.1
+R12 N001 IN 10 tol=1 pwr=0.1
+R3 N002 N001 1.00K tol=1 pwr=0.1
+I1 N004 IN SINE(0 1 10K)
+VCOM N004 0 3
+Rsense IN N004 0.01 tol=1 pwr=0.1
+XU3 N004 N006 N006 +V -V LT1678
+XU1 N004 N001 +V -V N002 +V 0 LT6018
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LT6018 - Ultralow Disortion, Ultralow Noise Precision Op Amp\nLT1678 - Low Noise RR Precision Op Amp\nLow Noise Precision Current Monitor\nInput: +/- 15 V
+.tran 10m
+.lib LTC1.lib
+.lib LTC2.LIB
+.backanno
+.end

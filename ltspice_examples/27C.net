@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\27C.asc
+XU1 IN N001 +V -V OUT RH27C
+V1 +V 0 15
+V2 -V 0 -15
+C1 OUT N001 .05µ
+R1 OUT N001 100K
+R2 N001 0 10
+V3 IN 0 PULSE(0 100u 0 100n 100n 40m 80m)
+.tran 200m
+* Low noise, bandwidth limited,  AV=10,000 amplifier
+.lib LTC.lib
+.backanno
+.end

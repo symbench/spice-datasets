@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTM4612_DC1297B.asc
+C1 OUT 0 10µ Rser=8m
+R1 IN N001 10K
+R2 N001 N002 51K
+C2 N008 0 10µ
+V1 IN 0 24
+XU1 IN 0 OUT N008 N005 N005 NC_01 0 N007 N009 NC_02 N004 0 0 0 N006 N002 N003 LTM4612
+C3 N007 0 .0022µ
+R3 N009 0 392K
+R4 N004 0 5.23K
+C4 OUT N004 47p
+C5 IN 0 100µ Rser=35m
+C6 IN 0 10µ x2 Rser=8m
+D1 0 N001 1N750
+C7 OUT 0 47µ Rser=4m x2
+R5 N001 N003 51K
+Rload OUT 0 4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.2m startup
+* LTM4612 - EN55022B Compliant 36Vin, 15Vout, 5A, DC/DC µModule Regulator\nHigh Density 3A High Voltage Low Noise Step-Down Regulator\nInput: 5V to 36V     Output: 12V @ 3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LTM4612.sub
+.backanno
+.end

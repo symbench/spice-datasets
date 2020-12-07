@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\3845.asc
+M§Q1 IN N005 N006 N006 Si7370DP
+M§Q2 N006 N009 0 0 Si7370DP
+D1 N001 N002 MBRS140
+C1 N002 N006 1µ
+R1 IN N003 1Meg
+R2 N011 N010 20K
+C2 N010 0 2200p
+D2 0 N006 MBRS1100
+L1 N006 N007 15µ Rpar=2K
+R3 N007 OUT 10m
+R4 N008 0 49.9K
+C3 N004 0 .002µ
+C4 OUT 0 100µ
+V1 IN 0 36
+D3 OUT N001 1N4148
+XU1 IN N003 N004 0 N012 N011 MP_01 N008 OUT N007 0 N009 N001 N006 N005 N002 0 LT3845
+R5 N012 OUT 143K
+R6 0 N012 16.2K
+C5 N001 0 1µ
+R7 N003 0 82.5K
+Rload OUT 0 2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LT3845.sub
+.backanno
+.end

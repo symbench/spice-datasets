@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\2934-1.asc
+R1 N002 N004 11.8K
+R2 N004 0 237K
+XU1 N002 N004 N001 0 N003 N005 N006 N001 LTC2934-1
+R3 N001 N002 750K
+R4 N001 N005 10K
+V1 N001 0 PULSE(0 3.3 0 3.3 3.3 2)
+R5 N001 N003 10K
+V2 N007 0 PWL(0 0 3.999 0 4 5 4.599 5 4.6 0)
+M§Q1 N006 N007 0 0 BSS123
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10
+.lib LTC2934-1.sub
+.backanno
+.end

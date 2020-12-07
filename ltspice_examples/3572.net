@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\3572.asc
+XU1 N002 N001 N013 N014 0 N011 N009 N003 MP_01 N001 N001 N001 N004 N012 N007 N010 N008 N005 N006 LT3572
+L1 N001 N002 10µ Rpar=2K
+D1 N002 N003 1N5819
+R1 N003 N004 576K
+R2 N004 0 24.3K
+V1 N001 0 5
+C1 N003 N004 15p
+C2 N003 0 10µ
+C3 N005 N006 2.2n
+C4 N008 N010 2.2n
+C5 0 N012 .01µ
+R3 0 N014 42.2K
+V2 N009 0 pulse(0 3.3 0 1u 1u 100u 200u)
+V3 N011 0 pulse(0 3.3 50u 1u 1u 100u 200u)
+R4 N001 N007 100K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LT3572.sub
+.backanno
+.end

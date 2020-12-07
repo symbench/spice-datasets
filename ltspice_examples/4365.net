@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\4365.asc
+R1 N003 IN 510K
+R2 IN N004 1820K
+R3 N004 N006 243K
+R4 N006 0 59K
+M§Q1 IN N002 N001 N001 Si4850EY
+M§Q2 OUT N002 N001 N001 Si4850EY
+C1 OUT 0 100µ
+R5 OUT N005 10K
+XU1 0 N006 N004 IN N002 OUT N005 N003 LTC4365
+V1 IN 0 PWL(0 0 10m 12 60m 12 70m 12 80m 3.125 85m 3.125 85.1m 2.25 90m 2.25 100m 12 140m 12 140.1m 12 150m 19.825 155m 19.825 155.1m 19.825 165m 12 205m 12)
+Rload OUT 0 34
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 210m
+* OV/UV Test Jig\n \nThis circuit tests the LT4365's behavior with "normal" Overvoltage and Undervoltage\nconditions.  The part is configured to pass 12V nominally, down to 3V and up to 18V,\nthe same typical automotive application in the datasheet.\n \nV(in) is driven to 12V and held until the part turns on and stabilizes.  \nV(in) is then driven below 3V to test the Undervoltage lockout, then below 2.5V\nto test the miniumum voltage threshold.\nV(in) is returned to 12V and held until the part is on and stable again.\nV(in) is driven above 18V to test the Overvoltage lockout.\nFinally, V(in) is returned to 12V and held until the part turns on and stabilizes again.
+.lib LTC4365.sub
+.backanno
+.end

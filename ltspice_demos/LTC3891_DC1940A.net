@@ -1,0 +1,37 @@
+* Z:\mnt\spice-netlists\LTC3891_DC1940A.asc
+M§Q1 IN N002 N005 N005 Si7850DP
+L1 N005 N006 10µ Rser=1.5m
+C1 OUT 0 10µ Rser=1m
+R1 OUT N012 511K
+R2 N012 0 35.7K
+C2 N004 N005 .1µ
+C3 N001 0 4.7µ
+C5 N009 0 .01µ
+V1 IN 0 48
+D1 N001 N004 MBRS1100
+M§Q2 N005 N008 0 0 Si7850DP
+Rload OUT 0 0.8
+XU1 OUT N007 MP_01 MP_02 0 0 IN MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 N001 OUT 0 IN N008 N004 N005 N002 N003 NC_14 N009 N011 N012 N006 LTC3891
+R4 N006 OUT 0.003
+R3 N007 0 30.1K
+C6 OUT 0 150µ Rser=10m
+R5 N001 N003 100K
+C8 IN 0 56µ Rser=10m
+C9 IN 0 2.2µ
+C10 IN 0 2.2µ
+R6 N011 N010 15.4K
+C4 N010 0 4.7n
+C7 N011 0 47p
+C11 N006 OUT 1n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTC3891 - Low Iq, 60V Synchronous Step-Down Controller\nLow Iq, High Voltage Step-Down Converter\nInput: 4.5V to 60V     Output: 12V @ 15A
+* L1          7443631000              Würth\nC8          63HVH56M               SUN Electonics\nC6          16TSVPC150            Sanyo\nC9,C10   C4532X7R2A225K     TDK\nC5           0.1µF
+.lib LTC3891.sub
+.backanno
+.end

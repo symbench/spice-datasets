@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\6400-26.asc
+V1 N004 0 SINE(0 10m 100Meg)
+V2 N001 0 1.5
+V3 N007 0 -1.5
+XU1 0 0 N001 N002 N006 N007 N007 N004 N005 N003 LTC6400-26
+.tran 100n
+.lib LTC6.lib
+.backanno
+.end

@@ -1,0 +1,51 @@
+* Z:\mnt\spice-netlists\LTC3865_F16.asc
+V1 IN 0 12
+C1 N006 N007 .1µ
+L1 N007 N008 .47µ Rpar=2K
+D1 INTVcc N006 CMDSH2-3
+M§Q3 IN N001 N004 N004 RJK0305DPB
+C4 N005 N004 .1µ
+L2 N004 N003 .47µ Rpar=2K
+R5 N003 OUT1 2m
+D2 INTVcc N005 CMDSH2-3
+C6 INTVcc 0 4.7µ
+C8 OUT1 0 100µ
+Rload1 OUT1 0 .1
+M§Q1 N004 N009 0 0 RJK0301DPB
+M§Q2 IN N002 N007 N007 RJK0305DPB
+M§Q4 N007 N010 0 0 RJK0301DPB
+XU1 NC_01 N011 N013 MP_02 OUT1 N019 N016 0 NC_03 0 N017 N020 OUT2 MP_04 N014 N012 NC_05 0 NC_06 NC_07 NC_08 N007 N002 MP_09 N006 0 N010 NC_10 INTVcc IN N009 0 N005 N001 N004 NC_11 INTVcc N021 LTC3865
+R4 N021 0 162K
+C10 N019 0 .002µ
+C11 N020 0 .002µ
+R1 N008 OUT2 2m
+C2 OUT2 0 220µ
+Rload2 OUT2 0 .08
+C5 IN 0 180µ
+C7 IN 0 10µ
+C12 IN 0 10µ
+R2 N011 N003 100
+R3 N013 OUT1 100
+R6 N008 N012 100
+R7 OUT2 N014 100
+C13 N011 N013 1000p
+C14 N012 N014 1000p
+C15 OUT1 0 220µ
+C16 OUT2 0 100µ
+R8 N016 N015 15K
+R9 N018 N017 12K
+C3 N016 0 220p
+C9 N015 0 1n
+C17 N017 0 220p
+C18 N018 0 1n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3865 - Dual, 2-Phase Synchronous DC/DC Controller with Pin Selectable Outputs\nHigh Efficiency 1.5V @ 15A, 1.2V @ 15A Step-Down Converter Using Sense Resistors\nInput: 4.5V to 24V              Output1: 1.5V @ 15A; Output2: 1.2V @ 15A
+.lib LTC3865.sub
+.backanno
+.end

@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LT1513_F08.asc
+V1 IN 0 24
+C1 P001 0 .2µ
+R1 N005 P001 100
+R2 N004 0 34K
+R3 OUT N004 78.7K
+D1 N002 OUT MBRS130L
+L1 N007 N002 33µ
+L2 IN N001 33µ
+R4 N007 0 .25
+R5 N007 N006 4.7K
+C3 N006 0 .22µ
+C4 OUT 0 500µ
+XU1 N005 N004 N006 0 N001 N003 IN LT1513-2
+C5 OUT 0 22µ Rser=.1
+C6 IN 0 22µ
+C7 N002 N001 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 10m startup
+* LT1513 - SEPIC Constant- or Programmable-Current/Constant-Voltage Battery Charger\nSingle Cell Lithium-Ion SEPIC Battery Charger\nInput: 6V to 50V     Output: 4.2V @ 1.2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.ic V(out) = 3.9
+.lib LT1513-2.sub
+.backanno
+.end

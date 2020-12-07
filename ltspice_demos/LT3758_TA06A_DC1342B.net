@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LT3758_TA06A_DC1342B.asc
+V1 IN 0 48 Rser=0
+R1 IN N003 232K
+C1 P001 0 .01µ
+R2 N006 0 42.2K
+XU1 N009 N010 P001 N006 MP_01 N007 N005 N004 N003 IN 0 LT3758
+R3 N003 0 20K
+C2 IN 0 100µ
+M§Q1 N001 N005 N007 N007 SI7454DP
+R4 N007 0 20m
+C3 0 N004 4.7µ
+L1 IN N001 47µ Rser=.04
+C4 N002 N001 4.7µ Rser=1
+D1 N002 OUT PDS5100
+C5 OUT 0 22µ Rser=.02 x2
+R5 OUT N010 280K
+R6 N010 0 20K
+Rload OUT 0 24
+L2 0 N002 47µ Rser=.04
+R8 N008 N009 30.9K
+C6 N008 0 4.7n
+C7 OUT 0 3.3µ Rser=.001
+C8 IN 0 2.2µ
+C9 N009 0 1000p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* Note:\n  A smaller SS capacitors is being used to reduce simulation time. The typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LT3758 - High Input Voltage, Boost, Flyback, SEPIC and Inverting Controller\nHigh Efficiency SEPIC Converter\nInput: 18V to 72V   Output: 24V @ 1A, Fsw: 300kHz
+K L1 L2 1
+.tran 2.5m startup
+.lib LT3758.sub
+.backanno
+.end

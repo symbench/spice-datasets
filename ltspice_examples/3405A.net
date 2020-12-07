@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3405A.asc
+V1 IN 0 5
+C1 OUT 0 22µ
+C2 OUT N002 20p
+L1 N001 OUT 4.7µ
+R1 OUT N002 887K
+R2 N002 0 280K
+Rload OUT 0 10
+XU1 IN 0 N001 IN N002 0 LTC3405A
+.tran 1m startup
+.lib LTC3405A.sub
+.backanno
+.end

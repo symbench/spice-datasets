@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1795.asc
+V1 +V 0 10
+V2 -V 0 -10
+R1 N002 N001 1K
+R2 N001 0 1K
+V3 N003 0 SINE(0 1 1K)
+XU1 N003 N001 +V -V N002 0 N004 NC_01 LT1795
+V4 N004 0 5
+.tran 3m
+.lib LTC.lib
+.backanno
+.end

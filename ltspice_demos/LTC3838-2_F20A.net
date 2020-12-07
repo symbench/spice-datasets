@@ -1,0 +1,48 @@
+* Z:\mnt\spice-netlists\LTC3838-2_F20A.asc
+R1 N025 0 137K
+V1 IN 0 12
+C1 0 N001 4.7µ
+R2 N001 N003 2.2
+M§Q1 IN N008 N012 N012 BSC050NE2LS
+M§Q2 N012 N014 0 0 BSC010NE2LS
+D1 N001 N010 MBRS140
+C2 N010 N012 0.1µ
+L1 N012 OUT 0.4µ Rser=0.9m
+C3 N016 OUT 0.1µ
+M§Q3 IN N009 N013 N013 BSC050NE2LS
+M§Q4 N013 N015 0 0 BSC010NE2LS
+D2 N001 N011 MBRS140
+C4 N011 N013 0.1µ
+L2 N013 OUT 0.4µ Rser=0.9m
+C5 N017 OUT 0.1µ
+C6 N019 0 1000p Rser=7.5K Cpar=100p
+R3 OUT N022 10K
+R4 N022 0 10K
+C7 IN 0 180µ Rser=30m
+C8 IN 0 22µ x4 Rser=3m
+C9 N002 0 1µ
+R5 N002 IN 2.2
+C10 OUT 0 330µ x2 Rser=9m
+C11 OUT 0 100µ x2 Rser=3m
+C12 OUT 0 100µ x2 Rser=3m
+C13 OUT 0 330µ x2 Rser=9m
+R6 N016 N012 4.02k
+R7 N013 N017 4.02K
+C14 0 N021 1n
+R8 N001 N006 100K
+XU1 N021 N019 N022 N026 N024 N023 0 N025 N028 N018 N020 N003 0 N016 OUT N003 N005 N004 N010 N008 N012 N014 N001 N002 0 N003 N027 N001 N015 N013 N009 N011 N006 N007 N003 OUT N017 0 LTC3838-2
+V2 N028 0 PWL(0 0 20u .4 1m .4 3m 2.5)
+R9 N017 OUT 16.2K
+R10 N016 OUT 16.2K
+Rload OUT 0 .05
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.2m startup
+* LTC3838-2 - Dual, Fast, Accurate Step-Down DC/DC Controller with External Reference Voltage and Dual Differential Output Sensing\nHigh Efficiency Step-Down DC/DC Converter with DCR Current Sensing\nInput: 4.5V to 14V     Output: 0.4V-2.5V @ 50A, Fsw = 300kHz
+* Notes:\n  A smaller TRACK/SS capacitor is being used to reduce simulation time. Typical value should be 0.01µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3838-2.sub
+.backanno
+.end

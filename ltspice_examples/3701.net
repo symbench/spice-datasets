@@ -1,0 +1,33 @@
+* Z:\mnt\design.r\spice\examples\3701.asc
+XU1 N002 N005 N001 0 N010 N008 N012 N013 IN IN N011 N009 0 N006 IN IN LTC3701
+R1 N002 IN .03
+M§Q1 N003 N006 N002 N002 FDC638P
+D1 0 N003 MBRS340
+L1 N003 OUT1 4.7µ Rpar=5K
+R2 N013 IN .03
+M§Q2 N014 N009 N013 N013 FDC638P
+D2 0 N014 MBRS340
+L2 N014 OUT2 4.7µ Rpar=5K
+C1 OUT1 0 47µ Rser=50m
+C2 0 OUT2 47µ Rser=50m
+V1 IN 0 5
+C3 N005 N004 220p
+R3 N004 0 10K
+C4 N008 N007 220p
+R4 N007 0 10K
+R5 N001 0 78.7K
+R6 OUT1 N001 169K
+R7 N010 0 80.6K
+R8 OUT2 N010 100K
+R9 IN N011 10K
+Rload1 OUT1 0 10
+Rload2 0 OUT2 2.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.5m startup
+.lib LTC3701.sub
+.backanno
+.end

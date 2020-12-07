@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1551LCS8-4.1.asc
+V1 IN 0 5
+C1 N003 N002 .1µ
+C2 N001 0 .1µ
+C3 OUT 0 10µ
+Rload OUT 0 1K
+XU1 0 IN N002 OUT N003 0 N001 OUT LTC1551LCS8-4.1
+.tran 1m
+.lib LTC1551LCS8-4.1.sub
+.backanno
+.end

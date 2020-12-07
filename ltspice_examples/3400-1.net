@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3400-1.asc
+L1 IN N001 4.7µ Rser=0.1
+R1 OUT N002 1.02Meg
+R2 N002 0 604K
+V1 IN 0 1.4
+C1 OUT 0 4.7µ
+XU1 N001 0 N002 IN OUT IN LTC3400-1
+Rload OUT 0 50
+.tran 250u startup
+.lib LTC3400-1.sub
+.backanno
+.end

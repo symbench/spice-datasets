@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\AD5535Bopamp.asc
+V1 IN 0 PWL(0 0 1m 0 +10n 4 +1m 4 +10n 1 +1m 1 +1m 0 +1m 5 9m 5 +10n 0 9.1m 0 +0.5m 2.5)
+V2 N001 0 200
+R1 OUT 0 1T
+C1 OUT 0 200p
+XU1 N001 IN OUT 0 AD5535Bopamp AD5535Bopamp
+.tran 14m startup
+.lib AD5535Bopamp.sub
+.backanno
+.end

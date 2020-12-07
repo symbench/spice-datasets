@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\1149-3.3.asc
+V1 IN 0 48
+M§Q1 N006 N012 0 0 FDS5690
+M§Q2 N006 N002 IN IN IRF7343P
+C1 N004 0 470p
+C2 N009 0 3300p
+C3 N003 0 3.3µ
+C4 N001 N003 .068µ
+D1 N001 IN 1N4148
+D2 N002 IN 1N4148
+L1 N006 N007 62µ
+C5 N007 OUT 1000p
+C6 N002 N005 .047µ
+D3 0 N006 MBRS360
+C7 OUT 0 220µ Rser=.01
+R1 N010 N009 1K
+R2 N007 OUT 50m
+XU1 N002 IN N003 N005 MP_01 N011 N010 OUT N007 N004 0 0 N012 0 N008 N001 LTC1149-3.3
+C8 N011 0 100p
+Rload OUT 0 3
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 9m startup
+.lib LTC1149-3.3.sub
+.backanno
+.end

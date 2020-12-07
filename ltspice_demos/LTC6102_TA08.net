@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LTC6102_TA08.asc
+R1 OUT 0 4.99K
+M§Q1 OUT N003 N005 N005 IRF9640
+D1 N006 IN 1N5369B
+R2 N006 0 2Meg
+V1 IN 0 250V
+Iload N001 0 PWL REPEAT FOR 7 (.1m 0 .2m 10 .3m 10 .4m 0) ENDREPEAT
+R3 IN N001 2m
+XU1 N005 N003 N002 N001 IN N002 LTC6102
+R5 IN N002 100
+M§Q2 0 N006 N003 N003 IRF9640
+D2 N006 N003 MMSD4148
+C1 IN N004 .1µ
+C2 IN N003 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m
+* LTC6102 - Precision Zero Drift Current Sense Amplifier\nSimple 200V Current Monitor
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* DANGER!! \nHIGH VOLTAGE!!
+.lib LTC6.lib
+.backanno
+.end

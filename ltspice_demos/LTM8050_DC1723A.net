@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTM8050_DC1723A.asc
+C1 OUT 0 100µ
+V1 IN 0 48
+R1 N004 0 93.1K
+R2 N003 0 97.6K
+Rload OUT 0 2.5
+XU1 N001 OUT N001 IN IN MP_01 N002 N004 NC_02 N003 0 LTM8050
+C2 IN 0 4.7µ
+R3 N002 OUT 100K
+.tran 1m startup
+* LTM8050 - 58V, 2A Step-Down µModule Converter\n5V Step-Down Converter\nInput: 7.5V to 58V       Output: 5V @ 2A,   Fsw = 400kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTM8050.sub
+.backanno
+.end

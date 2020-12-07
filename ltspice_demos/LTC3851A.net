@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LTC3851A.asc
+M§Q1 IN N002 N004 N004 RJK0305DPB
+L1 N004 N005 .4µ Rser=1.5m
+C1 OUT 0 660µ Rser=4.5m
+R1 OUT N009 43.2K
+R2 N009 0 49.9K
+C2 N003 N004 .1µ
+C3 N001 0 4.7µ
+C4 N010 0 3300p Rser=6.49K Cpar=470p
+C5 N006 0 .002µ
+V1 IN 0 12
+D1 N001 N003 CMDSH2-3
+M§Q2 N004 N007 0 0 RJK0301DPB
+R3 N005 N011 10
+C7 N011 N012 1n
+Rload OUT 0 .1
+XU1 N001 N008 NC_01 N006 N010 N009 N012 N011 NC_02 0 N007 N001 IN N003 N002 N004 LTC3851A
+Rs OUT N005 2m
+R4 OUT N012 10
+C6 OUT 0 47µ
+R5 N008 0 97.6K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3851A - Synchronous Step-down DC/DC Converter\nInput: 12V          Output: 1.5V @ 15A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3851A.sub
+.backanno
+.end

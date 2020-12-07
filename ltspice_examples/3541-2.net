@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3541-2.asc
+V1 IN 0 3.6
+L1 N001 OUT1 2.2µ
+C1 OUT1 0 10µ
+C2 OUT2 0 2.2µ
+XU1 IN IN OUT1 MP_01 OUT2 OUT1 0 0 IN N001 LTC3541-2
+Rload1 OUT1 0 9.375
+Rload2 OUT2 0 5
+.tran 1m startup
+.lib LTC3541-2.sub
+.backanno
+.end

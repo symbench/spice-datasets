@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTC3415.asc
+L1 N005 OUT .2µ Rser=.0042
+R1 OUT N006 30.1K
+V1 IN 0 3.3 Rser=0.01
+C1 OUT 0 55µ V=10 Irms=8.919 Rser=0.0025 MTBF=0 ppPkg=1 x2
+R2 N006 0 15K
+I1 OUT 0 PULSE(1 6 150u 50n 50n 50u 100u 500) load
+C2 OUT N006 22p
+C3 N003 0 470p
+R3 N003 N002 10K
+C4 IN 0 65µ V=10 Irms=8.919 Rser=0.005 MTBF=0 Lser=0 mfg="KEMET" pn="C1210C106K8PAC" type="X5R" ppPkg=1 x2
+XU1 MP_01 0 N008 IN MP_02 N005 MP_03 MP_04 MP_05 0 NC_06 IN 0 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 OUT 0 NC_13 MP_14 MP_15 MP_16 MP_17 MP_18 MP_19 N006 N004 MP_20 N002 0 IN MP_21 MP_22 IN NC_23 LTC3415
+R4 N004 IN 100K
+C5 N002 0 47p
+C6 N007 0 100p
+R5 N008 N007 5.1K
+C7 N008 0 39p
+.tran 250u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+* LTC3415 - 7A, Polyphase Synchronous Step-Down Regulator\nInput: 3.3V     Output: 1.8V @ 5A
+.lib LTC3415.sub
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\6110.asc
+R1 N001 N005 200
+XU1 N005 N001 N002 N002 0 N007 N001 LT6110
+V3 N003 0 5
+R3 VPload N002 .25
+R4 VNload 0 .25
+S1 VNload VPload N004 0 Sload
+V1 N004 0 PULSE(0 1 5m 500n 500n 2m 10m)
+XU2 MP_01 N006 N001 N003 N003 LT3080
+C1 N001 0 1µ
+R6 N007 0 1.69K
+R5 N006 N007 301K
+C2 VPload VNload 1µ
+C3 N006 0 100p
+.tran 0 10m 1m startup
+.model Sload SW(Ron=5 Roff=100 Vt=.5 Vh=-100m)
+.lib LT3080.sub
+.lib LTC5.lib
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT8364_DC2716A.asc
+V1 IN 0 12
+L1 IN N001 2.2µ Rser=.17
+D1 N001 OUT MBRS340
+C1 OUT 0 10µ
+R1 N003 0 71.5K
+C2 0 N006 2200p
+C3 N007 0 2000p
+R2 N004 0 20K
+C4 N002 0 1µ
+R3 OUT N003 1Meg
+R4 N006 N005 22K
+XU1 IN N005 IN MP_01 N002 MP_02 0 MP_03 N003 N004 N007 0 MP_04 N001 MP_05 MP_06 0 LT8364
+Rload OUT 0 18.5
+C5 IN 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2018 Analog Devices Inc. All rights reserved.
+* LT8364 - Low Iq Boost/SEPIC/Inverting DC/DC Converter with 4A, 60V Switch\n24V Boost Converter\nInput: 5V to 20V     Output: 24V @ 1.3A (with 12Vin), Fsw = 2MHz
+.lib LT8364.sub
+.backanno
+.end

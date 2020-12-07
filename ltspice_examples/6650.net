@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\6650.asc
+V1 N001 0 5
+XU1 N001 0 OUT OUT LT6650
+C1 OUT 0 1µ Rser=5
+I1 OUT 0 pulse(100u -100u 200u 10u 10u 800u 1.6m)
+.tran 2m
+.lib LTC1.lib
+.backanno
+.end

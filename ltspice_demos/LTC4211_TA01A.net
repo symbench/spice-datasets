@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTC4211_TA01A.asc
+XU1 N010 N005 N009 N011 0 N007 N006 N002 N001 N008 LTC4211
+R1 N002 N001 7m
+M§Q1 N002 N006 N003 N003 Si4410DY
+R2 N003 N007 36K
+R3 N007 0 15K
+R4 N003 N010 10K
+C1 N011 0 .01µ
+C2 N009 0 .01µ
+R5 N005 0 10K
+R6 N001 N005 20K
+V1 N001 0 5
+R7 N001 N008 20K
+C3 N003 0 100µ
+Rload N003 0 1
+S1 0 N003 N004 0 Short
+V2 N004 0 PWL(.05 0 +.1m 1)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 100m startup
+.model Short SW(Ron=.1 Roff=100K Vt=.5 Vh=-.4)
+* LTC4211 - Hot Swap Controller with Multifunction Current Control\nSingle Channel 5V, 5A Hot Swap Controller
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC4211.sub
+.backanno
+.end

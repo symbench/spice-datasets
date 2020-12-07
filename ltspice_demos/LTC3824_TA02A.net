@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3824_TA02A.asc
+XU1 0 0 N008 N003 N009 N005 N004 IN N006 N001 LTC3824
+M§Q1 N007 N006 N004 N004 IRF7343P
+R1 IN N004 .025
+C1 IN N001 .1µ
+R2 N008 0 392K
+R3 N003 N002 15K
+C2 N002 0 1000p
+C3 N005 0 .01µ
+V1 IN 0 55
+D1 0 N007 1N5819
+L1 N007 OUT 22µ
+C4 OUT 0 270µ
+R4 N009 0 80.6K
+R5 OUT N009 255K
+R6 N010 N009 51
+C5 OUT N010 100p
+C6 IN N004 100p
+C7 IN 0 33µ
+Rload OUT 0 1.65
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* Notes:\n \n  C3 should be 0.1µF, not 0.01µF.  It is reduced in value here to speed up the time to simulate a soft start cycle.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3824 - High Voltage Step-Down Controller With 40µA Quiescent Current\nInput: 4.5V-55V      Output: 3.3V @ 2A     fsw = 200kHz
+.lib LTC3824.sub
+.backanno
+.end

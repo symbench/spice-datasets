@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\ADuM4135.asc
+R1 N009 N010 3.9
+R2 N011 N010 3.9
+R3 N004 N003 10K
+R4 N012 N003 10K
+R5 N013 N003 10K
+D1 N006 N007 MMSD4148
+R6 N006 N005 1K
+C1 N005 0 10p
+V1 N008 0 PULSE(0 5 0 2n 2n 5u 10u)
+V2 N003 0 5
+V3 N001 0 15
+V4 N002 0 PULSE(80 100 16u 20u)
+M§Q1 N007 N010 0 0 BSC12DN20NS3
+R7 N002 N007 1
+V5 0 N014 5
+XU1 0 N008 0 N012 N013 N004 N003 N014 N005 0 N011 N001 N009 N010 ADuM4135
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 40u
+.lib ADuM4135.sub
+.backanno
+.end

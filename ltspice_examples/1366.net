@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1366.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N001 10K
+XU1 IN N001 +V -V OUT LT1366
+XU2 N001 N003 +V -V N002 LT1366
+R2 N003 N002 1Meg
+C1 N003 N002 22p
+R3 IN N002 1Meg
+V3 IN 0 SINE(0 1 100)
+.tran 30m
+* Input Bias Current Cancellation
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC7138_DC2172A.asc
+V1 IN 0 48
+L1 N001 OUT 150µ Rser=285m
+Rload OUT 0 8.25
+C1 IN 0 1µ
+C2 OUT 0 100µ x2 Rser=2m
+XU1 N001 0 IN N002 IN N003 0 0 OUT N003 N004 N005 LTC7138
+D1 N002 N001 MURS120
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+* LTC7138 - High Efficiency, 140V, 400mA Step-Down Regulator\nHigh Input Voltage Buck Regulator\nInput: 4V to 140V     Output: 3.3V @ 400mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LTC7138.sub
+.backanno
+.end

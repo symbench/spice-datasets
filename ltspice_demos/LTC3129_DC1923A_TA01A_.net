@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTC3129_DC1923A_TA01A_.asc
+XU1 NC_01 N003 N001 MP_02 IN 0 N008 N008 N007 N004 N006 N002 N009 OUT LTC3129
+R1 OUT N007 2Meg tol=1
+R2 N007 0 619K
+R3 OUT N005 2.21K
+R4 OUT N009 2Meg
+C1 IN 0 22µ V=25 Rser=.005
+C2 OUT 0 22µ V=10 Irms=8 Rser=.005
+C3 N001 N003 22n V=50
+C4 N002 N004 22n V=50
+C5 N005 N007 33p
+V1 IN 0 12V
+L1 N001 N002 10µ Ipk=.59 Rser=.301
+C6 N008 0 2.2µ V=10 Rser=.005
+Rload OUT 0 25
+R6 IN N006 2Meg
+.tran 3m
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc.  All rights reserved.
+* LTC3129 - 15V, 200mA Synchronous Buck-Boost DC/DC Converter with 1.3µA Quiescent Current\nµPower, Synchronous Buck-Boost\nInput: 2.42V to 15V     Output: 5V @ 200mA for Vin > Vout
+.lib LTC3129.sub
+.backanno
+.end

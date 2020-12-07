@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3864_F08A.asc
+XU1 N003 0 0 N008 N009 N006 N011 N002 N001 N004 IN N007 0 LTC3864
+C1 N005 0 3.3n
+V1 IN 0 24
+C2 IN N001 .1µ
+R1 IN N004 25m
+M§Q1 N010 N007 N004 N004 FDC5614P
+D1 0 N010 B560C
+L1 N010 OUT 10µ Ipk=4.3 Rser=0.027 Rpar=0 Cpar=0 mfg="Toko" pn="919AS-100M"
+R2 OUT N009 422K
+R3 N009 0 80.6K
+C3 N006 0 100p
+R4 OUT N011 100K tol=1 pwr=0.1
+C4 OUT 0 47µ x2 Rser=0.002
+C5 IN 0 12µ Rser=0.93
+C6 IN 0 4.7µ Rser=0.004
+R5 N006 N005 9.53K
+R6 IN N002 100K
+Rload OUT 0 2.5 tol=1 pwr=0.1
+C7 N008 0 .01µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+* LTC3864 - 60V Low Iq Step-Down DC/DC Controller with 100% Duty Cycle Capability\n5V Output Automotive Step-Down Converter\nInput: 5.2V to 55V     Output: 5V @ 2A, Fsw = 350KHz\nVout follows Vin when 3.5V <= Vin <= 5.2V
+* Notes:\n  A smaller SS capacitor (C7) is being used to reduce simulation time. Typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3864.sub
+.backanno
+.end

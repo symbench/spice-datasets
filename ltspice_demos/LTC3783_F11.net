@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LTC3783_F11.asc
+M§Q1 N002 N008 N007 N007 Si4470DY
+R2 N013 0 20K
+C1 N012 0 .01µ
+V1 IN 0 14.5
+XU1 IN N001 N006 N006 N013 MP_01 N009 N010 N008 N004 IN N007 N012 N005 N011 N003 0 LTC3783
+L1 IN N002 10µ Rpar=2K
+C2 N004 0 4.7µ
+R3 N001 IN .3
+C3 N011 0 .01µ
+R5 IN N003 1Meg
+R6 N007 0 50m
+C4 0 OUT 10µ
+R7 OUT N005 40.2K
+R8 N005 0 1.6K
+D1 OUT N001 LXHL-BW02 N=4
+D5 N002 OUT MBRS340
+C5 IN 0 10µ x2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC3783 - PWM LED Driver and Boost, Flyback and SEPIC Converter\nSingle Inductor Buck-Boost Application with Analog Dimming and Low Frequency PWM Dimming\nInput: 9V to 20V     Output: 4x WLEDs @ 350mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3783.sub
+.backanno
+.end

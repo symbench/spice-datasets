@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\1946.asc
+XU1 N003 N002 IN 0 N001 IN N003 N004 LT1946
+L1 IN N001 5.4µ Rser=.05
+R1 OUT N002 28.7K
+R2 N002 0 5.23K
+C3 N004 0 .005µ
+D1 N001 OUT MBRS340
+C2 OUT 0 20µ Rser=50m
+V1 IN 0 3.3
+Rload OUT 0 20
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 750u startup
+.lib LT1946.sub
+.backanno
+.end

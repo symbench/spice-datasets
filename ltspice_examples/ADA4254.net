@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\ADA4254.asc
+V2 AVDD 0 5
+V4 VDDH 0 28
+V5 0 VSSH 28
+V6 N002 0 2.5
+XU1 0 N004 VDDH VSSH AVDD 0 N002 N001 N003 N005 N005 N005 0 0 0 ADA4254
+V1 N004 0 PULSE(-.5 .5 10u 100n 100n 40u 1)
+E1 Out 0 N003 N001 1
+V7 N005 0 5
+.tran 80u
+* Gain of 8 Configuration
+.lib ADA4254.sub
+.backanno
+.end

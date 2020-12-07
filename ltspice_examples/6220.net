@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\6220.asc
+V1 +V 0 3.3
+V2 -V 0 -3.3
+C1 N002 N004 47p
+R1 N004 N001 2.67K
+R2 N001 N006 909
+R3 N002 N001 909
+C2 N001 0 220p
+V3 N006 0 AC 1
+C3 OUT N005 22p
+R4 N005 N003 2.21K
+R5 N003 N002 1.1K
+R6 OUT N003 1.1K
+C4 N003 0 470p
+XU1 0 N004 +V -V N002 LT6220
+XU2 0 N005 +V -V OUT LT6220
+.ac oct 10 10K 10Meg
+* 1MHz, 4th Order Butterworth Filter
+.lib LTC4.LIB
+.backanno
+.end

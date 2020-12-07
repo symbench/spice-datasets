@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3086_TA12.asc
+XU1 0 N003 N003 NC_01 NC_02 N001 OUT MP_03 MP_04 IN MP_05 IN NC_06 N002 NC_07 LT3086 Rpkg=14 Tpkg=10 Rsink=7 Tsink=250
+V1 IN 0 10
+R1 N003 0 357
+R2 N003 N004 1K
+C1 N004 0 10n
+C2 OUT 0 10µ
+Rload OUT 0 1
+C3 IN 0 10µ
+XU2 IN 0 N001 N001 LT6650
+C4 N001 0 1µ Rser=5
+V2 N002 0 PWL(3m 0 10m .75)
+C5 IN 0 1µ
+.tran 12m startup
+* LT3086  - 40V, 2.1A Low Dropout Adjustable Linear Regulator with Monitoring and Cable Drop Compensation\nAdjustable Voltage Controlled Current Source\nInput: 3V to 12V    Output: 0A to 2.1A constant current
+* Note:\n  Restrict input voltage range to limit power dissipation and prevent foldback current limit from interfering with proper operation\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* Track adjust from \n0V to 750mV for \n0A to 2.1A constant current
+.lib LT3086.sub
+.lib LTC1.lib
+.backanno
+.end

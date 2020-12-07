@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3650-4.1.asc
+V1 IN 0 12
+L1 N001 N002 6.8µ
+R1 N002 OUT 50m
+C1 OUT 0 .2m
+C2 N001 N003 1µ
+D1 OUT N003 1N5817
+D2 0 N001 MBRS340
+XU1 IN IN IN NC_01 NC_02 0 NC_03 NC_04 OUT N002 N003 N001 0 LT3650-4.1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT3650-4.1.sub
+.backanno
+.end

@@ -1,0 +1,66 @@
+* Z:\mnt\spice-netlists\LT3513.asc
+C1 N003 0 10µ
+V1 N003 0 12
+D1 0 N015 MBRS340
+L1 N016 N015 4.7µ
+L2 LOGIC N001 10µ
+R1 OFF N010 69.8K
+R2 N010 0 10K
+C2 OFF 0 10µ
+C3 LOGIC 0 22µ
+C4 N013 N015 0.22µ
+C5 N028 0 .0027µ
+R3 LDO N022 43.2K
+R4 N022 0 10K
+C6 LDO 0 10µ
+C7 0 N002 10µ
+R5 ON N017 232K
+C8 N021 0 2.2µ
+D2 OFF N008 DFLS220L
+D3 N001 N002 DFLS220L
+R6 N023 N021 169K
+R7 0 N023 10K
+C9 ON 0 .47µ
+R8 N024 N028 7.5K
+XU1 N022 N024 N012 N023 N011 N019 N021 ON N017 0 N007 N026 N014 MP_01 N001 MP_02 MP_03 LOGIC N005 N025 N027 N009 N010 N008 N006 N020 N003 N013 MP_04 LOGIC N016 N018 MP_05 N015 MP_06 N003 MP_07 N004 0 LT3513
+R9 N003 N004 178K
+R10 N004 0 60.4K
+R11 LOGIC N018 30.1K
+R12 N018 0 10K
+L3 N019 LOGIC 6.8µ
+L4 LOGIC N006 10µ
+C10 N006 N008 .47µ
+R13 N002 N005 56.2K
+R14 0 N005 10K
+C11 0 N009 .001µ
+C12 0 N011 .001µ
+C13 0 N012 .001µ
+C14 0 N014 .01µ
+Q1 LOGIC N020 LDO 0 2N2222
+C15 N029 0 .0047µ
+R15 N025 N029 4.7K
+C16 N030 0 .0015µ
+R16 N026 N030 30K
+C17 N031 0 .0022µ
+R17 N027 N031 13K
+M§Q2 N002 N007 AVDD AVDD FDS6575
+R18 N002 N007 100K
+Rload2 AVDD 0 100
+Rload1 ON 0 1.1K
+Rload4 OFF 0 2K
+Rload5 LOGIC 0 10
+Rload3 LDO 0 6.6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+* LT3513 - 5-Output Regulator for TFT-LCD panels\nInput: 12V       Output: 5V@0.5A, 22V@20mA, -10V@20mA and 3.3V@0.5A, 8V@80mA
+.lib LT3513.sub
+.backanno
+.end

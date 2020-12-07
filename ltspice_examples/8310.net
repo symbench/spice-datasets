@@ -1,0 +1,36 @@
+* Z:\mnt\design.r\spice\examples\8310.asc
+XU1 N003 MP_01 N006 MP_02 N008 N010 MP_03 N012 N015 N013 N016 MP_04 N011 N009 N004 N007 MP_05 IN MP_06 MP_07 0 LT8310
+V1 IN 0 36
+R1 IN N003 280K
+R2 N003 N006 30.9K
+R3 N006 0 6.65K
+C1 N008 0 6.8n Rser=50m
+R4 N010 0 40.2K
+C2 N012 0 100n
+R5 N004 N007 105K
+C3 N004 0 4.7µ
+L1 IN N005 420µ Rser=65mm Rpar=5K
+L2 N001 0 125µ Rser=15m Rpar=5K
+M§Q1 N005 N009 N011 N011 IPB107N20N3
+R6 N011 0 20m
+C4 N005 0 1000p
+D1 N001 N002 B530C
+D2 0 N002 B530C
+C5 OUT 0 200µ Rser=20m
+L3 N002 OUT 33µ Rser=10m
+Rload OUT 0 5
+R7 N015 N014 20K
+C6 N014 0 1500p
+R8 OUT N013 5K
+R9 N013 0 1K
+C7 N015 0 100p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 .99
+.tran 7m startup
+.lib LT8310.sub
+.backanno
+.end

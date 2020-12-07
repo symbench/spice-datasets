@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\3879.asc
+M§Q1 N003 N010 0 0 RJK0301DPB
+R1 IN N001 432K
+R2 OUT N007 10K
+R3 N007 0 10K
+D1 N006 N005 1N5818
+C1 N006 0 4.7µ
+M§Q2 IN N002 N003 N003 RJK0305DPB
+L1 N003 OUT .56µ Rpar=100
+C2 OUT 0 660µ Rser=5m
+R4 N009 N008 27K
+C3 N008 0 220p
+V1 IN 0 12
+C4 N004 0 .001µ
+C5 N003 N005 .22µ
+XU1 N004 NC_01 NC_02 NC_03 N009 0 N001 N007 NC_04 IN N006 N010 0 N003 N002 N005 LTC3879
+Rload OUT 0 .08
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC3879.sub
+.backanno
+.end

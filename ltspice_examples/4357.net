@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\4357.asc
+XU1 N002 N001 N003 0 N002 LTC4357
+V1 N001 0 PWL(0 48 50m 0 100m 48)
+Rload N002 0 10
+XU2 N002 N004 N005 0 N002 LTC4357
+V2 N004 0 PWL(0 0 50m 48 100m 0)
+M§Q1 N002 N003 N001 N001 IRF530
+M§Q2 N002 N005 N004 N004 IRF530
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 100m
+.lib LTC4357.sub
+.backanno
+.end

@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\3873.asc
+M§Q1 N003 N005 N006 N006 Si4848DY
+V1 IN 0 48
+C1 N009 0 .0022µ Rser=7.5K
+C2 OUT 0 100µ
+R1 OUT N007 38.3K
+R2 N007 0 12.1K
+XU1 N008 N009 N007 0 N005 N002 N004 N006 LTC3873
+L1 N003 IN 25µ Rser=100m
+L2 N001 0 .25µ Rser=5m
+R3 IN N002 20K
+C3 N002 0 4.7µ
+D1 N001 OUT MBR735
+R4 N006 0 68m
+C4 N004 0 .01µ
+Rload OUT 0 2.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 25m startup
+K1 L1 L2 1
+.lib LTC3873.sub
+.backanno
+.end

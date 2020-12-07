@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1639.asc
+V1 +V 0 5
+Q1 N001 N004 OUT 0 2N3904
+R1 OUT 0 2K
+R2 +V N002 .2
+R3 N001 +V 200
+R4 N003 N002 200
+I1 N002 0 SINE(1 1 1K)
+XU1 N001 N003 +V 0 N004 LT1638
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 3m
+* Positive Supply Rail Current Sense
+.lib LTC.lib
+.backanno
+.end

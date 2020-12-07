@@ -1,0 +1,51 @@
+* Z:\mnt\design.r\spice\examples\4283.asc
+V1 0 VEE PWL(0 0 10u 48)
+M1 OUT N017 N018 N018 PSMN4R8100BSE M=2
+RS1 N018 VEE .5m
+RD N015 OUT 100K
+RDT N012 OUT 200K
+RDB N012 VEE 5.11K
+R6 N001 N008 100K
+R7 N001 PGIO1 100K
+RRT N002 0 200K
+RRB VEE N002 5.11K
+RIN 0 N001 4K
+RUV3 0 N005 487K
+RUV1 N005 N007 14.3K
+CTMR N010 VEE 4.7n
+CL 0 OUT 500µ
+ROT N004 N006 1.4K
+ROB N006 VEE 10K
+S1 0 OUT N013 0 SSHORT
+V2 N013 0 PWL(0 0 1.2 0 +10n 0 +20m 0 +10n 0)
+CVCC VEE N003 1µ
+CIN N001 VEE .1µ
+XU1 VEE N005 N005 N007 N004 N006 MP_01 MP_02 MP_03 MP_04 VEE MP_05 MP_06 VEE N018 MP_07 MP_08 N014 MP_09 N015 N012 N002 N011 N010 MP_10 MP_11 MP_12 MP_13 PGIO1 N008 VEE N003 MP_14 MP_15 MP_16 MP_17 MP_18 MP_19 MP_20 MP_21 MP_22 N003 N001 N001 LTC4283 A6=0 A5=0 A4=1 A3=1 A2=0 B7=0 B6=0 B5=0 B4=0 B3=0 B2=0 B1=1 B0=1 D7=0 D6=0 D5=0 D4=1 D3=1 D2=1 D1=0 D0=0 E7=1 E6=1 E5=0 E4=0 E3=0 E2=0 E1=0 F7=0
+RG2 N014 N016 470
+CG2 N016 VEE 100n
+RUV2 N007 VEE 10K
+R1 N010 N009 18.2K
+CTMR1 N009 VEE 68n
+R2 N009 VEE 1.13Meg
+RG1 N014 N017 10
+B1 0 OUT I=if(V(PGIO1,VEE)<.5 & time > .1,MIN(Power/MAX(V(0,OUT),12),Imax),0)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.6
+.model SSHORT SW(Ron=10m Roff=1k vt=.5 vh=-200m)
+* UV ON = -38.6V\nUV OFF = -71.9V\nOV OFF = 70.7V
+* Non Default Bits:\n(set as params on symbol)\nDVDT = 0                (A6)\nVILIM = 0001         (D7,D6,D5,D4) \nFB = 11b                 (D3,D2)\nFTBD_DL = 00b     (E5,4)
+* Note: All bits must be set to 0 or 1\nUndefined behaivor for other values\n \nSee datasheet for further description.\n \nBit  Name   Default\n      Description\n \nCONTROL_1 (0x0A)\n                                                     \nA6   DVDT 0\n                                                  1->Enable DVDT startup\nA5   THERM_TMR 0\n                                                  1->Turns off 2 uA TMR pulldown\nA4   FET_BAD_TURN_OFF 1\n                                                  1-> Turn MOSFET Off after FET_BAD\nA3   PWRG_RESET_CNTRL 1\n                                                  1-> Vout Low resets Power Good\n                                                  0-> MOSFET Off resets Power Good\nA2   PGIO2_ACLB  0\n                                                  1-> PGIO2 configured as inverted ACL\n                                                  0-> PGIO2 configured as inverted second Power Good\n \nCONTROL_2 (0x0B)\n \nB7   EXT_FAULT_RETRY 0\n                                                  1->Enables Auto Retry after EXT_FAULT\nB6   PGI_RETRY 0\n                                                  1->Enables Auto Retry after PGI_FAULT\nB5-4 FET_BAD_RETRY 00  \n                                                        Configures FET_BAD Retry\n     B5,B4  Number of Retries\n     00     0 (Latch-Off)\n     01     1\n     10     7\n     11     infinite\n \nB3-2 OC_RETRY 00\n                                                       Configures OC (Over Current) Retry\n     B3,B2  Number of Retries\n     00     0 (Latch-Off)\n     01     1\n     10     7\n     11     infinite\n \nB1   UV_RETRY 1\n                                                  1-> Enables Auto Retry after UV_FAULT\nB0   OV_RETRY 1\n                                                  1-> Enables Auto Retry after OV_FAULT
+* CONFIG_1 (0x0D) \n \nD7-4 ILIM 0000\n                            Configures Current Limit Voltage (VILIM)\n                         (VILIM(FAST) = 2*VILIM)\n     D7,D6,D5,D4 VILIM\n     0000    15m      1000    23m\n     0001    16m      1001    24m\n     0010    17m      1010    25m\n     0011    18m      1011    26m\n     0100    19m      1100    27m\n     0101    20m      1101    28m\n     0110    21m      1110    29m\n     0111    22m      1111    30m\n \nD3-2 FB  00\n                            Configures Current Limit Foldback\n    D3,D2  Foldback Factor\n    00     100% (no foldback)\n    01     50%\n    10     20%\n    11     10%\n \nD1   FB_DIS 0\n                          1->Foldback after Startup Disabled\nD0   LPFB  0\n                          1->Load Power Foldback after Startup Enabled
+* CONFIG_2 (0x0E) \n \nE7-6 VDTH 11\n                              Configures Drain Voltage threshold\n                              for starting FET bad timer\n \n    E7,E6  VD,FET(TH)\n     00     72  mV\n     01     102 mV\n     10     143 mV\n     11     203 mV\n \nE5-4 FTBD_DL 00\n                            Configures FET_BAD filtering timer delay\n \n    E5,E4  TDL(FETBAD)\n     00     0.256 sec\n     01     0.512 sec\n     10     1.02 sec\n     11     2.05 sec\n \nE3-1 COOLING_DL   000\n                            Configures Cooling delay before retry\n                             for OC_FAULT, FET_BAD_FAULT or EXT_FAULT\n \n    E3,E2,E1 TDL(RTRY)\n     000    0.512 sec      100    8.19 sec\n     001    1.02 sec      101    16.4 sec\n     010    2.05 sec      110    32.8 sec\n     011    4.1  sec      111    65.5 sec\n \nCONFIG_3 (0x0F) \n \nF7  EXTFLT_TURN_OFF  0\n                           1->Turn MOSFET off after External Fault
+* LTC4283 Programing Parameters
+* Use PWL(0 0 1.2 0 +10n 1 +20m 1 +10n 0) to short the output at 1.2sec
+* M=2 Indicates 2\nparallel devices
+* Increase CTMR1 to prevent timeout
+.param Power=600
+.param Imax=120
+* 600W Constant Power Switched Load
+.lib LTC4283.sub
+.backanno
+.end

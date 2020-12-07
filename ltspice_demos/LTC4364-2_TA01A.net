@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LTC4364-2_TA01A.asc
+V1 IN 0 PWL(0 0 +20u 12 +.1 12 +20u 80 +.3 12 +.1 12 +20u 200 +1m 200 +20u 12 +.1 12 +20u -24)
+R1 IN N008 383K
+R2 N010 0 10K
+R3 N002 OUT 10m
+R4 N003 N005 10
+R5 OUT N011 102K
+R6 N011 0 4.99K
+R7 OUT N007 100K
+R8 OUT N009 100K
+M§Q1 IN N003 N001 N001 FDB33N25
+C1 0 N005 6.8n
+R9 IN N004 2.2K
+R10 N008 N010 90.9K
+C2 N012 0 6.8µ
+D1 0 N004 1N5373B
+C3 N004 0 0.1µ
+XU1 OUT N002 N006 N001 N005 N004 N004 N008 N010 0 N009 N007 N012 N011 LTC4364-2
+M§Q2 N002 N006 N001 N001 FDB3682
+C4 OUT 0 22µ Rser=100m
+Rload OUT 0 7
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran .7
+* LTC4364 - Surge Stopper with Ideal Diode\n4A, 12V Overvoltage Output Regulator with Reverse Current Protection\nWithstands 200V 1ms & -24V Transient at Vin
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC4364-2.sub
+.backanno
+.end

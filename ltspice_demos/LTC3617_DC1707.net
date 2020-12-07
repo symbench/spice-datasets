@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTC3617_DC1707.asc
+V1 IN 0 2.5
+L1 N001 VTT .22µ Rser=5m Rpar=5K
+C1 VTT 0 100µ
+Rload VTT 0 .2
+XU1 N003 0 VTTR IN N001 MP_01 MP_02 MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 IN IN MP_13 N002 VTT IN IN 0 LTC3617
+R2 IN N002 100K
+C3 IN 0 100µ
+R1 N003 0 365K
+R3 VTTR 0 1k
+C2 VTTR 0 .1µ
+.tran 2m startup
+* 1.25V
+* f = 1MHz
+* VTT = VTTR = VDDQ/2
+* LTC3617 - ±6A Monolithic Synchronous Step-Down Regulator For DDR Termination\nInput: 2.25V to 5.5V     Outputs: VTTR @ 10mA, VTT @ ±6A
+* 10mA max
+* Internal Compensation Selected
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3617.sub
+.backanno
+.end

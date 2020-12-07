@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3585-1.asc
+L1 N002 N005 10µ Rpar=2K Rser=.1
+L2 0 N003 {10u*10.2*10.2} Rpar=1Meg
+C1 OUT 0 .02µ
+D1 N003 OUT D
+R3 N004 N001 10K
+V1 N001 0 5
+V2 N002 0 3
+V3 N007 0 PWL(30m 0 30.01m 3 30.1m 3 30.11m 0)
+XU1 N001 N002 N001 N005 N006 N006 N007 N001 N004 MP_01 0 LT3585-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 50m startup
+K1 L1 L2 1
+.lib LT3585-1.sub
+.backanno
+.end

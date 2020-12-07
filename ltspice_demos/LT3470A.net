@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LT3470A.asc
+V1 IN 0 12
+C1 IN 0 1µ
+C2 N002 N001 .22µ
+C3 OUT N003 22p
+C4 OUT 0 22µ Rser=.025
+L1 N002 OUT 33µ Rser=.1 Rpar=10K
+R1 OUT N003 604K
+R2 N003 0 200K
+XU1 IN MP_01 IN 0 N002 N001 OUT N003 LT3470A
+Rload OUT 0 20
+.tran 1.4m startup
+* LT3470A - 40V µPower Buck Regulator With Integrated Boost and Catch Diodes\nInput: 12V     Output: 5V @ 250mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT3470A.sub
+.backanno
+.end

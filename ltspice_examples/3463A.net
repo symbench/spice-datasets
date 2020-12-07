@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\3463A.asc
+L1 IN N001 10µ
+L2 IN N005 10µ
+C1 N006 N005 1µ
+D1 OUT2 N006 1N5817
+V1 IN 0 2.7
+R1 OUT1 N002 1Meg
+R2 N002 0 90.9K
+R3 N003 N004 154K
+R4 N004 OUT2 1Meg
+C2 OUT1 0 2.2µ
+C3 OUT2 0 4.7µ
+XU1 OUT1 N001 IN N005 N006 N004 N003 IN IN N002 0 LT3463A
+C4 N004 OUT2 10p
+Rload2 OUT2 0 160
+Rload1 OUT1 0 1.5K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+.lib LT3463A.sub
+.backanno
+.end

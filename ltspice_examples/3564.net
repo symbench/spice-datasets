@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3564.asc
+V1 IN 0 3.6
+L1 N001 OUT 1.1µ Rser=2m
+R1 OUT N002 634K
+R2 N002 0 316K
+C1 OUT N002 22p
+C2 OUT 0 22µ Rser=5m
+Rload OUT 0 1.44
+XU1 N002 0 IN N001 IN LTC3564
+.tran 1.5m startup
+.lib LTC3564.sub
+.backanno
+.end

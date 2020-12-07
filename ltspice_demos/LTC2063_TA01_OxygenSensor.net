@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC2063_TA01_OxygenSensor.asc
+XU1 N003 N001 OUT V+ 0 V+ LTC2063
+R1 N002 0 100 tol=0.1
+R2 N003 N002 100K tol=0.1
+R3 N001 0 100K tol=0.1
+R4 OUT N001 10Meg tol=0.1
+I1 0 N002 {isensor}
+V1 V+ 0 1.8
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LTC2063 - 2?A Supply Current, Low IB, Zero-Drift Operational Amplifier\nµPower Precision Oxygen Sensor\nOutput: 1V in air (20.9% O2)
+.step param isensor 0 170u 10u
+.op
+* City Technology\n4OXV Oxygen Sensor
+.lib LTC3.lib
+.backanno
+.end

@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3081_TA04.asc
+R1 N003 0 25
+XU1 N008 N005 N003 N007 N006 IN LT3081
+R2 N006 0 1K
+R3 N005 N003 15K
+C3 N005 0 100p
+C4 OUT 0 22µ x2
+C5 IN 0 10µ x2
+Rload OUT 0 .5
+V2 IN 0 5
+XU2 N004 N005 N003 N002 N001 IN LT3081
+R6 N001 0 1K
+R5 N002 OUT 10m
+R7 N007 OUT 10m
+.tran 1m startup
+* LT3081 - 1.5A Single Resistor Rugged Linear Regulator with Monitors\nWide Safe Operating Area Supply Using Paralleling Regulators\nInput: 2.7V to 40V       Output: 1.5V @ 3A (Current Limited)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright ©2014 Linear Technology Inc. All rights reserved.
+* Imon and R1 Cancel\n10m Ohm Ballast\nResistor Drop\n(R5 & R7)
+.lib LT3081.sub
+.backanno
+.end

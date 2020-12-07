@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3536.asc
+XU1 IN 0 0 N001 N002 OUT IN IN N003 N004 0 LTC3536
+V1 IN 0 3.6
+L1 N001 N002 4.7µ
+R1 OUT N003 1Meg
+C1 OUT N003 47p Rser=6.49K
+R2 N003 0 221K
+C2 N003 N004 220p Rser=49.9K
+C3 OUT 0 22µ V=6.3 Irms=2.1 Rser=0.028 Lser=0 mfg="KEMET" pn="A700V226M006ATE028" type="Al electrolytic"
+Rload OUT 0 3.3
+.tran 1m startup
+.lib LTC3536.sub
+.backanno
+.end

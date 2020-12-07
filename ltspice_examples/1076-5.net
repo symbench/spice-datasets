@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\1076-5.asc
+R1 N004 0 70K
+L1 N001 N002 100µ
+D1 0 N001 MBRS340
+V1 IN 0 20
+C1 N006 N005 .033µ
+C2 N002 0 500µ Rser=.1
+R2 0 N006 1.5K
+XU1 IN N001 N004 0 N002 N005 N003 LT1076-5
+Rload N002 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LT1076-5.sub
+.backanno
+.end

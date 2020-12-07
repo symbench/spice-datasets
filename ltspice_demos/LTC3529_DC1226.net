@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTC3529_DC1226.asc
+L1 IN N001 4.7µ Rser=50m Rpar=5K
+V1 IN 0 3.6
+C1 Output 0 10µ
+Rload Output 0 10
+XU1 Output N001 IN 0 N003 0 IN IN LTC3529
+D1 IN N002 D
+R1 N003 N002 330
+C2 IN 0 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 800u startup
+* Connect RST to Vin for Auto Restart\nConnect RST to GND for Latch-Off
+* 5V
+* LTC3529 - 1.5A, 1.5MHz Step-Up DC/DC Converter\nInput: 1.8V to 5V Outout: 5V @ 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3529.sub
+.backanno
+.end

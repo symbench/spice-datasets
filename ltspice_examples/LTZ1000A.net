@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\LTZ1000A.asc
+R1 OUT N001 70K
+R2 N005 0 120
+V1 +V 0 15
+D1 N006 0 1N4148
+D2 N004 OUT 1N4148
+C2 N001 0 .022µ
+V2 N002 0 pulse(0 10 0 1 1 500 1000)
+R3 OUT N003 {R}
+XU1 N002 N006 N003 N005 N001 NC_01 0 NC_02 LTZ1000A
+XU2 N001 N005 +V 0 N004 LT1006
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 3000 10 startup
+.step param R list 50 100 150
+.options numdgt=15 measdgt=10 plotwinsize=0
+.lib LTC.lib
+.lib LTZ1000.lib
+.backanno
+.end

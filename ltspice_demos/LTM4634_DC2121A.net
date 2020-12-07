@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LTM4634_DC2121A.asc
+V1 IN 0 18
+C1 0 N001 4.7µ
+R1 IN N005 23.2K
+R2 N007 0 243K
+R3 N008 0 19.1K
+R4 N014 0 4.32K
+C4 OUT3 0 150µ V=4 Rser=10m
+Rload1 OUT1 0 .2
+Rload2 OUT2 0 .66
+Rload3 OUT3 0 3
+C5 IN 0 120µ V=25
+C6 IN 0 22µ V=25
+C8 OUT3 0 100µ V=6.3 Rser=2m
+R5 N001 N003 100K
+R6 N001 N004 100K
+C3 OUT2 0 470µ V=4 Rser=10m
+C10 OUT2 0 100µ V=6.3 Rser=2m
+C2 OUT1 0 470µ V=4 Rser=10m
+C12 OUT1 0 100µ V=6.3 Rser=2m
+R7 N001 N011 49.9K
+R8 N012 N001 49.9K
+C13 N009 0 0.1n
+C14 N010 0 0.1n
+C15 N015 0 0.1n
+XU1 N010 N015 OUT1 IN IN OUT3 0 N011 N007 NC_01 0 N008 NC_02 N014 NC_03 N003 N004 N012 MP_04 NC_05 MP_06 N001 NC_07 IN IN OUT2 NC_08 MP_09 MP_10 MP_11 NC_12 MP_13 MP_14 N013 N006 N005 0 N002 MP_15 N009 LTM4634
+R9 N013 IN 23.2K
+R10 IN N006 23.2k
+R11 N002 0 10K
+R12 N001 N002 30K
+.tran 2m startup
+* LTM4634 - Triple Output 5A/5A/4A Step-Down DC/DC µModule Regulator\nTriple 5A/5A/4A Buck µModule Regulator\nInput: 4.75V to 28V     Outputs: 1.0V @ 5A, 3.3V @ 5A & 12.0V @ 4A, Fsw = 500kHz
+* Notes:\n  A smaller TRACK/SS capacitor is being used to reduce simulation time. Typical value should be 0.1µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTM4634.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1071HV.asc
+L1 IN N001 150µ Rser=0.02 Rpar=5000
+D1 N001 OUT MBRS360
+R1 OUT N002 10.7K
+R2 N002 0 1.24K
+R3 N003 N004 1K
+C1 OUT 0 500µ Rser=15m
+C2 N004 0 1µ
+V1 IN 0 5
+XU1 N003 N002 0 N001 IN LT1071
+Rload OUT 0 24
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 20m startup
+.lib LT1071.sub
+.backanno
+.end

@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTC4357_TA02.asc
+XU1 OUT IN N001 0 N002 LTC4357
+M§Q1 OUT N001 IN IN FDB3682
+D1 0 IN BZX84C15L
+R1 IN N002 100
+C1 N002 0 .1µ
+Cload OUT 0 4 Rser=.1 Rpar=10
+XU2 0 IN PhotoCell
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* LTC4357 - Positive High Voltage Ideal Diode Controller\n12V Solar Battery Charger
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.tran 20
+* Battery
+.subckt PhotoCell B A
+C1 A B 1n
+V1 N001 B PWL 0 0 120n 14
+D1 N001 A S2
+R1 A N001 75
+.model S2 D(Ron=.1 Ilimit=5.1 epsilon=.5)
+.ends
+.lib LTC4357.sub
+.backanno
+.end

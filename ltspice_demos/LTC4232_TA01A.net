@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC4232_TA01A.asc
+C1 N008 0 .1µ
+V1 IN 0 12
+C2 OUT 0 330µ
+R1 N006 0 20K
+R2 IN N002 20K
+R3 N003 0 20K
+R4 OUT N003 150K
+R5 OUT N005 20K
+S1 0 OUT N004 0 SHORT
+V2 N004 0 PULSE(0 1 240m 1m 1m 10m)
+XU1 IN N002 0 N008 N008 0 OUT MP_01 MP_02 N001 N005 N002 N003 N006 N009 N007 LTC4232
+Rload OUT 0 2.4
+.model SHORT SW(Ron=10m Roff=1K Vt=.5 Vh=-.4)
+.tran 500m startup
+* LTC4232 - 5A Integrated Hot Swap Controller\nSingle 12V, 5A Hot Swap Controller with Auto-Retry
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC4232.sub
+.backanno
+.end

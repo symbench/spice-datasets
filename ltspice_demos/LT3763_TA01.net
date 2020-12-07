@@ -1,0 +1,45 @@
+* Z:\mnt\spice-netlists\LT3763_TA01.asc
+XU1 N011 N005 N001 N004 N006 N003 N002 N013 N023 N006 N018 0 N006 N006 N020 OUT N010 N017 N015 N024 MP_01 N022 MP_02 N021 N008 N009 N007 LT3763
+R1 N024 0 82.5K
+V1 N022 0 PULSE(0 5 20u 10n 10n 30u 50u)
+C1 N020 0 .01µ
+R2 N015 N014 50
+C2 N014 0 1n
+R3 N013 N012 50
+C3 N012 0 1n
+C4 N006 0 2.2µ
+V2 IN 0 24
+R4 IN N001 2.5m
+R5 IN N002 1K
+R6 N001 N003 1K
+C5 N002 N003 1µ
+R7 IN N004 84.5K
+R8 N004 0 15.4K
+C6 N001 0 4.7µ
+C7 N005 0 4.7µ
+D1 N005 N007 1N5819
+C8 N007 N009 .22µ
+M§Q1 N001 N008 N009 N009 RJK0305DPB
+M§Q2 N009 N011 0 0 RJK0301DPB
+R9 N010 OUT 2.5m
+R10 OUT N018 47.5K
+R11 N018 0 12.1K
+D2 OUT N019 PT-121-B
+M§Q3 N019 N021 0 0 IRFH6200
+L1 N009 N010 1µ
+R12 N005 N023 47.5K
+C9 N016 0 4.7n
+R13 N017 N016 47.5K
+C10 OUT 0 220µ x2 Rser=1m
+C11 N001 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 6m startup
+* LT3763 - 60V High Current Step-Down LED Driver Controller\n20A, Pulse Width Modulated, Single LED Driver\nInput: 10V to 30V    Outputs: 6V LED @ 20A   Fsw = 500kHz
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3763.sub
+.backanno
+.end

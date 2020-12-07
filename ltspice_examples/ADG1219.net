@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\ADG1219.asc
+V1 +V 0 15
+V2 -V 0 -15
+V4 N004 0 pulse(0 3.3 0 1u 1u 5m 10m)
+R1 N001 0 1K
+R2 N003 0 1K
+V5 N002 0 SINE(0 10 2k)
+XU1 N005 +V 0 -V N003 N002 N001 N004 ADG1219
+V3 N005 0 5
+.tran 30m
+.lib ADG1219.sub
+.backanno
+.end

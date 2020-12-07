@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\AD8065.asc
+V1 +V 0 12
+Vin N002 0 SINE(0 1 10Meg) Rser=50
+R1 N001 0 499
+R2 OUT N001 499
+XU1 N003 N001 +V -V OUT AD8065
+V2 -V 0 -12
+Rload OUT 0 1K
+R4 N003 N002 249
+C1 OUT N001 2.2p
+.tran 1u
+.lib ADI.lib
+.backanno
+.end

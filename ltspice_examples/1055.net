@@ -1,0 +1,37 @@
+* Z:\mnt\design.r\spice\examples\1055.asc
+V1 +V 0 15
+V2 -V 0 -15
+XU1 N006 N005 +V -V OUT LT1055
+C1 OUT N006 33p
+R1 OUT N003 1.5K
+D1 N007 N003 1N4148
+D2 N007 0 1N4148
+D3 N003 N008 1N4148
+D4 0 N008 1N4148
+D5 N007 N008 LM329
+C2 N003 N002 .001µ
+R2 N003 N002 3Meg
+C3 N005 0 .1µ
+D6 N005 N002 1N4148
+D7 N002 N001 1N4148
+D8 N004 0 1N4148
+R3 +V N001 4.7K
+R4 N006 0 22K
+D9 N001 N004 1N4148
+R5 N005 IN 75K
+Q1 -V N009 N005 0 2N3906
+D10 N009 0 1N4148
+C4 N009 0 .1µ
+R6 OUT N009 3.3Meg
+V3 IN 0 PULSE(1 9 0 50m 50m 0 100m)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model LM329 D(Ron=1 Vrev=6.95)
+.tran 100m
+* 1Hz to 10KHz Voltage-to-Frequency Converter
+.lib LTC.lib
+.backanno
+.end

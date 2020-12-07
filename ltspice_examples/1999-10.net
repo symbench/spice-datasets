@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1999-10.asc
+XU1 N001 N002 N004 MP_01 0 N005 OUT N003 LT1999-x Gain=10
+C1 0 N005 .1µ
+V1 N002 N004 sine(0 .1 5K)
+V2 N004 0 sine(5 1 1K)
+V3 N001 0 5
+.tran 3m
+.lib LTC6.lib
+.backanno
+.end

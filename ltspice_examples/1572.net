@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1572.asc
+L1 IN N001 150µ Rser=0.02 Rpar=5000
+R1 OUT N004 10.7K
+R2 N004 0 1.24K
+R3 N003 N002 1K
+C1 OUT 0 100µ Rser=0.05
+C2 N002 0 1µ
+V1 IN 0 5
+XU1 N003 N004 0 N001 IN N001 OUT LT1572
+Rload OUT 0 25
+.tran 15m startup
+.lib LT1572.sub
+.backanno
+.end

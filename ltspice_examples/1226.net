@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1226.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N002 N001 1.2K
+R2 N001 0 50
+V3 IN 0 ac 1
+XU1 IN N001 +V -V N002 LT1226
+R3 N002 N003 75
+R4 OUT 0 75
+T1 N003 0 OUT 0 Td=50n Z0=75
+.ac oct 10 100K 1G
+.lib LTC.lib
+.backanno
+.end

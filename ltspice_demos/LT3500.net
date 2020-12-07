@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LT3500.asc
+R1 OUT1 N003 42.2K
+R2 N003 0 8.06K
+R3 OUT2 N009 24.9K
+R4 N009 0 8.06K
+L1 N002 OUT1 6.8µ Rpar=2K
+C1 N001 N002 .47µ
+V1 IN 0 24
+R5 N004 0 53.6K
+R6 N005 0 40.2K
+C2 N008 0 .001µ
+C3 N006 N005 330p
+D1 0 N002 MBRS340
+C4 OUT1 0 22µ
+Q1 OUT1 N007 OUT2 0 FZT849
+C5 OUT2 0 22µ
+D2 OUT1 N001 PMEG4005AEA
+XU1 IN NC_01 N008 NC_02 N006 N004 NC_03 N003 N009 N007 N001 N002 0 LT3500
+Rload1 OUT1 0 5
+Rload2 OUT2 0 3.3
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 500u startup
+* LT3500 - Monolithic 2A Step-Down Regulator Plus LDO in DFN-12 package\nInput: 24V       Outputs: 5V@1A and 3.3V@1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LT3500.sub
+.backanno
+.end

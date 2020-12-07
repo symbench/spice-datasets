@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\ADA4857.asc
+V1 V+ 0 5
+V2 V- 0 -5
+V3 N002 0 -5
+V4 IN 0 SINE(0 1 1Meg)
+R3 OUT N001 499
+R4 OUT 0 1K
+R5 N001 0 499
+XU1 IN N001 V+ V- OUT N002 ADA4857
+.tran 10u
+.lib ADI1.lib
+.backanno
+.end

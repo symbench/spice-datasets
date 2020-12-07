@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\1084-5.asc
+V1 IN 0 PWL(0 0 1 10) Rser=0.1
+Rload OUT 0 10
+C1 OUT 0 10µ
+XU1 0 OUT IN LT1084-5
+.tran 1
+.lib LT1083.lib
+.backanno
+.end

@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1468.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N002 22.1K
+R2 N001 IN 11K
+V3 IN 0 AC 1
+XU1 0 N002 +V -V OUT LT1468
+R3 0 N001 121
+C1 N002 N001 1000p
+C2 OUT N001 1000p
+.ac oct 100 10K 1Meg
+* 100KHz Low Distortion Bandpass Filter
+.lib LTC.lib
+.backanno
+.end

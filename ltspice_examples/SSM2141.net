@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\SSM2141.asc
+V1 IN N001 SINE(0 1 1K)
+XU2 0 IN N001 -V OUT OUT +V SSM2141
+V2 +V 0 15
+V3 -V 0 -15
+.tran 3m
+.lib ADI.lib
+.backanno
+.end

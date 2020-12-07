@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3519.asc
+XU1 0 MP_01 N005 N003 IN N001 N001 MP_02 MP_03 N002 N002 N004 N006 N007 N005 LT3519 X=2.4u
+V1 IN 0 12.4
+R1 N002 N006 1Meg
+R2 IN N003 1Meg
+R3 N003 0 243K
+R4 N002 N004 2.49
+R5 N006 0 29.4K
+L1 IN N001 68µ Rser=.2
+C1 N002 0 4.7µ Rser=.01
+D1 N004 0 LXHL-BW02 N=10
+R6 IN N007 1Meg
+R7 N007 0 137K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT3519 400kHz LED Driver with Integrated Schottky Diode\nInput: 12.4V       Output: 10 LEDs at 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT3519.sub
+.backanno
+.end

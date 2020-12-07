@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3420_DC460A.asc
+XU1 N007 IN N002 IN 0 N003 N005 N004 N006 N008 LT3420
+L1 IN N003 22µ Rser=.11 Rpar=2K
+L2 N005 N001 {22µ*12.1**2} Rser=27.5 Rpar=1Meg
+R1 N003 N002 51.1K
+R2 N007 0 2K
+C1 N008 0 470p
+R3 N004 IN 100K
+V1 IN 0 5
+V2 N006 0 PULSE(0 5 0.1m)
+D1 N001 OUT GSD2004W-V
+Cload OUT 0 .1µ Rpar=.1Meg
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+K1 L1 L2 1
+* LT3420 - Photoflash Capacitor Chargers with Automatic Refresh\nHigh Charge Rate Strobe Capacitor Charger\nInput: 2.5V to 6V     Output: 320V
+* Note:\n  DANGER HIGH VOLTAGE OPERATION BY HIGH VOLTAGE TRAINED PERSONNEL ONLY\n  Scale charge time by the Cload capacitance. For simulation, a .1uF capacitor is used to reduce simulation time.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LT3420.sub
+.backanno
+.end

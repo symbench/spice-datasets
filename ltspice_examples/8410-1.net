@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\8410-1.asc
+R1 N003 N004 499K
+V1 IN 0 3.6 Rser=0.1
+L1 IN N001 200µ
+C1 N002 0 .01µ
+C2 OUT 0 .01µ
+Rload OUT 0 200K
+R2 N004 0 499K
+C3 N003 0 .01µ Rser=10m
+XU1 IN IN 0 N001 OUT N002 N003 N004 LT8410-1
+.tran 2m startup
+.lib LT8410-1.sub
+.backanno
+.end

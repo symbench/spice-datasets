@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\3072.asc
+C1 N005 0 4.7n
+V1 N001 0 5
+V2 IN 0 1.65
+R1 OUT1 0 4.8
+C2 P001 0 20p
+C3 OUT1 0 10µ Rser=2m
+R2 OUT1 N003 500k
+C5 N008 0 4.7n
+R3 OUT2 0 4.8
+C4 OUT2 0 100µ Rser=3m
+I2 OUT2 0 PULSE(0 2.25 1m 1u 1u 100u 200u)
+R4 OUT2 N006 500k
+XU1 0 0 NC_01 NC_02 N001 N005 0 NC_03 IN OUT1 OUT1 IN N004 N003 N002 0 NC_04 NC_05 N007 N008 NC_06 IN OUT2 OUT2 IN 0 N006 LT3072
+I1 OUT1 0 PULSE(0 2.25 .6m 1u 1u 100u 200u)
+R5 N004 P001 40k
+C6 P002 0 20p
+R6 N007 P002 40k
+.tran 1.5m startup
+* The following parameters can be defined by \nright-clicking on the LT3072 symbol:\n \nTA-- in °C, sets the Ambient Temperature\nRth--- in °C/W, sets Junction-to-Ambient Thermal Resistance
+.lib LT3072.sub
+.backanno
+.end

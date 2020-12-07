@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTM4632_DC2367A.asc
+V1 IN 0 12
+R2 N001 0 40.2K
+C1 VDDQ 0 10µ Rser=5m
+Rload1 VDDQ 0 0.5
+Rload2 VTT 0 0.25
+XU1 NC_01 VTT IN 0 MP_02 IN 0 NC_03 MP_04 VDDQ N004 VDDQ MP_05 MP_06 MP_07 MP_08 MP_09 VTTR NC_10 MP_11 IN MP_12 MP_13 MP_14 MP_15 N002 N003 N001 LTM4632
+C4 IN 0 4.7µ x2 V=16 Irms=0 Rser=5m Lser=0
+C3 IN 0 47µ x2 V=25 Irms=0 Rser=5m Lser=0
+C5 VDDQ 0 100µ x2 V=25 Irms=0 Rser=5m Lser=0
+C6 VDDQ N001 10p
+C7 VTT 0 10µ Rser=5m
+C8 VTT 0 100µ x2 V=25 Irms=0 Rser=5m Lser=0
+C2 N003 0 .0001µ
+C9 VTTR 0 10n
+Rload3 VTTR 0 75
+.tran .8m startup
+* LTM4632 - Ultrathin, Triple Output, Step-Down µModule Regulator for DDR-QDR4 Memory\nTriple Output Ultrathin Buck Regulator for DDR-QDR4\nInput: 3.6V to 15V     Outputs: VDDQ 1.5V @ 3A, VTT 0.75V @ ±3A, VTTR 0.75V @ 10mA
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LTM4632.sub
+.backanno
+.end

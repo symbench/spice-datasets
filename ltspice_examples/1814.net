@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\1814.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N001 {R1}
+R2 N001 IN {Rg}
+R3 N004 N003 {R}
+R4 N003 N002 {R}
+R5 N005 N004 {Rf}
+C1 OUT N005 {C}
+R6 N002 N001 {Rq}
+R7 N007 OUT {Rf}
+C2 N006 N007 {C}
+R8 N003 N006 {R}
+V3 IN 0 AC 1
+XU1 0 N001 +V -V N002 LT1813
+XU2 0 N003 +V -V N004 LT1813
+XU3 0 N005 +V -V OUT LT1813
+XU4 0 N007 +V -V N006 LT1813
+.ac oct 100 1K 10Meg
+.param R=499 R1=499 Rf=475
++ Rq=49.9 Rg=499 C=.003u
+* Bandpass Filter with Independently Settable Gain, Q and Center Frequency
+.lib LTC.lib
+.backanno
+.end

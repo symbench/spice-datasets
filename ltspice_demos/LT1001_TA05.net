@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT1001_TA05.asc
+XU1 N001 N005 +V -V N003 LT1001
+R1 N002 N001 5K
+R3 N002 0 25K
+C1 N002 0 1µ
+C2 N003 N005 1000p
+R4 N005 N004 5K
+V1 N004 0 PWL(0 0 10 -25)
+Rload N006 -V 1K
+V2 +V 0 5
+V3 -V 0 -35
+M1 N002 N003 N006 N006 2N7002
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10
+* LT1001 - Precision Operational Amplifier\nPrecision Current Source
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LTC4079_TA01A.asc
+C1 N002 0 4 IC=6
+R1 N002 N004 1.54Meg
+R2 N004 N007 249K
+R3 N008 0 3K
+V1 N001 0 PWL(0 0 100u 9)
+Rthermistor N010 0 R=9.1k*exp(3447/(V(temp)+273) - 3477/300)
+R4 N009 N010 9.1K
+D1 N001 N005 NSPW500BS
+R5 N006 N005 5K
+V2 TEMP 0 PWL(0 25 60 45 80 45 100 30)
+XU1 N001 N001 N008 N009 N010 N006 N007 N004 N002 0 LTC4079 TIMEOUT=-1
+S1 N002 0 N003 0 SDIS
+V3 N003 0 PWL(0 0 180 0 +10u 1 +1 1 +10u 0)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 300
+* Timing is Paused When NTC voltage out of range
+* Current Limit to Control Die Temperature NOT MODELED
+* Initial Condition Required on Capacitor\nto Avoid Bad Battery Shutdown
+.model SDIS SW(Ron=1 Roff=1G vt=.5 vh=-.3)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LTC4079 - 60V, 250mA Linear Charger with Low Quiescent Current\nHigh Vin, Backup 2-Cell Li-Ion Battery Charger\nInput: 9V to 60V       Output: 8.4Vbat @ 250mA
+.lib LTC4079.sub
+.backanno
+.end

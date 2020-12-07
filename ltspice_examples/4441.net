@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\4441.asc
+XU1 0 N009 N008 0 N007 N004 N002 IN N003 N005 LTC4441
+M§Q1 N001 N005 N006 N006 Si7370DP
+R1 N006 0 5m
+R2 N008 0 100K
+R3 N002 0 86.6K
+R4 N003 N002 330K
+C1 N003 0 10µ
+R5 IN N004 100K
+R6 N004 0 20K
+L1 IN N001 10µ Rpar=2K
+D1 N001 OUT MBR745
+C2 OUT 0 25µ
+XU2 N011 0 N012 N009 IN N007 LTC3803
+R7 N006 N009 250
+V1 IN 0 10
+R8 N012 0 10K
+R9 OUT N012 300K
+C3 N010 0 .0047µ
+R10 N011 N010 56K
+Rload OUT 0 100
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+.lib LTC3803.sub
+.lib LTC4441.sub
+.backanno
+.end

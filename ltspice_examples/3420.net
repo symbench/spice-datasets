@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3420.asc
+XU1 N006 IN N002 IN 0 N003 N005 N004 IN N007 LT3420
+L1 IN N003 20µ Rpar=2K Rser=.1
+L2 N005 N001 {20u*12*12} Rpar=1Meg
+R1 N003 N002 51.1K
+C1 OUT 0 .1µ Rpar=.1Meg
+D1 N001 OUT D
+R2 N006 0 2K
+C2 N007 0 1000p
+R3 N004 IN 10K
+V1 IN 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10m
+K1 L1 L2 1
+.lib LT3420.sub
+.backanno
+.end

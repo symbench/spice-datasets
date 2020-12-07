@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3693.asc
+L1 N004 OUT 6.8µ Rpar=2K
+D1 0 N004 MBRS340
+C1 OUT 0 47µ
+V1 IN 0 24
+R1 OUT N008 536K
+R2 N008 0 100K
+C2 N004 N006 .47µ
+C3 N002 0 680p
+R3 N003 N002 15K
+R4 N005 0 63.4K
+R5 OUT N007 100K
+R6 IN N001 100K
+C4 N001 0 .22µ
+XU1 OUT N006 N004 IN N001 MP_01 N007 N008 N003 N005 0 LT3693
+Rload OUT 0 1.43
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+* LT3693 - 36V, 3.5A Buck Regulator \nInput: 24V       Output: 5V@3.5A
+.lib LT3693.sub
+.backanno
+.end

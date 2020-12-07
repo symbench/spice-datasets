@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC3108-1_TA01A.asc
+C1 N006 0 1µ
+V1 IN 0 PWL(.1m 0 .101m 30m)
+L1 IN N005 7.5µ Rser=85m
+L2 N001 0 75m Rser=300
+C2 N001 N002 1n
+C3 N001 N004 330p
+C4 N003 0 .01m
+C5 OUT 0 470µ
+C6 N007 0 2.2µ
+XU1 0 N006 N003 OUT NC_01 N007 N008 MP_02 MP_03 0 N006 NC_04 N002 N004 N005 LTC3108-1
+C7 IN 0 220µ
+K1 L1 L2 1
+.tran 1.5 startup
+.ic V(out)=2.95
+* LTC3108-1 - Ultralow Voltage Step-Up Converter and Power Manager\nPeltier-Powered Energy Harvester for Remote Wireless Sensor\nInput: 20mV to 500mV       Output: 2.2V @ 3mA LDO, 3V @ 4.5mA(Max) Vout and 5.25V SuperCap Backup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3108-1.sub
+.backanno
+.end

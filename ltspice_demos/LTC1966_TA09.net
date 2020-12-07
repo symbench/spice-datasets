@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTC1966_TA09.asc
+V1 +V 0 5
+XU1 0 N001 0 -V OUT 0 +V LTC1966
+V2 -V 0 -5
+C1 OUT 0 1µ
+L1 0 IN 20n
+L2 0 N001 118m
+R1 N001 0 10
+I1 0 IN SINE(0 {ARMS*sqrt(2)} 60)
+.tran 3
+K1 L1 L2 1
+.step param ARMS list 5 10 70
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LTC1966 - Precision µPower, Delta Sigma RMS-to-DC Converter\nAC Current Measurement\nInput: 50Hz to 400Hz AC Current, 75A Max     Output: 4mVdc/Arms
+.lib LTC1966.lib
+.backanno
+.end

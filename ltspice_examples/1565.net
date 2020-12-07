@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\1565.asc
+C1 N003 0 .1µ
+V1 N004 0 5
+E3 N001 CMI IN 0 0.5
+E1 N002 CMI IN 0 -0.5
+V2 IN 0 PWL(0 -1 10u -1 11u 1) AC 1 0
+V3 CMI 0 2.0
+E2 OUT 0 OUTP OUTM 1
+XU1 N001 N002 N003 0 SDX N004 OUTM OUTP LTC1565 vvar={vvar} fvar={fvar} gvar={gvar}
+.ac oct 100 10e3 5e6
+.param fvar=0 vvar=0 gvar=0
+.step param fvar list  -1 0 1
+* SCHEMATIC PARAMETERS-\nvvar controls the offset voltage\nfvar controls the frequency response\ngvar controls the gain\n \nEach parameter can be varied from -1 to +1 to see variations in the filter.\nFor "typical" performance, set the paramters to 0.
+.lib LTC1565.sub
+.backanno
+.end

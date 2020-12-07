@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\4219-12.asc
+C1 N004 0 .1µ
+V1 IN 0 12
+C2 OUT 0 330µ
+R1 N003 0 20K
+R2 OUT N002 20K
+S1 0 OUT N001 0 SHORT
+V2 N001 0 PULSE(0 1 240m 1m 1m 10m)
+XU1 NC_01 IN 0 0 N004 N004 0 OUT MP_02 MP_03 MP_04 MP_05 NC_06 N002 NC_07 NC_08 N003 NC_09 LTC4219-12
+.tran 600m startup
+.model SHORT SW(Ron=10m Roff=1K Vt=.5 Vh=-.4)
+.lib LTC4219-12.sub
+.backanno
+.end

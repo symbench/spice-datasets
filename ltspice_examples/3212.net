@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\3212.asc
+V1 N003 0 3
+D1 N004 N006 AOT-2015
+C1 N004 0 1µ
+XU1 N001 N004 N005 N003 N003 N009 N008 N007 N006 0 N002 N003 LTC3212
+C2 N001 N002 1µ
+R1 N009 0 11.8K
+V2 N005 0 PULSE(1 0 40u 10n 10n 100n 200n 15)
+D2 N004 N007 AOT-2015
+D3 N004 N008 AOT-2015
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+.lib LTC3212.sub
+.backanno
+.end

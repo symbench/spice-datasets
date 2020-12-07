@@ -1,0 +1,41 @@
+* Z:\mnt\design.r\spice\examples\GFT.asc
+Vi N010 0 AC {1-z*z}
+Iz N010 N008 AC {0.5*z*(z+1)}
+Viy N008 N011 0
+Vz N011 N012 AC {0.5*z*(z-1)}
+Ey Y 0 N010 N012 1
+Rs N007 N010 100
+V1 N009 N008 0
+C1d N007 N008 30p
+Rm1 N007 N009 50
+Ct1 N004 N007 5p
+B1 N004 N007 I=I(V1)
+R3 0 N004 200
+C2d 0 N004 16p
+V2 N001 0 0
+Rm2 N001 N004 200
+Ct2 N004 N002 5p
+B2 N002 N004 I=I(V2)
+Cc N002 0 5p
+R8 N002 0 10Meg
+C3t 0 N002 5p
+B3 0 N002 I=I(V3)
+C3d N002 N003 30p
+Rm3 N002 N005 50
+V3 N005 N003 0
+C4t 0 N003 50p
+B4 0 N003 I=I(V4)
+C4d N003 O 160p
+Rm4 N003 N006 10
+V4 N006 O 0
+R1 N012 0 100
+R2 O N012 900
+RL O 0 1k
+.ac dec 100 100m 100G
+.param z=0
+.step param z list -1 0 1
+* This example schematic is supplied for informational/educational purposes only.\nWe thank Frank Wiedmann for contributing this example.
+* This example shows how to simulate the quantities of the General Feedback Theorem, which are defined in the article\n R. David Middlebrook, "The General Feedback Theorem: A Final Solution for Feedback Systems", IEEE Microwave Magazine, vol. 7, no. 2, pp. 50-63, April 2006.\nThis article can be downloaded from http://resolver.caltech.edu/CaltechAUTHORS:MIDieeemm06 .\nSee also message 18008 of the independent LTspice users' group at http://groups.yahoo.com/group/LTspice where this method was originally presented by Frank Wiedmann.
+* * For this example, add the following definitions to the plot.defs file:\n* A() is an auxiliary quantity.\n* Dd() corresponds to D.\n* Hinf() corresponds to H_infinity.\n* All other function names are equal to those of the corresponding quantities.\n \n.func A()    =  V(o)@2*(V(y)@1*I(Viy)@3-V(y)@3*I(Viy)@1)+V(o)@1\n+ *(V(y)@3*I(Viy)@2-V(y)@2*I(Viy)@3)+V(o)@3\n+ *(V(y)@2*I(Viy)@1-V(y)@1*I(Viy)@2)\n.func Dd()   =  V(y)@1*I(Viy)@3-V(y)@3*I(Viy)@1\n.func H()    =  V(o)@2\n.func Hinf() =  A()/Dd()\n.func T()    = 1/(1/Dd()-1)\n.func Dn()   = H()/A()\n.func Tn()   = 1/(Dn()-1)\n.func D0()   = 1-Dd()\n.func H0()   = (H()-A())/D0()
+.backanno
+.end

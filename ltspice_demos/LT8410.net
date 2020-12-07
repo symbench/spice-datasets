@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LT8410.asc
+R1 N003 N004 604K
+V1 IN 0 3.6
+L1 IN N001 100µ Rser=15.7
+C1 N002 0 .1µ
+C2 OUT 0 .1µ
+Rload OUT 0 10K
+R2 N004 0 412K
+C3 N003 0 .001µ Rser=10m
+XU2 IN IN 0 N001 OUT N002 N003 N004 LT8410
+.tran 1.5m startup
+* LT8410, Ultralow Power Boost Converter with Output Disconnect\nInput: 3.6V       Output: 16V @ 1.6mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT8410.sub
+.backanno
+.end

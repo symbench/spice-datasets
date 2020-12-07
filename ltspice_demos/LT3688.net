@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LT3688.asc
+V1 IN 0 12
+C1 IN 0 4.7µ
+R1 N011 0 49.9K
+C2 N001 N003 .22µ
+L1 N003 OUT 10µ
+R2 OUT N005 562K
+R3 N005 0 107K
+D1 N004 N003 MBRS140
+C3 OUT 0 22µ
+C4 OUT N005 22p
+XU1 N006 N009 N007 N011 N010 OUT N001 IN N003 N004 IN N005 OUT N002 WDI N008 0 LT3688
+C5 N002 0 1n
+C6 N007 0 1n
+C7 N009 0 1n
+R4 N010 0 100K
+R5 OUT N008 100K
+R6 OUT N006 100K
+Rload OUT 0 6.25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+* LT3688 - Dual 800mA Step-Down Switching Regulator with Power-On Reset and Watchdog Timer\nInput: 12V         Outputs: 5V @ 800mA \nOnly One Channel is Modeled
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.tran 500u startup
+.lib LT3688.sub
+.backanno
+.end

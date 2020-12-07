@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\8697.asc
+R1 N008 0 18.2K
+C1 N004 0 .002µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N005 N002 3.3µ Rser=3m
+C3 N003 N005 .1µ
+C4 N002 0 47µ x2 V=10 Irms=1.8 Rser=0.009 Lser=0 mfg="Rubycon" pn="10SWZ47M R25" type="Al electrolytic"
+R2 N006 N009 10K
+C5 N006 N009 1n
+Rload OUT 0 2.08
+R4 N002 N006 18m
+XU1 MP_01 N004 N007 IN IN MP_02 0 MP_03 MP_04 MP_05 MP_06 MP_07 N005 MP_08 MP_09 N003 N001 N002 NC_10 N009 N002 N006 N008 NC_11 0 LT8697
+R3 N006 OUT .2
+R5 0 N007 16.5K
+.tran 1m startup
+.lib LT8697.sub
+.backanno
+.end

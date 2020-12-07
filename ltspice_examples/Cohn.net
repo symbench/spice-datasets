@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\Cohn.asc
+L1 N001 N005 {L}
+L2 N005 0 {Lm}
+L3 N002 N005 {2*L}
+L4 N002 N006 {2*L}
+L5 N003 N006 {L}
+L6 N006 0 {Lm}
+C1 N001 IN {C1}
+C2 IN 0 {C2}
+C3 N003 OUT {C1}
+C4 OUT 0 {C2}
+C5 N002 0 {C3}
+V1 N004 0 AC 2
+R1 IN N004 {R}
+R2 OUT 0 {R}
+.ac oct 1000 10Meg 22Meg
+.param x=.54 ; trimer postion
+.param R=50
+.param L=2.95u Lm=.27u C1=22p+x*25p C2=240p C3=34p
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

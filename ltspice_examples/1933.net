@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\1933.asc
+C2 N001 N002 .1µ
+L1 N002 OUT 22µ
+R1 OUT N004 16.5K
+R2 0 N004 10K
+D1 0 N002 MBRS130L
+D2 OUT N001 BAT54
+V1 IN 0 5
+C1 OUT 0 22µ
+C3 N003 0 .1µ
+R4 IN N003 15K
+XU1 N001 0 N004 N003 IN N002 LT1933
+Rload OUT 0 6.6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT1933.sub
+.backanno
+.end

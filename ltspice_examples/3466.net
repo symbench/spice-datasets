@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3466.asc
+XU1 N002 N001 IN MP_01 MP_02 MP_03 MP_04 N005 N004 N003 0 LT3466
+R1 N003 0 10
+R2 N005 0 63.4K
+L1 IN N001 47µ
+V1 IN 0 3
+V2 N004 0 2
+D1 N002 N003 NSPW500BS N=8
+C1 N002 0 2.2µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LT3466.sub
+.backanno
+.end

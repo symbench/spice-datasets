@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\AD8040.asc
+V1 +V 0 5
+Vin1 IN 0 SINE(0 1 100K)
+R1 N001 0 10K
+R2 OUT N001 10K
+V2 -V 0 -5
+XU1 IN N001 +V -V OUT AD8040
+.tran 100u
+.lib ADI.lib
+.backanno
+.end

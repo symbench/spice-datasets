@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTM8056_DC2154A.asc
+R1 N006 0 43.2K
+V1 IN 0 32
+R2 N001 N002 100K
+R3 N002 0 5.23K
+C1 N001 0 22µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+C2 N001 0 33µ V=20 Irms=0 Rser=0.2 Lser=0 mfg="KEMET" pn="T495D336M020AS" type="Tantalum"
+Rload OUT 0 8
+XU1 NC_01 N003 MP_02 N005 MP_03 MP_04 N004 NC_05 IN IN IN IN MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 N001 OUT MP_18 MP_19 MP_20 0 MP_21 N005 NC_22 0 N006 NC_23 N002 LTM8056
+R4 OUT N001 0.015
+C3 N003 0 0.1µ
+C4 IN 0 2.2µ x2
+.tran 2m startup
+* LTM8056 - 58Vin, 48Vout Buck-Boost µModule Regulator\nHigh Efficiency Buck-Boost Regulator with Accurate Current Limit & Output Current Monitor\nInput: 7V to 58V       Output: 24V @ 3A with 24V Input, Fsw = 525kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTM8056.sub
+.backanno
+.end

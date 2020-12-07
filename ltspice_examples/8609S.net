@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\8609S.asc
+R1 N004 0 18.2K
+C1 N002 0 .001µ
+V1 IN 0 12
+R2 OUT N003 1Meg
+R3 N003 0 187K
+C5 OUT N003 10p
+Rload OUT 0 2.5
+XU1 MP_01 N001 NC_02 N004 NC_03 N003 N002 NC_04 IN IN 0 LT8609S
+C2 OUT 0 22µ Rser=2m
+L1 N001 OUT 2.2µ Rser=37m
+.tran 500u startup
+.lib LT8609S.sub
+.backanno
+.end

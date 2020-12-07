@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LT3506A.asc
+V1 N001 0 12
+C1 N015 0 100p
+C2 N003 N005 .1µ
+L1 N005 OUT1 4.7µ Rser=66m
+R1 OUT1 N007 52.3K
+R2 N007 0 10K
+D1 0 N005 MBRS340
+C3 OUT1 0 22µ Rser=0.005
+C4 N010 N011 220p
+R3 OUT1 N013 100K
+C5 N014 0 100p
+C6 N002 N004 .1µ
+L2 N004 OUT2 3.5µ Rser=52m
+R4 OUT2 N006 31.6K
+R5 N006 0 10K
+D2 0 N004 MBRS340
+C7 OUT2 0 22µ Rser=0.005
+Rload2 OUT2 0 2.1
+C8 N009 N008 220p
+R7 OUT2 N012 100K
+R8 N008 0 28K
+R9 N011 0 39K
+D3 OUT2 N002 BAT54
+D4 OUT1 N003 BAT54
+XU1 N003 MP_01 N005 N001 MP_02 N004 0 N002 N006 N009 N012 N014 N015 N013 N010 N007 LT3506A
+C9 N001 0 4.7µ Rser=0.005
+Rload1 OUT1 0 3.09
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 300u startup
+* LT3506A - 1.6A, 1.1MHz Step-Down Switching Regulator\nInput: 6.8V to 25V   Outputs: 5V @ 1.6A  and 3.3V @ 1.6A
+* 3.3V
+* 5V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3506A.sub
+.backanno
+.end

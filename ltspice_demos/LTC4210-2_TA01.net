@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTC4210-2_TA01.asc
+M§Q1 N001 N003 OUT OUT Si4410DY
+C1 OUT 0 470µ
+R1 N003 N004 100
+R2 N004 N005 100
+C2 N005 0 .01µ
+C3 N006 0 .22µ
+V1 IN 0 5
+R3 N001 IN .01
+Rload OUT 0 1.25
+S1 0 OUT N002 0 Short
+V2 N002 0 PWL(.1 0 +1m 1 +20m 1 +1m 0)
+XU2 N006 0 IN N004 N001 IN LTC4210-2
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 280m startup
+* LTC4210-1 - Hot Swap Controller\nSingle Channel 5V, 4A Hot Swap Controller with Auto Retry
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.model Short SW(Ron=.1 Roff=100K Vt=.5 Vh=-.4)
+.lib LTC4210-2.sub
+.backanno
+.end

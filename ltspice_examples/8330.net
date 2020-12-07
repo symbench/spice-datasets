@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\8330.asc
+XU1 N002 MP_01 N001 MP_02 0 IN N003 IN LT8330
+C1 N003 0 1µ
+V1 IN 0 12
+L1 IN N001 6.8µ Rser=.1
+R1 OUT N002 1Meg
+R2 N002 0 34.8K
+C2 OUT N002 4.7p
+C3 OUT 0 4.7µ Rser=10m
+Rload OUT 0 355
+D1 N001 OUT BAT46WJ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LT8330.sub
+.backanno
+.end

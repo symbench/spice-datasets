@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LT3015.asc
+C1 OUT 0 10µ
+C2 IN 0 10µ
+V1 IN 0 -7
+XU1 IN IN 0 OUT N001 LT3015
+R1 OUT N001 10.7K
+R2 N001 0 3.48K
+Rload OUT 0 3.33
+.tran 250u startup
+* LT3015 - 1.5A, Low Noise, Negative Linear Regulator with Precision Current Limit\nInput: -7V       Output: -5.0V @ -1.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3015.lib
+.backanno
+.end

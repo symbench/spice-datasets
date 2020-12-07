@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTM4601HV.asc
+V1 IN 0 12
+R1 N002 0 19.1K
+C1 OUT 0 22µ Rser=5m
+C2 IN 0 47µ
+C3 OUT 0 100µ Rser=3m x2
+R2 IN N001 100K
+C4 OUT N002 100p
+C5 N006 0 2200p
+XU1 IN 0 OUT 0 N003 N003 OUT 0 NC_01 N002 N004 NC_02 NC_03 NC_04 N005 NC_05 N001 N006 NC_06 N004 LTM4601
+R3 N005 0 392K
+C6 IN 0 150µ Rser=9m
+Rload OUT 0 .208
+.tran 1.5m startup
+* LTM4601HV - 12A, High Efficiency Step-Down DC/DC µModule in 15mm×15mm×2.8mm LGA package\nInput: 12V     Output: 2.5V @ 12A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LTM4601.sub
+.backanno
+.end

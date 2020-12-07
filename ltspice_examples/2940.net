@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\2940.asc
+R1 N003 0 10.0K
+R2 LOAD N003 110K
+Rsense IN LOAD 10m pwr=2W
+R5 IMON 0 10.0K
+R4 PMON 0 49.9K
+Vpup N002 0 5
+Vin IN 0 6
+Iload LOAD 0 PWL(0 0 120m 12)
+XU1 OVRPWR N004 PMON PMON IMON 0 0 N003 N001 LOAD IN IN LT2940
+R3 N002 OVRPWR 100K
+.tran 120m  startup
+.step Vin list 6 10 15 30 60
+* 60W Load Power Alarm
+* 2W
+* Scale = 10 Amps/Volt
+* Scale = 48 Watts/Volt
+.lib LT2940.sub
+.backanno
+.end

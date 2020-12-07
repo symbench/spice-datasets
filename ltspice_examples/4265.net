@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\4265.asc
+VPSE 0 N006 PWL(0 0 10m 6 250m 6 260m 5 500m 5 505m 8 555m 8 560m 4 610m 4 611m 17 621m 17 622m 8 627m 8 628m 17 638m 17 639m 8 659m 8 660m 57)
+Rclass N004 IN 30.9
+R2 N001 N003 100K
+R3 N001 N005 100K
+R1 N001 N002 100K
+Cload N001 OUT 100µ Rser=10m
+C1 N001 IN .1µ Rser=10m
+D1 0 N001 MURS120
+D2 IN N006 MURS120
+Rload N001 OUT 1.3K
+XU1 IN N002 N004 MP_01 IN IN OUT OUT N005 N003 MP_02 N001 LTC4265
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1
+* Diode Bridge
+* Set for Class 4 Load
+.lib LTC4265.sub
+.backanno
+.end

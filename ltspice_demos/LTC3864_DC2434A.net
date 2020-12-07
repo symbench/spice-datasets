@@ -1,0 +1,37 @@
+* Z:\mnt\spice-netlists\LTC3864_DC2434A.asc
+XU1 NC_01 N011 0 N007 N008 N005 N012 N002 N001 N003 IN N006 0 LTC3864
+V1 IN 0 24
+C2 IN N001 0.47µ
+R1 IN N003 13m
+M1 N009 N006 N003 N003 Si7469DP
+D1 0 N009 PDS760
+L1 N009 OUT 15µ Rser=20m
+R2 OUT N012 100K
+R3 OUT N008 464K
+R4 N008 0 33.2K
+C3 OUT 0 6.3µ x2 V=16 Irms=0 Rser=3m Lser=0
+C4 N005 0 330p
+C1 N004 0 3300p
+C5 OUT N008 10p Rser=1K
+C6 N007 0 2700p
+R6 IN N002 100K
+R7 N002 0 21.5K
+R5 N011 0 37.4K
+C7 OUT 0 56µ V=6.3 Irms=0 Rser=25m Lser=0
+S1 0 OUT N010 0 Rload
+V2 N010 0 PULSE(0 1 0.9m 10n 10n 0.1m)
+R8 N005 N004 10K
+C8 IN 0 22µ x2 V=16 Irms=0 Rser=3m Lser=0
+C9 IN 0 4.7µ x2 V=16 Irms=0 Rser=3m Lser=0
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* LTC3864 - 60V, Low Iq Step-Down DC/DC Controller with 100% Duty Cycle Capability\n60W PMOS Buck Converter\nInput: 12V (6Vmin) to 60V      Output: Vout = 12V @ 5A, Fsw = 200kHz
+* Notes:\n    Smaller values are used for SS capacitors to reduce simulation time. See datasheet for typical values.\n    If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n    It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n    Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n    Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n    Copyright © 2017 Linear Technology Inc. All rights reserved.
+.tran 1.1m startup
+.model Rload SW(Ron=5 Roff=7.5 Vt=1 Vh=-.4)
+.lib LTC3864.sub
+.backanno
+.end

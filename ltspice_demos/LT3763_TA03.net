@@ -1,0 +1,46 @@
+* Z:\mnt\spice-netlists\LT3763_TA03.asc
+XU1 N012 N005 N001 N004 N006 N003 N002 N014 N022 N006 N019 0 N006 N009 N020 OUT N011 N018 N016 N023 MP_01 N005 MP_02 N021 N008 N010 N007 LT3763
+R1 N023 0 82.5K
+C1 N020 0 10n
+R2 N016 N015 50
+C2 N015 0 1n
+R3 N014 N013 50
+C3 N013 0 1n
+C4 N006 0 2.2µ
+V2 IN 0 60
+R4 IN N001 50m
+R5 IN N002 1K
+R6 N001 N003 1K
+C5 N002 N003 1µ
+R7 IN N004 309K
+R8 N004 0 15.4K
+C6 N001 0 4.7µ
+C7 N005 0 4.7µ
+D1 N005 N007 1N5819
+C8 N007 N010 50n
+M§Q1 N001 N008 N010 N010 RJK0305DPB
+M§Q2 N010 N012 0 0 RJK0301DPB
+R9 N011 OUT 50m
+R10 OUT N019 287K
+R11 N019 0 12.1K
+D2 OUT 0 PT-121-B N=5
+L1 N010 N011 100µ
+R12 N005 N022 47.5K
+C9 N017 0 4.7n
+R13 N018 N017 59K
+R14 N006 N009 25K
+R15 N009 0 25K
+C10 OUT 0 10µ x2 Rser=1m
+C11 N001 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LT3763 - 60V High Current Step-Down LED Driver Controller\n1A, Five LED Driver\nInput: 32V to 60V    Outputs: 30V LED String @ 1A   Fsw = 500kHz
+* 50% Analog Dimming
+.lib LT3763.sub
+.backanno
+.end

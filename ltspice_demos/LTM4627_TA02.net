@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTM4627_TA02.asc
+XU1 0 N004 OUT 0 OUT N005 N005 N002 0 N006 N009 N007 N008 N003 IN 0 N001 LTM4627
+V1 IN 0 12
+R1 IN N003 10K
+R2 N006 0 100K
+C1 N008 0 .001µ
+C2 N007 0 150p
+R3 N009 0 121K
+C3 IN 0 22µ x3
+C4 OUT N009 82p
+C5 OUT 0 100µ Rser=10m
+C6 OUT 0 470µ Rser=6m x2
+Rload OUT 0 .06
+.tran .7m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTM4627 - 15A DC/DC µModule Regulator\nInput: 4.5V to 20V     Output: .9V @ 15A, Fswitch = 400kHz
+.lib LTM4627.sub
+.backanno
+.end

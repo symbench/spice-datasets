@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD8505.asc
+V1 +V 0 2.5
+Vin IN 0 SINE(0 1 1K)
+R1 N001 0 10K
+R2 OUT N001 10K
+V2 -V 0 -2.5
+Rload OUT 0 10K
+XU1 IN N001 +V -V OUT AD8505
+.tran 10m
+.lib ADI1.lib
+.backanno
+.end

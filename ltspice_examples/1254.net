@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1254.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 N002 N001 620
+R2 N001 0 620
+V3 IN 0 SINE(0 1 1Meg)
+R3 N002 N003 75
+R4 OUT 0 75
+T1 N003 0 OUT 0 Td=50n Z0=75
+XU1 IN N001 +V -V N002 LT1254
+.tran 10u
+.lib LTC.lib
+.backanno
+.end

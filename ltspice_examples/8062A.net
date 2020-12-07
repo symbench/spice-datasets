@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\8062A.asc
+V1 IN 0 25
+C1 OUT 0 .1m
+R1 OUT N001 1.24Meg
+R2 N001 0 312K
+XU1 IN IN IN NC_01 NC_02 0 N001 NC_03 OUT MP_04 OUT IN 0 LTM8062
+.tran 6m startup
+.lib LTM8062.sub
+.backanno
+.end

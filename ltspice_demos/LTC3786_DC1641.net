@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LTC3786_DC1641.asc
+C1 N001 0 4.7µ Rser=0.005
+V1 IN 0 6
+C2 OUT 0 150µ Rser=0.023
+R1 N013 0 12.1K
+R2 OUT N013 232K
+C3 N010 0 0.01µ
+R3 IN N008 2.5m
+L1 N008 N007 3.3µ Rser=1.5m
+M§Q1 OUT N004 N007 N007 BSC027N04LS
+M§Q2 N007 N009 0 0 BSC027N04LS
+C4 N006 N007 .1µ
+D1 N001 N006 1N4148
+XU1 N008 0 MP_01 MP_02 0 0 N003 MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 N001 MP_14 MP_15 N002 N009 N006 N004 N007 N005 MP_16 N010 N012 N013 IN LTC3786
+C5 OUT 0 110µ Rser=0.001
+C6 N012 0 100p
+C7 N011 0 15n
+R4 N012 N011 16.9K
+R5 0 N003 12.1K
+R6 N003 IN 35.3K
+R7 OUT N002 2.2
+C8 N002 0 0.1µ Rser=0.010
+R8 N001 N005 10K
+Rload1 OUT 0 8
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m
+* LTC3786 - Low IQ Synchronous Boost Controller\nHigh Current Single Output Synchronous Boost Supply\nInput: 5V-24V      Output: 24V @3A-5A
+* Notes:\n \n  C15 should be 0.1µF, not 0.01µF.  It is reduced in value here to speed up the time to simulate a soft start cycle.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3786.sub
+.backanno
+.end

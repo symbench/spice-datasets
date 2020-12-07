@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1179A.asc
+V1 +V 0 5
+R1 N002 N001 10K
+R2 N001 0 10K
+V3 N003 0 SINE(1.25 .1 1K)
+XU1 N003 N001 +V 0 N002 LT1178
+.tran 3m
+.lib LTC.lib
+.backanno
+.end

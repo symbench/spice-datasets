@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\8047.asc
+V1 IN 0 10
+C1 N001 0 4.7µ
+R1 N003 0 6.19K
+C2 OUT 0 22µ
+Rload OUT 0 32
+XU1 0 OUT 0 N003 IN N001 IN N002 LTM8047
+.tran 2m startup
+.lib LTM8047.sub
+.backanno
+.end

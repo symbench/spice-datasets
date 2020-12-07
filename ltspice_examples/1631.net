@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1631.asc
+V1 +V 0 10
+C1 N002 N004 47p
+R1 N002 N001 2.32K
+R2 N004 N001 6.65K
+R3 N001 IN 2.32K
+C2 N001 0 220p
+C3 OUT N005 22p
+R4 OUT N003 2.74K
+R5 N005 N003 6.65K
+R6 N003 N002 2.74K
+C4 N003 0 470p
+V2 N006 0 5
+V3 IN 0 5 AC 1
+XU1 N006 N004 +V 0 N002 LT1630
+XU2 N006 N005 +V 0 OUT LT1630
+.ac oct 100 100 10Meg
+* Single Supply, 400KHz, 4th Order Butterworth Filter
+.lib LTC.lib
+.backanno
+.end

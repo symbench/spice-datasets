@@ -1,0 +1,77 @@
+* Z:\mnt\spice-netlists\LTC3765_LTC3766_DC1739B-C_.asc
+L1 N005 IN 27.5µ Rser=2.1m
+L2 N006 N001 110µ Rser=8.6m
+L3 N001 OUT 16µ
+C1 OUT 0 68µ x2 V=16 Irms=1.5 Rser=0.03 Lser=0
+C2 OUT 0 10µ V=16 Irms=0 Rser=0.009 Lser=0
+M§Q1 N005 N008 N011 N011 BSC028N06LS3
+C3 N027 N026 1µ IC=0
+L4 N031 N026 592µ Rser=.7 Rpar=1K
+L5 N030 N025 925µ Rser=.8
+C4 N025 N024 .1µ IC=0
+C5 N024 N030 220p Rser=100
+C6 N029 0 5n
+C7 N022 0 1µ
+M§Q2 N012 N017 N022 N022 2N7002
+C8 N005 N010 0.6µ Rser=51 Cpar=0.1u
+M§Q3 N006 N009 N013 N013 BSC057N08NS3
+M§Q4 N001 N007 0 0 BSC190N15NS3
+V1 IN 0 12
+M§Q5 N010 N015 N016 N016 IRF9640
+C9 N041 0 7n
+R1 OUT N036 11.5K
+R2 N036 0 604
+C10 N037 0 2.2n Rser=14.7K Cpar=47p
+C11 N001 0 47p Rser=12.4
+D1 IN N012 ZLLS1000
+C12 N021 N015 .1µ IC=0
+D2 N015 0 ZLLS1000
+D4 N001 N003 ES1D
+C13 N003 0 2.2n
+R3 OUT N003 15K
+C14 N020 0 10µ Rser=30m
+R4 OUT N023 1.82K
+R5 N023 0 1.87K
+C15 OUT N036 1n Rser=100
+R6 N014 N013 100
+R7 N019 0 100
+XU1 0 N008 N022 N021 N016 N033 N011 0 0 N034 N032 N028 N029 N017 N024 N030 LTC3765
+XU2 N007 N009 0 N020 0 N036 N037 N018 N041 N040 NC_01 N023 N023 0 N035 0 N014 N019 N038 N039 N020 OUT N004 OUT N031 N027 0 N020 LTC3766
+R8 IN N028 28.7K
+R9 N028 0 4.99K
+R10 N032 0 16.2K
+R11 N033 0 8.25K
+R12 N034 0 21.5K
+R13 IN N017 100K
+R14 N011 0 4m
+R15 N015 0 10K
+R16 N016 0 0.75
+R17 N013 0 5m
+R18 N014 N019 2.21K
+R19 N001 N004 1.82K
+R20 N004 0 1.82K
+R21 N018 0 78.7K
+R22 N035 0 60.4K
+R23 N038 0 15K
+R24 N039 0 20.0K
+R25 N040 0 102K
+C16 N016 0 12n
+C17 N036 0 1.5n
+R26 OUT N018 464K
+S1 0 OUT N002 0 MySwitch
+V2 N002 0 PULSE(0 12 2.0m 10n 10n 0.2m)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.4m startup
+K1 L1 L2 1
+K2 L4 L5 1
+* LTC3765 - Active Clamp Forward Controller and Gate Driver\nLTC3766 - High Efficiency, Secondary-Side Synchronous Forward Controller\n120W Isolated Forward Converter with Synchronous Rectification\nInput: 9V-36V     Output: 12V @ 10A
+* Notes:\n \n1. Not included in Sim: Input Filter, Transformer Leakage inductance, LTC3765 Freq Foldback circuit, \n    RUN, ISMAG & DELAY pin filters, Sense resistor inductance and compensating filters, Y-cap.\n2. SS caps changed from 33nF to 5nF & 7nF to reduce sim time.\n3. D3, Q1, Q3, Q4, & Q5 models replaced with nearest equivalent.\n4. C8 = 1uF rated, 0.6uF at 40V\n \nIf the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\nIt remains the customer's responsibility to verify proper and reliable operation in the actual application.\nComponent substitution and printed circuit board layout may significantly affect circuit performance or reliability.\nContact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\nCopyright © 2014 Linear Technology Inc. All rights reserved.
+.model MySwitch SW(Ron=1.2 Roff=1Meg Vt=3Vh=-.5)
+.lib LTC3765.sub
+.lib LTC3766.sub
+.backanno
+.end

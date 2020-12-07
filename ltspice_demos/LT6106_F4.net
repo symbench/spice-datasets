@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT6106_F4.asc
+R1 IN N001 50m
+R2 OUT 0 10k
+V1 IN 0 5
+R3 N001 0 2K
+XU1 OUT 0 N003 N002 IN LT6106
+R4 IN N003 332
+R5 N001 N002 332
+Iload N001 0 PULSE(0 3 .02 .1m .1m .02 .04)
+.tran .3 startup
+* LT6106 - Low Cost, 36V High Side Current Sense Amplifier\nSingle Supply, Unidirectional Currrent Sense Amplifier\nInput: 2.7V to 36V (44V Abs Max)     Rsense: .O5ohm Shunt with 3A     Output: 0V to 4.5V (Gain of 30)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC7.lib
+.backanno
+.end

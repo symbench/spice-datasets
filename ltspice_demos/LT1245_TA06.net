@@ -1,0 +1,51 @@
+* Z:\mnt\spice-netlists\LT1245_TA06.asc
+R1 N017 0 .67
+C1 N018 0 220p
+C2 N015 0 .1µ
+C3 N014 N013 .01µ
+R2 N013 N010 200K
+R3 N015 N018 12K
+R4 N010 0 20K
+R5 N017 N016 1K
+M§Q1 N004 N012 N017 N017 IRF7303
+R6 N012 N011 12
+R7 N006 N010 152K
+C4 N006 0 .22µ
+C5 N007 0 100p
+D1 N007 N006 BAT54
+C6 N005 0 22µ
+R8 N009 N005 39
+D2 N008 N009 BAT54
+R9 IN N016 1.32Meg
+R10 IN N003 27K
+C7 IN N003 470p
+L1 N001 0 16µ Rser=.05
+L2 N008 0 18.8µ Rser=.1
+L3 N004 IN 100µ Rser=.05
+D3 N001 N002 MBRS340
+C8 N002 0 3.3µ
+L4 N002 OUT 1µ Rpar=1K
+C9 OUT 0 3.3µ
+R11 OUT 0 750
+V1 IN 0 100
+D4 0 N005 BZX84C15L
+D5 N004 N003 MURS320
+R12 N008 N007 510
+R13 IN N005 400K
+XU1 N014 N010 N016 N018 0 N011 N005 N015 LT1245
+Rload OUT 0 14
+D6 0 N011 BAT54
+C11 IN 0 100µ
+I1 0 N005 pwl(0 0 5u 38 10u 0)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+K1 L1 L2 L3 1
+* Notes:\n \n  I1 is used to quickly charge up C6 -- the real circuit needs about a second to startup\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT1245 - High Speed Current Mode Pulse Width Modulators\n300kHz Off-Line Power Supply\nInput: 90VAC to 240VAC (152VDC to 57VDC)       Output: 20V @ 1.5A
+.lib LT1245.sub
+.backanno
+.end

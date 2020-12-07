@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3642.asc
+XU1 N001 IN NC_01 NC_02 IN N002 NC_03 0 LTC3642
+V1 IN 0 45
+L1 N001 OUT 150µ
+R1 OUT N002 4.2Meg
+R2 N002 0 800K
+C1 OUT 0 10µ
+Rload OUT 0 100
+.tran 2.5m startup
+.lib LTC3642.sub
+.backanno
+.end

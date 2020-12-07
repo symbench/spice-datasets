@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTM8058_DN530F04.asc
+C1 N006 0 4.7µ
+R1 N008 0 5.9K
+C2 N005 0 22µ
+R2 N007 0 162K
+C3 N003 0 10µ
+XU1 0 N005 0 N008 IN N006 IN NC_01 NC_02 N003 N007 LTM8058
+C5 IN 0 10µ
+V1 IN 0 20
+C4 N001 0 4.7µ
+R3 N004 0 5.9K
+C6 OUT1 N003 22µ
+R4 N002 N003 162K
+C7 OUT2 N003 10µ
+XU2 0 OUT1 N003 N004 IN N001 IN NC_03 NC_04 OUT2 N002 LTM8058
+C8 IN 0 10µ
+Rload OUT2 0 33
+.tran 2m startup
+* LTM8058 - 3.1Vin to 31Vin Isolated µModule DC/DC Converter with LDO Post Regulator\nSeries-Conntected Low Noise Isolated µModule Regulators\nInput: 5V to 28V       Output: 10V @ 300mA
+* Note:\n  SS and BYP capacitors have been omitted to speed up simulation times.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* 11.2V Flyback
+* 10V LDO
+.lib LTM8058.sub
+.backanno
+.end

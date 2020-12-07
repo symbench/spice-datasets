@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADP2370-3.0.asc
+V1 IN 0 12
+L1 N002 OUT 10µ Ipk=1.84 Rser=0.056 Rpar=942 Cpar=0 mfg="Coilcraft" pn="MSS6132-103"
+C1 OUT 0 10µ
+R1 OUT N001 10K
+XU1 IN IN IN IN N002 OUT N001 0 ADP2370 IPSM=440m Rt=366.6666k Rb=133.3333k C1=1.6p Rc1=300k R3=5.92k Rshort=100MEG PD=0
+Rload OUT 0 20
+.tran 500u startup
+.lib ADP2370.sub
+.backanno
+.end

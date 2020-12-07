@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT1787_TA02.asc
+XU1 N002 N001 0 OUT N004 IN N003 LT1787
+R1 IN N001 .8
+C1 OUT 0 .1µ
+V1 N004 0 2.5
+C2 N003 N002 1µ
+V2 IN 0 5
+R2 N001 0 2000
+ILoad N001 0 PULSE(-250m 250m 0 1u 1u .02 .04)
+.tran .2 startup
+* LT1787 - Precision, High Side Current Sense Amplifiers\nBidirectional Currrent Sense Amplifier with Offset Bipolar Output\nInput: 2.5V to 60V     Rsense: .8ohm Shunt with ±250mA     Bias: 2.5V    Output: 2.5V±1.6V (Gain of 8)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.backanno
+.end

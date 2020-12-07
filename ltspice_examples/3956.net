@@ -1,0 +1,30 @@
+* Z:\mnt\design.r\spice\examples\3956.asc
+C1 N003 0 4.7µ
+L1 IN N001 22µ Rpar=2K
+R2 N002 N007 1Meg
+R3 N007 0 16.2K
+D1 N001 N002 MBRS360
+R4 N002 N009 .68
+C2 N002 0 10µ
+V1 IN 0 10
+R5 IN N004 332K
+R6 N004 0 100K
+C3 N012 0 4700p Rser=34K
+M§Q2 N013 N015 0 0 Si7850DP
+D2 N009 N013 LXK2-PW14 N=10
+C4 N010 0 .001µ
+R7 N011 0 28.7K
+V2 N014 0 3.3
+R8 N003 N005 100K
+R9 IN N008 332K
+R10 N008 0 40.2K
+XU1 N006 N014 N005 N010 N011 N004 N003 IN MP_01 N001 N015 N007 N009 N002 N012 N008 0 LT3956
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+.lib LT3956.sub
+.backanno
+.end

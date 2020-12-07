@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3427.asc
+XU1 N001 0 IN IN N002 OUT LTC3427
+L1 IN N001 4.7µ
+R1 OUT N002 1Meg
+R2 N002 0 604K
+C1 OUT 0 4.7µ
+V1 IN 0 2
+Rload OUT 0 20
+.tran 1m startup
+.lib LTC3427.sub
+.backanno
+.end

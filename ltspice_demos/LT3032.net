@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT3032.asc
+XU1 OUTP N002 N001 0 MP_01 INN OUTN N003 MP_02 INN N004 INP MP_03 INP LT3032
+C1 OUTP 0 10µ
+R1 OUTP N002 150K
+R2 N002 0 88.7K
+V2 INP 0 5
+C2 OUTN 0 10µ
+R3 OUTN N003 150K
+R4 N003 0 88.7K
+RloadP OUTP 0 22
+RloadN OUTN 0 22
+C3 INP 0 2.2µ
+C4 0 INN 2.2µ
+C5 OUTP N001 0.01µ
+C6 N004 OUTN 0.01µ
+V1 INN 0 -5
+.tran 50m startup
+* LT3032 - Dual 150mA Positive/Negative Low Noise Low Dropout Linear Regulator\nInputP: 5V     OutputP: 3.3V @ 0.15A \nInputN: -5V    OutputN: -3.3V @ 0.15A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3032.lib
+.backanno
+.end

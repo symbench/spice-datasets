@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADP2118-3.3.asc
+L1 N002 OUT 1µ
+C1 OUT 0 100µ
+R1 OUT N001 100K
+V1 IN 0 5
+XU1 IN IN IN OUT 0 0 N002 IN IN IN N001 ADP2118-x.x Rtop=818.2k Rbot=181.8k Ctop=4p
+Rload1 OUT 0 1.1
+.tran 2m startup
+.lib ADP2118-x.x.sub
+.backanno
+.end

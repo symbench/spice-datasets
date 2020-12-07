@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT1302_TA04.asc
+D1 N001 OUT MBRS340
+L1 IN N001 3.3µ Ipk=3.5 Rser=0.02 Rpar=0 Cpar=0 mfg="Sumida" pn="CDRH6D38NP-3R3"
+R1 N005 N006 20K
+R2 OUT N003 866K
+R3 N003 0 100K
+C3 N006 0 .01µ
+V1 IN 0 2 Rser=0.1
+XU1 0 N005 N002 N003 N004 IN N001 0 LT1302 top=1K bot=1T
+Rload OUT 0 100
+C4 IN 0 100µ
+C2 OUT 0 33µ Rser=10m x2
+C1 OUT N003 100p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 15m startup
+* LT1302 - µPower High Output Current Step-Up DC/DC Converters\n12V Boost Converter for 2 Cell Batteries\nInput: 3V to 2V       Output: 12V @ 120mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1302.sub
+.backanno
+.end

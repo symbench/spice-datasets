@@ -1,0 +1,30 @@
+* Z:\mnt\spice-netlists\LTC4252C-1_TA01.asc
+C1 IN N006 .33µ
+R1 N003 N002 5.1K
+C2 N008 IN .068µ
+R2 0 N004 402K
+R3 N004 IN 32.4K
+C3 N007 N010 .01µ
+R4 0 N002 5K
+C4 N002 IN 1µ
+C5 0 OUT 100µ
+Rload 0 OUT 20
+C6 N004 IN .01µ
+R6 OUT N005 1Meg
+R7 N009 IN 20m
+V1 0 IN 48
+R8 N010 IN 10
+M§Q1 OUT N007 N009 N009 IRF530
+XU1 N002 N003 N008 N009 IN N007 N005 N004 N004 N006 LTC4252A-1
+S1 OUT 0 N001 0 SHORT
+V2 N001 0 PWL(.8 0 +1u 1 +.1 1 +.1m 0)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1 startup
+* LTC4252C-1 - Negative Voltage Hot Swap Controller\n-48V/2.5A Hot Swap Controller
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.model SHORT SW(Ron=10m Roff=1G Vt=.5 Vh=-.4)
+.lib LTC4252A-1.sub
+.backanno
+.end

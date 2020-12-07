@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTM8001_TA04.asc
+R3 N005 0 3.09K
+C2 SUPERCAP 0 47µ
+R4 N007 0 68.1K
+V1 IN 0 PWL(0 0 20u 12 2m 12 2.02m 0 2.2m 0 2.22m 12)
+XU2 N001 N002 NC_01 MP_02 N003 N003 NC_03 0 N007 N005 SUPERCAP SUPERCAP SUPERCAP N006 OUT2 N006 OUT2 N004 OUT1 N004 OUT1 N004 OUT1 SUPERCAP LTM8001
+R1 N001 N002 200K
+R2 N002 0 48.7K
+C3 OUT1 0 10µ
+R5 N004 0 110K
+C4 OUT2 0 4.7µ
+R6 N006 0 124K
+C5 SUPERCAP 0 1m Rser=0.1
+R7 OUT1 0 3.3
+R8 OUT2 0 5
+D1 IN N001 MBRS340
+C1 N001 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2.4m
+* Note:\n  A small SUPERCAP (C5) is used to reduce simulation time. For a longer holdup time use typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LTM8001 - 36Vin, 5A µModule Regulator with 5-Output Configurable LDO Array\nTwo Output Regulator with Supercapacitor Backup Power\nInput: 9V to 15V       Output1: 3.3V @ 1A,  Output2: 2.5V @ 0.5A,  Fsw = 600kHz
+.lib LTM8001.sub
+.backanno
+.end

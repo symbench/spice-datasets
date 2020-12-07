@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\7060.asc
+V1 IN 0 12
+V3 PWM 0 PULSE(0 5 200u 1n 1n 1.25u 2.5u)
+M§Q1 IN N003 SW SW BSC090N03LS
+M§Q2 SW N005 0 0 BSC090N03LS
+L1 SW OUT 100n Rser=1m
+C2 OUT 0 40µ Rser=10m
+R3 OUT 0 0.1
+R1 N004 IN 51.1k
+C1 N001 SW 0.47µ
+V2 N002 0 PWL(0 0 10u 0 100u 5)
+XU1 PWM N002 N004 N006 IN IN 0 N005 SW N003 N001 0 LTC7060
+R2 N006 0 499k
+D1 IN N001 RSX205L-30
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0.4m startup
+.lib LTC7060.sub
+.backanno
+.end

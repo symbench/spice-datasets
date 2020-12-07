@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1206.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N001 2K
+R2 N001 0 {R}
+V3 IN 0 AC 1
+XU1 IN N001 +V -V OUT NC_01 LT1206
+.ac oct 10 1 100Meg
+.step param R list 100 200 400 800
+.lib LTC.lib
+.backanno
+.end

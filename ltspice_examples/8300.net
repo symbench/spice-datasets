@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\8300.asc
+XU1 N003 0 N004 N002 IN LT8300
+V1 IN 0 60
+R1 IN N003 1Meg
+R2 N003 0 40.2K
+L1 IN N002 300µ Rser=500m Cpar=1p
+L2 0 N001 19µ Rser=20m Cpar=.2p
+R3 N002 N004 210K
+D1 N001 OUT MBRS1100
+C1 OUT 0 4.7µ V=6.3 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C2012X5ROJ475M" type="X5R"
+Rload OUT 0 16.6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 3m startup
+.lib LT8300.sub
+.backanno
+.end

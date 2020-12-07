@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LT4363-2_TA07.asc
+R1 N002 N004 10
+R2 N001 OUT 10m
+R3 OUT N006 57.6K
+R4 N006 0 4.99K
+M§Q1 IN N002 N001 N001 FDB33N25
+C1 N004 0 47n
+C2 N008 0 6.8µ
+C3 OUT 0 22µ
+V1 IN 0 EXP(12 250 5m 10m 10m 150m)
+R5 IN N003 1K
+D1 0 N003 1N5371B
+R6 N005 N007 124K
+R7 N007 0 49.9K
+C4 0 N005 0.1µ
+XU1 N006 OUT N001 N004 N005 N005 0 N007 0 NC_01 NC_02 N008 LT4363-2
+Rload OUT 0 100
+Q2 IN N003 N005 0 2N5550
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 25 startup
+* LT4363 - High Voltage Surge Stopper with Current Limit\nOvervoltage Regulator with 250V Surge Protection\nInput: 5.5V to 250V     Output: Clamped at 16V Max\n(LT4363-2 restarts after a cool down period from a persistant fault)
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc.  All rights reserved.
+.lib LT4363-2.sub
+.backanno
+.end

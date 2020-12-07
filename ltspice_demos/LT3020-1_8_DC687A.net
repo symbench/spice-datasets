@@ -1,0 +1,12 @@
+* Z:\mnt\spice-netlists\LT3020-1_8_DC687A.asc
+V1 IN 0 2.1
+Rload OUT 0 18
+C1 OUT 0 2.2µ
+C2 IN 0 2.2µ
+XU1 OUT MP_01 MP_02 0 IN MP_03 IN LT3020-1.8
+.tran 1m startup
+* LT3020-1.8  - 100mA, Low Voltage, Very Low Dropout Linear Regulator\nVLDO Regulator\nInput: 2.1V to 10V     Output: 1.8V @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT3020.lib
+.backanno
+.end

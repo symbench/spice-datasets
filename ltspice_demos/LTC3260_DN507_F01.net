@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTC3260_DN507_F01.asc
+XU1 IN N008 N006 N007 OUT- N005 N003 N001 IN OUT+ IN 0 N002 N004 0 LTC3260
+R1 N008 0 200K
+C1 N005 0 10µ
+C2 N001 N003 1µ
+V1 IN 0 PWL(0 0 5m 32 10m 0)
+R2 OUT+ N002 316K
+R3 N002 0 100K
+C3 N004 0 10n
+C5 OUT+ 0 4.7µ
+Rload+ OUT+ 0 100
+R5 OUT- N007 316K
+R6 N007 0 100K
+C6 OUT- 0 4.7µ
+Rload- OUT- 0 100
+C4 N006 0 10n
+.tran 10m startup
+* LTC3260 - Low Noise Dual Supply Inverting Charge Pump\nLow Noise ±5V Power Supply from a Single 12V Input\nInput: 5.5V to 32V     Output: ±5V @ 50mA, Osc = 200kHz
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc.  All rights reserved.
+.lib LTC3260.sub
+.backanno
+.end

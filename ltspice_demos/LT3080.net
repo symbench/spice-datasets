@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LT3080.asc
+XU1 MP_01 N001 OUT IN IN LT3080
+R1 N001 0 182K
+C1 OUT 0 2.2µ
+C2 IN 0 1µ
+Rload OUT 0 1.8
+V1 IN 0 12
+.tran 50u startup
+* LT3080 - Adjustable 1.1A Single Resistor Low Dropout Regulator\nInput: 12V       Output: 1.8V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+.lib LT3080.sub
+.backanno
+.end

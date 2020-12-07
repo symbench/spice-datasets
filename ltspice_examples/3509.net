@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3509.asc
+XU1 IN OUT N006 N005 0 N004 N001 N002 N003 LT3509
+L1 N002 OUT 10µ
+D1 N004 N002 MBRS140
+C1 N001 N002 .1µ
+R1 OUT N006 53.6K
+R2 N006 0 10.2K
+C2 OUT 0 22µ
+R3 N003 0 60.4K
+C3 N005 0 .001µ
+V1 IN 0 10
+Rload OUT 0 7
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LT3509.sub
+.backanno
+.end

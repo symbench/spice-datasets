@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LT1997-3_SEPulsetoDiff.asc
+V1 N003 0 PULSE(0 .1 120u 20n 20n 20u) AC 1
+R1 OUT+ N002 1K
+R2 OUT- N002 1K
+V2 N005 0 2.5
+V3 +V 0 15
+XU1 N003 MP_01 N004 MP_02 N004 OUT- OUT- 0 OUT+ +V +V N001 MP_03 N001 MP_04 0 LT1997-3
+C1 N001 OUT+ 10p
+XU2 N005 N002 +V 0 OUT- LT1354
+C2 N004 0 20p
+.tran 300u
+;ac oct 10 10 10meg
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LT1997-3 - Precision, Wide Voltage Range Gain Selectable Amplifier\nConversion of Single Ended Pulse To Differential Output.
+.lib LTC.lib
+.lib LTC6.lib
+.backanno
+.end

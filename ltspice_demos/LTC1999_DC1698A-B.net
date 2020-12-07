@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTC1999_DC1698A-B.asc
+V1 N001 0 5
+R1 IN N002 .025
+V2 IN 0 48
+R2 OUT 0 10K
+C1 N003 0 .1µ
+C2 N001 0 .1µ
+XU1 N001 IN N002 MP_01 0 N003 OUT N001 LT1999-x Gain=20
+I1 N002 0 PULSE(5 -5 .1 50m 50m 100m 300m)
+.tran .5
+* LT1999-20 - High Voltage, Bidirectional Current Sense Amplifier\nHigh Voltage Bidirectional Current Sense\nInput: -5V to 80V     Output: Av = 20
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC6.lib
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\2ndOrderHighpass.asc
+L1 N003 0 {L1}
+C1 N002 N003 {C1} Rser={R1/2}
+G1 0 N002 1 0 {2/R1}
+R1 N002 0 {R1/2}
+G2 0 2 N003 0 {10*H}
+R2 2 0 .1
+* .param f0= 1k Q=.5
+.param R1=1k
+.param L1=R1*Q/(2*pi*f0)
+* Most efficient LTSPICE implementation for f0 and Q set by parameters >>>
+* R1 is arbitary >>>
+* This version puts 1/2 the R1 resistance in the capacitor
+.param C1=1/(L1*(2*pi*f0)**2)
+* Vout
+* Vin
+.backanno
+.end

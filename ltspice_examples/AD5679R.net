@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\AD5679R.asc
+RLOAD NC_01 0 1k
+CLOAD vOUT 0 10n
+Vdac vDAC 0 PWL(0 0 10u 0 +1u 1.875)
+V1 Vdd 0 5.5
+XU1 vDAC Vdd 0 vOUT AD5679R AD5679R Gain=2
+.tran 50u
+.lib AD5679R.sub
+.backanno
+.end

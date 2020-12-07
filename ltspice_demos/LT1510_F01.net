@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LT1510_F01.asc
+XU1 0 N007 N004 MP_01 N003 MP_02 N002 MP_03 MP_04 OUT MP_05 N005 N008 N001 LT1510
+V1 IN 0 14
+L1 N007 N002 10µ
+C1 N004 N007 .22µ
+D1 N002 N004 1N4148
+R1 OUT N003 70.6K
+R2 N003 0 100K
+R3 N006 0 1K
+C2 N006 N005 .1µ
+R5 N009 0 300
+C3 N009 N008 1µ
+R6 N008 0 6.19K
+C4 OUT 0 22µ
+D2 0 N007 1N5818
+C5 OUT 0 5m Rser=10m
+D3 IN N001 MBRS130L
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10m startup
+.ic V(out) = 3
+* LT1510 - Constant-Voltage/Constant-Current Battery Charger\n500kHz Li-Ion Battery Charger\nInput: 8.2V to 20V     Output: 4.2V @ .8A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1510.sub
+.backanno
+.end

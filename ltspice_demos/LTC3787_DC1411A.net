@@ -1,0 +1,39 @@
+* Z:\mnt\spice-netlists\LTC3787_DC1411A.asc
+C8 N001 0 4.7µ
+R2 N001 N003 100K
+V1 IN 0 12
+Rsns1 IN N008 4m
+L1 N008 N009 3.3µ
+M§Q1 OUT N004 N009 N009 BSC027N04LS
+M§Q2 N009 N012 0 0 BSC027N04LS
+C4 N006 N009 .1µ
+D1 N001 N006 MBR0540
+Cout5 OUT 0 300µ Rser=12mohm
+R8 N014 0 12.1K
+R6 OUT N014 232K
+C15 0 N017 0.01µ
+Rsns2 IN N011 4m
+L2 N011 N010 3.3µ
+M§Q3 OUT N005 N010 N010 BSC027N04LS
+M§Q4 N010 N013 0 0 BSC027N04LS
+C9 N007 N010 .1µ
+D2 N001 N007 MBR0540
+XU1 N008 0 NC_01 NC_02 N001 0 N002 MP_03 N011 IN MP_04 MP_05 MP_06 MP_07 N010 N005 N007 N013 N001 NC_08 0 OUT N012 N006 N004 N009 N003 NC_09 N017 N015 N014 IN LTC3787
+Rload OUT 0 2.4
+C1 N015 0 100p
+C3 N016 0 15n
+R9 N015 N016 12.1K
+Cout1 OUT 0 176µ Rser=1mohm
+R34 N002 0 12.1K
+R33 IN N002 38.3K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3787 - PolyPhase Synchronous Boost Controller\nHigh Current 2-Phase Synchronous Boost Converter (DC1411A)\nInput: 5V-24V     Output: 24V @ 6A-10A
+* Notes:\n \n  C15 should be 0.1µF, not 0.01µF.  It is reduced in value here to speed up the time to simulate a soft start cycle.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3787.sub
+.backanno
+.end

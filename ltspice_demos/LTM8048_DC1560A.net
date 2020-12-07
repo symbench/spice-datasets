@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTM8048_DC1560A.asc
+C1 OUT2 0 10µ
+C2 IN 0 10µ
+Rload2 OUT2 0 50
+V1 IN 0 12
+R1 N005 0 162K
+XU1 0 OUT1 0 N006 IN N002 N001 N004 N003 OUT2 N005 LTM8048
+R2 N006 0 6.04K
+C3 OUT2 N003 0.47n
+C4 OUT1 0 22µ
+Rload1 OUT1 0 60
+R3 IN N001 200K
+R4 N001 0 90.9K
+C5 N002 0 4.7µ
+C6 N004 0 10p
+.tran 4m startup
+* LTM8048 - Isolated µModule DC/DC Converter with LDO Regulator\nInput: 4V to 30V      Outputs: 6V@100mA and 5V@100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTM8048.sub
+.backanno
+.end

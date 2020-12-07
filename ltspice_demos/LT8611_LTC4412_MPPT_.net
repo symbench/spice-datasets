@@ -1,0 +1,37 @@
+* Z:\mnt\spice-netlists\LT8611_LTC4412_MPPT_.asc
+R1 N011 0 60.4K tol=1 pwr=0.1
+C1 N001 0 1µ
+L1 N005 N006 4.7µ Rser=3m
+C2 N003 N005 .1µ
+C3 N002 0 22µ V=6.3 Irms=11.588 Rser=0.003 Lser=0 mfg="KEMET" pn="C1206C226K9PAC" type="X5R"
+R2 N002 N012 1Meg
+R3 N012 0 309K
+C4 N002 N012 10p
+XU1 IMON N009 N011 IN IN N007 0 N006 N005 N002 0 N003 N001 N002 N004 N012 0 LT8611
+R4 N006 N002 50m
+C5 N006 N002 1µ
+R5 IN N009 309K
+C6 IN 0 .2µ
+I1 0 IN 0.2
+D1 IN 0 MUR460 N=15
+V1 OUT 0 3.8 Rser=100m
+XU2 N002 0 0 NC_01 N010 OUT LTC4412
+M§Q1 N002 N010 OUT OUT FDS6375
+V2 N013 0 0
+V3 AD5245 0 PWL(0 100k 1m 100k 3m 15k 3.01m 25.7k)
+R6 N009 N008 6.2K
+B1 N008 N013 V=I(V2)*V(AD5245)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+* Photovoltaic Equivalent Circuit\nVoc=11V, Vmp=9V, Isc=0.2A, \nImp=0.18A, Pmp=1.6W
+* µP Controlled AD5245 Digital Potentiometer
+* Note:\n  Smaller input capacitor, C6, is being used to decrease simulation time. See datasheet for typical values.\n  The AD5245 digital potentiometer is modeled as a voltage dependent variable resistor.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LT8611 - 42V, 2.5A Synchronous Step-Down Regulator with Current Sense and 2.5µA Quiescent Current\nLTC4412 - Low Loss PowerPath Controller\nSolar Powered Battery Charger with µP Controlled MPPT\nInput: 4.2V to 42V       Output: 4.1V @ 1A, Fsw = 700kHz
+.lib LT8611.sub
+.lib LTC4412.sub
+.backanno
+.end

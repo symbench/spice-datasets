@@ -1,0 +1,58 @@
+* Z:\mnt\spice-netlists\LT3796-1_LTC1541_TA11A.asc
+V1 IN 0 14
+R2 IN N004 499K
+R3 N004 0 97.6K
+C2 N012 0 .1µ
+C3 N025 N027 .022µ
+R4 N028 0 19.6K
+C4 N026 0 .05µ
+C5 N016 0 4.7µ
+M§Q1 N001 N005 N007 N007 BSC160N10NS3
+R5 N007 0 15m
+R6 OUT N013 .27
+M§Q2 LED N020 N013 N013 Si7465DP
+D1 LED 0 LXK2-PW14 N=10
+R7 OUT N009 1Meg
+R8 N009 0 23.7K
+C6 OUT 0 2.2µ x4 Rser=10m
+L1 IN N001 22µ Rser=20m
+D2 N002 OUT PDS5100
+R9 N027 0 1K
+XU1 OUT N013 N020 0 N012 N011 N009 N025 N008 N006 N026 N028 N018 N006 N019 N023 MP_01 N007 N005 N016 MP_02 MP_03 IN N004 OUT LED N003 N011 LT3796-1
+C1 IN 0 2.2µ x3 Rser=10m
+C7 N002 N001 2.2µ x2 Rser=10m
+L2 0 N002 22µ Rser=20m
+R10 OUT LED 3.32
+D3 N016 N024 PMEG6010AED
+R11 OUT N024 10K
+XU2 N010 N017 N021 0 CTRL_IN N022 N018 N015 LTC1541
+R12 N011 N010 10K
+R14 N006 N021 200K
+R15 N021 0 113K
+R16 N010 N017 100K
+R17 N017 CTRL_IN 100K
+R1 N008 CTRL_IN 30.1K
+R13 N006 N008 200K
+R18 N008 N014 7.87K
+M§Q3 N014 N018 0 0 IRLML6246
+R19 N016 N015 1K
+C8 N016 0 .1µ
+V2 CTRL_IN 0 PWL(3m 2 7m .1)
+C9 CTRL_IN 0 .1µ
+R20 N019 N016 100K
+R21 N023 N016 100K
+C10 N006 0 .1µ
+R22 OUT N003 6.65K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 8m startup
+* LT3796-1 - 100V Constant-Current and Constant-Voltage Controller with Dual Current Sense\nLTC1541 - Micropower Op Amp, Comparator and Reference\nSEPIC LED Driver with 100:1 Analog Dimming\nInput: 8V to 20V     Output: 35V String @ 1A, Fsw = 400k Hz
+K1 L1 L2 1
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc.  All rights reserved.
+.lib LT3796-1.sub
+.lib LTC.lib
+.backanno
+.end

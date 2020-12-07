@@ -1,0 +1,89 @@
+* Z:\mnt\spice-netlists\LTC3765_LTC3766_DC2199A-B_.asc
+L1 N006 IN 168µ Rser=20m
+L2 N005 N001 168µ Rser=5m
+L3 N001 OUT 6.8µ
+C1 OUT 0 82µ x2 V=35 Irms=4 Rser=0.010 Lser=0
+C2 OUT 0 10µ V=16 Irms=0 Rser=0.009 Lser=0
+M§Q1 N006 N008 N012 N012 BSC190N15NS3
+C3 N031 N030 1µ IC=0
+L4 N035 N030 592µ Rser=.7 Rpar=1K
+L5 N034 N029 925µ Rser=.8
+C4 N029 N028 .1µ IC=0
+C5 N028 N034 220p Rser=100
+C6 N033 0 5n
+C7 N026 0 1µ
+M§Q2 N013 N019 N026 N026 2N7002
+C8 N006 N010 0.11µ Rser=274 Cpar=34n
+M§Q3 N005 N009 N011 N011 BSC077N12NS3
+M§Q4 N001 N007 0 0 BSC077N12NS3
+V1 IN 0 48
+M§Q5 N010 N014 N015 N015 IRF9640
+C9 N045 0 7n
+R1 OUT N040 23.7K
+R2 N040 0 604
+C10 N041 0 4.7n Rser=2.15K Cpar=100p
+C11 N001 0 330p Rser=10
+D1 IN N013 ZLLS1000
+C12 N024 N014 .1µ IC=0
+D2 N014 0 ZLLS1000
+D4 N001 N003 ES1D
+C13 N003 0 2.2n
+R3 OUT N003 8.2K
+C14 N021 0 4.7µ Rser=30m
+C15 OUT N040 3.3n Rser=1K
+XU1 0 N008 N026 N024 N015 N037 N012 0 0 N038 N036 N032 N033 N019 N028 N034 LTC3765
+XU2 N007 N009 0 N021 0 N040 N041 N020 N045 N044 NC_01 N027 N027 0 N039 0 N023 N022 N042 N043 N025 OUT N004 N018 N035 N031 0 N021 LTC3766
+R8 IN N032 102K
+R9 N032 0 3.74K
+R10 N036 0 14.3K
+R11 N037 0 12.7K
+R12 N038 0 26.7K
+R13 IN N019 100K
+R14 N012 0 5m
+R15 N014 0 10K
+R16 N015 0 1.2
+R19 N001 N004 2.87K
+R21 N020 0 133K
+R22 N039 0 46.4K
+R23 N042 0 17.4K
+R24 N043 0 28.7K
+R25 N044 0 86.6K
+C16 N015 0 15n
+R26 OUT N020 681K
+S1 0 OUT N002 0 LOAD
+V2 N002 0 PULSE(0 1 2.4m 1u 1u .5m 1m)
+C18 N006 0 150p Rser=6.8
+R4 N011 0 3m
+R5 N004 0 5.62K
+R6 N011 N023 100
+R7 0 N022 100
+C19 N023 N022 470p IC=0
+R17 OUT N027 4.42K
+R18 N027 0 10K
+L6 0 N016 42µ Rser=5m
+D3 0 N017 ZLLS1000
+L7 N017 N018 680µ
+C17 N018 0 4.7µ Rser=30m
+D6 N016 N017 ZLLS1000
+Q7 OUT N025 N021 0 BC817-40
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+K1 L1 L2 L6 1
+K2 L4 L5 1
+* 36V to 60Vin
+* 24Vout @ 15A
+* LTC3765 - Active Clamp Forward Controller and Gate Driver\nLTC3766 - High Efficiency, Secondary-Side Synchronous Forward Controller\nActive Clamp Forward Converter\nInput: 36V to 60V     Output: 24V @ 15A     Fsw = 200kHz
+* Notes:\n  1. Not included in the simulation are the input filter, transformer leakage inductance, \n      LTC3765 freq foldback circuit, RUN, ISMAG & DELAY pin filters, \n      sense resistor inductance and compensating filters, Y-cap.\n  2. SS caps changed from 33nF to 5nF & 7nF to reduce sim time.\n  3. D1, D3, D6, Q1, Q3, Q4, Q5, & Q7 models replaced with nearest equivalent.\n  4. C8 = 0.22uF rated, 0.11uF at 120V\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.options GminSteps=0
+.model LOAD SW(Ron=1.61 Roff=1Meg Vt=.5 Vh=-.4)
+.lib LTC3765.sub
+.lib LTC3766.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\4614.asc
+V1 IN 0 3.6
+R1 N001 0 10K
+Rload1 OUT1 0 0.3
+C1 OUT1 0 100µ
+XU1 0 IN NC_01 NC_02 N001 NC_03 OUT1 IN MP_04 MP_05 0 IN OUT2 N002 NC_06 NC_07 NC_08 IN LTM4614
+R2 N002 0 5.76K
+Rload2 OUT2 0 0.375
+C2 OUT2 0 100µ
+.tran 1m startup
+.lib LTM4614.sub
+.backanno
+.end

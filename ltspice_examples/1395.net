@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\1395.asc
+V1 +V 0 9
+XU1 N005 N002 +V 0 N004 LT1395
+D2 N004 N003 1N4148 N=2
+C1 N003 N004 4.7µ
+R1 N003 N002 255
+R2 N001 N002 84.5
+R3 N002 0 255
+V2 N001 0 5
+R4 N001 N005 1K
+R5 N005 IN {1300+160}
+R6 IN 0 {2.32+75}
+V3 IN 0 sine(1 1 1Meg)
+R7 OUT N003 75
+R8 0 OUT 75
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10u
+* Single Supply RGB Video Amplifier(1 of 4 Channels)
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1174.asc
+V1 IN 0 9
+R2 N004 0 31.5K
+R1 OUT N004 93.5K
+L1 N001 OUT 100µ Rser=0.02 Rpar=5000
+D1 0 N001 MBRS140
+C2 OUT 0 100µ Rser=0.02
+XU1 N004 N003 N002 0 N001 IN IN IN LTC1174 top=1K bot=1T
+Rload OUT 0 25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LTC1174.sub
+.backanno
+.end

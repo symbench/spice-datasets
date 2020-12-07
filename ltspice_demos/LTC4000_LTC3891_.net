@@ -1,0 +1,54 @@
+* Z:\mnt\spice-netlists\LTC4000_LTC3891_.asc
+M§Q1 N002 N003 N005 N005 RJK0305DPB
+L1 N005 N006 22µ Rser=1.5m
+C1 N007 0 100µ Rser=5m
+R1 N007 N011 357K
+R2 N011 0 13.3K
+C2 N004 N005 .1µ
+C3 N001 0 4.7µ
+C5 N012 0 .001µ
+V1 IN 0 36
+D1 N001 N004 CMDSH2-3
+M§Q2 N005 N009 0 0 RJK0301DPB
+XU1 N007 N008 MP_01 MP_02 N010 0 N002 MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 N001 NC_14 0 N002 N009 N004 N005 N003 NC_15 NC_16 N012 N013 N011 N006 LTC3891
+R4 N006 N007 8m
+R3 N008 0 41.2K
+XU2 N020 0 N024 NC_17 N001 P001 N026 N025 N020 0 FL CH N020 NC_18 N021 N023 OUT N018 N017 N015 N019 N016 N007 N013 N014 N002 IN LTC4000 period=19
+C4 N013 0 220p
+R6 IN N002 8m
+C6 N014 N013 0.1µ Rser=15K
+M§Q3 N007 N016 N015 N015 HAT1072H
+R5 N015 N017 12m
+R7 N025 0 21.5K
+M§Q4 OUT N018 N017 N017 HAT1072H
+R8 OUT N023 499K
+R9 N023 N021 35.7K
+R10 N015 N019 499K
+R11 N019 N021 34.8K
+C7 N020 0 1µ
+R12 N026 0 12.1K
+C8 P001 0 10n
+C9 N024 0 10n
+R13 N020 FL 100K
+R14 N020 CH 100K
+V2 N022 0 14 Rser=0.011
+C10 OUT N022 100000µ Rser=0.01
+C11 N002 0 220µ Rser=2m
+C12 N026 0 10n
+C13 CH 0 10n
+Rload N015 0 16
+R17 N010 N001 100K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 15m startup
+* BATTERY
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc.  All rights reserved.
+* LTC4000 - High Voltage High Current Controller for Battery Charging and Power Management\nLTC3891 - Low IQ, 60V Synchronous Step-Down Controller\nHigh Voltage High Current Step-Down Converter, Power Path Controller & Li-Ion Battery Charger\nInput: 24V - 60V     Output: 16.8V @ 6.0A; including 4.0A charging current, with 0.4A C/X Termination
+* LTC4100 details:\n  1. Charges battery packs by programmed charge current (R5, R7).\n  2. Provides input voltage to external load (Rload).\n  3. Terminates charging cycle as charging current is reduced to preset value (R12).\n  4. Limits input current if it exceeds preset value (R6).
+.lib LTC3891.sub
+.lib LTC4000.sub
+.backanno
+.end

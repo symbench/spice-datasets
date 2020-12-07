@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1677.asc
+V1 +V 0 1.5
+V2 -V 0 -1.5
+R1 OUT N003 1Meg
+R2 N003 N002 10K
+XU1 0 N003 +V -V OUT LT1677
+C1 N001 0 Q=100p*sin(2*pi*2K*time)
+R3 N001 +V 10K
+C2 N002 N001 .68µ
+.tran 3m
+* 3V Electret Microphone Amplifier
+.lib LTC.lib
+.backanno
+.end

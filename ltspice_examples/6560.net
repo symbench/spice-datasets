@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\6560.asc
+V1 N001 0 5
+C1 IN1 0 4p
+R1 OUT N002 50
+I1 IN1 0 PULSE(0 30u 1.5n .1n .1n 6.5n 60n)
+R2 OUT 0 50
+XU1 N001 MP_01 MP_02 MP_03 IN1 N003 MP_04 MP_05 MP_06 MP_07 N001 N004 MP_08 NC_09 N002 MP_10 0 LTC6560
+C2 N003 0 1µ
+V2 N004 0 PWL(0 5 10n 5 +5n 0)
+.tran 150n
+.lib LTC3.lib
+.backanno
+.end

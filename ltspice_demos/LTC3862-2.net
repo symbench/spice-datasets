@@ -1,0 +1,52 @@
+* Z:\mnt\spice-netlists\LTC3862-2.asc
+M§Q1 N002 N006 N007 N007 BSC100N10NSF
+L1 IN N002 15µ Rser=5m Rpar=5K
+D1 N002 OUT PDS5100
+R1 N013 0 45.3K
+R2 OUT N020 715K
+R3 N020 0 11.8K
+R4 IN N005 84.5K
+R5 N005 0 34K
+V1 IN 0 PWL(0 0 0.0001 14 0.0006 14 0.0007 5)
+R6 N007 0 4m
+C2 0 N001 4.7µ
+C3 0 N023 .001µ
+C4 0 N004 .001µ
+L2 IN N009 15µ Rser=5m Rpar=5K
+R7 N014 0 4m
+M§Q2 N009 N012 N014 N014 BSC100N10NSF
+D2 N009 OUT PDS5100
+Rload OUT 0 75
+C5 N022 0 15n
+R10 N021 N022 21K
+C8 N021 0 120p
+C9 N003 0 0.47µ Rser=0.05
+L3 IN N011 100µ Rser=0.3
+D3 N011 N003 PMEG6010AED
+M§Q3 N011 N015 N016 N016 2N7002
+R11 N016 0 50m
+R12 N016 N019 3..01k
+C10 N010 0 1µ
+R13 N001 N010 402
+R14 N003 N008 100K
+R15 N008 0 8.66K
+R16 N018 N017 10K
+C11 N017 0 10n
+C6 IN 0 6.8µ
+C7 OUT 0 4.7µ
+C1 OUT 0 22µ Rser=10m
+XU1 0 NC_01 NC_02 0 N013 N023 N021 N020 0 NC_03 NC_04 0 N014 0 MP_05 N012 0 N006 N001 N003 N005 0 N007 N004 LTC3862-2
+XU2 N018 0 N008 N019 N010 N015 LTC3803-5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC3862-2 - Multi-Phase Current Mode Step-Up DC/DC Controller\nAutomotive High Output Voltage Boost Converter\n(The major advantage of LTC3862-2 is its ability to function at low voltages and drive standard level MOSFETs.)\nInput: 5V to 28V     Output: 75V @ 1A
+* Notes: \n  A smaller SS capacitor, C3, is being used to reduce simulation time. Typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc.  All rights reserved.
+* OPTIONAL:  Low power LTC3803-5 booster provides 10V for biasing \nLTC3862 when input voltage drops during cold cranking.
+.lib LTC3803-5.sub
+.lib LTC3862-2.sub
+.backanno
+.end

@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTC3541.asc
+V1 IN 0 4
+L1 N001 OUT1 1.5µ Rpar=2K
+C1 OUT1 0 10µ
+R1 OUT1 N002 154K
+C2 OUT1 N002 22p
+R2 N002 0 73.2K
+C3 OUT2 0 2.2µ
+R3 OUT2 N003 576K
+R4 N003 0 165K
+Rload2 OUT2 0 6
+Rload1 OUT1 0 5
+XU1 IN IN N002 N003 OUT2 OUT1 0 0 IN N001 LTC3541
+.tran 2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+* LTC3541 - High Efficiency Buck + VLDO Regulator\nInput: 4V        Outputs: 2.5V@500mA and 1.8V@300mA
+.lib LTC3541.sub
+.backanno
+.end

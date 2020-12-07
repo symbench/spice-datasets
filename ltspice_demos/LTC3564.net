@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC3564.asc
+L1 N001 OUT 1µ Ipk=2.3 Rser=0.06 Rpar=55000 Cpar=1.8p mfg="Coilcraft" pn="DO1608P-222"
+R1 OUT N002 348K
+V1 IN 0 3.3
+R2 N002 0 174K
+C3 OUT N002 10p
+C1 IN 0 22µ V=6.3 Irms=0 Rser=0.0008 MTBF=0 Lser=0 mfg="TDK" pn="C3225X5R0J226M" type="X5R" ppPkg=1 x1
+C2 OUT 0 22µ V=6.3 Irms=0 Rser=0.0008 MTBF=0 Lser=0 mfg="TDK" pn="C3225X5R0J226M" type="X5R" ppPkg=1 x1
+Rload OUT 0 1.43
+XU1 N002 0 IN N001 IN LTC3564
+.tran 1.6m startup
+* LTC3564 - 1.25A, 2.25MHz, Synchronous Step-Down Regulator\nInput: 3.3V Output: 1.8V @ 1.25A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3564.sub
+.backanno
+.end

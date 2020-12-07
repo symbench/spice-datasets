@@ -1,0 +1,42 @@
+* Z:\mnt\design.r\spice\examples\dimmer.asc
+XQ1 P001 N002 DIAC VK=30
+V1 A 0 SINE(0 166 60)
+R1 N002 A {Rdim}
+C1 N002 0 .062µ
+Rload A B 135
+XU1 B P001 0 TRIAC
+B1 N001 0 V=V(A,B)*I(Rload)
+R2 LoadPower N001 50K
+C3 LoadPower 0 1µ
+.tran .3
+.subckt DIAC T1 T2
+* default parameters
+.param RS=10 ; series resistance
+.param VK=20 ; breakdown voltage
+Q1 N002 N001 T2 0 PN
+Q2 N001 N002 N005 0 NP
+R1 N002 N004 {20K*(VK-1)}
+R2 N004 T2 9.5K
+R3 N002 N005 9.5K
+Q3 N004 N003 N005 0 PN
+Q4 N003 N004 T2 0 NP
+R4 T1 N005 {RS}
+.model PN NPN Cjc=10p Cje=10p
+.model NP PNP Cjc=10p Cje=10p
+.ends DIAC
+.subckt TRIAC MT2 G MT1
+.param R=10K
+Q1 N001 G MT1 0 NP
+Q2 N001 N002 MT2 0 NP
+Q3 N002 N001 MT1 0 PN
+Q4 G N001 MT2 0 PN
+R1 MT2 N002 {R}
+R2 G MT1 {R}
+.model PN NPN Cjc=10p Cje=10p
+.model NP PNP Cjc=10p Cje=10p
+.ends TRIAC
+.step param Rdim list 1K 50K 100K 200K 300K 325K
+* This example schematic is supplied for informational/educational purposes only.
+* Light Bulb
+.backanno
+.end

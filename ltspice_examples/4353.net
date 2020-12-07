@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\4353.asc
+M1 N002 N009 N010 N010 Si4864DY
+C1 N008 N010 39n
+V1 N010 0 PWL(0 0 1m 12)
+I1 N002 0 PULSE(0 6 10u 100u 100u 10 20)
+C3 N002 0 100µ Rpar=1Meg
+M2 N002 N004 N001 N001 Si4864DY
+C4 N003 N001 39n
+V3 N001 0 PWL(0 0 1m 11 100m 11 9.9 13)
+C5 N005 0 0.1µ
+XU1 0 N010 N009 N008 N002 N007 N006 N002 N003 N004 N001 N005 0 0 LTC4353
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10 startup
+.lib LTC4353.sub
+.backanno
+.end

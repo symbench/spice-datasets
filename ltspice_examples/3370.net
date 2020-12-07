@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3370.asc
+V1 IN 0 5
+L1 N001 OUT {2.2µ/chan} Rser=20m
+C1 OUT 0 {14µ*chan} Rser={2m/chan}
+R1 OUT N002 1.02Meg
+R2 N002 0 324K
+R3 N003 0 402K
+XU1 N003 0 IN N002 N001 IN IN 0 NC_01 LTC3370 LTC3370 CHAN={chan}
+Rload OUT 0 {3/chan}
+.tran 1.5m startup
+.param CHAN=4
+* The "CHAN" parameter should be set to the number of power stages used in parallel.\nThe external components have been  scaled appropriately for convenience.  The 14µ\noutput capacitor models a 22µF 0805  capacitance at 3.3V
+.lib LTC3370.sub
+.backanno
+.end

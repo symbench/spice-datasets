@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1044A.asc
+V1 IN 0 5
+C5 OUT 0 10µ
+C6 N002 N005 10µ
+C1 0 N003 100p
+Rload OUT 0 1K
+XU1 N001 N002 0 N005 OUT N004 N003 IN LTC1044A
+.tran 100m startup
+.lib LTC1044A.sub
+.backanno
+.end

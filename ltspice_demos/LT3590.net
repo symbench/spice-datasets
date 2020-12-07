@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LT3590.asc
+XU1 N003 0 N004 IN N002 N003 LT3590
+R1 IN N002 4.02
+D1 N002 N001 QTLP690C N=10
+L1 N001 N004 330µ
+C1 IN N001 1µ
+C2 N003 0 .1µ
+V1 IN 0 48
+C3 IN 0 .47µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 300u startup
+* LT3590 - 48V Buck-Mode LED Driver\nInput: 48V          Output: 50mA through 10 LEDs
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LT3590.sub
+.backanno
+.end

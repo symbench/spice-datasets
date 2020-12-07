@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\3980.asc
+XU1 OUT N001 N002 IN IN N004 NC_01 N006 N005 N003 0 LT3980
+V1 IN 0 48
+R1 N003 0 97.6K
+C1 N005 0 1000p Rser=4.75K
+C2 N001 N002 .47µ
+L1 N002 OUT 8.2µ Rser=5m Rpar=2K
+D1 N004 N002 MBRS360
+R2 OUT N006 536K
+R3 N006 0 100K
+C3 OUT N006 22p
+C4 OUT 0 47µ Rser=5m
+Rload OUT 0 2.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran .5m startup
+.lib LT3980.sub
+.backanno
+.end

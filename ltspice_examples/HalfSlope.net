@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\HalfSlope.asc
+V1 N001 0 PULSE(0 1 0 1n 1n 5u 10u) AC 1
+G2 0 B N001 0 Laplace=1/sqrt(1+1u*s)/(1+5n*s)**2
+R1 B 0 1.
+*.ac oct 20 1K 10Meg
+.tran 30u
+* Time domain response of a 3db/octive rolloff
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

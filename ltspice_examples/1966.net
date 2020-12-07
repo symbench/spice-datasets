@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1966.asc
+V1 +V 0 5
+XU1 0 N002 0 -V OUT 0 +V LTC1966
+V2 -V 0 -5
+C1 OUT 0 1µ
+L1 0 N001 20n
+L2 0 N002 118m
+R1 N002 0 10
+I1 0 N001 SINE(0 {ARMS*sqrt(2)} 60)
+.tran 3
+.step param ARMS list 5 10 70
+K1 L1 L2 1
+* 70 A current measurement
+* V(out) = 4m * ARMS
+* AC Current 60 Hz
+.lib LTC1966.lib
+.backanno
+.end

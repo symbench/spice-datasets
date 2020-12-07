@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\4123.asc
+V1 N002 0 5
+R1 N003 0 1K
+C1 N001 0 10µ Rser=5m
+C§BAT N001 0 .1
+XU1 NC_01 N002 NC_02 N003 N001 0 LTC4123 Tzn_air=2 Tchg=100
+.tran 100 startup
+* Notes:\n1. To simulate rectifier and input power control, the user needs to construct\n     a proper AC source to connect to ACIN pin.\n2. The model supports the charge voltage temperature compensation feature.\n    However, the user needs to specify ".temp" for the certain die temperature.\n3. Variables Tzn_air and Tchg, are introduced to reduce the simulation time\n    artificially. Please make sure to have Tchg>Tzn_air for meaningful results.
+.lib LTC4123.sub
+.backanno
+.end

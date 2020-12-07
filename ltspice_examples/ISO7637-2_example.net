@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\ISO7637-2_example.asc
+XU2 N002 0 Pulse1_24V
+XU1 N001 0 Pulse1_12V
+.tran 0 10 0 1m
+* For documentation see:\n  LTspice Models of ISO 7637-2 & ISO 16750-2 Transients\n  http://www.linear.com/solutions/7719
+* ISO 7637-2 Transients
+.lib ISO7637-2.lib
+.backanno
+.end

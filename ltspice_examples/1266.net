@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\1266.asc
+M§Q1 N005 N010 0 0 NDS9410A
+L1 N005 N006 5µ
+R1 N006 OUT .02
+C1 OUT 0 390µ Rser=.01
+V1 IN 0 7
+C2 N011 0 180p
+C3 N008 0 3300p
+D1 0 N005 1N5818
+C4 N006 OUT 1000p
+R2 N009 N008 470
+XU1 N004 N001 N001 0 IN N011 N009 OUT N006 N007 0 0 N002 N003 0 N010 LTC1266
+R3 OUT N007 164K
+R4 N007 0 100K
+M§Q2 IN N004 N005 N005 NDS9410A
+D2 IN N001 1N5818
+C5 N001 N005 .1µ
+Rload OUT 0 2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC1266.sub
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADP5304-1.asc
+L1 N002 OUT 2.2µ Rser=80m
+C1 OUT 0 10µ
+R1 OUT N001 1Meg
+V1 IN 0 5
+Rload OUT 0 80
+XU1 IN IN 0 0 OUT N001 0 0 N002 ADP5304-1
+.tran .6m startup
+.lib ADP5304-1.sub
+.backanno
+.end

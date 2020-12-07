@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1574HV.asc
+V1 IN 0 9
+R2 N002 0 31.5K
+R1 OUT N002 93.5K
+L1 N001 OUT 100µ Rser=0.02 Rpar=5000
+C2 OUT 0 100µ Rser=0.02
+XU1 N002 MP_01 MP_02 0 N001 IN IN IN LTC1574 top=1K bot=1T
+Rload OUT 0 25
+.tran 3m startup
+.lib LTC1574.sub
+.backanno
+.end

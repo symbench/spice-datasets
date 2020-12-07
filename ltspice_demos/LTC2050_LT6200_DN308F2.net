@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LTC2050_LT6200_DN308F2.asc
+J§Q1 +V IN N002 BF862
+V1 +V 0 5
+I1 IN -V PULSE(0 1u 20n 1n 1n 1u 2u) AC 1u
+V2 0 -V 5
+R1 N002 -V 1K
+C1 IN -V 3p
+R2 OUT N001 499K
+C2 OUT N001 1p
+C3 N006 N005 .1µ
+R3 N001 IN 499K
+C4 N001 IN .3p
+XU1 N003 N002 OUT +V -V N004 LT6200
+XU2 0 N005 +V -V N006 N007 LTC2050
+R4 IN N005 10Meg
+R5 N003 N006 10K
+C5 N001 0 .8p
+C6 0 N003 1µ
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 3u
+;.ac oct 100 1 10Meg
+;.noise V(out) I1 oct 100 100 10Meg
+.model BF862 NJF(Beta=0.0299 Rd=0.1 Rs=0.1 Lambda=10m Vto=-.766 Is=33.57f Cgd=2p M=.3622 Fc=.5 Cgs=8p)
+* LT6200 - 165MHz, Rail-to-Rail Input and Output, 0.95nV/vHz Low Noise, Op Amp Family\nLTC2050 - Zero-Drift Operational Amplifiers\nLow Noise, Low Power Photodiode Transimpedance Amplifier with DC Precision
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* Photodiode
+* Parasitic Capacitance
+.lib LTC.lib
+.lib LTC2.LIB
+.backanno
+.end

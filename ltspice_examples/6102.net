@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6102.asc
+V1 N002 0 50
+XU1 OUT 0 N003 N001 N002 N003 LTC6102
+R1 N002 N001 1m
+R2 N002 N003 20
+R3 OUT 0 4.99K
+Iload N001 0 SINE(1 1 10)
+.tran 300m
+.lib LTC6.lib
+.backanno
+.end

@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3130-1.asc
+L1 N001 N002 6.8µ Rser=50m
+C1 N001 N003 22n
+C2 N002 N004 22n
+V1 IN 0 20
+C3 Vcc 0 4.7µ
+Rload OUT 0 100
+C5 OUT 0 10µ Rser=7m
+R5 OUT N005 1Meg
+XU1 0 N003 N001 IN IN IN Vcc Vcc Vcc Vcc 0 0 N005 OUT N004 N002 LTC3130-1
+.tran 7.5m startup
+.lib LTC3130-1.sub
+.backanno
+.end

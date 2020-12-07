@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\3750.asc
+L1 IN N003 10µ Rpar=2K Rser=.1
+L2 0 N001 1m Rpar=1Meg
+C1 OUT 0 1µ
+D1 N001 OUT D
+R1 N004 IN 100K
+V1 IN 0 8
+XU1 IN N004 IN IN 0 N008 N006 N005 N002 N007 LT3750
+M§Q1 N003 N006 N008 N008 FDS6680A
+R3 N003 N002 60.4K
+R4 N003 N005 43K
+R5 N008 0 12m
+R6 N007 0 2.5K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+K1 L1 L2 1
+.lib LT3750.sub
+.backanno
+.end

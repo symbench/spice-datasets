@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTM8047_TA01.asc
+V1 IN 0 16
+C1 N001 0 4.7µ
+R1 N003 0 7.15K
+C2 OUT 0 22µ
+Rload OUT 0 18
+XU1 0 OUT 0 N003 IN N001 IN N002 LTM8047
+C3 IN 0 2.2µ
+.tran 1.5m startup
+* LTM8047 - 3.1Vin to 32Vin Isolated µModule DC/DC Converter\n725V DC Isolated Low Noise µModule Regulator\nInput: 3.1V to 29V    Output: 5V @ 280mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTM8047.sub
+.backanno
+.end

@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LT3508.asc
+R1 N008 N007 43K
+R2 N009 N010 51K
+R3 N014 0 52.3K
+R4 5V N005 56.2K
+R5 N005 0 10.7K
+R6 3.3V N006 35.7K
+R7 N006 0 11.5K
+C1 IN 0 4.7µ
+C2 N001 N003 .22µ
+C3 N002 N004 .22µ
+C4 5V 0 10µ Rser=.011
+C5 N007 0 100p
+C6 N010 0 150p
+C7 N013 0 1000p
+L1 N003 5V 10µ Rser=.05
+L2 N004 3.3V 6.8µ Rser=.05
+V1 IN 0 12
+D1 5V N001 1N4148
+D2 3.3V N002 1N4148
+D3 0 N003 1N5819
+D4 0 N004 1N5819
+R8 5V N011 100K
+C8 N012 0 2200p
+C9 3.3V 0 22µ Rser=.008
+XU1 N002 IN N004 IN N014 N003 0 N001 N005 N008 N011 N012 N013 N008 N009 N006 IN LT3508
+Rload1 3.3V 0 2.35
+Rload2 5V 0 3.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.6m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+* LT3508 - Dual Monolithic 1.4A Step-Down Switching Regulator\nInput: 12V   Outputs: 3.3V@1.4A and 5V@1.4A
+.lib LT3508.sub
+.backanno
+.end

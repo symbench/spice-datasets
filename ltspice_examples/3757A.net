@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\3757A.asc
+M§Q1 N001 N005 N006 N006 FDS6680A
+R1 N007 0 41.2K
+R2 N010 0 16.2K
+R3 OUT N010 226K
+L1 IN N001 10µ
+D1 N001 OUT MBR735
+C1 OUT 0 47µ Rser=.1 x2
+R4 N009 N008 22K
+C2 N008 0 6800p
+V1 IN 0 12
+C3 N003 0 4.7µ
+C4 N004 0 .01µ
+R5 N002 0 43.2K
+R6 IN N002 200K
+Rload OUT 0 12
+R7 N006 0 .01
+XU1 N009 N010 N004 N007 MP_01 N006 N005 N003 N002 IN 0 LT3757A
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LT3757A.sub
+.backanno
+.end

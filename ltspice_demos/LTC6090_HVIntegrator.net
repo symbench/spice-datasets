@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTC6090_HVIntegrator.asc
+XU1 NC_01 N001 0 -V NC_02 OUT +V NC_03 LTC6090
+V1 -V 0 -70V
+C1 OUT N001 0.047µ
+R1 N001 IN 1Meg
+V2 IN 0 PWL(.1 -30 +.1m 30 +.2 30 +.1m -30 +.1 -30 +.1m 0)
+R2 OUT 0 100K
+V3 +V 0 +70
+.tran .5
+* LTC6090 - 140V CMOS Rail-to-Rail Output, Picoamp Input Current Op Amp\nWide Dynamic Input-Output Range High Voltage Integrator
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC5.lib
+.backanno
+.end

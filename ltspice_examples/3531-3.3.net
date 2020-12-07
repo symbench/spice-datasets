@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3531-3.3.asc
+L1 N001 N002 10µ
+V1 IN 0 3.6
+C1 OUT 0 10µ
+Rload OUT 0 20
+XU1 N001 IN 0 IN MP_01 OUT N002 0 LTC3531-X Vout=3.3
+.tran 500u startup
+.lib LTC3531-X.sub
+.backanno
+.end

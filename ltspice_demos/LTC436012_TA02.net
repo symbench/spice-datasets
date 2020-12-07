@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTC436012_TA02.asc
+C1 OUT 0 10µ
+R1 OUT 0 10
+L1 IN N001 1µ Rser=150m Rpar=2K
+V1 N006 0 5
+M§Q1 N002 N003 OUT OUT Si4892DY
+M§Q2 N001 N004 N002 N002 FDS4953
+V2 IN 0 PWL(0u 0 100m 0 +1u 20 150m 20 +10u 0 200m 0 +1u -20 250m -20 +10u 0 400m 0 +1u 5 800m 5 +1u 20)
+XU1 N002 N003 N004 OUT N005 0 LTC4360-2
+D1 N006 N005 NSPW500BS
+C2 0 N003 .0068µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1000m startup
+* LTC4360 - Overvoltage Protection Controller\n5V System Protected from ± 24V Power Supplies
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC4360-2.sub
+.backanno
+.end

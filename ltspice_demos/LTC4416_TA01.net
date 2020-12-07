@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LTC4416_TA01.asc
+V1 IN 0 PWL(0 9 1 14 2 14 3 9)
+M§Q1 IN N002 N001 N001 IRF7210
+M§Q2 OUT N002 N001 N001 IRF7210
+R1 N003 0 24.9K
+R2 N003 N005 187K
+R3 IN N003 221K
+M§Q3 N004 N006 OUT OUT IRF7210
+V2 N004 0 10.8
+Rload OUT 0 100
+C1 OUT 0 10µ
+XU1 N005 N003 0 0 NC_01 N006 N004 OUT IN N002 LTC4416
+C2 IN 0 2µ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.2 startup
+* Primary Supply
+* Backup Supply
+* LTC4416 - 36V, Low Loss Dual PowerPath Controllers for Large PFETs\nAutomatic PowerPath Switchover\nPrimary Supply: 12V (Fail), 13.5 (Restore)     Backup Supply: 10.8V
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC4416.sub
+.backanno
+.end

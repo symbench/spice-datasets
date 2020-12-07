@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3535.asc
+XU1 OUT1 N002 0 OUT2 N001 0 IN IN N004 IN IN N003 LTC3535
+V1 IN 0 1.2
+L1 IN N002 4.7µ Rser=5m Rpar=10K
+L2 IN N001 4.7µ Rser=5m Rpar=10K
+C1 OUT1 0 10µ
+R1 OUT1 N003 511K
+R2 N003 0 1Meg
+C2 OUT2 0 10µ
+R3 OUT2 N004 1.78Meg
+R4 N004 0 1Meg
+Rload1 OUT1 0 18
+Rload2 OUT2 0 66
+.tran .5m startup
+.lib LTC3535.sub
+.backanno
+.end

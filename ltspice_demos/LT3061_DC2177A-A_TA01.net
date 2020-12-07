@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT3061_DC2177A-A_TA01.asc
+V1 IN 0 2.3
+C1 N002 0 .01µ
+R1 OUT N001 118K
+R2 N001 0 59K
+C2 OUT 0 10µ Rser=10m
+Rload OUT 0 18
+XU1 N002 N001 OUT MP_01 IN MP_02 IN 0 LT3061
+C3 IN 0 10µ
+.tran .1 startup
+* LT3061 - 45V Vin, µPower, Low Noise, 100mA LDO with Output Discharge\nLow Noise Linear  Regulator with Output Discharge\nInput: 2.1V to 45V     Output: 1.8V @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT3061.sub
+.backanno
+.end

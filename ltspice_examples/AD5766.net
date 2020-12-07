@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD5766.asc
+V1 N001 0 25
+V2 N003 0 -25
+V3 IN 0 PWL(0 0 100u 0 +1u 0.625 +100u 0.625 +1u 1.25 +100u 1.25 +1u 1.875 +100u 1.875 +1u 2.5)
+I1 OUT 0 100µ
+V5 N002 0 SINE(0.125 0.125 30k)
+XU2 IN N002 N001 N003 OUT 0 AD5766 Range=8 dither_scale=0 dither_inv=0
+.tran 1m
+* Dither with 0.125V offset and amplitude\nRange is one of {1,2,...,8}\ndither_scale is one of {0,1,2,3}\ndither_inv is one of {0,1}
+.lib AD5766.sub
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\8023.asc
+XU1 IN IN N002 N003 0 N004 N001 N001 OUT LTM8023
+R1 N002 0 49.9K
+R2 N003 0 154K
+V1 IN 0 20
+R3 OUT N004 100K
+Rload OUT 0 1.65
+C1 OUT 0 22µ
+.tran 250u startup
+.lib LTM8023.sub
+.backanno
+.end

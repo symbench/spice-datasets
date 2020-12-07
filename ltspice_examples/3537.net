@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3537.asc
+XU1 NC_01 N002 0 IN NC_02 IN NC_03 IN N003 N004 OUT2 OUT1 OUT1 N001 0 NC_04 LTC3537
+V1 IN 0 1.5
+L1 IN N001 2.2µ Rpar=2K
+R1 IN N002 665K
+R2 N002 0 1Meg
+R3 OUT1 N003 1.74Meg
+R4 N003 0 1Meg
+C1 OUT1 0 4.7µ
+R5 OUT2 N004 2.05Meg
+R6 N004 0 511K
+C2 OUT2 0 1µ
+Rload1 OUT1 0 33
+Rload2 OUT2 0 30
+.tran 400u startup
+.lib LTC3537.sub
+.backanno
+.end

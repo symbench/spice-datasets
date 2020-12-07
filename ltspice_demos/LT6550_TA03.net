@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LT6550_TA03.asc
+V1 +V 0 3.3
+V2 -V 0 -3.3
+XU1 R 0 +V -V N001 LT6550
+V3 R 0 PULSE(0 .5 2u 2n 2n 2u)
+R1 R 0 75
+R2 N001 N002 1070
+XU2 G 0 +V -V N005 LT6550
+R3 G 0 75
+R4 N005 N002 549
+XU3 B 0 +V -V N006 LT6550
+R5 B 0 75
+R6 N006 N002 2940
+V4 G 0 PULSE(0 1 4u 2n 2n 2u)
+V5 B 0 PULSE(0 .75 2u 2n 2n 6u)
+XU4 R N004 +V -V N003 LT6550
+R7 N003 Pr 105
+XU5 N002 N004 +V -V N004 LT6550
+R8 N004 Y 75
+XU6 B N004 +V -V N007 LT6550
+R9 N007 Pb 133
+R10 Pr 0 261
+R12 Pb 0 174
+.tran 10u
+* LT6550 - 3.3V Triple Video Amplifiers\nRGB to YPbPr Component-Video Conversion
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC2.LIB
+.backanno
+.end

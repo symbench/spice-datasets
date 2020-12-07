@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\4368-1.asc
+R1 N008 N010 121K
+R2 N007 N008 1500K
+R3 IN N007 464K
+M1 IN N003 N001 N001 Sir870ADP
+M2 N002 N003 N001 N001 SiR870ADP
+R4 IN N006 100K
+R5 N005 N003 22K
+C2 N005 0 3.3n
+C1 OUT 0 100µ
+V1 IN 0 PWL(0 -40 200m -40 1.7 70 2 24)
+R7 N002 OUT 5m
+C3 N009 0 0.22µ
+XU1 IN N008 N010 N009 0 N007 N006 OUT N002 N003 LTC4368-1
+R8 N010 0 29.4K
+S1 OUT 0 N004 0 Sload
+V2 N004 0 PULSE(0 1 2.2 10n 10n 20u 100)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5
+.model Sload SW(Ron=1 Roff=5 Vt=.5 Vh=-.2)
+.lib LTC4368-1.sub
+.backanno
+.end

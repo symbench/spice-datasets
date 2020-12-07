@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1504A-3.3.asc
+V1 IN 0 5
+L1 N003 OUT 50µ
+C1 OUT 0 100µ Rser=.1
+C2 N006 0 .01µ
+R1 IN N001 47K
+C3 N004 0 5000p
+R2 N005 N004 5K
+XU1 N001 IN N003 0 OUT N002 N006 N005 LTC1504A top=20.4K bot=12.6K
+Rload OUT 0 50
+.tran 5m startup
+.lib LTC1504A.sub
+.backanno
+.end

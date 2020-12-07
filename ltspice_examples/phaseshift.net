@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\phaseshift.asc
+Q1 OUT N004 N005 0 2N2222
+R1 N001 OUT 10K
+R2 N001 N004 100K
+R3 N004 0 10K
+R4 N003 0 10K
+R5 N002 0 10K
+C1 N005 0 1µ
+C2 N004 N003 .01µ
+R6 N005 0 1K
+C3 N003 N002 .01µ
+C4 N002 OUT .01µ
+V1 N001 0 12
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 100m startup
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

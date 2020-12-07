@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\6268.asc
+V1 +V 0 2.5
+V2 -V 0 -2.5
+R3 Out N001 20K
+XU1 0 N001 Out +V -V +V LTC6268
+I1 +V N001 0 AC 1
+Cparasitic Out N001 150f
+C3 +V N001 700f
+.ac oct 10 10K 1G
+* PhotoDiode
+* FCI-125G-006
+* 20K Ohm Gain Trans-Impedance Amplifier
+.lib LTC2.lib
+.backanno
+.end

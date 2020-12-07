@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\curvetrace.asc
+Q1 N001 N002 0 0 2N2222
+V1 N001 0 0.
+I1 0 N002 0.
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.dc V1 0 15 10m I1 20u 100u 20u
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

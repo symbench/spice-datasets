@@ -1,0 +1,41 @@
+* Z:\mnt\spice-netlists\LT4320_DC2465A.asc
+V1 LINE1 NEUTRAL SINE(0 {24*1.414} 60 0 0 0) Rser=1u
+M§Q1 OUT N003 LINE1 LINE1 IPB039N10N3
+XU1 N001 N002 N004 NC_01 0 OUT N003 LINE1 LT4320-1
+V2 LINE2 NEUTRAL SINE(0 {24*1.414} 60 {1/180} 0 0) Rser=1u
+V3 LINE3 NEUTRAL SINE(0 {24*1.414} 60 {2/180} 0 0) Rser=1u
+C1 OUT 0 10µ Rser=1
+Rload OUT 0 5
+M§Q2 LINE1 N004 0 0 IPB039N10N3
+D1 0 N001 1N4148
+R2 LINE2 N001 100K
+R3 LINE3 N001 100K
+M§Q3 OUT N007 LINE2 LINE2 IPB039N10N3
+XU2 N005 N006 N008 NC_02 0 OUT N007 LINE2 LT4320-1
+M§Q4 LINE2 N008 0 0 IPB039N10N3
+D2 0 N005 1N4148
+R4 LINE1 N005 100K
+R5 LINE3 N005 100K
+M§Q5 OUT N011 LINE3 LINE3 IPB039N10N3
+XU3 N009 N010 N012 NC_03 0 OUT N011 LINE3 LT4320-1
+M§Q6 LINE3 N012 0 0 IPB039N10N3
+D3 0 N009 1N4148
+R6 LINE2 N009 100K
+R7 LINE1 N009 100K
+D4 N001 LINE2 1N4148
+D5 N001 LINE3 1N4148
+D6 N005 LINE1 1N4148
+D7 N005 LINE3 1N4148
+D8 N009 LINE2 1N4148
+D9 N009 LINE1 1N4148
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 100m
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LT4320-1 - Ideal Diode Bridge Controller\nHighly Efficient 3-Phase Bridge Rectifier\nInput: 5VAC to 28VAC RMS    Output: 70V @ 25A max
+.lib LT4320-1.sub
+.backanno
+.end

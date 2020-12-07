@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LT1085_TA01.asc
+R1 OUT N001 121
+R2 N001 0 365
+V1 IN 0 PWL(0 0 1 10) Rser=0.1
+Rload OUT 0 1.7
+C1 OUT 0 10µ
+C2 IN 0 10µ
+XU1 N001 OUT IN LT1085
+.tran 1
+* LT1085 - 3A Low Dropout Positive Adjustable Regulators\n5V, 3A Regulator\nInput: >= 6.5V     Output: 5V @ 3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1083.lib
+.backanno
+.end

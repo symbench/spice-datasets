@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\ADP2301.asc
+V1 IN 0 12
+L1 N002 OUT 6.8µ Ipk=1.84 Rser=0.056 Rpar=942 Cpar=0 mfg="Coilcraft" pn="MSS6132-103"
+C1 OUT 0 10µ
+C2 N001 N002 100n
+R1 OUT N003 69.8K
+R2 N003 0 13.3K
+D1 0 N002 MBRS340
+XU1 IN IN N001 N002 N003 0 ADP2300_1 FREQ=1 CSGain=0.25
+Rload OUT 0 15
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib ADP2300_1.sub
+.backanno
+.end

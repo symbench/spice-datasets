@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\8064.asc
+XU1 OUT MP_01 IN IN N001 MP_02 MP_03 MP_04 NC_05 MP_06 N002 0 N001 N001 NC_07 MP_08 MP_09 MP_10 NC_11 N003 MP_12 NC_13 LTM8064
+V1 IN 0 55
+R1 N003 0 130K
+C1 OUT 0 100µ Rser=5m
+C2 OUT 0 330µ Rser=50m
+R2 N002 0 5.11K
+Rload OUT 0 .833
+.tran 2m startup
+.lib LTM8064.sub
+.backanno
+.end

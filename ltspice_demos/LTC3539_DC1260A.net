@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTC3539_DC1260A.asc
+L1 IN N001 4.2µ Rser=50m Rpar=5K
+V1 IN 0 2
+R1 OUT N002 876K
+R2 N002 0 499K
+C1 OUT 0 22µ Rser=3m
+XU1 N001 0 0 IN IN N002 IN OUT LTC3539
+C2 OUT N002 33p
+Rload OUT 0 3.3
+.tran 1m startup
+* LTC3539 - DC1260A Boost Converter Demo Board\n2A Synchronous Boost Converter\nInput: 0.75V to 5V      Output: 3.3V @ 0.9A with 2.4V input
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3539.sub
+.backanno
+.end

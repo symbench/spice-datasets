@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\6990.asc
+XU1 N001 0 N003 N004 N001 OUT LTC6990
+R1 N001 N004 1Meg
+R2 N004 0 887K
+R3 N003 0 196K
+R4 N003 N002 261K
+V1 N001 0 5
+V2 N002 0 PULSE(2 1 5m 20m 20m 5m 50m)
+* TimerBlox\n500Hz to 2KHz Voltage Controlled Oscillator\nControl Voltage Ramps from 2V to 1V\nStartup Modeled
+.tran 60m startup
+.lib LTC6990.sub
+.backanno
+.end

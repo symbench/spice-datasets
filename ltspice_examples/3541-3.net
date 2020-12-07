@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3541-3.asc
+V1 IN 0 3.6
+L1 N001 OUT1 2.2µ
+C1 OUT1 0 10µ
+Rload1 OUT1 0 9
+C2 OUT2 0 2.2µ
+Rload2 OUT2 0 52.5
+XU1 IN IN OUT1 MP_01 OUT2 OUT1 0 0 IN N001 LTC3541-3
+.tran 3m startup
+.lib LTC3541-3.sub
+.backanno
+.end

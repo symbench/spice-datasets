@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\3592.asc
+L1 N002 N003 10µ Rpar=2K
+R1 N003 N008 .4
+R2 N010 0 10K
+D1 N008 0 AOT-2015
+V1 N004 0 14.5
+C1 N003 0 4.7µ
+R3 N009 0 140K
+D2 N005 N002 MBRS140
+C2 N002 N001 .1µ
+XU1 N009 N007 N006 N004 N005 N002 N001 N003 N008 N010 0 LT3592
+R4 N008 N010 51K
+V2 N007 0 pulse(3 0 .5m 1u 1u .25m .5m)
+R5 N004 N006 20K
+C3 N006 0 .1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.25m startup
+.lib LT3592.sub
+.backanno
+.end

@@ -1,0 +1,32 @@
+* Z:\mnt\spice-netlists\LT8650S_DC2407A.asc
+V1 IN 0 12
+C11 N006 0 1n
+R5 N009 0 15K
+L2 N002 OUT2 1µ Rser=10m Ipk=6.5 Rser=0.0042 Cpar=0
+R4 N004 0 316K
+C12 N007 0 1n
+C13 N005 0 1µ
+Rload2 OUT2 0 0.825
+C2 IN 0 10µ V=50
+C1 IN 0 10µ V=50
+R3 OUT2 N004 1Meg
+C7 OUT2 N004 4.7p
+L1 N001 OUT1 1µ Rser=10m Ipk=6.5 Rser=0.0042 Cpar=0
+R2 N003 0 191K
+Rload1 OUT1 0 1.25
+R1 OUT1 N003 1Meg
+C6 OUT1 N003 4.7p
+C8 OUT2 0 47µ V=10 Irms=11.7 Rser=10m
+C9 OUT2 0 47µ V=10 Irms=11.7 Rser=10m
+C5 OUT1 0 47µ V=10 Irms=11.7 Rser=0.003
+C4 OUT1 0 47µ V=10 Irms=11.7 Rser=0.003 Lser=0
+XU1 N009 0 MP_01 IN MP_02 MP_03 IN MP_04 MP_05 MP_06 IN IN MP_07 NC_08 NC_09 N008 NC_10 NC_11 MP_12 N002 MP_13 N001 MP_14 NC_15 N005 0 N005 N003 N006 N007 N004 N005 LT8650S
+* fsw=2MHz
+* LT8650S - Dual Channel 42V, 4A Synchronous Step-Down Silent Switcher 2 with 6.2µA Quiescent Current\n 2MHz Step-Down Converter\nInput: 5.4V to 42V     Output: 5V @ 4A & 3.3V @ 4A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.tran 0.6m startup
+* 5V/4A
+* 3.3V/4A
+.lib LT8650S.sub
+.backanno
+.end

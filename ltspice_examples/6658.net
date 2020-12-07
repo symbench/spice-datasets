@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\6658.asc
+XU1 IN IN IN IN N001 OUT1 OUT1 OUT2 OUT2 0 N002 LT6658-2.5
+C1 N001 0 1µ
+C2 OUT1 0 10µ
+V3 IN 0 5
+I1 OUT1 0 PULSE(10m 150m 100u 5n 5n 200u 1)
+C3 N002 0 .1µ
+C4 OUT2 0 10µ
+.tran 500u
+.lib LT6658.lib
+.backanno
+.end

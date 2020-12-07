@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LT8710_Boost_F5.asc
+V1 IN 0 12
+R1 N006 0 10K
+R2 IN N006 12.7K
+R3 N009 0 118K
+C1 N007 0 2.2µ Rser=2m
+C2 N014 0 47n Rser=2m
+C3 N015 0 10n Rser=2m
+C4 N012 0 100p
+C5 N013 0 4.7n
+R4 N012 N013 12.1K
+R5 OUT N002 10m
+R6 N004 0 5m
+R7 OUT N010 274K
+M§Q1 N001 N003 N004 N004 IPP039N04L
+M§Q2 N001 N005 N002 N002 Si4401DY
+C7 OUT 0 330µ Rser=16m
+C8 OUT 0 10µ Rser=0.002
+R8 N007 N011 100K
+XU1 N010 N012 N015 N011 N014 OUT N002 OUT N008 N005 N003 N007 IN 0 N004 N006 N007 N009 MP_01 0 LT8710
+C9 N008 OUT 2.2µ
+L1 IN N001 10µ Rser=10m
+Iload OUT 0 2
+C6 IN 0 330µ Rser=16m
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2018 Analog Device Inc. All rights reserved.
+* LT8710 - Synchronous SEPIC/ Inverting/Boost Controller with Output Current Control\nSynchronous Boost Converter with Output Current Monitoring\nInput: 10V to 14V     Output: 24V @ 2A (with 12Vin), Fsw = 300kHz
+.lib LT8710.sub
+.backanno
+.end

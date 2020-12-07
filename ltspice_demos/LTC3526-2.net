@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC3526-2.asc
+R1 OUT N002 887K
+R2 N002 0 499K
+C1 IN 0 1µ
+C2 OUT 0 4.7µ
+L1 IN N001 2.2µ Ipk=1.1 Rser=0.13 Rpar=207 Cpar=0 mfg="Coilcraft" pn="LPO3310-222MX"
+C3 OUT N002 33p
+V1 IN 0 2
+R3 OUT 0 33
+XU1 N001 0 IN IN N002 OUT LTC3526-2
+.tran 500u startup
+* LTC3526-2 500mA 2MHz Synchronous Boost Converter\nInput: 1V to 5V  Output 3.3V @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LTC3526-2.sub
+.backanno
+.end

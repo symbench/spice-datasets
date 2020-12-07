@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1169.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N001 1K
+V3 IN 0 PULSE(0 1 0 1u 1u .5m 1m)
+XU1 IN N001 +V -V N002 LT1169
+R2 OUT N002 33
+C1 N002 N001 .1µ
+Cload 0 OUT .1µ
+.tran 3m
+* Unity-Gain Buffer with Extended Load Capacitance Drive Capability
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\1001.asc
+V1 +V 0 15
+XU1 0 N001 +V -V N004 LT1001
+V2 -V 0 -15
+R1 N002 N001 10K
+V3 IN 0 SINE(0 10 100)
+XU2 N005 N003 +V -V OUT LT1001
+D1 N002 N004 1N4148
+R2 N001 IN 10K
+R3 N005 N001 10K
+R4 N003 N002 10K
+R5 OUT N003 10K
+D2 N004 N005 1N4148
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 30m
+* Precision Absolute Value Circuit
+.lib LTC.lib
+.backanno
+.end

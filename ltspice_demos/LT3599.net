@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LT3599.asc
+L1 N001 N002 10µ
+D1 N002 VOUT SS24
+R1 N007 0 53.6K
+R2 N003 N004 976K
+R3 N004 0 31.6K
+D2 VOUT N008 LXHL-BW02 N=10
+D3 VOUT N010 LXHL-BW02 N=10
+D4 VOUT N011 LXHL-BW02 N=10
+D5 VOUT N013 LXHL-BW02 N=10
+C1 N015 0 10n
+R6 N017 0 10K
+V1 N001 0 12
+R7 N014 0 13.3K
+C2 VOUT 0 10µ Rser=3m
+C3 N016 N017 2.2n
+R8 N009 N012 52.3K
+R9 N012 0 80.6K
+XU1 N008 N010 N011 N013 0 MP_01 MP_02 N014 N009 N016 N004 N012 MP_03 MP_04 N006 N007 N015 N009 MP_05 N001 N001 N002 VOUT N003 0 LT3599
+V3 N006 0 PULSE(3.3 0 1m 10n 10n .5m 1m)
+C5 N001 0 3.3µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4m startup
+* LT3599 - 4-Channel 120mA LED Driver with 1.5% Current Matching \nInput: 12V       Output: 4-Strings of 10 LEDs, 100mA per Channel
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* OVP=40V
+* (1MHz)
+.lib LT3599.sub
+.backanno
+.end

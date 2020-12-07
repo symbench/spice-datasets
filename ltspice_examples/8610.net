@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\8610.asc
+XU1 N002 N004 N006 IN IN MP_01 0 MP_02 N005 MP_03 MP_04 N003 N001 OUT NC_05 N007 0 LT8610
+R1 N006 0 52.3K
+C1 N004 0 .001µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N005 OUT 4.7µ Rser=3m
+C3 N003 N005 .1µ
+C4 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT N007 1Meg
+R3 N007 0 432K
+C5 OUT N007 10p
+Rload OUT 0 1.32
+.tran 750u startup
+.lib LT8610.sub
+.backanno
+.end

@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\3761.asc
+C1 N004 0 1µ
+M§Q1 N001 N005 N007 N007 IRF1310
+R1 N007 0 10m
+L1 IN N001 10µ Rser=10m Rpar=2K
+R2 N002 N008 1Meg
+R3 N008 0 16.9K
+D1 N001 N002 MBRS360
+R4 N002 N009 .25
+C2 N002 0 2.2µ x4 Rser=10m
+V1 IN 0 PWL(0 0 .2m 48)
+R5 IN N003 499K
+R6 N003 0 90.9K
+C3 N010 0 4700p Rser=5.1K
+C4 N012 0 .01µ
+R7 N014 0 28.7K tol=1 pwr=0.1
+D4 N009 N013 LXK2-PW14 N=17
+XU1 N006 N015 NC_01 N012 N014 N003 N004 IN N007 N005 N016 N008 N009 N002 N010 N006 0 LT3761
+C5 N015 0 47n
+M§Q2 N013 N016 0 0 IRF1310
+V2 N011 0 4
+R8 N011 N012 124K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 20m startup
+.lib LT3761.sub
+.backanno
+.end

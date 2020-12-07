@@ -1,0 +1,62 @@
+* Z:\mnt\design.r\spice\examples\varactor2.asc
+V2 N001 0 sine(10 .01 10MEG) ac 1
+D1 0 N005 MV2201
+D2 N003 N005 MV2201
+L2 0 N003 {Lpri}
+R1 N005 N007 1Meg
+D3 0 N006 MV2201
+D4 N004 N006 MV2201
+L3 0 N004 {Lpri}
+R2 N006 N007 1Meg
+L4 A 0 {Lsec}
+L1 0 N002 {Lsec}
+R3 A 0 {Z}
+R4 N002 N001 {Z}
+V1 N007 0 0.
+V3 N008 0 sine(10 .01 10MEG) ac 1
+D5 0 N012 MV2201
+D6 N010 N012 MV2201
+L6 0 N010 {Lpri}
+R5 N012 N014 1Meg
+D7 0 N013 MV2201
+D8 N011 N013 MV2201
+L7 0 N011 {Lpri}
+R6 N013 N014 1Meg
+L8 B 0 {Lsec}
+L5 0 N009 {Lsec}
+R7 B 0 {Z}
+R8 N009 N008 {Z}
+V4 N014 0 5
+V5 N015 0 sine(10 .01 10MEG) ac 1
+D9 0 N019 MV2201
+D10 N017 N019 MV2201
+L10 0 N017 {Lpri}
+R9 N019 N021 1Meg
+D11 0 N020 MV2201
+D12 N018 N020 MV2201
+L11 0 N018 {Lpri}
+R10 N020 N021 1Meg
+L12 C 0 {Lsec}
+L9 0 N016 {Lsec}
+R11 C 0 {Z}
+R12 N016 N015 {Z}
+V6 N021 0 20
+L13 N017 N018 {Lcup}
+L14 N010 N011 {Lcup}
+L15 N003 N004 {Lcup}
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.ac oct 100 1Meg 100Meg
+K3 L1 L2 1.
+K4 L3 L4 1.
+K1 L5 L6 1.
+K2 L7 L8 1.
+K5 L9 L10 1.
+K6 L11 L12 1.
+.params Z=75
+.params Lcup=1200u
+.params Lpri=100µ Lsec=.1µ
+.save V(a) V(b) V(c)
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

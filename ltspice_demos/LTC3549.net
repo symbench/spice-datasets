@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTC3549.asc
+L1 N001 OUT 3.3µ Ipk=1 Rser=.042
+R1 OUT N002 97.6K
+V1 IN 0 3.3
+C2 OUT 0 2µ V=10 Irms=8.919 Rser=0.005 MTBF=0 Lser=0 ppPkg=1
+R2 N002 0 102K
+I1 OUT 0 PULSE(.05 .2 1m 5n 5n 50u 100u) load
+C1 IN 0 1µ V=10 Irms=8.919 Rser=0.005 MTBF=0 Lser=0 ppPkg=1
+C3 OUT N002 40p Rser=.1u
+XU1 IN 0 N001 0 IN N002 LTC3549
+C4 N002 0 20p
+.tran 1.25m startup
+* LTC3549 - 250mA Low Vin Buck Regulator in 2mm × 3mm DFN\nInput: 3.3V     Output:  1.2V @ 250mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+.lib LTC3549.sub
+.backanno
+.end

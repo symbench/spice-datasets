@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTM4636_DC2230A-A.asc
+XU1 IN N004 0 N008 N007 N001 N001 N004 N006 0 OUT N005 N005 N009 N003 IN NC_01 NC_02 OUT NC_03 0 0 N002 NC_04 LTM4636
+V1 IN 0 12
+C1 N007 0 100p
+C2 OUT 0 470µ x3 Rser=9m Lser=1.2n
+C3 OUT 0 100µ x8 Rser=1m
+R3 OUT 0 25m
+R4 N003 N006 15K
+C4 N006 0 .1µ
+R2 N008 0 7.5K
+R1 N002 0 34.8K
+C5 0 N004 100p
+C6 IN 0 150µ V=25 Rser=50m
+C8 IN 0 22µ x6 V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+R5 N009 N001 10k
+C7 N003 0 22µ V=6.3 Irms=14.4 Rser=0.002
+.tran 3m startup
+* LTM4636 - 40A DC/DC ?Module Regulator\nHigh Current Step-Down ?Module Regulator\nInput: 4.7V to 15V     Outputs: 1.0V @ 40A, Fsw = 350kHz
+* Notes:\n  A smaller TRACK/SS capacitor is being used to reduce simulation time. Typical value should be 0.1µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTM4636.sub
+.backanno
+.end

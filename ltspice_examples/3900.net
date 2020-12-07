@@ -1,0 +1,32 @@
+* Z:\mnt\design.r\spice\examples\3900.asc
+XU1 N002 0 N009 N001 N008 0 N010 N013 LTC3900
+R1 N001 N010 500K
+C1 N010 0 100p
+R2 N013 0 100
+C2 N013 N012 100p
+V1 N001 0 10
+V2 N011 0 PULSE(0 10 0 10n 10n 10u 20u)
+M§Q1 N004 N008 0 0 Si9936DY
+L1 N004 N002 1m Rpar=10K
+L2 N003 N001 1m Rpar=10K
+M§Q2 N005 N009 0 0 Si9936DY
+L3 N002 OUT 10µ Rpar=1K
+C3 OUT 0 100µ
+M§Q3 N003 N007 0 0 IRF7201
+A1 N006 0 0 0 0 0 N007 0 BUF Vhigh=10
+A2 N011 0 0 0 0 N012 0 0 BUF Vhigh=10
+D1 N006 N011 D
+C4 N006 0 100p
+R3 N002 N005 100m
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m
+.model D D(Ron=1 Roff=700)
+K1 L1 L2 1.
+.lib LTC3900.sub
+.backanno
+.end

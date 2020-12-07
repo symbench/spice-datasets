@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LTC7149_DC2354AVoutCntl.asc
+R1 N009 OUT 200K
+C1 N009 OUT 1n
+R2 N006 OUT 200K
+V1 IN 0 12
+C2 OUT N002 2.2µ Rser=10m
+L1 N005 0 5.6µ Rser=23m
+C3 N004 N005 .1µ
+C4 OUT 0 22µ x2 Rser=20m
+XU1 OUT MP_01 IN MP_02 IN N008 0 NC_03 N007 OUT N002 N006 N003 N009 N010 N001 N002 N004 N005 LTC7149
+C5 IN 0 10µ Rser=0.005
+C6 IN 0 10µ Rser=0.12
+C7 OUT 0 150µ Rser=50m
+R3 N010 P001 1K
+C8 P001 OUT 4.7n
+C9 N010 OUT 100p
+C10 OUT IN 2.2µ Rser=0.01
+C11 OUT IN 1µ Rser=0.01
+R4 N008 0 20
+R5 0 N001 10
+C12 OUT N001 1µ
+R6 0 N007 1Meg
+R7 N007 OUT 137K
+C13 N003 0 .01µ
+R8 N003 0 10K
+R9 CTRL N003 100
+V2 CTRL 0 PWL(0 0 +1.5m 0 +1m 2.5 +1m 0)
+Rload OUT 0 5
+.tran 4m startup uic
+* Notes:\n  For noise suppression filter R9/C13 is used. R8 needed to guarantee that Voutsns is never left floating.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* Vout Control Circuit
+* LTC7149 - 60V, 4A Synchronous Step-Down Regulator for Inverting Outputs\nInverting Buck Regulator with Output Voltage Control\nInput: 3.4V to 50V     Output: 2.5V to -10V @ 2A
+.lib LTC7149.sub
+.backanno
+.end

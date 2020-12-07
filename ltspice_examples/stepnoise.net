@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\stepnoise.asc
+V2 +V 0 {V}
+V3 -V 0 {-V}
+R1 N002 N001 1K
+V1 N001 0 0 AC 1
+Q1 OUT- N002 N004 0 2N2222
+Q2 OUT+ N003 N004 0 2N2222
+R3 +V OUT- 1K
+R4 +V OUT+ 1K
+R5 N004 -V {R}
+R2 N003 0 1K
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.NOISE V(out+,out-) V1 list 10K
+.param V=15
+.step oct param R 500 100K 10
+* This example demonstrates .stepping a global parameter, R, while computing\nthe noise at a single frequency.  The resultant plot of V(inoise_density) vs. R\nshows a minimun noise with a tail resistance around 16kOhms.
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

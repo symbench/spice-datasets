@@ -1,0 +1,47 @@
+* Z:\mnt\spice-netlists\LTC3788-1_IndVin.asc
+C1 N001 0 4.7µ
+R1 N001 N002 100K
+V1 IN2 0 PWL(0 0 0.1m 6)
+R2 IN1 N007 4m
+L1 N007 N008 3.3µ
+M§Q1 OUT1 N003 N008 N008 Si4840DY
+M§Q2 N008 N011 0 0 Si4840DY
+C2 N005 N008 .1µ
+D1 N001 N005 MBR0540
+C3 OUT1 0 22µ Rser=.003 x4
+R3 N013 0 12.1K
+R4 OUT1 N013 232K
+C4 N017 0 .01µ
+C5 N015 0 15n Rser=8.66K Cpar=220p
+R5 IN2 N010 3m
+L2 N010 N009 1.25µ
+M§Q3 OUT2 N004 N009 N009 Si4840DY
+M§Q4 N009 N012 0 0 Si4840DY
+C6 N006 N009 .1µ
+C7 OUT2 0 22µ Rser=.003 x4
+R6 N014 0 12.1K
+R7 OUT2 N014 110K
+C8 N018 0 .01µ
+C9 N016 0 15n Rser=2.7K Cpar=100p
+D2 N001 N006 MBR0540
+XU1 N007 0 MP_01 MP_02 0 0 NC_03 NC_04 N010 IN2 N014 N016 N018 MP_05 N009 N004 N006 N012 N001 NC_06 0 OUT2 N011 N005 N003 N008 N002 MP_07 N017 N015 N013 IN1 LTC3788-1
+Rload1 OUT1 0 4.8
+Rload2 OUT2 0 1.2
+C10 IN1 0 22µ x4
+C11 IN1 0 220µ
+C12 OUT2 0 220µ Rser=.006
+C13 OUT1 0 220µ Rser=.006
+C14 IN2 0 220µ
+C15 IN2 0 22µ x4
+V2 IN1 0 PWL(0 0 0.1m 15)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m
+* LTC3788-1 - 2-Phase, Dual Output Synchronous Boost Controller\nHigh Efficiency Dual Boost Regulator with Independent Inputs\nInput1: 12V to 24V     Output1: 24V @ 5A\nInput2: 5V to 12V     Output2: 12V @ 10A
+* Notes:\n  SS capacitors have been reduced to speed up simulation time. Typical values should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3788-1.sub
+.backanno
+.end

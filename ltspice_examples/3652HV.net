@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\3652HV.asc
+V1 IN 0 25
+L1 N002 N003 20µ Rser=20m Rpar=10K
+R1 N003 OUT 68m
+C1 OUT 0 .02m
+C2 N002 N005 1µ
+D1 OUT N005 1N4148
+D2 0 N002 MBRS340
+XU1 N001 N004 N006 NC_01 NC_02 0 N007 NC_03 OUT N003 N005 N002 0 LT3652
+D3 IN N001 MBRS340
+C3 IN 0 10µ
+R2 N004 IN 750K
+R3 N004 N006 44.2K
+R4 N006 0 51.1K
+R5 N008 N007 127K
+R6 OUT N008 665K
+R7 N008 0 150K
+C4 OUT 0 10µ Rser=5m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT3652.sub
+.backanno
+.end

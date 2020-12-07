@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3684.asc
+L1 N004 OUT 4.7µ Rpar=2K
+D1 0 N004 MBRS340
+C1 OUT 0 22µ
+V1 IN 0 24
+R1 OUT N008 165K
+R2 N008 0 100K
+C2 N004 N006 .47µ
+C3 N002 0 680p
+R3 N003 N002 16.2K
+R4 N005 0 60.4K
+R5 OUT N007 100K
+R6 IN N001 100K
+C4 N001 0 .1µ
+XU1 OUT N006 N004 IN N001 N007 OUT N008 N003 N005 0 LT3684
+Rload OUT 0 1.65
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+* LT3684 - 36V, 2A Step-Down Switching Regulator \nInput: 24V       Output: 3.3V@2A
+.lib LT3684.sub
+.backanno
+.end

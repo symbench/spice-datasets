@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTM4623_DC2721A-A.asc
+V1 IN 0 12
+C9 N002 OUT .001µ
+R4 N003 OUT 121K
+C16 0 OUT 22µ Rser=2m
+Rload 0 OUT 0.45
+C10 IN 0 22µ Rser=45m
+C8 0 N003 100p
+C20 0 OUT 47µ Rser=2m
+C12 0 OUT 100µ Rser=2m
+XU1 NC_01 N001 N001 N003 N002 NC_02 IN NC_03 0 OUT OUT IN IN MP_04 MP_05 MP_06 NC_07 NC_08 N001 LTM4623
+C2 IN OUT 10µ Rser=5m
+C13 IN OUT 22µ Rser=5m
+.tran .5m startup
+* LTM4623 - 20Vin, 3A Step-Down DC/DC µModule \n2A Inverting Buck-Boost µModule Regulator\nInput: 4V to 15V (where Vin + |Vout| < 22V)     Output: -0.9V @ 2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTM4623.sub
+.backanno
+.end

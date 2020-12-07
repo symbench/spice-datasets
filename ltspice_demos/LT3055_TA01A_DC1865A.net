@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LT3055_TA01A_DC1865A.asc
+C1 N003 0 10n
+R1 N005 0 1K
+C2 N005 0 .1µ
+V1 IN 0 12
+R2 IN N002 200K
+R3 N007 0 604
+C3 N007 0 22n
+R4 N009 0 120K
+C4 N009 0 .1µ
+R5 OUT N001 442K
+R6 N001 0 60.4K
+C5 OUT 0 10µ
+Rload OUT 0 10.2
+C6 IN 0 10µ
+XU1 IN MP_01 IN N002 N004 N006 N008 N005 N009 N007 N003 0 MP_02 N001 OUT LT3055
+R7 IN N004 200K
+R8 IN N006 200K
+C7 OUT N001 10n
+.tran .1 startup
+* LT3055 - 500mA, Linear Regulator with Precision Current Limit and Diagnostic Outputs\n5V Supply with 497mA Precision Current Limit, 10mA Imin\nInput: 5.4V to 45V       Output: 5V @ 497mA (Imax = 497mA, Imin = 10mA)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3055.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\1671.asc
+V1 +V 0 5
+XU1 +V N001 N003 0 0 0 N002 OUT LT1671
+C§Y1 N002 N001 .5p Rser=500 Lser=50m Cpar=5p
+C2 N003 0 .068µ
+R1 N002 N003 2K
+R2 +V N001 2K
+R3 N001 0 2K
+.tran .5m startup
+* 1MHz Crystal Oscillator
+.lib LTC.lib
+.backanno
+.end

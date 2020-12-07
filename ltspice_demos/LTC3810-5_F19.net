@@ -1,0 +1,40 @@
+* Z:\mnt\spice-netlists\LTC3810-5_F19.asc
+R1 IN N001 110K
+M§Q1 IN N003 N004 N004 BSH114
+R2 IN N003 100K
+D1 N004 N005 MBRS1100
+C1 N005 N009 .1µ
+M§Q2 IN N007 N009 N009 BSC100N06LS3
+M§Q3 N009 N015 0 0 BSC100N06LS3
+C2 N004 0 1µ
+L1 N009 OUT 10µ
+D2 0 N009 MBRS1100
+R3 OUT N013 10K
+R4 N013 0 1.91K
+C3 OUT 0 270µ Rser=10m
+C4 N014 N013 5p
+C5 N010 0 1000p
+C6 N012 N011 .01µ
+R5 N016 N013 200K
+C7 N014 N016 47p
+R6 N011 0 10K
+V1 IN 0 36
+C8 IN 0 68µ
+C9 N001 0 1000p
+R7 N004 N008 78.7K
+R8 N008 0 10K
+R9 IN N002 200K
+R10 N002 0 14.3K
+Rload OUT 0 .84
+XU2 MP_01 N004 N008 N006 0 N014 N013 N012 N010 MP_02 MP_03 N004 N002 N003 OUT N004 N004 N015 0 0 MP_04 MP_05 MP_06 N009 N009 N007 N005 MP_07 MP_08 MP_09 N001 MP_10 0 LTC3810-5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012, 2017 Linear Technology Inc. All rights reserved.
+* LTC3810-5 - 60V Current Mode Synchronous Switching Regulator Controller\nHigh Efficiency, High Voltage Buck Converter\nInput: 12V to 60V     Output: 5V @ 6A, Fsw = 250kHz
+.lib LTC3810-5.sub
+.backanno
+.end

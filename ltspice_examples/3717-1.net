@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\3717-1.asc
+XU1 N013 N006 N008 N011 0 N003 OUT N001 N004 N002 N012 N014 0 N007 N005 N009 0 N012 0 N007 LTC3717-1
+M§Q1 N002 N005 N007 N007 Si7866DP
+M§Q2 N007 N014 0 0 Si7866DP
+R1 N002 N003 715K
+D1 N012 N009 1N5817
+C1 N009 N007 .22µ
+L1 N007 OUT 0.68µ
+C2 OUT 0 180µ x2 Rser=.05
+R2 N011 N010 2K
+C3 N010 0 4700p
+C4 N013 0 .001µ
+V1 N002 0 15
+V2 N001 0 2.5
+R3 N001 N006 100K
+D2 N007 N002 1N5817
+D3 0 N007 1N5817
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC3717-1.sub
+.backanno
+.end

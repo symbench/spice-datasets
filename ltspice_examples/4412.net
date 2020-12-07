@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\4412.asc
+XU1 N002 0 0 N004 N003 OUT LTC4412
+D1 N001 OUT 1N5819
+M§Q1 N002 N003 OUT OUT FDC638P
+R1 OUT N004 470K
+C1 OUT 0 10µ
+Rload OUT 0 100
+V1 N002 0 5
+V2 N001 0 PWL(0 0 1 7)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1
+.lib LTC4412.sub
+.backanno
+.end

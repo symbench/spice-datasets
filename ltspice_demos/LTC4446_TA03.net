@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LTC4446_TA03.asc
+XU1 N004 N006 N001 N007 MP_01 N002 N003 OUT 0 LTC4446
+Q1 N005 N011 0 0 2N2369
+R1 N007 N011 100K
+C1 N006 0 4700p
+R2 N006 N005 4.7K
+V1 N001 0 12
+R3 N007 N010 200
+C2 N010 N009 .01µ
+D1 N009 N002 1N4148
+D2 OUT N009 1N4148
+D3 OUT N002 BZX84C12L
+D4 0 OUT 1N4148
+C3 OUT 0 3300p
+M§Q2 IN N003 OUT OUT IRF1312S
+V2 IN 0 50
+Lload OUT N008 .1µ
+D5 0 OUT PDS5100
+D6 N001 N002 1N4148
+C4 N002 OUT .33µ
+V3 N004 0 PWL(1m 0 +10n 5 +.2m 5 +10n 0)
+R4 N001 N005 15K
+Rload N008 0 0.7
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5ms startup
+* Load
+* LTC4446 - High Voltage High Side / Low Side N-Channel MOSFET Driver\nFast Turn-On/Turn-Off DC Switch\nInput: 0V to 100V\nThis High-Side Driver can be used to switch loads or between input sources at very high speeds and with no duty cycle limitations
+* Notes:\n  C3 (3.3nF) is optional but may be required with high impedance loads (charge pump needs current return path).\n  D5 is required for inductive loads.\n  D6 (1N4148) is optional for fast on.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC4446.sub
+.backanno
+.end

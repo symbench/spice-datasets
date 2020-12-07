@@ -1,0 +1,39 @@
+* Z:\mnt\design.r\spice\examples\Royer.asc
+Q1 N005 N007 N011 0 FZT849
+Q2 N006 N008 N011 0 FZT849
+L1 N005 N004 20µ
+L2 N004 N006 20µ
+C1 N006 N005 .068µ
+L3 N008 N007 1µ
+V1 N009 0 28
+L4 N001 N003 50m
+R1 N002 N001 70K
+L5 N011 N013 100µ
+D1 N013 N009 1N5818
+R2 N004 N010 220K
+R3 N010 N011 100K
+C3 N004 N010 1000p
+R4 N012 N015 89.6K
+D2 0 N013 1N5818
+C4 N017 0 1µ
+V2 N012 0 5
+R5 N009 N008 500
+XU1 0 N015 0 N017 0 N016 MP_01 MP_02 MP_03 MP_04 N014 N012 N004 N009 N010 N013 LT1184F
+C2 N002 0 1p
+C5 N001 0 1p
+R6 N002 0 1T
+R7 N001 0 1T
+C6 N002 N003 27p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 10m startup
+K1 L1 L2 L3 L4 1
+* Cold Cathode Fluorescent Lighting Power Supply
+* Royer Oscillator
+* lamp
+.lib LT1184F.sub
+.backanno
+.end

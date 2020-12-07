@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTC1624.asc
+L1 N007 OUT 10µ Rser=0.002
+M§Q1 N001 N005 N007 N007 Si4412DY
+V1 IN 0 12 Rser=.0001
+C1 OUT 0 200µ Rser=0.025
+C2 N006 0 100p
+C3 N003 N004 470p
+R1 N006 0 20K
+R2 OUT N006 35.7K
+R3 0 N003 6.8K
+D1 0 N007 MBRS340
+C4 N002 N007 .1µ
+I1 OUT 0 3 load
+C5 IN N001 1000p
+XU1 N001 N004 N006 0 N007 N005 N002 IN LTC1624
+R4 IN N001 .033
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC1624 - 200kHz, 3A, Step-Down Converter\nInput: 12V     Output: 3.3V @ 3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LTC1624.sub
+.backanno
+.end

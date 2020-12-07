@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT6261_ButterworthThirdOrder.asc
+V1 IN VREF PULSE(1 -1 10u 1n 1n 50u) AC 1
+V2 V+ 0 5
+R1 N003 N001 7.7K
+R2 N001 N002 5.54K
+C1 N001 0 470p
+C2 N002 OUT 47p
+R3 N001 OUT 15.4K
+V3 VREF 0 2.5
+R4 IN N003 7.7K
+C3 N003 0 470p
+XU1 VREF N002 OUT V+ 0 V+ LTC6261
+.ac oct 250 100 1meg
+* .tran 100u
+* .noise V(o2) V1 oct 100 1 10k
+* LTC6261 - 30MHz, 240?A Power Efficient Rail-to-Rail I/O \nThird Order Butterworth Filter @ 100kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTC6.lib
+.backanno
+.end

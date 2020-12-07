@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LT8315_TA01A.asc
+V1 IN 0 250
+C1 0 N013 470p
+L1 IN N011 4m Rser=6
+L2 0 N006 160µ Rser=0.5 Cpar=0.5p
+C2 OUT 0 220µ Rser=15m
+D1 N006 OUT RB058L150
+R1 N014 0 330m
+XU1 N011 MP_01 MP_02 MP_03 MP_04 MP_05 MP_06 N009 N004 N005 N010 N007 N013 N015 0 0 N004 N014 LT8315
+R2 N015 0 121K
+C3 N002 N003 47p
+R3 N003 N005 20K
+D2 N002 N001 RB558VYM150
+R4 N001 N004 600
+R5 N007 N010 61.9K
+R6 N002 N007 95.3K
+R7 N007 0 5.11K
+D3 N011 N008 RFN1L6S
+L3 0 N002 640µ Rser=2.4
+C4 N009 0 10µ
+C5 N004 0 10µ
+D4 IN N008 RB168VYM150
+R8 N013 N012 100K
+C6 N012 0 22n
+Rload OUT 0 300
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 L3 1
+.tran 350m startup
+* 5:1:2
+* LT8315 - 560Vin µPower No-Opto Isolated Flyback Converter with 630V/0.3A Switch\nµPower No-Opto Isolated Flyback Converter\nInput: 20V to 450V       Output: 12V @ 220mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LT8315.sub
+.backanno
+.end

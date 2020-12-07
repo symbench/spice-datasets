@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\8063.asc
+V1 IN 0 12
+C1 OUT 0 22µ
+R1 N004 0 27.4K
+R2 N001 0 45.3K
+Rload OUT 0 2.5
+C2 N003 0 1n
+XU1 MP_01 OUT MP_02 N004 NC_03 N001 N003 N002 IN IN 0 LTM8063
+R3 N002 OUT 50K
+.tran 750u startup
+.lib LTM8063.sub
+.backanno
+.end

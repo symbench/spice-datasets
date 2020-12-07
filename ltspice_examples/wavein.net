@@ -1,0 +1,7 @@
+* Z:\mnt\design.r\spice\examples\wavein.asc
+V1 X 0 wavefile=.\ring.wav chan=0
+.tran .5
+* This example schematic is supplied for informational/educational purposes only.
+* This demonstrates using a .wav file into an LTspice simulation.
+.backanno
+.end

@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LT6201_SEtoDIFF_.asc
+V1 +V 0 7.5
+V2 -V 0 -2.5
+V3 IN 0 SINE(2.048 2.048 100k)
+XU1 N001 N002 N002 +V -V LT6201
+XU2 N003 N005 N004 +V -V LT6201
+R1 N001 IN 24.9
+R2 OUT+ N002 24.9
+R3 OUT- N004 24.9
+R4 N006 IN 24.9
+R5 N005 N006 590
+R6 N007 N005 24.9
+R7 N004 N007 590
+C1 N001 0 100p
+C2 N006 0 100p
+C3 OUT+ 0 82p
+C4 OUT- 0 82p
+R8 N003 Vcm 301
+C5 N003 0 10µ
+XU3 +V +V 0 Vcm Vcm LTC6655-2.048
+C6 +V 0 1µ
+.option plotwinsize = 0
+.param length=1m c=length/65536
+.tran 0 {length} 0 {c}
+* LTC2387-18\n18-bit 15Msps \nSAR ADC
+* LT6201 - Dual 165MHz, Rail-to-Rail Input and Output, 0.95nV/sqrt(Hz) Low Noise, Op Amp Family\nLTC6655-2.048 - 0.25ppm Noise, Low Drift Precision References\nLTC2387-18 - 18-Bit, 15Msps SAR ADC\nSingle-Ended to Differential Amplifier for LTC2387-18
+.meas tran res1 avg V(OUT+)
+.meas tran res2 avg V(OUT-)
+* Notes:\n  C1 & C2 can be adjusted to required bandwidth.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LTC2.LIB
+.lib LTC6655.lib
+.backanno
+.end

@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LT3761_TA02A_DC1772A.asc
+C1 N002 0 1µ
+M1 N001 N004 N006 N006 BSC123N08NS3
+R1 N006 0 8m
+L1 IN N001 10µ Rser=15m Rpar=2K
+R2 OUT N007 1Meg
+R3 N007 0 18.2K
+D1 N001 OUT PDS5100
+R4 OUT N008 .25
+C2 OUT 0 2.2µ x4 Rser=10m
+V1 IN 0 PWL(0 0 .2m 12)
+R5 IN N003 499K
+R6 N003 0 90.9K
+C3 N009 0 4700p Rser=10K
+C4 N011 0 .01µ
+R7 N013 0 29.4K tol=1 pwr=0.1
+D4 N008 N012 LXK2-PW14 N=17
+XU1 N005 N014 _OPENLED N011 N013 N003 N002 IN N006 N004 N015 N007 N008 OUT N009 N005 0 LT3761
+C5 N014 0 47n
+V2 N010 0 4
+R8 N010 N011 124K
+R9 N002 _OPENLED 100K
+M2 N012 N015 0 0 Si2318CDS
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 30m startup
+* LT3761 - High Voltage LED Controller with Internal PWM Dimming\n94% Efficient Boost LED Driver for Automotive Headlamp with 25:1 PWM Dimming\nInput: 8V to 60V      Output: 60V LED String @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3761.sub
+.backanno
+.end

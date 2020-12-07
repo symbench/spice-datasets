@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LTC3114-1_DC1821A_TA01A.asc
+XU1 0 N002 OUT IN N007 N009 N008 0 N005 IN N005 N004 N003 IN N001 IN LTC3114-1
+L1 N001 N002 6.8µ Ipk=5.94 Rser=0.014018 Rpar=640.56 Cpar=0 mfg="Coilcraft" pn="MSS1048-682"
+C1 IN 0 10µ Rser=.01
+C3 N001 N003 68n
+C4 N002 N004 68n
+C5 N005 0 4.7µ
+D1 OUT N005 PMEG2010AEB
+R1 OUT N006 49.9
+R2 N006 N008 2Meg
+R3 N008 0 499K
+C6 N010 0 4700p
+C7 N009 0 10p
+R4 N009 N010 27.4K
+C8 OUT 0 22µ x2 Rser=.005
+C11 N007 0 10n
+R5 N007 0 21K
+Rload OUT 0 5
+V1 IN 0 12
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+* LTC3114-1 - 40V, 1A Synchronous Buck-Boost DC/DC Converter with Programmable Output Current \nWide Vin Range Regulator with Bootstrapped LDO\nInput: 2.7V to 40V     Output: 5V @ 1A for Vin > Vout
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc.  All rights reserved.
+* D1 Improves \nEfficiency at High Vin
+.lib LTC3114-1.sub
+.backanno
+.end

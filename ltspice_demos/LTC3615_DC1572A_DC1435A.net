@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTC3615_DC1572A_DC1435A.asc
+XU1 IN N003 IN IN N004 IN IN 0 IN MP_01 N002 MP_02 IN IN IN NC_03 NC_04 NC_05 N001 MP_06 IN MP_07 IN IN 0 LTC3615
+L1 OUT1 N001 0.47µ
+L2 N002 OUT2 0.47µ
+R1 OUT1 N003 200K
+R2 OUT2 N004 100K
+C1 OUT2 0 47µ
+C2 OUT1 0 47µ
+C3 IN 0 47µ
+V1 IN 0 3.3
+C4 IN 0 47µ
+R3 N003 0 100K
+R4 N004 0 100K
+Rload1 OUT1 0 .6
+Rload2 OUT2 0 .4
+* LTC3615 - Dual 4MHz, 3A Synchronous Step-Down DC/DC Converter\nDual 3A Synchronous Step-down Regulator\nInput: 2.25V to 5.5V     Output1: 1.8V @ 3A     Output2: 1.2V @ 3A
+.tran 1.25m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3615.sub
+.backanno
+.end

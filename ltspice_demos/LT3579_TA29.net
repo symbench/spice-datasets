@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LT3579_TA29.asc
+XU1 N003 N005 NC_01 N004 IN N001 MP_02 MP_03 N001 MP_04 MP_05 MP_06 IN N007 N008 MP_07 0 LT3579
+C1 IN 0 4.7µ V=25 Irms=0 Rser=0.004 Lser=0 mfg="TDK" pn="C4532X7RIE475M" type="X7R" x2
+V1 IN 0 12
+C2 N002 N001 4.7µ V=25 Irms=0 Rser=0.004 Lser=0 mfg="TDK" pn="C4532X7RIE475M" type="X7R"
+D1 N002 OUT MBRS360
+R1 OUT N003 130K
+R2 IN N004 100K
+R3 N007 0 86.6K
+C3 0 N008 .02µ
+C4 OUT 0 10µ V=25 Irms=0 Rser=0.001 Lser=0 mfg="TDK" pn="C575OX7RIE106M" type="X7R" x3
+L1 IN N001 6.8µ Ipk=8.68 Rser=0.0123 Rpar=0 Cpar=0 mfg="Coiltronics" pn="DR125-6R8-R"
+L2 0 N002 6.8µ Ipk=8.68 Rser=0.0123 Rpar=0 Cpar=0 mfg="Coiltronics" pn="DR125-6R8-R"
+Rload OUT 0 8.57
+C5 N005 0 47p
+C6 N006 0 2200p
+R4 N006 N005 9.53K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+K1 L1 L2 1
+* Notes: \n  C3 should be 0.22µF, not 0.02µF.  It is reduced in value here to speed up the time to simulate a soft start cycle.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3579 - 6A Boost/Inverting DC/DC Converter with Fault Protection\n1MHz SEPIC Converter Generates a 12V @ 1.4A Output from a 9V to 16V Input\nInput: 9V-16V      Output: 12V @ 1.4A-1.9A
+.lib LT3579.sub
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\4371.asc
+V2 0 InA PWL(0 0 50m 72 100m 0)
+XU1 N003 N005 Out N001 N001 Out N002 Out N006 N004 LTC4371 LTC4371
+M2 InB N006 Out Out IPT020N10N3 M=2
+Rz 0 N001 30K
+C1 N001 Out 2.2µ
+M1 InA N005 Out Out IPT020N10N3 M=2
+RDA N003 InA 20K
+RDB N004 InB 20K
+R1 0 N002 33K
+V1 0 InB 48
+I1 0 Out 50
+D1 N002 Out QTLP690C
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 100m startup
+* Note:\n   M=2 indicates two Power MOSFETS in parallel.
+.lib LTC4371.sub
+.backanno
+.end

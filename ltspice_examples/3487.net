@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\3487.asc
+V1 IN 0 5
+L1 IN N001 15µ Rser=.1
+C1 -V 0 22µ
+C2 N003 N001 2.2µ
+L2 -V N003 15µ Rser=.1
+R1 N005 -V 324K
+R2 N004 N006 549K
+XU1 N004 N002 IN N001 N003 IN N005 N007 N006 +V 0 LT3487
+L3 IN N002 10µ
+C3 N007 0 .001µ
+C4 N004 0 4.7µ
+C5 N004 +V .1µ
+Rload2 +V 0 333
+Rload1 -V 0 100
+C6 N005 -V 47p
+.tran 2m startup
+.lib LT3487.sub
+.backanno
+.end

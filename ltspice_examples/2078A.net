@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\2078A.asc
+V1 +V 0 9
+R1 N002 N001 {5.1Meg+120K}
+C1 N002 N001 100p
+R3 N003 N002 2.64Meg
+R4 N004 N003 2.64Meg
+C2 N003 0 2000p
+R5 OUT N007 1.35Meg
+C3 N004 N007 1000p
+C4 N007 N002 1000p
+R2 N006 N005 27.6K
+R6 N005 IN 27.6K
+C5 N002 N005 .02µ
+C6 N006 0 .01µ
+V2 IN 0 4.5 AC 1
+XU1 N006 N001 +V 0 N002 LT1078
+XU2 N004 OUT +V 0 OUT LT1078
+.ac oct 1000 1 10K
+* Single Supply µPower, 2nd Order Low Pass Filter with 60Hz Notch
+.lib LTC.lib
+.backanno
+.end

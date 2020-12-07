@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LT3083_DC1585A.asc
+C1 OUT 0 10µ
+C2 IN 0 10µ
+Rload OUT 0 2
+V1 IN 0 10
+XU2 MP_01 N001 OUT IN IN LT3083
+R1 N001 0 120K
+.tran 50u startup
+* LT3083 - Adjustable 3A Single Resistor Low Dropout Regulator\nInput: 10V       Output: 6.0V @ 3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3083.sub
+.backanno
+.end

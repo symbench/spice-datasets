@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\8003.asc
+V1 IN 0 24
+R1 N002 0 41.2K
+Rload OUT 0 3
+C1 OUT 0 47µ
+R2 0 N003 24.3K
+C2 N001 0 0.001µ
+XU1 0 NC_01 NC_02 MP_03 N002 MP_04 N003 MP_05 MP_06 0 N001 IN IN OUT LTM8003
+.tran 750u startup
+* 1MHz
+.lib LTM8003.sub
+.backanno
+.end

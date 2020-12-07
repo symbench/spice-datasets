@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3543.asc
+V1 IN 0 4
+C1 OUT N003 10p
+L1 N001 OUT 3.3µ Rpar=2K
+R1 OUT N003 300K
+R2 N003 0 200K
+XU1 N001 N002 0 N003 IN IN 0 LTC3543
+C2 OUT 0 10µ
+Rload OUT 0 2.5
+.tran 900u startup
+.lib LTC3543.sub
+.backanno
+.end

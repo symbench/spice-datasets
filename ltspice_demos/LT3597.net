@@ -1,0 +1,30 @@
+* Z:\mnt\spice-netlists\LT3597.asc
+L1 N005 N006 82µ Rpar=20K
+R1 N006 N011 93.1K
+R2 N011 0 3.01K
+D1 N006 N010 LXHL-BW02 N=9
+R3 N009 N012 90.9K
+R4 N012 0 49.9K
+V1 N001 0 48
+C1 N006 0 4.7µ
+R5 N009 N014 10K
+R6 N014 0 100K
+R7 0 N013 33.2K
+R8 0 N015 20K
+D2 N008 N005 PMEG6010AED
+C2 N004 N005 .22µ
+XU1 N009 N008 N001 N005 N003 N013 0 N015 MP_01 MP_02 N011 MP_03 MP_04 0 N002 N004 MP_05 N007 MP_06 N014 N009 N010 MP_07 MP_08 N012 LT3597
+R9 N001 N003 270K
+R10 N003 0 91K
+C3 N001 0 4.7µ
+C4 N002 0 4.7µ
+V2 N002 0 5
+V3 N007 0 PULSE(5 0 1.6m 1u 1u 400u 800u)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+* LT3597 - 60V Triple Step-Down LED Driver \nInput: 48V       Output: 9 LEDs in Series, 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3597.sub
+.backanno
+.end

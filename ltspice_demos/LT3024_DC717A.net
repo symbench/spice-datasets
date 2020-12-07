@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT3024_DC717A.asc
+R1 OUT1 N002 422K
+R2 N002 0 249K
+V1 IN 0 3.7
+Rload1 OUT1 0 6.6
+C1 OUT1 0 10µ
+C2 IN 0 1µ
+R3 OUT2 N004 261K
+R4 N004 0 249K
+Rload2 OUT2 0 25
+C3 OUT2 0 10µ
+C4 OUT1 N001 .01µ
+C5 OUT2 N003 .01µ
+XU1 N001 OUT1 MP_01 0 OUT2 N003 N004 IN IN MP_02 IN N002 LT3024
+.tran 40m startup
+* LT3024 - Dual 100mA/500mA, Low Dropout, Low Noise, µPower Regulator\nDual Low Noise Regulators\nInput: 3.7V to 20V     Output: 3.3V @ 500mA & 2.5V @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT3024.lib
+.backanno
+.end

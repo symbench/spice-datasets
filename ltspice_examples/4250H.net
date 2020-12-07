@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\4250H.asc
+R1 N006 N005 1K
+C4 OUT- N006 15n
+R5 N005 N008 10
+C2 N005 N004 470n
+M1 OUT- N008 N004 N004 IRF530
+R6 N004 0 20m
+R3 N001 N003 6.49K
+R4 OUT+ N001 549K
+C1 N001 0 0.1µ
+R7 N003 0 10K
+C3 OUT+ OUT- 100µ Rser=25m
+V3 N007 OUT- PWL(0 0 360m 0 360.001m 1)
+S2 OUT- OUT+ N007 OUT- SoftShort
+XU1 N002 N003 N001 0 N004 N005 OUT- OUT+ LT4250H
+Sload OUT- OUT+ N002 OUT- Load
+V1 0 OUT+ PWL(0 0 10m -48 220m -48 220.1m -70)
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 400m startup
+.model SoftShort SW(Ron=3 Roff=10G Vt=0.5 Vh=-0.1)
+.model Load SW(Ron=40 Roff=10G Vt=0.5 Vh=-0.1)
+.lib LT4250H.sub
+.backanno
+.end

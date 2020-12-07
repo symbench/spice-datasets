@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3460.asc
+L1 IN N001 22µ Rpar=2K
+V1 IN 0 5
+D1 N001 OUT MBR0540
+C1 OUT 0 1µ
+R1 OUT N003 130K
+R2 N003 0 15K
+C2 OUT N003 22p
+Rload OUT 0 171
+R3 IN N002 10K
+C3 N002 0 .1µ
+XU1 N001 0 N003 N002 IN LT3460
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT3460.sub
+.backanno
+.end

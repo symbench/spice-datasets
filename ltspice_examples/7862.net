@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\7862.asc
+XU1 N008 N007 N011 N010 P001 NC_01 N005 N001 N002 N006 0 N004 IN NC_02 IN 0 N009 0 N003 OUT LTC7862
+V1 IN 0 pwl(0 0 20u 28 30m 28 35m 100)
+M1 IN N005 N001 N001 Si7336ADP m=2
+M2 N001 N006 0 0 Si7336ADP
+L1 N001 OUT 6.8µ Rser=1.5m
+C1 OUT 0 100µ
+R2 OUT 0 2
+R3 OUT N007 1Meg
+R4 N007 0 24.3K
+C2 N004 0 4.7µ
+C3 0 N008 .1µ
+C4 0 N009 .1µ
+C5 0 N010 1µ
+R5 P001 0 36.5K
+C6 0 N011 6.8n Rser=4.75K Cpar=100p
+C7 N002 N001 .47µ
+D1 N004 N002 1N5818
+R1 N001 N003 2K
+C8 OUT N003 2.2µ Rpar=2.2K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 36m startup
+.lib LTC7862.sub
+.backanno
+.end

@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1719.asc
+V1 +V 0 3.3
+C1 P001 N002 1.6p Rser=45 Lser=15.6m Cpar=6p
+R1 N002 0 620
+R2 +V N002 2K
+R3 OUT N001 2K
+C2 N001 0 .1µ
+R4 OUT P001 220
+XU1 +V N002 N001 0 0 0 OUT +V LT1719
+R5 N001 0 1.8K
+.tran 250u startup
+* 2.7 to 6V Crystal Oscillator with TTL/CMOS Output
+.lib LTC.lib
+.backanno
+.end

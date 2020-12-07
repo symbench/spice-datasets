@@ -1,0 +1,39 @@
+* Z:\mnt\spice-netlists\LT8710_DC2067A_TA01A.asc
+V1 IN 0 12
+R1 N008 0 10K
+R2 IN N008 12.7K
+R3 N010 0 118K
+C1 N009 0 4.4µ Rser=2m
+L1 IN N001 2.2µ Rser=4.2m
+L2 OUT N002 2.2µ Rser=4.2m
+C2 N015 0 47n Rser=2m
+C3 N016 0 10n Rser=2m
+C4 N013 0 100p
+C5 N014 0 4.7n
+R4 N013 N014 12.1K
+C6 N004 N007 0.47µ Rser=2m
+R5 N006 0 6m
+R6 N005 0 2m
+R7 OUT N011 60.4K
+M§Q1 N001 N003 N005 N005 IPP039N04L
+D1 N004 N006 PMEG2010EA
+R8 N004 N006 499
+M§Q2 N002 N004 N006 N006 Si4401DY
+C7 N001 N002 30µ Rser=2m
+C8 0 OUT 330µ Rser=16m
+C9 OUT 0 200µ Rser=0.002
+R9 N009 N012 100K
+XU1 N011 N013 N016 N012 N015 0 N006 N009 0 N007 N003 N009 IN 0 N005 N008 0 N010 MP_01 0 LT8710
+Rload OUT 0 0.84
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.5m startup
+K1 L1 L2 0.97
+* LT8710 -- Synchronous SEPIC/ Inverting / Boost Controller with Output Current Control\nSynchronous Inverting DC/DC Converter with Output Current Control\nInput: 4.5V to 28V       Output: -5V @ 6A, Fsw = 300kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT8710.sub
+.backanno
+.end

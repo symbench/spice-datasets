@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT8331_TA04_BOOST.asc
+XU1 N002 MP_01 IN MP_02 N003 MP_03 OUT MP_04 N004 N005 N006 0 MP_05 N001 MP_06 MP_07 0 LT8331
+C1 N006 0 10n
+R1 N005 0 63.4K
+V1 IN 0 48
+L1 N001 IN 100µ Rser=20m
+R2 IN N002 1Meg
+R3 N002 0 59K
+D1 N001 OUT RB058L150
+R4 OUT N004 1Meg
+R5 N004 0 13.3K
+Rload OUT 0 2000
+C4 N003 0 1µ
+C5 IN 0 4.7µ
+C2 OUT 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+* LT8331 - Low IQ Boost/SEPIC/Flyback/Inverting DC/DC Converter with 500mA, 140V Switch\n120V Boost Converter\nInput: 36V to 72V     Output: 120V @ 60mA, Fsw = 450KHz
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT8331.sub
+.backanno
+.end

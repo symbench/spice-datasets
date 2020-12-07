@@ -1,0 +1,39 @@
+* Z:\mnt\design.r\spice\examples\ADP5055.asc
+L1 N005 OUT1 .8µ Rser=10m
+R11 OUT1 N002 100K
+R1 OUT1 N008 6.67k
+R2 N008 0 10k
+C1 OUT1 0 470µ Rser=6m
+Rload1 OUT1 0 1
+C6 0 N001 4.7µ
+R12 N021 0 215K
+C2 N004 N005 .1µ
+C4 N010 N011 .1µ
+L3 N017 OUT3 2.2µ Rser=86m
+R5 OUT3 N020 15k
+R6 N020 0 10k
+C5 OUT3 0 47µ x3 Rser=6m
+Rload3 OUT3 0 5
+C7 N016 N017 .1µ
+R8 N022 0 23.7k
+R9 N003 0 402k
+C8 N006 0 1.2n
+R10 N007 N006 22.6k
+R13 N009 0 402k
+C10 N018 0 2.7n
+R16 N019 N018 40.2k
+C9 N012 0 1.2n
+R14 N013 N012 22.6k
+R15 N015 0 499k
+V1 IN 0 13.2
+L2 N011 OUT2 .8µ Rser=10m
+R3 OUT2 N014 6.67k
+R4 N014 0 10k
+C3 OUT2 0 470µ Rser=6m
+Rload2 OUT2 0 1
+XU1 0 N022 N003 N008 N007 N021 IN 0 N001 IN IN N004 N016 0 N017 IN N010 IN N015 N020 N019 N002 IN N013 N014 N009 IN N011 N005 IN ADP5055 Vref1=.6 Vref2=.6 Vref3=.6 FT1=3 FT2=3 FT3=3
+.tran 2.5m startup
+* Please read the following notes carefully, as the model presents different user interface from\nthe real part does.\n \n(1) All PMBus communication and memory address related functions and pins are not modeled. \n \n(2) Changes to all parameter values during the simulation running will not be in effect, unless the\nsimulation is stopped and restarted. This is different from the operation of the part, which will\n respond to the commanded changes while running. \n \n(3) The sequence control on each channel is not modeled. \n \n(4) The following parameters can be defined, by right-clicking the symbol of ADP5055.If any value \nof these parameters are set beyond the scope discribed in the datasheet, the resulting simulation\noutcomes are not meaningful.\n \nVref1, Vref2 and Vref3: set the reference voltage of channal1, channel2 and channel3 respectively\n \nFT1, FT2 and FT3: set the Fast Enhanced Transient Mode for channal1, channel2 and channel3 respectively \n0 for Fast Enhanced Transient Mode disabled\n1 for 1.5% window with 3x Gm \n2 for 1.5% window with 5x Gm\n3 for 2.5% window with 5x Gm
+.lib ADP5055.sub
+.backanno
+.end

@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\varistor.asc
+R1 N001 OUT 1K
+A1 IN 0 0 0 0 0 OUT 0 VARISTOR Rclamp=1
+V1 N001 0 SIN(0 5 10K)
+V2 IN 0 PULSE(-3 3 0 .5m .5m 0 1m)
+.tran 1u 3m 0 1u
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

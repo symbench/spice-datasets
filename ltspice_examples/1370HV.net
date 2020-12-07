@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\1370HV.asc
+L1 IN N001 6.8µ Rser=0.072
+D1 N001 OUT MBR745
+R1 N001 N002 10
+R2 OUT N004 53.6K
+R3 N004 0 6.19K
+R4 N006 N007 470
+C1 N002 OUT 1000p Rser=0.04
+C2 OUT 0 180µ Rser=0.05
+C3 0 N007 .1µ
+V1 IN 0 5
+XU1 N006 N004 N003 0 N001 N005 IN LT1370
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LT1370.sub
+.backanno
+.end

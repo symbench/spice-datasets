@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\1441.asc
+V1 +V 0 3.3
+XU1 OUT 0 N002 N001 +V LTC1441
+C1 OUT N002 .39p Rser=5K Lser=60 Cpar=3.9p
+R1 N002 0 470K
+R2 +V N002 1Meg
+C2 N001 0 10p
+R3 OUT N001 1.2Meg
+.tran 3m startup
+* 32.768KHz "Watch Crystal" Oscillator
+.lib LTC.lib
+.backanno
+.end

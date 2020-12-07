@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\3107.asc
+XU1 N009 N010 OUT N003 N008 0 NC_01 N002 N005 N007 LTC3107
+V1 IN 0 PWL(0 0 40m 0 40.1m 90m 0.5 90m 0.501 0) Rser=1
+C1 IN 0 220µ Rser=5m Rpar=1Meg
+L1 N007 IN 7.5µ Rser=85m
+L2 0 N001 75m Rser=340 Cpar=30p
+C2 N002 N001 1n
+C3 N005 N001 330p Rpar=499K
+C4 OUT 0 47µ
+R1 OUT 0 36K
+S1 N003 N004 N006 0 SW
+V2 N004 0 3.6
+V3 N006 0 PWL(0 0 200u 0 +1u 1)
+C5 N008 0 10µ
+C6 N010 0 10µ
+C7 N009 0 10µ
+.tran 1 startup
+K1 L1 L2 0.98
+* 1:100
+.model SW SW(Ron=10m Roff=10G Vt=0.5 Vh=-0.3)
+.lib LTC3107.sub
+.backanno
+.end

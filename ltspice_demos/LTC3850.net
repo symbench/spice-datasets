@@ -1,0 +1,58 @@
+* Z:\mnt\spice-netlists\LTC3850.asc
+M§Q1 N001 N004 N006 N006 HAT2168H
+M§Q2 N006 N010 0 0 HAT2165H
+C1 N006 N007 .1µ
+D1 N003 N007 1N5817
+C2 N003 0 4.7µ
+L1 N006 OUT1 1.2µ Ipk=24 Rser=0.00448 Rpar=883 Cpar=4.71p mfg="Wurth Elektronik" pn="744324100 WE-HC"
+C3 N012 OUT1 .1µ
+R1 N014 0 20K
+V1 N001 0 12
+M§Q3 N001 N005 N009 N009 HAT2168H
+M§Q4 N009 N011 0 0 HAT2165H
+C4 N009 N008 .1µ
+D2 N003 N008 1N5817
+C5 N013 OUT2 .1µ
+R2 N015 0 20K
+R3 OUT2 N015 10.0K
+L2 N009 OUT2 470n Ipk=24 Rser=0.003 Rpar=346 Cpar=4.16p mfg="Wurth Elektronik" pn="744312047 WE-HC"
+R4 N003 N024 100K
+XU1 N020 N012 OUT1 N014 N025 0 N023 N017 0 N022 N018 N015 OUT2 N013 N021 N005 N009 N008 N011 0 N003 NC_01 N010 N002 N007 N006 N004 N024 NC_02 LTC3850
+C6 OUT1 0 47µ Rser=2m
+R5 N003 N025 10K
+R6 0 N025 3.16K
+C7 N016 0 .001µ
+C8 N017 0 100p
+R7 N017 N016 10K
+C9 N020 0 100p
+C10 N018 0 100p
+C11 N019 0 .001µ
+R8 N018 N019 5.62K
+C12 N021 0 100p
+R9 N006 N012 4.02K
+R10 N012 OUT1 5.62K
+R11 OUT1 N014 43.2K
+C13 OUT2 0 47µ Rser=2m x2
+R12 N009 N013 1.65K
+R13 OUT2 N013 9.09K
+C14 OUT1 0 330µ V=4 Irms=4.1 Rser=0.009 MTBF=0 Lser=0 mfg="KEMET" pn="T520D337M004ASE009" type="Tantalum" ppPkg=1
+C15 OUT2 0 330µ V=4 Irms=4.1 Rser=0.009 MTBF=0 Lser=0 mfg="KEMET" pn="T520D337M004ASE009" type="Tantalum" ppPkg=1
+C16 N002 0 0.1µ
+R14 N002 N001 10
+Rload2 OUT2 0 0.12
+Rload1 OUT1 0 0.25
+C17 N001 0 22µ Rser=2m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 250u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+* 2.5V @ 10A
+* 1.2V @ 10A
+* LTC3850 synchronous step-down DC/DC converter\nInput: 12V   Outputs: 2.5V @ 10A and 1.2V @ 10A, Fswitch = 500kHz
+* Notes:\n1. Small value are used for TRACK/SS capacitors to reduce simulation time.\n    The typical value for actual applications will vary from 10nF to 100nF.\n2. More output capacitors may be needed to meet load step and \n    output voltage requirements.
+.lib LTC3850.sub
+.backanno
+.end

@@ -1,0 +1,49 @@
+* Z:\mnt\spice-netlists\LT3763_TA07.asc
+XU1 N012 N005 N001 N004 N006 N003 N002 N014 N022 N011 N021 0 N006 N006 N023 N018 N015 N020 N017 N025 MP_01 N005 MP_02 NC_03 N008 N009 N007 LT3763
+R1 N025 0 82.5K
+C1 N023 0 .01µ
+C2 N019 0 4700p
+C3 N006 0 2.2µ
+R2 IN N001 10m
+R3 IN N002 1K
+R4 N001 N003 1K
+C4 N002 N003 1µ
+R5 IN N011 348K
+R6 N011 0 12.1K
+C5 N001 0 4.7µ
+C6 N005 0 4.7µ
+D1 N005 N007 1N5819
+C7 N007 N009 .1µ
+M§Q1 N001 N008 N009 N009 RJK0305DPB
+M§Q2 N009 N012 0 0 RJK0305DPB
+L1 N009 N010 12µ Rser=28m
+R7 N010 OUT 10m
+R8 OUT N021 121K
+R9 N021 0 12.1K
+M§Q3 N024 N022 0 0 Si7540DP_N
+R10 N020 N019 26.1K
+C8 N001 0 10µ
+R11 N021 N024 182K
+R12 N005 N022 475K
+R13 N010 N015 10
+R14 OUT N018 10
+C9 N015 N018 .033µ
+I1 0 IN 1.5
+D2 IN 0 MUR460 N=60
+C10 N013 N016 6m Rpar=5
+V1 N004 0 PWL(.5m 0 +20u 5)
+R15 OUT N013 .1
+V2 N016 0 12
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 7m startup
+* LT3763 - 60V High Current Step-Down LED Driver Controller \n70W, Solar Powered SLA Battery Charger with Maximum Power Point Regulation\nInput: 37V to 60V     Output: 14V Max @ 5A
+* Note:\n  Expand the simulation time to 22ms to let Vout sag to the float voltage and observe the inductor current turning back at a low level.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* SOLAR PANEL
+* BATTERY
+.lib LT3763.sub
+.backanno
+.end

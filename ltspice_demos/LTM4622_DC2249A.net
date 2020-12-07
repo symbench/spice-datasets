@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTM4622_DC2249A.asc
+XU1 NC_01 OUT2 IN 0 NC_02 IN 0 NC_03 N002 N004 NC_04 OUT1 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 NC_11 MP_12 IN MP_13 MP_14 MP_15 MP_16 NC_17 N003 N001 LTM4622
+V1 IN 0 12
+R1 N002 0 60.4K
+R2 N001 0 13.3K
+C1 OUT1 0 47µ Rser=5m
+Rload1 OUT1 0 1.32
+C2 OUT2 0 47µ Rser=5m
+Rload2 OUT2 0 .48
+C3 IN 0 10µ Rser=2m
+C4 IN 0 22µ x2 V=16 Irms=0 Rser=2m Lser=0
+C5 OUT1 0 22µ Rser=5m
+C6 OUT2 0 22µ Rser=5m
+C7 N003 0 .001µ
+C8 N004 0 .001µ
+.tran .7m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LTM4622 - Dual Ultrathin 2.5A or Single 5A Step-Down DC/DC µModule Regulator\nDual Step-Down Regulator\nInput: 3.6V to 20V   Outputs: 3.3V @ 2.5A, 1.2V @ 2.5A
+.lib LTM4622.sub
+.backanno
+.end

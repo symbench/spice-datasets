@@ -1,0 +1,95 @@
+* Z:\mnt\spice-netlists\LTC3829_6-phase.asc
+V1 IN 0 12
+C1 0 N006 4.7µ
+M§Q1 IN N009 N013 N013 RJK0305DPB
+M§Q2 N013 N015 0 0 RJK0301DPB m=2
+C2 N011 N013 .1µ
+D1 N006 N011 CMDSH2-3
+L1 N013 N014 .33µ Rser=0.37m
+R1 N014 OUT 1m
+C3 N017 N018 10p
+R2 N014 N017 100
+R3 OUT N018 100
+M§Q3 IN N019 N023 N023 RJK0305DPB
+M§Q4 N023 N025 0 0 RJK0301DPB m=2
+C4 N021 N023 .1µ
+D2 N006 N021 CMDSH2-3
+L2 N023 N024 .33µ Rser=0.37m
+R4 N024 OUT 1m
+C5 N026 N029 10p
+R5 N024 N026 100
+R6 OUT N029 100
+R7 N012 0 100K
+C6 OUT 0 330µ X12 Rser=9m
+XU1 0 N027 NC_01 N028 N017 N018 N026 N029 N030 N012 N002 N001 N033 N031 N020 0 N010 NC_02 N005 N008 N004 N007 NC_03 N006 IN N021 N019 N023 N025 N015 N013 N009 N011 N016 0 N006 N022 N032 0 LTC3829
+C7 N030 0 .001µ
+C8 N031 0 1500p Rser=10k Cpar=220p
+R8 N028 N027 49.9
+R9 OUT N027 1µ
+R10 N032 N033 30.1K
+R11 N033 0 20K
+M§Q5 IN N008 N004 N004 RJK0305DPB
+M§Q6 N004 N007 0 0 RJK0301DPB m=2
+C9 N005 N004 .1µ
+D3 N006 N005 CMDSH2-3
+L3 N004 N003 .33µ Rser=0.37m
+R12 N003 OUT 1m
+C10 N002 N001 10p
+R13 N003 N002 100
+R14 OUT N001 100
+R15 N022 0 28K
+R16 N020 0 40.2K
+R17 N010 N006 100K
+C11 IN 0 10µ x3
+C12 OUT 0 100µ X6 Rser=1.4m
+I1 OUT 0 PWL(0 0 700u 0 701u 60 850u 60 851u 0)
+C13 0 N039 4.7µ
+M§Q10 IN N042 N046 N046 RJK0305DPB
+M§Q11 N046 N048 0 0 RJK0301DPB m=2
+C14 N044 N046 .1µ
+D4 N039 N044 CMDSH2-3
+L4 N046 N047 .33µ Rser=0.37m
+R18 N047 OUT 1m
+C15 N049 N050 10p
+R19 N047 N049 100
+R20 OUT N050 100
+M§Q12 IN N051 N054 N054 RJK0305DPB
+M§Q13 N054 N056 0 0 RJK0301DPB m=2
+C16 N052 N054 .1µ
+D5 N039 N052 CMDSH2-3
+L5 N054 N055 .33µ Rser=0.37m
+R21 N055 OUT 1m
+C17 N057 N059 10p
+R22 N055 N057 100
+R23 OUT N059 100
+R24 N045 0 100K
+XU2 0 NC_04 NC_05 N058 N049 N050 N057 N059 N030 N045 N035 N034 N033 N031 N020 0 N043 N016 N038 N041 N037 N040 NC_06 N039 IN N052 N051 N054 N056 N048 N046 N042 N044 NC_07 0 N039 N053 NC_08 0 LTC3829
+C18 N030 0 .001µ
+C19 N031 0 100p
+M§Q14 IN N041 N037 N037 RJK0305DPB
+M§Q15 N037 N040 0 0 RJK0301DPB m=2
+C20 N038 N037 .1µ
+D6 N039 N038 CMDSH2-3
+L6 N037 N036 .33µ Rser=0.37m
+R25 N036 OUT 1m
+C21 N035 N034 10p
+R26 N036 N035 100
+R27 OUT N034 100
+R28 N053 0 28K
+R29 N020 0 40.2K
+R30 N043 N039 100K
+C22 IN 0 10µ x3
+R31 N058 N027 49.9
+Rload1 OUT 0 25m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* LTC3829 - 3-Phase, Single Output Synchronous Step-Down DC/DC Controller with Diffamp\nHigh Current 6-Phase Single Output Step-Down Regulator\nInput: 12V, Output: 1.5V @120A, Fswitch = 400kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.tran 1m startup
+* Notes:\n1. Small value are used for TRACK/SS capacitors to reduce simulation time.\n    The typical value for actual applications will vary from 10nF to 100nF.\n2. More output capacitors may be needed to meet load step and \n    output voltage requirements.\n3. For AVP, change R9 to be 100ohm, and adjust R8 and R25 for desired Rdroop.  Redo the compensation if necessay.\n4. For nonlinear function, connect a resistor between Ifast pin and GND to set the tripping threshold.\n5. For stage shedding, connecting the Mode pin to INTVCC, and the threshold is ajusted through R16 and R33.
+.lib LTC3829.sub
+.backanno
+.end

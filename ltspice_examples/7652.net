@@ -1,0 +1,33 @@
+* Z:\mnt\design.r\spice\examples\7652.asc
+V1 +V 0 5
+V2 -V 0 -5
+J1 +V IN N002 2N5486
+D1 N002 N003 1N4148
+XU2 N003 +V -V NC_01 OUT LT1010
+Q1 N003 N005 N008 0 2N2222
+R3 -V N008 100
+C1 0 N004 .1µ
+R1 OUT N004 10Meg
+C2 N007 N006 2000p
+R2 N005 N006 10K
+C3 0 N005 .01µ
+R4 IN N009 10Meg
+V3 N001 0 PULSE(-100m 100m 0 10n 10n 1u 2u)
+R5 N009 N007 1K
+C4 0 N009 .1µ
+R6 IN N001 10K
+C5 OUT IN 30p
+XU1 N004 N007 +V 0 N006 LTC1052
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 250u
+* DC Stabilized FET Probe
+.lib LTC.lib
+.backanno
+.end

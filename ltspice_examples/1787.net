@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1787.asc
+I1 N001 0 PULSE(-100 100 10u 200u 200u 200u 600u)
+R3 N002 N001 1.6m
+V4 N002 0 5
+XU1 NC_01 N001 0 Vout N003 N002 NC_02 LT1787
+V1 N003 0 1.25
+.tran 600u
+.lib LTC.lib
+.backanno
+.end

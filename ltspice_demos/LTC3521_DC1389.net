@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3521_DC1389.asc
+V1 IN 0 3
+R1 OUT1 N008 1Meg
+R2 N008 0 221K
+C2 OUT1 0 22µ
+L1 N004 OUT2 6.8µ Rser=100m
+R3 OUT2 N006 137K
+R4 N006 0 68.1K
+C3 OUT2 0 10µ
+L2 N003 N005 4.7µ Rser=65m
+Rload2 OUT2 0 3
+Rload1 OUT1 0 4
+XU1 IN N007 N002 N001 IN 0 IN N008 IN IN IN 0 MP_01 N005 N003 OUT1 N009 0 MP_02 N004 0 IN N010 N006 LTC3521
+L3 N009 OUT3 6.8µ Rser=100m
+R5 OUT3 N010 100K
+R6 N010 0 100K
+C1 OUT3 0 10µ
+Rload3 OUT3 0 2
+C4 IN 0 22µ
+R7 N001 IN 10K
+R8 IN N007 10K
+R9 IN N002 10K
+.tran 750u startup
+* 3.3V
+* 1.8V
+* 1.2V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3521 - 1A Buck-Boost DC/DC and Dual 600mA Buck DC/DC Converters\nInput: 2.4V to 5V     Ouputs: 3.3V @ 1A, 1.8V @ 600mA & 1.2V @ 600mA
+.lib LTC3521.sub
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\8042.asc
+XU1 IN IN IN N003 0 NC_01 IN NC_02 MP_03 MP_04 0 N002 N001 NC_05 MP_06 MP_07 0 LTM8042
+V1 IN 0 24
+R1 N003 0 33.2K
+C1 N001 0 4.7µ
+D1 N002 0 LXK2-PW14 N=8
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LTM8042.sub
+.backanno
+.end

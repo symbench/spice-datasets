@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\7138.asc
+XU1 N001 0 IN N002 IN 0 N003 0 OUT N003 N004 NC_01 LTC7138
+V1 IN 0 72
+L1 N001 OUT 220µ Rser=.5
+D1 N002 N001 MURS120
+C1 OUT 0 22µ Rser=10m
+Rload OUT 0 12.5
+R2 N004 0 150K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+.lib LTC7138.sub
+.backanno
+.end

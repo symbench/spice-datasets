@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LT3014B_TA01.asc
+V1 IN 0 12
+R1 OUT N001 3.92Meg
+R2 N001 0 1.27Meg
+C1 OUT 0 0.47µ
+C2 IN 0 1µ
+XU1 OUT N001 MP_01 0 MP_02 MP_03 MP_04 IN LT3014B
+Rload OUT 0 250
+.tran .03 startup
+* LT3014B - 20mA, 3V to 80V Low Dropout µPower Linear Regulator\nAutomotive 5V Supply\nInput: 5.4V to 80V       Output: 5V @ 20mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3014.lib
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3630A.asc
+V1 IN 0 72
+L1 N001 OUT 22µ Rser=50m
+C1 OUT 0 22µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+Rload OUT 0 24
+R1 OUT N003 200K
+R2 N003 0 147K
+XU1 N001 MP_01 IN MP_02 N002 0 N004 0 N003 N004 NC_03 NC_04 LTC3630
+.tran 2m startup
+.lib LTC3630.sub
+.backanno
+.end

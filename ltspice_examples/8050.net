@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\8050.asc
+C1 OUT 0 22µ
+V1 IN 0 48
+R1 N003 0 34.8K
+R2 N002 0 57.6K
+Rload OUT 0 6
+XU1 N001 OUT N001 IN IN MP_01 NC_02 N003 NC_03 N002 0 LTM8050
+.tran 500u startup
+.lib LTM8050.sub
+.backanno
+.end

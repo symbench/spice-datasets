@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\8021.asc
+XU1 IN IN 0 N001 OUT OUT LTM8021
+V1 IN 0 20
+R1 N001 0 19.1K
+Rload OUT 0 10
+C1 OUT 0 2.2µ
+.tran 500u startup
+.lib LTM8021.sub
+.backanno
+.end

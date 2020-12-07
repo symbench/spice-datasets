@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1168.asc
+V1 +V 0 10
+V2 -V 0 -10
+R1 N002 N004 1K
+V3 N001 0 SINE(0 50m 1K)
+XU1 N002 0 N001 -V 0 N003 +V N004 LT1168
+.tran 3m
+.lib LTC.lib
+.backanno
+.end

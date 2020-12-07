@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTM8042.asc
+XU1 IN N003 IN N006 0 N007 IN NC_01 MP_02 MP_03 IN N004 N001 N002 MP_04 MP_05 0 LTM8042
+V1 IN 0 12
+R1 N006 0 30.1K
+C1 N001 0 10µ Rser=.010
+D1 N005 0 LXK2-PW14 N=5
+C2 IN 0 4.7µ
+C3 0 N007 .01µ
+M§Q1 N005 N002 N004 N004 FDS6975
+V2 N003 0 PWL(0 0 1u 2)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m
+* LTM8042 1A uModule Boost LED Driver\nInput: 12V       Output: 1A through a string of 5 LEDs\nfsw = 600kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTM8042.sub
+.backanno
+.end

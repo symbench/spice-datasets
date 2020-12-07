@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTM4628.asc
+V1 IN 0 12
+C1 Vout2_1.2V 0 100µ Rser=5m
+R1 N006 0 40.2K
+C2 N008 0 0.001µ
+C3 IN 0 22µ Rser=5m x4
+XU1 N008 NC_01 N006 0 N007 NC_02 N009 Vout2_1.2V Vout1_1.5V Vout2_1.2V 0 N005 NC_03 Vout1_1.5V N005 N003 N004 MP_04 NC_05 MP_06 MP_07 MP_08 MP_09 NC_10 N001 IN MP_11 MP_12 MP_13 MP_14 NC_15 NC_16 NC_17 0 N002 MP_18 MP_19 NC_20 LTM4628
+C7 N009 0 0.001µ
+C8 Vout1_1.5V 0 100µ Rser=5m
+C9 Vout1_1.5V 0 470µ Rser=0.010
+R2 N007 0 60.4K
+R3 N002 0 100K
+C10 Vout2_1.2V 0 470µ Rser=0.010
+R4 N003 N001 10K
+R5 N001 N004 10K
+Rload1 Vout1_1.5V 0 0.1875
+Rload2 Vout2_1.2V 0 0.15
+.tran 750u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+* LTM4628- Dual 8A,  Step-Down DC/DC µmodule Regulator\nInput : 4.5 V to 26.5V, Output: 1.5 V@8A and 1.2V@8A
+.lib LTM4628.sub
+.backanno
+.end

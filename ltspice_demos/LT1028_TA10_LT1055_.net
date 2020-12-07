@@ -1,0 +1,39 @@
+* Z:\mnt\spice-netlists\LT1028_TA10_LT1055_.asc
+XU1 N001 N003 V+ V- OUT LT1028
+D1 OUT N005 1N4148
+D2 N008 N010 1N4148
+R1 N001 0 1K
+R2 N002 N001 1K
+C1 OUT N002 .047µ
+R3 N003 N007 2.4K
+R4 OUT N003 5.6K
+C2 OUT N003 10p
+R5 N005 N004 49.9K
+R6 N004 N009 100K
+C3 N006 N004 15µ
+J1 N007 N009 0 2N4338
+C4 N001 0 .047µ
+V1 V+ 0 15
+V2 V- 0 -15
+R7 N007 0 560
+R10 N010 0 10K
+R11 V+ N008 4.7K
+XU3 N008 0 LT1634-1.25
+XU4 N010 N005 V+ V- N004 LT1055
+R9 N007 N009 10K
+R12 N009 0 10K
+R13 N005 N006 500
+C5 N005 N004 4.7µ
+R8 N005 0 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran .3 startup
+* LT1028 - Ultra Low Noise Precision High Speed Op Amps\nLT1055 - Precision, High Speed, JFET Input Operational Amplifiers\nLT1634 - µPower Precision Shunt Voltage Reference\nSuper Low Distortion Variable Sine Wave Oscillator
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.lib LTC3.lib
+.backanno
+.end

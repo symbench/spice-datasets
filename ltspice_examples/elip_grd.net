@@ -1,0 +1,70 @@
+* Z:\mnt\design.r\spice\examples\elip_grd.asc
+L1 N003 N004 {La}
+C1 N004 0 {Ca}
+R2 0 S21 {Zo}
+V1 N009 0 0 AC 2
+L2 N004 N005 {La}
+L6 N002 N003 {Lb1}
+L7 N012 N016 {Lb2}
+C4 N012 N002 {Cb1}
+C5 N003 N012 {Cb1}
+C6 N016 0 {Cb2}
+L8 N007 N008 9976n
+L9 N006 N007 6626n
+L10 N005 N006 6931n
+C7 N005 0 2243p
+C8 N006 0 4000p
+C9 N007 0 4608p
+C10 N008 0 3186p
+C11 N008 N007 511p
+C12 N007 N006 2583p
+C13 N006 N005 1882p
+R8 0 N013 {Zo}
+R9 N009 N008 {Zo}
+R12 N013 N009 {Zo}
+E S11 0 N008 N013 1
+L3 N001 N002 {Lc1}
+L4 N011 N015 {Lc2}
+C2 N011 N001 {Cc1}
+C3 N002 N011 {Cc1}
+C14 N015 0 {Cc2}
+L5 S21 N001 {Ld1}
+L11 N010 N014 {Ld2}
+C15 N010 S21 {Cd1}
+C16 N001 N010 {Cd1}
+C17 N014 0 {Cd2}
+.param  F1=0.28e6
+.param  La=Zo/4/pi/F1
+.param  Ca=1/pi/Zo/F1
+K1 L1 L2 1.
+.AC lin 401 1e-6 3e6
+.param Lob=Zo/2/pi/F2
+.param Cob=1/Zo/2/pi/F2
+.param Lb1=Lob*4*A2
+.param Lb2=Lob/4/A2
+.param Cb1=Cob/2/A2
+.param Cb2=Cob/(0.25/A2-A2)
+.param F2=0.36e6
+.param A2=0.72
+.param F3=0.6e6
+.param A3=0.42
+.param Loc=Zo/2/pi/F3
+.param Coc=1/Zo/2/pi/F3
+.param Lc1=Loc*4*A3
+.param Lc2=Loc/4/A3
+.param Cc1=Coc/2/A3
+.param Cc2=Coc/(0.25/A3-A3)
+.param F4=0.84e6
+.param A4=0.28
+.param Lod=Zo/2/pi/F4
+.param Cod=1/Zo/2/pi/F4
+.param Ld1=Lod*4*A4
+.param Ld2=Lod/4/A4
+.param Cd1=Cod/2/A4
+.param Cd2=Cod/(0.25/A4-A4)
+.param  Zo=50
+* Partial group delay correction of an elliptic filter
+* Illustrates getting Sii (reflexion, transmission) parameters from LTspice simulation
+* This example schematic is supplied for informational/educational purposes only.\nContributed by Dominique Szymik.
+.backanno
+.end

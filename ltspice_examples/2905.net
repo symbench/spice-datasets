@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\2905.asc
+V1 N002 0 PWL(0 0 1u 5)
+V2 N001 0 PWL(0 0 1u 3.3)
+C1 N003 0 .039µ
+R1 N005 N004 100K
+V3 N005 0 5
+XU1 0 N004 N003 N001 N002 N002 N002 N002 LTC2905
+.tran 400m
+.lib LTC2905.sub
+.backanno
+.end

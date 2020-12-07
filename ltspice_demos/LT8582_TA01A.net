@@ -1,0 +1,43 @@
+* Z:\mnt\spice-netlists\LT8582_TA01A.asc
+V1 IN 0 5
+L1 IN N001 4.7µ Rser=1.5m
+D1 N001 N002 1N5818
+C1 N002 0 10µ Rser=5m
+R1 N002 N003 130K
+R2 N010 0 53.6K
+C2 N008 0 .002µ
+C3 N007 0 4700p Rser=6.49K Cpar=47p
+C4 OUT1 0 10µ V=25 Irms=0 Rser=0.001 Lser=0 mfg="TDK" pn="C575OX7RIE106M" type="X7R"
+XU1 N001 IN N006 N005 N007 N003 N016 N014 NC_01 N013 IN N017 N017 NC_02 N015 N011 N012 N009 0 N008 N010 N004 N009 N001 0 LT8582
+R3 IN N004 230K
+R4 IN N006 100K
+M§Q1 OUT1 N005 N002 N002 FDS6575
+R5 N002 N005 6.04K
+R6 N011 0 53.6K
+C5 N012 0 .002µ
+C6 N014 0 2200p Rser=14.7K Cpar=47p
+R7 IN N013 100K
+R8 IN N015 230K
+L2 IN N017 4.7µ Rser=1.5m
+C7 N017 N018 2.2µ
+D2 N018 0 1N5818
+L3 OUT2 N018 4.7µ Rser=1.5m
+R9 OUT2 N016 143K
+C8 OUT2 0 10µ V=25 Irms=0 Rser=0.001 Lser=0 mfg="TDK" pn="C575OX7RIE106M" type="X7R"
+C9 IN 0 4.7µ x2
+Rload1 OUT1 0 21.8
+Rload2 OUT2 0 21.8
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+K1 L2 L3 1
+* LT8582 - Dual 3A Boost/Inverting/SEPIC DC/DC Converter with Fault Protection\n1.5MHz +5V to ±12V Dual Converter\nInput: 5V±10%    Output: ±12V @ 550mA (14.4W Max Total Output Power)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* +12V @ 550mA
+* -12V @ 550mA
+.lib LT8582.sub
+.backanno
+.end

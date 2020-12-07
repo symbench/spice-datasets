@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LT3085.asc
+R1 N001 0 100K
+C1 OUT 0 2.2µ
+C2 IN 0 1µ
+Rload OUT 0 2
+V1 IN 0 12
+XU1 MP_01 N001 OUT IN IN LT3085
+.tran 50u startup
+* LT3085 - Adjustable 500mA Single Resistor Low Dropout Regulator\nInput: 12V       Output: 1.0V, 500mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT3085.sub
+.backanno
+.end

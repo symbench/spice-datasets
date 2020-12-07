@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\ADR225.asc
+V1 IN 0 PWL(0 0 1 5)
+XU1 IN 0 OUT ADR225
+C1 OUT 0 1µ
+Rload OUT 0 250
+.tran 1
+.lib ADR.lib
+.backanno
+.end

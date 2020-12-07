@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\8053.asc
+V1 IN 0 24
+R1 N003 0 41.2K
+Rload OUT 0 3
+C1 OUT 0 100µ
+XU1 0 N001 NC_01 NC_02 N003 MP_03 N004 N001 MP_04 0 N002 IN IN OUT LTM8053
+R2 0 N004 60.4K
+C2 N002 0 0.001µ
+.tran 1m startup
+* 1MHz
+.lib LTM8053.sub
+.backanno
+.end

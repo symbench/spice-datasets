@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTC3646-1_DC1820A-B_DC1731A-B.asc
+V1 IN 0 24
+C1 N001 0 4.7µ
+L1 N005 OUT 4.7µ Rser=32.7m
+C2 OUT 0 10µ Rser=5m
+C3 N004 N005 .1µ
+R1 OUT N006 619K
+R2 N006 0 84.5K
+R3 N001 N003 100K
+C4 IN 0 10µ x2 Rser=10m
+R4 N009 0 60.4K
+R5 N008 N007 200K
+C5 N007 0 100p
+R6 IN N002 2
+C6 N002 0 2.2µ
+C7 OUT N006 5.6p
+C8 OUT 0 4.7µ
+XU1 0 N006 N008 N009 OUT N003 N001 IN N005 N004 N001 0 IN N002 0 LTC3646-1
+Rload OUT 0 5
+.tran 500u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LTC3646-1 - 40V, 1A Synchronous Step-Down Converter\nHigh Efficiency Low Quiescent Current Step-Down Converter\nInput: 7V to 40V     Output: 5V @ 1A, Fsw = 2.25MHz
+.lib LTC3646-1.sub
+.backanno
+.end

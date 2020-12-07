@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LT1568_DC675BF02.asc
+V2 N003 0 5
+V3 N010 0 -5
+R3 N001 N005 {2.12G/fc} tol=1
+R§ZA3 N004 N005 {10G/fc} tol=1
+RA1 N006 N005 {.82G/fc} tol=1
+XU1 N003 N005 N006 N001 N008 0 0 N010 N010 0 0 N009 OUT N007 N002 N003 LT1568
+C§ZAB1 N002 N001 22p
+R4 OUT N002 {1.91G/fc} tol=1
+RB1 N007 N002 {.77G/fc} tol=1
+C§ZA1 IN N004 82p
+V1 IN 0 AC 1
+.ac oct 250 50K 5Meg
+.param fc=500K
+* LT1568 - Very Low Noise, High Frequency Active RC, Filter Building Block\nNarrow Passband, 4th Order Bandpass\n-3dB Passband=fc/5
+* Notes: \n  Gain at fc = GnA x GnB. For Gain at fc>10 increase the ZAB1capacitor. See Demo Manual DC675B for details.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc.  All rights reserved.
+.lib LT1568.sub
+.backanno
+.end

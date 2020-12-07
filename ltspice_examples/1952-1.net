@@ -1,0 +1,34 @@
+* Z:\mnt\design.r\spice\examples\1952-1.asc
+R1 N015 0 40K
+R2 N013 0 40K
+R3 N010 0 178K
+R4 N007 N006 52.3K
+R5 N008 0 10m
+M§Q1 N003 N005 N008 N008 Si7868DP
+C1 N014 N012 .002µ
+R6 N012 N011 4.7K
+L1 IN N003 100µ
+L2 N001 0 100µ
+D1 N001 N002 MURS120
+D2 0 N002 MURS120
+L3 N002 OUT 4µ Rpar=1K
+C2 OUT 0 20µ Rser=10m
+R7 OUT N014 43.7K
+R8 N014 0 4.99K
+R9 N004 IN 178K
+R10 0 N004 {178K/10}
+V1 IN 0 20
+C3 N006 0 .005µ
+R11 N008 N009 1K
+XU1 N011 N014 N010 MP_01 N006 N007 N004 0 N015 N009 N008 N013 0 N005 IN N016 LT1952-1
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 1.2m startup
+.lib LT1952-1.sub
+.backanno
+.end

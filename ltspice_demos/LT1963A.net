@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LT1963A.asc
+V1 IN 0 PWL(0 0 1 10)
+C2 OUT 0 10µ
+R1 OUT N001 13K
+R2 N001 0 4.12K
+C1 IN 0 1µ
+Rload OUT 0 3.3
+XU1 IN IN 0 OUT N001 LT1963
+.tran 1 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT1963A - 1.5A, Low Noise, Fast Transient Response LDO Regulators\nInput: 10V     Output: 5V @ 1.5A
+.lib LT1963.lib
+.backanno
+.end

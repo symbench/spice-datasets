@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\ADP2164-1.0.asc
+L1 N002 OUT 1µ Rser=6m
+R4 N003 0 45.3K
+V1 IN 0 5
+Rload OUT 0 .3
+R3 OUT N004 100K
+R5 IN N001 10
+C3 OUT 0 85µ Rser=2m
+C1 N001 0 100n
+XU1 N001 N003 IN OUT 0 0 N002 IN N001 N001 N004 ADP2164-x.x Rtop=400K Rbot=600K
+.tran 2m startup
+.lib ADP2164-x.x.sub
+.backanno
+.end

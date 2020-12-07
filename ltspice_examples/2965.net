@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\2965.asc
+R1 N003 N005 91K
+R2 N002 N003 200K
+R3 N005 0 909K
+V1 IN 0 PWL(0 0 20u 0 10m 24.5 20m 0)
+R4 N001 N004 100K
+V2 N001 0 5
+XU1 IN N002 N003 N005 0 0 0 N004 LTC2965
+.tran 25m startup
+.lib LTC2965.sub
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT3695.asc
+XU1 0 N006 MP_01 N004 N002 N005 0 IN N008 MP_02 N009 MP_03 N001 0 OUT N003 LT3695
+V1 IN 0 12
+C1 N008 N007 470p
+R1 OUT N009 536K
+R2 N009 0 102K
+R3 N007 0 16.2K
+R4 N005 0 40.2K
+C2 N003 N004 .22µ
+D1 N006 N004 MBRS140
+L1 N004 OUT 10µ Rser=.1
+C3 OUT 0 10µ
+C4 N002 0 .1µ
+R5 IN N002 10K
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+* LT3695 - 1A Fault Tolerant Micropower Step-Down Regulator\nInput: 12V   Output: 5V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT3695.sub
+.backanno
+.end

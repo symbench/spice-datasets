@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADG5412.asc
+V1 +V 0 15
+V2 -V 0 -15
+V3 N001 0 10
+V4 N003 0 pulse(0 5 0 20n 20n 10u 20u)
+R1 N002 0 300
+C1 N002 0 35p
+XU1 N003 N002 N001 -V 0 +V ADG5412
+.tran 0.1m
+.lib ADG5412.sub
+.backanno
+.end

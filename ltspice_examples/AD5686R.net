@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\AD5686R.asc
+CLOAD vOUT 0 10n
+Vdac vDAC 0 PWL(0 0.625 10u 0.625 +1u 1.875)
+V1 Vdd 0 5
+Vdac1 NC_01 0 1.25
+I1 0 0 100µ AC 1
+XU1 vDAC Vdd 0 vOUT AD5686R AD5686R Gain=2
+.tran 200u
+* .dc I1 0 40m 1m
+* .ac oct 100 1u 1G
+* Gain parameter can be 1 or 2
+.lib AD5686R.sub
+.backanno
+.end

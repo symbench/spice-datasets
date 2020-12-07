@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADA4805.asc
+V1 +V 0 5
+V2 IN 0 SINE(2.5 0.5 250K)
+R1 N002 N001 1K
+R2 OUT N002 1K
+Vref N001 0 2.5
+XU1 IN N002 +V 0 OUT +V ADA4805
+.tran 50u
+.lib ADI.lib
+.backanno
+.end

@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\varactor.asc
+V2 IN 0 sine(10 .01 10MEG) ac 1
+D1 0 N004 MV2201
+D2 N002 N004 MV2201
+L2 0 N002 {Lpri}
+R1 N004 N006 1Meg
+D3 0 N005 MV2201
+D4 N003 N005 MV2201
+L3 0 N003 {Lpri}
+R2 N005 N006 1Meg
+L4 OUT 0 {Lsec}
+L1 0 N001 {Lsec}
+R3 OUT 0 {Z}
+R4 N001 IN {Z}
+V1 N006 0 {Vtune}
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.ac oct 100 1Meg 50Meg
+K3 L1 L2 .95
+K4 L3 L4 .95
+.params Z=75
+.params Kcup=.08
+.params Lpri=100µ Lsec=.1µ
+Kcup1 L2 L3  {Kcup}
+* This example schematic is supplied for informational/educational purposes only.
+.step param Vtune list 0 5 20
+.backanno
+.end

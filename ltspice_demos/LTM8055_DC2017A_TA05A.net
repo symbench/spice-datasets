@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LTM8055_DC2017A_TA05A.asc
+R1 N009 0 36.5K
+V1 IN 0 24
+R2 N001 N003 100K
+R3 N003 0 11K
+C1 N001 0 22µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+C2 N001 0 68µ V=20 Irms=0 Rser=0.2 Lser=0
+Rload OUT 0 12
+R4 OUT N001 0.008
+C3 N004 0 0.1µ
+C4 IN 0 4.7µ x2
+R5 N016 0 36.5K
+R6 N010 N011 100K
+R7 N011 0 9.31K
+C5 N010 0 22µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+C6 N010 0 68µ V=20 Irms=0 Rser=0.2 Lser=0
+R8 OUT N010 0.008
+C7 N012 0 0.1µ
+C8 IN 0 4.7µ x2
+XU4 N005 N002 IN 0 N002 0 LT1636
+XU1 NC_01 N004 MP_02 N007 MP_03 MP_04 N005 NC_05 IN IN IN IN MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 N001 OUT MP_18 MP_19 MP_20 0 MP_21 N007 N008 0 N009 N006 N003 LTM8055
+XU2 N002 N012 MP_22 N015 MP_23 MP_24 N013 NC_25 IN IN IN IN MP_26 MP_27 MP_28 MP_29 MP_30 MP_31 MP_32 MP_33 MP_34 MP_35 MP_36 MP_37 N010 OUT MP_38 MP_39 MP_40 0 MP_41 N015 NC_42 N008 N016 N014 N011 LTM8055
+.tran 1.2m startup
+* LTM8055 - 36Vin, 8.5A Buck-Boost µModule Regulator\nParalleled Synchronous Buck-Boost Regulator with Accurate Current Limit\nInput: 7V to 36V       Output: 12V @ 12A with 24V Input, Fsw = 600kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.lib LTM8055.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\6994-2.asc
+R1 N003 0 121K
+R2 N002 N004 1000K
+R3 N004 0 392K
+R4 OUT 0 100K
+V1 N002 0 5
+V2 N001 0 PULSE(0 3.3 0.5m 1n 1n 12.5m 25m 3)
+XU1 N001 0 N003 N004 N002 OUT LTC6994-2
+.tran 100m startup
+* LTC6994-2 10ms Delay Interval Generator\nOutput Transitions to IN Level After Delay From Either IN Edge\nStartup Modeled
+.lib LTC6994-2.sub
+.backanno
+.end

@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LTC6258_F06A_LEDDrive_1.asc
+R1 N004 N003 51
+V1 VDD 0 5
+M§Q1 N001 N004 N007 N007 2N7002
+D1 VDD N001 LXHL-BW02
+R2 N007 0 1
+R3 N005 N006 97.6K
+R4 N006 0 2.2K
+C1 N006 0 1000p
+R5 N004 0 100K
+V2 N005 0 PWL(0 0 .1 0 .9 5)
+R6 VDD N002 2Meg
+R7 N007 N002 240
+C2 N003 N002 .01µ
+XU1 N006 N002 N003 VDD 0 VDD LTC6258
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LTC6258 - 1.3MHz, 20?A Power Efficient Rail-to-Rail I/O \nLower Power LED Driver with Voltage Command
+.lib LTC3.lib
+.backanno
+.end

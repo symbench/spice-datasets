@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1117.asc
+XU1 N003 N002 N001 LT1117
+C1 N002 0 10µ V=33 Irms=0 Rser=0.3 Lser=0 mfg="KEMET" pn="T495D106M035AS" type="Tantalum"
+V1 N001 0 4.25
+R2 N002 N003 121
+R3 N003 0 154
+I1 N002 0 pulse(.1 .6 10u 1u 1u 50u 100u)
+.tran 300u
+.lib LT1117.lib
+.backanno
+.end

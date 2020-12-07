@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\1733.asc
+V3 N001 0 PWL(0 0 1m 5)
+CBAT N009 0 200m
+R1 N011 0 1.5K
+R5 N001 N004 1K
+R2 N001 N003 1K
+D1 N003 N002 NSPW500BS
+R3 N001 N007 1K
+R4 N001 N008 4K
+RTHERMISTOR N008 0 R=9.1K*EXP(3490/(V(temp)+273) - 3490/300)
+V1 temp 0 PWL(0 25 5 45 6 65 7 45)
+S1 0 N009 N010 0 SLOAD
+V2 N010 0 PWL(0 0 24 0 +100n 1)
+D2 N007 N006 NSPW500BS
+D3 N004 N005 NSPW500BS
+XU1 N005 N001 N006 MP_01 0 N008 N011 N001 N009 N002 LTC1733 TimeOut=22
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 30
+.model SLOAD SW(Ron=100 Roff=1G Vt=.5 Vh=-.3)
+* Current Limit to Control Die Temperature NOT MODELED
+.lib LTC1733.sub
+.backanno
+.end

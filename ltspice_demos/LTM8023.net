@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTM8023.asc
+C1 IN 0 2.2µ
+R1 N003 0 154K
+V1 IN 0 24
+R2 N002 0 56.2K
+C2 OUT 0 22µ
+XU1 IN IN N002 N003 0 NC_01 N001 N001 OUT LTM8023
+Rload OUT 0 1.65
+.tran 500u startup
+* LTM8023 - 36V, 2A, DC/DC µModule\nInput: 24V       Output: 3.3V @ 2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LTM8023.sub
+.backanno
+.end

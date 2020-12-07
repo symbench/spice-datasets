@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LT1512_F01.asc
+V1 IN 0 15
+C4 N006 N005 .1µ
+R3 N005 0 1K
+R2 N004 0 6.19K
+R1 OUT N004 18.7K
+D1 N002 OUT MBRS130L
+L2 N008 N002 33µ
+L1 IN N001 33µ
+XU1 N006 N004 N007 N003 IN 0 0 N001 LT1512
+R4 N008 0 .2
+R5 N008 N007 24
+C1 N007 0 .22µ
+C3 N002 N001 2.2µ
+C6 OUT 0 100µ Rser=.1
+C2 OUT 0 1m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 5m
+.ic V(out) = 3.9
+* LT1512 - SEPIC Constant-Current/Constant-Voltage Battery Charger\nSEPIC Charger with 0.5A Output Current\nInput: 5V to 25V     Output: 5.2V @ .5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1512.sub
+.backanno
+.end

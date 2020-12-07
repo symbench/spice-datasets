@@ -1,0 +1,37 @@
+* Z:\mnt\design.r\spice\examples\1105.asc
+M§Q1 N002 P001 N013 N013 SPA11N60C3
+R1 P001 N010 10
+C1 N014 0 390p
+R2 N012 N011 330
+C2 N011 0 .1µ
+C3 N012 0 .047µ
+R3 N008 0 5.36K
+R4 N007 N008 16.2K
+D1 N003 N007 BAV21
+C4 N003 0 1000p
+R5 N004 N003 499
+C5 N009 0 1µ
+L1 IN N002 1.6m Rpar=1000K
+L2 0 N004 55µ Rpar=100K
+L3 0 N001 60µ Rpar=10K
+D2 N001 OUT PDS760
+C6 OUT 0 100µ
+R6 N004 N006 100
+V1 IN 0 175.5
+C7 N005 0 22µ
+D3 N006 N005 BAV21
+R7 IN N005 220K
+XU1 0 N013 N008 N012 N014 N005 N009 N010 LT1105
+R8 N013 0 .15
+R9 OUT 0 20
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1000m steady startup nodiscard
+.model BAV21 D(Is=1e-14 Cjo=10p)
+K1 L1 L2 L3 1
+.lib LT1105.sub
+.backanno
+.end

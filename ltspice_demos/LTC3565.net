@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC3565.asc
+L1 N001 OUT 1µ Ipk=2.3 Rser=0.06 Rpar=55000 Cpar=1.8p mfg="Coilcraft" pn="DO1608P-222"
+R1 OUT N002 348K
+V1 IN 0 3.3
+R2 N002 0 174K
+R3 N006 0 68.1K
+R4 IN N003 100K
+C1 OUT N002 10p
+C2 IN 0 22µ V=6.3 Irms=0 Rser=0.0008 MTBF=0 Lser=0 mfg="TDK" pn="C3225X5R0J226M" type="X5R" ppPkg=1 x1
+C3 OUT 0 22µ V=6.3 Irms=0 Rser=0.0008 MTBF=0 Lser=0 mfg="TDK" pn="C3225X5R0J226M" type="X5R" ppPkg=1 x1
+XU1 N006 IN IN N001 0 IN IN N003 N002 N004 LTC3565
+R5 N005 0 13K
+C4 N005 N004 1000p
+Rload OUT 0 1.43
+.tran 1.6m startup
+* LTC3565 - 1.25A, 4MHz, Synchronous Step-Down DC/DC Converter\nLi-Ion to 1.8V @ 1.25A Step-Down Regulator\nInput: 2.5V to 5.5V      Output: 1.8V @ 1.25A, Fsw = 2.25MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3565.sub
+.backanno
+.end

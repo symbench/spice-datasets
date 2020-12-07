@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\5532.asc
+V1 N001 0 3.6
+V2 N002 0 SINE(0 {V} 1G) Rser=50
+C1 N003 N002 39p
+XU1 N003 0 0 N004 OUT N001 LTC5532
+R2 OUT N004 10K
+R3 N004 0 10K
+.tran 2u
+.step param V list 1m 10m 100m 1
+.lib LTC5532.sub
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\opamp.asc
+V1 N004 0 AC 1.
+R1 N001 N004 10K
+R2 HP N001 10K
+R3 LP N001 10K
+R4 N002 HP 10K
+R5 N003 BP 10K
+C1 BP N002 .1µ
+C2 LP N003 .1µ
+R6 N005 0 10K
+R7 BP N005 100K
+XU1 N001 N005 HP opamp Aol=100K GBW=10Meg
+XU2 N002 0 BP opamp Aol=100K GBW=10Meg
+XU3 N003 0 LP opamp Aol=100K GBW=10Meg
+.ac oct 25 1 100K
+.include opamp.sub
+* This example schematic is supplied for informational/educational purposes only.
+* Three Amp State Variable Filter
+.backanno
+.end

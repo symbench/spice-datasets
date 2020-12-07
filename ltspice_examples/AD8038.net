@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\AD8038.asc
+Vin IN 0 PULSE(-1 1 20n 10n 10n 90n 200n 10)
+R1 N001 0 2K
+R2 OUT N001 2K
+XU1 IN N001 +V -V OUT AD8038
+V1 +V 0 5
+V2 -V 0 -5
+.tran 2u
+.lib ADI.lib
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\1112.asc
+V1 +V 0 15
+XU1 IN- N003 +V -V N001 LT1112
+XU2 IN+ N005 +V -V N006 LT1112
+V2 -V 0 -15
+XU3 N004 N002 +V -V OUT LT1112
+R3 N001 N003 10K
+R4 N003 N005 2.15K
+R5 N005 N006 10K
+V3 IN- IN+ SINE(0 1m 100)
+V4 IN+ 0 SINE(0 1 10)
+R1 N002 N001 100
+R2 N004 N006 100
+R6 OUT N002 10K
+R7 0 N004 10K
+.tran .3
+* Three Op Amp Instrumentation Amplifier
+.lib LTC.lib
+.backanno
+.end

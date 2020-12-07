@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\6115.asc
+V1 VS 0 5
+V2 +V 0 12
+XU1 N001 MP_01 OutI 0 OutV OutV VS MP_02 +V MP_03 +V N002 LTC6115
+R4 OutI 0 5K
+R1 N001 +V 100
+R2 +V N002 250m
+I1 N002 0 PULSE(0 400m 1u 100n 100n 50u 100u)
+.tran 100u
+.lib LTC5.lib
+.backanno
+.end

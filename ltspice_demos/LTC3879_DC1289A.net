@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LTC3879_DC1289A.asc
+M§Q1 N004 N011 0 0 RJK0301DPB
+R1 IN N002 402K
+R2 OUT N008 10K
+R3 N008 0 10K
+D1 N007 N006 CMDSH2-3
+C1 N007 0 4.7µ
+M§Q2 IN N003 N004 N004 RJK0305DPB
+L1 N004 OUT .36µ Rser=1.4m Rpar=100
+Cout1 OUT 0 330µ Rser=9m m=2
+V1 IN 0 12
+C4 N005 0 1n
+C5 N004 N006 .1µ
+XU1 N005 NC_01 N007 0 N010 0 N002 N008 NC_02 N001 N007 N011 0 N004 N003 N006 LTC3879
+Rload OUT 0 80m
+Cout2 OUT 0 100µ Rser=2m m=2
+C2 N009 0 220p
+R5 N010 N009 18.2K
+C3 N010 0 47p
+C6 IN 0 10µ Rser=5m
+R4 IN N001 2.2
+C7 N001 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC3879 - Fast, Wide Operating Range No RSENSE Step-Down Controller\nInput: 4.5V-14V     Output: 1.2V @ 15A, Fsw = 430kHz typical
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* 1.2V @ 15A
+.lib LTC3879.sub
+.backanno
+.end

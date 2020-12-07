@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\1310.asc
+L1 IN N001 6.2µ Rser=.05
+R1 OUT N003 178K
+R2 N003 0 20.5K
+C1 N007 0 1500p
+D1 N001 OUT MBRS130L
+C2 OUT 0 4.7µ Rser=50m
+V1 IN 0 5
+XU1 N003 IN N005 N002 0 N001 MP_01 IN N008 N006 LT1310
+C4 N008 0 220p
+R3 N006 N007 3.01K
+R4 N005 N004 15K
+C5 N004 0 820p
+Rload OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT1310.sub
+.backanno
+.end

@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\waveout.asc
+V2 A 0 SINE(0 .4 20 10m)
+V3 B 0 SIN(0 1 455)
+B1 SYN 0 V=2*V(a)*V(b)*V(c)
+V4 C 0 PWL(0 0 10m 0 11m 1 440m 1 480m 0)
+.tran .5
+.wave .\ring.wav 8 11025 V(syn) ; This means save node V(syn) as a .wav file, 8 bit resolution, 11025 samples per second
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

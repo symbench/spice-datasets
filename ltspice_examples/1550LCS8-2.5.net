@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1550LCS8-2.5.asc
+C1 N001 0 .1µ
+C2 N003 N002 .1µ
+V1 IN 0 4.5
+C3 OUT 0 10µ
+Rload OUT 0 1K
+XU1 IN IN N002 OUT N003 0 N001 OUT LTC1550LCS8-2.5
+.tran 1m startup
+.lib LTC1550LCS8-2.5.sub
+.backanno
+.end

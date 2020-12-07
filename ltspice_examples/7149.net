@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\7149.asc
+R1 N005 OUT 100K
+C1 N005 OUT 1n
+R2 N004 OUT 100K
+V1 IN 0 24
+C2 OUT N001 2.2µ Rser=10m
+L1 N003 0 3.3µ Rser=10m
+C4 N002 N003 .1µ
+C5 OUT 0 47µ x2 Rser=20m
+Rload OUT 0 1.25
+XU1 OUT MP_01 IN MP_02 IN 0 0 NC_03 OUT OUT N001 N004 0 N005 N001 0 N001 N002 N003 LTC7149
+.tran 1m startup
+.lib LTC7149.sub
+.backanno
+.end

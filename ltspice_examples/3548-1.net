@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3548-1.asc
+V1 IN 0 5
+C2 1.8V 0 10µ
+L1 N002 1.8V 2.2µ
+Rload1 1.8V 0 4
+C1 1.575V 0 4.7µ
+L2 N001 1.575V 4.7µ
+Rload2 1.575V 0 10
+XU1 1.8V IN IN N002 0 IN N001 MP_01 IN 1.575V LTC3548-1
+.tran 200u startup
+.lib LTC3548-1.sub
+.backanno
+.end

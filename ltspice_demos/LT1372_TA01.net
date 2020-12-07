@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LT1372_TA01.asc
+V1 IN 0 5 Rser=0.1
+R1 N002 0 6.19K
+R2 OUT N002 53.6K
+D1 N001 OUT MBRS340
+L1 IN N001 10µ Rser=0.02 Rpar=5000
+C2 IN 0 22µ Rser=.05
+XU1 N003 N002 NC_01 NC_02 IN MP_03 0 N001 LT1372
+Rload OUT 0 42
+C3 N003 0 .047µ Rser=2K Cpar=.0047u
+C1 OUT 0 22µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+* LT1372 - 500kHz High Efficiency 1.5A Switching Regulators\n5V to 12V Boost Converter\nInput: 5V       Output: 12V @ .29A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT1372.sub
+.backanno
+.end

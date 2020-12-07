@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1193.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N001 1K
+R2 N001 0 1K
+V3 IN 0 SINE(0 10m 1Meg)
+XU1 IN 0 +V -V OUT 0 N001 NC_01 LT1193
+.tran 10u
+.lib LTC.lib
+.backanno
+.end

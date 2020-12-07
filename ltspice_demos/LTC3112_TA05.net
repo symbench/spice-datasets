@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTC3112_TA05.asc
+XU1 0 N008 N007 0 IN MP_01 N005 N009 OUT MP_02 MP_03 N003 MP_04 N004 N002 MP_05 N001 N006 N006 LTC3112
+C1 N009 0 100p Rpar=42.2K
+C2 N006 0 1µ
+C3 N002 N001 .1µ
+L1 N002 N003 4.7µ
+C4 N003 N004 .1µ
+C5 N007 N008 680p Rser=33K Cpar=22p
+R1 OUT N007 845K
+R2 N007 0 158K
+C6 OUT N007 47p Rser=10K
+C7 OUT 0 47µ
+C8 IN 0 220µ
+D1 OUT N006 BAT54
+R3 IN N005 1Meg
+R4 N005 0 499K
+R5 OUT N005 499K
+V1 IN 0 9
+Rload OUT 0 20
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2.5m startup
+* LTC3112 - 15V, 2.5A Synchronous Buck-Boost DC/DC Converter\n5V Buck-Boost Supercap Backup Supply\nInput: 15V to 2V     Output: 2V @ 250mA
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc.  All rights reserved.
+.lib LTC3112.sub
+.backanno
+.end

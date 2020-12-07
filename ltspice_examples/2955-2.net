@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\2955-2.asc
+C1 N008 0 10n
+V1 N006 0 PULSE(0 2 3 1u 1u 1 3 4)
+V2 IN 0 PWL(0 0 1 5)
+R2 OUT N002 10K
+R3 OUT N004 100K
+C3 OUT 0 1µ
+M§Q1 N004 N007 0 0 2N7002
+R1 IN N003 1860K
+R5 N003 0 402K
+S1 0 N005 N006 0 SW
+V3 N007 0 PULSE(0 2 3.05 1u 1u 0.1 6 2)
+M§Q2 OUT N001 IN IN IRF7210
+XU1 N002 PGD N001 IN N005 0 IN N008 N004 N003 LTC2955-2
+Rload OUT 0 100
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 15
+.model SW SW(Ron=100 Roff=1G Vt=0.5 Vh=-.1)
+.lib LTC2955-2.sub
+.backanno
+.end

@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LTC3769_DC2173.asc
+C1 N002 0 4.7µ
+V1 IN 0 PWL(0 12 2m 12 2.1m 6 2.5m 6 3m 12)
+C3 OUT 0 4.7µ x6 Rser=5m
+R4 N004 0 12.1K
+R5 OUT N004 475K
+R6 IN N007 6m
+L1 N007 N006 10µ Rser=2m
+M§Q3 OUT N003 N006 N006 BSC028N06LS3
+M§Q4 N006 N008 0 0 BSC028N06LS3
+C6 N005 N006 .1µ
+D2 N002 N005 MBRS1100
+Rload OUT 0 48
+XU1 MP_01 N009 MP_02 MP_03 NC_04 0 N001 NC_05 N007 N010 MP_06 MP_07 MP_08 MP_09 N006 N003 N005 N008 N002 NC_10 MP_11 IN MP_12 MP_13 MP_14 MP_15 NC_16 NC_17 N011 N013 N004 LTC3769
+C2 N011 0 .01µ
+C4 IN 0 4.7µ x2 V=100V Rser=2m
+C7 OUT 0 33µ x2 Rser=25m
+R1 N009 0 30.1K
+R2 N013 N012 27.4K
+C5 N012 0 15n
+C8 N013 0 100p
+R3 IN N001 150K
+R7 N001 0 38.3K
+R8 IN N010 10
+C9 N010 N007 1n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.5m
+* Notes:\n  Smaller values are used for SS capacitors to reduce simulation time. See datasheet for typical values.\n  For the full components part numbers and layout details refer to demo circuit DC2173.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* LTC3769 - 60V Low IQ Synchronous Boost Controller\nHigh Voltage 60V Synchronous Boost Controller\nInput: 6V to 55V     Output: 48V @ 1A
+.lib LTC3769.sub
+.backanno
+.end

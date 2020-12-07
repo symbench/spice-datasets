@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTM4615.asc
+V1 IN1 0 5
+R1 N001 0 4.02K
+C1 OUT1 0 100µ Rser=5m x1
+C2 IN1 0 120µ V=10 Rser=10m
+V2 IN2 0 3.3
+R2 N003 0 10K
+C3 OUT2 0 100µ Rser=5m x1
+Rload1 OUT1 0 0.45
+Rload2 OUT2 0 0.48
+C4 OUT1 0 22µ V=6.3 Rser=5m
+C5 IN2 0 120µ V=10 Rser=10m
+C6 OUT2 0 22µ V=6.3 Rser=5m
+XU1 0 IN1 IN1 NC_01 N001 N002 OUT1 IN1 MP_02 MP_03 0 IN2 OUT2 N003 N004 NC_04 IN2 IN2 OUT2 NC_05 OUT2 0 MP_06 OUT3 N005 NC_07 LTM4615
+R3 N005 0 3.32K
+C7 OUT3 0 10µ V=6.3 Rser=5m
+Rload3 OUT3 0 0.67
+.tran 1.2m startup
+* LTM4615 - Dual 4A + VLDO, Step-Down DC/DC µModule in 15mm×15mm×2.8mm LGA package\nInput1: 5V  Output1: 1.8V @ 4A   Input2: 3.3V   Output2: 1.2V@4A   LDO_in: 1.2V   LDO_out: 1V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LTM4615.sub
+.backanno
+.end

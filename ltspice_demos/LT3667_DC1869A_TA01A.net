@@ -1,0 +1,44 @@
+* Z:\mnt\spice-netlists\LT3667_DC1869A_TA01A.asc
+XU1 N001 MP_01 IN N009 OUT1 OUT1 OUT3 N011 N004 N007 N006 N008 N010 OUT2 OUT1 N012 N013 N002 IN IN MP_02 MP_03 N005 N003 0 LT3667
+R1 N009 0 174K
+R4 OUT2 N010 340K
+R5 N010 0 158K
+C3 OUT2 0 4.7µ Rser=10m
+R6 OUT3 N011 499K
+R7 N011 0 158K
+C4 OUT3 0 4.7µ Rser=10m
+L1 N003 OUT1 22µ Ipk=1.05 Rser=267m
+D1 N005 N003 PMEG6010AED
+R2 OUT1 N007 931K
+R3 N007 0 294K
+C5 N001 N003 0.22µ
+C6 OUT1 N007 22p
+C2 OUT1 0 22µ Rser=10m
+Rload1 OUT1 0 50
+Rload2 OUT2 0 25
+Rload3 OUT3 0 33
+R8 N012 0 1.5K
+R9 N013 0 1.5K
+C7 N012 0 47n
+C8 N013 0 47n
+R10 N002 OUT1 150K
+R11 N004 OUT1 150K
+R12 N006 OUT2 150K
+R13 N008 OUT3 150K
+C1 IN 0 2.2µ
+V1 IN 0 12
+C9 OUT1 0 1µ
+C10 OUT1 0 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT3667 - 40V 400mA Step-Down Switching Regulator with Dual Fault Protected LDOs\n40V Step-Down Regulator with Dual LDOs\nInput: 6V to 40V    Output: 5V @200mA* , 2.5V @ 100mA & 3.3V @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* (Fsw = 600kHz)
+* 2.5V output\nUp to 200mA
+* 5V output *
+* 3.3V output\nUp to 200mA
+* * Maximum total output current \nIOUT1+IOUT2+IOUT3 is up to 400mA.
+.lib LT3667.sub
+.backanno
+.end

@@ -1,0 +1,70 @@
+* Z:\mnt\spice-netlists\LT3798_LT8309_EnergyStarNoPFC_.asc
+C1 N012 0 4.7µ
+C2 N026 N028 .022µ
+M§Q1 N017 N022 N024 N024 STP8NM60
+R1 N024 0 .1
+L1 N001 N017 1m Rser=.93
+L2 0 N008 92.8µ
+L3 N018 N010 3.9µ Rser=.013
+C3 N007 N011 22p Rser=22K
+C4 N006 0 1µ
+R3 N012 N013 75K
+D1 N007 N006 1N4148
+R5 N014 0 5.49K
+R6 N008 N014 100K
+D5 +IN N001 1N4007
+D6 0 -IN 1N4007
+D7 0 +IN 1N4007
+D8 -IN N001 1N4007
+V1 +IN -IN SINE(0 120 600) Rser=.5
+XU1 N016 N016 N016 N016 N027 N029 N026 N028 N014 N011 N006 N009 N012 N022 N024 N013 0 LT3798
+C7 N030 0 .018µ
+R8 N008 N007 100
+R9 N009 0 301K
+C8 N014 0 22p
+R11 N006 N009 2.4Meg
+Rload OUT 0 2.2
+C6 N001 0 22µ
+R10 N029 N030 9.1K
+C9 N010 0 47µ
+XU2 N025 0 N021 N020 N023 LT8309
+M§Q2 N018 N025 0 0 BUK9219-55A
+C11 N020 0 1µ
+C12 N021 0 4.7µ
+C5 N010 0 47µ
+C10 N010 0 47µ
+C13 OUT 0 47µ
+R2 N023 N018 2K
+D3 N019 N020 1N4148
+R7 N019 N018 100
+R12 N015 N017 1K
+C14 N001 N015 56p
+R13 N016 N027 10K
+R14 N027 0 24.9K
+R15 N001 N002 10K
+M1 N002 N003 N004 N004 STN3N45K3
+Q3 N003 N005 0 0 2N2222
+R4 N016 N005 20K
+R17 N001 N003 4Meg
+D2 N004 N006 1N4148
+D4 N004 N003 BZX84C10L
+L4 N010 OUT 2.2µ Rser=.025
+R16 OUT 0 220
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 L3 1
+.tran 15m
+.model 1N4007 D(Is=90p Rs=40m
++  Cjo=30p N=1.4 TT=5u)
+* Note:\n  Some values were changed to speed up simulation and substitution due to un-available models.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LT3798 - Isolated No Opto-Coupler Flyback Controller with Active PFC\nLT8309 - Secondary-Side Synchronous Rectifier Driver\n5V, 2A Energy Star Compliant Isolated Converter\nInput: 85VAC to 150VAC     Output: 5V @ 2.2A
+.lib LT3798.sub
+.lib LT8309.sub
+.backanno
+.end

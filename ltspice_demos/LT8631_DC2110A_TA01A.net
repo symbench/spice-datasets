@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT8631_DC2110A_TA01A.asc
+XU1 IN MP_01 IN MP_02 NC_03 MP_04 0 N006 MP_05 N005 N007 OUT MP_06 N004 MP_07 N001 MP_08 N002 MP_09 N003 0 LT8631
+V1 IN 0 48
+C1 N002 N003 .1µ
+L1 N003 N004 22µ Rser=10m
+R1 OUT N007 1Meg
+C2 OUT N007 4.7p
+R2 N007 0 191K
+C3 OUT 0 47µ Rser=5m
+R3 N006 0 25.5K
+C4 N005 0 .005µ
+C5 N001 0 2.2µ
+Rload OUT 0 5
+C6 IN 0 2.2µ
+.tran 1.5m startup
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datashet for typical values. \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LT8631 - 100V, 1A Synchronous µPower Step-Down Regulator\nHigh Voltage Buck Converter\nInput: 6.5V to 100V     Output: 5V @ 1A,  Fsw=400KHz
+.lib LT8631.sub
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\4071.asc
+R1 N006 0 R=10K*exp(3490/(V(tempC)+273) - 3490/298)
+V1 tempC 0 PWL(0 0 300 80)
+V2 N001 0 PWL(0 0 1 10)
+R2 N002 N001 1K
+R3 N005 N006 10K
+C1 N003 0 1µ
+XU1 N005 N006 0 N004 0 0 N003 N002 LTC4071
+.tran 300
+.lib LTC4071.sub
+.backanno
+.end

@@ -1,0 +1,32 @@
+* Z:\mnt\design.r\spice\examples\1435A.asc
+C2 OUT 0 200µ Rser=.1
+L1 N005 N010 10µ Rser=0.0005
+V1 IN 0 12
+C3 N006 N007 330p
+C4 N004 0 .01µ
+C5 N012 0 100p
+R1 N010 OUT 0.033
+R2 N012 0 11K
+R3 OUT N012 35.7K
+C6 OUT N010 1000p
+C7 OUT N012 100p
+C8 N002 0 68p
+D1 N009 N008 MBRS340
+C9 N005 N008 .1µ
+C10 N009 0 4.7µ
+D2 0 N005 MBRS140
+M§Q1 IN N003 N005 N005 Si4412DY
+M§Q2 N005 N011 0 0 Si4412DY
+C11 0 N006 51p
+R4 N006 0 10K
+XU1 N002 N004 N007 IN 0 N012 OUT N010 N001 0 N011 N009 IN N005 N008 N003 LTC1435A
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 9m startup
+.lib LTC1435A.sub
+.backanno
+.end

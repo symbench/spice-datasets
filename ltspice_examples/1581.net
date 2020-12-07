@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1581.asc
+V1 N004 0 12
+C1 N003 N006 22µ
+R1 N003 N005 156
+R2 N005 N006 254
+Iload N003 N006 PULSE(400m 10 150u 100n 100n 200u 600u)
+V2 N001 0 5
+Rpar1 N003 N002 10m
+Rpar2 N006 0 10m
+XU1 N005 MP_01 N003 N002 N001 N004 LT1581
+.tran 500u
+* Vout
+* +
+* -
+* Remote Load Sensing
+.lib LT1584.lib
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTM4631_DC2147A.asc
+V1 IN 0 12
+C1 OUT2 0 100µ Rser=5m Lser=0.8n
+R1 N006 0 60.4K
+C2 N010 0 .001µ
+C3 IN 0 22µ V=35 Rser=5m x2
+C4 N011 0 .001µ
+C5 OUT1 0 100µ Rser=5m Lser=0.8n
+R2 N007 0 90.9K
+R3 N002 0 154K
+R4 N001 N003 10K
+R5 N001 N004 10K
+I1 OUT1 0 PWL(700u 0 +1u 9 780u 9 +1u 0)
+I2 OUT2 0 PWL(700u 0 +1u 9 780u 9 +1u 0)
+C8 OUT1 0 470µ V=4 Irms=2.8 Rser=0.010 Lser=0
+C9 OUT2 0 470µ V=4 Irms=2.8 Rser=0.010 Lser=0
+XU1 N010 N008 N006 0 N007 N009 N011 OUT2 OUT1 OUT2 0 N005 NC_01 OUT1 N005 N003 N004 0 NC_02 MP_03 MP_04 MP_05 MP_06 NC_07 N001 IN MP_08 MP_09 MP_10 MP_11 NC_12 NC_13 NC_14 0 N002 MP_15 MP_16 NC_17 LTM4631
+.tran 900u startup
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LTM4631 - Ultrathin Dual 10A or Single 20A DC/DC µModule Buck Regulator\nHigh Efficiency, High Density, Dual 10A Buck Regulator\nInput : 4.5V to 15V     Outputs: 1.0 V @ 10A & 1.2V @ 10A
+.lib LTM4631.sub
+.backanno
+.end

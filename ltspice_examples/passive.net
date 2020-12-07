@@ -1,0 +1,33 @@
+* Z:\mnt\design.r\spice\examples\passive.asc
+R1 0 IN {Z}
+C1 IN 0 5725p
+L1 IN 0 16m
+I1 0 IN AC {2./Z}
+L2 IN N001 97.5m
+L3 N001 0 16m
+C10 N006 0 5236p
+C4 N002 0 4979p
+L4 N002 0 16m
+L5 N002 N003 143m
+L6 N003 0 16m
+C5 N003 0 5025p
+C3 N002 N001 605p
+C6 N004 N003 583p
+C7 N004 0 5025p
+L7 N004 0 16m
+L8 N004 N005 143m
+L9 N005 0 16m
+C8 N005 0 4979p
+C9 N006 N005 605p
+L10 N006 0 16m
+L11 N006 OUT 97.5m
+L12 OUT 0 16m
+R2 0 OUT {Z}
+C11 OUT 0 5725p
+C2 N001 0 5236p
+.ac lin 10K 13K 24K
+.params Z=10K
+* From Horowitz and Hill, The Art of Electronics, p. 265, Cambridge Univ. Press, 2nd ed.(1989)
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

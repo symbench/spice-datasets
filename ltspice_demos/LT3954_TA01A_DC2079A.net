@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LT3954_TA01A_DC2079A.asc
+C1 N004 0 1µ
+L1 IN N001 22µ Rser=20m Rpar=2K
+R1 N002 N006 1Meg
+R2 N006 0 37.4K
+D1 N001 N002 PDS5100
+R3 N002 N008 .39
+C2 N002 0 4.7µ x2 Rser=10m
+V1 IN 0 PWL(0 0 .2m 12)
+R4 IN N003 499K
+R5 N003 0 147K
+C3 N014 0 4700p Rser=5.1K
+C4 N013 0 .022µ
+R6 N009 0 28.7K
+D2 N008 N011 LXK2-PW14 N=8
+C5 N015 0 47n
+M§Q1 N011 N010 0 0 Si2318CDS
+V2 N012 0 4
+R7 N012 N013 124K
+R8 IN N007 1Meg
+R9 N007 0 165K
+XU1 N005 N015 NC_01 N013 N009 N003 N004 IN N001 N010 N010 N006 N008 N002 N014 N007 0 0 0 LT3954
+C6 IN 0 4.7µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 26m startup
+* LT3954 - 40Vin LED Converter with Internal PWM Generator\n95% Efficiency 20W Boost LED Driver with Internal PWM Dimming\nInput: 5V to 30V      Output: 32V LED String @ 650mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT3954.sub
+.backanno
+.end

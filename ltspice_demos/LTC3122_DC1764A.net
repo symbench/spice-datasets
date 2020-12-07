@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTC3122_DC1764A.asc
+XU1 N001 0 IN N002 N002 N005 N006 N004 IN 0 OUT N003 LTC3122
+Vin IN 0 5
+L1 IN N001 4.7µ Rser=40m Rpar=15K
+C1 N002 0 4.7µ
+R1 N005 0 57.6K
+C3 OUT N003 0.1µ
+R2 N004 0 113K
+R3 OUT N004 1020K
+C4 OUT 0 22µ Rser=0.003
+C6 N007 0 390p
+R4 N006 N007 86.6K
+Rload OUT 0 15
+.tran 12m startup
+* LTC3122 - 15V, 2.5A Synchronous Step-Up DC/DC Converter with Output Disconnect\n5V to 12V Synchronous Boost Converter with Output Disconnect\nInput: 1.8V to 5.5V      Output: 12V @ 0.8A
+* Notes:\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3122.sub
+.backanno
+.end

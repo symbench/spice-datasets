@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\1397.asc
+V1 +V 0 5
+V2 -V 0 -5
+XU1 0 N002 +V -V N003 LT1395
+XU2 0 N004 +V -V Y LT1395
+XU3 B N005 +V -V B-Y LT1395
+XU4 R N001 +V -V R-Y LT1395
+R1 Y N004 255
+R2 N004 N003 127
+R3 N003 N002 255
+R4 N002 B 2320
+R5 N002 G 432
+R6 N002 R 845
+R7 B 0 76.8
+R8 G 0 90.9
+R9 R 0 82.5
+R10 N005 B-Y 255
+R11 R-Y N001 255
+R12 N001 Y 255
+R13 Y N005 255
+V3 R 0 SINE(0 .5 1Meg) Rser=75
+V4 G 0 SINE(0 .5 2Meg) Rser=75
+V5 B 0 SINE(0 .5 3Meg) Rser=75
+.tran 3u
+* Buffered RGB to Color-Difference Matrix
+.lib LTC.lib
+.backanno
+.end

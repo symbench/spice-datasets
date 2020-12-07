@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\ADP1614.asc
+R1 N004 N003 7.87K
+C1 N003 0 120n
+R3 N002 0 10K
+R4 OUT N002 88.7K
+V1 IN 0 5
+L1 IN N001 6.8µ Rser=173m
+C2 OUT 0 30µ Rser=2m
+C3 N004 0 10p
+Rload OUT 0 30
+XU1 N004 N002 IN 0 N001 IN 0 ADP1614
+D1 N001 OUT MBRS340
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib ADP1614.sub
+.backanno
+.end

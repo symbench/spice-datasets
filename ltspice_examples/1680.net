@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\1680.asc
+XU1 N006 N009 N005 N012 N010 0 N008 MP_01 IN N001 N002 0 N007 IN MP_02 N006 LT1680
+M§Q1 N003 N007 0 0 Si4410DY
+R1 IN N001 5m
+L1 N001 N003 25µ
+C1 N005 N004 2.2n
+R2 IN N002 100K
+C2 N012 0 .01µ
+C3 N009 0 1000p
+R3 N006 N009 15K
+V1 IN 0 12
+D1 N003 OUT MBRS1100
+C4 OUT 0 680µ Rser=.1
+R4 OUT N008 75K
+R5 N008 0 2K
+R6 N011 0 4.7K
+C5 N010 N011 .0047µ
+Rload OUT 0 20
+C6 N006 0 1µ
+R8 N004 0 2K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 8m startup
+.lib LT1680.sub
+.backanno
+.end

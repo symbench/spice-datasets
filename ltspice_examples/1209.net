@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1209.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N002 N001 909
+V3 IN 0 AC 1
+C1 N002 N004 47p
+R2 N004 N001 2.67K
+R3 N001 IN 909
+C2 N001 0 220p
+R4 OUT N003 1.1K
+C3 OUT N005 22p
+R5 N005 N003 2.21K
+C4 N003 0 470p
+R6 N003 N002 1.1K
+XU1 0 N004 +V -V N002 LT1208
+XU2 0 N005 +V -V OUT LT1208
+.ac oct 10 1 100Meg
+* 1Mhz, 4th Order Butterworth Filter
+.lib LTC.lib
+.backanno
+.end

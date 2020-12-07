@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3650-4_2_TA01.asc
+R1 N003 OUT .05
+C1 N002 N004 1µ
+D1 OUT N004 1N914
+D2 0 N002 MBRS340
+C2 OUT 0 10µ Rser=0.003
+C4 N001 0 10µ
+C5 N005 0 0.68µ
+L1 N002 N003 6.8µ Rser=0.11 Rpar=21068
+C6 OUT 0 100µ Rser=.01
+C3 OUT 0 1.5m
+V1 IN 0 12
+C7 0 N006 0.01µ
+D3 IN N001 MBRS340
+XU1 N001 N001 N001 NC_01 NC_02 N005 N006 NC_03 OUT N003 N004 N002 0 LT3650-4.2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m
+* LT3650-4.2 - High Voltage 2 Amp Monolithic Li-Ion Battery Charger\nSingle-Cell Li-Ion 2A Charger\nInput: 7.5V to 32V     Output: Up to 4.2V @ 2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.ic V(OUT)=2.7
+.lib LT3650-4.2.sub
+.backanno
+.end

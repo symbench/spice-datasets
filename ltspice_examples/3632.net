@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3632.asc
+V1 IN 0 36
+L1 N001 OUT 1m
+R1 OUT N002 1.47Meg
+R2 N002 0 280K
+C1 OUT 0 10µ
+Rload OUT 0 250
+XU1 N001 IN NC_01 NC_02 IN N002 NC_03 0 LTC3632
+.tran 5m startup
+.lib LTC3632.sub
+.backanno
+.end

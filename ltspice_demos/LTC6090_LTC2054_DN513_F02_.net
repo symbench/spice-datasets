@@ -1,0 +1,39 @@
+* Z:\mnt\spice-netlists\LTC6090_LTC2054_DN513_F02_.asc
+V1 IN 0 PULSE(0 .5m .2m 100u 100u 100u 400u)
+V2 V1+ 0 PWL(0 0 20u 70)
+V3 0 V1- PWL(0 0 20u 70)
+R1 N002 N005 100K
+R2 N005 0 3.32K
+C1 N006 N005 47p
+XU2 N009 N001 N007 V2+ V2- LTC2054
+R3 IN 0 10Meg
+R4 IN N009 1K
+R5 N001 0 1K
+R6 N003 N001 49.9K
+R7 N002 N003 48.7K
+R8 N003 N004 2.74K
+R9 N002 OUT 49.9
+C2 N003 N004 4700p
+R12 N007 N008 3.32K
+C3 N002 N001 22p
+C4 N009 0 22p
+C7 N007 N001 2p
+R13 N006 N002 1K
+C8 N002 0 470p
+XU1 0 N005 N008 V1- NC_01 N006 V1+ NC_02 LTC6090
+D3 0 V2+ 1N750
+R14 V1+ V2+ 100K
+C9 V2+ 0 100n
+D4 0 V2- 1N750
+R15 V1- V2- 100K
+C10 0 V2- 100n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 1m .2m
+* Av=1000
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* LTC6090 - 140V CMOS Rail-to-Rail Output, Picoamp Input Current Op Amp\nLTC2054 - Single Micropower Zero-Drift Operational Amplifiers\nµVolt Preamplifier for a Digital Voltmeter\nFor Av=100 - >    Input: ±700mV      Output: -3dB at 120kHz \nFor Av=1000 - >     Input: ±70mV     Output: -3dB at 12kHz
+.lib LTC2.LIB
+.lib LTC5.lib
+.backanno
+.end

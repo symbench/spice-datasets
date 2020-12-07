@@ -1,0 +1,33 @@
+* Z:\mnt\design.r\spice\examples\1950.asc
+XU1 N015 N012 N014 MP_01 N010 N008 N004 0 0 N011 N006 N009 0 N005 N004 0 LT1950
+R1 N012 0 4.99K
+R2 N016 N015 4.7K
+C1 N012 N016 .01µ
+M§Q1 N007 N009 N011 N011 IRF7413
+R3 N011 0 .015
+L1 N001 N007 100µ Rpar=10K
+L2 N002 0 100µ Rpar=10K
+V1 N001 0 54
+D1 N002 N003 UPSC600
+D2 0 N003 UPSC600
+L3 N003 OUT 47µ Rpar=2K
+C2 OUT 0 47µ Rser=.2
+R4 OUT N012 100K
+V2 N004 0 4
+R5 N014 0 249K
+L4 N004 N005 4.7µ Rpar=2K
+D3 N005 N006 1N5817
+C3 N006 0 4.7µ
+C4 N013 N012 1000p
+R6 OUT N013 10K
+Rload OUT 0 20
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+K1 L1 L2 1
+.lib LT1950.sub
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\8031.asc
+XU1 0 IN N003 NC_01 IN NC_02 N001 N002 OUT N002 NC_03 LTM8031
+V1 IN 0 24
+R1 N001 0 44.2K
+R2 N003 0 47.5K
+C1 OUT 0 10µ
+Rload OUT 0 5
+.tran 1m startup
+.lib LTM8031.sub
+.backanno
+.end

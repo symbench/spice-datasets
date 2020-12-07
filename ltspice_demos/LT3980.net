@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT3980.asc
+XU1 OUT N001 N002 IN IN N004 NC_01 N006 N005 N003 0 LT3980
+V1 IN 0 12
+R1 N003 0 97.6K
+C1 N005 0 1000p Rser=4.75k
+C2 N001 N002 .47µ
+L1 N002 OUT 10µ Rpar=2K
+D1 N004 N002 MBRS360
+R2 OUT N006 536K
+R3 N006 0 100K
+C3 OUT 0 47µ Rser=5m
+C4 IN 0 10µ
+C5 OUT N006 22p
+Rload OUT 0 2.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 750u startup
+* 400kHz
+* LT3980 - 58V, 2A Step-Down Switching Regulator with 85µA Quiescent Current\nInput: 6.5V - 58V   Output: 5V @ 2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT3980.sub
+.backanno
+.end

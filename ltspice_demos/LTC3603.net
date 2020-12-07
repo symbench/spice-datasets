@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTC3603.asc
+L1 N004 OUT 3.3µ
+R1 OUT N006 47.5K
+V1 IN 0 12
+R2 N006 0 15K
+R3 N003 0 105K
+R4 N008 N007 4.3K
+C1 OUT 0 100µ
+C2 IN 0 22µ
+C3 N008 0 1000p
+C4 N002 N004 0.22µ
+D1 N001 N002 CMDSH2-3
+C5 N001 0 1µ Rser=.0001
+C6 N005 0 0.001µ
+C7 OUT N006 10p
+XU1 N001 NC_01 N003 N007 N006 IN N005 0 MP_02 MP_03 N004 MP_04 MP_05 N002 IN N001 0 LTC3603
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.25m startup
+* LTC3603 - 2.5A, 15V Monolithic Synchronous Step-down Regulator\nInput: 4V to 15V     Output: 1.8V @ 2.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3603.sub
+.backanno
+.end

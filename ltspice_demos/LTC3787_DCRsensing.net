@@ -1,0 +1,47 @@
+* Z:\mnt\spice-netlists\LTC3787_DCRsensing.asc
+C8 N001 0 4.7µ
+R2 N001 N003 100K
+V1 IN 0 PWL(0 0 0.01m 8 0.4m 8 0.9m 14)
+L1 IN N008 1.4µ Rser=0.00108
+M§Q1 OUT N004 N008 N008 BSC030N03LS
+M§Q2 N008 N010 0 0 BSC030N03LS
+C4 N006 N008 .1µ
+D1 N001 N006 MBR0540
+R8 N014 0 25.5K
+R6 OUT N014 232K
+C15 0 N017 0.001µ
+L2 IN N009 1.4µ Rser=0.00108
+M§Q3 OUT N005 N009 N009 BSC030N03LS
+M§Q4 N009 N011 0 0 BSC030N03LS
+C9 N007 N009 .1µ
+D2 N001 N007 MBR0540
+XU1 N012 N018 NC_01 NC_02 NC_03 0 N002 MP_04 N013 IN MP_05 MP_06 MP_07 MP_08 N009 N005 N007 N011 N001 NC_09 0 OUT N010 N006 N004 N008 N003 NC_10 N017 N015 N014 IN LTC3787
+Rload OUT 0 0.666
+C1 N015 0 100p
+C3 N016 0 15n
+R9 N015 N016 5K
+Cout2 OUT 0 270µ Rser=2mohm
+R34 N002 0 12.1K
+R33 IN N002 38.3K
+C2 IN N013 330n
+R1 N009 N013 3.92K
+C5 IN N012 330n
+R3 N012 N008 3.92k
+R4 0 N018 49.9K
+Cout3 OUT 0 270µ Rser=2mohm
+CIN1 IN 0 47µ Rser=2mohm
+CIN2 IN 0 270µ Rser=2mohm
+Cout1 OUT 0 47µ Rser=2mohm
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* LTC3787 - PolyPhase Synchronous Boost Controller\nHigh Current 2-Phase Synchronous Boost Converter with Inductor DCR Sensing\nInput: 7V to 16V     Output: 12V @ 18A
+* L1, L2: Wurth 7443630140\nCIN1, Cout1 4x22uF/25V\nCIN2, Cout2, Cout3 25HVH270M\nC15 is 0.1uF
+.tran 0 2m 0 2u startup
+* This simulation demonstrates LTC3787 functionality in two modes of operation: 'regular' boost converter, when input voltage of 8V steps-up to 12V, \nand 'wire' mode, when Vin>12V. In the 'wire' mode circuit provides maximum efficiency by permanently keeping Q1 and Q3 in the 'on' state \nand by utilizing DCR sensing. Initial input voltage of 8V increased to 14V at  0.4 ms of the simulation time.
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3787.sub
+.backanno
+.end

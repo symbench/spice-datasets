@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\1624.asc
+L1 N007 OUT 10µ Rser=0.002
+M§Q1 N001 N005 N007 N007 Si4412DY
+V1 IN 0 12
+C1 OUT 0 500µ Rser=0.1
+C3 N003 N004 470p
+R1 N006 0 20K
+R2 OUT N006 35.7K
+R3 0 N003 6.8K
+D1 0 N007 MBRS340
+C4 N002 N007 .1µ
+C5 IN N001 1000p
+XU1 N001 N004 N006 0 N007 N005 N002 IN LTC1624
+R4 IN N001 .05
+Rload OUT 0 3
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC1624.sub
+.backanno
+.end

@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LT6110_1A_1Hz_Load.asc
+V1 IN 0 12
+C4 IN 0 22µ
+R7 N005 N009 400
+XU2 N009 N005 N006 N006 0 0 N010 LT6110
+R8 N007 N006 .5
+R9 N008 0 .5
+C6 N005 0 10µ
+R14 N002 N001 .5
+R15 N003 0 .5
+R13 N007 N008 100K
+R16 N002 N003 100K
+I3 N007 N008 SINE(0.5 0.5 1hz 0 0 270 10)
+XU5 IN IN 0 N001 N004 LT1965
+R18 N001 N004 20K
+R19 N004 0 6.478K
+C13 N001 0 10µ
+XU1 IN IN 0 N005 N010 LT1965
+R1 N005 N010 20K tol=.01
+R2 N010 0 6.478k tol=.01
+I1 N002 N003 SINE(0.5 0.5 1hz 0 0 270 10)
+.tran 3
+* LT6110 - Cable/Wire Drop Compensator\nWire Loss Compensation Using the LT1965 Linear Regulator\nInput: 12V, Output: 5V, Load: 1A Sine @ 1Hz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* Wire Loss
+* Wire Loss
+* +
+* +
+* -
+* -
+* Measure Differential Voltage Across R16\nWith the probe, click on "+" node and drag to "-" node
+* Measure Differential Voltage Across R13\nWith the probe, click on "+" node and drag to "-" node
+.lib LT1965.lib
+.lib LTC5.lib
+.backanno
+.end

@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1507.asc
+R1 N006 0 4.99K
+R2 OUT N006 5.36K
+R3 N005 N004 1K
+D1 0 N003 MBRS340
+D2 IN N001 1N914
+C1 OUT 0 1µ
+C2 OUT 0 100µ Rser=0.05
+L1 N003 OUT 10µ Rser=0.02 Rpar=5000
+V1 IN 0 12
+C4 N005 0 1n
+C5 N004 0 25n
+XU1 N001 IN N003 N002 MP_01 0 N006 N005 LT1507 top=1K bot=1T
+C6 N001 N003 .22µ
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT1507.sub
+.backanno
+.end

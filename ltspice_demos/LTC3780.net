@@ -1,0 +1,46 @@
+* Z:\mnt\spice-netlists\LTC3780.asc
+XU1 N006 N017 N018 N019 N016 N013 0 N005 0 0 NC_01 N012 N007 N001 N002 N003 0 N011 N004 0 IN N010 N009 N008 LTC3780
+M§Q1 IN N001 N002 N002 SUD40N04-10A
+M§Q2 N002 N003 N014 N014 SUD40N04-10A
+M§Q3 OUT N009 N010 N010 SUD40N04-10A
+M§Q4 N010 N011 N014 N014 SUD40N04-10A
+L1 N002 N010 4.7µ Rser=0.005 Rpar=2K
+R1 N014 0 .018
+R2 N014 0 .018
+C2 IN 0 27µ Rser=0.1
+C3 N004 0 4.7µ
+C4 N017 0 .001µ
+R3 N016 N015 100K
+C5 N015 0 .01µ
+R4 N014 N018 100
+R5 0 N019 100
+V1 IN 0 6
+R6 IN N005 51K
+R7 OUT N013 113K
+R8 N013 0 8.06K
+C6 N008 N010 .22µ
+C7 N007 N002 .22µ
+C8 N012 0 .001µ
+R9 N004 N006 100K
+D1 N010 OUT MBRS340
+D2 N014 N002 MBRS340
+C9 OUT 0 22µ Rser=0.01
+C10 IN 0 3.3µ Rser=0.01
+C11 N019 N018 100p
+C12 N016 0 100p
+D3 0 N005 1N750
+Rload OUT 0 2.5
+D4 N004 N008 1N5819
+D5 N004 N007 1N5819
+C1 OUT 0 390µ Rser=0.05
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+* LTC3780 Design - High Efficiency Buck-Boost DC/DC Converter\nInput: 6 to 30V    Output: 12V @ 5A
+.lib LTC3780.sub
+.backanno
+.end

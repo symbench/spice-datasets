@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\3103.asc
+V1 IN 0 12
+C1 N001 0 1µ
+C2 N002 N003 22n
+R1 N001 N005 100K
+L1 N003 OUT1 10µ
+R2 OUT1 N004 1.78Meg
+R3 N004 0 665K
+C3 OUT1 N004 12p
+C4 OUT1 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+Rload1 OUT1 0 7.3
+XU1 IN N003 N002 0 N005 N001 IN N004 MP_01 IN LTC3103
+.tran 2m startup
+.lib LTC3103.sub
+.backanno
+.end

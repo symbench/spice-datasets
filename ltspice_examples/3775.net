@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\3775.asc
+XU1 N004 N006 N011 N013 N007 N009 0 N010 N001 N003 IN N008 N005 N002 NC_01 N012 0 LTC3775
+V1 IN 0 12
+R1 IN N004 464
+M1 N003 N005 N008 N008 Si4840DY
+M2 N008 N010 0 0 Si4840DY
+L1 N008 OUT 1.2µ Rser=2m Rpar=5K
+C1 N002 N008 .1µ
+D1 N001 N002 CMDSH2-3
+R2 IN N003 3m
+C2 OUT 0 330µ x3 V=4 Irms=2.32 Rser=0.027 Lser=0 mfg="Sanyo OSCON" pn="4SVPC330M" type="Al electrolytic"
+C3 N001 0 4.7µ
+R3 N006 0 133K
+C4 N007 0 .001µ
+R4 N009 0 39.2K
+R5 IN N012 43.2K
+R6 N012 0 10K
+R7 OUT N011 10K
+R8 N011 0 3.16K
+C5 N011 N013 2200p Rser=15K Cpar=330p
+Rload OUT 0 .25
+C6 OUT N011 1500p Rser=390
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC3775.sub
+.backanno
+.end

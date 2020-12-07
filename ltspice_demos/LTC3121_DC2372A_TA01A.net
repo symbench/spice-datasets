@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC3121_DC2372A_TA01A.asc
+V1 IN 0 5
+L1 IN N001 6.8µ Rser=40m Rpar=15K
+C1 N002 0 4.7µ
+R1 N005 0 57.6K
+C2 OUT N003 0.1µ
+R2 N004 0 113K
+R3 OUT N004 1020K
+C3 OUT 0 22µ Rser=0.003
+C4 N007 0 1000p
+R4 N006 N007 82.5K
+XU1 N001 0 IN N002 N002 N005 N006 N004 IN 0 OUT N003 LTC3121
+C5 IN 0 10µ Rser=0.005
+Rload OUT 0 30
+.tran 12m startup
+* LTC3121 - 15V, 1.5A Synchronous Step-Up DC/DC Converter with Output Disconnect\n5V to 12V Synchronous Boost Converter with Output Disconnect\nInput: 1.8V to 5.5V      Output: 12V @ 400mA     Fsw = 1MHz
+* Notes:\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC3121.sub
+.backanno
+.end

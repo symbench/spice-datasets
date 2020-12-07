@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1076HV.asc
+R1 N004 0 70K
+L1 N001 OUT 75µ
+D1 0 N001 MBRS340
+V1 IN 0 25
+R2 OUT N003 2.74K
+R3 N003 0 2.21K
+C1 N006 N005 .033µ
+C2 OUT 0 400µ Rser=.1
+R4 0 N006 1.5K
+XU1 IN N001 N004 0 N003 N005 N002 LT1076
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT1076.sub
+.backanno
+.end

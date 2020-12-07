@@ -1,0 +1,47 @@
+* Z:\mnt\spice-netlists\LT1055_TA10.asc
+XU1 N010 N008 N004 N014 N009 LT1055
+R1 N008 0 10K
+R2 N010 IN 10K
+C1 N009 N008 100p
+D1 0 N004 BZX84C15L
+R3 N001 N004 10K
+C2 N001 0 1µ
+R4 N001 N003 510
+R5 N003 N009 50K
+R6 N009 N016 50K
+R7 N016 N018 510
+R8 N014 N018 10K
+V1 N001 0 125
+R9 N001 N002 330
+R10 N003 OUT 1Meg
+R11 OUT N016 1Meg
+R12 N017 N018 330
+C3 N018 0 1µ
+D2 N014 0 BZX84C15L
+V2 0 N018 125
+Q1 N005 N003 N002 0 2N5401
+Q2 N015 N016 N017 0 2N5550
+D3 N005 N011 1N4148
+D4 N011 N015 1N4148
+R13 N010 OUT 100K
+C4 N010 OUT 33p
+V3 IN 0 SINE(0 12 10K .1m)
+Q3 N005 N006 OUT 0 2N2222
+Q4 N015 N012 OUT 0 2N2907
+R14 N007 N006 1K
+R15 N013 N012 1K
+R16 N007 OUT 27
+R17 OUT N013 27
+Q5 N018 N015 N013 0 2N5401
+Q6 N001 N005 N007 0 2N5550
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 10m startup
+* LT1055 - Precision, High Speed, JFET Input Operational Amplifiers\n±120V Output Precision Op Amp
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.backanno
+.end

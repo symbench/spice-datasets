@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1911-1.5.asc
+C1 N004 N005 1µ
+C2 N002 N003 1µ
+C3 OUT 0 10µ
+Rload OUT 0 18
+V1 IN 0 4
+C4 0 N001 .01µ
+XU1 IN N002 N003 0 N005 OUT N004 N001 LTC1911-1.5
+.tran 8m startup
+.lib LTC1911-1.5.sub
+.backanno
+.end

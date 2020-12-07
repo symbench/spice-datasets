@@ -1,0 +1,39 @@
+* Z:\mnt\spice-netlists\LTC3839_F20A.asc
+R1 N017 0 18.7K
+V1 IN 0 10
+C1 0 N001 4.7µ
+R2 N001 N002 2.2
+M§Q1 IN N004 N009 N009 BSC093N04LS
+M§Q2 N009 N012 0 0 BSC035N04LS
+D1 N001 N006 MBRS140
+C2 N006 N009 .1µ
+L1 N009 N008 .3µ Rser=.8m
+C3 N016 0 .001µ
+R3 OUT N014 45.3K
+R4 N014 0 10K
+M§Q3 IN N005 N010 N010 BSC093N04LS
+M§Q4 N010 N013 0 0 BSC035N04LS
+D2 N001 N007 MBRS140
+C4 N007 N010 .1µ
+L2 N010 N011 .3µ Rser=.8m
+C5 N015 0 150p Rser=33.2K
+XU1 MP_01 MP_02 N017 NC_03 NC_04 NC_05 0 N017 MP_06 N015 N016 N014 0 N008 OUT N002 MP_07 N003 N006 N004 N009 N012 N001 IN 0 N002 NC_08 N001 N013 N010 N005 N007 MP_09 NC_10 MP_11 OUT N011 LTC3839
+C6 N002 0 1µ
+R5 N008 OUT 4m
+R6 N011 OUT 4m
+C7 IN 0 180µ
+C8 IN 0 22µ x4
+R7 N002 N003 100K
+C9 OUT 0 100µ Rser=0.012 x6
+Rload OUT 0 .132
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+* LTC3839 - Fast, Accurate, 2-Phase, Single-Output Step-Down DC/DC Controller with Differential Output Sensing\n2MHz, 2-Phase, Step-Down Converter with Rsense Current Sensing\nInput: 4.5V to 14V    Output: 3.3V @ 25A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3839.sub
+.backanno
+.end

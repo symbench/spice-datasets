@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3483.asc
+XU1 N001 0 N004 IN N002 IN LT3483
+L1 IN N001 10µ
+V1 IN 0 3.6
+C1 N002 N001 .22µ
+R1 N004 OUT 806K
+R2 N003 OUT 10
+D1 N003 N002 1N5817
+C2 OUT 0 2.2µ
+Rload OUT 0 320
+C3 OUT N004 5p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT3483.sub
+.backanno
+.end

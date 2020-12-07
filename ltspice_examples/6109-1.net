@@ -1,0 +1,30 @@
+* Z:\mnt\design.r\spice\examples\6109-1.asc
+V1 N001 0 PWL(0 40 1.2m 10)
+V2 N006 0 PULSE(5 0 1n 5n 5n 4u 1ms 2)
+R1 N001 N002 .1
+M§Q1 N003 N005 N002 N002 IRF9640
+I1 N003 0 PWL(20u 0 500u 1 800u 1 900u .2)
+R2 N007 N010 9.53K
+R3 N010 0 475
+V3 N008 0 5
+R4 N008 N009 10K
+D1 0 N003 1N914
+D2 N005 N002 BZX84C6V2L
+R6 N002 N005 100K
+R7 N005 N012 100K
+R8 N001 N004 100
+R9 N001 N011 1Meg
+R10 N011 0 13.3K
+C1 N011 0 .1µ
+XU1 N002 N006 N009 N009 0 N010 N011 N007 N001 N004 LT6109-1
+M§Q2 N012 N009 0 0 2N7002
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.4m
+* NOTE:  The reset signal must be applied low on startup.
+.lib LTC5.lib
+.backanno
+.end

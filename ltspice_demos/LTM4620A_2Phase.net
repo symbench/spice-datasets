@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTM4620A_2Phase.asc
+V1 IN 0 12
+C1 OUT 0 100µ Rser=5m Lser=0.8n
+R1 N005 0 90.9K
+C2 N007 0 .001µ
+C3 IN 0 22µ V=35 Rser=5m x4
+C5 OUT 0 100µ Rser=5m Lser=0.8n
+C6 OUT 0 330µ V=4 Irms=2.8 Rser=0.009 Lser=0
+R3 N003 0 100k
+C7 OUT 0 330µ V=4 Irms=2.8 Rser=0.009 Lser=0
+R4 N002 N001 10K
+Rload1 OUT 0 0.077
+XU1 N007 N006 N005 0 N005 N006 N007 OUT N004 OUT 0 N004 NC_01 OUT NC_02 N001 N001 0 NC_03 MP_04 MP_05 MP_06 MP_07 NC_08 N002 IN MP_09 MP_10 MP_11 MP_12 NC_13 NC_14 NC_15 0 N003 MP_16 MP_17 NC_18 LTM4620A
+ILoad2 OUT 0 PWL(0 0 0.5m 0 0.501m 13 0.6m 13 0.601m 0)
+C4 0 N002 4.7µ
+.tran 700u startup
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LTM4620A - Dual 13A, Step-Down DC/DC µModule Regulator\nHigh Efficiency Single 26A Step-Down Regulator\nInput : 4.5V to 16V     Output: 1V @ 26A
+.lib LTM4620A.sub
+.backanno
+.end

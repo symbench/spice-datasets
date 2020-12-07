@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LTM4641_DC1543A.asc
+XU1 0 N006 N008 0 N005 N010 N009 N011 0 NC_01 OUT NC_02 NC_03 NC_04 NC_05 NC_06 N004 N007 NC_07 N013 N012 IN N003 0 N003 N001 MP_08 N014 N002 N002 LTM4641
+V1 IN 0 12
+M§Q1 IN N002 N001 N001 IRFH6200
+C1 OUT 0 150µ x3 V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C575OX5ROJI07M" type="X5R"
+R1 OUT N004 2.49K
+R2 0 N007 2.49K
+M§Q2 OUT N009 0 0 FDC637AN
+C2 N014 0 1n
+R4 IN N012 680K
+Rload OUT 0 .1
+R5 IN N005 187K
+R6 N005 0 13K
+R7 IN N008 1.78Meg
+R8 N008 N010 3.16K
+R9 N010 0 24.9K
+R3 N006 N005 1Meg
+C3 IN 0 100µ
+R10 N004 N007 13.7K
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTM4641 - 38V, 10A DC/DC µModule Regulator with Advanced Input and Load Protection\n10A Step-Down µModule Regulator with Input and Output OVP\nInput: 4.5V to 38V     Output: 1V ±1.5% @ 10A, Fsw = 320kHz
+* Note:\n  Small value is used for the TRACK/SS capacitors to reduce simulation time. Typical value should be 3.3nF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTM4641.sub
+.backanno
+.end

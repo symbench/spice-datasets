@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LT3045_DC2491A.asc
+V1 IN 0 5
+R1 IN N001 200K
+R2 OUT N004 453K
+R3 N004 0 49.9K
+R4 N003 0 249
+C1 N002 0 4.7µ Rpar=33.2K
+C2 OUT 0 4.7µ Rser=3m
+Rload OUT 0 6.6
+XU1 IN MP_01 IN N001 N003 N004 N002 0 OUT OUT LT3045
+C3 IN 0 4.7µ Rser=3m
+.tran 1 startup
+* LT3045 - 20V, 500mA, Ultralow Noise, Ultrahigh PSRR RF Linear Regulator\nLow Noise, High PSRR RF Linear Regulator\nInput: 3.8V to 20V       Output: 3.3V @ 500mA
+* Notes:\n  Current limited internally by Vin to Vout differential, refer to datasheet\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright ©2017 Linear Technology Inc. All rights reserved.
+.lib LT3045.sub
+.backanno
+.end

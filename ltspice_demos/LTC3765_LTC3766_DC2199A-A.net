@@ -1,0 +1,81 @@
+* Z:\mnt\spice-netlists\LTC3765_LTC3766_DC2199A-A.asc
+L1 N005 N001 168µ Rser=20m
+L2 N006 N002 42µ Rser=5m
+L3 N002 OUT 3.3µ
+C1 OUT 0 150µ x4 V=16 Irms=1.5 Rser=0.025 Lser=0
+C2 OUT 0 22µ V=16 Irms=0 Rser=0.009 Lser=0
+M§Q1 N005 N009 N012 N012 BSC190N15NS3
+C3 N026 N025 1µ IC=0
+L4 N030 N025 592µ Rser=.7 Rpar=1K
+L5 N029 N024 925µ Rser=.8
+C4 N024 N023 .1µ IC=0
+C5 N023 N029 220p Rser=100
+C6 N028 0 5n
+C7 N022 0 1µ
+M§Q2 N013 N018 N022 N022 2N7002
+C8 N005 N011 0.11µ Rser=274 Cpar=34n
+M§Q3 N006 N010 0 0 BSC028N06LS3
+M§Q4 N002 N007 0 0 BSC028N06LS3
+V1 IN 0 48
+M§Q5 N011 N016 N017 N017 IRF9640
+C9 N040 0 7n
+R1 OUT N035 11.5K
+R2 N035 0 604
+C10 N036 0 4.7n Rser=2.15K Cpar=100p
+C11 N002 0 470p Rser=4.1
+D1 IN N013 ZLLS1000
+C12 N021 N016 .1µ IC=0
+D2 N016 0 ZLLS1000
+D4 N002 N004 ES1D
+C13 N004 0 2.2n
+R3 OUT N004 8.2K
+C14 N020 0 4.7µ Rser=30m
+C15 OUT N035 3.3n Rser=1K
+XU1 0 N009 N022 N021 N017 N032 N012 0 0 N033 N031 N027 N028 N018 N023 N029 LTC3765
+XU2 N007 N010 0 0 0 N035 N036 N019 N040 N039 NC_01 OUT OUT 0 N034 0 N020 N015 N037 N038 N020 OUT N008 OUT N030 N026 0 N020 LTC3766
+R8 IN N027 102K
+R9 N027 0 3.74K
+R10 N031 0 14.3K
+R11 N032 0 12.7K
+R12 N033 0 26.7K
+R13 IN N018 100K
+R14 N012 0 5m
+R15 N016 0 10K
+R16 N017 0 1.2
+R17 N014 0 1.2K
+R19 N002 N008 215
+R21 N019 0 133K
+R22 N034 0 46.4K
+R23 N037 0 17.4K
+R24 N038 0 28.7K
+R25 N039 0 118K
+C16 N017 0 15n
+R26 OUT N019 681K
+S1 0 OUT N003 0 LOAD
+V2 N003 0 PULSE(0 1 2m 1u 1u .5m 1m)
+C17 N006 0 1.5n Rser=1.5
+C18 N005 0 150p Rser=6.8
+L6 N001 IN 0.22µ Rser=.7 Rpar=1K
+L7 0 N014 2.2m Rser=.8
+R4 N015 0 4.22
+D3 N014 N015 PMEG6010AED
+C19 N015 0 3.3n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+K1 L1 L2 1
+K2 L4 L5 1
+* 36V to 60Vin
+* 12Vout @ 10A
+* LTC3765 - Active Clamp Forward Controller and Gate Driver\nLTC3766 - High Efficiency, Secondary-Side Synchronous Forward Controller\nActive Clamp Forward Converter with Direct Flux Limit\nInput: 36V to 60V     Output: 12V @ 30A     Fsw = 200kHz
+* Notes:\n  1. Not included in Sim: Input Filter, Transformer Leakage inductance, \n      LTC3765 Freq Foldback circuit, RUN, ISMAG & DELAY pin filters, \n      Sense resistor inductance and compensating filters, Y-cap.\n  2. SS caps changed from 33nF to 5nF & 7nF to reduce sim time.\n  3. D3, Q1, Q3, Q4, & Q5 models replaced with nearest equivalent.\n  4. C8 = 0.22uF rated, 0.11uF at 120V\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.options GminSteps=0
+.model LOAD SW(Ron=.41 Roff=1Meg Vt=.5 Vh=-.4)
+K3 L6 L7 1
+.lib LTC3765.sub
+.lib LTC3766.sub
+.backanno
+.end

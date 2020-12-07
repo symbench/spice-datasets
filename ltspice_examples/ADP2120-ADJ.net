@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\ADP2120-ADJ.asc
+R1 OUT N003 13.5K
+L1 N002 OUT 2.2µ
+C1 OUT 0 20µ
+R2 N003 0 3K
+R3 OUT N001 100K
+V1 IN 0 5
+Rload OUT 0 1.65
+XU1 IN IN N002 0 0 N003 IN N001 IN IN ADP2120-ADJ
+.tran 1m
+.lib ADP2120-ADJ.sub
+.backanno
+.end

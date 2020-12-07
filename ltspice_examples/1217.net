@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1217.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N002 N001 3K
+R2 N001 0 3K
+V3 IN 0 AC 1
+XU1 IN N001 +V -V N002 LT1217
+R3 N003 N002 75
+R4 0 OUT 75
+T1 N003 0 OUT 0 Td=75n Z0=75
+.ac oct 10 10K 100Meg
+* Cable Driver
+.lib LTC.lib
+.backanno
+.end

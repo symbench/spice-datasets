@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\5505-2.asc
+V1 N001 0 3.3
+V2 N004 0 SINE(0 {V} 1G)
+R1 N003 N002 100
+C1 N002 N004 .3p
+XU1 N003 0 N001 OUT N001 LTC5505-2
+.tran 1u
+.step param V list 1m 10m 100m 1
+.lib LTC5505-2.sub
+.backanno
+.end

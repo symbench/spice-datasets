@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT8610_TA10_LT3008_25_.asc
+XU1 0 N004 N006 IN IN MP_01 0 MP_02 N005 MP_03 MP_04 N003 N001 OUT1 N002 N007 0 LT8610
+R1 N006 0 18.2K
+C1 N004 0 .001µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N005 OUT1 1.8µ Ipk=3.9 Rser=0.033 Rpar=5905 Cpar=3.85p mfg="Wurth Elektronik" pn="7447789004 WE-PD 7332"
+C3 N003 N005 .1µ
+C4 OUT1 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 Rpar=1000 Cpar=5p mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT1 N007 1Meg
+R3 N007 0 412K
+C5 OUT1 N007 4.7p
+C6 IN 0 4.7µ
+Rload1 OUT1 0 1.5
+XU2 OUT1 OUT2 OUT2 0 OUT1 LT3008-2.5
+C7 OUT2 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 Rpar=1000 Cpar=5p mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+Rload2 OUT2 0 125
+.tran 5m startup
+* LT8610 - 42V, 2.5A Synchronous Step-Down Regulator with 2.5µA Quiescent Current\nLT3008-2.5- 3µA Iq, 20mA, 45V Low Dropout Linear Regulators\nUltralow Iq 2.5V, 3.3V Step-Down with LDO\nInput: 3.8V to 27V     Output1: 3.3V @ 2.5A, Fsw=2MHz     Output2: 2.5 @ 20mA
+* Note:\n  A smaller value TR/SS capacitor is used to reduce simulation time. Typical value should be 10nF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3009.lib
+.lib LT8610.sub
+.backanno
+.end

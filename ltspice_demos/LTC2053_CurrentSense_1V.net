@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC2053_CurrentSense_1V.asc
+V1 N001 0 5
+XU1 0 N003 N002 0 0 N005 OUT N001 LTC2053
+C1 OUT N005 0.01µ
+C2 N002 N003 1µ
+R1 IN N004 4m
+R2 IN N002 100
+R3 N004 N003 100
+V2 IN 0 1
+I1 N004 0 PULSE(0 10 0 .05 .05 .05 .2 2)
+R4 N005 0 400
+Rload OUT N005 40K
+* LTC2053 - Precision, Rail-to-Rail, Zero-Drift, Resistor-Programmable Instrumentation Amplifier\nUnidirectional Current Sense Circuit for 1V Supply Using an Instrument Amplifier\nInput: 0V to 5V     Rsense: 0.004 Ohm Shunt, 0A to 10A     Output: 0V to 4V (Gain of 100)
+.tran .4 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC4.lib
+.backanno
+.end

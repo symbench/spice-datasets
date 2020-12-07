@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\6018.asc
+V1 +V 0 15
+V2 0 -V 15
+XU2 IN+ N004 +V -V N003 +V 0 LT6018
+XU3 N003 MP_01 NC_02 0 NC_03 0 +V OUT +V NC_04 0 NC_05 MP_06 N002 -V LT6375
+R1 N002 N001 49.9K
+XU1 IN- N001 +V -V N002 +V 0 LT6018
+R2 N001 N004 49.9
+R3 N004 N003 49.9K
+V3 IN- IN+ SINE(0 1m 1K)
+V4 IN+ 0 0
+.tran 100m
+* Low Noise Instrumentation Amplifier\nGain= 2000V/V
+.lib LTC1.lib
+.lib LTC3.lib
+.backanno
+.end

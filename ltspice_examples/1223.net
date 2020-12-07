@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1223.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N001 1K
+R2 N001 0 {Rg}
+V3 IN 0 ac 1
+XU1 IN N001 +V -V OUT LT1223
+.ac oct 100 100K  1G
+.step PARAM Rg list 10 33 110 470 1e308
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\TransmissionLineInverter.asc
+T1 IN 0 0 OUT Td=50n Z0=50
+T2 0 0 OUT 0 Td=30n Z0=150
+V1 IN 0 PULSE(0 1 0 1n 1n 10n) Rser=50
+.tran 0 500n 0 1n
+* This example schematic is supplied for informational/educational purposes only.
+* This examples illustrates the fundamental difference between a SPICE\ntransmission line element and a length of coax.  The SPICE transmission\nline element supports a single transmission line mode whereas a cable\nwill have any many modes as it has independent conductors.  A piece of\ncoax has two conductors, a central conductor and an outer shield, giving\nrise to two modes.\n \nTo model both modes of a length of coax, you will need two SPICE\ntransmission line elements.  One for the normal(differential) mode and\nthe other for the common mode.  Below, T1 is the normal mode and T2 is\nthe mode between the shield and the rest of the world.  These modes\nwith have different propagation speeds and impedances.  If both modes\nare modeled, then you can simulate a transmission line inverter.
+.backanno
+.end

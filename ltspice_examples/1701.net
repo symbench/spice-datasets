@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\1701.asc
+XU1 N001 0 N004 N003 IN LTC1701
+D1 0 N001 1N5817
+L1 N001 OUT 4.7µ
+C1 OUT 0 47µ Rser=.1
+R1 OUT N004 121K
+R2 N004 0 121K
+R3 IN N003 1Meg
+R4 N003 N002 5.1K
+V1 IN 0 5
+C2 N002 0 330p
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran .5m startup
+.lib LTC1701.sub
+.backanno
+.end

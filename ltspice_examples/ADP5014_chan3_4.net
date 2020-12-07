@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\ADP5014_chan3_4.asc
+R3 N005 0 309
+L1 N001 OUT1 2.2µ Rser=47m
+C2 N004 N005 12n
+C4 N003 0 100n
+C1 OUT1 0 22µ
+V1 IN 0 5
+Rload1 OUT1 0 5
+R6 N010 0 165K
+R7 N009 0 255
+L2 N006 OUT2 2.2µ Rser=20m
+C3 N008 N009 22n
+C5 OUT2 0 22µ
+Rload2 OUT2 0 3.3
+R1 OUT1 N002 22.1K
+R2 N002 0 34K
+R4 OUT2 N007 16.9K
+R5 N007 0 64.9K
+C6 OUT1 N002 82p
+XU1 N010 NC_01 N003 IN N001 N002 N004 IN N003 0 0 IN NC_02 NC_03 NC_04 NC_05 N006 N008 N007 IN IN N003 ADP5014 RP=95m RN=73m CS=0.12 CL1=3.5 CL2=3.5 PSM=0 timer=1 parallel=0
+.tran 500u startup
+.softstart .2 ; This option reduces the internal softstart time by 5x.
+* This model simulates two channels of ADP5014\nFeatures configured by the CFG1 and CFG2 pins are controlled\nby features of the IC found by Ctrl right click.\n--CL is current limit and and can be set to 6.9 for 4 A,\n  or 3.5 for  2 A.  It is also a good to simulate startup using the minimum values\n --Paralllel should be set to 1 if using channels in parallel, else 0\n--Timer should be set to 1 or 8 depending on the length hiccup required\n--PSM should be 0 for forced PWM and 1 for PSM (low power pulse\n   skip mode) enabled\n--Outputs of the GPIO pin are pinned out seperately for your convenience\n--Enable mode is always manual mode\n--See the datasheet to configure channels for parallelt operation
+.lib ADP5014.sub
+.backanno
+.end

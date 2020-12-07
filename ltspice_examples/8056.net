@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\8056.asc
+R1 N002 0 43.2K
+V1 IN 0 32
+R2 OUT N001 100K
+R3 N001 0 5.32K
+C1 OUT 0 22µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+C2 OUT 0 33µ V=20 Irms=0 Rser=0.2 Lser=0 mfg="KEMET" pn="T495D336M020AS" type="Tantalum"
+Rload OUT 0 6
+XU1 NC_01 NC_02 MP_03 0 MP_04 MP_05 NC_06 NC_07 IN IN IN IN MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 MP_18 MP_19 OUT OUT MP_20 MP_21 MP_22 0 MP_23 NC_24 NC_25 NC_26 N002 NC_27 N001 LTM8056
+.tran 1.5m startup
+.lib LTM8056.sub
+.backanno
+.end

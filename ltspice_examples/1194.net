@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1194.asc
+V1 +V 0 5
+V2 -V 0 -5
+V3 IN 0 SINE(0 350m 200K)
+XU1 IN 0 +V -V OUT 0 N001 N001 LT1194
+V4 N001 0 {VC}
+.tran 7.5u
+.step param VC list -5 -4 -3 -2
+.lib LTC.lib
+.backanno
+.end

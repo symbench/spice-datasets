@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3225.asc
+XU1 N001 N002 Cx IN NC_01 0 N003 0 IN OUT LTC3225
+V1 IN 0 3.2
+C1 N001 N002 1µ
+C2 OUT Cx .1m
+C3 Cx 0 .1m
+R1 N003 0 12K
+.tran 1m startup
+.ic V(cx)=2 V(out)=3.5
+* Notes:\n \n1. To emulate the supercapacitor charging process within acceptable \ntime interval, the capcitance is scaled down from its real value.\n \n2. Load capcitor initial condion can be given to mimic the specific \nresidual voltage at the beginning of the charging.
+.lib LTC3225.sub
+.backanno
+.end

@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\1616.asc
+C1 N001 N002 .01µ
+L1 N002 OUT 22µ
+R1 OUT N004 16.5K
+R2 0 N004 10K
+D1 0 N002 MBRS130L
+D2 OUT N001 BAT54
+V1 IN 0 5
+C2 OUT 0 22µ
+XU1 N001 0 N004 N003 IN N002 LT1616
+C3 N003 0 1µ
+R3 IN N003 15K
+Rload OUT 0 6.6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4.5m startup
+.lib LT1616.sub
+.backanno
+.end

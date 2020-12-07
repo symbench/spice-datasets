@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT8612_DC2010A_TA01A.asc
+R1 N005 0 60.4K
+C1 N001 0 1µ
+V1 IN 0 12
+L1 N004 OUT 3.3µ Ipk=3.9 Rser=0.033 Rpar=5905 Cpar=3.85p
+C3 N002 N004 .1µ
+C4 OUT 0 100µ V=10 Irms=0 Rser=0.003 Lser=0
+R2 OUT N006 1Meg
+R3 N006 0 243K
+C5 OUT N006 10p
+C6 IN 0 10µ
+C2 N003 0 1n
+XU2 0 N003 N005 IN IN MP_01 0 MP_02 N004 MP_03 MP_04 N002 N001 OUT NC_05 N006 0 LT8612
+R5 OUT 0 0.833
+.tran 1m startup
+* LT8612 - 42V, 6A Synchronous Step-Down Regulator with 3µA Quiescent Current\nµPower Buck Converter\nInput: 5.8V to 42V     Output: 5V @ 6A, Fsw=700KHz
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright© 2014 Linear Technology Inc. All rights reserved.
+.lib LT8612.sub
+.backanno
+.end

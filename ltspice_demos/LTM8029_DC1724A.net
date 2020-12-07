@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTM8029_DC1724A.asc
+R3 N003 0 221K
+C2 OUT 0 22µ
+R4 N001 OUT 100K
+V1 IN 0 12
+XU1 N002 OUT IN IN 0 MP_01 MP_02 OUT N001 N003 LTM8029
+C1 IN 0 1µ
+R1 N002 0 316K
+Rload OUT 0 8.33
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTM8029 - 36Vin, 600mA Step-Down µModule Converter with 5µA Quiescent Current\nµPower High Voltage Step-Down Converter\nInput: 5.6V to 36V       Output: 5V @ 600mA, Fsw = 600kHz
+.lib LTM8029.sub
+.backanno
+.end

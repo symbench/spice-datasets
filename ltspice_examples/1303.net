@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1303.asc
+V1 IN 0 3.2
+R1 OUT N003 474K
+R2 N003 0 156K
+L1 IN N001 22µ Rser=0.02 Rpar=5000
+D1 N001 OUT MBRS140
+C2 OUT 0 100µ Rser=0.02
+XU1 0 N004 0 N003 N002 IN N001 0 LT1303 top=1K bot=1T
+Rload OUT 0 25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT1303.sub
+.backanno
+.end

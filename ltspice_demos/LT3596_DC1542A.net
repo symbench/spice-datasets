@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LT3596_DC1542A.asc
+L1 N005 N006 100µ Rpar=20K
+R1 N006 N009 93.1K
+R2 N009 0 3.01K
+D1 N006 N010 LXHL-BW02 N=9
+D2 N006 N012 LXHL-BW02 N=9
+D3 N006 N013 LXHL-BW02 N=9
+R3 N011 N016 90.9K
+R4 N016 0 49.9K
+V1 N001 0 48
+C1 N006 0 10µ
+R5 N011 N018 10K
+R6 N018 0 100K
+XU1 N011 N008 N001 N005 N003 N019 0 N014 N007 N007 N009 N015 N017 0 N002 N004 N011 N007 N011 N018 N011 N010 N012 N013 N016 LT3596
+R7 0 N019 33.2K
+R8 0 N014 20K
+R9 0 N015 20K
+R10 0 N017 20K
+D4 N008 N005 PMEG6010AED
+C2 N004 N005 .22µ
+C3 N001 0 4.7µ
+C4 N002 0 4.7µ
+V2 N002 0 5
+V3 N007 0 PULSE(5 0 1.6m 1u 1u 400u 800u)
+R11 N001 N003 270K
+R12 N003 0 91K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4m startup
+* LT3596 - 60V Step-Down 3-Channel LED Driver \nInput: 48V       Output: 3-Channels of 9 LEDs, 100mA per Channel
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3596.sub
+.backanno
+.end

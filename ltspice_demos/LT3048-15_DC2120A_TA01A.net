@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT3048-15_DC2120A_TA01A.asc
+V1 IN 0 3.8
+L1 IN N002 10µ Rser=.2
+C1 N001 0 4.7µ
+C2 OUT N003 0.1n
+C3 OUT 0 1µ Rser=10m
+Rload OUT 0 625
+XU2 N002 IN 0 N003 OUT N001 IN N001 LT3048-15
+C4 IN 0 1µ
+.tran 2m startup
+* LT3048 - Low Noise Bias Generator\nLow Noise Bias Voltage Generator from Single Cell Li-Ion Battery\nInput: 2.7V to 4.8V       Output: 15V @ 24mA
+* Notes:\n  C2 reduced to speed up simulation, please see datasheet for typical value.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT3048-15.sub
+.backanno
+.end

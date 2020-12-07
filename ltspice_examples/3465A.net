@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3465A.asc
+L1 IN N001 22µ
+V1 IN 0 5
+C1 N002 0 .22µ
+R1 N003 0 10
+D1 N002 N003 NSPW500BS N=4
+XU1 N002 0 N003 IN IN N001 LT3465A
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 100u startup
+.lib LT3465A.sub
+.backanno
+.end

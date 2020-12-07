@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LT8714_DC2240A.asc
+R1 N008 N009 100K
+C1 N002 N001 44µ Rser=2m
+XU1 N012 N014 N017 N009 N016 IN ISP IN N010 N006 N005 N008 IN 0 N003 N007 N013 N011 MP_01 0 LT8714
+L1 IN N002 15µ Rser=13.9m
+L2 OUT N001 15µ Rser=13.9m
+R2 N003 0 2m
+R3 IN ISP 7m
+M§Q1 N002 N005 N003 N003 BSC028N06LS3
+M§Q2 N001 N006 ISP ISP FDS4685
+C2 N016 0 68n
+C3 N017 0 10n
+C4 N014 0 100p
+C5 N015 0 10n
+R4 N014 N015 6.98K
+R5 N011 0 178K
+R6 N007 0 10K
+R7 IN N007 57.6K
+C6 N008 0 2.2µ
+C7 OUT 0 200µ Rser=1m
+C8 IN N010 2.2µ
+R8 OUT N012 73.2K
+V1 IN 0 12
+V2 N013 0 PWL(0 0 10u 0 50u 0.1 3m 0.1 4m 1)
+Rload OUT 0 1
+R9 N002 N004 1
+C9 N004 N001 88µ Rser=2m
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5m startup
+K1 L1 L2 .985
+* SS Cap 10nF for faster simulation
+* LT8714 - Bipolar Output Synchronous Controller with Seamless Four Quadrant Operation\nFour Quadrant Converter with Power Good Indication\nInput: 10V to 14V       Output: -5V to 5V @ -5A to 5A, Fsw = 200kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8714.sub
+.backanno
+.end

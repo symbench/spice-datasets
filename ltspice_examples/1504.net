@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\1504.asc
+V1 IN 0 5
+L1 N003 OUT 50µ
+C1 OUT 0 100µ Rser=.1
+R1 OUT N006 20.4K
+R2 N006 0 12.6K
+C2 N007 0 .01µ
+R3 IN N001 47K
+C3 N004 0 5000p
+XU1 N001 IN N003 0 N006 N002 N007 N005 LTC1504 top=10 bot=1T
+R4 N005 N004 5K
+Rload OUT 0 100
+.tran 5m startup
+.lib LTC1504.sub
+.backanno
+.end

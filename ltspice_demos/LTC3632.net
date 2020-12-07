@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTC3632.asc
+V1 IN 0 20
+L1 N001 OUT 2.2m Rser=6
+R1 OUT N003 1.47Meg
+R2 N003 0 280K
+C1 OUT 0 47µ
+C2 IN 0 2.2µ
+R3 IN N002 2Meg
+C3 N004 0 .22µ
+I1 OUT 0 PULSE(1m 20m 60m 1n 1n 4m 8m)
+XU1 N001 IN NC_01 N004 N002 N003 0 0 LTC3632
+.tran 80m startup
+* LTC3632 Design - High Efficiency, High Voltage 20mA Synchronous Step Down Converter\nInput: 4.5 to 50V    Output: 5V @ 20mA Component value selected similar to DC1507A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LTC3632.sub
+.backanno
+.end

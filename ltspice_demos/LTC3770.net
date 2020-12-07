@@ -1,0 +1,45 @@
+* Z:\mnt\spice-netlists\LTC3770.asc
+M§Q1 IN N003 N004 N004 Si4884DY
+M§Q2 N004 N018 0 0 Si4874DY
+C1 N004 N006 .22µ
+R1 IN N001 10
+C2 N005 0 2200p
+R2 N019 0 82K
+C3 N009 0 1000p
+C4 N010 0 100p
+R3 N010 N009 10K
+L1 N004 OUT 1.8µ Rser=0.005
+V1 IN 0 12
+R4 N016 0 30.1K
+R5 OUT N016 95.3K
+C5 0 N001 .1µ
+C6 IN 0 22µ Rser=0.003 x2
+C7 OUT N016 100p
+R6 N017 N014 10K
+R7 IN N002 10K
+C8 OUT 0 180µ V=4 Irms=3.4 Rser=0.015 MTBF=0 Lser=0 mfg="KEMET" pn="A700D187M004ATE015" type="Al electrolytic" ppPkg=1
+D1 N008 N006 CMDSH2-3
+XU1 N007 N016 N010 0 NC_01 NC_02 N020 N014 N017 N019 N005 N012 NC_03 N001 N001 MP_04 0 MP_05 N008 N008 N018 0 0 N004 N004 N003 N006 N013 0 N002 OUT N015 LTC3770
+R8 N008 N013 23.2K
+R9 N013 0 26.7K
+C9 0 N008 10µ
+R10 N008 N015 100K
+R11 N002 N007 1K
+R12 N007 0 1.5K
+C10 N011 0 .01µ
+C11 N012 0 1000p
+R13 N012 N011 10K
+R14 N020 0 133K
+C12 OUT 0 22µ Rser=0.003 x2
+R15 OUT 0 0.25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.2m startup
+* LTC3770 - No Rsense, Synchronous Step-Down DC/DC Converter \nInput: 12V      Output: 2.5V at 10A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LTC3770.sub
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTM4603_F17.asc
+V1 IN 0 12
+R1 N004 0 15K
+C1 OUT 0 100µ
+XU1 IN 0 OUT 0 N006 N006 OUT 0 N002 N004 N007 N012 N010 N009 N008 N005 N003 N011 N001 N007 LTM4603
+C2 N011 0 .001µ
+R2 IN N003 100K
+C3 OUT N004 100p
+R3 N008 0 392K
+R4 N009 OUT 392K
+C4 IN 0 10µ x2
+Rload OUT 0 .5
+.tran 750u startup
+* LTM4603 - 6A DC/DC µModule with PLL, Output Tracking and Margining\nInput: 4.5V to 12V     Output: 3V @ 6A,    Fswitch = 1MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTM4603.sub
+.backanno
+.end

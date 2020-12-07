@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\1016.asc
+XU1 +V N003 N001 0 0 0 N002 OUT LT1016
+V1 +V 0 PWL(0 0 .5u 5)
+R1 N002 N001 2K
+C1 N001 0 200p
+R2 N003 0 4K
+R3 +V N003 4K
+C2 N003 N004 820p
+R4 N004 0 22
+C§Y1 N002 N003 .32p Rser=45 Lser=.78m Cpar=18p
+.tran 10u
+* 10MHz
+* 10MHz to 25MHz Crystal Oscillator
+.lib LTC.lib
+.backanno
+.end

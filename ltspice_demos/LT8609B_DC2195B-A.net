@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT8609B_DC2195B-A.asc
+R1 N006 0 18.2K
+C1 N004 0 .001µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N003 OUT 2.2µ Ipk=3.7 Rser=0.02135 Rpar=207.24 Cpar=0 mfg="Coilcraft" pn="XFL4020-222"
+C3 N002 N003 .22µ
+C4 OUT 0 47µ x2 V=6.3 Irms=0 Rser=0.002 Lser=0 Rpar=1000 Cpar=5p mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT N005 1Meg
+R3 N005 0 187K
+C5 OUT N005 10p
+C6 IN 0 4.7µ V=50
+Rload OUT 0 2.5
+XU1 N002 N003 N001 N006 MP_01 N005 N004 0 IN IN 0 LT8609
+* LT8609B - 42V, 2A Synchronous Step-Down Regulator with 2.5uA Quiescent Current\n2MHz Low EMI High Voltage Synchronous Buck Regulator\nInput: 5.5V to 42V       Output: 5V @ 2A, Fsw = 2MHz
+* Note:\n  Lower current pin-to-pin compatible solutions are available in the MSOP-10 package.\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.tran .7m startup
+.lib LT8609.sub
+.backanno
+.end

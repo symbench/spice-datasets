@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LT6100_TA01A.asc
+XU1 N002 N001 N003 0 OUT OUT 0 IN LT6100
+R1 IN N002 3m
+V1 IN 0 25
+V2 N001 0 3
+C1 N003 0 220p
+Iload N002 0 PULSE(0 15 0.2 .05 .05 .1 .25)
+.tran 1
+* LT6100 - Precision, Gain Selectable High Side Current Sense Amplifier\n0A to 33A High Side Current Monitor with 12kHz Frequency Rolloff\nInput 4.4V to 48V     Gain: 25V/V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3.lib
+.backanno
+.end

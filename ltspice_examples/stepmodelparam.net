@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\stepmodelparam.asc
+Q1 N001 N002 0 0 2N2222
+I1 0 N002 0
+V1 N001 0 0
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.dc V1 0 10 10m I1 10u 50u 10u
+.step NPN 2N2222(Vaf) 100 50 25
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

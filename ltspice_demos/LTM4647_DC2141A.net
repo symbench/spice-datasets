@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LTM4647_DC2141A.asc
+V1 IN 0 12
+C1 N006 0 100p
+C2 OUT 0 100µ x3 Rser=1m
+R1 N005 0 90.9K
+R2 N003 0 47.5K
+C3 IN 0 150µ Rser=50m
+C4 IN 0 22µ x2 Rser=3m
+R3 N007 N002 100K
+XU1 IN N001 0 OUT N006 N002 OUT N005 NC_01 0 N004 N004 MP_02 N007 NC_03 NC_04 N002 MP_05 MP_06 MP_07 0 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 NC_16 N003 0 NC_17 N002 LTM4647
+C5 OUT N005 120p
+C6 N002 0 4.7µ
+R4 N001 IN 2.2
+C7 N001 0 1µ
+Rload OUT 0 33m
+C8 OUT 0 330µ x2 Rser=7m
+.tran 1m startup
+* LTM4647 - 30A DC/DC Step-Down ?Module Regulator\nSingle Output, High Current, Buck Regulator\nInput: 6V to 15V     Outputs: 1.0V @ 30A, Fsw = 600kHz
+* Notes:\n  A smaller TRACK/SS capacitor is being used to reduce simulation time. Typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTM4647.sub
+.backanno
+.end

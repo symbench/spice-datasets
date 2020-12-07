@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\2992.asc
+V1 SP1 0 PWL(0 10 4 100)
+R1 SN1 SP1 2m
+R2 SN2 SP2 2m
+V2 SP2 0 PWL(0 0 2 100)
+I2 SN2 0 PWL(0 0 1 25)
+I1 SN1 0 PWL(0 0 1 10)
+C2 N001 0 1µ
+V9 GPIO1 0 PWL(0 0 10u 0 2 1)
+V4 GPIO2 0 PWL(0 0 10u 0 2 2)
+V5 GPIO3 0 PWL(0 0 10u 0 2 1.5)
+V6 GPIO4 0 PWL(0 0 10u 0 2 1.2)
+V7 N002 0 PWL(0 1 1m 0 70m 0 71m 0)
+XU1 SP1 0 N001 GPIO1 GPIO2 GPIO3 GPIO4 N002 SP1 SN1 SP2 SN2 P1 P1max P1min P2 P2max P2min D1 D1max D1min D2 D2max D2min S1 S1max S1min S2 S2max S2min G1 G1max G1min G2 G2max G2min G3 G3max G3min G4 G4max G4min LTC2992 CA2=0 CA1=0 CA0=0 CA6=0 CA5=0 CA4=0 CA3=0 NADC7=0 CA7=0
+* Control Bits\n \nNADC7 Resolution/ Conversion Rate\n \nNADC7 = 0  12-BIT  \nNADC7 = 1   8-BIT\n \nCA7 Offset Calibration\n \nCA7 = 1  Calibrate on Demand\nCA7 = 0  Every Conversion\n \nCA[6:5]  Measurement Mode\n \nCA6 CA5\n \n1       1        Shutdown\n1       0        Single Cycle Mode\n0       1        Snapshot Mode\n0       0        Continuous Mode\n \nCA[4:3]   Voltage Selection for Continous Mode\n \nCA4 CA3       VADC                          P1                              P2\n \n1        1           GPIO1, GPIO2           GPIO1*DSense1     GPIO2*DSense2\n                        GPIO3, GPIO4\n1         0          GPIO1, GPIO2           GPIO1*DSense1     GPIO2*DSense2\n \n0         1          Sense1+, Sense2+   Sense1+*Dsense1  Sense2+*Dsense2\n \n0         0          Sense1+, Sense2+   Sense1+*Dsense1  Sense2+*Dsense2\n                       GPIO1, GPIO2,\n                       GPIO3, GPIO4\n \nCA[2:0]   Voltage Selection for Snapshot Mode\n \nCA2 CA1 CA0       VADC                          P1                              P2\n \n1       1      1            GPIO1,GPIO2           GPIO1*Dsense1      GPIO2*Dsense2\n1       1      0            Sense1+, Sense2+   Sense1+*Dsense1  Sense2+*Dsense2\n1       0      1           GPIO4\n1       0      0           GPIO3\n0       1      1           GPIO2\n0       1      0           GPIO1\n0       0      1           SENSE2+\n0       0      0           SENSE1+
+.tran 2
+* >SD pin is shutdown digital input.  Not actual pin of part.\nAll other pins with < or > are digital outputs, not actual pins.
+.lib LTC2992.sub
+.backanno
+.end

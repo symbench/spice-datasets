@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1373HV.asc
+V1 IN 0 5
+C4 N005 N006 .05µ
+C2 OUT 0 22µ Rser=.05
+R3 N006 0 5K
+R2 N002 0 24.9K
+R1 OUT N002 215K
+D1 N001 OUT MBRS360
+L1 IN N001 22µ Rser=0.02 Rpar=5000
+XU1 N005 N002 N004 N003 IN 0 0 N001 LT1373
+R4 OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LT1373.sub
+.backanno
+.end

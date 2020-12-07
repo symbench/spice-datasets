@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT8697_TA01A.asc
+R1 N008 0 18.2K
+C1 N004 0 2n
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N005 N002 3.3µ Ipk=8.7 Rser=0.0212 Rpar=310.86 Cpar=0 mfg="Coilcraft" pn="XAL5030-332"
+C3 N003 N005 .1µ
+C4 N002 0 47µ x2 V=10 Irms=0 Rser=0.002 Lser=0
+R2 N006 N009 10K
+C5 N006 N009 1n
+R4 N002 N006 18m
+XU1 MP_01 N004 N007 IN IN MP_02 0 MP_03 MP_04 MP_05 MP_06 MP_07 N005 MP_08 MP_09 N003 N001 N002 NC_10 N009 N002 N006 N008 NC_11 0 LT8697
+R3 N006 OUT 0.2
+R5 0 N007 16.5K
+C6 IN 0 4.7µ V=50 Irms=0 Rser=0.004 Lser=0
+R6 OUT 0 2.38
+.tran 1.2m startup
+* LT8697 - USB 5V 2.5A Output, 42V Input Synchronous Buck with Cable Drop Compensation\n2MHz 5V Step-Down Converter with Cable Drop Compensation\nInput: 6V to 42V       Output: 5V @ 2.1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT8697.sub
+.backanno
+.end

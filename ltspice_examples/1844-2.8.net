@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1844-2.8.asc
+V1 IN 0 5
+I1 OUT 0 {iload} load
+XU1 IN 0 IN OUT LTC1844-2.8
+.dc v1 5 2 10m
+.measure DC vdrop WHEN V(out)=2.7
+.measure DC dropout param Vdrop-2.7
+.param iload=150m
+.lib LTC1844.lib
+.backanno
+.end

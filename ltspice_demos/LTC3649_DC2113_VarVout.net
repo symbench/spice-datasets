@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTC3649_DC2113_VarVout.asc
+XU1 0 MP_01 IN MP_02 IN 0 0 NC_03 0 N006 N001 N005 OUT CTRL N008 OUT N002 N003 N004 LTC3649
+R1 CTRL 0 10K
+C1 CTRL 0 1n
+R2 N005 0 200K
+V1 IN 0 24
+C2 0 N002 2.2µ Rser=10m
+R3 N006 0 10K
+C3 N006 0 10n
+L1 N004 OUT 5.6µ Rser=10m
+C4 N003 N004 .1µ
+C5 OUT 0 22µ x2 Rser=20m
+C6 OUT 0 150µ Rser=20m
+C7 IN 0 10µ Rser=20m
+C8 IN 0 10µ x2 Rser=20m
+C9 N007 0 4.7n
+R4 N008 N007 1K
+C10 N008 0 10p
+R5 N002 N001 10K
+V2 CTRL 0 PWL(0 0 +0.25m 5 +0.25m 5 +1.25m 7.5 +1m 2.5)
+Rload OUT 0 2
+.tran 3m startup
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LTC3649 - 60V, 4A Synchronous Step-Down Regulator with Rail-to-Rail \nHigh Voltage Monolithic Synchronous Buck Regulator with Output Voltage Control\nInput: 10V to 60V     Output: 2.5V to 7.5V @ 4A
+.lib LTC3649.sub
+.backanno
+.end

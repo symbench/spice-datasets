@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LT6261_AudioBridgeDriver.asc
+V1 V+ 0 3V
+R1 N003 OUT 15K
+R2 N003 N002 4.99K
+R3 V+ Vm 100K
+R4 Vm 0 100K
+C1 IN N001 10µ
+V2 IN 0 SINE(0 .1 1000) AC .1
+R5 N004 _OUT 10K
+R6 N004 OUT 10K
+Rspeaker N005 N006 120
+C2 Vm 0 1µ
+C3 N003 OUT 100p
+C4 N004 _OUT 100p
+C5 N002 0 1n
+R8 N002 N001 4.99K
+R9 OUT N005 4.7
+R10 _OUT N006 4.7
+XU1 Vm N003 OUT V+ 0 V+ LTC6261
+XU2 Vm N004 _OUT V+ 0 V+ LTC6261
+.tran 10m
+;ac oct 250 1 1meg
+* AC Coupled Input
+* Noise Filter
+* Gain Stage, Output Drive
+* Inversion Stage, Output Drive
+* LTC6261 - 30MHz, 240?A Power Efficient Rail-to-Rail I/O \nAudio Headphones Bridge Driver
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTC6.lib
+.backanno
+.end

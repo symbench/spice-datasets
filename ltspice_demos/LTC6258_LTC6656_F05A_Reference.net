@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTC6258_LTC6656_F05A_Reference.asc
+R1 N002 N003 2.7K
+C1 N003 0 22µ
+V1 V+ 0 5
+XU1 0 V+ N002 LT6656-1.25
+C2 N001 0 22µ x2
+C3 N002 0 1µ
+XU2 N003 N001 N001 V+ 0 V+ LTC6258
+.tran 20m
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LTC6258 - 1.3MHz, 20?A Power Efficient Rail-to-Rail I/O\nLT6656 - 1?A Precision Series Voltage Reference\nLow Noise Reference for a Low Current Starting Reference
+.lib LT6656.lib
+.lib LTC3.lib
+.backanno
+.end

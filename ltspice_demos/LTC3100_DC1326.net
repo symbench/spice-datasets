@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LTC3100_DC1326.asc
+V1 IN 0 2.5
+R1 OUT1 N002 866K
+R2 N002 0 499K
+C1 OUT1 0 10µ Rser=1m
+R3 OUT2 N005 499K
+R4 N005 0 499K
+C2 OUT2 0 10µ Rser=1m
+XU1 N001 OUT1 OUT3 N004 IN N007 0 IN N005 IN N006 N002 0 IN N003 IN LTC3100
+L1 IN N001 3.3µ Rser=5m Rpar=2K
+R5 OUT1 N003 499K
+L2 N004 OUT2 4.7µ Rser=5m Rpar=2K
+R6 OUT2 N007 499K
+R7 OUT3 N006 121K
+R8 N006 0 60.4K
+C3 OUT3 0 2.2µ Rser=1m
+Rload1 OUT1 0 33
+Rload2 OUT2 0 4.6
+Rload3 OUT3 0 36
+C5 IN 0 4.7µ Rser=1m
+.tran 1.5m startup
+* 3.3V@0.1A
+* 1.2V@0.25A
+* 1.8V@0.05A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3100 - 1.5MHz, Synchronous Dual Channel (Buck and Boost) DC/DC Converter and 100mA LDO\nInput: 1.8V to 5V     Outputs: 3.3V @ 0.1A, 1.2V @ 0.25A and 1.8V@0.05A
+.lib LTC3100.sub
+.backanno
+.end

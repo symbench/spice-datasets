@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1309.asc
+C1 N004 0 0.1µ
+C2 OUT 0 1µ
+D1 N001 OUT MBRS130L
+L1 IN N001 10µ Rser=0.02 Rpar=5000
+R1 N004 0 1Meg
+V1 IN 0 5
+Rload OUT 0 100
+XU1 N004 IN 0 N001 0 N003 OUT N002 LT1309
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT1309.sub
+.backanno
+.end

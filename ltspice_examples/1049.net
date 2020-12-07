@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1049.asc
+V1 +V 0 5
+R1 N002 N001 2K
+R2 N001 0 198K
+V3 IN- IN+ SINE(-25m 5m 100)
+XU1 IN- N001 +V 0 N002 LTC1049
+R3 N003 N002 2K
+R4 OUT N003 198K
+XU2 IN+ N003 +V 0 OUT LTC1049
+V2 IN+ 0 SINE(2.5 1 10)
+.tran .3
+* Low Power, Single Supply, Low Offset Instrumentation Amp
+.lib LTC.lib
+.backanno
+.end

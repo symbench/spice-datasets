@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTM8027.asc
+R1 IN N001 1Meg
+R2 N004 0 48.7K
+C1 N002 0 1000p
+C2 OUT 0 33µ x3
+V1 IN 0 24
+XU1 IN N001 N002 N003 N005 N003 OUT N004 N003 MP_01 MP_02 MP_03 MP_04 MP_05 MP_06 MP_07 0 LTM8027
+R3 N005 0 56.2K
+Rload OUT 0 3
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+* LTM8027, 60V, 4A DC/DC µModule Regulator\nInput: 24V       Output: 12V @ 4A
+.lib LTM8027.sub
+.backanno
+.end

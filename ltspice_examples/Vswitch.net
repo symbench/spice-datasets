@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\Vswitch.asc
+S1 0 OUT IN 0 MYSW
+V1 IN 0 PULSE(0 1 0 .5m .5m 0 1m)
+V2 N001 0 3.3
+R1 N001 OUT 1K
+.model MYSW SW(Ron=1 Roff=1Meg Vt=.5 Vh=-.4)
+.tran 3m
+* This example schematic is supplied for informational/educational purposes only.
+* This shows an example of suppling a .model statement as a SPICE\ndirective directly on the schematic to define a voltage controlled switch.
+.backanno
+.end

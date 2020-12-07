@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\4413.asc
+V§Wall N001 0 5
+R§Load N002 0 10
+R2 N003 N004 470K
+Vcc N004 0 5
+XU1 N001 0 0 0 N005 N002 MP_01 MP_02 N003 N002 LTC4413
+C2 N002 0 4.7µ
+V§Battery N005 0 3.6
+.tran 1m startup
+.lib LTC4413.sub
+.backanno
+.end

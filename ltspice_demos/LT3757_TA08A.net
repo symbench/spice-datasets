@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LT3757_TA08A.asc
+XU1 N008 N009 P001 N005 MP_01 N006 N004 P002 N003 IN 0 LT3757
+M§Q1 N001 N004 N006 N006 Si7850DP
+R1 N009 0 16K
+R2 OUT N009 84.5K
+L1 N001 IN 3.3µ Rser=0.1
+D1 N002 0 MBRB2545CT
+C1 N007 0 .01µ
+V1 IN 0 12
+C2 P001 0 .01µ
+R3 N003 0 46.4K
+R4 IN N003 105K
+R5 N006 0 6m
+L2 N002 OUT 3.3µ Rser=0.1
+C3 N002 N001 47µ Rser=0.003
+C4 OUT 0 100µ Rser=.002 x2
+C5 0 P002 4.7µ
+C6 IN 0 47µ
+R6 N005 0 41.2K
+R7 N008 N007 9.1K
+Rload OUT 0 1.25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.5m startup
+* LT3757 - Boost, Flyback, SEPIC and Inverting Controller\nHigh Efficiency Inverting  (CUK) Power Supply\nInput: 5V to 15V       Output: -5V @ 3A to 5A, Fsw: 300kHz
+K1 L1 L2 1
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3757.sub
+.backanno
+.end

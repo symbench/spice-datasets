@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\1431.asc
+V1 N001 0 10
+XU1 N004 N007 N001 N002 0 0 N006 N006 LT1431
+R3 N004 N005 2K
+C1 N007 N005 1n
+XU2 N003 N004 N002 0 NC_01 4N25
+R4 N001 N003 1K
+R6 N001 N002 1K
+.tran 3m startup
+.lib 4N25.sub
+.lib LT1431.sub
+.backanno
+.end

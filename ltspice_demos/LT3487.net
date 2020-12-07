@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3487.asc
+V1 IN 0 3.3
+L1 N002 IN 15µ Rser=.275 Rpar=1K
+C1 IN 0 1µ
+C2 N004 0 10µ
+XU1 N004 N001 IN N002 N003 IN N005 N007 N006 OUT1 0 LT3487
+L2 IN N001 15µ Rser=.275 Rpar=1K
+L3 OUT2 N003 15µ Rser=.275 Rpar=1K
+C3 N002 N003 2.2µ
+C4 OUT2 0 10µ
+R1 N005 OUT2 324K
+R2 N004 N006 549K
+C5 OUT1 0 .1µ
+C6 N007 0 100p
+C7 N005 OUT2 27p
+C8 N006 N004 10p
+Rload2 OUT2 0 88
+Rload1 OUT1 0 330
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.tran 2.5m startup
+* LT3487 - 750mA and 900mA, 2MHz, Boost and Inverting Regulator for CCD Bias\nInput: 3.3V    Outputs: 15V@45mA and -8V@90mA
+.lib LT3487.sub
+.backanno
+.end

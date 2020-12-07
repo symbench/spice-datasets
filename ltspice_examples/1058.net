@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\1058.asc
+V1 +V 0 10
+V2 -V 0 -10
+XU1 IN+ N006 +V -V N007 LT1057
+XU2 IN- N004 +V -V N001 LT1057
+XU3 N005 N002 +V -V N003 LT1057
+XU4 Iout N008 +V -V N008 LT1057
+R1 N002 N001 7.5K
+R2 N005 N007 7.5K
+R3 N003 N002 7.5K
+R4 N008 N005 7.5K
+R5 Iout N003 {Rx}
+R6 N001 N004 4.7K
+R7 N006 N007 4.7K
+R8 N004 N006 9400
+V3 IN- IN+ SINE(0 100m 100K)
+V4 IN+ 0 SINE(0 1 10K)
+R9 Iout 0 1K
+.tran 300u
+.param Rx=1K
+* Iout=2*V(IN+,IN-)/Rx
+* Current Output, High Speed, High Input Impedance Instrumentation Amplifier
+.lib LTC.lib
+.backanno
+.end

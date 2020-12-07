@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\4411.asc
+XU1 N001 0 0 N003 N002 LTC4411
+V§Battery N001 0 3.6
+C1 N002 0 4.7µ
+R§Load N002 0 10
+R2 N003 N004 470K
+Vcc N004 0 5
+.tran 1m startup
+.lib LTC4411.sub
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6995-1.asc
+R1 N001 N003 1000K
+R2 N003 0 523K
+R3 N002 OUT 178K
+V1 N001 0 PULSE(0 5 5 10 10 100 200 2)
+XU1 0 0 N002 N003 N001 OUT LTC6995-1
+* 60 Second Power On Reset\nStartup Modeled
+.tran 500 startup
+.lib LTC6995-1.sub
+.backanno
+.end

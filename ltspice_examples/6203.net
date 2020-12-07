@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6203.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N001 1K
+R2 N001 0 1K
+V3 IN 0 SINE(0 1 1Meg)
+XU1 IN N001 OUT +V -V LT6202
+.tran 10u
+.lib LTC2.LIB
+.backanno
+.end

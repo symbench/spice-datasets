@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LTC3525-3_TA03.asc
+L1 IN N001 6.8µ
+C1 OUT 0 10µ Rser=3m
+V1 IN 0 2
+Rload OUT 0 83
+XU1 IN 0 IN OUT MP_01 N001 LTC3525-3
+C2 IN 0 3.3µ V=10 Irms=11.471 Rser=0.004 MTBF=0 Lser=0 mfg="KEMET" pn="C0603C225K8PAC" type="X5R" ppPkg=1
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTC3525-3 - 400mA µPower Synchronous Step-Up DC/DC Converter with Output Disconnect\nCompact, High Efficiency Boost for Single Cell Alkaline\nInput: 1V to 1.6V       Output: 3V @ 65mA
+.lib LTC3525-3.sub
+.backanno
+.end

@@ -1,0 +1,19 @@
+* Z:\mnt\spice-netlists\LTC6078_TA15.asc
+V1 V+ 0 2.5
+V2 V- 0 -2.5
+XU1 N003 N001 V+ V- OUT LTC6078
+V3 IN 0 ac 1
+R1 OUT N001 10Meg
+R2 N001 0 10Meg
+R3 N002 IN 10Meg
+R4 N003 N002 10Meg
+R5 0 N004 5Meg
+C1 N004 IN 270p
+C2 N003 N004 270p
+C3 N002 0 540p
+.ac oct  1000 1 1K
+* LTC6078 - Micropower Precision, Dual CMOS Rail-to-Rail Input/Output Amplifiers\n60Hz Notch Filter\nVout=(1+R2/R1)*Vin     Notch Depth= -60dB AT 60Hz, RTI
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC5.lib
+.backanno
+.end

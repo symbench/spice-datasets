@@ -1,0 +1,50 @@
+* Z:\mnt\spice-netlists\LT1952_LTC3900.asc
+XU1 N017 N005 N016 MP_01 N010 N011 N008 0 N021 N015 N012 N020 0 N009 N002 N022 LT1952
+R1 N013 0 .015
+R2 N013 N012 47
+R3 N012 N015 1k
+C1 N012 0 1n
+R4 N021 0 39K
+R5 N020 0 100K
+R6 N016 0 115K
+L1 IN N003 360µ Rser=.0125
+R7 N010 0 158k
+R8 N011 N010 22.1K
+R9 IN N008 237K
+R10 N008 0 9.1K
+C2 N010 0 .05µ
+L2 N001 N004 10µ Rser=.002
+L3 N001 OUT 1.2µ Rser=.002
+C3 OUT 0 470µ Rser=.010
+R11 OUT N005 20.47K
+R12 N005 0 12.1K
+C4 N003 0 330p
+C5 N018 N017 470p
+L4 N023 0 400µ
+L5 0 N024 676µ
+C6 N023 N022 220p
+R13 N024 0 560
+C7 N019 0 470p
+R14 N014 N019 47.5K
+V1 IN 0 48
+M§Q1 N003 N009 N013 N013 Si4490DY
+M§Q2 N004 N006 0 0 HAT2165H
+M§Q3 N001 N007 0 0 HAT2165H
+R15 N005 N018 5K
+XU2 0 0 N007 N014 N006 0 N019 N024 LTC3900
+V3 N014 0 7
+Rload OUT 0 .165
+V2 N002 0 16
+C8 IN 0 10µ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 2m startup
+K2 L4 L5 1
+* Note:\n  Opto coupler/driver not included on feedback to simplify simulation.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LT1952 - Single Switch Synchronous Forward Controller\nLTC3900 - Synchronous Rectifier Driver for Forward Converters\nSynchronous Forward Converter\nInput : 36V (39V Startup) to 75V       Output: 3.3V @ 20A
+.lib LT1952.sub
+.lib LTC3900.sub
+.backanno
+.end

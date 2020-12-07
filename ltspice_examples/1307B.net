@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1307B.asc
+C1 N002 0 680p
+V1 IN 0 1.8
+R1 OUT N004 1Meg
+R2 N004 0 324K
+R3 N003 N002 100K
+L1 IN N001 10µ Rser=0.02 Rpar=5000
+D1 N001 OUT MBRS140
+C2 OUT 0 33µ Rser=0.02
+XU1 N003 N004 IN 0 N001 IN N005 N006 LT1307B
+Rload OUT 0 100
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+.lib LT1307B.sub
+.backanno
+.end

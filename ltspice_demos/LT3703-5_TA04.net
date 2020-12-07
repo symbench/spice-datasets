@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LT3703-5_TA04.asc
+M§Q1 IN N006 N008 N008 Si7850DP
+M§Q2 N008 N012 0 0 Si7850DP
+V1 N001 0 5
+V2 IN 0 33
+L1 N008 OUT 8µ
+C1 OUT 0 270µ Rser=10m
+R1 N009 0 12K
+R2 N002 0 30K
+R3 N005 N004 10K
+C2 N004 N007 1000p
+C3 N011 0 .001µ
+C4 N003 N008 .1µ
+D1 0 N008 1N5817
+C5 N005 N007 470p
+D2 N001 N003 1N5817
+XU1 N001 N002 N005 N007 N009 0 N011 0 0 N012 N001 N010 N008 N006 N003 IN LTC3703-5
+R4 N007 OUT 113K
+C6 OUT N007 2200p Rser=100
+R5 N007 0 21.5K
+C7 N001 0 22µ
+C8 IN 0 22µ x2
+R6 N001 N010 10
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3703-5 - 60V Synchronous Switching Regulator Controller\nHigh Efficiency High Voltage Step-Down Converter\nInput: 6V to 60V     Output: 5 @ 5A
+* Notes:\n   C3 is reduced in value to speed up the simulation and illustrate current protection.  An appropirate value would be .1µ\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3703-5.sub
+.backanno
+.end

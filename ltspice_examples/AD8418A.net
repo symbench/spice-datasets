@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\AD8418A.asc
+XU1 N003 0 0 OUT N001 N001 N002 AD8418A
+V1 N001 0 5
+VCM N003 0 4
+VDIFF N002 N003 SINE(0 0.1 1k)
+.tran 10m
+.lib ADI1.lib
+.backanno
+.end

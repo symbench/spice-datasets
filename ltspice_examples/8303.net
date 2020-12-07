@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\8303.asc
+V1 IN 0 40
+L1 IN N002 150µ Rser=500m Cpar=1p
+L2 0 N001 4.2µ Rser=20m Cpar=.2p
+R3 N002 N003 316K
+D1 N001 OUT MBRS340
+C1 OUT 0 47µ
+Rload OUT 0 20
+XU1 IN 0 N003 N002 IN LT8303
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 3m startup
+.lib LT8303.sub
+.backanno
+.end

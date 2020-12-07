@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LTC3854_TA02_DC1271A.asc
+M§Q1 IN N005 N007 N007 RJK0305DPB
+L1 N007 N008 0.56µ Rser=1.8m
+R1 OUT N006 17.4K
+R2 N006 0 20K
+C1 N001 0 4.7µ
+C2 N002 0 1n
+V1 IN 0 12
+D1 N001 N003 ZLLS1000
+M§Q2 N007 N010 0 0 RJK0301DPB
+C3 N004 0 2.2n Rser=5.62K Cpar=47p
+XU1 N006 N004 N002 N003 N005 N007 0 N010 N001 IN N009 N011 LTC3854
+C4 N003 N007 .1µ
+R3 OUT N008 2m
+R4 OUT N009 47
+R5 N008 N011 47
+C5 OUT 0 330µ x2 Rser=9m
+C6 OUT 0 100µ x2 Rser=3m
+C7 IN 0 180µ V=16 Irms=3.02 Rser=30m
+C8 IN 0 10µ V=16 Rser=6m x3
+C9 N009 N011 1n
+Rload OUT 0 100m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3854 - Small Footprint, Wide Vin Range Synchronous Step-Down DC/DC Controller\nSmall Footprint Step-Down DC-DC Converter\nInput: 4.5V to 14V     Output: 1.5V @ 15A, Fsw = 400kHz
+* Notes:\n  Small value is used for the RUN/SS capacitor to reduce simulation time. Typical value should be .1µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC3854.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\4622A.asc
+V1 IN 0 12
+R1 N002 0 40.2K
+R2 N001 0 90.9K
+C1 OUT1 0 47µ Rser=5m
+Rload1 OUT1 0 .4
+C2 OUT2 0 47µ Rser=5m
+Rload2 OUT2 0 .6
+XU1 NC_01 OUT2 IN NC_02 NC_03 IN 0 NC_04 N002 NC_05 NC_06 OUT1 NC_07 IN IN NC_08 NC_09 N001 LTM4622A
+.tran .5m startup
+.lib LTM4622A.sub
+.backanno
+.end

@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3261.asc
+V1 IN 0 15
+C5 OUT 0 10µ Rser=5m
+Rload OUT 0 3K
+XU1 MP_01 0 MP_02 OUT N002 MP_03 MP_04 N001 IN IN 0 MP_05 0 LTC3261
+C7 N002 N001 1µ
+.tran 2m startup
+.lib LTC3261.sub
+.backanno
+.end

@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LTM4630A_DC2152A.asc
+V1 IN 0 12
+C1 OUT2 0 100µ Rser=2m Lser=0.8n
+R1 N006 0 13.3K
+C2 N010 0 .001µ
+C3 IN 0 22µ V=35 Rser=5m x4
+C4 N011 0 .001µ
+C5 OUT1 0 100µ Rser=2m Lser=0.8n
+R2 N007 0 8.25K
+R3 N002 0 143K
+R4 N001 N003 10K
+R5 N001 N004 10K
+I1 OUT2 0 PWL(600u 0 601u 9 680u 9 681u 0)
+I2 OUT1 0 PWL(600u 0 601u 9 680u 9 681u 0)
+C8 OUT1 0 220µ V=6.3 Rser=0.005 Lser=2n
+C9 OUT2 0 220µ V=6.3 Rser=0.005 Lser=2n
+XU1 N010 N008 N006 0 N007 N009 N011 OUT2 N005 OUT1 0 N005 NC_01 OUT1 OUT2 N003 N004 0 NC_02 MP_03 MP_04 MP_05 MP_06 NC_07 N001 IN MP_08 MP_09 MP_10 MP_11 NC_12 NC_13 NC_14 0 N002 MP_15 MP_16 NC_17 LTM4630A
+C6 OUT1 0 100µ Rser=2m Lser=0.8n
+C10 N008 0 330p
+C7 OUT2 0 100µ Rser=2m Lser=0.8n
+C11 0 N009 330p
+C12 OUT1 N006 470p
+C13 OUT2 N007 470p
+.tran 750u startup
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LTM4630A - Dual 18A or Single 36A DC/DC µModule Regulator\nHigh Efficiency Dual 18A Step-Down Regulator with Output Tracking\nInput : 6V to 15V     Outputs: 3.3 V @ 18A & 5.0V @ 18A
+.lib LTM4630A.sub
+.backanno
+.end

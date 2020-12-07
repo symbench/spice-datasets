@@ -1,0 +1,41 @@
+* Z:\mnt\design.r\spice\examples\3350.asc
+XU1 MP_01 MP_02 MP_03 NC_04 N014 N016 N001 0 N017 MP_05 N019 MP_06 MP_07 MP_08 MP_09 MP_10 N018 N020 N015 N002 CAP N011 N013 N010 N008 N007 N012 N004 N004 OUT N003 N005 N006 IN MP_11 MP_12 N009 NC_13 0 LTC3350
+V1 IN 0 12
+R1 IN N009 806K
+R2 N009 0 100K
+C1 N013 0 1µ
+C2 N014 0 .01µ
+R3 N017 0 71.5K
+R4 N019 0 121
+M1 N003 N006 IN IN IRF8910
+C3 N003 N005 1µ
+R5 OUT N003 16m
+M2 OUT N002 CAP CAP IRF8910
+C4 N004 0 4.7µ
+M3 OUT N008 N010 N010 BSZ060NE2LS
+M4 N010 N012 0 0 BSZ060NE2LS
+L1 N010 N011 3.3µ Rser=10m
+R6 N011 CAP 6m
+C5 CAP 0 22µ x4 V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+D1 N004 N007 CMDSH2-3
+C6 N007 N010 .1µ
+C7 CAP N015 .1µ
+C8 N018 N020 .1µ
+R7 CAP N016 866K
+R8 N016 0 118K
+Csupercap CAP 0 1m Rser=.1
+R9 OUT N001 866K
+R10 N001 0 118K
+C10 OUT 0 47µ x2 V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+C11 OUT 0 2.2µ x2 V=25 Irms=6.893 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C225K3PAC" type="X5R"
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10m startup
+* Note: 1. The real part allows up to 4 supercap to be charged in series, \n              with internal balancer and active shunt regulator to gurantee \n              them to have even voltage. The model does not support these\n              features, even though users can put capacitors in series.\n          2. GPI pin is not modeled.
+.lib LTC3350.sub
+.backanno
+.end

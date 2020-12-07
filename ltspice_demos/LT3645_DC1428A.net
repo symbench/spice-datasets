@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT3645_DC1428A.asc
+V1 IN 0 5
+L1 N002 OUT1 10µ
+R1 OUT1 N004 31.6K
+R2 N004 0 10K
+C1 OUT1 0 10µ
+D1 N003 N002 MBR0520L
+C2 N001 N002 0.1µ
+XU1 IN OUT1 N004 IN 0 N003 N001 N002 N006 IN OUT2 N005 LT3645
+R3 OUT2 N006 21.5K
+R4 N006 0 10K
+C3 OUT2 0 2.2µ
+Rload1 OUT1 0 11
+Rload2 OUT2 0 12.5
+R5 N005 OUT2 100K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 600us startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LT3645 - 36V 500mA Step-Down Regulator and 200mA LDO\nStep-Down Regulator with LDO\nInput: 5V to 36V     Output: 3.3V @ 300mA & 2.5V @ 200mA
+.lib LT3645.sub
+.backanno
+.end

@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LTC7860_DC2239A_TA01A.asc
+XU1 N004 N008 0 N007 N009 N005 N008 IN N003 N001 IN N006 0 LTC7860
+V1 IN 0 PWL(0 0 20u 16 2m 16 +1u 40 +2m 16)
+C1 IN N003 .47µ
+M§Q1 N002 N006 N001 N001 SQJ469EP
+R1 IN N001 12m
+C2 N004 0 .022µ
+C3 N005 0 680p Rser=10K Cpar=10p
+C4 N007 0 .001µ
+R2 OUT N009 1Meg
+R3 N009 0 48.7K
+C5 OUT 0 11.5µ Rser=5m
+Rload OUT 0 3
+L1 N002 OUT 6.8µ Rser=10m
+D1 0 N002 PDS5100
+C6 OUT N009 3.9p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 30m
+* LTC7860 - High Efficiency Switching Surge Stopper\nHigh Voltage Surge Suppressor with Timer\nInput: 3.5V to 60V     Output: 3.5V to 17V @ 5A     Fsw = 535kHz
+* Notes:\n  Not included in simulation are the input capacitors, sense cap and gate protection diodes.\n  Smaller values are used for SS & TMR capacitors to reduce simulation time. See datasheet and demo manual for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* 3.5V-60Vin
+* 3.5V-17Vout at 5A
+.lib LTC7860.sub
+.backanno
+.end

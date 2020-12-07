@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADG1401.asc
+V1 +V 0 15
+V2 -V 0 -15
+V3 N001 0 10
+V4 N003 0 pulse(0 3.3 0 1u 1u 5m 10m)
+R1 N002 0 300
+XU1 N003 N002 N001 -V 0 +V ADG1401
+.tran 30m
+.lib ADG1401.sub
+.backanno
+.end

@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LT3782.asc
+XU1 MP_01 MP_02 MP_03 0 N015 MP_04 N010 N006 0 N014 N010 0 N007 N013 N011 N008 N009 MP_05 0 N005 N003 N003 N004 0 MP_06 MP_07 IN N003 LT3782
+M§Q1 N002 N005 N007 N007 Si4840DY
+L1 IN N002 10µ Ipk=5.4 Rser=0.0156 Rpar=0 Cpar=0 mfg="TDK" pn="SLF12575T-100M5R4"
+D1 N002 OUT MBR735
+M§Q2 N001 N004 N006 N006 Si4840DY
+D2 N001 OUT MBR735
+R1 N010 0 61.9K
+R2 N014 0 100K
+R3 OUT N008 475K
+R4 N008 0 53.6K
+L2 IN N001 10µ Ipk=5.4 Rser=0.0156 Rpar=0 Cpar=0 mfg="TDK" pn="SLF12575T-100M5R4"
+C1 N013 0 .002µ
+C2 N012 0 .022µ
+R5 N011 N012 14K
+R6 IN N009 825K
+R7 N009 0 274K
+V1 IN 0 10
+R8 N006 0 12m
+R9 N007 0 12m
+C3 0 N003 1µ
+C4 N011 0 47p
+C5 OUT 0 100µ Rser=0.05
+I1 OUT 0 2 load
+C6 OUT 0 4.7µ Rser=0.003
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2.5m startup
+* LT3782, Two Phase Boost DC/DC Converter\nInput: Vin 10V to14V      Output: 24V @ 2.0A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3782.sub
+.backanno
+.end

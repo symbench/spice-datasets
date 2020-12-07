@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3086_DC1729A_TA01A.asc
+XU1 0 N004 N004 N005 N006 N003 N001 MP_01 MP_02 IN MP_03 IN NC_04 NC_05 N007 LT3086 Rpkg=14 Tpkg=10 Rsink=7 Tsink=250
+V1 IN 0 10
+R1 N004 0 357
+R2 N001 N003 92K
+R3 N001 N006 82.5K
+R4 N001 N007 100K
+C1 N001 0 10µ V=10 Irms=8.919 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C106K8PAC" type="X5R"
+C2 N001 N003 10p
+Rwire N001 OUT .24
+R6 N003 N005 46.4K
+R7 N005 N006 46.4K
+Sload 0 OUT N002 0 SW
+V2 N002 0 PULSE(0 1 0 100u 100u .5m 1m)
+.tran 2m startup
+* LT3086  - 40V, 2.1A Low Dropout Adjustable Linear Regulator with Monitoring and Cable Drop Compensation\n5V, 2.1A USB Supply with Cable Drop Compensation\nInput: 1.55V to 40V    Output: 5V @ 2.1A with 240 milliohms of Cable Resistance
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.model SW SW(Ron=2.38 Roff=4.76 Vt=.5 Vh=-.4)
+.lib LT3086.sub
+.backanno
+.end

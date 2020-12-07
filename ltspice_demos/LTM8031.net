@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTM8031.asc
+R1 N002 0 42.2K
+R2 N005 0 78.7K
+R3 OUT N006 100K
+C1 OUT 0 22µ
+Rload OUT 0 3.3
+V1 IN 0 24
+XU1 0 IN N005 N004 IN N006 N002 N003 OUT N003 N001 LTM8031
+.tran 500u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+* LTM8031 - Ultralow Noise, EMC Compliant 36V, 1A DC/DC µModule\nInput: 24V       Output: 3.3V @ 1A
+.lib LTM8031.sub
+.backanno
+.end

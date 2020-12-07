@@ -1,0 +1,30 @@
+* Z:\mnt\spice-netlists\LTC6081_TA02_.asc
+XU1 N004 N006 +V -V N005 NC_01 LTC6081
+XU2 N005 N003 +V -V OUT NC_02 LTC6081
+R1 N005 N006 10Meg
+R2 N006 IN- 10Meg
+R3 N004 IN+ 10Meg
+R4 N002 N004 10Meg
+XU3 N001 0 N002 LT1790-125
+R6 N001 IN- 350
+R7 N001 IN+ {X}
+R8 IN- 0 350
+R9 IN+ 0 350
+V1 N001 0 3
+C1 N001 0 10µ
+R10 N001 N002 10K
+R11 OUT N003 100
+C2 N002 0 .1µ
+V2 +V 0 15
+V3 -V 0 -15
+R12 N003 N002 100
+C3 OUT N003 .01µ
+* 1.25V
+.step param X 300 400 20
+.tran 10m startup
+* LTC6081 - Precision Dual CMOS Rail-to-Rail Input/Output Amplifiers\nLT1790 - µPower Low Dropout Reference\nSingle Supply Strain Gauge Amplifier
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT1790.lib
+.lib LTC6.lib
+.backanno
+.end

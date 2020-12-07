@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT6105_1V.asc
+XU1 N003 N004 0 OUT MP_01 N002 LT6105
+R1 IN N001 4m
+R2 IN N002 100
+R3 N001 N003 100
+V1 N004 0 5
+V2 IN 0 1
+R4 OUT 0 10K
+I§LOAD N001 0 PULSE(0 10 0 .05 .05 .05 .2 2)
+* LT6105 - Precision, Rail-to-Rail Input Current Sense Amplifier\nUnidirectional Current Sense Amplifier for a 1V Supply\nInput: -0.3V to 44V     Rsense: 0.004 Ohm Shunt, 0A to 10A     Output: 0V to 4V (Gain of 100)
+.tran .4 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC6.lib
+.backanno
+.end

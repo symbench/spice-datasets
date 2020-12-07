@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\3806.asc
+XU1 N007 N013 N011 MP_01 N002 N006 0 N004 N008 N010 MP_02 N009 LTC3806
+C1 N006 0 4.7µ
+C2 N010 0 .001µ
+C3 N013 N012 .001µ
+R1 N012 0 3.4K
+M§Q1 N005 N008 N009 N009 Si4490DY
+R2 N009 0 .056
+L1 N005 N001 100µ Rpar=5K
+L2 OUT N003 50µ
+M§Q2 N003 N004 0 0 Si4490DY
+V1 N002 0 15
+V2 N001 0 50
+C4 OUT 0 470µ Rser=50m
+R3 OUT N011 21K
+R4 N011 0 12.4K
+R5 N002 N007 1Meg
+Rload OUT 0 1.1
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 1.5m startup
+.lib LTC3806.sub
+.backanno
+.end

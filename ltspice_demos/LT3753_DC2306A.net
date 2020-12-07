@@ -1,0 +1,62 @@
+* Z:\mnt\spice-netlists\LT3753_DC2306A.asc
+R1 N014 0 4m
+L1 IN N003 18µ Rser=4.4m Rpar=5k
+L2 N001 N004 968µ Rser=243m
+L3 N001 OUT 330µ Rser=5m Rpar=10K
+C1 OUT 0 4.7µ x2 Rser=10m
+R2 OUT N020 196K
+R3 N020 0 9.53K
+R4 N009 N013 12.7K
+R5 N013 0 2.55K
+V1 IN 0 24
+C2 N007 0 4.7µ
+M§Q1 N003 N010 N014 N014 BSC060N10NS3
+R6 IN N009 100K
+R7 N012 N017 1.5K
+R8 N007 N011 100
+R9 N024 0 340
+XU1 N017 N018 N011 N024 PC817 Igain=3.4m
+C3 N015 0 .4µ
+C4 N021 0 .01µ
+R10 N008 0 82.5K
+R11 N025 0 187K
+R12 N026 0 100K
+R13 N027 0 44.2K
+R14 N016 N014 3K
+C5 OUT 0 47µ V=16 Irms=920m Rser=0.08 Lser=0 mfg="Nichicon" pn="UPL1C561MRH6" type="Al electrolytic"
+C6 N003 N002 .22µ
+M§Q2 N002 N006 0 0 Si7113DN
+C7 N006 N005 .1µ
+R15 N006 0 10K
+D1 N006 0 BAT46WJ
+R16 N023 N022 100K
+R17 N024 N023 59K
+C8 N012 N017 4700p
+XU2 MP_01 MP_02 N008 N023 N022 NC_03 N015 N025 N009 N013 N027 NC_04 NC_05 N026 MP_06 MP_07 N021 0 0 0 N016 N014 MP_08 N010 MP_09 N007 MP_10 IN MP_11 NC_12 MP_13 N005 LT3753
+C9 N011 0 1µ
+XU3 N018 NC_14 N018 NC_15 0 0 NC_16 N020 LT1431
+C10 N018 N019 3900p
+R18 OUT N012 1K
+C11 N012 0 2.2µ
+D2 0 N012 BZX84C10L
+D3 0 N001 RFN10BM6S
+D4 0 N004 RFN10BM6S
+I1 0 N015 PULSE(0 100u 2m 1n 1n 5m)
+R19 N020 N019 56.2K
+Rload OUT 0 54
+C12 IN 0 4.7µ Rser=10m
+C13 IN 0 56µ V=16 Irms=920m Rser=0.08 Lser=0 mfg="Nichicon" pn="UPL1C561MRH6" type="Al electrolytic"
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 36m startup uic
+* LT3753 - Active Clamp Synchronous Forward Controller\nLT1431 - Programmable Reference\n80W Active Clamp Non-Synchronous Forword Converter for PoE Applications\nInput: 10V to 54V     Output: 54V @ 1.5A
+* Notes:\n  Current source I1 and smaller SS capacitors values are being used to reduce simulation time. See datasheet typical values for SS capacitors .\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc.  All rights reserved.
+.lib LT1431.sub
+.lib LT3753.sub
+.lib PC817.sub
+.backanno
+.end

@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\1932.asc
+R1 N003 0 1.5K
+L1 IN N001 6µ
+V1 IN 0 2
+D5 N001 N002 MBR0540
+C1 N002 0 1µ
+XU1 N001 0 N004 N003 IN IN LT1932
+D1 N002 N004 NSPW500BS N=4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT1932.sub
+.backanno
+.end

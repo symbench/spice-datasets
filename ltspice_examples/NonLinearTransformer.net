@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\NonLinearTransformer.asc
+L1 N003 0 Hc=16. Bs=.44 Br=.10 A=0.0000251 Lm=0.0198 Lg=0.0006858 N=1000 Rser=0.
+V1 N002 0 sine(0 10 100)
+R1 N003 N002 1
+G1 0 N001 N003 0 1
+G2 0 N001 N004 0 1
+G3 N003 0 N001 0 1
+G4 N004 0 N001 0 1
+Rx N001 0 1Meg
+Rload N004 0 {R}
+.tran 50m
+.step param R list 1Meg 1
+* 1:1 transformer
+* K-statements don't work with the non-linear inductor since the Chan model assumes the\nfield is uniform in the air and core and the field won't be uniform if K != 1.\n \nBut you can model a transformer that saturates by shorting the input of an ideal\ntransformer with an inductor that saturates.  In this example, the cross-coupled\ntransconductances effect an ideal transformer.  The simulation steps the load resistance\nand you can see that peak input current goes down when the secondary isn't open circuit\nsince the core doesn't saturates when the secondary is shielding the core.
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

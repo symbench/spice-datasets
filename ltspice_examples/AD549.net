@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\AD549.asc
+V1 +V 0 15
+R2 OUT N001 1G
+V2 -V 0 -15
+XU1 0 N001 +V -V OUT AD549
+I1 0 N001 SINE(0 1n 1K)
+C1 OUT N001 .1p
+.tran 3m
+.lib ADI1.lib
+.backanno
+.end

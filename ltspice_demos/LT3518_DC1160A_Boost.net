@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LT3518_DC1160A_Boost.asc
+L1 N006 N002 10µ Rser=.1
+R1 N001 N003 .3
+C1 N006 0 2.2µ
+V1 N006 0 12
+D1 N004 0 LXHL-BW02 N=10
+R2 N009 0 16.5K
+M§Q1 N004 N005 N003 N003 FDS4559_P
+C2 N011 0 .0047µ
+C3 N013 0 .01µ
+XU1 N006 N006 N008 N009 0 N013 N012 N008 N010 N007 N008 N003 N001 N005 N002 MP_01 0 LT3518
+R3 N010 N011 5.1K
+C4 N001 0 2.2µ
+V2 N012 0 PULSE(3.3 0 1m 100n 100n 9800u 10m)
+R4 N007 0 25.5K
+R5 N001 N007 1Meg
+D2 N002 N001 10MQ060N
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 40m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+* DC1160A - LT3518 45V, 2.3A Internal Switch Boost LED Driver\nInput: 12V       Output: 330mA through a string of 10 LEDs\nPWM DIM: 100Hz 1:50 ratio    40V OVP with OPEN LED string
+.lib LT3518.sub
+.backanno
+.end

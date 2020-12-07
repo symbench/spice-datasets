@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\3423.asc
+XU1 N006 N002 N001 N003 0 N002 OUT N007 N005 N002 LTC3423
+R1 N006 0 30.1K
+R2 N004 0 82K
+R3 OUT N007 110K
+R4 N007 0 249K
+V1 N002 0 3
+C1 OUT 0 44µ Rser=.1
+V2 N001 0 1.2
+L1 N001 N003 2.2µ
+C2 N005 N004 470p
+D1 N003 OUT 1N5817
+Rload OUT 0 30
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LTC3423.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\1073-12.asc
+L1 IN N001 33µ Rser=0.02 Rpar=5000
+D1 N001 OUT MBRS140
+C2 OUT 0 100µ Rser=0.02
+V1 IN 0 2.8
+XU1 IN IN N001 0 0 MP_01 MP_02 OUT LT1073 top=904K bot=16.3K
+Rload OUT 0 240
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 25m startup
+.lib LT1073.sub
+.backanno
+.end

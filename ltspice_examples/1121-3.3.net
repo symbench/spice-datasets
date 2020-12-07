@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1121-3.3.asc
+V1 IN 0 PWL(0 0 1 10)
+Rload OUT 0 100
+C1 OUT 0 1µ
+XU1 OUT MP_01 0 MP_02 NC_03 MP_04 MP_05 IN LT1121-3.3
+.tran 1
+* Note Abs. Max SHDN pin voltage 6.5
+.lib LT1121.lib
+.backanno
+.end

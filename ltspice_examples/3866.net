@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\3866.asc
+XU1 N010 N002 N012 N013 N018 N017 0 OUT N011 OUT N014 N008 N016 0 N009 N007 N005 N003 N001 IN NC_01 N015 N004 N006 0 LTC3866
+V1 IN 0 12
+C1 0 N001 4.7µ
+R1 N010 0 100K
+C2 N013 0 1500p Rser=10K Cpar=220p
+C3 N012 0 .002µ
+D1 N001 N003 CMDSH2-3
+C4 N003 N007 .1µ
+M§Q1 IN N005 N007 N007 BSC0901NS
+M§Q2 N007 N009 0 0 BSC0901NS
+L1 N007 OUT .33µ Rser=.32m
+C5 OUT 0 470µ x4 V=2.5 Irms=5 Rser=0.01 Lser=0 mfg="KEMET" pn="T530D477M2R5ASE010" type="Tantalum"
+R2 N007 N011 4.64K
+R3 N007 N014 931
+C6 N011 OUT 220n
+C7 OUT N014 220n
+R4 N017 N018 30.1K
+R5 N018 0 20K
+R6 OUT 0 50m
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LTC3866.sub
+.backanno
+.end

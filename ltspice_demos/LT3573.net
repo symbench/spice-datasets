@@ -1,0 +1,30 @@
+* Z:\mnt\spice-netlists\LT3573.asc
+XU1 0 MP_01 MP_02 N003 IN N011 N004 MP_03 MP_04 N012 N007 N010 N005 N008 N006 LT3573
+R1 N007 0 10K
+R2 N006 0 28.7K
+V1 IN 0 24
+C1 N010 N009 .001µ
+C2 0 N011 4.7µ
+R3 N003 N005 80.6K
+R4 0 N008 6.04K
+L1 IN N003 24µ Rser=0.082 Rpar=10K
+L2 0 N001 2.6µ Rser=0.011 Rpar=1K
+C3 OUT 0 47µ
+D1 N001 OUT MBRS340
+R5 N009 0 50K
+C4 0 N012 .001µ
+R6 IN N004 357K
+R7 N004 0 51.1K
+R8 IN N002 2K
+C5 IN N002 .22µ
+D2 N003 N002 PMEG6010AED
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 .995
+.tran 1m startup
+* LT3573 - Isolated Flyback Converter Without an Opto-Coupler \nInput: 24V       Output: 5V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT3573.sub
+.backanno
+.end

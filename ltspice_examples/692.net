@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\692.asc
+C1 N001 0 22µ
+XU1 0 N001 IN LT1086-5
+V1 N002 0 3 Rser=10m
+R1 IN N006 51K
+R2 N006 0 20K
+R3 N001 N007 10K
+R4 N001 N003 10K
+XU2 OUT N001 0 N006 N007 N004 N003 N002 LTC692
+V2 N004 N005 PULSE(0 2 0 1u 1u 20m 40m 6) Rser=0.1
+V3 N005 0 PULSE(0 2 0.4 1u 1u 20m 40m) Rser=0.1
+V4 IN 0 PWL(0 0 25u 7.5 510m 7.5 +1u 2 +50m 2 +1u 7.5) Rser=10m
+Rload OUT 0 100
+.tran 0.7
+.lib LT1083.lib
+.lib LTC692.sub
+.backanno
+.end

@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LT3750.asc
+V1 N001 0 12
+L1 N001 N004 10µ Cpar=200p
+L2 0 N002 1m
+D1 N002 OUT D
+C1 OUT 0 1µ
+R1 N001 N005 100K
+R2 N009 0 12m
+R3 N004 N003 60.4K
+R4 N004 N006 43K
+R5 N008 0 2.49K
+XU1 N001 N005 N001 N001 0 N009 N007 N006 N003 N008 LT3750
+M§Q1 N004 N007 N009 N009 IRL530NS_L
+C2 N008 0 100p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+* LT3750 - Capacitor Charger Controller\nInput: 12V   Output: 300V
+* Scale charge time by the output capacitance\nused in the practical circuit.  For simulation, a 1uF\ncap is used to reduce simulation time.
+.lib LT3750.sub
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT3071_TA01A_DC1434A.asc
+C1 0 N006 .01µ
+V1 N001 0 3.3
+V2 IN 0 1.2
+Rload OUT 0 .18
+C2 0 N005 .001µ
+C3 OUT 0 4.7µ
+R2 N001 N002 60K
+XU1 0 N001 0 0 N001 N006 N004 N003 IN OUT OUT N001 N005 N002 LT3071
+R3 0 N003 1K
+C4 OUT 0 2.2µ
+C5 OUT 0 2.2µ
+C6 IN 0 330µ
+C7 N001 0 2.2µ
+.tran 2m startup
+* LT3071 - 5A, Low Noise, Programmable Ouput, 85mV Dropout Linear Regulator with Analog Margining\n5A Programmable 85mV Dropout Linear Regulator\nInput: 1.1V to 3V       Output: 0.9V @ 5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3071.sub
+.backanno
+.end

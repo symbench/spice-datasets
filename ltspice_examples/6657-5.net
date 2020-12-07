@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\6657-5.asc
+C1 OUT 0 1µ
+V1 IN 0 PWL(0 0 3m 5.5 7m 5.5 10m 0)
+R1 OUT 0 1K
+C2 IN 0 .1µ
+XU2 IN IN OUT 0 LT6657-5
+.tran 10m
+.lib LT6657.lib
+.backanno
+.end

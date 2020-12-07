@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\8580.asc
+L1 IN N001 15µ Rser=50m
+D1 N001 OUT 1N5818
+C1 OUT 0 4.7µ Rser=5m
+C2 0 N006 3300p Rser=6.04K Cpar=47p
+R1 N005 0 56.2K
+C3 N003 0 .001µ
+V1 IN 0 5
+R2 OUT N004 130K
+Rload OUT 0 60
+XU1 N004 N006 IN N001 N002 N005 N003 MP_01 0 LT8580
+R3 IN N002 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran .5m startup
+.lib LT8580.sub
+.backanno
+.end

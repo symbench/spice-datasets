@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1398.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 OUT N001 324
+R2 N001 0 200
+V3 IN 0 SINE(0 1 10K)
+XU1 IN N001 +V -V OUT _SHDN LT1398
+V4 _SHDN 0 PULSE(0 5 0 1u 1u .5m 1m)
+.tran 3m
+.lib LTC.lib
+.backanno
+.end

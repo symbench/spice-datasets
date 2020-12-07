@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1118.asc
+XU1 0 MP_01 N001 N003 N001 N002 LT1118
+V1 N001 0 5
+R1 N002 N003 16.9K
+R2 N003 0 10K
+C1 N002 0 1µ
+.tran 3m startup
+.lib LT1118.lib
+.backanno
+.end

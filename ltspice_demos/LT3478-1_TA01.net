@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LT3478-1_TA01.asc
+V1 IN 0 12
+L1 N001 N002 10µ Rpar=2K
+C1 N009 0 .01µ
+R1 N007 0 69.8K
+C2 N003 0 10µ
+V2 N010 0 PULSE(3.3 0 1.1m 1u 1u .9m 1m)
+C3 N011 0 .01µ
+M§Q1 N012 N010 0 0 IRF7201
+D1 N006 N012 LXHL-BW02 N=6
+D2 N002 N003 1N5818
+C4 IN 0 4.7µ
+R2 N004 N008 45.3K
+R3 N005 N008 54.9K
+R4 N005 0 130K
+R5 N010 0 10K
+XU1 N002 MP_01 IN IN N001 N003 N006 N008 N009 N004 IN N005 N004 N010 N007 N011 0 LT3478-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 6m startup
+* LT3478-1 - 4.5A Monolithic LED Drivers with True Color PWM Dimming\nAutomotive TFT LCD Backlight Boost LED Driver\nInput: 8V to 16V     Output: 15W, 6 LEDs at 700mA
+* Note:\n  A smaller value SS capacitor (C3) is used to reduce simulation time. Typical value should be 1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3478-1.sub
+.backanno
+.end

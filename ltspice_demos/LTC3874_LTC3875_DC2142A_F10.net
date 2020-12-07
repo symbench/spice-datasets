@@ -1,0 +1,74 @@
+* Z:\mnt\spice-netlists\LTC3874_LTC3875_DC2142A_F10.asc
+XU1 N019 N017 0 N018 N018 N017 0 N019 N014 OUT N016 NC_01 N022 N023 N021 N001 NC_02 NC_03 N024 N010 N006 N008 N012 NC_04 N004 IN N011 N007 N005 N009 N002 NC_05 0 N001 N003 N020 NC_06 N015 OUT N013 0 LTC3875
+V1 IN 0 12
+C1 0 N004 4.7µ
+M§Q1 IN N005 N009 N009 BSC050NE2LS
+M§Q2 N009 N011 0 0 BSC010NE2LSI
+L1 N009 OUT .25µ Rser=.32m
+C2 N007 N009 .1µ
+D1 N004 N007 CMDSH2-3
+C3 N013 OUT 220n
+C4 OUT N015 220n
+R1 N009 N013 715
+R2 N009 N015 3.57K
+R3 OUT N017 13.3K
+R4 N017 0 20K
+M§Q3 IN N006 N010 N010 BSC050NE2LS
+M§Q4 N010 N012 0 0 BSC010NE2LSI
+L2 N010 OUT .25µ Rser=.32m
+C5 N008 N010 .1µ
+D2 N004 N008 CMDSH2-3
+C6 N014 OUT 220n
+C7 OUT N016 220n
+R5 N010 N014 715
+R6 N010 N016 3.57K
+R7 N021 0 100K
+C8 OUT 0 330µ x3 V=2.5 Irms=6.5 Rser=0.009 Lser=0
+R8 N003 N004 3K
+R9 N003 0 1K
+C9 OUT 0 100µ x4 Rser=2m
+C10 OUT 0 100µ x4 Rser=2m
+C11 OUT 0 330µ x3 V=2.5 Irms=6.5 Rser=0.009 Lser=0
+C12 N019 0 .01µ
+C13 0 N018 2200p Rser=4.02K Cpar=220p
+Iload OUT 0 PULSE(60 120 3m 3u 3u .1m .2m) load
+XU2 N024 N034 OUT N001 N001 OUT N035 N024 N018 N037 0 N002 0 N029 N031 N027 N033 NC_07 N025 IN N032 N026 N030 N028 N036 N036 N025 N018 0 LTC3874
+M§Q5 IN N029 N031 N031 BSC050NE2LS
+M§Q6 N031 N033 0 0 BSC010NE2LSI
+L3 N031 OUT .25µ Rser=.32m
+C14 N027 N031 .1µ
+D3 N025 N027 CMDSH2-3
+C15 N035 OUT 220n
+R10 N031 N035 715
+C16 OUT 0 100µ x3 Rser=2m
+C17 OUT 0 330µ x3 V=2.5 Irms=6.5 Rser=0.009 Lser=0
+C18 N018 0 100p
+M§Q7 IN N028 N030 N030 BSC050NE2LS
+M§Q8 N030 N032 0 0 BSC010NE2LSI
+L4 N030 OUT .25µ Rser=.32m
+C19 N026 N030 .1µ
+D4 N025 N026 CMDSH2-3
+C20 N034 OUT 220n
+R11 N030 N034 715
+C21 OUT 0 100µ x3 Rser=2m
+C22 OUT 0 330µ x3 V=2.5 Irms=6.5 Rser=0.009 Lser=0
+R12 N037 0 75K
+C23 0 N025 4.7µ
+R13 N020 0 10K
+R14 N023 0 10K
+R15 N022 0 5K
+R16 N004 N024 100K
+R17 N036 N025 100K
+M§Q9 N036 N019 N024 N024 IRF8910
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.5m startup
+* LTC3874 - PolyPhase Step-Down Synchronous Slave Controller with Sub-Milliohm DCR Sensing\nLTC3875 - Dual, 2-Phase, Synchronous Controller with Low Value DCR Sensing and Temperature Compensation\nHigh Efficiency, 4-Phase Step-Down Supply with Sub-Milliohm DCR Sensing\nInput: 4.5V to 14V     Outputs: 1V @ 120A, Fswitch = 400kHz
+* Note:\n  Small value are used for TRACK/SS capacitors to reduce simulation time. The typical value for actual applications will vary from 10nF to 100nF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3874.sub
+.lib LTC3875.sub
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT6105_F07.asc
+XU1 N004 IN+ IN- OUT- MP_01 N005 LT6105
+R1 N006 IN- 35m
+R2 N006 N005 100
+R3 IN- N004 100
+R4 OUT- 0 4.99K
+V1 IN+ 0 15
+V2 0 IN- 15
+Iload- 0 N006 SINE(1 1 1K 1.5m 0 0 1)
+XU2 N002 IN+ IN- OUT+ MP_02 N001 LT6105
+R5 IN+ N003 35m
+R6 N001 IN+ 100
+R7 N002 N003 100
+R8 OUT+ 0 4.99K
+Iload+ N003 0 SINE(1 1 1K 0 0 0 1)
+.tran 3m
+* +V Current Monitor
+* -V Current Monitor
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LT6105 - Precision, Rail-to-Rail Input Current Sense Amplifier\nCurrent Sense Monitor for +15V and -15V Supplies\nInputs: +15V & -15V     Outputs: 0-3.5V (0A to 2A)
+.lib LTC6.lib
+.backanno
+.end

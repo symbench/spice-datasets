@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\1753.asc
+L1 N008 OUT 1.3µ
+V1 N001 0 5
+M§Q1 N008 N009 0 0 Si4410DY m=2
+C1 N011 0 150p
+C2 N012 0 4700p
+R1 N011 N012 15K
+R2 N001 N004 1.2K
+M§Q2 N001 N006 N008 N008 Si4410DY m=2
+R3 N008 N007 20
+C3 OUT 0 2700µ x5 Rser=.05
+C4 N013 0 .02µ
+R4 N001 N003 5.6K
+R5 N001 N005 5.6K
+V2 N002 0 12
+C9 OUT 0 .1µ
+XU1 N009 N002 0 0 N001 OUT N004 N007 N013 N011 N010 N005 N003 0 0 0 0 0 N001 N006 LTC1753
+Rload OUT 0 1
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.5m startup
+.lib LTC1753.sub
+.backanno
+.end

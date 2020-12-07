@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\3388-3.asc
+V1 IN 0 5
+L1 N003 OUT 100µ Rser=10m Rpar=20K
+C1 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+Rload OUT 0 1K
+XU1 N001 0 N002 IN N003 OUT N001 0 0 NC_01 0 LTC3388-3
+C2 N002 IN 1µ
+.tran 10m startup
+.lib LTC3388-3.sub
+.backanno
+.end

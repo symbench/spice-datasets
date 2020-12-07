@@ -1,0 +1,111 @@
+* Z:\mnt\design.r\spice\examples\Electrometer.asc
+V1 +V 0 15
+L§T3a N001 0 25µ
+L§T3b 0 N012 25µ
+L§T3c N002 0 25µ
+R1 N002 0 500
+R2 N003 N002 25K
+L§T1b 0 N024 100µ
+L§T1c N032 0 100µ
+L§T1a 0 N026 100µ
+J§Q1 N024 N006 N028 2N4416
+J§Q2 N032 N009 N028 2N4416
+J§Q3 N024 N009 0 2N4416
+J§Q4 N032 N006 0 2N4416
+V2 -V 0 -15
+I1 0 IN PULSE(0 1000p 1m 1u 1u 5m 10m)
+R3 N033 IN 100G
+C1 N033 IN .015p
+L§T2a N007 IN 50µ
+L§T2b IN N008 50µ
+L§T2c 0 N011 50µ
+C2 0 N002 4n
+C3 N020 N013 1000p IC=0
+XU1 0 N013 +V -V OUT LT1001
+J§Q5 N018 0 N011 2N4416
+Q6 +V N018 N022 0 2N3904
+R4 N022 -V 4.99K
+C4 N023 N022 .01µ
+R5 N023 0 1K
+Q7 N016 N023 N029 0 2N3904
+R6 N029 -V 4.75K
+C5 N029 0 .01µ
+R7 +V N016 2.5K
+Q8 N019 N016 N015 0 2N3906
+R8 +V N015 1.98K
+C6 N015 0 .01µ
+R9 N031 -V 4.22K
+Q9 +V N019 N021 0 2N3904
+C7 0 N011 2n
+R10 +V N018 1.2K
+Q10 -V N031 N030 0 2N3906
+D1 N019 N027 1N4148
+D2 N027 N031 1N4148
+R11 N021 N025 49.9
+R12 N025 N030 49.9
+C8 N026 P001 .1µ
+R13 N036 IN 10Meg
+C9 N036 IN 2.5p
+R14 N037 IN 1Meg
+R15 N038 IN 100K
+C10 N037 IN 75p
+C11 N038 IN 100p
+C12 N017 N013 .05µ IC=0
+C13 N014 N013 .1µ IC=0
+J3 N012 N007 N012 2N5432
+J1 N007 N001 N007 2N5432
+J4 N008 N012 N008 2N5432
+J2 N001 N008 N001 2N5432
+R16 OUT IN 10G
+C14 OUT IN .04p
+C15 OUT N013 25p IC=0
+C16 IN 0 100p
+R17 N034 IN 1G
+C17 N034 IN .2p
+R18 N035 IN 100Meg
+C18 N035 IN .4p
+R19 N039 IN 10K
+C19 N039 IN 50p
+C20 0 N026 1n
+A1 N006 0 N010 0 0 N006 N009 0 DFLOP Vhigh=0 Vlow=-5 Trise=10n
+V3 N010 0 pulse(-5 0 0 10n 10n .5u 1u)
+C21 N013 0 .01µ
+R20 N013 N028 100
+R21 P001 N025 500
+C22 N005 0 1n
+R22 N006 N005 100
+C23 N004 0 500p
+R23 N005 N004 200
+C24 N003 0 250p
+R24 N004 N003 400
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 15m
+K3 T3a T3b T3c 1.
+K1 T1a T1b T1c 1.
+K2 T2a T2b T2c 1.
+* Old Fashioned Electrometer Using Parametric up Conversion\nThese days you should just use a AD549
+* ±1nA full scale
+* ±1µA full scale
+* ±100µA full scale
+* Add for ±1µA full scale
+* ±10µA full scale
+* Add for ±100µA, ±1mA full scale
+* ±100pA full scale
+* ±100pA, ±1nA, ±10nA, ±100nA full scale
+* ±10nA full scale
+* ±100nA full scale
+* Add for ±10µA full scale
+* ±1mA full scale
+* A 1% mismatch in J1, J2, J3, J4 capacitiances give a 6mV input offset and a 425mV output offset(4.25pA readout error) at ±100pA full scale range.\nQ1, Q2, Q3, Q4 require a low drive impedance lest the gain of the loop inverts at high input currents.
+* ±10V full scale
+* Trim to reduce\nerror to a\nfraction of 1pA
+.lib LTC.lib
+.backanno
+.end

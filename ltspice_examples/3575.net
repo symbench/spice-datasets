@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\3575.asc
+R1 N007 0 10K
+R2 N006 0 28.7K
+V1 IN 0 18
+C1 N010 N009 4.7n
+C2 0 N011 4.7µ
+R3 N003 N005 80.6K
+R4 0 N008 6.04K
+L1 IN N003 24µ Rpar=5K
+L2 0 N001 2.6µ Rpar=5K
+C3 OUT 0 47µ Rser=10m
+D1 N001 OUT MBRS340
+R5 N009 0 11.5K
+C4 0 N012 .01µ
+R6 IN N004 357K
+R7 N004 0 51.1K
+R8 IN N002 1K
+C5 IN N002 .22µ
+D2 N003 N002 1N4148
+Rload OUT 0 3.5
+XU1 0 MP_01 MP_02 N003 IN N011 N004 MP_03 MP_04 N012 N007 N010 N005 N008 N006 LT3575
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 .99
+.tran 2.5m startup
+.lib LT3575.sub
+.backanno
+.end

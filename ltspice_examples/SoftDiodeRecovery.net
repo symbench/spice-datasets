@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\SoftDiodeRecovery.asc
+V3 N001 0 PULSE(10 -10 .5u 10n 10n 20u 40u)
+D3 N002 0 x
+R1 N001 N002 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 0 60u
+.model X D(Rs=0 Is=1e-10 tt=3u  Vp={Vp} Cjo=10n)
+.step param Vp list 0 .2 .4 .6 .8 1
+* This example shows the use of dQ/dt damping parameter Vp to control diode soft recovery.\n \nSee K.J. Teng and S. Pan: 'Modified charge-control equation for simulation of diode reverse recovery',\nElectronics Letters, 15th February 1996 Vol. 32 No. 4
+.backanno
+.end

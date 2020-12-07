@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3042.asc
+V1 IN 0 5
+R1 IN N001 200K
+R2 OUT N004 450K
+R3 N004 0 50K
+R4 N003 0 499
+C1 N002 0 4.7µ Rpar=33.2K
+C2 OUT 0 4.7µ Rser=3m
+Rload OUT 0 16.5
+XU1 IN MP_01 IN N001 N003 N004 N002 0 OUT OUT LT3042
+.tran 1 startup
+.lib LT3042.sub
+.backanno
+.end

@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT3498.asc
+XU1 N005 IN 0 0 IN N006 OUT2 N004 N002 IN N001 N003 LT3498
+L1 IN N001 15µ
+L2 IN N002 15µ
+R1 N003 N005 10
+D1 N005 0 NSSWS108T N=6
+C1 0 N003 1µ
+C2 N004 0 .22µ
+R2 OUT2 N006 2.21Meg
+V1 IN 0 3.6
+C3 OUT2 0 2.2µ
+C4 IN 0 1µ
+Rload OUT2 0 665
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT3498 - 20mA LED Driver and OLED Driver with Integrated Schottky\nInput: 3V to 5V        Outputs: 20mA through 6 LEDs  and  16V @ 24mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LT3498.sub
+.backanno
+.end

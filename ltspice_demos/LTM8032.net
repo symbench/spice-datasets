@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTM8032.asc
+XU1 0 IN N005 N004 IN N006 N002 N003 OUT N003 N001 LTM8032
+R1 N002 0 44.2K
+R2 N005 0 47.2K
+R3 OUT N006 100K
+C1 OUT 0 10µ
+Rload OUT 0 2.5
+V1 IN 0 24
+.tran 500u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+* LTM8032 - Ultralow Noise, EMC Compliant 36V, 2A DC/DC µModule\nInput: 24V       Output: 5V @ 2A
+.lib LTM8032.sub
+.backanno
+.end

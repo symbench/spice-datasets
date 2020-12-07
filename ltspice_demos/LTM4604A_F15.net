@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTM4604A_F15.asc
+V1 IN 0 3.3
+R1 N003 0 13.3K
+Rload OUT 0 .275
+C1 OUT 0 22µ x3
+XU1 0 IN N004 N001 N003 N002 OUT IN LTM4604
+C2 IN 0 10µ
+C3 N004 0 .001µ
+.tran 1.4m startup
+* LTM4604A - Low Voltage, 4A DC/DC µModule with Tracking\nTypical 2.375V to 5.5V Input, 1.5V at 4A Design\nInput: 2.4V to 5.5V     Output: 1.1V @ 4A, Fswitch = 1.25MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTM4604.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1268B.asc
+L1 IN N001 20µ Rpar=2K
+D1 N001 OUT MBRS360
+R1 OUT N002 10.7K
+R2 N002 0 1.24K
+R3 N003 N004 1K
+C2 OUT 0 500µ Rser=50m
+C3 N004 0 1µ
+V1 IN 0 5
+XU1 N003 N002 0 N001 IN LT1268
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10m startup
+.lib LT1268.sub
+.backanno
+.end

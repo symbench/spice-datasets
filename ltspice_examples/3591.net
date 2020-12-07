@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3591.asc
+L1 IN N001 22µ Rpar=2K
+V1 IN 0 5
+C1 N004 0 2.2µ
+R1 N004 N002 10
+D1 N002 0 NSPW500BS N=7
+V2 N003 0 PULSE(.5 1.25 .2m .2m .2m 1m 2.4m)
+XU1 IN 0 N001 N004 N002 N003 LT3591
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT3591.sub
+.backanno
+.end

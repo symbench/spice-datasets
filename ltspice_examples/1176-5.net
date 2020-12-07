@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1176-5.asc
+V1 IN 0 10
+L1 N001 OUT 100µ
+D1 0 N001 1N5819
+C1 OUT 0 470µ Rser=.1
+R3 N005 N006 2.8K
+C2 N006 0 .01µ
+XU1 IN N004 0 OUT N003 N002 N005 N001 LT1176 top=2.8K bot=2.2K
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+.lib LT1176.sub
+.backanno
+.end

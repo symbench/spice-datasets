@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1308A.asc
+C3 N002 0 680p
+V1 IN 0 1.5
+R1 OUT N004 1Meg
+R2 N004 0 324K
+R3 N003 N002 100K
+L1 IN N001 10µ
+D1 N001 OUT MBRS140
+C2 OUT 0 33µ
+XU1 N003 N004 IN 0 N001 IN N005 N006 LT1308A
+Rload OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+.lib LT1308A.sub
+.backanno
+.end

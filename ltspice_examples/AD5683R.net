@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\AD5683R.asc
+CLOAD NC_01 0 10n
+Vdac vDAC 0 PWL(0 0.625 10u 0.625 +1u 1.875)
+V1 Vdd 0 5
+Vdac1 NC_02 0 1.25
+I1 0 0 1m AC 1
+XU2 vDAC Vdd 0 vOUT AD5683R AD5683R Gain=2
+.tran 200u
+* .dc I1 0 40m 1m
+* .ac oct 100 1u 1G
+.lib AD5683R.sub
+.backanno
+.end

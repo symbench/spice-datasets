@@ -1,0 +1,29 @@
+* Z:\mnt\design.r\spice\examples\3851.asc
+M§Q1 IN N002 N004 N004 STD30NF06L
+L1 N004 OUT .68µ Rser=1.5m
+C1 OUT 0 660µ
+R1 OUT N008 62.5K
+R2 N008 0 20K
+C2 N003 N004 .1µ
+C3 N001 0 4.7µ
+C4 N009 0 3300p Rser=1K Cpar=100p
+C5 N005 0 .002µ
+V1 IN 0 12
+XU1 NC_01 N007 NC_02 N005 N009 N008 OUT N010 NC_03 0 N006 N001 IN N003 N002 N004 LTC3851
+D1 N001 N003 CMDSH2-3
+M§Q2 N004 N006 0 0 STD30NF06L
+C6 OUT N008 47p
+D2 0 N004 MBRS340
+R3 N004 N010 10K
+C7 N010 OUT .22µ Rpar=13K
+C8 N007 0 .1µ Rpar=80K
+Rload OUT 0 .22
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC3851.sub
+.backanno
+.end

@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LTC3786_Li-IonToUSB.asc
+C1 N001 0 4.7µ Rser=0.005
+V1 IN 0 PULSE(0 3 .1m 0 5m)
+C2 OUT 0 470µ Rser=0.010
+R1 N003 0 12.1K
+R2 OUT N003 38K
+C3 N009 0 .001µ
+L1 IN N007 0.68µ Rser=1.72m
+M§Q1 OUT N005 N007 N007 BSC0901NSI
+C4 N006 N007 .1µ
+D1 N001 N006 PMEG2005EB
+XU1 N012 0 MP_01 MP_02 0 0 N002 MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 MP_10 MP_11 MP_12 MP_13 N001 MP_14 MP_15 N004 N008 N006 N005 N007 NC_16 MP_17 N009 N011 N003 IN LTC3786
+C5 OUT 0 100µ Rser=0.003 x3
+C6 N011 0 100p
+C7 N010 0 15n
+R3 N011 N010 6.2k
+R4 0 N002 12.1K
+R5 N002 IN 13.3K
+V2 N004 0 PULSE(0 5 0.1m 100u)
+M§Q2 N007 N008 0 0 BSC0901NSI
+R6 N007 N012 1.5K
+C8 N012 IN 0.1µ
+C9 IN 0 100µ
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LTC3786 - Low Iq Synchronous Boost Controller\nHigh Efficiency Li-Ion Battery to USB Boost Converter\nInput: 2.7V to 5V      Output: 5V @ 5A, Fswitch = 350kHz
+* Notes:\n  RUN/SS capacitor has been reduced to speed up simulation time. Typical values should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3786.sub
+.backanno
+.end

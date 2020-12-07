@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1457.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N002 N001 1K
+R2 N001 0 1K
+V3 N003 0 SINE(0 1 1K)
+XU1 N003 N001 N002 +V -V LT1457
+.tran 3m
+.lib LTC2.LIB
+.backanno
+.end

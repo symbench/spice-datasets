@@ -1,0 +1,82 @@
+* Z:\mnt\spice-netlists\LT3790_LTJV24N4F3.asc
+C1 N027 0 .33n
+C2 N028 0 47n
+V1 IN 0 32
+R1 IN N001 1.5m
+R2 IN N005 499K
+R3 N005 0 88.7K
+R4 N003 N001 51
+C3 IN N003 470n
+C4 0 N004 4.7µ
+R5 IN N007 499K
+R6 N007 0 27.4K
+R7 N023 0 200K
+C5 N021 0 .1µ
+M§Q1 N001 N010 N013 N013 BSC100N06LS3
+M§Q2 N013 N016 N019 N019 BSC100N06LS3
+L1 N013 N014 10µ Ipk=17.6 Rser=0.0015 Rpar=942 Cpar=0 mfg="Coilcraft" pn="SER2915L-103"
+C6 N008 N013 .1µ
+D1 N004 N008 BAT46WJ
+C7 N006 N014 .1µ
+D2 N004 N006 BAT46WJ
+M§Q3 N002 N011 N014 N014 BSC035N04LS
+M§Q4 N014 N017 N019 N019 BSC035N04LS
+R8 N019 0 4m
+R9 N022 N025 71.5K
+R10 N025 0 3.83K
+R11 N002 OUT 8m
+C8 N002 0 4.7µ x2 V=50 Irms=0 Rser=0.004 Lser=0 mfg="TDK" pn="C575OX7RIH475M" type="X7R"
+C9 OUT 0 220µ x4 V=35 Irms=760m Rser=0.09 Lser=0 mfg="Panasonic" pn="ECA1VFQ221" type="Al electrolytic"
+R12 N004 N018 200K
+R13 N021 N027 100K
+XU1 N021 N027 N021 N020 N018 N021 N015 N012 N005 IN N003 N001 N004 N010 N008 N013 0 N016 N017 MP_01 N014 N006 MP_02 N011 N002 OUT N019 0 MP_03 0 N024 N004 N009 0 N023 N026 N025 N007 LT3790
+R14 OUT N022 1.37K
+C10 N026 0 1000p
+R15 N026 N028 147K
+C11 OUT N002 .47µ
+C12 N055 0 .33n
+C13 N056 0 22n
+R16 IN N029 1.5m
+R17 IN N033 499K
+R18 N033 0 88.7K
+R19 N031 N029 51
+C14 IN N031 470n
+C15 0 N032 4.7µ
+R20 IN N035 499K
+R21 N035 0 27.4K
+R22 N051 0 200K
+C16 N049 0 .1µ
+M§Q5 N029 N038 N041 N041 BSC100N06LS3
+M§Q6 N041 N044 N047 N047 BSC100N06LS3
+L2 N041 N042 10µ Ipk=17.6 Rser=0.0015 Rpar=942 Cpar=0 mfg="Coilcraft" pn="SER2915L-103"
+C17 N036 N041 .1µ
+D3 N032 N036 BAT46WJ
+C18 N034 N042 .1µ
+D4 N032 N034 BAT46WJ
+M§Q7 N030 N039 N042 N042 BSC035N04LS
+M§Q8 N042 N045 N047 N047 BSC035N04LS
+R23 N047 0 4m
+R24 N050 N054 71.5K
+R25 N054 0 3.83K
+R26 N030 OUT 8m
+C19 N030 0 4.7µ x2 V=50 Irms=0 Rser=0.004 Lser=0 mfg="TDK" pn="C575OX7RIH475M" type="X7R"
+R27 N032 N046 200K
+R28 N049 N055 100K
+XU2 N015 N055 N049 N048 N046 N049 N043 N040 N033 IN N031 N029 N032 N038 N036 N041 0 N044 N045 MP_04 N042 N034 MP_05 N039 N030 OUT N047 0 MP_06 0 N053 N032 N037 N009 N051 N052 N054 N035 LT3790
+R29 OUT N050 14K
+R30 N052 N056 470
+C20 OUT N030 .47µ
+C21 IN 0 4.7µ x4 V=80 Irms=0 Rser=0.004 Lser=0
+C22 IN 0 47µ x2 V=80 Irms=210m Rser=0.37 Lser=0
+Rload OUT 0 2.4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+* LT3790 - 60V Synchronous 4-Switch Buck-Boost Controller\n240W High Efficiency Parallel Buck-Boost Regulator\nInput: 8V to 56V     Output: 12V @ 10A* \n*25A for Vin > 20V & R11/R26 = 4m Ohms
+* Notes:\n  A smaller SS capacitor, C1/C12, is being used to reduce simulation time. Typical value should be 33nF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT3790.sub
+.backanno
+.end

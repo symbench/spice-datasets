@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3125.asc
+XU1 0 N003 N004 IN N001 IN OUT N002 LTC3125
+V1 IN 0 3.3
+R1 N004 0 44.2K
+L1 N001 N002 2.2µ
+R2 OUT N003 1.24Meg
+R3 N003 0 536K
+C1 OUT 0 10µ Rser=28m
+Rload OUT 0 100
+.tran 500u startup
+.lib LTC3125.sub
+.backanno
+.end

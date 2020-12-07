@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC3203B.asc
+C1 N003 N001 2.2µ V=10 Irms=11.471 Rser=0.004 MTBF=0 Lser=0 mfg="KEMET" pn="C0603C225K8PAC" type="X5R" ppPkg=1
+C2 OUT 0 4.7µ V=10 Irms=10.158 Rser=0.004 MTBF=0 Lser=0 mfg="KEMET" pn="C0805C475K8PAC" type="X5R" ppPkg=1
+C3 IN 0 2.2µ V=10 Irms=11.471 Rser=0.004 MTBF=0 Lser=0 mfg="KEMET" pn="C0603C225K8PAC" type="X5R" ppPkg=1
+V1 IN 0 4
+R1 N002 0 100K
+R2 IN N002 267K
+C4 N005 N006 2.2µ V=10 Irms=11.471 Rser=0.004 MTBF=0 Lser=0 mfg="KEMET" pn="C0603C225K8PAC" type="X5R" ppPkg=1
+C5 OUT 0 4.7µ V=10 Irms=10.158 Rser=0.004 MTBF=0 Lser=0 mfg="KEMET" pn="C0805C475K8PAC" type="X5R" ppPkg=1
+Rload OUT 0 6.6
+XU1 N001 OUT N005 IN N004 N002 IN N003 0 N006 LTC3203B
+R3 OUT N004 280K
+R4 N004 0 105K
+C6 OUT N004 4.7p
+.tran 1m startup
+* LTC3203B- 500mA Output Current Low Noise Dual Mode Step-up Charge Pump\nInput: 2.7V-5.5V    Output: 3.3V @ 500mA
+* Notes:\n \n  1.  All Capacitors are Ceramic\n \n  2.  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n       It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n       Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n       Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n       Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LTC3203B.sub
+.backanno
+.end

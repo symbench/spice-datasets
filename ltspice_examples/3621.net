@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3621.asc
+XU1 N001 IN IN NC_01 N003 N002 N002 0 0 LTC3621
+C1 N002 0 1µ
+V1 IN 0 12
+L1 N001 OUT 4.7µ Rser=20m
+R1 OUT N003 604K
+C2 OUT N003 22p
+R2 N003 0 191K
+C3 OUT 0 22µ Rser=10m
+Rload OUT 0 2.5
+.tran 1m startup
+.lib LTC3621.sub
+.backanno
+.end

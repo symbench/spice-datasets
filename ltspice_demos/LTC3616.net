@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC3616.asc
+L1 N001 OUT 0.2µ
+R1 OUT N002 165K
+V1 IN 0 3.3
+R2 N002 0 82.5K
+C1 OUT 0 100µ
+C2 IN 0 22µ x4
+I1 OUT 0 PULSE(0.1 6 1.15m 5n 5n 50u 100u)
+C3 OUT 0 47µ
+XU1 0 IN 0 MP_01 MP_02 MP_03 MP_04 IN MP_05 MP_06 N001 MP_07 MP_08 IN IN NC_09 N003 N002 IN IN 0 LTC3616
+R3 IN N003 866K
+R4 N003 0 1.13Meg
+.tran 1.3m startup
+* LTC3616 - 6A, 4MHz Monolithic Synchronous Step-down Regulator\nInput: 3.3V     Output: 1.8V @ 6A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3616.sub
+.backanno
+.end

@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC6400-20_Noise.asc
+XU1 N003 N007 N001 OP OM 0 0 N005 NC_01 NC_02 LTC6400-20
+V1 N001 0 3.0
+CB1 N001 0 1000p
+CB2 N001 0 0.1µ
+V2 N007 0 1.25
+Rs1 N003 N002 100
+Rs2 N005 N004 100
+E1 N002 0 N006 0 .5
+E2 N004 0 N006 0 -.5
+VS N006 0 AC 1
+.noise V(OP,OM) VS dec 100 1K 3G
+* NF is 20*LOG10(V(onoise)/(V(Rs1)+V(Rs2)))\nRatio of output noise to input referred noise
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LT6400-20 - 1.8 GHz Low Noise, Low Distortion Differential ADC Driver for 300 MHz IF \nNoise Simulation for Fully-Differential Amplifiers\nAn example noise simulation for a fully-differential amplifier \nThe behavioral voltage source produces a 180 degree phase shifted version of the input\nMore information on noise and noise figure calculations is available in \nAN123, the LTC6400-20 datasheet, and the LTC6403 datasheet
+.lib LTC6.lib
+.backanno
+.end

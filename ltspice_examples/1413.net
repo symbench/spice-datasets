@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1413.asc
+V1 +V 0 9
+R1 OUT N001 10Meg
+R2 N001 0 1Meg
+XU1 N004 N001 +V 0 OUT LT1413
+R3 N001 N002 10Meg
+R4 N004 0 1Meg
+R5 N004 0 10Meg
+R6 N004 N003 10Meg
+V2 N002 N003 SINE(-2 1 1K)
+V3 N003 0 SINE(45 40 100)
+.tran 10m
+.lib LTC.lib
+.backanno
+.end

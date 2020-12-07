@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1026.asc
+XU1 N001 N003 N004 OUT- 0 IN N002 OUT+ LT1026
+C1 N002 N001 1µ
+C2 N003 N004 1µ
+C3 0 OUT- 1µ
+C4 OUT+ 0 1µ
+V1 IN 0 {V}
+.tran 3m startup
+.step param V list 4 5 6
+.lib LT1026.sub
+.backanno
+.end

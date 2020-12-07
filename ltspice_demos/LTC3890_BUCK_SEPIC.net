@@ -1,0 +1,55 @@
+* Z:\mnt\spice-netlists\LTC3890_BUCK_SEPIC.asc
+V1 IN 0 5
+M§Q1 IN N004 N009 N009 Si4896DY
+M§Q2 N009 N011 0 0 Si4896DY
+D1 N001 N006 1N4148
+C1 N001 0 4.7µ
+C2 N006 N009 .1µ
+L1 N009 N010 3.3µ Rser=0.005
+R1 N010 OUT2 3m
+C3 OUT2 0 330µ
+R2 OUT2 N016 100K
+R3 N016 0 31.6K
+C4 N020 0 1n
+C5 N022 0 .001µ
+M§Q3 N008 N003 N013 N013 Si4896DY
+C6 N001 0 .1µ
+C7 N017 0 4.7n
+C8 N021 0 .001µ
+XU1 N014 N023 N025 N024 NC_01 0 N002 N002 OUT2 N010 N016 N019 N022 NC_02 N004 N009 N006 N011 N001 NC_03 0 IN NC_04 N001 0 N003 NC_05 NC_06 N021 N018 N015 N012 LTC3890
+L2 N008 IN 4.7µ Rser=0.01
+L3 N007 0 4.7µ Rser=0.01
+C9 N008 N007 10µ
+C10 OUT1 0 220µ
+R4 N012 N013 511
+R5 N014 0 511
+C11 N012 N014 1n
+R6 N001 N005 1K
+C12 N005 0 0.1µ
+R7 N005 N012 2K
+R8 N005 N014 2K
+R9 N013 0 6m
+R10 OUT1 N015 100K
+R11 N015 0 7.15K
+R12 N023 0 42K
+D2 N007 OUT1 PDS760
+R13 IN N002 511K
+Rload1 OUT1 0 6
+Rload2 OUT2 0 0.33
+R14 N019 N020 15K
+C13 N018 0 47p
+R15 N018 N017 7.8K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+K L2 L3 1
+* 3.3V @ 10A
+* 12V @ 2.0A
+* LTC3890 - 60V Low IQ, Dual, 2-Phase Synchronous Step-Down DC/DC Controller\nDual Buck/SEPIC Controller for Automotive or Industrial Supplies\nInput: 5V to 35V     Output: 3.3V @ 10A (BUCK) and 12V @ 2A (SEPIC)\nSEPIC topology enables this circuit to generate 12V output even when the input drops to 5V during cold crank
+* Note: \nIf the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\nIt remains the customer's responsibility to verify proper and reliable operation in the actual application.\nComponent substitution and printed circuit board layout may significantly affect circuit performance or reliability.\nContact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\nCopyright © 2012 Linear Technology Inc.  All rights reserved.
+.lib LTC3890.sub
+.backanno
+.end

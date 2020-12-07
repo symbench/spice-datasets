@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3637.asc
+V1 IN 0 48
+L1 N001 OUT 10µ Rser=50m
+C1 OUT 0 47µ V=10 Irms=8.919 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C106K8PAC" type="X5R"
+Rload OUT 0 12
+XU1 N001 0 IN MP_01 IN N003 N003 0 N002 N003 NC_02 NC_03 LTC3637
+R1 OUT N002 200K
+R2 N002 0 35.7K
+D1 0 N001 MBRS1100
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.5m startup
+.lib LTC3637.sub
+.backanno
+.end

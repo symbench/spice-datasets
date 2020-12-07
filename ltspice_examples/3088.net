@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3088.asc
+XU1 MP_01 N001 OUT MP_02 IN LT3088
+V1 IN 0 3.3
+R1 N001 0 30.1K
+C1 OUT 0 10µ Rser=5m
+Rload OUT 0 1.875
+.tran 1m startup
+.lib LT3088.sub
+.backanno
+.end

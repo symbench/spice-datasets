@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTC4366-2_TA02.asc
+C1 N004 N006 3.3n
+M1 IN N001 OUT OUT HUFA76645
+V1 IN 0 PWL(0 0 +20u 12 +10m 12 +.7m 125 +.7m 12 +.1 12 +5m 125 +.2 12)
+Cload OUT 0 220µ
+C3 N003 0 2n
+R1 OUT N005 12.4K
+R2 N006 0 1.91K
+R3 N001 N003 10
+R4 N005 0 169K
+Rload OUT 0 6
+R6 IN N002 29.4K
+C4 OUT N006 0.47µ
+XU1 N002 N002 N004 N006 N006 N005 OUT N003 LTC4366-2
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10
+* LTC4366-2 - High Voltage Surge Stopper\nSurge Protected Automotive 12V Supply\nInput 9V to 100V     Output: 4A, 18V Clamp, 9s FET Cool Down Timer on OV Fault
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC4366-2.sub
+.backanno
+.end

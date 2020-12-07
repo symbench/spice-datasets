@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTC3631.asc
+V1 IN 0 20
+L1 N001 OUT 100µ Rser=0.43
+R1 OUT N003 1.47Meg
+R2 N003 0 280K
+C1 OUT 0 47µ x2
+C2 IN 0 4.7µ
+R3 IN N002 2Meg
+C3 N004 0 47n
+I1 OUT 0 PULSE(5m 100m 12m 1n 1n 1m 2m)
+XU1 N001 IN NC_01 N004 N002 N003 0 0 LTC3631
+.tran 20m startup
+* LTC3631 Design - High Efficiency, High Voltage 100mA Synchronous Step Down Converter\nInput: 4.5 to 45V    Output: 5V @ 100mA Component values selected similar to DC1499A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LTC3631.sub
+.backanno
+.end

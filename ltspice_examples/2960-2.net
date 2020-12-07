@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\2960-2.asc
+R1 N003 N008 100K
+R2 OUT _RESET 10Meg
+R3 N001 N007 5.6Meg
+R4 N007 0 402K
+C1 OUT 0 1µ
+R5 OUT N006 6.04Meg
+R6 N006 0 402K
+Vbat N001 0 PWL(0 0 200 9 400 0 400.001 -3)
+R7 N002 N003 1Meg
+D1 N003 N002 BZX84C15L
+M§Q1 OUT N003 N002 N002 Si4427DY
+M§Q2 N001 N003 N002 N002 Si4427DY
+R8 N001 N004 10K
+XU1 N004 0 _RESET N008 0 N005 N006 N007 LTC2960-2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* Prevention of Excessive Battery Drain in Low Battery Conditions
+* 6V to 8.4V
+.tran 400
+.lib LTC2960-2.sub
+.backanno
+.end

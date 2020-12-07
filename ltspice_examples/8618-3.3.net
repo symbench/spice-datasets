@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\8618-3.3.asc
+R1 N006 0 110K
+C1 N005 0 10n
+V1 IN 0 12
+C2 N003 0 1µ
+L1 N004 OUT 120µ Rser=0.8
+C3 N002 N004 47n
+C4 OUT 0 22µ Rser=5m
+Rload OUT 0 200
+R4 OUT N001 100K
+XU1 N002 N004 OUT N003 N006 OUT N005 N001 IN IN 0 LT8618-3.3
+.tran 5m startup
+.lib LT8618-3.3.sub
+.backanno
+.end

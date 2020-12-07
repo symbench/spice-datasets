@@ -1,0 +1,26 @@
+* Z:\mnt\design.r\spice\examples\7130.asc
+XU1 N006 IN N007 N009 N011 N010 0 OUT N005 OUT N008 N004 NC_01 0 MP_02 N003 IN N002 N001 IN NC_03 NC_04 NC_05 NC_06 0 LTC7130
+V1 IN 0 12
+C1 N009 0 1n Rser=20K Cpar=220p
+R1 N006 0 121K
+C2 N007 0 1n
+C3 0 N001 4.7µ
+D1 N001 N002 CMDSH2-3
+C4 N002 N003 .1µ
+L1 N003 OUT .25µ Rser=.37m Rpar=2K
+C5 OUT 0 470µ x2 V=2.5 Irms=5 Rser=0.01 Lser=0 mfg="KEMET" pn="T530D477M2R5ASE010" type="Tantalum"
+R2 OUT 0 75m
+R3 N003 N005 3.09K
+R4 N003 N008 619
+C6 N005 OUT 220n
+C7 OUT N008 220n
+R5 N010 N011 30.1K
+R6 N011 0 20K
+R7 N001 N004 3.01K
+R8 N004 0 1K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran .7m startup
+.lib LTC7130.sub
+.backanno
+.end

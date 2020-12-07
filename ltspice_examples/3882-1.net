@@ -1,0 +1,40 @@
+* Z:\mnt\design.r\spice\examples\3882-1.asc
+C1 OUT 0 470µ X4 Rser=25m
+C2 OUT 0 100µ X2 Rser=3m
+XU2 MP_01 MP_02 N009 N006 N013 0 N012 N001 N004 N005 LTC4449
+L1 N006 OUT .2µ Rser=.3m Rpar=5K
+R1 N006 N015 3.09K
+C3 N015 OUT .22µ
+D1 N004 N005 1N5818
+C4 N005 N006 .22µ
+V1 N004 0 5
+Rload1 OUT 0 82.5m
+M§Q1 IN N009 N006 N006 BSC050N04LS
+M§Q2 N006 N013 0 0 BSC017N04NS
+V2 IN 0 32
+XU3 MP_03 MP_04 N008 N002 N010 0 N011 N001 N004 N003 LTC4449
+M§Q3 IN N008 N002 N002 BSC050N04LS
+L2 N002 OUT .2µ Rser=.3m Rpar=5K
+R2 N002 N014 3.09K
+C5 N014 OUT .22µ
+D2 N004 N003 1N5818
+C6 N003 N002 .22µ
+M§Q4 N002 N010 0 0 BSC017N04NS
+C7 N001 0 2.2µ
+C8 N019 0 1µ
+C9 N018 0 100p
+C10 N017 OUT 200p Rser=1.07K
+C11 N016 N017 270p Rser=100K Cpar=11p
+R3 N007 N001 2K
+XU1 N017 N016 OUT 0 NC_05 NC_06 N018 OUT N016 N001 0 NC_07 N007 N019 NC_08 MP_09 MP_10 N011 N004 MP_11 0 N014 OUT OUT N015 N001 MP_12 N004 N012 MP_13 MP_14 N018 0 IN NC_15 N004 MP_16 NC_17 LTC3882-1 Vout_0=1 Vout_1=1 Iout0_fault=29.75 Iout1_fault=29.75 Iout0_warn=20 Iout1_warn=20 Iout0_gain=1m Iout1_gain=1m Vout0_AVP=0 Vout1_AVP=1 Freq=500K PHAS_0=0 PHAS_1=180 Ton0_delay=.3m Ton0_rise=.5m Ton1_delay=.3m Ton1_rise=.5m Toff0_delay=.2m Toff0_fall=.3m Toff1_delay=.2m Toff1_fall=.3m Vout0_rng=0 Vout1_rng=0
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* Please read the following notes carefully, since the model presents different user interface\nthan the real part does.\n \n(1) All PMBus communication and memory address related functions and pins are not modeled. \n \n(2) Changes to all parameter values during the simulation running will not be in effect, unless the\nsimulation is stopped and restarted. This is different from the operation of the part, which will\n respond to the commanded changes while running. \n \n(3) Share_clk is not modeled. The default time reference of LTspice is used as the common time \nbase for all time related parameters.\n \n(4) The following parameters can be defined, by right-clicking the symbol of LTC3882. Different \nnomenclature from the datasheet is adopted here. If any value of these parameters are set beyond \nthe scope discribed in the datasheet, the resulting simulation outcomes are not meaningful.\n \n    Freq -- in Hz, sets switching frequency as one of values of 250K, 300K, 350K, \n                400K, 450K, 500K, 600K, 750K, 900K, 1000K, 1250K. FREQ_CFG pin needs to float \n                (or short to VDD25), to make the value be in effect;\n     PHAS_0 & PHAS_1 -- in degree,  set phase angle related to SYNC signal. \n                Certain combinations are restricted as in datasheet. PHAS_CFG \n                pin needs to float (or short to VDD25), to make the value be in effect;\n     Ton0_delay & Ton0_rise; Ton1_delay & Ton1_rise -- in sec, set delay and soft-start timers for \n                channel0 and channel1. Initialization time is not modeled;\n     Toff0_delay & Toff0_fall; Toff1_delay & Toff1_fall -- in sec, set delay and soft-off timers for \n                channel0 and channel1;\n     Vout_0 & Vout_1 -- in volt, set output voltages respectively. Vout#_CFG pin needs to float \n                (or short to VDD25), to make the value be in effect;\n     Vout0_range & Vout1_range -- set maximum output range, with value 0\n                                                      for 5.5V; value 1 for 2.75V;\n     Iout0_fault & Iout1_fault -- in Amper, set maximum inductor peak current value, OC will be triggered \n                                               when the value is exceeded;\n     Iout0_warn & Iout1_warn -- in aMper, set the average load current maximum value, which will be used  \n                                                with Vout#_AVP to define the AVP operation;\n     Iout0_gain & Iout1_gain -- in Ohm, set sensing resistor or inductor DCR values used in the circuit;\n     Vout0_AVP & Vout1_AVP -- set the maximum value reference will reduce at Iout#_warn level:
+.tran 1m startup
+.lib LTC3882-1.sub
+.lib LTC4449.sub
+.backanno
+.end

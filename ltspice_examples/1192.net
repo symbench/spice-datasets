@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1192.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 N002 N001 910
+R2 N001 0 100
+V3 IN 0 AC 1
+R3 N002 N003 75
+R4 OUT 0 75
+T1 N003 0 OUT 0 Td=50n Z0=75
+XU1 IN N001 +V -V N002 NC_01 LT1192
+.ac oct 100 100K 1G
+* Double Terminated Cable Driver
+.lib LTC.lib
+.backanno
+.end

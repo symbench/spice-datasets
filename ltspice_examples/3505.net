@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\3505.asc
+V1 IN 0 10
+C1 N001 N002 .1µ
+L1 N002 OUT 2µ
+R1 OUT N004 32.4K
+R2 0 N004 10K
+D1 0 N002 MBRS340
+C2 OUT 0 10µ
+D2 OUT N001 BAT54
+C3 OUT N004 22p
+R3 IN N003 10K
+C4 N003 0 .1µ
+XU1 N001 N002 IN N003 0 N006 N004 N007 LT3505
+R4 N007 N008 10K
+C5 N008 0 60p
+R5 N006 0 40K
+R6 N005 N006 1.5Meg
+D3 N005 IN BZX84C12L
+Rload OUT 0 30
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 300u startup
+.lib LT3505.sub
+.backanno
+.end

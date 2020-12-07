@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\3759.asc
+XU1 N010 N011 N006 N009 MP_01 N005 N008 N007 N003 OUT IN N004 0 LT3759
+C1 N010 0 22n Rser=7.5K
+R1 N009 0 41.2K
+C2 N006 0 .05µ
+V1 IN 0 12
+C3 N003 0 4.7µ
+R2 IN N004 105K
+R3 N004 0 118K
+R4 N003 N005 100K
+L1 N001 IN 15µ Rser=50m
+L2 N002 0 15µ Rser=50m
+M§Q1 N001 N007 N008 N008 IPB081N06L3
+R5 N008 0 5m
+C4 N001 N002 4.7µ
+D1 N002 OUT MBRS360
+R6 OUT N011 105K
+R7 N011 0 15.8K
+C5 OUT 0 47µ x4 V=20 Irms=0 Rser=0.15 Lser=0 mfg="KEMET" pn="T495X476M020AS" type="Tantalum"
+C6 OUT 0 10µ V=10 Irms=8.919 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C106K8PAC" type="X5R"
+Rload OUT 0 12
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 4m startup
+.lib LT3759.sub
+.backanno
+.end

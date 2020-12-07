@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3454.asc
+L1 N001 N002 5µ
+V1 N003 0 3.6
+R1 0 N006 20.5K
+XU1 N003 N003 N006 N008 N005 N002 N004 N007 N003 N001 0 LTC3454
+R2 0 N008 3.65K
+C2 N007 0 .01µ
+D1 N004 N005 LXK2-PW14
+C3 N004 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LTC3454.sub
+.backanno
+.end

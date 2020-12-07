@@ -1,0 +1,46 @@
+* Z:\mnt\spice-netlists\LT3992_TA08_DC1537A.asc
+V1 IN 0 12
+C1 IN 0 10µ
+C2 N004 N006 .47µ
+L1 N006 N008 10µ
+R1 OUT2 N010 24.9K
+R2 N010 0 8.06K
+D1 0 N006 MBRS340
+D2 OUT2 N004 PMEG4005AEA
+C3 OUT2 0 100µ
+R3 OUT2 N012 100K
+R4 N017 N016 30.0K
+C4 N016 0 680p
+C5 OUT2 N010 22p
+Rload1 OUT2 0 1.65
+R5 N022 0 7.32K
+R6 N023 0 20.0K
+R7 N020 0 100K
+R8 N021 0 100K
+C6 N014 0 1n
+C7 N017 0 33p
+C8 N005 N007 .47µ
+L2 N007 N009 22µ
+R9 OUT1 N011 42.2K
+R10 N011 0 8.06K
+D3 0 N007 MBRS340
+D4 OUT1 N005 PMEG4005AEA
+C9 OUT1 0 100µ
+R11 OUT1 N013 100K
+R12 N018 N019 30.0K
+C10 N019 0 680p
+C11 OUT1 N011 22p
+Rload2 OUT1 0 2.5
+C12 N015 0 1n
+C13 N018 0 33p
+R13 N002 IN 1K
+R14 N003 IN 1K
+XU2 N005 N013 N011 N011 N010 N010 N012 N004 OUT2 MP_01 N008 MP_02 N006 IN N002 N014 N020 N017 N023 MP_03 N001 N022 N018 N021 N015 N003 IN N007 MP_04 N009 MP_05 OUT1 0 LT3992
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.tran 500u startup
+* LT3992 - Monolithic Dual Tracking 3A Step-Down Switching Regulator\nFMEA Fault Tolerant 5V/2A and 3.3V/2A Dual Converter\nInput: 7V to 60V       Outputs: 5V @ 2A & 3.3V @ 2A
+.lib LT3992.sub
+.backanno
+.end

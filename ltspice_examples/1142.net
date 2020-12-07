@@ -1,0 +1,34 @@
+* Z:\mnt\design.r\spice\examples\1142.asc
+XU1 N005 N002 0 0 MP_01 N009 MP_02 MP_03 N004 IN N016 MP_04 N013 +5 N008 N003 0 0 MP_05 N010 MP_06 MP_07 N001 IN N015 MP_08 N012 +3.3 LTC1142
+R1 N012 N011 1K
+C1 N011 0 3300p
+C2 N016 0 390p
+C3 N015 0 590p
+R2 N014 N013 1K
+C4 N014 0 3300p
+M§Q1 N007 N010 0 0 FDS6680A
+C5 N008 +5 1000p
+L1 N007 N008 50µ
+R3 N008 +5 50m
+C6 +5 0 220µ Rser=0.1 x2
+D1 0 N007 1N5818
+M§Q2 N006 N009 0 0 FDS6680A
+M§Q3 N006 N001 IN IN FDC638P
+L2 N006 N005 50µ
+R4 N005 +3.3 50m
+C7 +3.3 0 220µ Rser=0.1 x2
+D2 0 N006 1N5818
+C8 N005 +3.3 1000p
+Rload2 +5 0 10
+Rload1 +3.3 0 10
+V1 IN 0 10
+M§Q4 N007 N004 IN IN FDC638P
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LTC1142.sub
+.backanno
+.end

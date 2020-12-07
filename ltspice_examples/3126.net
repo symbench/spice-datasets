@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\3126.asc
+XU1 0 N005 IN2 IN1 N003 N004 N001 N002 0 N011 N008 N013 N015 IN2 N007 IN1 N009 N010 MP_01 N012 N008 NC_02 N006 MP_03 0 0 N014 LTC3126
+C1 N002 N001 .1µ Rser=1m
+C2 N004 N003 .1µ Rser=1m
+V1 IN1 0 15
+V2 IN2 0 12
+C3 N008 0 1µ
+R1 N011 N013 499K
+R2 N013 N015 249K
+R3 N015 0 249K
+L1 N005 OUT 2.2µ Rser=5m
+C4 OUT 0 47µ V=6.3 Irms=0 Rser=.001
+R4 OUT 0 1.3
+R5 N014 0 16.5K
+R7 N006 0 374K
+C5 OUT N006 10p Rpar=1.13Meg
+.tran .9m startup
+* Note: LTC3126 has a Soft-Start duration of 7.5ms. \n          Model has soft-start duration of only 0.75ms.
+.lib LTC3126.sub
+.backanno
+.end

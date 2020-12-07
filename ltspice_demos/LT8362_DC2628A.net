@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT8362_DC2628A.asc
+XU1 IN N005 IN MP_01 N002 MP_02 0 MP_03 N003 N004 N007 0 MP_04 N001 MP_05 MP_06 0 LT8362
+V1 IN 0 12
+L1 IN N001 6.8µ Rser=.17
+D1 N001 OUT MBRS1100
+C1 OUT 0 10µ
+R1 OUT 0 160
+R3 N003 0 34.8K
+C2 0 N006 1000p
+C3 N007 0 2200p
+R5 N004 0 20K
+C4 N002 0 1µ
+R2 OUT N003 1Meg
+C5 OUT N003 4.7p
+R4 N006 N005 22K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2.5m startup
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LT8362 - Low Iq Boost/SEPIC/Inverting DC/DC Converter with 2A, 60V Switch\n48V Boost Converter\nInput: 12V to 36V     Output: 48V @ 300mA, Fsw = 2MHz
+.lib LT8362.sub
+.backanno
+.end

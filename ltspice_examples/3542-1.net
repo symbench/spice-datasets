@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3542-1.asc
+V1 IN 0 3.6
+L1 N001 OUT 2.2µ
+C1 OUT 0 10µ
+Rload OUT 0 5.6
+XU1 OUT IN 0 N001 0 IN LTC3542-1
+.tran 2.5m startup
+.lib LTC3542-1.sub
+.backanno
+.end

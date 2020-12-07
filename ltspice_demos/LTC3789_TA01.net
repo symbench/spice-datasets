@@ -1,0 +1,40 @@
+* Z:\mnt\spice-netlists\LTC3789_TA01.asc
+M§Q1 IN N009 N012 N012 IRF7831
+D1 N001 N008 BAT54
+D2 N001 N007 BAT54
+C1 N001 0 4.7µ
+M§Q2 N002 N010 N011 N011 IRF7831
+M§Q3 N011 N014 N015 N015 IRF7831
+C2 N002 0 10µ
+R1 N019 0 7.5K
+R2 OUT N019 105K
+R3 N015 0 10m
+C3 N007 N012 .1µ
+C4 N008 N011 .1µ
+C5 N016 0 .001µ
+C6 N018 0 0.01µ Rser=14.7K Cpar=1000p
+M§Q4 N012 N013 N015 N015 IRF7831
+D3 N015 N012 1N5817
+D4 N011 N002 1N5817
+L1 N012 N011 4.7µ Rpar=1K
+XU1 N019 N016 N015 0 N018 0 0 N017 N005 IN N002 0 N006 N004 MP_01 N011 N010 N008 N014 N002 N001 IN N013 0 N007 N009 N012 N003 LTC3789
+R4 N002 OUT 10m
+R5 N017 0 121K
+C7 OUT 0 270µ Rser=75m
+Rload OUT 0 6
+C8 IN 0 22µ
+V1 IN 0 15
+R6 N004 OUT 100
+R7 N006 N002 100
+C9 N004 N006 2.2µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* LTC3789 - High Efficiency, Synchronous, 4-Switch Buck-Boost Controller\n12V Automotive Buck-Boost Solution with Programmable Output Current Limit\nInput: 4V to 38V (40V Max)     Output: 12V @ 4A(5A current limit) fsw = 400kHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3789.sub
+.backanno
+.end

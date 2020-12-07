@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\LT3094.asc
+V2 IN 0 -5
+R1 0 N001 33.2K
+R2 0 N002 3.75k
+R4 OUT N006 475k
+R6 N006 0 50k
+R3 N004 N003 100K
+Rload OUT 0 16.6
+C2 OUT 0 10µ
+C1 0 N001 4.7µ
+R5 N005 0 100K
+XU1 IN MP_01 N003 N004 N006 N002 N005 N001 0 OUT OUT LT3094
+V1 N003 0 3.3
+.tran 500m startup
+.lib LT3094.sub
+.backanno
+.end

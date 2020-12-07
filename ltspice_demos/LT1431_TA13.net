@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT1431_TA13.asc
+XU1 N001 NC_01 IN NC_02 0 N004 NC_03 N003 LT1431
+XU2 OUT NC_04 IN NC_05 0 N005 NC_06 N002 LT1431
+R1 N001 IN 1K
+R2 OUT IN 1K
+R4 N003 N004 5K
+R6 N002 N005 5K
+R3 N004 0 10
+R5 N005 0 10
+R7 IN N003 6K
+R8 IN N002 4K
+V1 IN 0 PWL(0 0 1 6 2 0)
+D1 N002 N001 1N4148
+R9 OUT 0 100K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2 startup
+* LT1431 - Programmable Reference\n5V Power Supply Monitor with ±500mV Window and 50mV Hysteresis
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1431.sub
+.backanno
+.end

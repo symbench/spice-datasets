@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\3441.asc
+L1 N001 N002 4.7µ
+V1 IN 0 3
+R1 OUT N003 340K
+R2 N003 0 200K
+R3 N006 N005 5K
+C1 N003 N006 250p
+C2 OUT 0 22µ Rser=10m
+C3 N004 0 .001µ
+R4 IN N004 500K
+XU1 N004 0 0 N001 N002 MP_01 0 OUT IN IN N005 N003 LTC3441
+C4 N003 OUT 150p
+Rload OUT 0 10
+.tran 1m startup
+.lib LTC3441.sub
+.backanno
+.end

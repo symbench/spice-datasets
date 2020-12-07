@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC6258_F07A_LEDDrive_1.asc
+R1 N004 N003 51
+V1 N001 0 5
+M§Q1 N005 N004 N008 N008 2N7002
+D1 N001 N005 LXHL-BW02
+R2 N008 0 10
+R3 N001 N007 275K
+R4 N007 0 15K
+C1 N007 0 1000p
+C2 VC N004 1µ
+R5 N004 0 10K
+R6 VC 0 1Meg
+R7 N001 VC 1Meg
+M§Q2 N006 N004 0 0 2N7002
+R8 N001 N006 470K
+R9 VC N006 140K
+R10 N008 N002 100
+C3 N003 N002 .470µ
+XU1 N007 N002 N003 N001 0 VC LTC6258
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 5
+.ic V(VC)=0
+* LTC6258 - 1.3MHz, 20?A Power Efficient Rail-to-Rail I/O \nLED Driver With Self-Oscillation
+* Note:\n  VC is biased lower when the LED is on, and biased higher when the LED is off, in order to kick start the oscillation.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTC3.lib
+.backanno
+.end

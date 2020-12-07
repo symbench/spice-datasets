@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\1647-2.asc
+C1 0 N003 10n Rser=1K
+R1 N002 N003 10
+R2 IN N001 20m
+M§Q1 N001 N002 OUT1 OUT1 IRF7413A
+C2 OUT1 0 30µ
+V1 IN 0 PWL(0 0 2.7m 0 +1u 12)
+D1 0 N003 UMZ22K
+V2 N004 0 PWL(0 0 130m 0 +1u 3.3)
+C3 0 N005 10n Rser=1K
+R3 N006 N005 10
+R4 IN N007 20m
+M§Q2 N007 N006 OUT2 OUT2 IRF7413A
+C4 OUT2 0 30µ
+D2 0 N005 UMZ22K
+XU1 IN N004 N004 0 N005 N003 N007 N001 LTC1647-2
+Rload1 OUT1 0 8
+Rload2 OUT2 0 6
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0.4
+.lib LTC1647-2.sub
+.backanno
+.end

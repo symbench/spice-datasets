@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTM8047_DC1693A.asc
+C1 OUT 0 22µ
+C2 IN 0 10µ
+Rload OUT 0 50
+V1 IN 0 12
+R2 N004 0 7.15K
+R3 IN N001 200K
+R4 N001 0 90.9K
+C5 N002 0 4.7µ
+C6 N003 0 10p
+XU2 0 OUT 0 N004 IN N002 N001 N003 LTM8047
+.tran 2m startup
+* LTM8047 - Isolated µModule DC/DC Converter\nInput: 4V to 29V      Outputs: 5V@100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTM8047.sub
+.backanno
+.end

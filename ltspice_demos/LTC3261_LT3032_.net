@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LTC3261_LT3032_.asc
+V1 IN+ 0 12
+C5 IN- 0 10µ Rser=5m
+XU1 MP_01 0 MP_02 IN- N004 MP_03 MP_04 N003 IN+ IN+ 0 MP_05 0 LTC3261
+C7 N004 N003 1µ Rser=10m
+XU2 OUT+ N002 N001 0 MP_06 IN- OUT- N005 MP_07 IN- N006 IN+ MP_08 IN+ LT3032
+C1 OUT+ 0 10µ Rser=5m
+R1 OUT+ N002 51K
+R2 N002 0 30K
+C2 OUT- 0 10µ Rser=5m
+R3 OUT- N005 51K
+R4 N005 0 30K
+Rload+ OUT+ 0 165
+Rload- OUT- 0 165
+C3 OUT+ N001 .01µ
+C4 OUT- N006 .01µ
+C6 IN+ 0 10µ Rser=5m
+.tran 30m startup
+* LTC3261 - High Voltage, Low Quiescent Current Inverting Charge Pump\nLT3032 - Dual 150mA Positive/Negative Low Noise Low Dropout Linear Regulator\nDual Polarity Low Noise Power Supply from a Single Input Supply\nInput: 4.5V to 20V     Outputs: ±3.3V @ 20mA
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LT3032.lib
+.lib LTC3261.sub
+.backanno
+.end

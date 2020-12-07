@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADHV4702-1.asc
+XU1 N002 N001 OUT +V -V 0 +V ADHV4702-1
+V1 +V 0 110
+V2 -V 0 -110
+Vin N002 0 PWL(0 0 100n 5 20u 5 +200n -5 40u -5 +100n 0)
+R1 OUT 0 10K
+R2 OUT N001 100K
+R3 N001 0 5K
+.tran 60u
+.lib ADI.lib
+.backanno
+.end

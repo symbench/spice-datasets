@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\ADM7155-01.asc
+V1 IN 0 2.3
+C3 OUT 0 10µ
+R1 N003 N005 50K
+R2 N005 0 100K
+C4 N003 0 1µ
+C1 N004 0 1µ
+C2 N002 0 1µ
+R3 IN N001 100K
+R5 OUT 0 18
+XU1 N004 OUT N002 0 N005 N003 N001 IN ADM7154_5 Vreg=2.1022 Vref=1.2152
+.tran 5m startup
+.lib ADM7154_5.sub
+.backanno
+.end

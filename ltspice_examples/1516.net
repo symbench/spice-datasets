@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1516.asc
+XU1 N001 IN OUT N003 N004 0 0 N002 LTC1516
+C1 N002 N001 .22µ
+C2 N004 N003 .22µ
+V1 IN 0 3
+C3 OUT 0 10µ
+Rload OUT 0 100
+.tran 1m startup
+.lib LTC1516.sub
+.backanno
+.end

@@ -1,0 +1,43 @@
+* Z:\mnt\spice-netlists\LT4180_DC1504A.asc
+XU1 N019 N007 N018 MP_01 MP_02 MP_03 MP_04 MP_05 MP_06 N016 N009 0 N014 N010 NC_07 0 0 0 MP_08 N013 N006 N002 MP_09 N001 LT4180
+R1 N010 0 30.1K
+C1 N014 0 0.002µ
+C2 0 N019 1µ
+R2 N001 N002 .02
+R3 N001 N006 21.5K
+R4 N006 N009 1.87K
+R5 N009 N013 2.15K
+R6 N013 0 5.36K
+C3 N001 0 1µ
+C4 N016 0 .01µ
+L1 N008 N001 6.8µ Rser=.025 Rpar=2K
+D1 0 N008 MBRS340
+C5 N001 0 47µ x2 Rser=.01
+V1 IN 0 12
+R7 N019 N015 31K
+R8 N015 0 10K
+C6 N008 N012 .47µ
+R9 N011 0 68.1K
+R10 IN N004 500K
+C7 N004 0 .01µ
+XU2 N001 N012 N008 IN N004 MP_10 NC_11 N015 N007 N011 0 LT3693
+C8 N018 N007 47p
+C9 N017 N007 0.0022µ
+R11 N018 N017 33K
+R12 N020 N007 1K
+D2 N019 N020 CMDSH2-3
+C10 N003 N005 1000µ Rser=.05
+Rload N003 N005 1.67
+Rcable1 N003 N002 .2
+Rcable2 N005 0 .2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 10ms startup
+* To set Dither Frequency (in Simulation Only):\n  Once desired Dither frequency is known, \n  multiply it by 8 and set oscillator to run at\n  that frequency. \n  Ground all DIV pins.
+* LT4180 - Virtual Remote Sense Controller\nLT3693 - 36V, 3.5A, 2.4MHz Step-Down Switching Regulator\nInput: 8V to 36V     Output: 5V @ 2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* Cable\nResistance
+.lib LT3693.sub
+.lib LT4180.sub
+.backanno
+.end

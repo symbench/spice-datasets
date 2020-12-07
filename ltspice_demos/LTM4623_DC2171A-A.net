@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTM4623_DC2171A-A.asc
+V1 IN 0 12
+C1 N002 0 .005µ
+R1 N003 0 40.2K
+C2 OUT 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+Rload OUT 0 .5
+C3 IN 0 10µ Rser=2m
+C4 IN 0 22µ x2 V=16 Irms=0 Rser=2m Lser=0
+C5 OUT N003 100p
+C6 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+C7 OUT 0 22µ V=6.3 Irms=0 Rser=0.002 Lser=0
+XU1 NC_01 N001 N001 N003 N002 NC_02 IN NC_03 OUT 0 0 IN IN MP_04 MP_05 MP_06 NC_07 NC_08 N001 LTM4623
+.tran 2m startup
+* LTM4623 - Ultrathin 20Vin, 3A Step-Down DC/DC µModule Regulator\nUltrathin 3A Buck µModule Regulator\nInput: 4V to 20V     Output: 1.5V @ 3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTM4623.sub
+.backanno
+.end

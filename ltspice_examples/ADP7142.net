@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADP7142.asc
+C2 N001 0 4.7n
+V1 IN 0 4.3
+Rload OUT 0 22
+C1 OUT 0 2.2µ Rser=3m
+R1 OUT N002 17.4k
+R2 N002 0 10K
+XU1 IN N002 IN N001 OUT 0 ADP7118 Vref=1.2
+.tran 6m startup
+.lib ADP7102.lib
+.backanno
+.end

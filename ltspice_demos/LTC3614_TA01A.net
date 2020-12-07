@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTC3614_TA01A.asc
+V1 IN 0 3.6
+L1 N001 OUT .33µ Rser=1m Rpar=5K
+C1 OUT 0 47µ x2 Rser=5m
+R1 OUT N002 665K
+R2 N002 0 210K
+Rload OUT 0 .62
+XU1 0 IN 0 MP_01 MP_02 MP_03 MP_04 IN MP_05 MP_06 N001 MP_07 MP_08 IN IN NC_09 0 N002 IN IN 0 LTC3614
+C2 IN 0 10µ x4
+.tran 1.2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3614 4A, 4MHz Synchronous Monolithic Step-Down DC/DC\nHigh Efficiency Single Li-Ion Battery to 2.5V, 4A Step-Down Regulator\nInput: 2.7V to 5.5V         Output: 2.5V @ 4A, fsw = 2.25MHz
+.lib LTC3614.sub
+.backanno
+.end

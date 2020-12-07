@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\3769.asc
+C1 N001 0 4.7µ
+V1 IN 0 10
+C3 OUT 0 220µ Rser=10m
+R4 N004 0 12.1K
+R5 OUT N004 232K
+C5 N010 0 15n Rser=8.66K Cpar=100p
+R6 IN N007 4m
+L2 N007 N006 3.3µ Rser=10m
+M§Q3 OUT N003 N006 N006 Si4840DY
+M§Q4 N006 N008 0 0 Si4840DY
+C6 N005 N006 .1µ
+D2 N001 N005 MBR0540
+Rload OUT 0 10
+XU1 MP_01 0 MP_02 MP_03 0 0 N002 0 N007 IN MP_04 MP_05 MP_06 MP_07 N006 N003 N005 N008 N001 NC_08 MP_09 IN MP_10 MP_11 MP_12 MP_13 NC_14 NC_15 N009 N010 N004 LTC3769
+C2 N009 0 .002µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LTC3769.sub
+.backanno
+.end

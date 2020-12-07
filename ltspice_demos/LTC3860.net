@@ -1,0 +1,62 @@
+* Z:\mnt\spice-netlists\LTC3860.asc
+XU1 N001 N022 N027 N021 0 OUT1 N028 N023 N031 N002 NC_01 NC_02 0 N006 NC_03 N017 N004 N012 N020 OUT2 OUT1 N019 N011 N003 N016 NC_04 N005 0 0 MP_05 IN N030 LTC3860
+V1 IN 0 12
+V2 N001 0 5
+R1 N002 0 40.2K
+R2 N001 N005 100K
+XU2 MP_06 MP_07 N014 N010 N018 0 N017 N001 N001 N009 LTC4449
+M§Q1 IN N014 N010 N010 RJK0305DPB m=2
+M§Q2 N010 N018 0 0 RJK0301DPB m=2
+L2 N010 OUT2 .47µ Rser=.74m Rpar=5K
+R3 N010 N020 2.87K
+C2 N020 OUT2 .22µ
+XU3 MP_08 MP_09 N013 N007 N015 0 N016 N001 N001 N008 LTC4449
+M§Q3 IN N013 N007 N007 RJK0305DPB m=2
+M§Q4 N007 N015 0 0 RJK0301DPB m=2
+L1 N007 OUT1 .47µ Rser=.74m Rpar=5K
+R4 N007 N019 2.87K
+C3 N019 OUT1 .22µ
+D1 N001 N008 CMDSH2-3
+C7 N008 N007 .22µ
+D2 N001 N009 CMDSH2-3
+C8 N009 N010 .22µ
+C9 N031 0 1n
+Cout2 OUT1 0 100µ Rser=2m m=2
+Cout1 OUT1 0 330µ Rser=9m m=3
+Cout3 OUT2 0 100µ Rser=2m m=2
+Cout4 OUT2 0 330µ Rser=9m m=3
+C1 N030 0 1n
+R6 N022 N021 20K
+C4 N024 N021 2.2n
+R7 N022 N024 499
+R8 N022 0 20K
+C5 N022 N027 100p
+R9 N022 N026 6.34K
+C6 N027 N026 680p
+R10 OUT2 N023 20K
+C10 OUT2 N025 2.2n
+R11 N025 N023 499
+R12 N023 0 10K
+C11 N023 N028 100p
+R13 N023 N029 6.34K
+C12 N029 N028 680p
+Rload1 OUT1 0 48m
+Rload2 OUT2 0 72m
+R5 N011 0 59.0K
+R14 N012 0 59.0K
+R15 N001 N006 100K
+C13 IN 0 22µ Rser=4m m=4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3860 - Dual, Multiphase Step-Down Voltage Mode DC/DC Controller with Current Sharing\nInput: 4V-14V     Outputs: 1.2V @ 25A and 1.8V @ 25A, Fsw = 500kHz
+* 1.2V @ 25A
+* 1.8V @ 25A
+.lib LTC3860.sub
+.lib LTC4449.sub
+.backanno
+.end

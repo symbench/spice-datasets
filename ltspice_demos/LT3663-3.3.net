@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LT3663-3.3.asc
+V1 IN 0 12
+L1 N002 N003 7.8µ Ipk=1.6A Rser=0.053
+D1 0 N002 SS24
+C1 N002 N001 0.1µ V=16V
+C2 OUT 0 47µ V=10V
+R1 N004 0 28.7K
+Rload OUT 0 2.67
+XU1 IN IN OUT N004 OUT N003 N001 N002 0 LT3663-x x=27.8K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+* LT3663-3.3,  1.2A, 1.0MHz Step-Down Regulator with Output Current Limit\nInput: 12V       Output: 3.3V @ 1.2A
+.lib LT3663-x.sub
+.backanno
+.end

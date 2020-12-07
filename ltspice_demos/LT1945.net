@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LT1945.asc
+V1 IN 0 3.6
+C1 IN 0 4.7µ
+XU1 N004 IN 0 IN N005 N001 0 IN 0 N003 LT1945
+L1 IN N003 10µ Rser=50m
+L2 IN N001 10µ Rser=50m
+D1 N001 POS 1N4148
+C2 POS N005 4.7p
+R1 POS N005 1Meg
+R2 N005 0 115K
+C3 POS 0 1µ Rser=5m
+C4 N003 N002 .1µ
+D2 N002 0 1N4148
+D3 NEG N002 1N4148
+R3 N004 NEG 365K
+R4 0 N004 24.9K
+C5 N004 NEG 100p
+C6 0 NEG 1µ Rser=5m
+I1 POS 0 20m load
+I2 0 NEG 10m load
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+* LT1945 - Dual µPower Step-Up DC/DC Converter\nInput: 2.7V to 5V     Outputs: 12V @ 20mA and -20V @ 10mA
+.lib LT1945.sub
+.backanno
+.end

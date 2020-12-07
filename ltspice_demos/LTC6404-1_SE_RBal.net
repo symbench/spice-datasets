@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTC6404-1_SE_RBal.asc
+V+ N002 0 2.7
+RF1 OUT- N001 100
+RF2 OUT+ N006 100
+V1 N004 0 1.5
+RG1 N001 N003 93.1
+RG2 N006 N005 93.1
+Vin N003 0 AC 1 0 Rser=50
+RT1 N003 0 80.6
+RT2 N005 0 {RBAL}
+XU2 N006 N004 N002 OUT+ OUT- 0 NC_01 N001 NC_02 NC_03 LTC6404-1
+.noise V(OUT+,OUT-) VIN dec 100 1E4 2E8
+.PARAM RBAL=30.1
+.STEP PARAM RBAL LIST 30.1 0.001
+* There is higher noise without\n balanced input resistance\ndue to increased gain and mismatch
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTC6404-1 - 600MHz, Low Noise, High Precision Fully Differential Input/Output Amplifier/Driver \nImpedance Matching & Noise Measurements for Fully Differential Amplifiers\nThis simulation demonstrates the effect of input resistance mismatch on circuit output noise\nMore information on noise calculations is available in the LTC6404 datasheet
+* The resistor is stepped from a balanced case (i.e. the \nparallel combination of 50 and 80.6 ohms) to an unba-\nlanced case (tied to ground)  The noise plots show that\nthis change can significantly affect the output noise\n \nThe balanced case is shown on the green trace and the\nunbalanced case is shown on the blue trace
+.lib LTC7.lib
+.backanno
+.end

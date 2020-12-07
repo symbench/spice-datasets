@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\2ndOrderComplexzero.asc
+G1 0 N002 1 0 {2*f0**2/(R1*fn**2)}
+R2 N002 0 {R1/2}
+G2 0 N003 N002 N005 {2m*K1}
+R4 N003 0 1k
+L1 N005 N006 {L1}
+R1 N002 N005 {R1/2}
+C2 N006 0 {C1}
+G3 0 N003 N005 N006 {1m}
+G4 0 N003 N006 0 {1m*K2}
+G5 0 2 N003 0 {10*H}
+R3 2 0 .1
+* .param f0=1e3 Q=2.5 fn=2e3 Qn=1
+* 2nd Order Complex Zero LTSPICE implementation for f0,  Q,  fn, and Qn set by parameters >>>
+.param R1=1k
+.param K1 = (fn*Q)/(f0*Qn)
+.param K2 = (fn/f0)**2
+.param L1 = R1*Q/(2*pi*f0)
+.param C1 = 1/(L1*(2*pi*f0)**2)
+* Vin
+* Vout
+.backanno
+.end

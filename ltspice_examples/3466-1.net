@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3466-1.asc
+R1 N002 0 24.9K
+R2 N004 0 63.4K
+L1 IN N001 33µ
+V1 IN 0 3
+V2 N003 0 2
+C1 OUT 0 1µ
+R3 OUT N002 475K
+Rload OUT 0 533
+XU1 OUT N001 IN MP_01 MP_02 MP_03 MP_04 N004 N003 N002 0 LT3466-1
+.tran 1m startup
+.lib LT3466-1.sub
+.backanno
+.end

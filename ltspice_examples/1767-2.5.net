@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1767-2.5.asc
+C1 N001 N002 .1µ
+L1 N002 OUT 5µ
+D1 0 N002 MBRS130L
+D2 OUT N001 1N914
+V1 IN 0 5
+C2 N005 0 4000p
+C3 OUT 0 2.2µ
+R1 N005 N004 1K
+XU1 N001 IN N002 0 N003 OUT N004 LT1767-x.x top=10.92 bot=10.08
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 200u startup
+.lib LT1767-x.x.sub
+.backanno
+.end

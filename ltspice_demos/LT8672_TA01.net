@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT8672_TA01.asc
+XU1 IN 0 N005 MP_01 MP_02 N004 N003 OUT IN N002 LT8672
+M1 OUT N002 IN IN IPD038N06N3
+C1 OUT N003 1µ
+L1 OUT N004 100µ Rser=5 Rser=0.005
+C2 OUT 0 4.7µ Rser=10m
+C3 OUT 0 470µ Rser=.1 V=35 Irms=1.42 Rser=0.046 Lser=0 mfg="Nichicon" pn="UPL1V471MPH" type="Al electrolytic"
+Rload OUT 0 2.4
+D§TVS2 N001 0 UMZ15K
+D§TVS1 N001 IN UMZ33K
+V1 IN 0 12
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LT8672 - Active Rctifier Controller with Reverse Protection\n12V, 5A Automotive Reverse Battery Protection\nInput: 12V     Output: 5A
+* Note:\nSwitching period of AUXSW is ~40ms at steady state, therefore .trans stop time > 50ms.\nIf the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\nIt remains the customer's responsibility to verify proper and reliable operation in the actual application.\nComponent substitution and printed circuit board layout may significantly affect circuit performance or reliability.\nContact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\nCopyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LT8672.sub
+.backanno
+.end

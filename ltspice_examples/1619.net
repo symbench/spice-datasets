@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\1619.asc
+L1 IN N001 12µ
+M§Q1 N001 N003 N006 N006 Si9804DY
+V1 IN 0 3.3
+C1 N005 0 150p
+C2 N004 0 .015µ
+R1 N006 0 14m
+R2 N002 0 12.4K
+R3 OUT N002 37.4K
+R4 N005 N004 25K
+C3 OUT 0 .1µ
+C5 OUT 0 440µ Rser=0.065
+XU1 IN N002 N005 0 N006 N003 OUT IN LT1619
+D1 N001 OUT MBR735
+Rload OUT 0 3
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+.lib LT1619.sub
+.backanno
+.end

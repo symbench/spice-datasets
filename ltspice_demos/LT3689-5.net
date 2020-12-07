@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3689-5.asc
+C1 0 N009 .01n
+C2 0 N007 .01n
+R3 0 N010 16.9K
+D1 N003 N002 1N5819
+L1 N002 OUT 10µ Rpar=2K
+C3 OUT N005 10p
+C4 OUT 0 22µ V=6.3V
+C5 N001 N002 .22µ
+V1 IN 0 12
+Rload OUT 0 7.1
+V2 N004 0 PULSE(0 2 0 1u 1u 260u 520u)
+R4 N006 OUT 100K
+R5 N008 OUT 100K
+C6 IN 0 2.2µ
+XU2 N006 N009 N007 N010 0 OUT N001 IN N002 N003 IN N005 0 0 N004 N008 0 LT3689-5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT3689-5 - Monolithic 700mA Step-Down Regulator with Power-On Reset and Watchdog Timer\nInput: 4.5V - 36V, transient to 60V      Output: 5V @ 700mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3689-5.sub
+.backanno
+.end

@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC1871-7_F09.asc
+M§Q1 N001 N004 N005 N005 IRF7811
+R1 N008 0 100K
+R2 N009 0 12.4K
+R3 OUT N009 412K
+L1 IN N001 6.8µ
+D1 N001 OUT MBR735
+C1 OUT 0 68µ Rser=.05 x2
+R4 N007 N006 24K
+C2 N006 0 2200p
+C3 N007 0 100p
+V1 IN 0 18
+C4 IN 0 560µ
+XU1 N003 N007 N009 N008 N002 0 N004 N002 IN N005 LTC1871-7
+C5 N002 0 4.7µ
+R5 IN N003 1Meg
+C6 IN 0 10µ x2
+R6 N005 0 5m
+C7 OUT 0 10µ Rser=1m x2
+Rload OUT 0 28
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran .7m startup
+* LTC1871-7 - High Input Voltage, Current Mode Boost, Flyback and SEPIC Controller\nHigh Efficiency 42V, 1.5A Automotive Boost Converter\nInput: 8V to 28V       Output: 42V @ 1.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LTC1871-7.sub
+.backanno
+.end

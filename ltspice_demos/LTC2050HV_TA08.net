@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTC2050HV_TA08.asc
+R1 0 N002 3m
+V1 V+ 0 5
+R5 OUT N001 10K
+XU1 0 N001 V+ V- OUT V+ LTC2050
+V2 V- 0 -5
+C1 OUT N001 .1µ
+R2 N001 N002 10
+I1 N002 V- SINE(0 1.5 5 1m)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* LTC2050HV - Zero-Drift Operational Amplifiers\nLow Side Current Sensing\nLoad Current:  -1.5A to 1.5A     Output Gain: 3V/A
+.tran 1
+.lib LTC.lib
+.backanno
+.end

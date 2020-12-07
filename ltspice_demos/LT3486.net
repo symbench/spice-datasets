@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LT3486.asc
+XU1 N001 IN N002 N008 N006 N010 N005 N005 MP_01 MP_02 MP_03 MP_04 IN MP_05 N005 MP_06 0 LT3486
+D1 N002 N003 QTLP690C
+C1 IN 0 4.7µ
+C2 N002 0 2.2µ Rser=.020
+C3 0 N007 .01µ
+V1 IN 0 5
+L1 IN N001 10µ Rser=.1 Rpar=2K
+R1 0 N008 63.4k
+R2 N007 N006 5k
+R3 N010 0 2
+D2 N003 N004 QTLP690C
+D3 N004 N009 QTLP690C
+D4 N009 N012 QTLP690C
+D5 N012 N011 QTLP690C
+D6 N011 N010 QTLP690C
+D7 N001 N002 PMEG3005AEA
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+* LT3486 - 1A Step-Up LED Driver DC/DC Converter\nInput: 5V    Output: 100mA through six LEDs
+.tran 1m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3486.sub
+.backanno
+.end

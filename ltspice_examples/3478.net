@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\3478.asc
+V1 N001 0 10
+L1 N002 N003 10µ Rpar=2K
+C1 N009 0 .01µ
+R1 N007 0 47K
+C2 N004 0 2.2µ
+D1 N006 N012 LXHL-BW02 N=4
+V2 N010 0 PULSE(5 0 1.1m 1u 1u .9m 1m)
+XU1 N003 MP_01 N001 N001 N002 N004 N006 N008 N009 N005 N001 N005 N005 N010 N007 N011 0 LT3478
+R2 N005 N008 100K
+R3 N008 0 121K
+C3 N011 0 .01µ
+M§Q1 N012 N010 0 0 IRF7201
+R4 N004 N006 .1
+D5 N003 N004 1N5818
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 6m startup
+.lib LT3478.sub
+.backanno
+.end

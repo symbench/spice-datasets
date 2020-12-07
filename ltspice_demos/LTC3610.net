@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LTC3610.asc
+C1 N005 0 .001µ
+C2 N009 0 100p
+V1 IN 0 12
+L1 N004 OUT 0.47µ
+C3 N004 N006 .22µ
+D1 N002 N006 CMDSH2-3
+R1 N008 0 60.4K
+R2 OUT N008 60.4K
+C4 OUT 0 100µ Rser=10m
+Rload OUT 0 .1
+R3 IN N003 137K
+C5 N002 0 4.7µ
+R4 N002 N007 39.2K
+R5 N007 0 11K
+C6 N010 0 1500p
+R6 N009 N010 4.75K
+C7 OUT 0 100µ
+C8 IN 0 10µ
+R7 N002 N001 100K
+XU1 0 MP_01 MP_02 N004 MP_03 MP_04 MP_05 MP_06 MP_07 MP_08 MP_09 IN MP_10 MP_11 MP_12 MP_13 MP_14 MP_15 MP_16 MP_17 MP_18 MP_19 MP_20 MP_21 MP_22 MP_23 MP_24 0 N006 N005 MP_25 MP_26 MP_27 MP_28 OUT N001 N007 N009 N002 MP_29 N003 MP_30 N008 NC_31 MP_32 MP_33 MP_34 MP_35 MP_36 MP_37 MP_38 MP_39 N002 LTC3610
+C9 IN 0 10µ
+C10 OUT 0 100µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2.2m startup
+* LTC3610 - 24V, 12A Monolithic Synchronous Step-Down DC/DC Converter\nInput: 12V              Output: 1.2V @ 12A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3610.sub
+.backanno
+.end

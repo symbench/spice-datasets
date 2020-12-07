@@ -1,0 +1,42 @@
+* Z:\mnt\design.r\spice\examples\1646.asc
+Rsense5 5Vin N001 7m
+R10 N002 N007 10
+R2 N008 N007 1K
+M1 N003 N004 3Vout 3Vout IRF7413
+R3 N004 N007 10
+Rsense3 3Vin N003 5m
+C7 N008 0 0.01µ
+V9 5Vin 0 PULSE(0 5 5m 5m 5m 400m 500m)
+V1 3Vin 0 PULSE(0 3.3 5m 5m 5m 400m 500m)
+V11 N013 0 PWL(0 3.3 40m 3.3 +1u 0 0.17 0 +1u 3.3 +10m 3.3 +1u 0 0.31 0 +1u 3.3 +10m 3.3 +1u 0)
+V12 N014 0 3.3
+R4 N015 N014 3K
+C1 3Vout 0 30µ
+R5 3Vout 0 0.8
+C5 N017 0 0.1µ
+R1 5Vout 0 2
+C2 5Vout 0 30µ
+R6 N018 N014 3K
+XU1 N012 N016 N015 N018 5Vout 0 3Vout 3Vin N003 N007 N001 5Vin N005 N009 N013 N010 LTC1646
+V5 N010 0 PWL(0 0 10m 0 +1u 3.3)
+R7 N012 3Vout 3K
+R8 N011 N009 18
+C3 0 N011 4.7n
+Q2 N006 N009 N005 0 2N2222
+R14 3Vin N006 12
+R15 3Vin N009 1K
+R16 N005 0 18
+R9 N017 N016 10K
+M2 N001 N002 5Vout 5Vout IRF7413
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+* 5V, 8A
+* 3.3V, 11A
+.tran 0.65
+.lib LTC1646.sub
+.backanno
+.end

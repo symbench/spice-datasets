@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT1375_TA01.asc
+R1 N004 0 4.99K
+R2 OUT N004 5.36K
+D1 0 N002 MBRS340
+D2 OUT N001 1N4148
+C2 OUT 0 100µ Rser=0.05
+C3 IN 0 4.7µ Rser=0.02
+L1 N002 OUT 10µ Rser=0.02 Rpar=5000
+V1 IN 0 16 Rser=0.1
+XU1 N001 IN N002 NC_01 MP_02 0 N004 N003 LT1375 top=1K bot=1T
+Rload OUT 0 5
+C4 N003 0 3.3n Rser=1K
+C1 N001 N002 .1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT1375 - 1.5A, 500kHz Step-Down Switching Regulators\n5V Buck Converter\nInput: 6V to 25V       Output: 5V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT1375.sub
+.backanno
+.end

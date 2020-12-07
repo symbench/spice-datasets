@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\2ndOrderLowpass.asc
+G1 0 N002 1 0 {2/R1}
+R2 N002 0 {R1/2}
+R4 2 0 .1
+L1 N002 N004 {L1} Rser={R1/2}
+C2 N004 0 {C1}
+G4 0 2 N004 0 {10*H}
+* .param f0=1e3 Q=.5
+* 2nd Order Low Pass LTSPICE implementation for f0,  Q,  fn, and Qn set by parameters >>>
+.param R1=1k
+.param L1 = R1*Q/(2*pi*f0)
+.param C1 = 1/(L1*(2*pi*f0)**2)
+* Vin
+* Vout
+.backanno
+.end

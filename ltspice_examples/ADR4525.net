@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\ADR4525.asc
+V1 IN 0 5
+C1 OUT 0 1µ
+C2 IN 0 0.1µ
+S1 0 OUT N002 0 10mA
+V2 N002 0 PULSE(0 1 600u 10n 10n 200u 10m)
+S2 OUT IN N001 0 10mA
+V3 N001 0 PULSE(0 1 100u 10n 10n 200u 10m)
+XU1 IN 0 OUT ADR4525
+.tran 1m
+.model 10mA SW(Ron=10 Roff=1Meg Vt=.5 Vh=-.2 Ilimit=10m level=2)
+.lib ADR4525.sub
+.backanno
+.end

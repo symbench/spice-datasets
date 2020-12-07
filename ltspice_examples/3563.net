@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\3563.asc
+V1 IN 0 3.6
+L1 N001 OUT 2.2µ
+C1 OUT 0 10µ
+Rload OUT 0 2.56
+XU1 OUT IN 0 N001 0 IN LTC3563
+.tran 2m startup
+.lib LTC3563.sub
+.backanno
+.end

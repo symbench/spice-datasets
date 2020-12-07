@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT1116_AI01.asc
+V1 IN 0 SINE(0 1 10Meg 1u 0 0 10) Rser=50
+D1 0 IN 1N5817
+R1 IN 0 50
+V2 N002 0 5
+XU1 N002 IN 0 0 0 0 Q N001 LT1116
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3u
+* LT1116 - 12ns, Single Supply Ground-Sensing Comparator\nZero Crossing Detector
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* _Q
+.lib LTC.lib
+.backanno
+.end

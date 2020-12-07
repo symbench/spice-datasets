@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\NoiseFigure.asc
+V2 N001 0 15
+Q1 N002 N004 N005 0 2N2222
+R3 N001 N002 1K
+R5 N005 0 100
+R1 N001 N004 75K
+R2 N004 0 10K
+C1 N004 N003 .1µ
+C2 N005 0 10µ
+R4 OUT 0 100K
+C3 OUT N002 1µ
+V1 N003 0 AC 1 Rser=1K
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.noise V(out) V1 oct 10 1K 100K
+* To plot NF vs. Frequency:\n  10*log10(V(inoise)*V(inoise)/(4*k*300.15*1K))\n  Note that the units are dB but will be labeled V/sqrt(Hz)\n  If you add the line\n  .func NF(R) 10*log10(V(inoise)*V(inoise)/(4*k*300.15*R))\n  to your plot.defs file, then you can conveniently plot the quantity NF(1K)
+* 1K Source Impedance
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

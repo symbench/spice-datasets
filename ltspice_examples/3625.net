@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3625.asc
+XU1 N003 IN 0 0 IN N004 NC_01 NC_02 NC_03 N002 OUT N001 0 LTC3625
+R1 N004 0 61.9K
+V1 IN 0 3.6
+C1 OUT N002 1m
+C2 N002 0 1m
+L1 N002 N001 3.3µ Rser=5m
+L2 N003 N002 3.3µ Rser=5m
+.tran 3m startup
+.lib LTC3625.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\6261.asc
+V1 +V 0 3.3
+V3 IN 0 1.5 AC 1
+XU1 N004 N002 OUT +V 0 +V LTC6261
+C2 OUT N002 47p
+R1 N002 N001 5.54K
+R2 OUT N001 15.4K
+R3 N001 N003 7.7K
+C1 N001 0 470p
+C3 N003 0 470p
+R4 N003 IN 7.7K
+V4 N004 0 1.5
+* Third Order Butterworth Filter
+.ac oct 8 1K 2Meg
+.lib LTC6.lib
+.backanno
+.end

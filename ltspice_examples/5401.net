@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\5401.asc
+V1 +V 0 10
+XU2 N002 N004 +V N001 N006 0 NC_01 N005 LTC6363
+C1 N004 0 .1µ
+XU1 N003 N001 NC_02 NC_03 N002 N005 NC_04 NC_05 N006 0 NC_06 LT5401
+V2 N003 0 SINE(0 1 250K)
+.tran 100u
+.lib LT5400.lib
+.lib LTC2.lib
+.backanno
+.end

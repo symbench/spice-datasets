@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT1054_TA14.asc
+V1 IN 0 10
+C1 N002 N005 100µ
+XU1 N001 N002 0 N005 N006 N004 N003 IN LT1054
+C2 IN 0 2µ
+R1 N001 OUT 102K
+R2 N001 N004 20K
+C3 0 OUT 100µ Rser=10m
+D1 N007 N006 1N914
+C4 N006 0 100µ
+D2 OUT N007 1N914
+C5 N005 N007 10µ
+C6 N001 OUT .002µ
+Rload 0 OUT 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5m startup
+* LT1054 - Switched-Capacitor Voltage Converter with Regulator\nNegative Doubler with Regulator\nInput: 3.5V to 15V     Output: -5 @ 100mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1054.sub
+.backanno
+.end

@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LT3476.asc
+XU1 N014 N016 N015 N011 N003 N001 N002 N013 N012 N002 0 LT3476
+V1 N002 0 3.3
+V2 N001 0 33
+R1 N013 N015 4.99K
+R2 N015 0 100K
+R3 N001 N003 .1
+D1 N003 N004 LXHL-BW02
+L1 N010 N011 10µ Rpar=5K
+C1 N001 N010 .33µ
+R4 N016 0 21K
+C2 N014 0 .01µ
+C3 N001 0 4.7µ Rser=0.005
+C4 N002 0 1µ Rser=0.005
+C5 N013 0 .022µ
+D6 N011 N001 MBRS140
+V3 N012 0 PULSE(5 0 1.5m 1u 1u 0.1m 0.2m)
+D2 N004 N005 LXHL-BW02
+D3 N005 N006 LXHL-BW02
+D4 N006 N007 LXHL-BW02
+D5 N007 N008 LXHL-BW02
+D7 N008 N009 LXHL-BW02
+D8 N009 N010 LXHL-BW02
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 2m startup
+* LT3476 - Quad High Power LED Driver in Buck Mode\n Input: 3.3V and 33V Output: 1A regulated through 7 LED's
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3476.sub
+.backanno
+.end

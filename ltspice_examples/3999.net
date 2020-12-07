@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\3999.asc
+XU1 N001 N010 IN IN N004 N008 N005 0 N009 N006 0 LT3999
+V1 IN 0 12
+R1 IN N004 255K
+R2 N004 0 10K
+C1 N009 0 .01µ
+R3 N005 0 28K
+R4 N010 0 49.9K
+R5 N008 0 15.8K
+L1 N001 IN 82.5µ Rser=50m
+L2 IN N006 82.5µ Rser=50m
+L3 N002 0 165µ Rser=72m
+L4 0 N007 165µ Rser=72m
+D1 N002 N003 MBRS1100
+D2 N007 N003 MBRS1100
+L5 N003 OUT 15.3µ Rser=20m
+C2 OUT 0 10µ Rser=10m
+Rout OUT 0 30
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 L3 L4 1
+.tran 1.5m startup
+.lib LT3999.sub
+.backanno
+.end

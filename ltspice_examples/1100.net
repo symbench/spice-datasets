@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1100.asc
+V1 +V 0 5
+V3 IN 0 SINE(0 10m 10)
+XU1 0 N001 0 -V +V IN N002 OUT LTC1100
+C1 OUT N002 .01µ
+V2 -V 0 -5
+.tran .3
+.lib LTC.lib
+.backanno
+.end

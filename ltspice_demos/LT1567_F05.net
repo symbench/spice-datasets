@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LT1567_F05.asc
+XU1 OUT N001 NC_01 0 N004 +IN N003 N002 LT1567
+R1 N001 -IN 604
+R2 OUT N001 2.43K
+R3 N001 N003 604
+C1 OUT N001 270p
+V1 N002 0 12
+V3 +IN 0 SINE(0 .5 10K)
+V4 -IN 0 SINE(0 -.5 10K)
+V5 N004 0 5
+.tran 1m
+* LT1567 - 1.4nV/Rt.Hz 180MHz Filter Building Block\nDifferential Input-to-Single-Ended Output Amplifier
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC4.lib
+.backanno
+.end

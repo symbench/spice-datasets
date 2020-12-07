@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1261CS8-4.asc
+V1 IN 0 5
+C1 N002 N004 .1µ
+C2 OUT 0 3.3µ
+Rload OUT 0 1K
+R1 IN N003 3.3K
+XU1 IN N002 N004 0 N005 OUT N003 N001 LTC1261CS8-4
+.tran 1m
+.lib LTC1261CS8-4.sub
+.backanno
+.end

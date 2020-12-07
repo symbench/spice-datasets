@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\3905.asc
+XU1 NC_01 N007 N005 N006 N003 OUT N001 OUT 0 IN IN IN NC_02 IN N002 0 LT3905
+V1 IN 0 6
+L1 IN N001 10µ Rser=80m Rpar=10K
+R1 N006 0 4.99K
+R2 OUT N002 634K
+R3 N002 0 15K
+C1 OUT 0 220n
+R4 N007 0 1Meg
+R5 N005 0 9.09K
+D1 0 N003 APD
+G1 N003 0 N004 0 1m
+V2 N004 0 PULSE(10m 1.5 1m 10u 10u .5m 1m)
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model APD D(Is=10n Cjo=10p)
+.tran 3m startup
+.lib LT3905.sub
+.backanno
+.end

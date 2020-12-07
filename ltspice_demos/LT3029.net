@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT3029.asc
+V1 IN1 0 3
+C1 OUT1 0 3.3µ
+Rload1 OUT1 0 3.6
+C2 OUT1 N001 .01µ
+XU1 OUT1 N002 0 N001 IN1 IN2 IN2 IN1 OUT2 N004 N003 LT3029
+R1 OUT1 N002 113K
+R2 N002 0 237K
+C3 OUT2 0 3.3µ
+Rload2 OUT2 0 3
+C4 OUT2 N003 .01µ
+R3 OUT2 N004 54.9K
+R4 N004 0 237K
+C5 IN1 0 1µ
+C6 IN2 0 1µ
+V2 IN2 0 3
+.tran 50m startup
+* LT3029 - Dual 500mA/500mA Low Dropout, Low Noise, µPower Linear Regulator\nInput1: 3V       Output1: 1.8V @ 0.5A\nInput2: 3V       Output2: 1.5V @ 0.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT1763.lib
+.backanno
+.end

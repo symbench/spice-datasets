@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\6246.asc
+V1 +V 0 5
+V2 N002 0 2.5
+V3 IN N002 PULSE(200m -200m 200n 10n 10n 200n 400n 10)
+R1 OUT 0 1K
+C1 OUT 0 47p
+R2 N001 IN 1K
+R3 OUT N001 1K
+C2 OUT N001 2.7p
+V4 N003 0 5
+XU1 OUT 0 N002 N001 N003 +V LTC6246
+.tran 2u
+.lib LTC7.lib
+.backanno
+.end

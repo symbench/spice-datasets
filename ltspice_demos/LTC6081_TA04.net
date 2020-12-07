@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC6081_TA04.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 N003 N002 100K
+R2 N002 0 976K
+V3 IN- IN+ SINE(0 1m 100)
+R3 N001 N002 1.96K
+R4 N001 N003 100K
+R5 OUT N001 1Meg
+V4 IN+ 0 SINE(0 1 10)
+XU3 IN- N002 +V -V N003 NC_01 LTC6081
+XU4 IN+ N001 +V -V OUT NC_02 LTC6081
+C1 N003 N002 15p
+C2 OUT N001 15p
+.tran 50m
+* LTC6081 - Precision Dual CMOS Rail-to-Rail Input/Output Amplifiers\nTwo Op Amp Instrumentation Amplifier
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC6.lib
+.backanno
+.end

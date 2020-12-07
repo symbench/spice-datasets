@@ -1,0 +1,27 @@
+* Z:\mnt\spice-netlists\LTM4601_F19.asc
+XU1 IN 0 OUT 0 N006 N006 OUT 0 N002 N004 N007 N013 N010 N009 N008 N005 N003 N012 N001 N007 LTM4601
+C1 OUT N004 220p
+R1 N004 0 60.4K tol=1 pwr=0.1
+R2 N008 0 392K
+C2 OUT 0 22µ Rser=1m x2
+R3 IN N003 100K
+V1 IN 0 12
+C3 IN 0 10µ x4
+C4 OUT 0 470µ Rser=10m x2
+R4 N019 0 392K
+C5 N012 0 .001µ
+C6 IN 0 100µ
+C7 N004 0 100p
+XU2 IN 0 OUT MP_01 N006 MP_02 MP_03 0 N015 N004 N016 N018 N017 N020 N019 N005 N003 N012 N011 N016 LTM4601-1
+XU3 N007 0 N014 N011 N011 N001 LTC6908-1
+C8 N007 0 1µ
+R5 N007 N014 118K tol=1 pwr=0.1
+Rload OUT 0 .0375
+* LTM4601 - 12A DC/DC µModules with PLL, Output Tracking and Margining\nInput: 4.5V to 20V     Output: 2-Phase Parallel .9V @ 24A, Fswitch = 850KHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.tran .5m startup
+.lib LTC6908-1.sub
+.lib LTM4601-1.sub
+.lib LTM4601.sub
+.backanno
+.end

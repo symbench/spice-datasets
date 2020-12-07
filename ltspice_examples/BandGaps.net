@@ -1,0 +1,39 @@
+* Z:\mnt\design.r\spice\examples\BandGaps.asc
+Q1 N002 N002 N001 0 P
+Q2 A N002 N001 0 P
+R1 N010 0 1210
+Q3 N002 N009 N010 0 N 10
+Q4 N009 N009 0 0 N
+V1 N001 0 3
+R2 A N009 10K
+Q5 N007 N003 N001 0 P
+Q6 N003 N003 N001 0 P
+R3 N016 0 1270
+Q7 N007 N012 0 0 N
+Q8 N012 N012 N016 0 N 10
+R4 B N012 10K
+Q9 N003 N007 B 0 N
+Q10 N008 N004 N001 0 P
+Q11 N004 N004 N001 0 P
+R5 N013 N015 1250
+Q12 N008 C N015 0 N
+Q13 C C N013 0 N 10
+R6 N015 0 5K
+Q14 N004 N008 C 0 N
+Q15 N006 N005 N001 0 P
+Q16 N005 N005 N001 0 P
+R7 N011 N014 1250
+Q17 N006 D N014 0 N
+Q18 N005 D N011 0 N 10
+R8 N014 0 5K
+Q19 N001 N006 D 0 N
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.dc temp -55 125 .1
+.model N NPN
+.model P PNP
+* This example schematic is supplied for informational/educational purposes only.
+* Four Band Gap Voltage Reference Circuits
+.backanno
+.end

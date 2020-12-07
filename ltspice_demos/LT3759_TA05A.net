@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LT3759_TA05A.asc
+XU1 N011 N012 N006 N008 MP_01 N005 N009 N007 N003 OUT IN N004 0 LT3759
+C1 N010 0 22n
+R1 N008 0 41.2K
+C2 N006 0 .05µ
+V1 IN 0 14
+C3 N003 0 4.7µ
+R2 IN N004 105K
+R3 N004 0 118K
+R4 N003 N005 100K
+L1 IN N001 15µ Rser=0.0247
+L2 0 N002 15µ Rser=0.0247
+M§Q1 N001 N007 N009 N009 IPB081N06L3
+R5 N009 0 5m
+C4 N001 N002 4.7µ x2 V=50 Irms=0 Rser=0.004 Lser=0 mfg="TDK" pn="C575OX7RIH475M" type="X7R"
+D1 N002 OUT MBRS360
+R6 OUT N012 105K
+R7 N012 0 15.8K
+C5 OUT 0 47µ x4 V=20 Irms=0 Rser=0.15 Lser=0 mfg="KEMET" pn="T495X476M020AS" type="Tantalum"
+C6 OUT 0 10µ V=10 Irms=8.919 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C106K8PAC" type="X5R"
+Rload OUT 0 6
+R8 N011 N010 7.5K
+C7 IN 0 4.7µ x4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 .99
+.tran 5m startup
+* Note:\n  A smaller RUN/SS capacitors is being used to reduce simulation time. The typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LT3759 - Wide Input Voltage Range Boost/SEPIC/Inverting Controller\n2.5V to 36V Input, 12V/1A Output SEPIC Converter (Automotive 12V Regulator)\nInput: 2.5V to 36V  Output: 12V @ 2A (0.5A for Vin < 8V)
+.lib LT3759.sub
+.backanno
+.end

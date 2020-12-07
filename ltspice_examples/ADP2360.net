@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\ADP2360.asc
+V1 IN 0 5
+R1 IN N001 100K
+R2 IN N003 22Meg
+C1 N005 0 1n
+L1 N002 OUT 100µ Rpar=50k
+C2 OUT 0 10µ Rser=3m
+R3 OUT N004 357K
+R4 N004 0 115K
+C3 OUT N004 10p
+Rload OUT 0 66
+XU1 N001 N003 0 N004 N005 0 N002 IN 0 ADP2360
+.tran 3m startup
+.lib ADP2360.sub
+.backanno
+.end

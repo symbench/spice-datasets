@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\ADM7170-1.8.asc
+C2 N001 0 1n
+V1 IN 0 2.3
+Rload OUT 0 6
+C1 OUT 0 4.7µ Rser=1.5m
+XU1 IN OUT IN N001 OUT 0 ADM7170 Vref=1.8
+.tran 5m startup
+.lib ADM7170.sub
+.backanno
+.end

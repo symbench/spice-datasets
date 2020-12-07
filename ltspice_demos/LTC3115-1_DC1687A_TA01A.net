@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTC3115-1_DC1687A_TA01A.asc
+R7 N010 0 47.5K
+C9 N009 0 4.7µ
+L1 N001 N002 10µ Ipk=3.84 Rser=23m
+C1 N001 N003 .1µ
+C2 N002 N004 .1µ
+R1 OUT N008 1Meg
+R2 N008 0 249K
+C4 OUT N007 33p
+C6 OUT 0 47µ V=10 Irms=10.206 Rser=0.05 Lser=0
+XU1 0 IN N002 OUT 0 MP_01 N005 N008 N010 MP_02 MP_03 N009 IN N009 N004 N003 IN N001 IN LTC3115-1
+C10 IN 0 4.7µ V=50 Rser=0.005
+R3 N007 N008 15K
+C11 N005 N008 10p
+C8 N006 N008 3300p
+R4 N005 N006 60.4K
+Vin IN 0 12
+Rload OUT 0 2.5
+.tran 7.5m startup
+* LTC3115-1 - 40V, 2A Synchronous Buck-Boost DC/DC Converter\nWide Input Voltage, High Efficiency, Low Noise 5V Regulator\nInput: 2.7V to 40V     Output: 5V @ 2A for Vin > Vout, Fsw = 750kHz
+* Notes: \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc.  All rights reserved.
+.softstart .5
+.lib LTC3115-1.sub
+.backanno
+.end

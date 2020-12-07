@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3406AB.asc
+V1 IN 0 3.5
+C2 OUT 0 10µ
+L1 N001 OUT 2.2µ
+R3 OUT 0 10
+R1 OUT N002 619K
+R2 N002 0 309K
+C1 OUT N002 22p
+XU1 IN 0 N001 IN N002 LTC3406AB
+.tran 1.25m startup
+.lib LTC3406AB.sub
+.backanno
+.end

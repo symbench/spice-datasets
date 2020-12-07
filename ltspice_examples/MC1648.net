@@ -1,0 +1,43 @@
+* Z:\mnt\design.r\spice\examples\MC1648.asc
+Q1 Vcc1 N001 OUT 0 NP
+R1 OUT 0 300
+Q2 N001 N004 N005 0 NP
+Q3 Vcc1 N003 N005 0 NP
+R2 Vcc1 N001 400
+R3 N005 0 1K
+R4 Vcc1 N003 2K
+R5 N010 0 1K
+Q4 N003 Tank N010 0 NP
+Q5 AGC N010 N012 0 NP
+D1 AGC N007 DD
+R6 N012 0 600
+Q6 Vcc1 Tank N006 0 NP
+Q7 Tank Bias N006 0 NP
+R7 N007 0 25K
+Q8 N009 N007 0 0 NP
+R8 N006 N009 200
+Q9 Vcc1 N002 N004 0 NP
+D2 N011 0 DD
+R9 N008 0 1K
+R10 N002 N004 2K
+R11 Vcc1 N002 2K
+Q11 N004 Bias N008 0 NP
+R12 Vcc1 Bias 1K
+R13 Vcc1 AGC 25K
+C1 AGC 0 .1µ
+V1 Vcc1 0 5
+C2 Bias 0 .1µ
+L1 Tank Bias 1µ
+C3 Tank Bias 10p
+D3 Bias N011 DD
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model DD D(Rs=20 Cjo=5p)
+.model NP NPN(Bf=150 Cjc=3p Cje=3p Rb=10)
+.tran 0 1.9m 0 1u startup
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

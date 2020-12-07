@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\1649.asc
+XU1 N005 N002 0 N015 N006 N014 IN N013 N010 N001 N012 N008 N007 N004 N001 N009 LTC1649
+M§Q1 IN N005 N003 N003 Si4420DY
+M§Q2 N003 N009 0 0 Si4410DY
+D1 N001 N002 1N5818
+R1 N004 N001 22
+R2 IN N008 22K
+C1 N004 0 10µ
+C2 N010 N013 1µ
+L1 N003 OUT 1.2µ
+C3 OUT 0 4700µ Rser=0.06
+R3 N003 N007 1K
+R4 OUT N015 12.4K
+R5 N015 0 12.7K
+C4 N014 0 .001µ
+C5 N012 0 220p
+C6 N011 0 .01µ
+R6 N012 N011 7.6K
+V1 IN 0 3.3
+C7 N003 N002 1µ
+C8 N001 0 10µ
+Rload OUT 0 .5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC1649.sub
+.backanno
+.end

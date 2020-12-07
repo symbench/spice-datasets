@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC6078_TA10.asc
+XU1 -IN N002 +V -V OUT LTC6078
+XU2 +IN N001 +V -V N001 LTC6078
+R1 OUT N002 1K
+R2 N002 N001 1K
+R3 +V -IN 57.6K
+C1 -IN 0 1000p
+V3 +V 0 5
+V4 -V 0 -5
+XU3 -IN 0 LT1634-1.25
+B1 +IN -IN V=59.2m*({pH}-7)
+* LTC6078 - µPower Precision, Dual CMOS Rail-to-Rail Input/Output Amplifiers\npH Probe Amplifier
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc.  All rights reserved.
+* pH Probe
+.step param pH 0 14 2
+.tran 5m
+.lib LTC3.lib
+.lib LTC5.lib
+.backanno
+.end

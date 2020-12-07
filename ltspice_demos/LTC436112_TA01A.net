@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTC436112_TA01A.asc
+R1 N001 N002 25m
+C1 OUT 0 10µ
+L1 IN N001 1µ Rser=150m Rpar=2K
+V1 N006 0 5
+R2 N006 N005 1K
+M§Q1 N002 N004 OUT OUT Si4892DY
+V2 IN 0 PWL(0us 0V 100m 0 +1us 20V 150m 20V +10u 0 200m 0 +1u -20V 250m -20V +10u 0 400m 0 +1u 5V 800m 5V +1u 20V 900m 20V +10u 5V)
+S1 0 OUT N003 0 SHORT
+V3 N003 0 PWL(0us 0V 1200m 0 +5n 1 1201m 1 +5n 0)
+XU1 NC_01 N001 N002 N004 0 OUT N005 0 LTC4361-1
+C2 0 N004 .0068µ
+Rload OUT 0 10
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1500m startup
+.model SHORT SW (Ron=1 Roff=1T Vt=0.5 Vh=-0.4)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC4361 - Overvoltage/Overcurrent Protection Controller\nProtection from Overvoltage and Overcurrent
+.lib LTC4361-1.sub
+.backanno
+.end

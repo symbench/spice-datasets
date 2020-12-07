@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1464.asc
+V1 +V 0 15
+V2 -V 0 -15
+V3 IN 0 AC 1
+C1 N002 N004 .033µ
+R1 N002 N001 237K
+R2 N004 N001 249K
+R3 N001 IN 237K
+C2 OUT N005 .01µ
+R4 OUT N003 154K
+R5 N005 N003 249K
+R6 N003 N002 154K
+C3 N003 0 .33µ
+C4 N001 0 .1µ
+XU1 0 N004 +V -V N002 LT1464
+XU2 0 N005 +V -V OUT LT1464
+.ac oct 100 1m 1K
+* 10Hz 4th Order Chebyshev Lowpass Filter
+.lib LTC.lib
+.backanno
+.end

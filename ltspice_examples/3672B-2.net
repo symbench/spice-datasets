@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3672B-2.asc
+V1 IN 0 3.6
+L1 N001 OUT1 4.7µ
+C1 OUT1 0 4.7µ
+C2 OUT2 0 1µ
+C3 OUT3 0 1µ
+XU1 N001 0 IN OUT1 IN OUT2 OUT3 IN LTC3672B-2
+Rload1 OUT1 0 3
+Rload2 OUT2 0 18.6
+Rload3 OUT3 0 12
+.tran 250u startup
+.lib LTC3672B-2.sub
+.backanno
+.end

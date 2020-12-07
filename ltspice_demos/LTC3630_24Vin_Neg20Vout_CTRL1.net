@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTC3630_24Vin_Neg20Vout_CTRL1.asc
+XU1 N001 MP_01 IN MP_02 N003 OUT OUT OUT N004 NC_03 NC_04 NC_05 LTC3630
+V1 IN 0 24
+L1 N001 0 22µ Rser=50m
+C1 0 OUT 22µ x2 V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+Rload 0 OUT 100
+R1 IN N003 200K
+R2 N003 OUT 15K
+V2 CTRL 0 PULSE(0 5 5m 5m 15m 2m)
+R5 CTRL N002 5k
+R6 N002 N005 20k
+V3 VSS 0 -25
+XU2 0 N002 0 VSS N005 LT6016
+XU3 N005 OUT 0 VSS N004 LT6016
+C2 IN 0 10µ V=35 Rser=5m
+.tran 34m startup
+* LTC2630-H DAC
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* LTC3630 - High Efficiency, 65V 500mA Synchronous Step-Down Converter\nLT6016 - Dual 3.2MHz, 0.8V/µs Low Power, Over-The-Top Precision Op Amp\nPositive to Negative Converter with Variable Output\nInput: 24V     Output: -1.3 to -20V @ 200mA (CTRL: 0V to 5V)
+.lib LTC2.LIB
+.lib LTC3630.sub
+.backanno
+.end

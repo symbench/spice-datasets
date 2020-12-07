@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1006.asc
+V1 +V 0 5
+R1 OUT N001 99K
+R2 N001 0 1K
+V3 IN 0 SINE(5m 1m 1K)
+XU1 IN N001 +V 0 OUT LT1006
+R3 OUT 0 660
+.tran 3m
+* Gain 100 Amplifier
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT8304_DC2393A.asc
+V1 IN 0 48
+C1 N004 0 1µ
+L1 IN N002 40µ Rser=100m Rpar=500k Cpar=5p
+L2 0 N001 1.111µ Rser=15m
+D1 N001 OUT RBR5L40A
+C2 OUT 0 47µ x3 Rser=2m
+C3 IN N002 270p Rser=100
+R1 N002 N003 309K
+R2 N005 0 10K
+R3 N005 N006 100K
+Rload OUT 0 2.5
+XU1 IN N004 IN 0 N002 N003 N005 N006 LT8304
+C4 IN 0 18µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 5m startup
+* LT8304 - 100Vin µPower No-Opto Isolated Flyback Converter with 150V/2A Switch\nµPower No-Opto Isolated Flyback Converter\nInput: 18V to 72V       Output: 5V @ 2A to 4.2A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT8304.sub
+.backanno
+.end

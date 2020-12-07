@@ -1,0 +1,25 @@
+* Z:\mnt\design.r\spice\examples\4380-2.asc
+R1 N002 N003 10
+R2 N001 OUT 10m
+M§Q1 IN N002 N001 N001 FDB33N25
+C2 N007 0 0.2µ
+Cload OUT 0 22µ
+V1 IN 0 pwl(0 0 20u 0 50u 12 100m 12 101m 80 200m 80 201m 12)
+D1 0 N005 1N5371B
+C4 N005 0 .1µ
+Rload OUT 0 100
+R7 N005 N006 40K
+C1 N003 P001 47n
+R4 P001 0 100
+XU1 0 OUT N001 N003 N005 N004 N005 N007 0 N006 LTC4380-2
+R3 IN N004 80K
+R5 IN N005 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 10
+.lib LTC4380-2.sub
+.backanno
+.end

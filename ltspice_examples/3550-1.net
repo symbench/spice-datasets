@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3550-1.asc
+V1 USB 0 5
+R1 N004 0 2K
+V2 BAT 0 4
+R2 N003 0 1.24K
+L1 N001 Vout 2.2µ
+C1 Vout 0 10µ
+R3 N002 0 2K
+XU1 USB N002 N004 NC_01 NC_02 Vout BAT 0 MP_03 N001 BAT NC_04 NC_05 N003 BAT NC_06 LTC3550-1
+Rload Vout 0 3.125
+.tran 150u startup
+.lib LTC3550-1.sub
+.backanno
+.end

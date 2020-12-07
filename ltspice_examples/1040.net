@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\1040.asc
+XU1 0 NC_01 HEAT N001 N004 N005 N006 0 0 0 N008 N007 N005 N004 COOL N009 N002 N003 LTC1040
+V3 N003 0 PWL(0 0 1u 5)
+R2 N003 N009 10Meg
+C1 N009 0 .1µ
+VTemp Temp 0 PWL(0 26 200 28 400 26)
+B1 alpha 0 V=1m*(A-1/(V(Temp)+273.15))/C
+B2 beta 0 V=1m*sqrt((B/(3*C))**3+(1K*V(alpha))**2/4)
+RThermistor N005 0 R=exp((1K*V(beta)-.5K*V(alpha))**.3333 -(1K*V(beta)+.5K*V(alpha))**.3333)
+R3 COOL N007 20Meg
+R4 N007 0 82K
+R5 N008 0 78
+RADJ2 N004 N008 {6.81K+5K*(1-TADJ)}
+RADJ1 N002 N004 {4.99K+5K*TADJ}
+R8 N001 N006 20Meg
+R9 N006 0 82K
+R10 N002 N005 4.32K
+.tran 400
+.param A=1.285e-3
+.param B=2.362e-4
+.param C=9.285e-8
+.param TADJ=.662
+* Set point adjust
+* Complete Heating/Cooling Automatic Thermostat
+* Thermistor Calculations
+.lib LTC1040.sub
+.backanno
+.end

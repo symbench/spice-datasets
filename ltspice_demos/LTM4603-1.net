@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTM4603-1.asc
+V1 IN 0 12
+R1 N003 0 40.2K
+C1 OUT 0 22µ Rser=5m
+C2 IN 0 47µ
+C3 OUT 0 100µ Rser=3m
+C4 IN 0 150µ Rser=9m
+R2 IN N001 100K
+C5 OUT N003 100p
+C6 N005 0 2200p
+XU1 IN 0 OUT MP_01 OUT MP_02 MP_03 0 NC_04 N003 N004 NC_05 NC_06 NC_07 NC_08 N002 N001 N005 NC_09 N004 LTM4603-1
+Rload OUT 0 .3
+.tran .5m
+* LTM4603-1 - 5A, High Efficiency Step-Down DC/DC µModule\nInput: 12V     Output: 1.5V @ 5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LTM4603-1.sub
+.backanno
+.end

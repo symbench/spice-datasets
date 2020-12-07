@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3090.asc
+XU1 IN MP_01 N002 N003 N001 IN N004 0 OUT LT3090
+R1 N004 0 49.9K
+C1 N004 0 .1µ
+V1 IN 0 -3.3
+R2 IN N002 10K
+V2 N001 0 3.3
+R3 N003 0 3.32K
+C2 OUT 0 4.7µ Rser=10m
+Rload OUT 0 4.16
+.tran .1 startup
+.lib LT3090.sub
+.backanno
+.end

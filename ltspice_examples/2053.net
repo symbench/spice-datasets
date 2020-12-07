@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\2053.asc
+V1 N001 0 SINE(0 1 10)
+V2 +V 0 5
+V3 -V 0 -5
+V4 N005 0 0
+XU1 -V N004 N002 -V N005 N003 N003 +V LTC2053
+R1 N002 N001 1K
+R2 N004 0 1K
+R3 OUT N003 100K
+C1 OUT 0 1µ
+C2 N002 N004 1µ
+.tran .5
+.lib LTC4.lib
+.backanno
+.end

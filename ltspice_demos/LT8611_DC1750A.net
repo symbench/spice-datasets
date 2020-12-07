@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT8611_DC1750A.asc
+R1 N007 0 60.4K
+C1 N006 0 .001µ
+V1 IN 0 12
+C2 N001 0 1µ
+L1 N004 N005 4.7µ Rser=3m
+C3 N003 N004 .1µ
+C4 OUT 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+R2 OUT N008 1Meg
+R3 N008 0 412K
+C5 OUT N008 4.7p
+XU1 N002 N006 N007 IN IN NC_01 0 N005 N004 OUT 0 N003 N001 OUT NC_02 N008 0 LT8611
+R4 N005 OUT 20m
+C6 IN 0 4.7µ
+Rload OUT 0 1.5
+.tran 1m startup
+* LT8611 - 42V, 2.5A Synchronous Step-Down Regulator with Current Sense and 2.5µA Quiescent Current\nµPower Synchronous Step-Down Regulator with Current Sense\nInput: 3.8V to 42V      Output: 3.3V @ 2.5A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT8611.sub
+.backanno
+.end

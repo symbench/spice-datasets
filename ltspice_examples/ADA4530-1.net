@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\ADA4530-1.asc
+V1 +V 0 5
+V2 0 -V 5
+XU1 0 IN +V -V OUT N001 ADA4530-1
+I1 IN 0 PULSE(0 10n 1m 1u 1u 1 2)
+R1 OUT IN 100Meg
+C1 OUT IN 5p
+R2 OUT 0 10K
+.tran 10
+;.options gmin=1e-15 ; Uncomment to see actual  ADA4530 input impedance
+.lib ADI1.lib
+.backanno
+.end

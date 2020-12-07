@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LTC3122_TA08A.asc
+XU1 N002 0 IN N004 N004 N007 N008 N006 IN 0 OUT N005 LTC3122
+L1 IN N002 3.3µ Rser=10m
+C1 N004 0 4.7µ
+R1 N007 0 57.6K
+C2 N009 0 1000p
+C3 OUT N005 .1µ
+R2 N006 0 121K
+R3 OUT N006 383K
+C4 OUT 0 100µ V=25 Irms=0 Rser=0.003 Lser=0 mfg="TDK" pn="C575OX5RIE226M" type="X5R"
+Rload OUT 0 12.5
+C5 IN N003 5m Rpar=221K Rser=50m
+C6 N003 0 5m Rpar=221K Rser=50m
+R4 N008 N009 43.2K
+C8 N008 0 68p
+V1 N001 0 PWL(0 0 20u 4 11m 4 11.2m 0)
+D1 N001 IN MBR0520L
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 17m
+* LTC3122 - 15V, 2.5A Synchronous Step-Up DC/DC Converter with Output Disconnect\nDual Supercapacitor Backup Power Supply\nInput: 0.5V to 5V (1.8V Startup)     Output: 5V @ 50mA to 2.5A
+* Note:\n  Output current depends on input voltage. Please see datasheet for details.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3122.sub
+.backanno
+.end

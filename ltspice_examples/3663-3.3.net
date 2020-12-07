@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3663-3.3.asc
+L1 N002 N003 6.8µ
+D1 0 N002 MBRS140
+C1 N002 N001 .1µ
+C2 OUT 0 22µ
+V1 IN 0 12
+R3 N004 0 28.7K
+R4 OUT 0 5
+XU1 IN IN OUT N004 OUT N003 N001 N002 0 LT3663-x x=27.8K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT3663-x.sub
+.backanno
+.end

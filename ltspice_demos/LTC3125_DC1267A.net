@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC3125_DC1267A.asc
+XU1 0 N003 N004 IN N001 IN OUT N002 LTC3125
+V1 IN 0 3.3
+R1 N004 0 44.2K
+L1 N001 N002 1.5µ Rser=0.14
+R2 OUT N003 1Meg
+R3 N003 0 432K
+C1 OUT 0 10µ Rser=28m
+C2 IN 0 10µ Rser=5m x2
+C3 OUT 0 {2200µ/20} V=6.3 Rser=55m x2
+R4 OUT 0 50
+.tran 3m
+* LTC3125 - 1.2A Synchronous Step-Up DC/DC Converter with Input Current Limit\nInput: 3.0V - 3.6V     Output: 4V @ 2A (pulsed)
+* 4V @ 2A Pulse Load
+* Note:\n  C3s' values have been reduced 20 fold to shorten simulation time.  They are intended to be super caps that supports\n  a 2A pulsed load.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3125.sub
+.backanno
+.end

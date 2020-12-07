@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\1700.asc
+M§Q1 N003 N005 0 0 Si9804DY
+M§Q2 N003 N007 OUT OUT Si9803DY
+C1 N004 0 .001µ
+C2 N001 0 220p
+R1 OUT N006 316K
+R2 N006 0 100K
+R3 N002 N001 5K
+L1 IN N003 1.8µ
+V1 IN 0 2.5
+C4 OUT 0 200µ Rser=50m
+Rload OUT 0 20
+XU1 0 N002 N006 N004 0 N007 OUT N005 0 N003 LTC1700
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LTC1700.sub
+.backanno
+.end

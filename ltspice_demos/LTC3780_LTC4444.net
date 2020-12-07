@@ -1,0 +1,51 @@
+* Z:\mnt\spice-netlists\LTC3780_LTC4444.asc
+XU1 N007 N021 N024 N025 N020 N018 0 N006 0 N022 NC_01 N017 N001 N010 0 N014 0 N016 N001 N005 N002 N012 N011 N009 LTC3780
+M§Q1 IN N008 N003 N003 Si4486EY
+D1 N001 N009 BAT54
+C1 N001 0 4.7µ
+M§Q2 OUT N011 N012 N012 Si4408DY
+M§Q3 N012 N016 N015 N015 Si4408DY
+V1 IN 0 24
+C2 OUT 0 22µ Rser=0.003
+R1 N018 0 8.06K
+R2 OUT N018 113K
+R3 N015 0 15m
+C3 N001 0 .1µ
+C4 N009 N012 .1µ
+M§Q4 N003 N013 N015 N015 Si4486EY
+D2 N015 N003 MBRS1100
+D3 N012 OUT MBRS340
+L1 N003 N012 6.8µ Rser=0.005
+C7 N023 N022 .01µ
+R5 N023 0 10K
+V2 N002 0 8
+XU2 N010 N014 N002 N013 MP_02 N004 N008 N003 0 LTC4444
+D4 N002 N004 MMSD4148
+C8 N004 N003 0.22µ
+C9 N002 0 1µ
+C10 N017 0 100p
+R6 N024 N015 100
+R7 N025 0 100
+C11 N025 N024 68p
+R8 N002 N006 51K
+C12 N021 0 100p
+R9 N001 N007 10K
+C13 OUT 0 330µ Rser=0.005
+C14 IN 0 2.2µ
+C15 IN 0 100µ
+R10 OUT 0 4
+C16 0 N020 100p
+C17 0 N019 .0047µ
+R11 N020 N019 220K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+* LTC3780/LTC4444 - High Efficiency Synchronous Buck-Boost DC/DC Converter\nInput: 8V-48V    Output: 12V @ 3A
+.lib LTC3780.sub
+.lib LTC4444.sub
+.backanno
+.end

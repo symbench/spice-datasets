@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\4446.asc
+V1 N001 0 10
+V2 N008 0 PULSE(0 5 20n 10n 10n .96u 2u)
+M§Q1 N004 N005 N003 N003 IRF7468
+M§Q2 N003 N009 0 0 IRF7468
+C1 N003 N002 .1µ
+D1 N001 N002 1N5819
+V3 N004 0 50
+L1 N003 N007 1µ
+C2 N007 0 10µ
+R1 N007 0 .5
+V4 N006 0 PULSE(5 0 0 10n 10n .99u 2u)
+XU1 N006 N008 N001 N009 MP_01 N002 N005 N003 0 LTC4446
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 100u startup
+.lib LTC4446.sub
+.backanno
+.end

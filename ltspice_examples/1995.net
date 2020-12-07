@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\1995.asc
+XU1 N002 NC_01 NC_02 -V 0 OUT +V NC_03 NC_04 N001 LT1995
+V1 +V 0 +15
+V2 -V 0 -15
+V3 N001 N002 PULSE(-1 1 0 1n 1n .5u 1u)
+.tran 3u
+.lib LTC7.lib
+.backanno
+.end

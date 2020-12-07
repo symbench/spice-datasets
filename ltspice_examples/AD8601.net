@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD8601.asc
+Vin IN 0 SINE(0 1 100K)
+XU1 IN N001 +V -V OUT AD8601
+V1 +V 0 2.5
+R1 N001 0 10K
+R2 OUT N001 10K
+V2 -V 0 -2.5
+Rload OUT 0 10K
+.tran 100u
+.lib ADI.lib
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\Transformer2.asc
+L1 0 N001 100µ
+L2 A 0 400µ
+V1 IN 0 PULSE(0 1 0 10n 10n 5u 10u)
+R1 N001 IN 10
+L3 B 0 400µ
+K1 L1 L2 L3 1
+.tran 100u
+* This example schematic is supplied for informational/educational purposes only.
+* A transformer with three windings
+.backanno
+.end

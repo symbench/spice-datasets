@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\6255.asc
+V2 +V 0 5
+V4 IN 0 SINE(2.5 1 25K)
+XU1 IN OUT+ +V 0 OUT+ NC_01 LTC6255
+.tran 250u
+.lib LTC4.lib
+.backanno
+.end

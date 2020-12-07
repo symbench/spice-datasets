@@ -1,0 +1,9 @@
+* Z:\mnt\design.r\spice\examples\1175-5.asc
+V1 IN 0 -5
+Rload 0 OUT 100
+C1 0 OUT 1µ Rser=1
+XU1 IN IN OUT OUT 0 N001 IN LT1175-5
+.tran 1m startup
+.lib LT1175.lib
+.backanno
+.end

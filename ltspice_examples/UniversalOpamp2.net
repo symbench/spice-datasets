@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\UniversalOpamp2.asc
+V1 +V 0 15
+V2 -V 0 -15
+V3 N001 0 ac 1
+XU1 N001 0 +V -V 1 level.1 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU2 N001 0 +V -V 2 level.2 Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU3 N001 0 +V -V 3a level.3a Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+XU4 N001 0 +V -V 3b level.3b Avol=1Meg GBW=10Meg Slew=10Meg ilimit=25m rail=0 Vos=0 phimargin=45 en=0 enk=0 in=0 ink=0 Rin=500Meg
+.ac oct 10 .1 100Meg
+* A linear single pole opamp with no internal nodes\nor output voltage range limit.\nAvol=DC gain   GBW=GBW product   Vos=offset voltage\nen=equiv. input noise voltage density\nenk=equiv. input noise voltage density corner freq.\nin=equiv. input noise current density\nink=equiv. input noise current density corner freq.\nRin=Input resistance
+* A single pole opamp with one internal node,\nslew rate limit and output voltage and current limit.\nAvol=DC gain  GBW=GBW product\nSlew=Slewrate limit  ilimit=current limit\nrail=output stage saturation voltage\nVos=offset voltage\nen=equiv. input noise voltage density\nenk=equiv. input noise voltage density corner freq.\nin=equiv. input noise current density\nink=equiv. input noise current density corner freq.\nRin=Input resistance
+* A dominate pole opamp with a delay, slew rate limit,\noutput voltage and current limit, and a programable\nphase margin.  Implemented in 7 internal nodes.\nAvol=DC gain  GBW=GBW product\nSlew=Slewrate limit  ilimit=current limit\nrail=output stage saturation voltage\nVos=offset voltage\nphimargin=phase margin\nen=equiv. input noise voltage density\nenk=equiv. input noise voltage density corner freq.\nin=equiv. input noise current density\nink=equiv. input noise current density corner freq.\nRin=Input resistance
+* A two pole opamp with two internal nodes,\nslew rate limit and output voltage and current limit\nand a programable phase margin.\nAvol=DC gain  GBW=GBW product\nSlew=Slewrate limit  ilimit=current limit\nrail=output stage saturation voltage\nVos=offset voltage\nphimargin=phase margin\nen=equiv. input noise voltage density\nenk=equiv. input noise voltage density corner freq.\nin=equiv. input noise current density\nink=equiv. input noise current density corner freq.\nRin=Input resistance
+* This example schematic is supplied for informational/educational purposes only.
+* This demonstrates the use of the symbol UniversalOpamp2(improved version to the UniversalOpamp).  You set the SpiceModel to be\nhigher to simulate more aspects of opamp behavior.  Level1 is merely a transconductance working into an R||C and doesn't use power\nfrom the supplies.  Level2 adds slewrate, current and voltage limits.  Level3a adds a second pole.  Level3b adds a delay to the dominate\npole response.  Noise is modeled at all levels.
+.lib UniversalOpamps2.sub
+.backanno
+.end

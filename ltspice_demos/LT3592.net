@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT3592.asc
+L1 N002 N003 4.7µ Rser=.08 Rpar=2K
+R3 N003 N007 .4
+R5 N009 0 10K
+V1 N004 0 12
+C1 N003 0 4.7µ Rser=.01
+R2 N008 0 48.7K
+D1 N005 N002 MBRS140
+C2 N002 N001 .1µ
+XU1 N008 N006 N004 N004 N005 N002 N001 N003 N007 N009 0 LT3592
+R4 N007 N009 51.1K
+V2 N006 0 PULSE(3 0 .5m 1u 1u .25m .5m)
+C3 N004 0 2.2µ
+D2 N007 0 LXK2-PW14
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1.25m startup
+* LT3592 - 500mA Wide Input Voltage Range Step-Down LED Driver with 10:1 Dimming\nInput: 12V       Output: Single 3.4V LED @ 500mA/50mA   Fsw = 2.2MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LT3592.sub
+.backanno
+.end

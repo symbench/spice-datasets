@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADG5236.asc
+V1 +V 0 15
+V2 -V 0 -15
+V4 IN 0 pulse(0 3.3 0 1u 1u 5m 10m)
+R1 SA 0 1K
+R2 SB 0 1K
+V5 N001 0 SINE(0 10 2k)
+XU1 IN SA N001 SB -V 0 +V ADG5236
+.tran 30m
+.lib ADG5236.sub
+.backanno
+.end

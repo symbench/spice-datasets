@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1037.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N001 355K
+R2 N001 0 365
+V3 IN 0 SINE(0 1m 1)
+XU1 IN N001 +V -V OUT LT1037
+.tran 3
+* Gain 1000 Amplifier with .01% Accuracy
+.lib LTC.lib
+.backanno
+.end

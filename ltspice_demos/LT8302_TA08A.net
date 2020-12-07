@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT8302_TA08A.asc
+Vin N005 0 -42
+R4 N001 N002 121K
+D1 N001 OUT MBRS360
+C5 OUT 0 47µ V=6.3 Rser=0.003
+Rload OUT 0 9.23
+C3 N003 N005 1µ
+R6 N004 N005 10K
+XU1 0 N003 0 N005 N001 N002 N004 NC_01 LT8302
+L1 N001 0 12µ
+C1 N005 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 8m startup
+* LT8302 - 42Vin µPower No-Opto Isolated Flyback Converter with 65V/3.6A Switch\nUsed to make a Negative to Positive Buck-Boost Converter\nInput: -4V to -42V       Output: 12V @ 1.3A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* 12V @ 0.45A (Vin=-5V)\n12V @ 0.8A (Vin=-12V)\n12V @ 1.1A (Vin=-24V)\n12V @ 1.3A (Vin=-42V)
+.lib LT8302.sub
+.backanno
+.end

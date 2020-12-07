@@ -1,0 +1,38 @@
+* Z:\mnt\spice-netlists\LT3514_TA01A.asc
+L1 IN N003 10µ Rser=50m
+C1 N001 IN 2.2µ V=50 Irms=0 Rser=0.008 Lser=0
+C2 N007 0 10p
+R1 N014 0 18.2K
+D1 N004 N002 MBRS140
+L2 N002 OUT1 8.2µ Rser=50m
+R2 OUT1 N005 53.6K
+R3 N005 0 10k
+D2 N012 N010 MBRS140
+R4 OUT3 N013 12.7K
+R5 N013 0 10K
+D4 N008 N006 SS24
+L4 N006 OUT2 4.7µ Rser=50m
+R8 OUT2 N009 31.6K
+R9 N009 0 10K
+C4 IN 0 4.7µ
+L5 N010 OUT3 4.2µ Rser=50m
+C5 OUT3 N013 330p
+C7 OUT2 N009 100p
+C8 OUT1 N005 22p
+C9 OUT1 0 22µ
+C10 OUT2 0 47µ
+C12 OUT3 0 22µ
+Rload1 OUT1 0 5
+Rload3 OUT3 0 1.8
+Rload2 OUT2 0 1.65
+XU1 MP_01 MP_02 N008 N006 N010 N012 N002 N004 IN 0 MP_03 N007 N007 MP_04 N007 IN N014 MP_05 N005 N013 N009 MP_06 N011 N003 N001 LT3514
+V1 IN 0 12
+R6 N011 OUT1 10K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 300u startup
+* Notes:\n  A smaller SS capacitor is being used to reduce simulation time. Typical value should be 47nF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* LT3514 - Triple Step-Down Switching Regulator with 100% Duty Cycle Operation\n36V Triple Buck Regulator\nInput: 5.4V to 36V (40V Transient, ~2.9V UVLO)  Outputs: 5V @ 1A, 3.3V @ 2A & 1.8V @ 1A, Fsw = 1MHz
+.lib LT3514.sub
+.backanno
+.end

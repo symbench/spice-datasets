@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC6362_LTC5400_DiffIOADCDriver.asc
+XU1 N002 OCM +V Out+ Out- 0 +V N003 LTC6362
+XU2 N001 INM INP N004 N003 N003 N002 N002 NC_01 LT5400-1
+V1 +V 0 5
+V3 INM 0 SINE(2.5 0.5 1K 0.1m 0 0)
+V4 OCM 0 2.5
+V2 INP 0 SINE(2.5 -0.5 1K 0.1m 0)
+R1 Out+ N001 10K
+R2 Out- N004 10K
+.tran .006
+* LTC6362 - Precision, Low Power Rail-to-Rail Input/Output Differential Op Amp/SAR ADC Driver\nLT5400 - Quad Matched Resistor Network\nDifferential Input/Output ADC Driver using Matched Resistors\nInput: 1Vp-p     Output: 2Vp-p, Gain of Av = 2
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LT5400.lib
+.lib LTC7.lib
+.backanno
+.end

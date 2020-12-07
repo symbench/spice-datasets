@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\colpits2.asc
+J1 N001 N003 N004 2N5484
+L1 0 N002 100µ
+C1 N003 N004 50p
+C2 N004 0 50p
+C3 N003 N002 50p
+V1 N001 0 10.
+C4 N002 0 100p
+L2 0 N004 1m Rser=100
+D2 0 N003 1N4148
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 500µ startup
+* This example schematic is supplied for informational/educational purposes only.
+.options method=trap
+.backanno
+.end

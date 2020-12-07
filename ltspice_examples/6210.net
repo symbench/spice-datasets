@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\6210.asc
+XU1 N003 N001 +V -V N002 P001 LT6210
+R1 P001 0 56K
+V1 +V 0 5
+V2 -V 0 -5
+R2 N002 N001 1.1K
+R3 N001 0 1.1K
+V3 N003 0 pulse(-25m 25m 30n 1n 1n 35n 70n)
+R4 N002 0 150
+.tran 100n
+.lib LTC4.lib
+.backanno
+.end

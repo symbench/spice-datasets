@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\ADA4625-2.asc
+V1 +V 0 15
+Rf OUT N001 49.9K
+Id N001 0 PULSE(0 200u 1u 1p 1p 2u 3u 2)
+Cf OUT N001 3p
+Cd N001 0 6p
+Rsh N001 0 2G
+XU1 0 N001 +V 0 OUT ADA4625-2
+* PhotoDiode
+* PDB-C134
+.tran 6u
+.lib ADI1.lib
+.backanno
+.end

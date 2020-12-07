@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\qztst.asc
+C§Y1 N002 OUT {Cs} Rser={Rs} Lser={Ls} Cpar={Cp}
+V1 N001 0 AC 2
+R1 N002 N001 50
+R2 0 OUT 50
+.ac lin 1001 3.95e6 4.05e6
+* Crystal model from easily measurable parameters
+*serial freq
+.params fs=4e6
+*difference between serial and // freq
+.params df=10e3
+.params Rs=50
+.params Cp=4e-12
+.params Cs=2.0*cp*df/fs
+.params Ls=1/(4*pi*pi*fs*fs*Cs)
+* This example schematic is supplied for informational/educational purposes only.\nContributed by Dominique Szymik.
+.backanno
+.end

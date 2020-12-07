@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LTC6994_TA01A.asc
+V1 IN 0 PWL(30m 0 +.1m 3.3 90m 3.3 +.1m 0 100m 0 +.1m 3.3 210m 3.3 +.1m 0 400m 0 +.1m 3.3 510m 3.3 +.1m 0 600m 0 +.1m 3.3)
+R1 N002 0 154K
+R2 OUT1 0 100K
+R3 N004 N006 1Meg
+R4 N006 0 523K
+R5 N005 0 154K
+C1 N004 0 0.1µ
+V2 N004 0 3.3
+R6 OUT2 0 100K
+XU1 IN 0 N005 N006 N004 OUT2 LTC6994-2
+XU2 IN 0 N002 N003 N001 OUT1 LTC6994-1
+R7 N001 N003 1Meg
+R8 N003 0 523K
+C2 N001 0 0.1µ
+V3 N001 0 3.3
+.tran 1 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+* LTC6994 - Timerblox: Delay Block/ Debouncer\nNoise Discriminator\n \nInput Must Be ON >100ms To Be Qualified, Output Goes Low Instantly When Input Goes OFF
+* Input Must Be ON >100ms To Be Qualified, Output Goes Low When the Input is OFF for >100ms
+.lib LTC6994-1.sub
+.lib LTC6994-2.sub
+.backanno
+.end

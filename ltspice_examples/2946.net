@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\2946.asc
+R1 SP SN 20m
+R2 SN 0 100
+V1 SP 0 PWL(0 0 1u 6 1.5 12 3 7 5 14 6 6)
+V2 N014 0 PWL(0 1 .5 1 +1u 0)
+B1 InstPower 0 V=V(SP,SN)*V(SP)
+C1 SP 0 .1µ
+XU1 SP N004 0 SP SN 0 N001 N002 N003 N005 N006 N007 N008 N009 N010 N011 N012 N013 N015 N016 N017 N018 N014 LTC2946 CA2=0 CA1=0 CA0=0 CA4=0 CA3=1 CA7=0 CA6=0 CA5=0
+.tran 7
+* Control Bits\n \nCA7 ADIN Config\n \nCA7  = 1  ADin measured with respect to IntVcc\nCA7  = 0  Adin measured with respect to Gnd\n \nCA[6:5] Offset Calibration Config\n \nCA6 CA5\n1        1         No calibration\n1        0         Every 128 conversions\n0        1         Every 16 conversions\n0        0         Every conversion\n \nCA[2:0]  Channel Configuration\n \nCA2 CA1 CA0\n1       1      1       Snapshot Mode\n1       1      0        Voltage Once, Followed by Current Indefinately\n1       0      1        ADIN, Voltage, Current at 1/256,  1/256,  and 254/256 Duty Cycle, Respectively\n1       0      0        ADIN, Voltage, Current at 1/32,  1/32,  and 30/32 Duty Cycle, Respectively \n0       1      1       ADIN, Voltage, Current\n0       1      0       Voltage,  Current 1/128 and 127/128 Duty Cycle, Respectively\n0       0      1       Voltage,  Current 1/16 and 15/16 Duty Cycle, Respectively  \n0       0      0       Voltage, Current\n \n>Power, >MaxPower, etc.  Analog Real Number outputs referenced to Spice global ground
+.lib LTC2946.sub
+.backanno
+.end

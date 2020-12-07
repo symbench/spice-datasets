@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LTC3643_DC2220A.asc
+XU1 N014 N009 OUT N011 N001 N010 N001 N006 N002 0 N003 N005 N004 N012 N013 N007 0 LTC3643
+R1 N001 OUT 10m
+L1 N002 N003 7.2µ Ipk=6 Rser=0.0113 Rpar=6885.06 Cpar=4.185p mfg="Würth Elektronik" pn="7447798720 WE-PDF 1064"
+C1 N004 N003 .1µ
+M§Q1 IN N006 N001 N001 Si4427DY
+C3 0 N005 4.7µ
+R2 N012 N014 322K
+R3 N014 0 5.11K
+Cstorage N012 0 10µ
+R4 N008 N010 400K
+C5 0 N008 470p
+R5 N001 N011 37.4K
+R6 N011 0 5.11K
+R7 IN N009 511K
+R8 N009 0 150K
+Rload OUT 0 25
+R10 N005 N013 511K
+R11 N005 N007 511K
+V1 IN 0 PWL(0 0 1u 5 2m 5 +20u 0)
+C6 IN 0 47µ V=10 Irms=510m Rser=0.2 Lser=0 mfg="KEMET" pn="T529P476M010AAE200" type="Tantalum"
+C7 IN 0 4.7µ V=16 Irms=5.51 Rser=0.00764395 Lser=0 mfg="KEMET" pn="C1206C475K4RAC" type="X7R"
+C4 0 N008 22p
+C2 OUT 0 220µ V=10 Irms=0 Rser=0.1 Lser=0 mfg="AVX" pn="TPSE227M010R0100" type="Tantalum"
+C8 OUT 0 4.7µ x2 V=16 Irms=5.51 Rser=0.00764395 Lser=0 mfg="KEMET" pn="C1206C475K4RAC" type="X7R"
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+* LTC3643 - 2A Bidirectional Power Backup Supply\nBidirectional Charger/Regulator for System Power Backup\nInput: 3V to 17V     Output: 5V @ 200mA
+* Note:\n  This simulation demonstrates functionality of the LTC3643 bidirectional power backup supply in the 5V rail application. Input voltage IN is present for the first 2 ms. \n  In this time interval LTC3643 provides low impedance path from the voltage source to the load, keeping P-Ch Q1 ON and the boost converter charges storage capacitor C_Storage to the voltage of 40V.\n  At the time 2ms, input voltage disconnected, the storage capacitor discharges providing energy to the buck converter that keeps load voltage at specified 5V.\n  Q1 transitions to the OFF state isolating load from the voltage source and the PFO flag changes state, signaling power interruption and start of the data backup.\n  LTC3890-2 SENSE Pin Common Mode Range is not dependendent on Vfb making it easy to design a non-synchronous SEPIC Converter with ground-referenced current sensing\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.lib LTC3643.sub
+.backanno
+.end

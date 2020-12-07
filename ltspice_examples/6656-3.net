@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\6656-3.asc
+C1 N002 0 1µ
+V1 N001 0 PWL(0 0 1m 0 +100n 3.5)
+XU1 0 N001 N002 LT6656-3
+.tran 20m
+.lib LT6656.lib
+.backanno
+.end

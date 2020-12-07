@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\8415.asc
+R1 N007 N008 604K
+V1 IN 0 3.6 Rser=0.1
+L1 IN N001 100µ
+C1 N002 0 22000p
+C2 N003 0 .1µ
+R2 N008 0 412K
+C3 N007 0 .01µ Rser=10m
+XU1 IN IN 0 N001 N004 N004 N006 N005 N003 N002 N007 N008 LT8415
+V2 N004 0 PULSE(0 3.3 0 1u 1u 50u 100u) Rser=0.1
+.tran 2m startup
+.lib LT8415.sub
+.backanno
+.end

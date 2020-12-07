@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LTM4633_DC1905A_F16.asc
+XU1 N008 N011 OUT1 IN IN OUT3 0 N009 N005 NC_01 0 N006 NC_02 N012 NC_03 N004 N003 N010 MP_04 NC_05 MP_06 N001 NC_07 IN IN OUT2 NC_08 MP_09 MP_10 MP_11 NC_12 MP_13 MP_14 N002 N002 N002 0 N001 MP_15 N007 LTM4633
+V1 IN 0 12
+C1 0 N001 4.7µ
+R1 IN N002 23.2K
+R2 N005 0 242K
+R3 N006 0 121K
+R4 N012 0 19.1K
+C4 OUT3 0 470µ V=4 Rser=10m
+Rload1 OUT1 0 .1
+Rload2 OUT2 0 .12
+Rload3 OUT3 0 .33
+C5 IN 0 150µ V=25
+C6 IN 0 22µ V=25
+C7 N012 OUT3 220p
+C8 OUT3 0 100µ V=6.3 Rser=2m
+R5 N004 N001 10K
+R6 N003 N001 10K
+C9 N006 OUT2 220p
+C3 OUT2 0 470µ V=4 Rser=10m
+C10 OUT2 0 100µ V=6.3 Rser=2m
+C11 N005 OUT1 220p
+C2 OUT1 0 470µ V=4 Rser=10m
+C12 OUT1 0 100µ V=6.3 Rser=2m
+R7 IN N009 10K
+R8 N010 IN 10K
+C13 N007 0 0.1n
+C14 N008 0 0.1n
+C15 N011 0 0.1n
+.tran 750u startup
+* LTM4633 - Triple 10A Step-Down DC/DC µModule Regulator\nHigh Efficiency, Triple 10A Step-Down µModule Regulator\nInput: 4.5V to 16V     Outputs: 1.0V, 1.2V & 3.3V @ 10A, Fsw = 750kHz
+* Notes:\n  A smaller TRACK/SS capacitor is being used to reduce simulation time. Typical value should be 0.1µF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTM4633.sub
+.backanno
+.end

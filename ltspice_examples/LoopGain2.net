@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\LoopGain2.asc
+V1 +V 0 15
+R1 x 0 100
+R2 N001 0 1K
+R3 x N001 1K
+C1 x N001 3p
+XU1 0 N001 +V -V N002 LT1001
+V5 -V 0 -15
+Ii 0 x AC {u(prb)}
+Vi x N002 AC {u(-prb)}
+.ac dec 30 .1 100Meg
+* Here the open loop gain is determined from the closed loop system[1].\nThe open loop gain can be plotted by plotting the quantity:\n \n-1/(1-1/(2*(I(Vi)@1*V(x)@2-V(x)@1*I(Vi)@2)+V(x)@1+I(Vi)@2))\n \nAlternatively, you add the following line to your plot.defs file:\n.func T.et.al() -1/(1-1/(2*(I(Vi)@1*V(x)@2-V(x)@1*I(Vi)@2)+V(x)@1+I(Vi)@2))\nAnd then plot simply T.et.al()\n \nThis is an improvement over the technique shown in LoopGain.asc \nbecause it (i) accounts for reverse feedback(it doesn't even\nmatter if you reverse the direction of the probe -- you still compute\nthe same open loop response) and (ii) the inserted probe elements\nresult in a smaller, sparser circuit matrix.
+* This example schematic is supplied for informational/educational purposes only.
+* [1] Michael Tian, V. Visvanathan, Jeffrey Hantgan, and Kenneth Kundert,\n    "Striving for Small-Signal Stability", IEEE Circuits and Devices Magazine,\n     vol. 17, no. 1, pp. 31-41, January 2001.
+.step param prb list -1 1 ; set prb=0 to turn off probe
+* Probe elements added to  inject\nsignals to measure the open loop\nresponse from the closed loop system
+* This example is based on posts contributed by Frank Wiedmann to the independent users' group at http://groups.yahoo.com/group/LTspice
+.lib LTC.lib
+.backanno
+.end

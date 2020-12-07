@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LT8616_DC2169A_TA04.asc
+XU1 IN N007 N010 MP_01 MP_02 N009 MP_03 N001 N002 MP_04 N004 N006 N003 MP_05 N011 IN 0 MP_06 IN MP_07 N005 OUT2 MP_08 IN MP_09 N012 MP_10 N008 0 LT8616
+V1 IN 0 12
+C1 N005 0 1µ
+C2 N006 0 .001µ
+C3 N008 0 .001µ
+R1 N011 0 14.7K
+L1 N002 OUT1 3.3µ Rser=30m
+R2 OUT1 N003 1Meg
+R3 N003 0 187K
+C4 OUT1 N003 4.7p
+Rload1 OUT1 0 3.33
+C5 OUT1 0 22µ Rser=10m
+C6 N001 N002 .1µ
+L2 N010 OUT2 2.2µ Rser=30m
+R4 OUT2 N012 1Meg
+R5 N012 0 316K
+C7 OUT2 N012 4.7p
+Rload2 OUT2 0 1.32
+C8 OUT2 0 47µ Rser=10m
+C9 N009 N010 .1µ
+R6 OUT2 N007 1Meg
+R7 OUT1 N004 1Meg
+.tran 500u startup
+* LT8616 - Dual 42V Synchronous Monolithic Step-down Regulator with 6.5µA Quiescent Current\n5V, 3.3V, 2MHz Step-Down Converter\nInput: 5.8V to 42V       Output: 5V @ 1.5A, 3.3V @ 2.5A, Fsw = 2.05MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LT8616.sub
+.backanno
+.end

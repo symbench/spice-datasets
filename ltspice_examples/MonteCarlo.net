@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\MonteCarlo.asc
+C1 OUT 0 {mc(1n, tol)}
+V1 IN 0 AC 1
+L1 OUT 0 {mc(10u, tol)}
+C2 N001 0 {mc(1n, tol)}
+L2 N001 0 {mc(10u, tol)}
+R1 N001 IN 141
+R2 0 OUT 141
+L3 N002 N001 {mc(40u, tol)}
+C3 OUT N002 {mc(250p, tol)}
+.ac oct 100 300K 10Meg
+.step param X 0 20 1 ; a dummy paramter to cycle Monte Carlo runs
+.param tol=.05 ; +/- 5% component tolerance
+* Monte Carlo Simulation in LTspice
+* mc(val, tol) is a function that uses a random number generator \n                     to return a value between val-tol*val and val+tol*val\n \nOther functions of interest:\n \nflat(x): a function that uses a random number generator \n         to return a value between -x and x;\n \ngauss(x): a function that uses a random number generator \n          to return a value with a Gaussian distribution\n          and sigma x.
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

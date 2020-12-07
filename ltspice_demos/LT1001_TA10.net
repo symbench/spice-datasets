@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT1001_TA10.asc
+V1 +V 0 15
+XU1 0 N001 +V -V N004 LT1001
+V2 -V 0 -15
+R1 N002 N001 10K
+V3 IN 0 SINE(0 10 100)
+XU2 N005 N003 +V -V OUT LT1001
+D1 N002 N004 1N4148
+R2 N001 IN 10K
+R3 N005 N001 10K
+R4 N003 N002 10K
+R5 OUT N003 10K
+D2 N004 N005 1N4148
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 30m
+* LT1001 - Precision Operational Amplifier\nPrecision Absolute Value Circuit (Full-Wave Rectifier)\nInput: ±10V     Output: 0V to 10V
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADG1612.asc
+V1 +V 0 8
+V2 -V 0 -8
+V3 N001 0 sine(0 5 1K)
+V4 N003 0 pulse(0 3.3 0 1u 1u 5m 10m)
+R1 N002 0 1K
+XU1 N003 N001 N002 -V 0 MP_01 MP_02 MP_03 MP_04 MP_05 MP_06 MP_07 +V ADG1612
+.tran 30m
+.lib ADG.lib
+.backanno
+.end

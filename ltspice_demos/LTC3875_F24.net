@@ -1,0 +1,45 @@
+* Z:\mnt\spice-netlists\LTC3875_F24.asc
+XU1 N017 N015 0 N016 N016 N015 0 N017 N012 OUT N014 NC_01 NC_02 NC_03 N018 NC_04 NC_05 NC_06 NC_07 N008 N004 N006 N010 NC_08 N002 IN N009 N005 N003 N007 NC_09 NC_10 0 NC_11 N001 NC_12 NC_13 N013 OUT N011 0 LTC3875
+V1 IN 0 12
+C1 0 N002 4.7µ
+M§Q1 IN N003 N007 N007 BSC050NE2LS
+M§Q2 N007 N009 0 0 BSC010NE2LSI
+L1 N007 OUT .25µ Rser=.32m
+C2 N005 N007 .1µ
+D1 N002 N005 CMDSH2-3
+C3 N011 OUT 220n
+C4 OUT N013 220n
+R1 N007 N011 715
+R2 N007 N013 3.57K
+R3 OUT N015 13.3K
+R4 N015 0 20K
+C5 N016 0 1500p Rser=5K Cpar=150p
+C6 N017 0 .001µ
+M§Q3 IN N004 N008 N008 BSC050NE2LS
+M§Q4 N008 N010 0 0 BSC010NE2LSI
+L2 N008 OUT .25µ Rser=.32m
+C7 N006 N008 .1µ
+D2 N002 N006 CMDSH2-3
+C8 N012 OUT 220n
+C9 OUT N014 220n
+R5 N008 N012 715
+R6 N008 N014 3.57K
+R7 N018 0 100K
+C10 OUT 0 330µ x4 V=2.5 Irms=6.5 Rser=0.009 Lser=0
+R8 N002 N001 3K
+R9 N001 0 1K
+C11 OUT 0 100µ x3 Rser=2m
+C12 OUT 0 100µ x3 Rser=2m
+C13 OUT 0 330µ x4 V=2.5 Irms=6.5 Rser=0.009 Lser=0
+I§Load OUT 0 PULSE(40 70 .5m 5u 5u .1m) load
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+* LTC3875 - Dual, 2-Phase, Synchronous Controller with Low Value DCR Sensing and Temperature Compensation\nDual Phase 1.0V, 60A Power System with Ultralow DCR Sensing\nInput: 4.5V to 14V     Outputs: 1V @ 60A, Fswitch = 400kHz
+* Note:\n  Small value are used for TRACK/SS capacitors to reduce simulation time. The typical value for actual applications will vary from 10nF to 100nF.\n  More output capacitors may be needed to meet load step and output voltage requirements.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3875.sub
+.backanno
+.end

@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LTC3633_TA04.asc
+V1 IN 0 12
+XU1 NC_01 N001 IN N001 N008 IN 0 NC_02 N007 NC_03 N001 OUT1 N005 MP_04 IN MP_05 N003 OUT3 N001 N002 IN MP_06 N004 MP_07 OUT2 N001 NC_08 N006 0 LTC3633
+C1 0 N001 2.2µ
+L1 N004 OUT2 .68µ
+C2 N002 N004 .1µ
+R1 OUT2 N006 20K
+R2 N006 0 10K
+R3 N008 0 162K
+C3 OUT3 0 .1µ
+C4 OUT2 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R"
+L2 N005 OUT1 1µ
+C5 N003 N005 .1µ
+R4 OUT1 N007 45.3K
+R5 N007 0 10K
+C6 OUT1 0 22µ V=6.3 Irms=0 Rser=0.0008 Lser=0 mfg="TDK" pn="C3225X5ROJ226M" type="X5R"
+C7 IN 0 47µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C4532X5ROJ47@M" type="X5R" x2
+Rload2 OUT2 0 .6
+Rload1 OUT1 0 1.1
+Rload3 OUT3 0 250
+.tran .5m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LTC3633  - Dual Channel 3A, 15V Monolithic Synchronous Step-Down Regulator\n3.3V/1.8V Buck Regulator with 2.5V LDO Output\nInput: 12V       Output1: 3.3V @ 3A       Output2: 1.8V @ 3A     Output3: 2.5V @ 10mA
+.lib LTC3633.sub
+.backanno
+.end

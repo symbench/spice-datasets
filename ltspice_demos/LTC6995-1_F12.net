@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LTC6995-1_F12.asc
+V2 N002 0 PWL(.2 0 +20u 3 +.1 3 +20u 0 +.2 0 +20u 5 +.1 5 +20u 0 +.2 0 +.2 5)
+R1 N002 N003 1Meg
+R2 N003 0 280K
+R7 N001 POR 191K
+XU1 0 0 N001 N003 N002 POR LTC6995-1
+C1 N002 0 0.1µ
+C2 N002 0 10µ
+.tran 10 startup
+* LTC6995-1 - TimerBlox: Long Timer, Low Frequency Oscillator\nActive Low Power-On Reset Timer\nInput: 2.25V to 5.5V      Output: POR Delay = 1s (~1.4V Starts Timer)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC6995-1.sub
+.backanno
+.end

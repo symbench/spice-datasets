@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LTC3419.asc
+V1 IN 0 4.5
+C1 OUT2 0 10µ
+L1 N001 OUT2 3.3µ
+R1 OUT2 N003 150K
+R2 N003 0 47.5K
+C2 OUT2 N003 10p
+C3 OUT1 0 10µ
+L2 N002 OUT1 3.3µ
+XU1 N004 IN IN N002 IN N001 IN N003 0 LTC3419
+R3 OUT1 N004 59K
+R4 N004 0 59K
+C4 OUT1 N004 22p
+R5 OUT2 0 4.2
+R6 OUT1 0 2
+.tran 1.2m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+* LTC3419 - Dual Monolithic 600mA Synchronous Step-Down Regulator\nInput: 4.5 to 32V   Outputs: 1.2V@600mA and 2.5V@600mA
+.lib LTC3419.sub
+.backanno
+.end

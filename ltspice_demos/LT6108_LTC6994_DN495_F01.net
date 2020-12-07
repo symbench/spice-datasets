@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LT6108_LTC6994_DN495_F01.asc
+XU1 N001 +V N006 0 N009 N005 IN N002 LT6108-2
+XU2 N008 N003 +V 0 N004 0 LT1783
+XU3 N006 0 N008 N010 +V N007 LTC6994-2
+V1 IN 0 24
+R1 IN N001 10m
+R2 N005 N009 1.62K
+R3 N009 0 6.34K
+R4 N003 N005 40.2K
+R5 N004 N003 3.66K
+V2 +V 0 5
+R6 +V N010 172K
+R7 N010 0 100K
+R8 N004 N008 64.9K
+R9 N008 0 301K
+S1 OUT N001 N007 0 RELAY
+R10 IN N002 100
+R11 +V N006 10K
+R12 N010 N006 931K
+Rload OUT 0 {LOAD}
+.model RELAY SW(ron=.1 roff=1Meg Vt=2.5 Vh=-.5)
+.tran 3 startup
+.step param LOAD LIST 48 24 16 8 4
+* LT6108 - High Side Current Sense Amplifier with Reference and Comparator & LTC6994 - TimerBlox: Delay Block/ Debouncer\nEnergy-Tripped Circuit Breaker with Automatic Delayed Retry  \nInput: 5V to 80V   Threshold: 500mA (Time Interval Varies with Load Current) with a 2.5s Retry Delay\n(More information is available in Design Note 495)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* Rload is stepped to show how \nbreaker time interval varies \nwith load current; higher \ncurrents trips the circuit \nbreaker in less time
+.lib LTC.lib
+.lib LTC5.lib
+.lib LTC6994-2.sub
+.backanno
+.end

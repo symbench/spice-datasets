@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\ADP2503-5.0.asc
+L1 N001 N002 1.5µ Rser=80m
+C1 OUT 0 10µ
+V1 IN 0 3.3
+Rload OUT 0 50
+XU1 N001 N002 OUT IN IN 0 OUT NC_01 ADP2503_4 Vout=5.0 Limit=1.2 R2=100k
+.tran 400u startup
+* PSM and forced PWM modes are modelled\nClock Sync is not modelled
+.lib ADP2503_4.sub
+.backanno
+.end

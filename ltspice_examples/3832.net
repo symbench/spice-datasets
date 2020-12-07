@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\3832.asc
+C1 N010 0 .01µ
+C2 N006 0 .01µ
+R1 N011 N010 15K
+M§Q1 IN N004 N002 N002 Si9428DY
+M§Q2 N002 N007 0 0 Si9428DY
+R2 N002 N005 1K
+R3 N003 IN 10K
+D1 IN N001 MBR0520L
+C3 N002 N001 .1µ
+L1 N002 OUT 3.2µ
+C4 OUT 0 270µ Rser=10m
+V1 IN 0 5
+XU1 N004 N001 0 0 0 OUT IN N009 N006 N011 N008 N003 N005 IN IN N007 LTC3832
+Rload OUT 0 1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1m startup
+.lib LTC3832.sub
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LT6110_F05.asc
+R1 N001 N005 200
+XU1 N005 N001 N002 N002 0 N007 N001 LT6110
+V3 N003 0 5
+R3 Load+ N002 .25
+R4 Load- 0 .25
+S1 Load- Load+ N004 0 Sload
+V1 N004 0 PULSE(0 1 5m 500n 500n 2m 10m)
+XU2 MP_01 N006 N001 N003 N003 LT3080
+C1 N001 0 1µ
+R6 N007 0 1.69K
+R5 N006 N007 301K
+C2 Load+ Load- 1µ
+C3 N006 0 100p
+.tran 10m startup
+.model Sload SW(Ron=3 Roff=150 vt=.5 vh=-100m)
+* LT6110 - Cable/Wire Drop Compensator\nWire Loss Compensation Using a Current Referenced LDO\nInput: 4.9V to 15V     Output: 3V @ 1A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+* Cable Loss
+.lib LT3080.sub
+.lib LTC5.lib
+.backanno
+.end

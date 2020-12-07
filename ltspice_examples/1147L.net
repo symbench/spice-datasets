@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\1147L.asc
+D1 0 N001 MBRS340
+L1 N001 N002 50µ
+C1 N006 0 470p
+C2 N004 0 3300p
+V1 IN 0 10
+C3 OUT 0 390µ Rser=0.01
+R1 OUT N007 300K
+R2 N007 0 100K
+C4 N002 OUT 1000p
+R3 N005 N004 1K
+M§Q1 N001 N003 IN IN FDC638P
+R4 N002 OUT 50m
+XU1 IN N006 N005 OUT N002 N007 0 N003 LTC1147
+Rload OUT 0 5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5m startup
+.lib LTC1147.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\2945.asc
+XU1 SP N003 0 SP SN 0 N001 N002 N004 N005 N006 N007 N008 N009 N010 N011 N012 N014 N015 N013 LTC2945 A0=1 A2=1 A5=0 A6=0 A7=0
+R1 SP SN 20m
+R2 SN 0 100
+V1 SP 0 PWL(0 0 1u 4 1.5 10 3 5 5 12 6 3)
+V2 N013 0 PWL(0 1 .5 1 +1u 0)
+B1 InstPower 0 V=V(SP,SN)*V(SP)
+C1 N003 0 .1µ
+.tran 7
+* A0 Multiplier Select 1  Vdd,  0  ADin\nA2 Vin monitor 1 Sense+,  0 Vdd\nA6 A5  channel for Snapshot mode\n0    0    (Sense+  - Sense-)\n0    1    Vin\n1    0    ADin \nA7  Snapshot mode 1 snapshot enabled,  0 continuous scan \n \n>Power, >MaxPower, etc.  Analog Real Number outputs referenced to Spice global ground
+.lib LTC2945.sub
+.backanno
+.end

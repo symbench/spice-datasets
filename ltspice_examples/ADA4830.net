@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\ADA4830.asc
+R1 N001 N002 5K
+R2 OUT 0 1K
+V1 N001 0 5
+V3 N004 0 SINE(0 1 1Meg)
+V4 N003 0 2.5
+V5 N005 0 PULSE(0 3 1u 1n 1n 10u 20u)
+XU1 N003 N004 0 N001 0 N005 N002 OUT ADA4830
+.tran 100u
+.lib ADI1.lib
+.backanno
+.end

@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\3426.asc
+R1 OUT N002 95.3K
+R2 N002 0 30.9K
+V1 IN 0 3.3
+C1 OUT 0 22µ Rser=100m
+L1 IN N001 2.2µ
+D1 N001 OUT 1N5817
+Rload OUT 0 10
+XU1 N001 0 N002 IN OUT IN LTC3426
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran .5m startup
+.lib LTC3426.sub
+.backanno
+.end

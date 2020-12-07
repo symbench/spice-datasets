@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\8653S.asc
+XU1 NC_01 NC_02 NC_03 NC_04 0 NC_05 N001 N002 N003 0 N003 OUT1 N004 N005 OUT2 N003 N003 IN IN MP_06 0 LT8653S
+L5 N002 OUT2 1µ Rser=10m
+C20 OUT2 0 47µ x2 Rser=10m
+Rload2 OUT2 0 1.65
+L6 N001 OUT1 1µ Rser=10m
+C22 OUT1 0 47µ x2 Rser=10m
+Rload1 OUT1 0 2.5
+C23 N004 0 470p
+C24 N005 0 470p
+C25 N003 0 1µ
+V1 IN 0 24
+.tran .4m startup
+.lib LT8653S.sub
+.backanno
+.end

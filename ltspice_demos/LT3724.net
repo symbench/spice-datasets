@@ -1,0 +1,31 @@
+* Z:\mnt\spice-netlists\LT3724.asc
+M1 IN N007 N008 N008 Si4886DY
+D1 N002 N005 PMEG6010AED
+C1 N005 N008 0.22µ
+R1 IN N001 1Meg
+R2 N010 N009 40.2k
+C2 N009 0 680p
+D2 0 N008 MBRS360
+L1 N008 N011 47µ Rpar=2K
+R3 N011 OUT 25m
+R4 N006 0 4.99K
+R5 N006 OUT 93.1K
+R6 N003 OUT 200K
+C3 N004 N003 {.001µ/5}
+C4 OUT 0 330µ
+V1 IN 0 48
+D3 OUT N002 1N4148
+XU1 IN MP_01 N001 N004 N006 N006 N010 OUT N011 0 MP_02 N002 MP_03 N008 N007 N005 0 LT3724
+C5 0 N002 1µ
+R7 OUT 0 7.68
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+* LT3724 - High Voltage, Current Mode Switching Regulator Controller\nInput: 48V    Output: 24V @ 3.125A
+* Notes:\n  C3 is reduced from a practical value to speed up simulation of the softstart cycle.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3724.sub
+.backanno
+.end

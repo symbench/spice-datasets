@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LT1615-1.asc
+V1 IN 0 1
+L1 IN N001 22µ Rser=0.71 Rpar=5K
+R1 OUT N002 1Meg
+R2 N002 0 604K
+C1 IN 0 4.7µ Rser=0.003
+C3 OUT 0 10µ Rser=0.01
+I1 OUT 0 15m load
+D1 N001 OUT CMDSH2-3
+XU1 N001 0 N002 IN IN LT1615-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 4m startup
+* LT1615-1 - µPower Step-up DC/DC Converter in ThinSOT\nInput: 1V to 1.5V      Output: 3.3V@15mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT1615-1.sub
+.backanno
+.end

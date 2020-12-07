@@ -1,0 +1,17 @@
+* Z:\mnt\design.r\spice\examples\1170.asc
+V1 IN 0 5
+C1 N004 0 1µ
+R1 N003 N004 1K
+R2 N002 0 1.24K
+R3 OUT N002 10.7K
+D1 N001 OUT MBRS360
+L1 IN N001 150µ Rser=0.02 Rpar=5000
+XU1 N003 N002 0 N001 IN LT1170
+C2 OUT 0 500µ Rser=0.05
+Rload OUT 0 10
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 15m startup
+.lib LT1170.sub
+.backanno
+.end

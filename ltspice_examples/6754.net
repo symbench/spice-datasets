@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\6754.asc
+V1 N001 0 5
+V2 N002 0 5
+V3 N004 N003 SINE(0 100m 300Meg 0 0 90)
+B1 N003 0 V=.3+1.2*Random(time/20n)
+XU1 N002 N001 0 N004 N003 NC_01 NC_02 _Q Q LTC6754
+R1 Q _Q 100
+.tran 200n
+* High Speed Differential Line Receiver
+* Small differential input\nsignal with large common\nmode component
+.lib LTC1.lib
+.backanno
+.end

@@ -1,0 +1,39 @@
+* Z:\mnt\design.r\spice\examples\4430.asc
+XU1 N005 0 N008 N006 N002 N004 LTC3803
+V1 IN 0 13
+R1 IN N002 399
+C1 N002 0 4.7µ
+R2 N008 0 1000
+M§Q1 N003 N004 N007 N007 FDS6680A
+R3 N007 0 0.2
+R4 N007 N006 5.1K
+D1 N001 OUT MBRS1100
+L1 0 N001 200µ Rser=0.344
+L2 IN N003 200µ Rser=0.344
+C2 OUT 0 100µ Rser=0.1
+XU2 N015 0 N014 0 N016 MOC205 Igain=2.44m
+R5 OUT N010 73.2K
+R6 N010 0 10K
+R7 N016 0 475K
+R8 N009 N015 3K
+C3 N011 0 .05µ
+R9 N010 N013 200K
+C4 N013 N012 .001µ
+D2 N005 N014 1N4148
+R10 N014 N017 4.99K
+XU3 OUT 0 N011 N010 N012 N009 LT4430
+V2 N017 0 5
+C5 N007 0 .1µ
+Rload OUT 0 100
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran 7m startup
+.lib LT4430.sub
+.lib LTC3803.sub
+.lib MOC205.sub
+.backanno
+.end

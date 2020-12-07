@@ -1,0 +1,35 @@
+* Z:\mnt\spice-netlists\LT3518_DC1160A_Buck.asc
+L1 N004 N008 15µ Rpar=2K
+R1 N001 N002 .068
+C5 N001 N004 10µ
+V2 N001 0 24
+D1 N003 N004 LXK2-PW14 N=3
+R6 N012 0 16.5k
+M§Q1 N003 N005 N002 N002 FDS4685
+V1 N007 0 3.3
+C4 N014 0 4.7n
+C3 N016 0 .01µ
+D2 N008 N001 10MQ060N
+V3 N015 0 PULSE(3.3 0 1m 100n 100n 9800u 10m 4)
+XU1 N007 N007 N011 N012 0 N016 N015 N011 N013 N010 N011 N002 N001 N005 N008 MP_01 0 LT3518
+R2 N014 N013 5.1k
+R3 N010 0 24.9k
+R5 N001 N006 348k
+Q2 N010 N009 N006 0 2N3906
+C1 N007 0 1µ
+C2 N001 0 2.2µ
+R4 N009 N004 10k
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 42m startup
+* DC1160A - LT3518 45V, 2.3A Internal Switch Buck Mode LED Driver\nInput: 24V       Output: 1.5A through a string of 3 LEDs\nPWM DIM: 100Hz 1:50 ratio    15V LED+ to LED- OVP with OPEN LED string
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT3518.sub
+.backanno
+.end

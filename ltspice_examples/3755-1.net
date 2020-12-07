@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\3755-1.asc
+C1 N004 0 4.7µ
+M§Q1 N001 N005 N007 N007 Si4850EY
+R1 N007 0 10m
+L1 IN N001 22µ Rpar=2K
+R2 N002 N008 2Meg
+R3 N008 0 57K
+D1 N001 N002 MBRS360
+R4 N002 N009 .1
+C2 N002 0 5µ
+V1 IN 0 10
+R5 IN N003 1Meg
+R6 N003 0 200K
+C3 N010 0 1000p Rser=10K
+M§Q2 N012 N014 0 0 Si4850EY
+D2 N009 N012 LXK2-PW14 N=10
+C4 N011 0 .01µ
+R7 N013 0 28.7K
+XU1 N006 N006 0 N011 N013 N003 N004 IN N007 N005 N014 N008 N009 N002 N010 N006 0 LT3755-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LT3755-1.sub
+.backanno
+.end

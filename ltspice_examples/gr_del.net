@@ -1,0 +1,48 @@
+* Z:\mnt\design.r\spice\examples\gr_del.asc
+L1 N002 N003 {La}
+C1 N003 0 {Ca}
+R1 N002 N001 {Zo}
+R2 0 gd1 {Zo}
+V1 N001 0 0 AC 2
+L2 N003 gd1 {La}
+L3 N004 N005 {Lb1}
+L4 N005 gd2 {Lb1}
+L5 N006 N005 {Lb2}
+C2 gd2 N004 {Cb1}
+C3 N006 0 {Cb2}
+R3 N001 N004 {Zo}
+R4 gd2 0 {Zo}
+L6 N007 gd3 {Lc1}
+L7 N008 N009 {Lc2}
+C4 N008 N007 {Cc1}
+C5 gd3 N008 {Cc1}
+C6 N009 0 {Cc2}
+R5 N007 N001 {Zo}
+R6 gd3 0 {Zo}
+.param  Zo=50
+.param  F1=1e6
+.param  La=Zo/4/pi/F1
+.param  Ca=1/pi/Zo/F1
+K1 L1 L2 1.
+.AC lin 401 1e-6 10e6
+.param F2=5e6
+.param A2=0.2
+.param Lob=Zo/2/pi/F2
+.param Cob=1/Zo/2/pi/F2
+.param Lb1=A2*Lob
+.param Lb2=Lob/4/A2
+.param Cb1=Cob/4/A2
+K2 L3 L4 1.
+.param Cb2=Cob*4*A2
+.param Loc=Zo/2/pi/F3
+.param Coc=1/Zo/2/pi/F3
+.param Lc1=Loc*4*A3
+.param Lc2=Loc/4/A3
+.param Cc1=Coc/2/A3
+.param Cc2=Coc/(0.25/A3-A3)
+.param F3=3e6
+.param A3=0.2
+* All pass cells for group delay correction
+* This example schematic is supplied for informational/educational purposes only.\nContributed by Dominique Szymik.
+.backanno
+.end

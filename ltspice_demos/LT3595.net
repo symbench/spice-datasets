@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LT3595.asc
+D1 N002 N001 QTLP690C N=10
+L1 N001 N004 100µ Rser=.1
+C1 IN N001 .47µ Rser=.01
+V1 IN 0 30
+XU2 N003 IN N002 N004 0 N005 N007 N003 N006 LT3595
+V2 N003 0 3.3
+R1 0 N005 30.1K
+R2 N006 N003 100K
+V3 N007 0 PULSE(0 3.3 0 1u 1u 50u 100u)
+Cin IN 0 10µ
+Ccc N003 0 10µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* LT3595 - 16 Channel High Voltage Step Down LED Driver with PWM\nSingle Channel Circuit Demo    Input: 32V    Output: 10 LEDs @ 50mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+.lib LT3595.sub
+.backanno
+.end

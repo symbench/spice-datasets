@@ -1,0 +1,27 @@
+* Z:\mnt\design.r\spice\examples\1738.asc
+D1 N001 OUT B520C
+R1 OUT N008 21.5K
+R2 N009 0 5K
+R3 N007 0 16.9K
+C1 N006 0 1300p
+C2 0 N011 .22µ Rser=15K Cpar=22n
+V1 IN 0 6
+C3 OUT 0 200µ Rser=.1
+XU1 N004 N002 IN N005 N003 MP_01 N006 N007 N008 NC_02 0 N011 N012 IN N010 N009 IN MP_03 MP_04 0 LT1738
+R4 N010 0 5K
+C5 N012 0 .01µ
+R5 N008 0 2.5K
+M§Q1 N001 N004 N005 N005 Si9426DY
+R6 N005 0 25m
+C6 N001 N002 5p
+L1 IN N001 22µ
+R7 OUT 0 50
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 4m startup
+.lib LT1738.sub
+.backanno
+.end

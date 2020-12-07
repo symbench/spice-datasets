@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\stepAC.asc
+L1 OUT 0 1µ
+C1 OUT 0 420p
+L2 IN 0 1µ
+C2 IN 0 420p
+C3 OUT IN {C}
+R1 OUT 0 300
+I1 0 IN 0 AC 5m
+R2 IN 0 300
+.ac oct 200 5Meg 10Meg
+.step param C 50p 150p 50p
+* This example schematic is supplied for informational/educational purposes only.
+* This example demonstrates .stepping a global parameter,\nC, while computing the transfer function of the filter.
+.backanno
+.end

@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\AD8572.asc
+Vin IN 0 SINE(0 1 10K)
+R1 N001 0 10K
+R2 OUT N001 10K
+XU1 IN N001 +V -V OUT AD8572
+Rload OUT 0 10K
+V1 +V 0 2.5
+V2 -V 0 -2.5
+.tran 1m
+.lib ADI.lib
+.backanno
+.end

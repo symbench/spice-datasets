@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\3461.asc
+L1 IN N001 15µ
+V1 IN 0 5
+C1 0 OUT 2.2µ
+R1 OUT N003 261K
+R2 N003 0 30.1K
+XU1 N001 0 N003 N002 OUT IN LT3461
+Rload OUT 0 300
+C2 N003 OUT 15p
+V2 N002 0 PWL(0 0 1m 5)
+.tran 600u startup
+.lib LT3461.sub
+.backanno
+.end

@@ -1,0 +1,23 @@
+* Z:\mnt\spice-netlists\LTM4650_DC2378A-A.asc
+V1 IN 0 12
+R1 N008 0 40.2K
+C1 N010 0 .001µ
+C2 IN 0 22µ V=35 Rser=5m x4
+C3 N011 0 .001µ
+C4 OUT1 0 470µ x2 V=4 Irms=2.8 Rser=5m Lser=0
+R2 N009 0 90.9K
+R3 N002 0 121K
+C5 OUT2 0 470µ x2 V=4 Irms=2.8 Rser=5m Lser=0
+R4 N001 N003 10K
+R5 N001 N004 10K
+I1load OUT1 0 PWL(600u 0 601u 12.5 680u 12.5 681u 0)
+I2load OUT2 0 PWL(600u 0 601u 12.5 680u 12.5 681u 0)
+XU1 N010 NC_01 N008 0 N009 NC_02 N011 OUT2 OUT1 OUT2 0 N007 NC_03 OUT1 N007 N003 N004 0 N006 MP_04 MP_05 MP_06 MP_07 NC_08 N001 IN MP_09 MP_10 MP_11 MP_12 N005 NC_13 NC_14 0 N002 MP_15 MP_16 NC_17 LTM4650
+C6 OUT1 0 100µ V=6.3 Rser=2m x5
+C7 OUT2 0 100µ V=6.3 Rser=2m x5
+.tran 750u startup
+* Note:\n  Smaller values are used for TK/SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* LTM4650 - Dual 25A or Single 50A DC/DC µModule Regulator\nHigh Efficiency Dual 25A Step-Down Regulator with Output Tracking\nInput : 4.5V to 15V     Outputs: 1.5 V @ 25A & 1.0V @ 25A
+.lib LTM4650.sub
+.backanno
+.end

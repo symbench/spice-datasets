@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\IGBT.asc
+Z1 N001 N002 0 NIGBT
+V1 N001 0 0
+V2 N002 0 0
+.model NIGBT NIGBT
+.dc V1 0 25 1m V2 0 20 5
+.backanno
+.end

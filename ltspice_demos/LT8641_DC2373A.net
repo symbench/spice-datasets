@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT8641_DC2373A.asc
+R1 N007 0 18.2K
+C1 N001 0 1µ
+V1 IN 0 12
+L1 N004 OUT 2.2µ Ipk=14 Rser=0.018 Rpar=0 Cpar=0 mfg="Vishay" pn="IHLP2525CZ01-2R2"
+C3 N002 N004 0.1µ
+C4 OUT 0 100µ V=10 Irms=0 Rser=0.003 Lser=0
+R2 OUT N006 1Meg
+R3 N006 0 191K
+C5 OUT N006 10p
+C6 IN 0 4.7µ
+C7 IN 0 0.1µ
+C8 IN 0 0.1µ
+C2 N005 0 1n
+Rload OUT 0 1.4
+R4 N003 OUT 100K
+XU1 OUT N001 N002 IN MP_01 0 MP_02 N004 MP_03 0 MP_04 MP_05 IN IN N007 N005 0 0 N003 N006 LT8641
+.tran 1m startup
+* LT8641 - 65V, 3.5A Synchronous Step-Down Silent Switcher with 2.5µA Quiescent Current\n5V 2MHz µPower Ultralow EMI Buck Converter\nInput: 5.5V to 65V     Output: 5V @ 3.5A, Fsw=2MHz
+* Note:\n  A smaller SS capacitor is being used to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+* (2MHz)
+.lib LT8641.sub
+.backanno
+.end

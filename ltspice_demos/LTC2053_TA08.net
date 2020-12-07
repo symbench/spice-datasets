@@ -1,0 +1,34 @@
+* Z:\mnt\spice-netlists\LTC2053_TA08.asc
+RTD N002 0 {Rt}
+XU1 0 N002 N002 0 N002 N009 N006 +V LTC2053
+V1 +V 0 5
+R2 N006 N009 1Meg
+C2 N002 0 .1µ
+C1 N006 N009 .1µ
+R3 N009 N008 39.2K
+R4 N006 N007 16.2K
+R5 N007 0 24.9K
+R6 N004 N007 249K
+XU2 0 N001 N002 0 N004 N003 N001 +V LTC2053
+R7 N001 N002 1.21K
+C3 N001 N003 .1µ
+R8 N003 0 2.7K
+R9 +V N005 16.9K
+R10 N008 0 953
+R11 N005 N008 11K
+C4 +V 0 .1µ
+R12 OUT N006 49.9
+R13 N005 N004 10K
+C5 N004 0 .1µ
+XU3 N005 0 LT1634-1.25
+.step param Temp list 0 200 400
+.tran 1 startup
+.param Rt=100 *
++(1 + 3.908e-3 * Temp -
++5.775e-7 * Temp**2)
+* LTC2053 - Precision, Rail-to-Rail, Zero-Drift, Resistor-Programmable Instrumentation Amplifier\nSingle 5V Supply Linearized 0°C to 400°C Platinum RTD Amplifier\nOutput: 10mV/°C (±0.1°C)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.lib LTC3.lib
+.lib LTC4.lib
+.backanno
+.end

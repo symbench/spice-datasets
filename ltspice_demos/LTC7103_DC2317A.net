@@ -1,0 +1,18 @@
+* Z:\mnt\spice-netlists\LTC7103_DC2317A.asc
+V1 IN 0 12V
+C2 IN 0 4.7µ
+L1 N001 OUT 15µ Rser=40m
+C3 OUT 0 100µ Rser=15m
+Rload1 OUT 0 2.5
+XU2 MP_01 MP_02 N002 MP_03 MP_04 0 0 N005 N004 OUT N003 0 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 0 OUT N004 MP_11 MP_12 N001 MP_13 MP_14 MP_15 MP_16 MP_17 IN MP_18 MP_19 MP_20 MP_21 0 LTC7103
+C4 N004 0 1µ IC=0 Rser=20m
+R1 N002 IN 10Meg
+C1 IN 0 33µ V=100 Irms=0.2 Rser=0.4
+R2 N003 0 17.8K
+R3 N005 0 8.87K
+* LTC7103 - 105V, 2.3A Low EMI Synchronous Step-Down Regulator\n High Efficiency, High Voltage, Low EMI Step-Down Regulator\nInput: 5V to 100V     Output: 5V @ 2.3A
+* Note:\n  The BOOST capacitor, input filter and output filter are not included in this simulation.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+.tran 1.5m startup
+.lib LTC7103.sub
+.backanno
+.end

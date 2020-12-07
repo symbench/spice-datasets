@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1992-2.asc
+V1 +V 0 2.7
+V2 -V 0 0
+V3 N001 N005 SINE(0 0.5 10K)
+C1 N002 0 10p
+C2 N004 0 10p
+XU1 N001 N003 +V N002 N004 -V N003 N005 LTC1992-2
+.tran 1m
+.lib LTC4.LIB
+.backanno
+.end

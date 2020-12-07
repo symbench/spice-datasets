@@ -1,0 +1,14 @@
+* Z:\mnt\design.r\spice\examples\ADG1419.asc
+V1 +V 0 15
+V2 -V 0 -15
+V4 N004 0 PULSE(0 5 0 20n 20n 10u 20u)
+R2 N001 0 300
+V5 N002 0 10
+V3 N005 0 5;PULSE(0 5 0 20n 20n 10u 20u)
+XU1 N004 N002 N001 N003 N005 -V 0 +V ADG1419
+V6 N003 0 0
+C1 0 N001 35p
+.tran 0.0001
+.lib ADG1419.sub
+.backanno
+.end

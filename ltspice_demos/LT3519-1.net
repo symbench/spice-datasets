@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3519-1.asc
+V1 IN 0 12.4
+R1 N003 N007 1Meg
+R2 IN N004 1Meg
+R3 N004 0 261K
+R4 N003 N005 1.67
+R5 N007 0 69.8K
+L1 IN N001 22µ Rser=.6
+C1 N003 0 2.2µ Rser=.01
+D1 N005 0 LXHL-BW02 N=4
+XU1 0 MP_01 N006 N004 IN N001 N002 MP_02 MP_03 N003 N003 N005 N007 N008 N006 LT3519 X=925n
+C2 N002 N001 2.2µ Rser=.01
+C3 IN 0 1µ
+L2 N002 0 22µ Rser=.6
+R6 IN N008 1Meg
+R7 N008 0 174K
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+* LT3519-1 1MHz LED Driver with Integrated Schottky Diode\nInput: 12.4V    Output: 4 LEDs at 150mA   Topology: SEPIC
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2010 Linear Technology Inc. All rights reserved.
+.lib LT3519.sub
+.backanno
+.end

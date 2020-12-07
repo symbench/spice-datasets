@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\ADP7104-5.0.asc
+V1 IN 0 6
+C1 OUT 0 2.2µ Rser=1.5m
+Rload OUT 0 15
+R1 OUT N001 100k
+XU1 IN OUT IN N001 OUT 0 ADP7104 Vref=5
+.tran 3m startup
+.lib ADP7102.lib
+.backanno
+.end

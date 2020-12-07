@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\3477.asc
+XU1 MP_01 MP_02 IN N009 IN N006 N008 N004 N005 N005 IN IN N003 OUT IN N001 0 N002 LT3477
+L1 N001 N002 10µ
+R1 N009 0 22K
+C1 N006 0 33n
+D1 N002 N003 1N5817
+C2 N003 0 3.3µ Rser=50m
+R2 N003 OUT .3m
+R3 N004 0 10K
+R4 N003 N004 100K
+V1 IN 0 5
+R5 IN N001 .1m
+C3 N008 N007 4.7n
+R6 0 N007 1K
+Rload OUT 0 500
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3m startup
+.lib LT3477.sub
+.backanno
+.end

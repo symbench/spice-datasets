@@ -1,0 +1,59 @@
+* Z:\mnt\spice-netlists\LTC3862-2_DC2006A-A.asc
+M§Q1 N001 N005 N006 N006 IPP034NE7N3
+L1 IN N001 10µ Rser=5m
+D1 N001 OUT PDS5100
+R1 N010 0 66.5K
+R2 OUT N012 475k
+R3 N012 0 11.8K
+V1 IN 0 12
+R6 N006 0 4m
+C2 0 N002 4.7µ
+C3 0 N015 .001µ
+C4 0 N003 .001µ
+L2 IN N007 10µ Rser=5m
+R7 N011 0 4m
+M§Q2 N007 N009 N011 N011 IPP034NE7N3
+D2 N007 OUT PDS5100
+Rload OUT 0 10
+C5 N014 0 10n
+R10 N013 N014 37.4K
+C8 N013 0 100p
+C9 OUT 0 4.7µ x4 Rser=1m
+C7 OUT 0 100µ x2 Rser=25m
+C1 IN 0 4.7µ x4
+C6 IN 0 100µ x2 V=Irms= Irms=Rser=35 Rser=35
+R4 IN N004 54.9K
+R5 N004 0 21K
+M§Q3 N016 N020 N021 N021 IPP034NE7N3
+L3 IN N016 10µ Rser=5m
+D3 N016 OUT PDS5100
+R8 N026 0 66.5K
+R9 OUT N028 475K
+R11 N028 0 11.8K
+R12 N021 0 4m
+C10 0 N017 4.7µ
+C11 0 N029 .001µ
+C12 0 N018 .001µ
+L4 IN N022 10µ Rser=5m
+R13 N027 0 4m
+M§Q4 N022 N025 N027 N027 IPP034NE7N3
+D4 N022 OUT PDS5100
+C15 OUT 0 4.7µ x4 Rser=1m
+C16 OUT 0 100µ x2 Rser=25m
+R15 IN N019 54.9k
+R16 N019 0 21K
+C17 N023 0 10n
+R17 N024 N023 10K
+XU3 0 NC_01 NC_02 0 N026 N029 N013 N028 0 NC_03 N008 N024 N027 0 MP_04 N025 0 N020 N017 IN N019 0 N021 N018 LTC3862-2
+XU4 0 NC_05 NC_06 0 N010 N015 N013 N012 0 N008 NC_07 0 N011 0 MP_08 N009 0 N005 N002 IN N004 0 N006 N003 LTC3862-2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3m startup
+* LTC3862-1 - Multi-Phase Current Mode Step-Up DC/DC Controller (10V gate drive version)\nHigh Power, High Voltage, 4-Phase Boost Converter\nInput: 6V to 36V      Output 50V @ 10A
+* Note:\n  Smaller values are used for SS capacitors to reduce simulation time. See datasheet for typical values.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2013 Linear Technology Inc. All rights reserved.
+.lib LTC3862-2.sub
+.backanno
+.end

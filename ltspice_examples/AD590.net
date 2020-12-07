@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\AD590.asc
+V1 IN 0 0
+XU1 IN 0 AD590
+.dc V1 0 10 1m
+.temp -55 25 150
+.lib ADR.lib
+.backanno
+.end

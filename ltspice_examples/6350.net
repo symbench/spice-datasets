@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\6350.asc
+V1 -V 0 -5
+V2 N002 0 2
+V3 N001 0 SINE(2 2 100K)
+R1 N003 N002 499
+XU1 OUT1 N003 +V OUT1 OUT2 -V +V N001 LT6350
+C1 N003 0 0.1µ
+V4 +V 0 5
+.tran 50u
+.lib LTC7.lib
+.backanno
+.end

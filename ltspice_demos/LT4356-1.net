@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LT4356-1.asc
+S1 0 OUT N003 0 SHORT
+V1 IN 0 PWL(0 0 1m 12 20m 12 20.2m 80 30m 45 43m 26.9 80m 12)
+V2 N003 0 PWL(0 0 150m 0 151m 1 170m 1 171m 0)
+R1 IN N009 383K
+R2 N009 0 100K
+R3 IN N001 10m
+R4 N002 N004 10
+R5 OUT N010 102K
+R6 N010 0 4.99K
+C1 N005 0 22µ
+C2 N011 0 .22µ
+XU1 N011 N010 OUT N004 N001 IN IN N008 N006 0 N007 N009 LT4356-1
+R7 OUT N005 .5
+R8 OUT N006 27K
+R9 OUT N008 27K
+R10 IN N007 27K
+C3 N004 0 .0068µ
+M§Q1 N001 N002 OUT OUT IRF1310
+Rload OUT 0 50
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 0 300m 10n
+.model SHORT SW(Ron=10m Roff=1G Vt=0.5 Vh=-.1)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2007 Linear Technology Inc. All rights reserved.
+.lib LT4356-1.sub
+.backanno
+.end

@@ -1,0 +1,69 @@
+* Z:\mnt\spice-netlists\LT3081_LT8612_LTC3632_LT3092_DC2132A.asc
+R1 N014 0 60.4K
+C1 N012 0 .01µ
+V1 IN 0 25
+C2 N003 0 1µ
+L1 N013 N007 5.5µ Ipk=9.5 Rser=0.0103 Rpar=2100 Cpar=3.89p mfg="Wurth Elektronik" pn="744325550 WE-HCI 1050"
+C3 N008 N013 .1µ
+C4 N007 0 10µ x5 Rser=0.005
+C5 N007 N015 1n
+XU1 0 N012 N014 N002 IN MP_01 0 MP_02 N013 MP_03 MP_04 N008 N003 N007 NC_05 N015 0 LT8612
+R2 N002 0 54.6K
+R3 IN N002 499K
+C6 IN 0 10µ
+C7 N007 0 100µ Rser=0.005
+R4 N016 0 10K
+XU2 N019 N020 N018 N017 N016 N007 LT3081
+R5 N018 0 1K
+R6 N017 N019 104K
+R7 N023 0 10K
+XU3 N019 N020 N018 N024 N023 N007 LT3081
+R8 N018 0 1K
+R9 N020 0 5.1K
+C8 N017 0 10µ x3 Rser=0.005
+C9 OUT 0 1µ Rser=0.005
+D1 N020 OUT 1N4148
+C10 N024 0 10µ x3 Rser=0.005
+R10 N017 OUT 10m
+R11 N024 OUT 10m
+R12 N007 N022 100K
+R13 N007 N021 1K
+R14 N015 0 4.99K
+Q1 N015 N022 N021 0 2N3906
+R15 N022 OUT 100K
+C11 N020 0 .01µ
+L2 N001 0 470µ
+R16 0 N005 1.47Meg
+R17 N005 N009 280K
+C12 0 N009 10µ
+XU4 N001 IN N010 NC_06 N004 N005 NC_07 N009 LTC3632
+Q2 N004 N006 N003 0 2N3906
+R18 N006 0 1K
+R19 N004 N009 10K
+R20 N010 N009 806K
+R21 N011 N009 549
+Q3 OUT 0 N011 0 2N3019
+R22 N017 0 10K
+R23 N024 0 10K
+XU5 MP_08 N026 N025 MP_09 IN LT3092
+C13 IN 0 1µ
+R24 N025 N020 200
+R25 N020 N026 47.5k
+R26 N020 N026 73.5K
+Rload OUT 0 8
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 3m startup
+* LT3081 - 1.5A Single Resistor Rugged Linear Regulator with Monitors\nLT8612 - 42V, 6A Synchronous Step-Down Regulator with 3µA Quiescent Current\nLTC3632 - High Efficiency, High Voltage 20mA Synchronous Step-Down Converter\nLT3092 - 200mA 2-Terminal Programmable Current Source\n24V 3A Constant Voltage, Constant Current Bench Supply\nInput: 10V to 40V     Output: 0V to 25V @ 0 to 3.1A
+* Note:\n  Details description of this circuit is available in July 2014 edition of LT Journal of Analog Inovation.\n  A smaller RUN/SS capacitors on the LT8612 is being used to reduce simulation time. The typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+* Vout\nAdjust
+* Ilim\nAdjust
+.lib LT3081.sub
+.lib LT3092.sub
+.lib LT8612.sub
+.lib LTC3632.sub
+.backanno
+.end

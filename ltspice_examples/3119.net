@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\3119.asc
+V1 IN 0 12
+R1 N007 0 105K
+L1 N001 N002 3.3µ Rser=10m
+C1 N001 N003 .1µ
+C2 N002 N004 .1µ
+C3 OUT 0 150µ Rser=5m
+C4 0 N005 1µ
+R2 OUT N006 536K
+R3 N006 0 102K
+C5 0 N008 680p Rser=78.7K
+Rload OUT 0 1
+XU1 0 N002 OUT IN MP_01 MP_02 NC_03 MP_04 N006 N008 MP_05 N005 N005 N007 IN IN MP_06 N001 MP_07 MP_08 MP_09 MP_10 N003 MP_11 0 MP_12 MP_13 N004 LTC3119
+.tran 7m startup
+* Using the LTspice built-in directive ".softstart", you can reduce the softstart\ntime of some products models' internal softstart.  ".softstart 0.1" directs the\nmodel to execute its internal softstart in 10% of the true start-up time.
+.softstart 1
+.lib LTC3119.sub
+.backanno
+.end

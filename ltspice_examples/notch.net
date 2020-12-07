@@ -1,0 +1,33 @@
+* Z:\mnt\design.r\spice\examples\notch.asc
+V1 N001 0 AC 1.
+R1 W N001 {6*R}
+C2 W N003 {C}
+C1 N001 N002 {C}
+C3 N003 N002 {C}
+R2 0 N002 {w*R}
+R3 N003 0 {(1-w)*R}
+R4 X N001 {6*R}
+C4 N001 N004 {C}
+C5 X N005 {C}
+C6 N005 N004 {C}
+R5 0 N004 {x*R}
+R6 N005 0 {(1-x)*R}
+R7 Y N001 {6*R}
+C7 N001 N006 {C}
+C8 Y N007 {C}
+C9 N007 N006 {C}
+R8 0 N006 {y*R}
+R9 N007 0 {(1-y)*R}
+R10 Z N001 {6*R}
+C10 N001 N008 {C}
+C11 Z N009 {C}
+C12 N009 N008 {C}
+R11 0 N008 {z*R}
+R12 N009 0 {(1-z)*R}
+.ac oct 500 100 10k
+.params R=10K C=.1µ
+* From Horowitz and Hill, The Art of Electronics, 2nd Ed, Cambridge,  p. 281
+.params w=.0005 x=.005 y=.05 z=.5
+* This example schematic is supplied for informational/educational purposes only.
+.backanno
+.end

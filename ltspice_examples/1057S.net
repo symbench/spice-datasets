@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\1057S.asc
+V1 +V 0 5
+V2 -V 0 -5
+V3 IN 0 SINE(0 1 1K)
+C1 N001 N002 330p
+C2 N003 N005 330p
+R1 N001 IN 10K
+XU3 N005 +V -V NC_01 N004 LT1010
+R2 N004 N003 10K
+XU4 N002 +V -V NC_02 N006 LT1010
+R3 N001 N006 10K
+Rload N004 N006 20
+XU1 0 N001 +V -V N002 LT1057
+XU2 IN N003 +V -V N005 LT1057
+.tran 3m
+* Fast, Precision Bridge Amplier
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\1775.asc
+XU1 N001 MP_01 N002 N004 N007 0 OUT 0 0 N010 N009 N008 N003 N005 IN IN LTC1775
+M§Q1 IN N003 N005 N005 Si4410DY
+M§Q2 N005 N010 0 0 Si4410DY
+D1 N009 N008 1N5818
+L1 N005 OUT 6µ
+D2 0 N005 1N5818
+C1 OUT 0 500µ Rser=.05
+R1 N007 N006 10K
+C2 N006 0 2200p
+C3 N002 0 .01µ
+V1 IN 0 6
+C4 N005 N008 .22µ
+C5 N009 0 4.7µ
+Rload OUT 0 2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 6m startup
+.lib LTC1775.sub
+.backanno
+.end

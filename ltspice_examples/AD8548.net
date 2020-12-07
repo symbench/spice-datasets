@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\AD8548.asc
+Vin IN 0 SINE(0 .1 10K)
+R2 OUT N001 10K
+XU1 IN N001 +V -V OUT AD8548
+R1 N001 0 1K
+V1 +V 0 5
+V2 -V 0 -5
+.tran 1m
+.lib ADI.lib
+.backanno
+.end

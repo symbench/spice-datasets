@@ -1,0 +1,19 @@
+* Z:\mnt\design.r\spice\examples\6227.asc
+V1 V+ 0 5
+V2 V- 0 -2.5
+XU1 In1 N001 N001 V+ V- V+ LTC6226
+XU2 In2 N004 N004 V+ V- V+ LTC6226
+R1 N002 N001 33
+R2 N005 N004 33
+C1 N002 0 68p
+C2 0 N005 68p
+C3 N002 N005 330p
+V3 N003 0 SINE(0 1.65 50k)
+E1 In1 0 N003 0 1
+E2 In2 0 0 N003 1
+.tran .5m
+* To ADC IN+
+* To ADC IN-
+.lib LTC6226.sub
+.backanno
+.end

@@ -1,0 +1,36 @@
+* Z:\mnt\design.r\spice\examples\3570.asc
+V1 IN 0 5
+L1 IN N004 6.8µ
+D1 N004 OUT1 1N5817
+R1 OUT1 N006 143K
+R2 N006 0 10K
+C1 OUT1 0 10µ
+C2 N008 0 .002µ
+C3 N010 0 .001µ Rser=22K
+R3 N012 0 15.8K
+D2 OUT2 N001 CMDSH2-3
+D3 0 N002 B520C
+L2 N002 OUT2 3.3µ
+C4 N001 N002 .1µ
+R4 OUT2 N003 32.4K
+R5 N003 0 10.2K
+C5 N005 0 .002µ
+C6 N007 0 .001µ Rser=22K
+C7 OUT2 0 22µ
+Q1 OUT2 N009 OUT3 0 2N3391A
+R6 OUT3 N011 22.1K
+R7 N011 0 10.2K
+C8 OUT3 0 2.2µ
+XU1 IN MP_01 N002 N004 0 MP_02 IN N008 N010 N006 IN IN IN MP_03 N012 MP_04 N005 N007 N003 N011 N009 IN MP_05 N001 LT3570
+Rload1 OUT1 0 42
+Rload2 OUT2 0 3.3
+Rload3 OUT3 0 25
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran 750u startup
+.lib LT3570.sub
+.backanno
+.end

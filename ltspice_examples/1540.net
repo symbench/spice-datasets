@@ -1,0 +1,10 @@
+* Z:\mnt\design.r\spice\examples\1540.asc
+V1 +V 0 PWL(0 0 1 3.3)
+R1 +V N001 4.32Meg
+XU1 0 0 N001 N002 N002 N002 +V OUT LTC1540
+R2 N001 0 3Meg
+.tran 1
+* Nanopower 2.9V Vcc Threshold Detector
+.lib LTC.lib
+.backanno
+.end

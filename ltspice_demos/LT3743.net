@@ -1,0 +1,50 @@
+* Z:\mnt\spice-netlists\LT3743.asc
+XU1 0 N003 N002 N003 MP_01 N007 0 N012 MP_02 N021 N013 N018 N024 N025 N005 MP_03 N003 N023 N017 MP_04 MP_05 N016 N006 N008 N004 N011 N001 IN LT3743
+V1 IN 0 12
+M§Q1 IN N006 N008 N008 RJK0305DPB
+M§Q2 N008 N011 0 0 RJK0301DPB
+D1 N001 N004 1N5817
+C1 N001 0 2.2µ
+C2 N002 0 .002µ
+C3 N004 N008 0.22µ
+L1 N008 N009 1.3µ Rser=1.8m Rpar=5K
+R1 N009 N010 2.5m
+D2 N010 0 PT-121-B
+R2 N021 0 10K
+R3 N010 N021 51K
+C4 N025 N027 5.6n
+R4 N005 0 100K
+V2 N007 0 2
+V3 N003 0 5
+V4 N023 0 2
+M§Q3 N020 N017 N022 N022 Si7234DP
+M§Q4 N019 N016 0 0 Si7234DP
+C5 N010 N014 100µ
+C6 N010 N015 1000µ Rser=0.01
+C7 N022 0 1000µ Rser=0.01
+R5 N009 N013 10
+R6 N010 N018 10
+D3 0 N008 SS24
+C8 IN 0 120µ
+R7 N027 0 51k
+R8 N026 0 51k
+C9 N024 N026 5.6n
+C10 N021 0 1n
+C11 N012 0 .001µ
+M§Q5 N019 N016 N014 N014 Si7234DP
+M§Q6 N020 N017 N015 N015 Si7234DP
+R9 N001 N022 3.01k
+R10 N022 0 2k
+C12 N010 0 10µ
+C13 N013 N018 33n
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LT3743 - High Current Synchronous Step-Down LED Driver with Three-State Control\nInput: 12V   Output: Up to 6V, 20A.
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2009 Linear Technology Inc. All rights reserved.
+.lib LT3743.sub
+.backanno
+.end

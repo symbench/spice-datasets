@@ -1,0 +1,20 @@
+* Z:\mnt\design.r\spice\examples\3115-2.asc
+R1 N008 0 47.5K
+C1 N007 0 4.7µ
+V1 IN 0 12
+L1 N001 N002 10µ Rser=5m
+C2 N001 N003 .1µ
+C3 N002 N004 .1µ
+R2 OUT N006 1Meg
+R3 N006 0 249K
+C4 N005 N006 3300p Rser=137K
+C5 OUT N006 33p Rser=15K
+C6 OUT 0 47µ x2 V=10 Irms=10.206 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C226K8PAC" type="X5R"
+Rload OUT 0 2.5
+XU1 0 IN N002 OUT 0 MP_01 N005 N006 N008 MP_02 MP_03 N007 IN N007 N004 N003 IN N001 N007 LTC3115-2
+.tran 5m startup
+.softstart .4
+* Using the LTspice built-in directive ".softstart", you can reduce the softstart\ntime of some products models' internal softstart.  ".softstart .4" directs the\nmodel to execute its internal softstart in 40% of the true start-up time.
+.lib LTC3115-2.sub
+.backanno
+.end

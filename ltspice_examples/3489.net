@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\3489.asc
+V1 IN 0 3.3
+XU1 N002 N003 IN 0 N001 IN N002 N004 LT3489
+L1 IN N001 2.2µ
+D1 N001 OUT 1N5818
+C1 OUT 0 20µ
+R1 OUT N003 28.7K
+R2 N003 0 5.23K
+C2 N004 0 .001µ
+Rload OUT 0 13
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT3489.sub
+.backanno
+.end

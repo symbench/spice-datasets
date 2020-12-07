@@ -1,0 +1,33 @@
+* Z:\mnt\spice-netlists\LT3956_TA01A.asc
+C1 N003 0 4.7µ
+L1 IN N001 22µ Rpar=2K
+R1 N002 N007 1Meg
+R2 N007 0 16.2K
+D1 N001 N002 MBRS360
+R3 N002 N009 .68
+C2 N002 0 2.2µ Rser=4m x5
+V1 IN 0 14
+R4 IN N004 332K
+R5 N004 0 100K
+C3 N012 0 4700p Rser=34K
+M§Q1 N013 N015 0 0 Si7850DP
+D2 N009 N013 LXK2-PW14 N=18
+C4 N010 0 .047µ
+R6 N011 0 28.7K
+V2 N014 0 PULSE(3.3 0 6m 1u 1u 125u 250u)
+R7 N003 N005 100K
+R8 IN N008 332K
+R9 N008 0 40.2K
+XU1 N006 N014 N005 N010 N011 N004 N003 IN MP_01 N001 N015 N007 N009 N002 N012 N008 0 LT3956
+C5 IN 0 2.2µ x2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 8m startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3956 - 80VIN, 80VOUT Constant-Current, Constant-Voltage Converter\n94% Efficient 25W White LED Automotive Headlamp Driver (Vin 6V to 60V, 80V Transient)
+.lib LT3956.sub
+.backanno
+.end

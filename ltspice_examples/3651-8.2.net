@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\3651-8.2.asc
+R1 N004 0 301K
+V1 IN 0 16
+C1 N001 N002 1µ
+D1 BAT N002 1N5819
+L1 N001 N003 6.5µ Rser=10m
+R2 N003 BAT 24m
+C2 BAT 0 100µ V=6.3 Irms=3.2 Rser=0.012 Lser=0 mfg="KEMET" pn="T520V107M006ASE012" type="Tantalum"
+C§BATT BAT 0 1m
+XU1 NC_01 NC_02 BAT N003 N002 0 N001 0 NC_03 IN IN NC_04 IN IN IN NC_05 N004 LT3651-8.2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 12m startup
+.lib LT3651-8.2.sub
+.backanno
+.end

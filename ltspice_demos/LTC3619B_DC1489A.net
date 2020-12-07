@@ -1,0 +1,28 @@
+* Z:\mnt\spice-netlists\LTC3619B_DC1489A.asc
+V1 IN 0 5
+L1 N004 OUT1 3.3µ
+L2 N003 OUT2 1.5µ
+C1 OUT1 N006 10p
+R1 OUT1 N006 1Meg
+R2 N006 0 221K
+C2 OUT1 0 4.7µ Rser=5m
+R3 N007 0 110K
+C3 N007 0 2200p
+R4 OUT2 N005 1Meg
+R5 N005 0 215K
+XU1 N006 IN N007 N002 N004 IN N003 N001 IN N005 0 LTC3619B
+C4 IN 0 10µ Rser=5m
+R6 IN N001 200K
+R7 IN N002 200K
+C5 OUT2 0 {2200µ/10} V=6.3 Rser=55m
+C6 OUT2 0 4.7µ Rser=5m
+Rload1 OUT1 0 8.25
+Rload2 OUT2 0 20
+.tran 2m startup
+* LTC3619B - 400mA / 800mA Synchronous Step-Down DC/DC with Average Input Current Limit\nInput: 4.5V - 5.5V     Outputs: 3.3V @ 0.4A and 3.4V @ 2A (Pulsed Load)
+* 3.3V @ 0.4A
+* 3.4V @ 2A Pulse Load
+* Note:\n  C5's value has been reduced 10 fold to shorten simulation time.  It is intended to be a super cap that supports\n  a 2A pulsed load.\n \n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+.lib LTC3619B.sub
+.backanno
+.end

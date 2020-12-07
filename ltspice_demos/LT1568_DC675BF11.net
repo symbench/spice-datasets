@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT1568_DC675BF11.asc
+R3 N008 N003 {1G/fc} tol=1
+X N004 N006 N003 N008 N001 N009 N009 0 0 0 N009 O2 O1 N007 N002 N004 LT1568
+C§ZA3 N005 N003 68p
+R2 N003 N006 {1G/fc} tol=1
+RB1 N007 N002 {1G/fc} tol=1
+R4 O1 N002 {1G/fc} tol=1
+V2 N004 0 5
+V1 IN 0 PULSE(0 5 1u 5n 5n 0.5u 1u)
+R§ZA1 IN N005 {6.2G/fc} tol=1
+CN1 N002 N003 27p
+R§ZAB1 N002 N001 {1G/fc} tol=1
+CD3 N009 0 0.1µ
+R§ZA2 N005 0 {1G/fc} tol=1
+.tran 25u
+.param fc=1Meg
+* LT1568 - Very Low Noise, High Frequency Active RC, Filter Building Block\nA Squarewave to Differential Sinewave Converter\nfc Range: 50kHz to 5MHz
+* Notes: \n  The ration of ZA1/ZA3 sets the Vp-p of the differential output (O1 - O2). See Demo Manual DC675B for details.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc.  All rights reserved.
+.lib LT1568.sub
+.backanno
+.end

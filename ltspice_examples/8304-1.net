@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\8304-1.asc
+V1 IN 0 20
+C1 N004 0 1µ
+L1 IN N002 40µ Rser=100m
+L2 0 N001 1m Rser=.2
+D1 N001 OUT B520C
+C2 OUT 0 .33µ
+C3 IN N002 220p Rser=100
+R1 N002 N003 392K
+R3 N005 N006 100K
+Rload OUT 0 5K
+C4 0 N005 10p Rpar=10K
+XU1 IN N004 IN 0 N002 N003 N005 N006 LT8304-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+K1 L1 L2 1
+.tran 5m startup
+* 1:5 turns ratio
+.lib LT8304-1.sub
+.backanno
+.end

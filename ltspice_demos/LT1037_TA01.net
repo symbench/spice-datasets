@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LT1037_TA01.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 OUT N002 10K
+XU1 N003 N002 +V -V OUT LT1037
+C1 OUT N004 .01µ
+R2 N004 N003 15708
+C2 N003 0 .01µ
+R3 N003 0 15708
+R4 N002 N001 4.9K
+J§Q1 N001 N005 0 U309
+D1 N005 N004 1N4148
+R5 N005 0 1Meg
+C3 N005 0 .1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+* LT1037 - Low Noise, High Speed Precision Operational Amplifier\n1kHz Sine Wave Generator
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2015 Linear Technology Inc. All rights reserved.
+.tran 1 startup
+.lib LTC.lib
+.backanno
+.end

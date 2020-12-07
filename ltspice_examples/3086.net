@@ -1,0 +1,33 @@
+* Z:\mnt\design.r\spice\examples\3086.asc
+V1 IN 0 6.5
+Rmon N006 0 357
+Rset N001 N004 92K
+Rpwrgdr N001 N008 82.5K
+R4 N001 N010 100K
+Cout N001 0 10µ Rser=5m Lser=1n
+Rload Out Return 2.38
+C2 N001 N004 300p
+Lwire1 N001 N002 1µ
+Rwire N002 Out 0.1
+Lwire2 N005 0 1µ
+Rwire2 Return N005 0.1
+Rcdc N004 N007 54.9K
+Rcdc2 N007 N008 54.9K
+C3_Tant Out Return 47µ Rser=0.1
+XU1 0 N006 N006 N007 N008 N004 N001 MP_01 MP_02 IN MP_03 IN N009 N003 N010 LT3086 Rpkg=14 Tpkg=10 Rsink=7 Tsink=250
+* Rmon*Rset
+* 3000*(Rwire+Rwire2)
+* Rcdc =
+* 5V 2.1A Regulator Driving Two-Wire Cable to Remote Load, With Cable Drop Compensation
+* *Equivalent to 6ft #22 wire.  Voltage drop across \nRwire & Rwire2 adds to minimum input voltage requirement.  \nLTC recommends that voltage loss in the wires be < 20% of Vout.\n \n** Actual inductance will vary with cable construction\nbut other circuit values will normally remain the same.
+* *
+* *
+* **
+* **
+.tran .1 startup
+* Package                        Rpkg    Tpkg       Rsink      Tsink\nFE on small board           14        10          12         250\nFE on larger board          14        10           7          350\nDHD on small board        14        10          12         250\nDHD on larger board       14        10           7          350\nR on small board              3          6           13         250\nR on larger board             3          6           10         350\nT7    No heat sink            3          6           37         250\nT7    Small heat sink         3          6           20         150\nT7  Large Heat sink          3          6            6          250
+* The LT3086 model breaks new ground by simulating thermal conditions on the die.  \nIt uses a two-stage thermal model to simulate both package & heat sink thermal conditions.  \nThe default values are for an FE package on a moderate size board with thermal vias to internal planes, \ngiving an overall thermal resistance of 21°C/W.  Package resistance is modeled with Rpkg = 14°C/W, \nand a time constant, Tpkg = 10s.  Heat sink (PC board) is modeled with Rsink = 7°C/W and Tsink = 250s.   \nThese numbers can be edited by the user by right clicking on the 3086 symbol.  \n \nThe included chart shows typical values for each package.  Die temperature is accessed by clicking \non the 3086 Temp pin, which is scaled at 10mV/°C, giving 500mV at 50°C.  Keep in mind that when \nyou do DC sweeps, die temperature is at t -> infinite, and that the model does not attempt to change \nparameters as a function of temperature.  It is still the users responsibility to use datasheet \nspecifications as the final determiner of correct part usage.
+* cable
+.lib LT3086.sub
+.backanno
+.end

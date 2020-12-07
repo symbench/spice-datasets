@@ -1,0 +1,35 @@
+* Z:\mnt\design.r\spice\examples\HandsFreePreamp.asc
+J§Q1 N002 N004 N005 2N5458
+Q2 N006 N002 N001 0 2N3906
+C1 N004 N003 .01µ
+C2 N006 N005 .0033µ
+C3 N006 OUT 22µ
+C4 N007 0 22µ
+R1 N001 N003 10K
+R2 N001 N002 5K
+R3 N004 0 1Meg
+R4 N005 0 1.6K
+R5 N006 N005 3.9K
+R6 N005 N007 200
+R7 OUT 0 47K
+I2 0 N003 SINE(0 1u 1K)
+D2 N003 0 ElectretMic
+V1 N001 0 9
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.model NJF NJF
+.model PJF PJF
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.jft
+.tran 10m
+.four 1K V(out)
+.options plotwinsize=0
+* Specs:\n   .05% THD @ 1KHz .4V p-p output\n   1.9mA current draw(~370 Hr 9V Alkaline life)\n   26.4dB gain 3dB BW: 38Hz to 12KHz\n   Z-out= 387 Ohm @ 1KHz\n   1.2µV input referred noise from 10Hz to 20KHz(with voltage source input)\n   11 Parts: 4 C's, 2 Q's, 7 R's
+.model ElectretMic D(Ron=1.15K Ilimit=400u)
+.model 2N5458 NJF(Beta=488.9u Betatce=-.5 Rd=1 Rs=1 Lambda=3.167m Vto=-2.882
++ Vtotc=-2.5m Is=181.3f Isr=1.747p N=1 Nr=2 Xti=3 Alpha=2.543u Vk=152.2
++ Cgd=4p M=.3114 Pb=.5 Fc=.5 Cgs=4.627p Kf=4.284E-18 Af=1)
+.backanno
+.end

@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\3862-2.asc
+M§Q1 N001 N005 N006 N006 Si7370DP
+L1 IN N001 16µ Rser=5m Rpar=5K
+R1 N009 0 110K
+R2 OUT N011 796K
+R3 N011 0 12.4K
+R4 IN N004 100K
+R5 N004 0 24.9K
+V1 IN 0 24
+C1 OUT 0 100µ x2 Rser=10m
+R6 N006 0 3.3m
+C2 0 N002 4.7µ
+C3 0 N013 .01µ
+C4 0 N003 .001µ
+C5 0 N012 .01µ Rser=12.1K Cpar=220p
+L2 IN N007 16µ Rser=5m Rpar=5K
+R7 N010 0 3.3m
+M§Q2 N007 N008 N010 N010 Si7370DP
+D1 N007 OUT MBR20100CT
+XU1 0 NC_01 NC_02 0 N009 N013 N012 N011 0 NC_03 NC_04 0 N010 0 MP_05 N008 0 N005 N002 IN N004 0 N006 N003 LTC3862-2
+D2 N001 OUT MBR20100CT
+Rload OUT 0 11.4
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.5m startup
+.lib LTC3862-2.sub
+.backanno
+.end

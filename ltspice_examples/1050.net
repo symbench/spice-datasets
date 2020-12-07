@@ -1,0 +1,31 @@
+* Z:\mnt\design.r\spice\examples\1050.asc
+V1 IN 0 0
+V2 -V 0 -5
+R2 N001 IN 10K
+XU1 0 N001 +V -V OUT LTC1050
+C1 OUT N001 220p
+Q1 N001 0 N002 0 MAT-02
+Q2 N003 N004 N002 0 MAT-02
+R1 N004 OUT 15.7K
+R3 N007 N004 2Meg
+R4 N004 0 1K
+D1 N007 N005 1N4148
+XU2 0 N003 +V -V N005 LTC1050
+C2 N003 N005 22p
+R5 N006 N003 2.5Meg
+R6 +V N006 25K
+R7 N002 N005 3K
+V3 +V 0 5
+B1 Exact 0 V=-Log10(V(in)/10m)
+XU3 N006 0 NC_01 LT1009
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.dc dec V1 10u 10 10
+* 6 Decade Log Amplifier
+.lib LTC.lib
+.lib LTC3.lib
+.backanno
+.end

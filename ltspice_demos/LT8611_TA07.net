@@ -1,0 +1,22 @@
+* Z:\mnt\spice-netlists\LT8611_TA07.asc
+R1 N010 N001 60.4K
+C1 N008 N001 .001µ
+V1 IN 0 12
+C2 N002 N001 1µ
+L1 N006 0 4.7µ Rser=3m
+C3 N004 N006 .1µ
+C4 0 N001 47µ Rser=0.002
+R2 0 N009 1Meg
+R3 N009 N001 412K
+C5 0 N009 10p
+XU1 N003 N008 N010 IN IN N007 N001 OUT N006 N001 N001 N004 N002 0 N005 N009 N001 LT8611
+R4 N001 OUT 50m
+C6 IN 0 4.7µ
+Rload OUT 0 3.3
+C7 IN N001 4.7µ
+.tran .8m startup
+* LT8611 - 42V, 2.5A Synchronous Step-Down Regulator with Current Sense and 2.5µA Quiescent Current\n-3.3V Negative Converter with 1A Output Current Limit\nInput: 3.8V to 42V      Output: -3.3V @ 1A
+* Note:\n  A smaller value TR/SS capacitor is used to reduce simulation time. Typical value should be 0.1µF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT8611.sub
+.backanno
+.end

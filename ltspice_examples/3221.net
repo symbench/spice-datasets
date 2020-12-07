@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\3221.asc
+XU1 N001 N003 N002 0 IN OUT LTC3221
+C1 N001 N003 1µ
+V1 IN 0 2.5
+C2 OUT 0 4.7µ
+R1 OUT N002 154K
+R2 N002 0 107K
+Rload OUT 0 50
+.tran 2m startup
+.lib LTC3221.sub
+.backanno
+.end

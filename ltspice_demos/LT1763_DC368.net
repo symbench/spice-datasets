@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT1763_DC368.asc
+V1 IN 0 PWL(0 0 1 20)
+C1 OUT 0 10µ
+XU1 OUT N001 0 N002 IN MP_01 MP_02 IN LT1763
+R1 OUT N001 261K
+R2 N001 0 249K
+C2 N002 OUT 0.01µ
+C3 IN 0 1µ
+Rload OUT 0 5
+.tran 1 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT1763 - 500mA, Low Noise, LDO µPower Regulators\nInput: 10V     Output: 2.5V @ 500mA
+.lib LT1763.lib
+.backanno
+.end

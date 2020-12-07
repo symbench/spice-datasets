@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LT3091_DC2276A.asc
+R1 N004 0 49.9K
+C1 N004 0 0.1µ
+V1 IN 0 -3.3
+R2 IN N002 12.4K
+C2 OUT 0 10µ Rser=10m
+Rload OUT 0 1.67
+XU1 IN MP_01 N002 N003 N001 IN N004 0 OUT LT3091
+V2 N001 0 3.3
+R3 N003 0 1.58k
+C3 IN 0 10µ
+.tran .1 startup
+* LT3091 - -36V, 1.5A Negative Linear Regulator with Programmable Current Limit\nInput: -1.5V to -36V       Output: -2.5V @ 1.5A (current limit 1.6A)
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright ©2016 Linear Technology Inc. All rights reserved.
+.lib LT3091.sub
+.backanno
+.end

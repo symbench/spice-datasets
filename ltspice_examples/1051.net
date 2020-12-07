@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\1051.asc
+V1 +V 0 5
+V2 -V 0 -5
+R1 N002 N001 499
+R2 N001 0 100K
+V3 IN- IN+ SINE(0 10m 100)
+XU1 IN- N001 +V -V N002 LTC1051
+R3 N003 N002 499
+R4 OUT N003 100K
+XU2 IN+ N003 +V -V OUT LTC1051
+V4 IN+ 0 SINE(0 1 10)
+.tran .3
+* High Performance Low Cost instrumentation Amplifier
+.lib LTC.lib
+.backanno
+.end

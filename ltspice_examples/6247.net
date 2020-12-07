@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\6247.asc
+V1 IN 0 AC 1
+R2 N001 0 50
+R3 N002 N001 1.5K
+V2 +V 0 2.5
+V3 -V 0 -2.5
+R1 N004 N003 1K
+R4 OUT N004 30K
+C1 N003 0 660n
+XU1 N002 -V IN N001 +V LTC6247
+XU2 OUT -V N002 N004 +V LTC6247
+.ac dec 250 10K 20Meg
+* 60dB 5.5 MHz Gain Block
+.lib LTC7.lib
+.backanno
+.end

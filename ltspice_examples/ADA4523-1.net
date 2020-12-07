@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\ADA4523-1.asc
+V1 +V 0 28
+XU1 +V N001 N003 0 N002 +V 0 ADA4523-1
+R1 OUT N001 1K
+R2 N001 0 10
+D1 N002 OUT 1N4148
+Rsense N003 0 1K
+Isense 0 N003 0
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+* V(OUT) = 101*Rsense*Isense
+.dc Isense 0 1u 10n
+.lib ADA4523-1.sub
+.backanno
+.end

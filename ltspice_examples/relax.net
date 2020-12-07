@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\relax.asc
+R1 OUT N001 10K
+V1 +15 0 15
+V2 -15 0 -15
+R2 N002 0 5K
+C1 N001 0 .02µ
+R3 OUT N002 100K
+XU1 N002 N001 +15 -15 OUT LT1001
+.tran 15m startup
+* This example schematic is supplied for informational/educational purposes only.
+.lib LTC.lib
+.backanno
+.end

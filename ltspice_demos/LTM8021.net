@@ -1,0 +1,13 @@
+* Z:\mnt\spice-netlists\LTM8021.asc
+XU1 IN IN 0 N001 OUT OUT LTM8021
+V1 IN 0 24
+R1 N001 0 19.1K tol=1
+C1 OUT 0 4.7µ V=6.3
+C2 IN 0 1µ V=50V
+Rload OUT 0 10
+.tran 500u startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2008 Linear Technology Inc. All rights reserved.
+* LTM8021 - 40V, 500mA, Step-down DC/DC uModule \nInput: 7.5V to 36V       Output: 5V @ 500mA
+.lib LTM8021.sub
+.backanno
+.end

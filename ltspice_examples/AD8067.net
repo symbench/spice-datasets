@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\AD8067.asc
+V1 +V 0 12
+Vin N002 0 SINE(0 1 1Meg)
+R1 N001 0 110
+R2 OUT N001 1K
+V2 -V 0 -12
+Rload OUT 0 1K
+R4 N003 N002 49.9
+XU1 N003 N001 +V -V OUT AD8067
+.tran 10u
+.lib ADI.lib
+.backanno
+.end

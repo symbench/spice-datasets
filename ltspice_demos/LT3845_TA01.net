@@ -1,0 +1,36 @@
+* Z:\mnt\spice-netlists\LT3845_TA01.asc
+M§Q1 IN N005 N006 N006 Si7370DP
+M§Q2 N006 N009 0 0 Si7370DP
+D1 N001 N003 MBRS140
+C1 N003 N006 .1µ
+R1 IN N002 1Meg
+R2 N011 N010 20K
+C2 N010 0 2200p
+D2 0 N006 MBRS1100
+L1 N006 N007 15µ Rpar=2K
+R3 N007 OUT 10m
+R4 N008 0 49.9K
+C3 N004 0 .002µ
+C4 OUT 0 33µ x3
+V1 IN 0 36
+D3 OUT N001 1N4148
+XU1 IN N002 N004 0 N012 N011 MP_01 N008 OUT N007 0 N009 N001 N006 N005 N003 0 LT3845
+R5 N012 OUT 143K
+R6 0 N012 16.2K
+C5 N001 0 1µ
+R7 N002 0 82.5K
+Rload OUT 0 1.92
+C6 IN 0 47µ
+C7 IN 0 2.2µ
+C8 N011 0 100p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+* LT3845 - High Voltage Synchronous Current Mode Step-Down Controller with Adjustable Operating Frequency\nHigh Voltage Telecom Step-Down Regulator\nInput: 20V to 55V           Output: 12V @ 6.25A
+* Note:\n  A smaller value Css capacitor is used to reduce simulation time. Typical value should be 1500pF.\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT3845.sub
+.backanno
+.end

@@ -1,0 +1,25 @@
+* Z:\mnt\spice-netlists\LT1910_DC2307_TA01.asc
+Vpwm N004 0 PULSE(5 0 0.5 1u 1u .5m 1m)
+XU1 0 N006 N003 N004 N007 N005 MP_01 N001 LT1910
+M§Q1 N005 N007 N008 N008 IPD220N06L3
+R1 N001 N005 10m
+Vin N001 0 48
+V1 N002 0 5
+R2 N003 N002 10K
+C1 N006 0 .1µ
+R_LOAD N008 0 2.43K
+Vshort N009 0 PULSE(0 1 1 20n 20n 0.2 0 1)
+C2 N001 0 10µ
+C3 N001 0 2.2µ
+S1 0 N008 N009 0 SHORT
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.5 startup
+* Short Circuit Block
+* Notes:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012, 2015 Linear Technology Inc. All rights reserved.
+.model SHORT SW(Ron=1 Roff=10Meg Vt=.5 Vh=-.4)
+* LT1910 - Protected High Side MOSFET Driver (LT1161 is a Quad Version)\nFault Protected High Side Switch\n8V to 48V Supply
+.lib LT1910.sub
+.backanno
+.end

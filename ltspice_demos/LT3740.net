@@ -1,0 +1,29 @@
+* Z:\mnt\spice-netlists\LT3740.asc
+M§Q2 N007 N012 0 0 HAT2165H
+M§Q1 IN N005 N007 N007 HAT2168H
+L1 N007 OUT .9µ
+C1 OUT 0 300µ
+R1 OUT N013 105K
+R2 N013 0 80.6k
+V1 IN 0 5
+R3 N010 N009 7.3K
+C3 N009 0 3300p
+XU1 0 0 N011 N002 N007 N006 N004 N002 N001 IN 0 N003 IN N008 N013 N010 0 LT3740
+L2 IN N001 22µ
+Iload OUT 0 10 load
+C4 N008 0 .22µ
+R4 IN N008 15K
+R5 N012 N011 1
+R6 N005 N004 1
+R7 N007 N006 1
+C5 N010 0 82p
+C2 IN N002 1µ
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 1.0m startup
+* LT3740 - Wide Operating Range NoRsense Synchronous Step-Down Controller\nInput: 5V    Output: 1.8V @ 10A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2006 Linear Technology Inc. All rights reserved.
+.lib LT3740.sub
+.backanno
+.end

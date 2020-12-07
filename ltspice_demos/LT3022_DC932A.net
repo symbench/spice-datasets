@@ -1,0 +1,14 @@
+* Z:\mnt\spice-netlists\LT3022_DC932A.asc
+V1 IN 0 1.2
+C1 IN 0 10µ
+XU1 MP_01 MP_02 OUT MP_03 MP_04 MP_05 N001 MP_06 IN 0 MP_07 IN LT3022
+R1 N001 0 200
+R2 OUT N001 698
+C2 OUT 0 10µ
+Rload OUT 0 0.9
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT3022 - 1A, 0.9V to 10V, Very Low Dropout Linear Regulator\nInput: 1.2V       Output: 0.9V @ 1A
+.tran 500u startup
+.lib LT3022.sub
+.backanno
+.end

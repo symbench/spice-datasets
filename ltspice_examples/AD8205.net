@@ -1,0 +1,8 @@
+* Z:\mnt\design.r\spice\examples\AD8205.asc
+V1 IN 0 5
+V2 N001 N002 SINE(0 10m 1K)
+XU1 N002 0 0 MP_01 OUT IN IN N001 AD8205
+.tran 5m
+.lib ADI.lib
+.backanno
+.end

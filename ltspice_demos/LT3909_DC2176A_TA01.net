@@ -1,0 +1,24 @@
+* Z:\mnt\spice-netlists\LT3909_DC2176A_TA01.asc
+R1 N009 0 24.9K
+C1 N007 0 1µ
+R2 OUT N002 976K
+R3 0 N002 31.6K
+C2 OUT 0 2.2µ
+R4 IN N008 100K
+V1 IN 0 12
+R5 IN N003 402K
+R6 N003 0 130K
+L1 IN N001 6.8µ Rser=160m
+D1 N006 0 LXHL-BW02 N=12
+XU1 N007 IN N003 N009 N007 N002 N005 N008 N006 N004 OUT N001 0 LT3909
+V2 N005 0 3.3
+D2 N004 0 LXHL-BW02 N=12
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 1m startup
+* 40mA each
+* LT3909 - 2-String x 60mA, 2MHz Step-Up LED Driver with +/- 2% Current Matching\n2-String x 40mA, 2MHz LED Driver for Ten White LEDs/String\nInput: 7V to 36V       Output: 2-String x 40mA, 35V LED String Voltage
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2016 Linear Technology Inc. All rights reserved.
+.lib LT3909.sub
+.backanno
+.end

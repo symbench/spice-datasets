@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT1997-3_SingleSupplyCurrentSense.asc
+XU1 N004 MP_01 0 MP_02 0 N002 N002 0 OUT +V +V 0 MP_03 0 MP_04 N001 LT1997-3
+V1 N003 0 SINE(20 20 20k)
+R1 N001 N003 1
+R2 N004 N003 1
+V2 N002 0 2.5
+V3 +V 0 5
+I1 N001 0 1
+.tran 300u
+;ac oct 10 10 10meg
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2017 Linear Technology Inc. All rights reserved.
+* LT1997-3 - Precision, Wide Voltage Range Gain Selectable Amplifier\nSingle Supply Current Sense
+.lib LTC6.lib
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\AD795.asc
+V1 +V 0 15
+Vin IN 0 SINE(0 1 10K)
+R1 N001 0 10K
+R2 OUT N001 10K
+V2 -V 0 -15
+XU1 IN N001 +V -V OUT AD795
+.tran 1m
+.lib ADI1.lib
+.backanno
+.end

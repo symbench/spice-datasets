@@ -1,0 +1,15 @@
+* Z:\mnt\design.r\spice\examples\1252.asc
+V1 +V 0 5
+R1 OUT N002 510
+R2 N002 N001 51
+V3 IN 0 AC 1
+XU1 N003 N002 +V 0 OUT LT1252
+C1 N001 0 220µ
+R3 +V N003 10K
+R4 N003 0 10K
+C2 N003 IN 22µ
+.ac oct 10 1 200Meg
+* Single Supply AC-Coupled Amplifier, Noninverting
+.lib LTC.lib
+.backanno
+.end

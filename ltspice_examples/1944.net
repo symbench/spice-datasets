@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1944.asc
+XU1 N003 IN 0 IN N004 N002 0 IN 0 N001 LT1944
+L1 IN N002 10µ Rpar=10K
+L2 IN N001 4.7µ Rpar=2K
+R1 OUT1 N003 1Meg
+R2 N003 0 324K
+D1 N001 OUT1 1N5819
+R3 OUT2 N004 2Meg
+R4 N004 0 86.6K
+D2 N002 OUT2 MBRS360
+C1 OUT2 0 1µ
+C2 OUT1 0 10µ
+V1 IN 0 3.5
+Rload2 OUT2 0 3.75K
+Rload1 OUT1 0 62.5
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 200u startup
+.lib LT1944.sub
+.backanno
+.end

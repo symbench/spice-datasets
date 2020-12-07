@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LTM8062A_TA06.asc
+V1 IN 0 25
+C2 N001 0 4.7µ
+V2 N002 0 11.75 Rser=.01
+C3 OUT N002 0.2m Rser=.01
+XU2 N001 N001 IN NC_01 NC_02 0 N003 NC_03 OUT MP_04 OUT IN 0 LTM8062
+R1 OUT N003 1.24Meg
+R2 N003 0 312K
+.tran 1.5m startup
+* BATTERY
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+* LTM8062A - 32Vin, 2A µModule Power Tracking Battery Charger\n2A, 4-Cells Li-Ion Battery Charger\nInput: 18V to 32V     Output: 16.4V @ 2A
+.lib LTM8062.sub
+.backanno
+.end

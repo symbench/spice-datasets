@@ -1,0 +1,18 @@
+* Z:\mnt\design.r\spice\examples\3809-1.asc
+M§Q1 N002 N004 0 0 FDS6680A
+M§Q2 N002 N001 IN IN FDC638P
+C1 OUT 0 47µ Rser=50m
+C2 0 N005 220p Rser=15K
+V1 IN 0 5
+L1 N002 OUT 2.2µ Rpar=1K
+R1 OUT N006 187K
+R2 N006 0 59K
+XU1 IN IN N006 N005 N003 0 N004 N001 IN N002 0 LTC3809-1
+Rload OUT 0 50
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC3809-1.sub
+.backanno
+.end

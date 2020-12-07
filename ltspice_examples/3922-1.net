@@ -1,0 +1,30 @@
+* Z:\mnt\design.r\spice\examples\3922-1.asc
+L1 IN N001 4.7µ
+C1 N002 N001 .1µ
+C2 N003 0 4.7µ
+C3 N017 0 1n Rser=10K
+C4 N013 0 .001µ
+C6 N012 0 2.2µ
+R3 N012 N014 100K
+R4 N016 0 45.3K
+R5 N003 N007 300m
+R6 N003 N005 1Meg
+R7 N005 0 33.2K
+C5 N008 0 1µ
+V1 IN 0 20
+D1 N011 0 LXHL-BW02 n=10
+M1 N011 N009 N007 N007 IRF7343P
+R2 IN N004 1Meg
+R8 N004 N006 365K
+R9 N006 0 59K
+R1 N012 N015 100K
+XU1 N001 N002 N012 IN N004 N006 N008 N008 N003 N007 N017 N005 N013 N010 N014 N016 0 0 N015 N009 N003 0 LT3922-1
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 750u startup
+.lib LT3922-1.sub
+.backanno
+.end

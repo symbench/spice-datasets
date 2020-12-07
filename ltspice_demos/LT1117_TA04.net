@@ -1,0 +1,21 @@
+* Z:\mnt\spice-netlists\LT1117_TA04.asc
+XU1 N001 OUT IN LT1117
+R1 OUT N001 121
+R2 N001 0 365
+C1 OUT 0 100µ Rser=10m
+C2 IN 0 10µ
+Q1 N001 N002 0 0 2N3904
+R3 N002 0 1K
+R4 N002 SHDN 1K
+V1 IN 0 PWL(0 0 .3 20)
+V2 SHDN 0 0
+Rload OUT 0 6.25
+.model NPN NPN
+.model PNP PNP
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.bjt
+.tran .3 startup
+* LT1117 - 800mA Low Dropout Positive Regulators\n5V Regulator with Shutdown\nInput: 6V to 20V     Output: 5V @ 800mA
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2012 Linear Technology Inc. All rights reserved.
+.lib LT1117.lib
+.backanno
+.end

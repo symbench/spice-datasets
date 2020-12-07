@@ -1,0 +1,16 @@
+* Z:\mnt\design.r\spice\examples\8045.asc
+XU1 N002 0 IN OUT- IN N001 NC_01 MP_02 0 LTM8045
+V1 IN 0 12
+R1 N001 0 130K
+R2 OUT- N002 60.4K
+C1 OUT- 0 22µ V=10 Irms=10.206 Rser=0.005 Lser=0 mfg="KEMET" pn="C1210C226K8PAC" type="X5R"
+Rload- OUT- 0 10
+XU2 N004 OUT+ IN 0 IN N003 NC_03 MP_04 0 LTM8045
+R3 N003 0 115K
+R4 OUT+ N004 45.3K
+Rload+ OUT+ 0 10
+C2 OUT+ 0 100µ V=6.3 Irms=0 Rser=0.002 Lser=0 mfg="TDK" pn="C575OX5ROJI07M" type="X5R"
+.tran 1m startup
+.lib LTM8045.sub
+.backanno
+.end

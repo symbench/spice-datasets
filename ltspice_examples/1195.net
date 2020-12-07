@@ -1,0 +1,21 @@
+* Z:\mnt\design.r\spice\examples\1195.asc
+V1 +V 0 5
+V2 -V 0 -5
+R2 N001 -V 10K
+V3 IN 0 PWL(0 0 20n 1 150n 1 170n 0)
+XU1 N003 N001 +V -V N002 NC_01 LT1195
+D1 N002 N001 5082-2800
+R3 IN 0 50
+R4 N003 IN 1K
+C1 N003 0 60p
+D2 N002 OUT 5082-2800
+R1 -V OUT 10K
+C2 OUT 0 1000p
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 3u
+.model 5082-2800 D(BV=75 Cjo=1.6p Eg=0.69 IBV=10E-5 Is=2.2E-9 N=1.08 Rs=25 Vj=.6 XTI=2 M=.5)
+* Fast Pulse Detector
+.lib LTC.lib
+.backanno
+.end

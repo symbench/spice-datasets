@@ -1,0 +1,22 @@
+* Z:\mnt\design.r\spice\examples\1122.asc
+V1 +V 0 15
+V2 -V 0 -15
+R1 N003 N002 20K
+R2 N002 IN 20K
+V3 IN 0 SINE(0 1 100 1 0 0 200)
+XU1 0 N002 +V -V N005 LT1122
+R3 OUT N001 200K
+XU2 0 N004 +V -V OUT LT1122
+D1 N003 N005 1N4148
+D2 N005 N002 1N4148
+R5 N001 IN 200K
+R6 N001 N003 100K
+R7 N004 N001 1K
+C1 OUT N001 1µ
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 5
+* Wide-Band Filtered, Full Wave Rectifier
+.lib LTC.lib
+.backanno
+.end

@@ -1,0 +1,20 @@
+* Z:\mnt\spice-netlists\LTC4415_DC1819.asc
+XU1 IN1 N001 N002 N004 N003 IN2 OUT NC_01 NC_02 NC_03 NC_04 OUT 0 LTC4415
+R1 N001 IN1 100K
+R2 N003 N001 2K
+R3 0 N003 21.5K
+R4 0 N002 124
+R5 0 N004 124
+V1 IN1 0 PWL(0 5 300u 5 500u 0 700u 0 800u 5) Rser=0
+C1 IN1 0 10µ
+C2 IN2 0 10µ
+C3 OUT 0 10µ
+C4 OUT 0 10µ
+V2 IN2 0 3.7
+R6 OUT 0 1.2
+* LTC4415 - Dual 4A Ideal Diodes with Adjustable Current Limit\nInput Supply Prioritizer\nInput: 1.7V-5.5V     Output: Up to 4A
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.tran 1m
+.lib LTC4415.sub
+.backanno
+.end

@@ -1,0 +1,16 @@
+* Z:\mnt\spice-netlists\LTC3526LB_DC1053A-F.asc
+R1 OUT N002 887K
+R2 N002 0 499K
+C1 IN 0 1µ
+C2 OUT 0 4.7µ
+L1 IN N001 4.7µ Ipk=0.9 Rser=0.085 Rpar=5904 Cpar=1.235p mfg="Wurth Elektronik" pn="744031004 WE-TPC S"
+C3 OUT N002 33p
+V1 IN 0 2
+R3 OUT 0 33
+XU2 N001 0 IN IN N002 OUT LTC3526LB
+.tran 500u startup
+* LTC3526LB - 550mA 1MHz Synchronous Step-Up DC/DC Converter\nHigh Efficiency Boost Converter\nInput: 1V to 5V    Output: 3.3V @ 100mA, Fsw = 1MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3526LB.sub
+.backanno
+.end

@@ -1,0 +1,13 @@
+* Z:\mnt\design.r\spice\examples\3547-1.asc
+V1 IN 0 5
+C1 OUT2 0 4.7µ
+L1 N001 OUT2 4.7µ
+Rload2 OUT2 0 4
+C2 OUT1 0 4.7µ
+L2 N002 OUT1 4.7µ
+Rload1 OUT1 0 6
+XU1 OUT1 IN IN N002 0 N001 IN OUT2 LTC3547-1
+.tran 800u startup
+.lib LTC3547-1.sub
+.backanno
+.end

@@ -1,0 +1,17 @@
+* Z:\mnt\spice-netlists\LTC3621-2_DC1864A.asc
+L1 N001 OUT 2.2µ
+R1 OUT N002 100K
+V1 IN 0 12
+R2 N002 0 100K
+C1 OUT 0 47µ
+C3 IN 0 10µ
+I1 OUT 0 PULSE(0.1 1 1.05m 5n 5n 100u 200u) load
+C7 N003 0 1µ
+XU1 N001 IN IN N004 N002 N003 0 0 0 LTC3621-2
+R5 IN N004 100K
+.tran 1.5m startup
+* LTC3621-2 - 17V, 1A Synchronous Step-Down Regulator with 3.5µA Quiescent Current\n17V, 1A Monolithic Synchronous Buck Regulator\nInput: 2.7V to 17V     Output: 1.2V @ 1A, Fsw = 2.25MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3621-2.sub
+.backanno
+.end

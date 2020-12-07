@@ -1,0 +1,48 @@
+* Z:\mnt\design.r\spice\examples\8312.asc
+XU1 0 MP_01 MP_02 N014 N016 N019 MP_03 MP_04 N011 N009 N003 N008 N018 N015 N017 N010 LT8312
+C1 N018 0 4.7µ
+R1 N014 N016 100K
+R2 N016 0 221K
+Vline N001 N007 SINE(0 170 60)
+D1 0 N001 RRE02VS4S
+D2 N001 Vin RRE02VS4S
+D3 0 N007 RRE02VS4S
+D4 N007 Vin RRE02VS4S
+C2 Vin 0 .01µ
+R3 N003 N008 1Meg
+R4 N008 0 95.3K
+R5 Vin N010 1Meg
+L1 Vin N012 400µ Rpar=2K
+M1 N012 N015 N017 N017 SPA11N60C3
+R6 N017 0 10m
+C3 N019 0 10n Rser=5K
+D5 N012 Vout RF505TF6S
+C4 Vout 0 560µ x2 Rser=.1
+L2 0 N006 25µ Rpar=1K
+C5 N006 N009 4.7p Rser=2K
+C6 N003 0 10µ
+D6 N005 N003 1N4148
+R7 N006 N005 20
+D7 N002 N003 1N4148
+R8 Vin N002 200K
+R9 Vout N011 3Meg
+R10 N011 0 9.53K
+Rload Vout 0 800
+V2 N013 0 {390*precharge}
+D8 N013 Vout Initial
+V1 N004 0 {24*precharge}
+D9 N004 N003 Initial
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+K1 L1 L2 1
+.tran .1
+.model INITIAL D(Ron=.5
++ Roff=1G epsilon=.5)
+.param precharge=1
+* Artificial Precharging Circuit\n(You can simulate the startup, by changing \nthe parameter "precharge=0")
+.lib LT8312.sub
+.backanno
+.end

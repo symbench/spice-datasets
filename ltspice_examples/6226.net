@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\6226.asc
+V1 V+ 0 5
+V2 V- 0 -5
+V3 In 0 PULSE(-75m 75m 100n 1n 1n 400n 800n)
+XU2 In N001 Out V+ V- V+ LTC6226
+R1 Out N001 100
+R2 N001 0 11
+.tran 1u
+.lib LTC6226.sub
+.backanno
+.end

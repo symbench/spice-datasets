@@ -1,0 +1,28 @@
+* Z:\mnt\design.r\spice\examples\1778-1.asc
+R1 IN N001 1.4Meg
+R2 OUT N010 30.1K
+R3 N010 0 14K
+D1 N009 N007 MBR0530L
+C1 N009 0 4.7µ
+D2 0 N005 MBRS340
+M§Q1 IN N003 N005 N005 Si4884DY
+L1 N005 OUT 1.8µ Rpar=100K
+C2 OUT 0 180µ Rser=.05 x2
+R4 N012 N011 20K
+C3 N011 0 500p
+R5 IN N014 3.3K
+V1 IN 0 28
+C4 N006 0 .001µ
+C5 N005 N007 .22µ
+M§Q2 N005 N013 0 0 Si4874DY
+XU1 N006 N014 N008 N004 N012 0 N001 N010 N002 IN N009 N013 0 N005 N003 N007 LTC1778-1
+Rload OUT 0 .2
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 3.5m startup
+.lib LTC1778-1.sub
+.backanno
+.end

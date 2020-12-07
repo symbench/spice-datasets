@@ -1,0 +1,24 @@
+* Z:\mnt\design.r\spice\examples\3435.asc
+L1 N002 OUT 15µ
+C1 0 N005 1500p
+C2 N002 N001 .33µ
+D1 0 N002 MBRS340
+C3 OUT 0 47µ Rser=.1
+R1 OUT N007 165K
+R2 N007 0 100K
+D2 OUT N001 1N4148
+V1 IN 0 15
+C5 OUT N004 .1µ
+C6 N006 0 100p
+R3 N006 N005 10K
+C7 N008 0 .001µ
+R4 N003 OUT 100K
+XU1 MP_01 N002 MP_02 IN MP_03 N001 N008 0 N004 OUT N006 N007 N007 MP_04 IN N003 LT3435
+C8 OUT N007 27p
+Rload OUT 0 1.65
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.tran 500u startup
+.lib LT3435.sub
+.backanno
+.end

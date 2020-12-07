@@ -1,0 +1,23 @@
+* Z:\mnt\design.r\spice\examples\1622.asc
+R1 OUT N007 159K
+M§Q1 N008 N005 N002 N002 FDC638P
+L1 N008 OUT 4.7µ
+D1 0 N008 1N5818
+C1 N006 0 470p
+C2 N003 0 220µ
+R2 N004 N003 10K
+V1 IN 0 3.3
+R3 N007 0 75K
+R4 IN N002 .03
+C3 OUT 0 47µ Rser=.1
+Rload OUT 0 5
+XU1 N002 N004 N007 N006 N001 0 N005 IN LTC1622
+.model D D
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.dio
+.model NMOS NMOS
+.model PMOS PMOS
+.lib C:\users\brian\My Documents\LTspiceXVII\lib\cmp\standard.mos
+.tran 2m startup
+.lib LTC1622.sub
+.backanno
+.end

@@ -1,0 +1,11 @@
+* Z:\mnt\design.r\spice\examples\1986.asc
+V1 IN 0 2.7
+V4 N002 0 1.6
+C1 N001 N003 .047µ
+C2 OUT 0 2.2µ
+Rload OUT 0 500
+XU1 OUT 0 N002 N003 N001 IN LTC1986
+.tran 1m startup
+.lib LTC1986.sub
+.backanno
+.end

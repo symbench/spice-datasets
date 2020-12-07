@@ -1,0 +1,12 @@
+* Z:\mnt\design.r\spice\examples\1751-5.asc
+C1 N003 N004 1µ
+R1 OUT N001 100K
+C2 N002 0 .001µ
+C3 OUT 0 10µ
+V1 IN 0 3
+Rload OUT 0 50
+XU1 N001 OUT IN 0 N004 N003 IN N002 LTC1751-5
+.tran 1m startup
+.lib LTC1751-5.sub
+.backanno
+.end

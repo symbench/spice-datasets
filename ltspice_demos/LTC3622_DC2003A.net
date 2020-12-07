@@ -1,0 +1,26 @@
+* Z:\mnt\spice-netlists\LTC3622_DC2003A.asc
+XU1 IN N002 N001 N001 N003 0 IN N005 IN N007 N001 N006 IN N004 0 LTC3622
+V1 IN 0 12
+C1 IN 0 10µ
+C2 IN 0 22µ
+C3 N001 0 1µ
+R1 N001 N002 100K
+R2 N001 N003 100K
+L1 N004 OUT1 3.3µ Rser=0.0383
+C4 OUT1 0 47µ
+R3 OUT1 N006 619K
+R4 N006 0 137K
+C5 OUT1 N006 22p
+L2 N005 OUT2 4.7µ Rser=0.0574
+R5 OUT2 N007 619K
+R6 N007 0 84.5K
+C6 OUT2 N007 22p
+C7 OUT2 0 47µ
+I1 OUT1 0 PULSE(0.1 1 1m 5n 5n 250u 1m) load
+I2 OUT2 0 PULSE(0.1 1 1m 5n 5n 250u 1m) load
+.tran 1.5m startup
+* LTC3622 - 17V, Dual 1A Synchronous Step-Down Regulator with Ultralow Quiescent Current\nDual Monolithic Synchronous Buck Regulator\nInput: 5V to 17V     Output: 3.3V @ 1A and 5V @ 1A, Fsw = 1MHz
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts\n  Copyright © 2014 Linear Technology Inc. All rights reserved.
+.lib LTC3622.sub
+.backanno
+.end

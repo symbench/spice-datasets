@@ -1,0 +1,15 @@
+* Z:\mnt\spice-netlists\LT1964_DC437.asc
+V1 IN 0 PWL(0 0 1 -10)
+XU1 0 IN N001 N002 OUT LT1964-BYP
+C3 OUT N001 .01µ
+C1 IN 0 1µ
+R1 N002 0 249K
+C2 OUT 0 10µ
+Rload OUT 0 25
+R2 OUT N002 768K
+.tran 1 startup
+* Note:\n  If the simulation model is not found please update with the "Sync Release" command from the "Tools" menu.\n  It remains the customer's responsibility to verify proper and reliable operation in the actual application.\n  Component substitution and printed circuit board layout may significantly affect circuit performance or reliability.\n  Contact your local sales representative for assistance. This circuit is distributed to customers only for use with LTC parts.\n  Copyright © 2011 Linear Technology Inc. All rights reserved.
+* LT1964 - 200mA, Low Noise, Low Dropout Negative µPower Regulator\nInput: -10V     Output: -5V @ 200mA
+.lib LT1964.lib
+.backanno
+.end
