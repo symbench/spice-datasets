@@ -1,0 +1,16 @@
+.title KiCad schematic
+U1 Net-_R5-Pad1_ Net-_R4-Pad1_ Net-_R8-Pad1_ Net-_R3-Pad1_ Net-_R7-Pad1_ Net-_U1-Pad6_ Net-_R2-Pad1_ Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_R6-Pad1_ Net-_R1-Pad1_ Net-_U1-Pad12_ CC56-12EWA
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ R
+R2 Net-_R2-Pad1_ Net-_R2-Pad2_ R
+R3 Net-_R3-Pad1_ Net-_R3-Pad2_ R
+R4 Net-_R4-Pad1_ Net-_R4-Pad2_ R
+R5 Net-_R5-Pad1_ Net-_R5-Pad2_ R
+R6 Net-_R6-Pad1_ Net-_R6-Pad2_ R
+R7 Net-_R7-Pad1_ Net-_R7-Pad2_ R
+R8 Net-_R8-Pad1_ Net-_R8-Pad2_ R
+U2 Net-_R4-Pad2_ Net-_R5-Pad2_ GND +5V GND +5V NC_01 NC_02 Net-_R6-Pad2_ Net-_R7-Pad2_ Net-_R8-Pad2_ Net-_U1-Pad12_ Net-_U1-Pad9_ Net-_U1-Pad8_ Net-_U1-Pad6_ Net-_R1-Pad2_ Net-_R2-Pad2_ NC_03 NC_04 NC_05 GND NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 Net-_R9-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_R3-Pad2_ ATmega328-AU
+R9 +5V Net-_R9-Pad2_ R
+Sw1 Net-_R9-Pad2_ GND Pulsador
+J1 GND +5V Conn_01x02_Female
+J2 +5V GND Net-_J2-Pad3_ Net-_J2-Pad4_ Conn_01x04_Female
+.end

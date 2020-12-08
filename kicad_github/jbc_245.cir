@@ -1,0 +1,88 @@
+.title KiCad schematic
+C3 Net-_C3-Pad1_ 0V 1nF
+R4 Net-_C3-Pad1_ Net-_F1-Pad2_ 10K
+U5 Net-_R10-Pad2_ 0V Net-_Q1-Pad3_ Net-_Q1-Pad1_ VOM1271T
+D2 Net-_C3-Pad1_ 0V Net-_C3-Pad1_ BAV199
+H2 0V Green-C245
+H1 Net-_H1-Pad1_ Blue-C245
+H3 Net-_F1-Pad2_ RED-C245
+C1 Net-_C1-Pad1_ 0V 220uF 25V
+C5 +5V 0V 100uF
+C7 +5V 0V 100nF
+R2 Net-_R2-Pad1_ Net-_F1-Pad2_ 2K2
+R1 Net-_R1-Pad1_ Net-_J1-Pad1_ 2K2
+R9 Net-_R9-Pad1_ Paso_Cero 330R
+Q2 Net-_Q1-Pad1_ Net-_H1-Pad1_ Net-_Q1-Pad3_ BUZ11
+Q1 Net-_Q1-Pad1_ Net-_J1-Pad1_ Net-_Q1-Pad3_ BUZ11
+R10 Control Net-_R10-Pad2_ 330
+C6 0V Control 1nF
+Ra1 Net-_R12-Pad2_ Net-_Ra1-Pad2_ 100K
+Ra2 0V Net-_Ra1-Pad2_ 330R
+C8 0V +5V 100nF
+R12 Temperatura_JBC Net-_R12-Pad2_ 10K
+F1 Net-_F1-Pad1_ Net-_F1-Pad2_ 6A
+U4 Net-_R1-Pad1_ Net-_R2-Pad1_ 0V Net-_R9-Pad1_ NC_01 H11AA1-X009T
+R7 Net-_R7-Pad1_ Net-_D5-Pad2_ 470R
+R13 Net-_R13-Pad1_ Net-_Q3-Pad1_ 470R
+BZ1 +5V Net-_BZ1-Pad2_ Buzzer
+J17 Net-_J17-Pad1_ LCD-RD
+J18 Net-_J18-Pad1_ LCD-WR_Y+
+J19 Net-_J19-Pad1_ LCD-RS_X-
+J20 Net-_J20-Pad1_ LCD-CS
+J30 /SCL1 SCL-LM75
+J29 /SDA1 SDA-LM75
+J26 +5V +5V-LCD
+J36 Net-_J36-Pad1_ SD-MISO-LCD
+J32 Net-_J32-Pad1_ SD-MOSI-LCD
+J35 Net-_J35-Pad1_ SD-SCK-LCD
+J34 Net-_J34-Pad1_ LCD-RST
+J4 Net-_J4-Pad1_ LCD-D3
+J5 Net-_J5-Pad1_ LCD-DB4
+J6 Net-_J6-Pad1_ SD_CS
+J7 Net-_J7-Pad1_ LCD-D6_X+
+J9 Net-_J9-Pad1_ LCD-D0
+J8 Net-_J8-Pad1_ LCD-D7_Y-
+J10 Net-_J10-Pad1_ LCD-D
+J11 Net-_J11-Pad1_ DB2
+J12 Net-_J12-Pad1_ DB3
+J14 Net-_J14-Pad1_ DB5
+J25 0V GND-LCD
+F2 Net-_D1-Pad4_ Net-_F2-Pad2_ 0.5A
+R16 Net-_R16-Pad1_ Net-_D5-Pad1_ 470R
+J24 0V GND-LCD
+J33 0V GND-LCD
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ 0V LED_Dual
+R18 Net-_D6-Pad2_ Net-_C10-Pad1_ 1k8
+R17 +3V3 Net-_D6-Pad2_ 6M5
+J2 Net-_C10-Pad1_ Sleep
+D6 0V Net-_D6-Pad2_ +3V3 BAV199
+C10 Net-_C10-Pad1_ 0V 100nF
+J15 0V GND-LCD
+XA1 +3V3 +5V +5V +5V +5V Net-_J17-Pad1_ Net-_J18-Pad1_ Net-_J19-Pad1_ Net-_J20-Pad1_ NC_02 Temperatura_JBC Net-_D6-Pad2_ NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 Net-_R13-Pad1_ Net-_J4-Pad1_ Net-_J5-Pad1_ Net-_J6-Pad1_ Net-_J7-Pad1_ Net-_J8-Pad1_ Net-_J9-Pad1_ Net-_J10-Pad1_ Net-_J11-Pad1_ Net-_J12-Pad1_ NC_15 Net-_J14-Pad1_ Net-_R7-Pad1_ Net-_R16-Pad1_ Control NC_16 Paso_Cero NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 0V 0V 0V 0V 0V 0V NC_52 Net-_J36-Pad1_ Net-_J32-Pad1_ NC_53 Net-_J34-Pad1_ Net-_J35-Pad1_ /SCL1 /SDA1 NC_54 Arduino_Mega2560_Shield
+Q3 Net-_Q3-Pad1_ 0V Net-_BZ1-Pad2_ BSS138
+D7 +5V Net-_BZ1-Pad2_ 1N4148
+R14 0V Net-_R13-Pad1_ 10K
+C11 Net-_C1-Pad1_ 0V 100nF
+C4 0V Net-_C12-Pad2_ 220uF 25V
+C12 0V Net-_C12-Pad2_ 100nF
+C13 0V -5V 100uF
+C15 0V -5V 100nF
+U2 Net-_C1-Pad1_ 0V +5V LM7805_TO252
+U3 0V Net-_C12-Pad2_ -5V MC79M05_TO252
+U1 NC_55 Net-_Ra1-Pad2_ Net-_C3-Pad1_ -5V NC_56 Net-_R12-Pad2_ +5V NC_57 OPA177
+C9 0V -5V 100nF
+C14 Temperatura_JBC 0V 10nF
+D1 Net-_C1-Pad1_ Net-_D1-Pad2_ Net-_C12-Pad2_ Net-_D1-Pad4_ Bridge
+R3 Net-_J1-Pad3_ 0V 0R
+R6 Net-_D3-Pad2_ 0V 1K
+D3 -5V Net-_D3-Pad2_ LED
+J1 Net-_J1-Pad1_ Net-_F1-Pad1_ Net-_J1-Pad3_ Net-_D1-Pad2_ Net-_F2-Pad2_ Power AC
+T2 Net-_F3-Pad1_ N-230V 12V 0V 12V 230-2x12V
+T1 Net-_F3-Pad1_ N-230V Power-1 ADC_Temp Power-1 ADC_Temp Toroidal 220-2x15V 160VA
+F3 Net-_F3-Pad1_ NC_58 Fuse 1A
+Re2 Earth Net-_Ce2-Pad1_ 1M
+JP2 Net-_Ce2-Pad1_ 0V PE-GND
+Ce2 Net-_Ce2-Pad1_ Earth 100nF
+R-JBC1 NC_59 NC_60 Heater 3R
+SW1 Power-1 NC_61 Control SSR
+.end

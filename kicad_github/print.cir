@@ -1,0 +1,56 @@
+.title KiCad schematic
+SW1 GND /~RST SW_Push
+R4 +5V /~RST 10K
+Y1 Net-_U1-Pad9_ Net-_U1-Pad10_ Crystal
+C3 +5V GND .1uF
+U1 /~RST /RX_DBG /TX_DBG /DIR_A1 /DIR_A2 /EN_A +5V GND Net-_U1-Pad9_ Net-_U1-Pad10_ /EN_B /DIR_B2 /DIR_B1 /RXD /TXD NC_01 /MOSI /MISO /SCK +5V NC_02 GND Net-_J8-Pad1_ Net-_J8-Pad3_ Net-_J8-Pad5_ Net-_J8-Pad7_ Net-_J8-Pad9_ NC_03 ATmega328-PU
+C4 +5V GND .1uF
+C2 +5V GND CP
+J3 NC_04 /RXD /TXD GND +5V NC_05 Bluetooth
+C1 +5V GND .1uF
+J8 Net-_J8-Pad1_ +5V Net-_J8-Pad3_ GND Net-_J8-Pad5_ NC_06 Net-_J8-Pad7_ NC_07 Net-_J8-Pad9_ NC_08 IR_Sense_header
+J6 /EN_A /DIR_A2 /DIR_A1 Motor1in
+J7 /EN_B /DIR_B2 /DIR_B1 Motor2in
+J5 GND /TXD NC_09 +3V3 NC_10 NC_11 Net-_J5-Pad7_ +3V3 ESP01 Module
+U2 GND +3V3 +5V AMS1117-3.3
+C5 +3V3 GND CP
+R2 /RXD Net-_J5-Pad7_ 1K
+R3 Net-_J5-Pad7_ GND 1K
+J4 /MISO +5V /SCK /MOSI /~RST GND AVR-ISP-6
+J2 GND /TX_DBG /RX_DBG Serial_Conn
+J1 GND +5V POWER IN
+R1 +5V Net-_D1-Pad2_ 1K
+D1 GND Net-_D1-Pad2_ LED
+U4 /S1 Net-_D4-Pad2_ Net-_D6-Pad2_ VCC Net-_J11-Pad1_ Net-_J11-Pad3_ Net-_J11-Pad2_ GND VCC Net-_J12-Pad1_ Net-_J12-Pad3_ Net-_J12-Pad2_ Net-_D8-Pad2_ Net-_D10-Pad2_ /S2 L298HN
+R6 /S1 GND R_Small
+R7 /S2 GND R_Small
+J15 Net-_D4-Pad2_ Net-_D6-Pad2_ MOTOR1
+J16 Net-_D8-Pad2_ Net-_D10-Pad2_ MOTOR2
+D4 VCC Net-_D4-Pad2_ 1N4001
+D6 VCC Net-_D6-Pad2_ 1N4001
+D8 VCC Net-_D8-Pad2_ 1N4001
+D10 VCC Net-_D10-Pad2_ 1N4001
+D5 Net-_D4-Pad2_ GND 1N4001
+D7 Net-_D6-Pad2_ GND 1N4001
+D9 Net-_D8-Pad2_ GND 1N4001
+D11 Net-_D10-Pad2_ GND 1N4001
+J11 Net-_J11-Pad1_ Net-_J11-Pad2_ Net-_J11-Pad3_ Signal A
+J12 Net-_J12-Pad1_ Net-_J12-Pad2_ Net-_J12-Pad3_ Signal B
+J9 GND VDC POWER IN
+C8 VCC GND CP1
+C10 VCC GND 100nF
+C9 VCC GND 470uF
+J10 /S1 /S2 Current_Sense
+U3 VCC GND +5V L7805
+J13 +5V +5V +5V +5V +5V +5V
+J14 GND GND GND GND GND gnd
+D2 VCC VDC 1N4001
+C6 VCC GND .33uF
+C7 +5V GND .1uF
+R5 +5V Net-_D3-Pad2_ R_Small
+D3 GND Net-_D3-Pad2_ LED
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+.end

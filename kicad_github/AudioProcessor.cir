@@ -1,0 +1,43 @@
+.title KiCad schematic
+U1 Net-_C18-Pad1_ Net-_C15-Pad1_ Net-_C19-Pad1_ Net-_C16-Pad1_ Net-_C20-Pad1_ Net-_C17-Pad1_ Net-_C21-Pad1_ Net-_C6-Pad2_ Net-_C6-Pad1_ Net-_C7-Pad2_ Net-_C7-Pad1_ Net-_C5-Pad2_ Net-_C8-Pad1_ Net-_C9-Pad2_ Net-_C10-Pad1_ NC_01 NC_02 Net-_C23-Pad2_ Net-_C11-Pad2_ /GND /SCL /SDA Net-_C13-Pad2_ +9V GNDA /ROUT /LOUT Net-_C14-Pad1_ TDA7440
+C12 GNDA Net-_C11-Pad2_ opt
+C9 Net-_C10-Pad2_ Net-_C9-Pad2_ 100n
+C10 Net-_C10-Pad1_ Net-_C10-Pad2_ 100n
+R10 Net-_C10-Pad2_ GNDA 5.6k
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ 2.2uf
+C11 GNDA Net-_C11-Pad2_ 5.6n
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 100n
+C8 Net-_C8-Pad1_ Net-_C5-Pad1_ 100n
+R9 Net-_C5-Pad1_ GNDA 5.6k
+C13 GNDA Net-_C13-Pad2_ 10uf
+J7 GNDA /LOUT LOUT
+J8 GNDA /ROUT ROUT
+J6 /GND /SCL /SDA I2C
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 2.2uf
+J1 GNDA /IN4 IN4
+J2 GNDA /IN3 IN3
+J3 GNDA /IN2 IN2
+J4 GNDA /IN1 IN1
+J9 GNDA +9V POWER
+R2 Net-_C6-Pad2_ Net-_C4-Pad1_ 47K
+R3 Net-_C7-Pad2_ Net-_C4-Pad1_ 47K
+C4 Net-_C4-Pad1_ /AUX 10uf
+U2 NC_03 GNDA Net-_J10-Pad2_ GNDA Net-_C1-Pad1_ +9V NC_04 NC_05 LM386M
+J10 GNDA Net-_J10-Pad2_ /AUX D_POT_PHONES
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 220uf
+C2 Net-_C2-Pad1_ Net-_C1-Pad1_ 50n
+R1 Net-_C2-Pad1_ GNDA 10
+C3 +9V GNDA 100uf
+C22 +9V GNDA 100uf
+J5 GNDA Net-_C1-Pad2_ PHONES
+C24 GNDA Net-_C23-Pad2_ opt
+C23 GNDA Net-_C23-Pad2_ 5.6n
+C14 Net-_C14-Pad1_ /IN4 2uf
+C18 Net-_C18-Pad1_ /IN3 2uf
+C15 Net-_C15-Pad1_ /IN2 2uf
+C19 Net-_C19-Pad1_ /IN1 2uf
+C16 Net-_C16-Pad1_ /IN1 2uf
+C20 Net-_C20-Pad1_ /IN2 2uf
+C17 Net-_C17-Pad1_ /IN3 2uf
+C21 Net-_C21-Pad1_ /IN4 2uf
+.end

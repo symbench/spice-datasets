@@ -1,0 +1,5 @@
+.title KiCad schematic
+U3 /out_level_2 /out_level_2 Net-_R8-Pad2_ LM324
+R8 +5V Net-_R8-Pad2_ R
+R9 Net-_R8-Pad2_ GND R
+.end

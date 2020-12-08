@@ -1,0 +1,36 @@
+.title KiCad schematic
+U2 /or7 /or6 /or5 /or4 /or3 /or2 /or1 /or0 /and7 /and6 /and5 /and4 /and3 /and2 /and1 /and0 /nand7 /nand6 /nand5 /nand4 /nand3 /nand2 /nand1 /nand0 /nor7 /nor6 /nor5 /nor4 /nor3 /nor2 /nor1 /nor0 /ins1 /ins0 /logic_out7 /logic_out6 /logic_out5 /logic_out4 /logic_out3 /logic_out2 /logic_out1 /logic_out0 VCC GND 4-way-8-bit-bus-selector
+U5 /sum7 /sum6 /sum5 /sum4 /sum3 /sum2 /sum1 /sum0 /xor7 /xor6 /xor5 /xor4 /xor3 /xor2 /xor1 /xor0 /logic_out7 /logic_out6 /logic_out5 /logic_out4 /logic_out3 /logic_out2 /logic_out1 /logic_out0 /a7 /a6 /a5 /a4 /a3 /a2 /a1 /a0 /ins3 /ins2 /out7 /out6 /out5 /out4 /out3 /out2 /out1 /out0 VCC GND 4-way-8-bit-bus-selector
+U1 /a7 /a6 /a5 /a4 /a3 /a2 /a1 /a0 /b7 /b6 /b5 /b4 /b3 /b2 /b1 /b0 /nor7 /nor6 /nor5 /nor4 /nor3 /nor2 /nor1 /nor0 /nand7 /nand6 /nand5 /nand4 /nand3 /nand2 /nand1 /nand0 /and7 /and6 /and5 /and4 /and3 /and2 /and1 /and0 /or7 /or6 /or5 /or4 /or3 /or2 /or1 /or0 VCC GND 8-bit-bitwise-logic
+U6 /out0 /out1 /out2 /out3 /out4 /out5 /out6 /out7 /out_zero VCC GND 8-input-NOR
+U4 /a7 /a6 /a5 /a4 /a3 /a2 /a1 /a0 /b7 /b6 /b5 /b4 /b3 /b2 /b1 /b0 /carry_in /sum7 /sum6 /sum5 /sum4 /sum3 /sum2 /sum1 /sum0 /ofl_sgn /ofl_uns VCC GND 8_bit_adder
+U3 /b0 /b1 /b2 /b3 /b4 /b5 /b6 /b7 /a0 /a1 /a2 /a3 /a4 /a5 /a6 /a7 /xor0 /xor1 /xor2 /xor3 /xor4 /xor5 /xor6 /xor7 VCC GND 8_bit_xor
+J1 /a7 /a6 /a5 /a4 /a3 /a2 /a1 /a0 Conn_01x08
+J2 /b7 /b6 /b5 /b4 /b3 /b2 /b1 /b0 Conn_01x08
+J3 /ins3 /ins2 /ins1 /ins0 Conn_01x04
+J5 /out7 /out6 /out5 /out4 /out3 /out2 /out1 /out0 Conn_01x08
+J7 GND VCC PWR-2_pole_power_connector
+J4 /carry_in Conn_01x01
+J6 /ofl_uns /ofl_sgn /out_zero Conn_01x03
+R21 GND /carry_in R
+R20 GND /ins3 R
+R19 GND /ins2 R
+R18 GND /ins1 R
+R17 GND /ins0 R
+R16 GND /b7 R
+R15 GND /b6 R
+R14 GND /b5 R
+R13 GND /b4 R
+R12 GND /b3 R
+R11 GND /b2 R
+R10 GND /b1 R
+R9 GND /b0 R
+R8 GND /a7 R
+R7 GND /a6 R
+R6 GND /a5 R
+R5 GND /a4 R
+R4 GND /a3 R
+R3 GND /a2 R
+R2 GND /a1 R
+R1 GND /a0 R
+.end

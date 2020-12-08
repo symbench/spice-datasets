@@ -1,0 +1,49 @@
+.title KiCad schematic
+R13 /+15V_aus Net-_C9-Pad1_ 240
+R14 Net-_C10-Pad2_ /-15V_aus 240
+C9 Net-_C9-Pad1_ /GND_aus 10u
+C10 /GND_aus Net-_C10-Pad2_ 10u
+HS3 Heatsink
+RV1 /GND_aus /GND_aus Net-_C9-Pad1_ 5k
+RV2 /GND_aus /GND_aus Net-_C10-Pad2_ 5k
+HS4 Heatsink
+D11 /+15V_aus /GND_aus 1N5408
+D12 /GND_aus /-15V_aus 1N5408
+D7 Net-_C19-Pad1_ /+15V_aus MRA4003T3G
+D8 /-15V_aus Net-_C20-Pad2_ MRA4003T3G
+TP13 /+15V_aus TestPoint
+TP14 /-15V_aus TestPoint
+U2 Net-_C10-Pad2_ Net-_C20-Pad2_ /-15V_aus LM337_TO220
+U1 Net-_C9-Pad1_ /+15V_aus Net-_C19-Pad1_ LM317_TO-220
+TP12 /GND_aus TestPoint
+D9 /+15V_aus Net-_C9-Pad1_ MRA4003T3G
+D10 Net-_C10-Pad2_ /-15V_aus MRA4003T3G
+R9 Net-_C1-Pad1_ /VDC+ 220
+HS1 Heatsink
+Q7 Net-_C1-Pad1_ /VDC+ Net-_C19-Pad1_ TIP120
+Q8 Net-_C14-Pad2_ /VDC- Net-_C20-Pad2_ TIP125
+R10 Net-_C14-Pad2_ /VDC- 220
+C3 Net-_C1-Pad1_ /GND_aus 47n
+C1 Net-_C1-Pad1_ /GND_aus 4u7
+C13 Net-_C1-Pad1_ /GND_aus 470u
+TP10 Net-_C19-Pad1_ TestPoint
+TP11 Net-_C20-Pad2_ TestPoint
+HS2 Heatsink
+C15 /+15V_aus /GND_aus 150n
+C11 /+15V_aus /GND_aus 15u
+C16 /GND_aus /-15V_aus 150n
+C12 /GND_aus /-15V_aus 15u
+C5 Net-_C19-Pad1_ /GND_aus 3u3
+C7 Net-_C19-Pad1_ /GND_aus 33n
+C19 Net-_C19-Pad1_ /GND_aus 100u
+C6 /GND_aus Net-_C20-Pad2_ 3u3
+C8 /GND_aus Net-_C20-Pad2_ 33n
+C20 /GND_aus Net-_C20-Pad2_ 100u
+R11 Net-_C1-Pad1_ /GND_aus 1Meg
+R12 /GND_aus Net-_C14-Pad2_ 1Meg
+C4 /GND_aus Net-_C14-Pad2_ 47n
+C2 /GND_aus Net-_C14-Pad2_ 4u7
+C14 /GND_aus Net-_C14-Pad2_ 470u
+C27 /+15V_aus /GND_aus 1500u
+C28 /GND_aus /-15V_aus 1500u
+.end

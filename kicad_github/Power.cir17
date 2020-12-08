@@ -1,0 +1,8 @@
+.title KiCad schematic
+MAINSW1 NC_01 Net-_F1-Pad1_ SW_SPST
+F1 Net-_F1-Pad1_ NC_02 60A
+F2 NC_03 Net-_F2-Pad2_ 3A
+F3 NC_04 NC_05 10A
+F4 NC_06 Net-_F2-Pad2_ 5A
+M1 NC_07 NC_08 DriveMotor
+.end

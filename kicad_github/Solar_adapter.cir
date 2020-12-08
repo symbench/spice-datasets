@@ -1,0 +1,42 @@
+* C:\Users\melles\Desktop\KiCad\Solar_adapter\Solar_adapter.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 06.01.2017 11:27:13
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+J2  Net-_J2-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ JACK_TRS_6PINS		
+J1  Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ JACK_TRS_6PINS		
+P1  GND Net-_P1-Pad2_ Net-_P1-Pad2_ +12V-SR CONN_01X04		
+R1  Net-_R1-Pad1_ +12V-SR R		
+U1  Net-_R1-Pad1_ GND ? Net-_P2-Pad1_ Net-_J2-Pad1_ Net-_J1-Pad1_ AQV252G		
+P2  Net-_P2-Pad1_ +12V-SR CONN_01X02		
+P3  /15V-Power/Vout_N GND /15V-Power/Vout_P CONN_01X03		
+* Sheet Name: /15V-Power/
+C1  Net-_C1-Pad1_ GND 1n		
+C3  SW_N Net-_C3-Pad2_ 1u		
+R3  Net-_R3-Pad1_ Net-_C1-Pad1_ 20k		
+U2  Net-_R2-Pad1_ Net-_R3-Pad1_ +12V-SR SW_N +12V-SR Net-_R4-Pad2_ Net-_C2-Pad2_ ? GND LT3580		
+R2  Net-_R2-Pad1_ OUT_N 180k		
+D1  GND Net-_C3-Pad2_ D_Schottky		
+R4  GND Net-_R4-Pad2_ 85k		
+C2  GND Net-_C2-Pad2_ 0,1u		
+C4  GND OUT_N 10u		
+C5  GND +12V-SR 2,2u		
+JP1  OUT_N /15V-Power/Vout_N Jumper_NO_Small		
+T1  SW_N +12V-SR OUT_N Net-_C3-Pad2_ TRANSFO		
+JP2  OUT_P /15V-Power/Vout_P Jumper_NO_Small		
+C6  Net-_C6-Pad1_ GND 1n		
+C8  SW_P Net-_C8-Pad2_ 1u		
+R6  Net-_R6-Pad1_ Net-_C6-Pad1_ 20k		
+U3  Net-_R5-Pad1_ Net-_R6-Pad1_ +12V-SR SW_P +12V-SR Net-_R7-Pad2_ Net-_C7-Pad2_ ? GND LT3580		
+R5  Net-_R5-Pad1_ OUT_P 165k		
+D2  OUT_P Net-_C8-Pad2_ D_Schottky		
+R7  GND Net-_R7-Pad2_ 85k		
+C7  GND Net-_C7-Pad2_ 0,1u		
+C10  GND OUT_P 10u		
+C9  GND +12V-SR 2,2u		
+T2  SW_P +12V-SR GND Net-_C8-Pad2_ TRANSFO		
+
+.end

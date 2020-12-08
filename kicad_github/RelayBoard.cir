@@ -1,0 +1,15 @@
+.title KiCad schematic
+K1 GND Net-_J3-Pad2_ Net-_J1-Pad2_ VCC GND Net-_J1-Pad1_ Net-_J3-Pad1_ Net-_C1-Pad2_ LY2NJ
+K2 GND NC_01 Net-_J4-Pad2_ Net-_J3-Pad2_ Net-_J3-Pad1_ Net-_J4-Pad1_ NC_02 Net-_C2-Pad2_ LY2NJ
+R1 Net-_C1-Pad2_ VCC 220
+R2 Net-_C2-Pad2_ VCC 220
+C1 VCC Net-_C1-Pad2_ 100uF
+C2 VCC Net-_C2-Pad2_ 100uF
+J2 Net-_J1-Pad1_ Net-_J1-Pad2_ AMP2
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ AMP1
+J5 Net-_J3-Pad1_ Net-_J3-Pad2_ BAT
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ CHG_OUT
+J6 GND VCC CHG_IN
+J7 GND VCC V27
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ B_SENS
+.end

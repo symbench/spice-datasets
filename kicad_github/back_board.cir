@@ -1,0 +1,46 @@
+.title KiCad schematic
+J2 S2 NC_01 V2 OUT VERT IN Conn_01x06
+J3 GND CVIN +12V QR -12V QW Conn_01x06
+J1 Net-_D2-Pad1_ Net-_D2-Pad1_ GND GND GND GND GND GND Net-_D1-Pad2_ Net-_D1-Pad2_ Conn_01x10
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ 1N4148
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ 1N4148
+C6 +12V GND 0.1uF
+C7 GND -12V 0.1uF
+U1 Net-_R3-Pad1_ NC_02 IN Net-_R10-Pad1_ Net-_C1-Pad1_ -12V NC_03 NC_04 NC_05 NC_06 +12V Net-_C2-Pad1_ Net-_R17-Pad2_ Net-_R13-Pad2_ NC_07 Net-_R23-Pad1_ LM13700
+R8 IN GND 220
+R10 Net-_R10-Pad1_ GND 220
+R9 Net-_R13-Pad1_ Net-_R10-Pad1_ 10K
+R16 Net-_R13-Pad2_ GND 220
+R18 Net-_R17-Pad2_ GND 220
+R13 Net-_R13-Pad1_ Net-_R13-Pad2_ 10K
+R17 Net-_C4-Pad1_ Net-_R17-Pad2_ 10K
+U2 Net-_C1-Pad2_ Net-_D3-Pad1_ QW +12V QR Net-_R24-Pad2_ OUT Net-_C3-Pad2_ Net-_C3-Pad1_ GND -12V VERT Net-_R11-Pad2_ Net-_R11-Pad1_ TL074
+RV6 Net-_C1-Pad2_ Net-_C1-Pad2_ Net-_D3-Pad1_ 10K
+D4 Net-_C1-Pad2_ Net-_D3-Pad1_ LED
+D3 Net-_D3-Pad1_ Net-_C1-Pad2_ LED
+R15 GND Net-_D3-Pad1_ 4.7K
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 1nF
+C2 Net-_C2-Pad1_ S2 1nF
+RV5 Net-_R11-Pad2_ Net-_R11-Pad2_ V2 100K
+R11 Net-_R11-Pad1_ Net-_R11-Pad2_ 100K
+R14 CVIN Net-_R11-Pad1_ 100K
+R19 Net-_R19-Pad1_ CVIN 1K
+RV7 GND Net-_R19-Pad1_ Net-_R19-Pad1_ 1K
+Q1 Net-_Q1-Pad1_ CVIN Net-_C3-Pad1_ 2N3906
+Q2 Net-_Q1-Pad1_ GND IABC 2N3906
+R22 Net-_C3-Pad2_ Net-_Q1-Pad1_ 4.7K
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 4.7nF
+R20 -12V Net-_C3-Pad1_ 470K
+R23 Net-_R23-Pad1_ IABC 10K
+R25 OUT Net-_R24-Pad2_ 10K
+R24 GND Net-_R24-Pad2_ 10K
+C5 +12V GND 0.1uF
+C8 GND -12V 0.1uF
+C10 GND -12V 10uF
+R1 +12V Net-_D1-Pad1_ 10
+C9 +12V GND 10uF
+R2 -12V Net-_D2-Pad2_ 10
+U3 Net-_R13-Pad1_ Net-_R13-Pad1_ Net-_C1-Pad1_ -12V Net-_C2-Pad1_ Net-_C4-Pad1_ Net-_C4-Pad1_ +12V TL072
+R3 Net-_R3-Pad1_ IABC 10K
+C4 Net-_C4-Pad1_ QR 0.47uF
+.end

@@ -1,0 +1,21 @@
+.title KiCad schematic
+R2 Net-_R2-Pad1_ /REF 10k 1%
+C2 /SENS_OUT_1 Net-_C2-Pad2_ 1p 16V X5R
+R3 NC_01 Net-_R2-Pad1_ 22k 1%
+R1 Net-_C2-Pad2_ NC_02 10k 1%
+R4 /SENS_OUT_1 Net-_C2-Pad2_ 22k 1%
+TP1 Net-_C2-Pad2_ TP
+TP2 Net-_R2-Pad1_ TP
+R6 Net-_R6-Pad1_ /REF 10k 1%
+C4 /SENS_OUT_2 Net-_C4-Pad2_ 1p 16V X5R
+R7 NC_03 Net-_R6-Pad1_ 22k 1%
+R5 Net-_C4-Pad2_ NC_04 10k 1%
+R8 /SENS_OUT_2 Net-_C4-Pad2_ 22k 1%
+C5 /PWR_IN+ NC_05 100n 16V X5R
+C6 /PWR_IN- NC_06 100n 16V X5R
+TP3 Net-_C4-Pad2_ TP
+TP4 Net-_R6-Pad1_ TP
+U16 /SENS_OUT_1 Net-_C2-Pad2_ Net-_R2-Pad1_ /PWR_IN- Net-_R6-Pad1_ Net-_C4-Pad2_ /SENS_OUT_2 /PWR_IN+ MCP6H02-E/SN
+C3 /REF NC_07 10n 6V3 X5R
+C1 /REF NC_08 10n 6V3 X5R
+.end

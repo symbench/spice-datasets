@@ -1,0 +1,56 @@
+.title KiCad schematic
+C21 NC_01 Net-_C21-Pad2_ C
+C23 NC_02 Net-_C21-Pad2_ C
+C22 Net-_C22-Pad1_ NC_03 C
+C24 Net-_C22-Pad1_ NC_04 C
+J12 Net-_C21-Pad2_ NC_05 Net-_J12-Pad3_ Net-_J12-Pad4_ NC_06 Net-_C22-Pad1_ InConnector
+J13 Net-_C25-Pad2_ NC_07 Net-_J13-Pad3_ Net-_J13-Pad4_ NC_08 Net-_C26-Pad1_ OutConnector
+U5 NC_09 Net-_R46-Pad2_ NC_10 NC_11 NC_12 Net-_J13-Pad3_ NC_13 NC_14 OPA333xxD
+R49 Net-_R46-Pad2_ Net-_J13-Pad3_ R
+R43 NC_15 Net-_R41-Pad2_ R
+R45 Net-_R41-Pad2_ Net-_J13-Pad3_ R
+R46 Net-_R41-Pad2_ Net-_R46-Pad2_ R
+R41 Net-_J12-Pad3_ Net-_R41-Pad2_ R
+U6 NC_16 Net-_R48-Pad2_ NC_17 NC_18 NC_19 Net-_J13-Pad4_ NC_20 NC_21 OPA333xxD
+R50 Net-_R48-Pad2_ Net-_J13-Pad4_ R
+R44 NC_22 Net-_R42-Pad2_ R
+R47 Net-_R42-Pad2_ Net-_J13-Pad4_ R
+R48 Net-_R42-Pad2_ Net-_R48-Pad2_ R
+R42 Net-_J12-Pad4_ Net-_R42-Pad2_ R
+C25 NC_23 Net-_C25-Pad2_ C
+C27 NC_24 Net-_C25-Pad2_ C
+C26 Net-_C26-Pad1_ NC_25 C
+C28 Net-_C26-Pad1_ NC_26 C
+C29 NC_27 Net-_C29-Pad2_ C
+C31 NC_28 Net-_C29-Pad2_ C
+C30 Net-_C30-Pad1_ NC_29 C
+C32 Net-_C30-Pad1_ NC_30 C
+J14 Net-_C29-Pad2_ NC_31 Net-_J14-Pad3_ Net-_J14-Pad4_ NC_32 Net-_C30-Pad1_ InConnector
+J15 Net-_C33-Pad2_ NC_33 Net-_J15-Pad3_ Net-_J15-Pad4_ NC_34 Net-_C34-Pad1_ OutConnector
+R59 Net-_R56-Pad2_ Net-_R55-Pad2_ R
+R53 NC_35 Net-_R51-Pad2_ R
+R55 Net-_R51-Pad2_ Net-_R55-Pad2_ R
+R56 Net-_R51-Pad2_ Net-_R56-Pad2_ R
+R51 Net-_J14-Pad3_ Net-_R51-Pad2_ R
+U7 Net-_R55-Pad2_ Net-_R56-Pad2_ NC_36 NC_37 NC_38 Net-_R66-Pad2_ Net-_J15-Pad3_ NC_39 ADA4807-2ARM
+R69 Net-_R66-Pad2_ Net-_J15-Pad3_ R
+R63 NC_40 Net-_R61-Pad2_ R
+R65 Net-_R61-Pad2_ Net-_J15-Pad3_ R
+R66 Net-_R61-Pad2_ Net-_R66-Pad2_ R
+R61 Net-_R55-Pad2_ Net-_R61-Pad2_ R
+R60 Net-_R58-Pad2_ Net-_R57-Pad2_ R
+R54 NC_41 Net-_R52-Pad2_ R
+R57 Net-_R52-Pad2_ Net-_R57-Pad2_ R
+R58 Net-_R52-Pad2_ Net-_R58-Pad2_ R
+R52 Net-_J14-Pad4_ Net-_R52-Pad2_ R
+U8 Net-_R57-Pad2_ Net-_R58-Pad2_ NC_42 NC_43 NC_44 Net-_R68-Pad2_ Net-_J15-Pad4_ NC_45 ADA4807-2ARM
+R70 Net-_R68-Pad2_ Net-_J15-Pad4_ R
+R64 NC_46 Net-_R62-Pad2_ R
+R67 Net-_R62-Pad2_ Net-_J15-Pad4_ R
+R68 Net-_R62-Pad2_ Net-_R68-Pad2_ R
+R62 Net-_R57-Pad2_ Net-_R62-Pad2_ R
+C33 NC_47 Net-_C33-Pad2_ C
+C35 NC_48 Net-_C33-Pad2_ C
+C34 Net-_C34-Pad1_ NC_49 C
+C36 Net-_C34-Pad1_ NC_50 C
+.end

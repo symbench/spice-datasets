@@ -1,0 +1,27 @@
+.title KiCad schematic
+U10 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 Net-_Q32-Pad2_ NC_07 Net-_Q31-Pad2_ Net-_Q30-Pad2_ Net-_Q29-Pad2_ Net-_Q28-Pad2_ Net-_Q27-Pad2_ Net-_Q26-Pad2_ Net-_Q25-Pad2_ VCC 74AC138
+J113 Net-_J113-Pad1_ /D0 Net-_J113-Pad1_ /D1 Net-_J113-Pad1_ /D2 Net-_J113-Pad1_ /D3 Conn_02x04_Odd_Even
+J114 Net-_J113-Pad1_ /D4 Net-_J113-Pad1_ /D5 Net-_J113-Pad1_ /D6 Net-_J113-Pad1_ /D7 Conn_02x04_Odd_Even
+J115 Net-_J115-Pad1_ /D0 Net-_J115-Pad1_ /D1 Net-_J115-Pad1_ /D2 Net-_J115-Pad1_ /D3 Conn_02x04_Odd_Even
+J116 Net-_J115-Pad1_ /D4 Net-_J115-Pad1_ /D5 Net-_J115-Pad1_ /D6 Net-_J115-Pad1_ /D7 Conn_02x04_Odd_Even
+J117 Net-_J117-Pad1_ /D0 Net-_J117-Pad1_ /D1 Net-_J117-Pad1_ /D2 Net-_J117-Pad1_ /D3 Conn_02x04_Odd_Even
+J118 Net-_J117-Pad1_ /D4 Net-_J117-Pad1_ /D5 Net-_J117-Pad1_ /D6 Net-_J117-Pad1_ /D7 Conn_02x04_Odd_Even
+J119 Net-_J119-Pad1_ /D0 Net-_J119-Pad1_ /D1 Net-_J119-Pad1_ /D2 Net-_J119-Pad1_ /D3 Conn_02x04_Odd_Even
+J120 Net-_J119-Pad1_ /D4 Net-_J119-Pad1_ /D5 Net-_J119-Pad1_ /D6 Net-_J119-Pad1_ /D7 Conn_02x04_Odd_Even
+J121 Net-_J121-Pad1_ /D0 Net-_J121-Pad1_ /D1 Net-_J121-Pad1_ /D2 Net-_J121-Pad1_ /D3 Conn_02x04_Odd_Even
+J122 Net-_J121-Pad1_ /D4 Net-_J121-Pad1_ /D5 Net-_J121-Pad1_ /D6 Net-_J121-Pad1_ /D7 Conn_02x04_Odd_Even
+J123 Net-_J123-Pad1_ /D0 Net-_J123-Pad1_ /D1 Net-_J123-Pad1_ /D2 Net-_J123-Pad1_ /D3 Conn_02x04_Odd_Even
+J124 Net-_J123-Pad1_ /D4 Net-_J123-Pad1_ /D5 Net-_J123-Pad1_ /D6 Net-_J123-Pad1_ /D7 Conn_02x04_Odd_Even
+J125 Net-_J125-Pad1_ /D0 Net-_J125-Pad1_ /D1 Net-_J125-Pad1_ /D2 Net-_J125-Pad1_ /D3 Conn_02x04_Odd_Even
+J126 Net-_J125-Pad1_ /D4 Net-_J125-Pad1_ /D5 Net-_J125-Pad1_ /D6 Net-_J125-Pad1_ /D7 Conn_02x04_Odd_Even
+J127 Net-_J127-Pad1_ /D0 Net-_J127-Pad1_ /D1 Net-_J127-Pad1_ /D2 Net-_J127-Pad1_ /D3 Conn_02x04_Odd_Even
+J128 Net-_J127-Pad1_ /D4 Net-_J127-Pad1_ /D5 Net-_J127-Pad1_ /D6 Net-_J127-Pad1_ /D7 Conn_02x04_Odd_Even
+Q25 VCC Net-_Q25-Pad2_ Net-_J113-Pad1_ ZVP3306A
+Q26 VCC Net-_Q26-Pad2_ Net-_J115-Pad1_ ZVP3306A
+Q27 VCC Net-_Q27-Pad2_ Net-_J117-Pad1_ ZVP3306A
+Q28 VCC Net-_Q28-Pad2_ Net-_J119-Pad1_ ZVP3306A
+Q29 VCC Net-_Q29-Pad2_ Net-_J121-Pad1_ ZVP3306A
+Q30 VCC Net-_Q30-Pad2_ Net-_J123-Pad1_ ZVP3306A
+Q31 VCC Net-_Q31-Pad2_ Net-_J125-Pad1_ ZVP3306A
+Q32 VCC Net-_Q32-Pad2_ Net-_J127-Pad1_ ZVP3306A
+.end

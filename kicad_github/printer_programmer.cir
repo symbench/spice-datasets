@@ -1,0 +1,8 @@
+.title KiCad schematic
+Connector1 NC_01 Net-_Connector1-Pad2_ Net-_Connector1-Pad3_ NC_02 Net-_BUTTON1-Pad2_ Net-_Connector1-Pad6_ Programmer
+Connector2 Net-_BUTTON2-Pad1_ Net-_BUTTON1-Pad1_ Net-_Connector1-Pad6_ Net-_BUTTON1-Pad2_ Net-_Connector1-Pad3_ Net-_Connector1-Pad2_ ESP 2866
+R2 Net-_BUTTON2-Pad1_ Net-_Connector1-Pad6_ 10K
+R1 Net-_BUTTON1-Pad1_ Net-_Connector1-Pad6_ 10K
+BUTTON1 Net-_BUTTON1-Pad1_ Net-_BUTTON1-Pad2_ RESET
+BUTTON2 Net-_BUTTON2-Pad1_ Net-_BUTTON1-Pad2_ FLASH
+.end

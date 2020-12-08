@@ -1,0 +1,5 @@
+.title KiCad schematic
+V1 Net-_R1-Pad2_ GND pwl(0m 0 0.5m 5 50m 5 50.5m 0 100m 0)
+R1 Net-_C1-Pad1_ Net-_R1-Pad2_ 1k
+C1 Net-_C1-Pad1_ GND 10u
+.end

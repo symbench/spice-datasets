@@ -1,0 +1,22 @@
+.title KiCad schematic
+U1 NC_01 /CSN /SCK /MOSI /MISO /IRQ +3V3 GND Net-_C1-Pad2_ Net-_C0-Pad1_ /VDD_PA Net-_L1-Pad1_ Net-_L1-Pad2_ GND +3V3 Net-_R0-Pad1_ GND +3V3 Net-_C10-Pad2_ GND nRF24L01P
+U0 NC_02 NC_03 NC_04 /IRQ NC_05 NC_06 +5V GND Net-_C2-Pad1_ Net-_C3-Pad2_ NC_07 NC_08 NC_09 /AUX_SW_0 /AUX_SW_0 /CSN /MOSI /MISO /SCK +5V NC_10 GND NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 ATmega328P-PU
+XTAL0 Net-_C1-Pad2_ Net-_C0-Pad1_ 16MHz
+C0 Net-_C0-Pad1_ GND 22pF
+C1 GND Net-_C1-Pad2_ 22pF
+L1 Net-_L1-Pad1_ Net-_L1-Pad2_ 8.2nH
+L2 Net-_L1-Pad1_ Net-_C6-Pad2_ 3.9nH
+L3 Net-_L1-Pad2_ /VDD_PA 2.7nH
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 1.5pF
+C7 Net-_C6-Pad1_ GND 1pF
+C4 GND /VDD_PA 2.2nF
+C5 /VDD_PA GND 4.7pF
+XTAL1 Net-_C3-Pad2_ Net-_C2-Pad1_ 16MHz
+C2 Net-_C2-Pad1_ GND 22pF
+C3 GND Net-_C3-Pad2_ 22pF
+J0.1 Net-_C6-Pad1_ GND SMA_CONNECTOR
+C8 GND +3V3 10nF
+C9 GND +3V3 1nF
+C10 GND Net-_C10-Pad2_ 33nF
+R0 Net-_R0-Pad1_ GND 22K
+.end

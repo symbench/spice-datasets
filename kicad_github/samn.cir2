@@ -1,0 +1,32 @@
+.title KiCad schematic
+U2 Reset Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ +3V3 GND Net-_C5-Pad1_ Net-_C6-Pad1_ Net-_R4-Pad2_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_J8-Pad1_ Net-_J7-Pad1_ Net-_J6-Pad1_ MOSI MISO SCK +3V3 Net-_C3-Pad2_ GND Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ ATmega328-PU
+C3 GND Net-_C3-Pad2_ 22pF
+R5 +3V3 Reset 5.1k
+R6 Net-_C5-Pad1_ Net-_C6-Pad1_ 1M
+C5 Net-_C5-Pad1_ GND 22pF
+C6 Net-_C6-Pad1_ GND 22pF
+Y1 Net-_C5-Pad1_ Net-_C6-Pad1_ 8MHz
+U1 Net-_L1-Pad2_ GND +1V5 Net-_R1-Pad2_ +3V3 +1V5 MCP1640BCH
+C1 +1V5 GND 4.7uF
+C2 GND +3V3 10uF
+R1 +3V3 Net-_R1-Pad2_ 976k
+R2 Net-_R1-Pad2_ GND 576k
+L1 +1V5 Net-_L1-Pad2_ 4.7uH
+U3 GND +3V3 Net-_U2-Pad12_ Net-_U2-Pad13_ SCK MOSI MISO Net-_J3-Pad4_ NRF24L01_Breakout
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Conn_01x06_Female
+J3 Reset Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Conn_01x06_Female
+R4 Net-_LED_I1-Pad2_ Net-_R4-Pad2_ 200
+LED_I1 GND Net-_LED_I1-Pad2_ 2V 20mA
+C4 +3V3 GND 100uF
+C7 +3V3 GND 47uF
+V1 Net-_J2-Pad2_ GND AA
+R7 Net-_J1-Pad4_ +1V5 10k
+J4 GND Reset MOSI SCK +3V3 MISO Conn_02x03_Male_ICSP
+J5 GND +1V5 Net-_J2-Pad2_ Conn_01x03
+J7 Net-_J7-Pad1_ MOSI MISO SCK +3V3 GND Conn_01x06
+J6 Net-_J6-Pad1_ MOSI MISO SCK +3V3 GND Conn_01x06
+J8 Net-_J8-Pad1_ MOSI MISO SCK +3V3 GND Conn_01x06
+J2 GND Net-_J2-Pad2_ Conn_01x02
+J9 Reset Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Conn_01x06_Female
+J10 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Conn_01x06_Female
+.end

@@ -1,0 +1,255 @@
+.title KiCad schematic
+J1 /a0 /a1 /a2 /a3 /a4 /a5 /a6 /a7 Conn_01x08
+J6 /o0 /o1 /o2 /o3 /o4 /o5 /o6 /o7 Conn_01x08
+J2 /b0 /b1 /b2 /b3 /b4 /b5 /b6 /b7 Conn_01x08
+J3 /c0 /c1 /c2 /c3 /c4 /c5 /c6 /c7 Conn_01x08
+J4 /d0 /d1 /d2 /d3 /d4 /d5 /d6 /d7 Conn_01x08
+J7 GND VCC PWR-2_pole_power_connector
+Q16 /sa_and /a0 Net-_Q16-Pad3_ 2N7000
+Q3 GND /sa /sa_and 2N7000
+R42 VCC Net-_Q16-Pad3_ R
+Q20 GND Net-_Q16-Pad3_ /o0 2N7000
+Q17 /sb_and /b0 Net-_Q16-Pad3_ 2N7000
+Q7 GND /sb /sb_and 2N7000
+R43 VCC /o0 R
+Q18 /sc_and /c0 Net-_Q16-Pad3_ 2N7000
+Q19 /sd_and /d0 Net-_Q16-Pad3_ 2N7000
+Q12 Net-_Q12-Pad1_ /s0 Net-_Q12-Pad3_ 2N7000
+Q13 GND /s1 Net-_Q12-Pad1_ 2N7000
+Q1 GND /s0 /sa 2N7000
+Q2 GND /s1 /sa 2N7000
+R35 VCC /sa R
+Q4 GND /s0 /sb 2N7000
+Q5 GND Net-_Q5-Pad2_ /sb 2N7000
+R36 VCC /sb R
+Q9 GND Net-_Q8-Pad3_ /sc 2N7000
+R39 VCC /sc R
+Q6 GND /s1 Net-_Q5-Pad2_ 2N7000
+R37 VCC Net-_Q5-Pad2_ R
+Q8 GND /s0 Net-_Q8-Pad3_ 2N7000
+R38 VCC Net-_Q8-Pad3_ R
+R40 VCC Net-_Q12-Pad3_ R
+Q14 GND Net-_Q12-Pad3_ /sd 2N7000
+R41 VCC /sd R
+J5 /s0 /s1 Conn_01x02
+D1 Net-_D1-Pad1_ /LED_PWR LED
+R58 Net-_D1-Pad1_ Net-_Q56-Pad3_ R
+D2 Net-_D2-Pad1_ /LED_PWR LED
+R59 Net-_D2-Pad1_ Net-_Q57-Pad3_ R
+D3 Net-_D3-Pad1_ /LED_PWR LED
+R60 Net-_D3-Pad1_ Net-_Q58-Pad3_ R
+D4 Net-_D4-Pad1_ /LED_PWR LED
+R61 Net-_D4-Pad1_ Net-_Q59-Pad3_ R
+D5 Net-_D5-Pad1_ /LED_PWR LED
+R62 Net-_D5-Pad1_ Net-_Q60-Pad3_ R
+D6 Net-_D6-Pad1_ /LED_PWR LED
+R63 Net-_D6-Pad1_ Net-_Q61-Pad3_ R
+D7 Net-_D7-Pad1_ /LED_PWR LED
+R64 Net-_D7-Pad1_ Net-_Q62-Pad3_ R
+D8 Net-_D8-Pad1_ /LED_PWR LED
+R65 Net-_D8-Pad1_ Net-_Q63-Pad3_ R
+Q56 GND /a0 Net-_Q56-Pad3_ 2N7000
+Q57 GND /a1 Net-_Q57-Pad3_ 2N7000
+Q58 GND /a2 Net-_Q58-Pad3_ 2N7000
+Q59 GND /a3 Net-_Q59-Pad3_ 2N7000
+Q60 GND /a4 Net-_Q60-Pad3_ 2N7000
+Q61 GND /a5 Net-_Q61-Pad3_ 2N7000
+Q62 GND /a6 Net-_Q62-Pad3_ 2N7000
+Q63 GND /a7 Net-_Q63-Pad3_ 2N7000
+D9 Net-_D9-Pad1_ /LED_PWR LED
+R66 Net-_D9-Pad1_ Net-_Q64-Pad3_ R
+D10 Net-_D10-Pad1_ /LED_PWR LED
+R67 Net-_D10-Pad1_ Net-_Q65-Pad3_ R
+D11 Net-_D11-Pad1_ /LED_PWR LED
+R68 Net-_D11-Pad1_ Net-_Q66-Pad3_ R
+D12 Net-_D12-Pad1_ /LED_PWR LED
+R69 Net-_D12-Pad1_ Net-_Q67-Pad3_ R
+D13 Net-_D13-Pad1_ /LED_PWR LED
+R70 Net-_D13-Pad1_ Net-_Q68-Pad3_ R
+D14 Net-_D14-Pad1_ /LED_PWR LED
+R71 Net-_D14-Pad1_ Net-_Q69-Pad3_ R
+D15 Net-_D15-Pad1_ /LED_PWR LED
+R72 Net-_D15-Pad1_ Net-_Q70-Pad3_ R
+D16 Net-_D16-Pad1_ /LED_PWR LED
+R73 Net-_D16-Pad1_ Net-_Q71-Pad3_ R
+Q64 GND /b0 Net-_Q64-Pad3_ 2N7000
+Q65 GND /b1 Net-_Q65-Pad3_ 2N7000
+Q66 GND /b2 Net-_Q66-Pad3_ 2N7000
+Q67 GND /b3 Net-_Q67-Pad3_ 2N7000
+Q68 GND /b4 Net-_Q68-Pad3_ 2N7000
+Q69 GND /b5 Net-_Q69-Pad3_ 2N7000
+Q70 GND /b6 Net-_Q70-Pad3_ 2N7000
+Q71 GND /b7 Net-_Q71-Pad3_ 2N7000
+D17 Net-_D17-Pad1_ /LED_PWR LED
+R74 Net-_D17-Pad1_ Net-_Q72-Pad3_ R
+D18 Net-_D18-Pad1_ /LED_PWR LED
+R75 Net-_D18-Pad1_ Net-_Q73-Pad3_ R
+D19 Net-_D19-Pad1_ /LED_PWR LED
+R76 Net-_D19-Pad1_ Net-_Q74-Pad3_ R
+D20 Net-_D20-Pad1_ /LED_PWR LED
+R77 Net-_D20-Pad1_ Net-_Q75-Pad3_ R
+D21 Net-_D21-Pad1_ /LED_PWR LED
+R78 Net-_D21-Pad1_ Net-_Q76-Pad3_ R
+D22 Net-_D22-Pad1_ /LED_PWR LED
+R79 Net-_D22-Pad1_ Net-_Q77-Pad3_ R
+D23 Net-_D23-Pad1_ /LED_PWR LED
+R80 Net-_D23-Pad1_ Net-_Q78-Pad3_ R
+D24 Net-_D24-Pad1_ /LED_PWR LED
+R81 Net-_D24-Pad1_ Net-_Q79-Pad3_ R
+Q72 GND /c0 Net-_Q72-Pad3_ 2N7000
+Q73 GND /c1 Net-_Q73-Pad3_ 2N7000
+Q74 GND /c2 Net-_Q74-Pad3_ 2N7000
+Q75 GND /c3 Net-_Q75-Pad3_ 2N7000
+Q76 GND /c4 Net-_Q76-Pad3_ 2N7000
+Q77 GND /c5 Net-_Q77-Pad3_ 2N7000
+Q78 GND /c6 Net-_Q78-Pad3_ 2N7000
+Q79 GND /c7 Net-_Q79-Pad3_ 2N7000
+D25 Net-_D25-Pad1_ /LED_PWR LED
+R82 Net-_D25-Pad1_ Net-_Q80-Pad3_ R
+D26 Net-_D26-Pad1_ /LED_PWR LED
+R83 Net-_D26-Pad1_ Net-_Q81-Pad3_ R
+D27 Net-_D27-Pad1_ /LED_PWR LED
+R84 Net-_D27-Pad1_ Net-_Q82-Pad3_ R
+D28 Net-_D28-Pad1_ /LED_PWR LED
+R85 Net-_D28-Pad1_ Net-_Q83-Pad3_ R
+D29 Net-_D29-Pad1_ /LED_PWR LED
+R86 Net-_D29-Pad1_ Net-_Q84-Pad3_ R
+D30 Net-_D30-Pad1_ /LED_PWR LED
+R87 Net-_D30-Pad1_ Net-_Q85-Pad3_ R
+D31 Net-_D31-Pad1_ /LED_PWR LED
+R88 Net-_D31-Pad1_ Net-_Q86-Pad3_ R
+D32 Net-_D32-Pad1_ /LED_PWR LED
+R89 Net-_D32-Pad1_ Net-_Q87-Pad3_ R
+Q80 GND /d0 Net-_Q80-Pad3_ 2N7000
+Q81 GND /d1 Net-_Q81-Pad3_ 2N7000
+Q82 GND /d2 Net-_Q82-Pad3_ 2N7000
+Q83 GND /d3 Net-_Q83-Pad3_ 2N7000
+Q84 GND /d4 Net-_Q84-Pad3_ 2N7000
+Q85 GND /d5 Net-_Q85-Pad3_ 2N7000
+Q86 GND /d6 Net-_Q86-Pad3_ 2N7000
+Q87 GND /d7 Net-_Q87-Pad3_ 2N7000
+D37 Net-_D37-Pad1_ /LED_PWR LED
+R94 Net-_D37-Pad1_ Net-_Q92-Pad3_ R
+D38 Net-_D38-Pad1_ /LED_PWR LED
+R95 Net-_D38-Pad1_ Net-_Q93-Pad3_ R
+D39 Net-_D39-Pad1_ /LED_PWR LED
+R96 Net-_D39-Pad1_ Net-_Q94-Pad3_ R
+D40 Net-_D40-Pad1_ /LED_PWR LED
+R97 Net-_D40-Pad1_ Net-_Q95-Pad3_ R
+D41 Net-_D41-Pad1_ /LED_PWR LED
+R98 Net-_D41-Pad1_ Net-_Q96-Pad3_ R
+D42 Net-_D42-Pad1_ /LED_PWR LED
+R99 Net-_D42-Pad1_ Net-_Q97-Pad3_ R
+D43 Net-_D43-Pad1_ /LED_PWR LED
+R100 Net-_D43-Pad1_ Net-_Q98-Pad3_ R
+D44 Net-_D44-Pad1_ /LED_PWR LED
+R101 Net-_D44-Pad1_ Net-_Q99-Pad3_ R
+Q92 GND /o0 Net-_Q92-Pad3_ 2N7000
+Q93 GND /o1 Net-_Q93-Pad3_ 2N7000
+Q94 GND /o2 Net-_Q94-Pad3_ 2N7000
+Q95 GND /o3 Net-_Q95-Pad3_ 2N7000
+Q96 GND /o4 Net-_Q96-Pad3_ 2N7000
+Q97 GND /o5 Net-_Q97-Pad3_ 2N7000
+Q98 GND /o6 Net-_Q98-Pad3_ 2N7000
+Q99 GND /o7 Net-_Q99-Pad3_ 2N7000
+D33 Net-_D33-Pad1_ /LED_PWR LED
+R90 Net-_D33-Pad1_ Net-_Q88-Pad3_ R
+D34 Net-_D34-Pad1_ /LED_PWR LED
+R91 Net-_D34-Pad1_ Net-_Q89-Pad3_ R
+D35 Net-_D35-Pad1_ /LED_PWR LED
+R92 Net-_D35-Pad1_ Net-_Q90-Pad3_ R
+D36 Net-_D36-Pad1_ /LED_PWR LED
+R93 Net-_D36-Pad1_ Net-_Q91-Pad3_ R
+Q88 GND /sa Net-_Q88-Pad3_ 2N7000
+Q89 GND /sb Net-_Q89-Pad3_ 2N7000
+Q90 GND /sc Net-_Q90-Pad3_ 2N7000
+Q91 GND /sd Net-_Q91-Pad3_ 2N7000
+Q11 GND /sc /sc_and 2N7000
+Q15 GND /sd /sd_and 2N7000
+Q21 /sa_and /a1 Net-_Q21-Pad3_ 2N7000
+R44 VCC Net-_Q21-Pad3_ R
+Q25 GND Net-_Q21-Pad3_ /o1 2N7000
+Q22 /sb_and /b1 Net-_Q21-Pad3_ 2N7000
+R45 VCC /o1 R
+Q23 /sc_and /c1 Net-_Q21-Pad3_ 2N7000
+Q24 /sd_and /d1 Net-_Q21-Pad3_ 2N7000
+Q26 /sa_and /a2 Net-_Q26-Pad3_ 2N7000
+R46 VCC Net-_Q26-Pad3_ R
+Q30 GND Net-_Q26-Pad3_ /o2 2N7000
+Q27 /sb_and /b2 Net-_Q26-Pad3_ 2N7000
+R47 VCC /o2 R
+Q28 /sc_and /c2 Net-_Q26-Pad3_ 2N7000
+Q29 /sd_and /d2 Net-_Q26-Pad3_ 2N7000
+Q31 /sa_and /a3 Net-_Q31-Pad3_ 2N7000
+R48 VCC Net-_Q31-Pad3_ R
+Q35 GND Net-_Q31-Pad3_ /o3 2N7000
+Q32 /sb_and /b3 Net-_Q31-Pad3_ 2N7000
+R49 VCC /o3 R
+Q33 /sc_and /c3 Net-_Q31-Pad3_ 2N7000
+Q34 /sd_and /d3 Net-_Q31-Pad3_ 2N7000
+Q36 /sa_and /a4 Net-_Q36-Pad3_ 2N7000
+R50 VCC Net-_Q36-Pad3_ R
+Q40 GND Net-_Q36-Pad3_ /o4 2N7000
+Q37 /sb_and /b4 Net-_Q36-Pad3_ 2N7000
+R51 VCC /o4 R
+Q38 /sc_and /c4 Net-_Q36-Pad3_ 2N7000
+Q39 /sd_and /d4 Net-_Q36-Pad3_ 2N7000
+Q41 /sa_and /a5 Net-_Q41-Pad3_ 2N7000
+R52 VCC Net-_Q41-Pad3_ R
+Q45 GND Net-_Q41-Pad3_ /o5 2N7000
+Q42 /sb_and /b5 Net-_Q41-Pad3_ 2N7000
+R53 VCC /o5 R
+Q43 /sc_and /c5 Net-_Q41-Pad3_ 2N7000
+Q44 /sd_and /d5 Net-_Q41-Pad3_ 2N7000
+Q46 /sa_and /a6 Net-_Q46-Pad3_ 2N7000
+R54 VCC Net-_Q46-Pad3_ R
+Q50 GND Net-_Q46-Pad3_ /o6 2N7000
+Q47 /sb_and /b6 Net-_Q46-Pad3_ 2N7000
+R55 VCC /o6 R
+Q48 /sc_and /c6 Net-_Q46-Pad3_ 2N7000
+Q49 /sd_and /d6 Net-_Q46-Pad3_ 2N7000
+Q51 /sa_and /a7 Net-_Q51-Pad3_ 2N7000
+R56 VCC Net-_Q51-Pad3_ R
+Q55 GND Net-_Q51-Pad3_ /o7 2N7000
+Q52 /sb_and /b7 Net-_Q51-Pad3_ 2N7000
+R57 VCC /o7 R
+Q53 /sc_and /c7 Net-_Q51-Pad3_ 2N7000
+Q54 /sd_and /d7 Net-_Q51-Pad3_ 2N7000
+Q10 GND /s1 /sc 2N7000
+JP1 /LED_PWR VCC Jumper_2_Open
+JP2 /LED_PWR VCC SolderJumper_2_Open
+R1 /a0 GND R
+R2 /a1 GND R
+R3 /a2 GND R
+R4 /a3 GND R
+R5 /a4 GND R
+R6 /a5 GND R
+R7 /a6 GND R
+R8 /a7 GND R
+R9 /b0 GND R
+R10 /b1 GND R
+R11 /b2 GND R
+R12 /b3 GND R
+R13 /b4 GND R
+R14 /b5 GND R
+R15 /b6 GND R
+R16 /b7 GND R
+R17 /c0 GND R
+R18 /c1 GND R
+R19 /c2 GND R
+R20 /c3 GND R
+R21 /c4 GND R
+R22 /c5 GND R
+R23 /c6 GND R
+R24 /c7 GND R
+R25 /d0 GND R
+R26 /d1 GND R
+R27 /d2 GND R
+R28 /d3 GND R
+R29 /d4 GND R
+R30 /d5 GND R
+R31 /d6 GND R
+R32 /d7 GND R
+R33 /s0 GND R
+R34 /s1 GND R
+.end

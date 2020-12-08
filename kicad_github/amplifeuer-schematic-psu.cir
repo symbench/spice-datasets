@@ -1,0 +1,19 @@
+.title KiCad schematic
+U11 Net-_R11-Pad1_ Net-_RV11-Pad2_ GND Net-_D11-Pad2_ +12V LT1071
+J11 GND NC_01 Power out
+C13 Net-_C13-Pad1_ GND 1000μF
+RV11 GND Net-_RV11-Pad2_ Net-_D13-Pad1_ 5000RTRIM
+D11 Net-_C13-Pad1_ Net-_D11-Pad2_ 1N5822
+L11 +12V Net-_D11-Pad2_ 100μH
+C11 +12V GND 100μF
+R11 Net-_R11-Pad1_ Net-_C12-Pad1_ 1000R
+C12 Net-_C12-Pad1_ GND 1μF
+J12 GND +12V Power in
+L12 Net-_C13-Pad1_ /Vsw 10μH
+C15 /Vsw GND 100nF
+C14 /Vsw GND 100μF
+D13 Net-_D13-Pad1_ /Vsw Green
+D12 Net-_D12-Pad1_ +12V Red
+R12 Net-_D12-Pad1_ GND 2200R
+HS11 GND Aavid-5342B
+.end

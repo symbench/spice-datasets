@@ -1,0 +1,19 @@
+.title KiCad schematic
+U1 +5V Net-_R1-Pad1_ /sensor1 GND CNY70
+U3 +5V Net-_R4-Pad1_ /sensor3 GND CNY70
+U5 +5V Net-_R7-Pad1_ /sensor5 GND CNY70
+U2 Net-_R1-Pad2_ GND /sensor2 GND CNY70
+U4 Net-_R4-Pad2_ GND /sensor4 GND CNY70
+U6 Net-_R7-Pad2_ GND /sensor6 GND CNY70
+R3 +5V /sensor2 10k
+R6 +5V /sensor4 10k
+R9 +5V /sensor6 10k
+R5 +5V /sensor3 10k
+R8 +5V /sensor5 10k
+R2 +5V /sensor1 10k
+U7 /sensor4 /sensor3 /sensor6 /linea3 /sensor5 GND GND GND /linea_selec /linea_selec /linea_selec /sensor1 /sensor2 /linea1 /linea2 +5V 4053
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ 82
+R4 Net-_R4-Pad1_ Net-_R4-Pad2_ 82
+R7 Net-_R7-Pad1_ Net-_R7-Pad2_ 82
+J1 +5V GND /linea1 /linea2 /linea3 /linea_selec Conn_01x06_Female
+.end

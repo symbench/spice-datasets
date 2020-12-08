@@ -1,0 +1,4 @@
+.title KiCad schematic
+U201 NC_01 NC_02 Net-_PD401-Pad2_ VGND NC_03 MCP6404
+PD401 VGND Net-_PD401-Pad2_ VBPW34SR
+.end

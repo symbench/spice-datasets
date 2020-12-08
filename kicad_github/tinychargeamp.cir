@@ -1,0 +1,10 @@
+.title KiCad schematic
+U1 /DW /PIEZO+ /PIEZO- GND Net-_R3-Pad1_ /OUT NC_01 VCC ATtiny13A-SSU
+R1 /PIEZO+ /PIEZO- 120k
+J3 /DW GND Conn_01x02
+J2 GND VCC /OUT Conn_01x03
+C2 VCC GND 1u
+J1 /PIEZO+ /PIEZO- Conn_01x02
+C1 /PIEZO- GND 10u
+R3 Net-_R3-Pad1_ /PIEZO- 22k
+.end

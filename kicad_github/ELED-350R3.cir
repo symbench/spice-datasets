@@ -1,0 +1,61 @@
+.title KiCad schematic
+J1 VIN GND NC_01 Net-_J1-Pad4_ Net-_J1-Pad5_ GND Screw_Terminal_01x06
+U1 Net-_TP2-Pad1_ Net-_TP1-Pad1_ D2 D3 Net-_D4-Pad1_ A0 NC_02 NC_03 NC_04 GND +5V Net-_U1-Pad12_ Net-_U1-Pad13_ Net-_J2-Pad5_ Net-_C11-Pad2_ Net-_J2-Pad3_ NC_05 NC_06 Net-_J2-Pad1_ Net-_J2-Pad4_ ATtiny1634-SU
+D13 Net-_D13-Pad1_ Net-_D12-Pad1_ LED
+D12 Net-_D12-Pad1_ Net-_D11-Pad1_ LED
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ LED
+D14 Net-_D14-Pad1_ Net-_D13-Pad1_ LED
+D15 Net-_D15-Pad1_ Net-_D14-Pad1_ LED
+U4 +24V D3 GND GND Net-_D17-Pad2_ Net-_D11-Pad2_ +24V NC_07 GND ILD6070
+L2 Net-_D15-Pad1_ Net-_D17-Pad2_ INDUCTOR
+R8 +24V Net-_D11-Pad2_ R
+C10 +24V GND CP
+C8 GND +24V C
+C6 GND D3 C
+Q1 Net-_D2-Pad2_ VIN +24V Q_PMOS_GDS
+D2 +24V Net-_D2-Pad2_ D_Zener
+R1 Net-_D2-Pad2_ GND R
+C2 +24V GND CP
+C4 +5V GND CP
+D5 GND Net-_D5-Pad2_ LED
+R4 +5V Net-_D5-Pad2_ R
+R6 D3 GND R
+C1 GND +5V C
+R2 +5V Net-_J2-Pad5_ R
+Y1 Net-_U1-Pad12_ GND Net-_U1-Pad13_ Resonator
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED
+R3 +5V Net-_D4-Pad2_ R
+TP2 Net-_TP2-Pad1_ TestPoint
+TP1 Net-_TP1-Pad1_ TestPoint
+J2 Net-_J2-Pad1_ +5V Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ GND AVR-ISP-6
+D8 Net-_D8-Pad1_ Net-_D7-Pad1_ LED
+D7 Net-_D7-Pad1_ Net-_D6-Pad1_ LED
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ LED
+D9 Net-_D10-Pad2_ Net-_D8-Pad1_ LED
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ LED
+U3 +24V D2 GND GND Net-_D16-Pad2_ Net-_D6-Pad2_ +24V NC_08 GND ILD6070
+L1 Net-_D10-Pad1_ Net-_D16-Pad2_ INDUCTOR
+R7 +24V Net-_D6-Pad2_ R
+C9 +24V GND CP
+C7 GND +24V C
+C5 GND D2 C
+R5 D2 GND R
+TH1 Net-_J1-Pad4_ +5V Thermistor_PTC
+C3 A0 GND C
+D3 A0 GND D_Zener
+JP2 D2 D2 Jumper
+JP1 GND GND Jumper
+JP3 D2 D2 Jumper
+JP5 D3 D3 Jumper
+JP4 A0 A0 Jumper
+SW1 Net-_C11-Pad2_ GND SW_Push
+C11 GND Net-_C11-Pad2_ C
+R9 +5V Net-_C11-Pad2_ R
+R10 A0 Net-_J1-Pad5_ R
+U2 +24V GND +5V LM78M05_TO252
+D16 +24V Net-_D16-Pad2_ SD2114S040S5R0
+D17 +24V Net-_D17-Pad2_ SD2114S040S5R0
+D1 +24V VIN SD2114S040S5R0
+R11 +5V A0 R
+R12 A0 GND R
+.end

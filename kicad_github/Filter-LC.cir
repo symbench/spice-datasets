@@ -1,0 +1,29 @@
+.title KiCad schematic
+C81 NC_01 Net-_C81-Pad2_ C
+C83 NC_02 Net-_C81-Pad2_ C
+C82 Net-_C82-Pad1_ NC_03 C
+C84 Net-_C82-Pad1_ NC_04 C
+J30 Net-_C81-Pad2_ NC_05 Net-_J30-Pad3_ Net-_J30-Pad3_ NC_06 Net-_C82-Pad1_ InConnector
+J31 NC_07 NC_08 Net-_C246-Pad1_ Net-_C246-Pad1_ NC_09 NC_10 OutConnector
+C85 Net-_C246-Pad1_ NC_11 C
+R237 Net-_C246-Pad1_ Net-_J30-Pad3_ R
+L1 Net-_C246-Pad1_ NC_12 L
+C246 Net-_C246-Pad1_ NC_13 C
+C247 Net-_C246-Pad1_ NC_14 C
+C86 NC_15 Net-_C86-Pad2_ C
+C88 NC_16 Net-_C86-Pad2_ C
+C87 Net-_C87-Pad1_ NC_17 C
+C89 Net-_C87-Pad1_ NC_18 C
+J32 Net-_C86-Pad2_ NC_19 Net-_J32-Pad3_ Net-_J32-Pad4_ NC_20 Net-_C87-Pad1_ InConnector
+J33 NC_21 NC_22 Net-_C248-Pad1_ Net-_C249-Pad1_ NC_23 NC_24 OutConnector
+C91 Net-_C249-Pad1_ NC_25 C
+R239 Net-_C249-Pad1_ Net-_J32-Pad4_ R
+L3 Net-_C249-Pad1_ NC_26 L
+C90 Net-_C248-Pad1_ NC_27 C
+R238 Net-_C248-Pad1_ Net-_J32-Pad3_ R
+L2 Net-_C248-Pad1_ NC_28 L
+C248 Net-_C248-Pad1_ NC_29 C
+C250 Net-_C248-Pad1_ NC_30 C
+C249 Net-_C249-Pad1_ NC_31 C
+C251 Net-_C249-Pad1_ NC_32 C
+.end

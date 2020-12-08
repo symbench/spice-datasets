@@ -1,0 +1,8 @@
+.title KiCad schematic
+P3 +5V /Ch_A1_+5V_ GND /Ch_B1_+5V_ encoder_1
+P4 +5V /Ch_A2_+5V_ GND /Ch_B2_+5V_ encoder_2
+U9 NC_01 NC_02 /Ch_B1_+5V_ /Ch_A1_+5V_ txb0108
+U10 +3V3 NC_03 NC_04 +3V3 GND /Ch_A2_+5V_ /Ch_B2_+5V_ +5V txb0108
+C9 +5V GND 0,1u
+C10 +3V3 GND 0,1u
+.end

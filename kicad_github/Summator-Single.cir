@@ -1,0 +1,15 @@
+.title KiCad schematic
+R5 Net-_J3-Pad3_ Net-_R1-Pad1_ R
+R2 Net-_R1-Pad1_ Net-_J1-Pad4_ R
+C1 NC_01 Net-_C1-Pad2_ C
+C3 NC_02 Net-_C1-Pad2_ C
+C2 Net-_C2-Pad1_ NC_03 C
+C4 Net-_C2-Pad1_ NC_04 C
+R1 Net-_R1-Pad1_ Net-_J1-Pad3_ R
+J1 Net-_C1-Pad2_ NC_05 Net-_J1-Pad3_ Net-_J1-Pad4_ NC_06 Net-_C2-Pad1_ InConnector
+J3 NC_07 NC_08 Net-_J3-Pad3_ Net-_J3-Pad3_ NC_09 NC_10 OutConnector
+U1 NC_11 Net-_R1-Pad1_ NC_12 NC_13 NC_14 Net-_J3-Pad3_ NC_15 NC_16 OPA333xxD
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad2_ Net-_J2-Pad4_ Ext_Input
+R3 Net-_J2-Pad4_ Net-_R1-Pad1_ R
+R4 Net-_J2-Pad1_ Net-_R1-Pad1_ R
+.end

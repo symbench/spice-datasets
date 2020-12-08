@@ -1,0 +1,4 @@
+.title KiCad schematic
+J1 Net-_J1-Pad1_ Net-_J1-Pad1_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad10_ Net-_J1-Pad10_ EURO_PWR_2x5
+U4 NC_01 Net-_J1-Pad4_ NC_02 78L05
+.end

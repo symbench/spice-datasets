@@ -1,0 +1,10 @@
+.title KiCad schematic
+J1 GND Net-_J1-PadT_ NC_01 in 1
+J3 GND Net-_J1-PadT_ NC_02 out 1
+J4 GND Net-_J1-PadT_ NC_03 out 2
+J5 GND Net-_J1-PadT_ NC_04 out 3
+J2 GND Net-_J2-PadT_ Net-_J1-PadT_ in 2
+J6 GND Net-_J2-PadT_ NC_05 out 4
+J7 GND Net-_J2-PadT_ NC_06 out 5
+J8 GND Net-_J2-PadT_ NC_07 out 6
+.end

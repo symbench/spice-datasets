@@ -1,0 +1,8 @@
+.title KiCad schematic
+J1 +3V3 /SWDIO GND /SWCLK GND NC_01 NC_02 NC_03 NC_04 NC_05 Conn_02x05_Odd_Even
+J2 +3V3 /SWDIO /SWCLK GND Conn_01x04
+BT1 +BATT GND Battery
+SW1 +3V3 +BATT NC_06 SW_SPDT
+R1 Net-_D1-Pad1_ GND 1.4k
+D1 Net-_D1-Pad1_ +3V3 LED
+.end

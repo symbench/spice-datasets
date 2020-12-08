@@ -1,0 +1,13 @@
+.title KiCad schematic
+U1 +5V Net-_C2-Pad1_ OUT GND NC_01 SDA SCL DIR AS5600
+C1 +5V GND 100nF
+C2 Net-_C2-Pad1_ GND 1uF
+R1 +5V SCL 4.7k
+R2 +5V SDA 4.7k
+J4 GND DIR +5V Conn_01x03_Male
+J2 Net-_C2-Pad1_ +5V Conn_01x02
+J3 GND SDA SCL OUT +5V Conn_01x05_Female
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+.end

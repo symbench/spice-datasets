@@ -1,0 +1,89 @@
+.title KiCad schematic
+U1 LED data GND GND SDA SCL row0 row1 row2 row3 NC_01 NC_02 NC_03 NC_04 col5 col4 col3 col2 col1 col0 VCC reset GND NC_05 ProMicro
+SW2 col1 Net-_D2-Pad2_ SW_PUSH
+D2 row0 Net-_D2-Pad2_ D
+SW3 col2 Net-_D3-Pad2_ SW_PUSH
+D3 row0 Net-_D3-Pad2_ D
+SW4 col3 Net-_D4-Pad2_ SW_PUSH
+SW5 col4 Net-_D5-Pad2_ SW_PUSH
+SW6 col5 Net-_D6-Pad2_ SW_PUSH
+D4 row0 Net-_D4-Pad2_ D
+D5 row0 Net-_D5-Pad2_ D
+D6 row0 Net-_D6-Pad2_ D
+SW1 col0 Net-_D1-Pad2_ SW_PUSH
+D1 row0 Net-_D1-Pad2_ D
+SW8 col1 Net-_D8-Pad2_ SW_PUSH
+D8 row1 Net-_D8-Pad2_ D
+SW9 col2 Net-_D9-Pad2_ SW_PUSH
+D9 row1 Net-_D9-Pad2_ D
+SW10 col3 Net-_D10-Pad2_ SW_PUSH
+SW11 col4 Net-_D11-Pad2_ SW_PUSH
+SW12 col5 Net-_D12-Pad2_ SW_PUSH
+D10 row1 Net-_D10-Pad2_ D
+D11 row1 Net-_D11-Pad2_ D
+D12 row1 Net-_D12-Pad2_ D
+SW7 col0 Net-_D7-Pad2_ SW_PUSH
+D7 row1 Net-_D7-Pad2_ D
+SW14 col1 Net-_D14-Pad2_ SW_PUSH
+D14 row2 Net-_D14-Pad2_ D
+SW15 col2 Net-_D15-Pad2_ SW_PUSH
+D15 row2 Net-_D15-Pad2_ D
+SW16 col3 Net-_D16-Pad2_ SW_PUSH
+SW17 col4 Net-_D17-Pad2_ SW_PUSH
+SW18 col5 Net-_D18-Pad2_ SW_PUSH
+D16 row2 Net-_D16-Pad2_ D
+D17 row2 Net-_D17-Pad2_ D
+D18 row2 Net-_D18-Pad2_ D
+SW13 col0 Net-_D13-Pad2_ SW_PUSH
+D13 row2 Net-_D13-Pad2_ D
+SW20 col4 Net-_D20-Pad2_ SW_PUSH
+D20 row3 Net-_D20-Pad2_ D
+SW21 col5 Net-_D21-Pad2_ SW_PUSH
+D21 row3 Net-_D21-Pad2_ D
+SW19 col3 Net-_D19-Pad2_ SW_PUSH
+D19 row3 Net-_D19-Pad2_ D
+RSW1 reset GND SW_PUSH
+JP1 data Net-_J1-PadB_  
+L2 Net-_L1-Pad3_ GND Net-_L2-Pad3_ VCC SK6812MINI
+L3 Net-_L3-Pad1_ GND Net-_L3-Pad3_ VCC SK6812MINI
+L4 Net-_L3-Pad3_ GND Net-_L10-Pad1_ VCC SK6812MINI
+L5 Net-_L11-Pad3_ GND Net-_L5-Pad3_ VCC SK6812MINI
+L6 Net-_L5-Pad3_ GND Net-_L12-Pad1_ VCC SK6812MINI
+L1 Net-_L1-Pad1_ GND Net-_L1-Pad3_ VCC SK6812MINI
+L8 Net-_L2-Pad3_ GND Net-_L14-Pad1_ VCC SK6812MINI
+L9 Net-_L15-Pad3_ GND Net-_L3-Pad1_ VCC SK6812MINI
+L10 Net-_L10-Pad1_ GND Net-_L10-Pad3_ VCC SK6812MINI
+L11 Net-_L11-Pad1_ GND Net-_L11-Pad3_ VCC SK6812MINI
+L12 Net-_L12-Pad1_ GND Net-_L12-Pad3_ VCC SK6812MINI
+L7 Net-_L13-Pad3_ GND Net-_L1-Pad1_ VCC SK6812MINI
+L14 Net-_L14-Pad1_ GND Net-_L14-Pad3_ VCC SK6812MINI
+L15 Net-_L14-Pad3_ GND Net-_L15-Pad3_ VCC SK6812MINI
+L16 Net-_L10-Pad3_ GND Net-_L16-Pad3_ VCC SK6812MINI
+L17 Net-_L17-Pad1_ GND Net-_L11-Pad1_ VCC SK6812MINI
+L18 Net-_L12-Pad3_ GND Net-_L18-Pad3_ VCC SK6812MINI
+L13 NC_06 GND Net-_L13-Pad3_ VCC SK6812MINI
+L20 Net-_L19-Pad3_ GND Net-_L17-Pad1_ VCC SK6812MINI
+L21 Net-_L18-Pad3_ GND Net-_L21-Pad3_ VCC SK6812MINI
+L19 Net-_L16-Pad3_ GND Net-_L19-Pad3_ VCC SK6812MINI
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ OLED
+JP2 GND Net-_J2-Pad4_  
+JP3 VCC Net-_J2-Pad3_  
+JP4 SCL Net-_J2-Pad2_  
+JP5 SDA Net-_J2-Pad1_  
+JP6 SDA Net-_J2-Pad4_  
+JP7 SCL Net-_J2-Pad3_  
+JP8 VCC Net-_J2-Pad2_  
+JP9 GND Net-_J2-Pad1_  
+R1 VCC SDA R
+R2 VCC SCL R
+J1 Net-_J1-PadA_ Net-_J1-PadB_ GND VCC MJ-4PP-9
+J3 GND LED VCC LED
+P2 Net-_J1-PadB_ i2c-pin
+P1 Net-_J1-PadA_ i2c-pin
+L24 Net-_L23-Pad3_ GND LED VCC SK6812MINI
+L23 Net-_L22-Pad3_ GND Net-_L23-Pad3_ VCC SK6812MINI
+L22 Net-_L22-Pad1_ GND Net-_L22-Pad3_ VCC SK6812MINI
+L27 Net-_L21-Pad3_ GND Net-_L26-Pad1_ VCC SK6812MINI
+L26 Net-_L26-Pad1_ GND Net-_L25-Pad1_ VCC SK6812MINI
+L25 Net-_L25-Pad1_ GND Net-_L22-Pad1_ VCC SK6812MINI
+.end

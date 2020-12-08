@@ -1,0 +1,19 @@
+.title KiCad schematic
+P1 NC_01 NC_02 /Reset +3V3 +5V GND GND NC_03 Power
+P2 /A0 NC_04 NC_05 NC_06 /A4_SDA_ /A5_SCL_ Analog
+P5 NC_07 CONN_01X01
+P6 NC_08 CONN_01X01
+P7 NC_09 CONN_01X01
+P8 NC_10 CONN_01X01
+P4 NC_11 NC_12 NC_13 NC_14 /3_**_ NC_15 NC_16 NC_17 Digital
+P3 /A5_SCL_ /A4_SDA_ NC_18 GND NC_19 /12_MISO_ /11_**/MOSI_ /10_**/SS_ /9_**_ NC_20 Digital
+U1 NC_21 Net-_RV1-Pad2_ Net-_R1-Pad2_ GND NC_22 /3_**_ +5V NC_23 LM741
+BZ1 /9_**_ Net-_BZ1-Pad2_ Buzzer
+RV1 +5V Net-_RV1-Pad2_ GND 10k
+D1 GND Net-_BZ1-Pad2_ LED
+R1 /A0 Net-_R1-Pad2_ 4.7k
+R2 Net-_R1-Pad2_ /3_**_ 100k
+J1 /A0 NC_24 +5V GND Conn_01x04_Male_Sensor
+SW1 NC_25 NC_26 /Reset GND SW_Push_Dual
+U2 /10_**/SS_ /11_**/MOSI_ NC_27 NC_28 /12_MISO_ +3V3 NC_29 GND shield_RN2483
+.end

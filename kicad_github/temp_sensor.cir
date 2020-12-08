@@ -1,0 +1,6 @@
+.title KiCad schematic
+U6 +5V Net-_R18-Pad2_ GND Temp_SOT23-3
+C10 GND +5V CAP_0603
+R18 /V_Temp Net-_R18-Pad2_ RES_0603
+R25 /V_Temp GND RES_0603
+.end

@@ -1,0 +1,44 @@
+.title KiCad schematic
+U1 /Servo1 +3V3 GND NC_01 NC_02 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ NC_03 +3V3 GND /PC7 /PC6 /PC5 /PC4 /RX /TX /PA2 /PA3 /PA4 /PA5 /PA6 /PA7 Net-_C7-Pad2_ +3V3 GND NC_04 NC_05 /Red NC_06 Net-_R1-Pad1_ NC_07 NC_08 GND NC_09 +3V3 /RESET GND /OSC0 /OSC1 +3V3 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 Net-_J2-Pad4_ Net-_J2-Pad3_ Net-_J2-Pad2_ Net-_J2-Pad1_ NC_16 +3V3 GND Net-_C7-Pad2_ NC_17 /Servo0 /Blue /BZZZ /PD0 /PD1 /PD2 /PD3 TM4C123GH6PMI
+M1 /Servo0 +5V GND Motor_Servo
+M2 /Servo1 +5V GND Motor_Servo
+Y1 /OSC1 /OSC0 16MHz
+C9 GND /OSC1 10pF
+C10 /OSC0 GND 10pF
+C7 GND Net-_C7-Pad2_ .1uF
+C3 GND +3V3 .1uF
+C2 GND +3V3 .1uF
+C4 GND +3V3 .1uF
+C5 GND +3V3 3.3uF
+C6 GND +3V3 3.3uF
+U2 +5V GND +3V3 LM2937xS
+C11 +5V GND 0.1uF
+C12 +3V3 GND 10uF
+R2 +3V3 Net-_D1-Pad2_ 68ohm
+D1 GND Net-_D1-Pad2_ LED_GREEN
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ GND JTAG
+J5 +5V GND /RX /TX UART (Bluetooth)
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Resistive_Touch
+R3 +3V3 /RESET 10k
+SW1 GND /RESET SW_Push
+R1 Net-_R1-Pad1_ +3V3 1Mohm
+Q1 Net-_Q1-Pad1_ GND Net-_LS1-PadN_ MMBT3904
+R4 Net-_Q1-Pad1_ /BZZZ 100ohm
+Q2 Net-_Q2-Pad1_ GND Net-_D2-Pad1_ MMBT3904
+R5 Net-_Q2-Pad1_ /Blue 100ohm
+R6 +3V3 Net-_D2-Pad2_ 50ohm
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED_BLUE
+Q3 Net-_Q3-Pad1_ GND Net-_D3-Pad1_ MMBT3904
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED_RED
+R7 +3V3 Net-_D3-Pad2_ 68ohm
+R8 /Red Net-_Q3-Pad1_ 100ohm
+J3 Net-_J1-Pad4_ Net-_J1-Pad3_ Net-_J1-Pad2_ Net-_J1-Pad1_ Conn_01x04_Male
+LS1 Net-_LS1-PadN_ +3V3 CMT-8530S-SMT
+J6 /PD0 /PD1 /PD2 /PD3 +3V3 GND Conn_02x03_Top_Bottom
+C8 GND Net-_C7-Pad2_ 3.3uF
+C1 GND +3V3 .1uF
+C13 GND +5V 10uF
+C14 GND +5V 10uF
+J7 /PA2 /PA3 /PA4 /PA5 /PA6 /PA7 /PC4 /PC5 /PC6 /PC7 Conn_02x05_Top_Bottom
+J4 +5V GND NC_18 Barrel_Jack_Switch
+.end

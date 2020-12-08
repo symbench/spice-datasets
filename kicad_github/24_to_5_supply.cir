@@ -1,0 +1,13 @@
+.title KiCad schematic
+VR1 +24V GND Net-_FB1-Pad2_ Wurth-FDSM
+F1 +24V Net-_D1-Pad1_ Fuse
+D1 Net-_D1-Pad1_ NC_01 D_Schottky
+D2 +24V GND D_TVS
+C1 +24V GND 1u
+C2 +5V GND 1u
+C3 +5V GND 100n
+FB1 +5V Net-_FB1-Pad2_ Ferrite_Bead
+D4 Net-_D4-Pad1_ +5V RED
+R1 Net-_D4-Pad1_ GND 510
+D3 +5V GND D_TVS
+.end

@@ -1,0 +1,11 @@
+.title KiCad schematic
+C_OUT1 /VCC GND C_10uF
+L_OUT1 Net-_D_Schottky1-Pad1_ /VCC L_10uH
+U1 GND GND GND GND Net-_R1-Pad~_ GND /VCC GND GND GND Net-_D_Schottky1-Pad1_ Net-_C_IN1-Pad1_ Net-_C_IN1-Pad1_ TLF50211ELXUMA2
+R1 GND R_47k
+D_Schottky1 Net-_D_Schottky1-Pad1_ GND 10BQ100
+C_IN1 Net-_C_IN1-Pad1_ GND C_47uF
+DNP1 /VS GND R_0
+DNP2 Net-_C_IN1-Pad1_ GND R_0
+DNP3 /VS Net-_C_IN1-Pad1_ R_0
+.end

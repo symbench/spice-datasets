@@ -1,0 +1,15 @@
+.title KiCad schematic
+.include "/home/akshay/Downloads/Rc_Phase_Shift_Oscillator_By_Ms_Rohini.n,_Parkavi.k/NPN.lib"
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 0.1u
+R2 Net-_R2-Pad1_ Net-_C1-Pad1_ 190k
+R1 Net-_C1-Pad1_ GND 36k
+R4 Net-_R2-Pad1_ out 4.8k
+R3 Net-_C2-Pad2_ GND 1.2k
+C2 GND Net-_C2-Pad2_ 0.1u
+V1 Net-_R2-Pad1_ GND dc 5
+C3 GND out 20n
+C4 Net-_C1-Pad2_ GND 5n
+L1 out Net-_C1-Pad2_ 50m
+Q1 out Net-_C1-Pad1_ Net-_C2-Pad2_ BC548
+.tran .25m 30m
+.end

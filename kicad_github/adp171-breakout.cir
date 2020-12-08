@@ -1,0 +1,8 @@
+.title KiCad schematic
+U1 VIN GND VIN Net-_R1-Pad2_ VOUT ADP171AUJZ-R7
+C1 VIN GND 1uF
+C2 VOUT GND 1uF
+R1 VOUT Net-_R1-Pad2_ 200k
+R2 Net-_R1-Pad2_ GND 71.5k
+J1 VIN GND VOUT Conn_01x03
+.end

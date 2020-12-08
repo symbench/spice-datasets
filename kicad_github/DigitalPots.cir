@@ -1,0 +1,19 @@
+.title KiCad schematic
+U2 Net-_J2-Pad3_ Net-_J2-Pad2_ Net-_J2-Pad1_ /A0 /SCL /SDA GND Net-_J3-Pad3_ Net-_J3-Pad2_ Net-_J3-Pad1_ Net-_J5-Pad3_ Net-_J5-Pad2_ Net-_J5-Pad1_ /WP /RST /A1 VCC Net-_J4-Pad3_ Net-_J4-Pad2_ Net-_J4-Pad1_ IC20
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ 3
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ 2
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ 1
+J5 Net-_J5-Pad1_ Net-_J5-Pad2_ Net-_J5-Pad3_ 0
+J1 GND /SDA /SCL i2c
+J6 /RST /WP Conn_01x02
+J7 GND +9V PWR
+JP1 VCC /A0 GND A0
+JP2 VCC /A1 GND A1
+R1 VCC /RST 10k
+JP3 VCC /WP GND WP
+U1 +9V GND +9V Net-_C2-Pad1_ VCC LP2985-5.0
+C2 Net-_C2-Pad1_ GND 10n
+C3 VCC GND 10uf
+C1 +9V GND 2uf
+C4 VCC GND 100n
+.end

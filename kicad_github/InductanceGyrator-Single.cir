@@ -1,0 +1,13 @@
+.title KiCad schematic
+C142 NC_01 Net-_C142-Pad2_ C
+C144 NC_02 Net-_C142-Pad2_ C
+C143 Net-_C143-Pad1_ NC_03 C
+C145 Net-_C143-Pad1_ NC_04 C
+J48 Net-_C142-Pad2_ NC_05 Net-_C146-Pad2_ Net-_C146-Pad2_ NC_06 Net-_C143-Pad1_ InConnector
+J49 NC_07 NC_08 Net-_J49-Pad3_ Net-_J49-Pad3_ NC_09 NC_10 OutConnector
+U29 NC_11 Net-_R281-Pad1_ Net-_C146-Pad1_ NC_12 NC_13 Net-_R281-Pad1_ NC_14 NC_15 OPA333xxD
+R281 Net-_R281-Pad1_ Net-_C146-Pad2_ R
+C146 Net-_C146-Pad1_ Net-_C146-Pad2_ C
+R282 NC_16 Net-_C146-Pad1_ R
+RV1 Net-_RV1-Pad1_ Net-_RV1-Pad1_ Net-_C146-Pad1_ POT
+.end

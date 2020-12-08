@@ -1,0 +1,15 @@
+.title KiCad schematic
+C110 NC_01 Net-_C110-Pad2_ C
+C112 NC_02 Net-_C110-Pad2_ C
+C111 Net-_C111-Pad1_ NC_03 C
+C113 Net-_C111-Pad1_ NC_04 C
+J38 Net-_C110-Pad2_ NC_05 Net-_J38-Pad3_ Net-_J38-Pad3_ NC_06 Net-_C111-Pad1_ InConnector
+J39 NC_07 NC_08 Net-_C114-Pad1_ Net-_C114-Pad1_ NC_09 NC_10 OutConnector
+U23 NC_11 Net-_C114-Pad2_ Net-_R252-Pad1_ NC_12 NC_13 Net-_C114-Pad1_ NC_14 NC_15 OPA333xxD
+R256 Net-_C114-Pad1_ Net-_C114-Pad2_ R
+R253 Net-_C114-Pad2_ Net-_J38-Pad3_ R
+R252 Net-_R252-Pad1_ Net-_J38-Pad3_ R
+R254 Net-_R252-Pad1_ NC_16 R
+R255 Net-_C114-Pad2_ NC_17 R
+C114 Net-_C114-Pad1_ Net-_C114-Pad2_ C
+.end

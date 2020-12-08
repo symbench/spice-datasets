@@ -1,0 +1,263 @@
+.title KiCad schematic
+C2 5V GND C
+C1 5V GND C
+Q1 Net-_Q1-Pad1_ Net-_K1-Pad4_ GND IRLB8721PBF
+Q3 Net-_Q3-Pad1_ Net-_K2-Pad4_ GND IRLB8721PBF
+Q4 Net-_Q4-Pad1_ GND Net-_K2-Pad1_ AO3400A
+Q2 Net-_Q2-Pad1_ GND Net-_K1-Pad1_ AO3400A
+R9 /RST 5V 10к
+J3 GND 5V /SCK /MOSI /MISO /RST Conn_01x06
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+R8 GND Net-_D4-Pad1_ 200
+R6 GND Net-_D3-Pad1_ 200
+R7 Net-_Q4-Pad1_ Net-_D4-Pad2_ 68
+R5 Net-_Q3-Pad1_ Net-_D3-Pad2_ 68
+K2 Net-_K2-Pad1_ V_MOT Net-_J2-Pad2_ Net-_K2-Pad4_ V_MOT Net-_J2-Pad1_ Net-_K2-Pad4_ 5V G6K-2
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Conn_01x02
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R4 GND Net-_D2-Pad1_ 200
+R2 GND Net-_D1-Pad1_ 200
+R3 Net-_Q2-Pad1_ Net-_D2-Pad2_ 68
+U1 NC_01 NC_02 GND 5V GND 5V NC_03 NC_04 Net-_D2-Pad2_ Net-_D4-Pad2_ NC_05 NC_06 Net-_D1-Pad2_ Net-_D3-Pad2_ /MOSI /MISO /SCK 5V NC_07 NC_08 GND NC_09 NC_10 NC_11 NC_12 NC_13 PD1 PD0 /RST NC_14 NC_15 NC_16 ATmega8A-AU
+R1 Net-_Q1-Pad1_ Net-_D1-Pad2_ 68
+K1 Net-_K1-Pad1_ V_MOT Net-_J1-Pad2_ Net-_K1-Pad4_ V_MOT Net-_J1-Pad1_ Net-_K1-Pad4_ 5V G6K-2
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Conn_01x02
+J1.2 GND /atmega128/PDI /atmega128/PDO PB1 /atmega128/RESET 5V Conn_01x06
+R1.2 Net-_D101-Pad2_ PB5 R
+D101 GND Net-_D101-Pad2_ LED
+R1.1 5V /atmega128/RESET R
+X101 Net-_C102-Pad1_ Net-_C103-Pad1_ Crystal
+C103 Net-_C103-Pad1_ GND C
+C102 Net-_C102-Pad1_ GND C
+R1.3 /atmega128/TX /atmega128/PDI R
+J1.1 5V /atmega128/PDO /atmega128/TX GND Conn_01x04
+SW1 GND /atmega128/RESET SW_Push
+J1.3 PG0 PG1 PC0 PC1 B_STAT PC3 PC4 PC5 M4A M4B M3A M3B M2A M2B M1A M1B Conn_01x16
+RV1 5V PF2 GND R_POT
+RV2 5V PF1 GND R_POT
+RV3 5V PF0 GND R_POT
+C101 Net-_C101-Pad1_ GND C
+J1.4 PA2 PA1 PA0 PF7 PF6 PF5 PF4 PF3 PF2 PF1 PF0 Conn_01x11
+J1.5 PE2 M1PWM M2PWM M3PWM PE6 PE7 PB0 PB1 PB2 PB3 M4PWM PB5 PB6 Conn_01x13
+U101 NC_17 /atmega128/TX /atmega128/PDO PE2 M1PWM M2PWM M3PWM PE6 PE7 PB0 PB1 PB2 PB3 M4PWM PB5 PB6 PB7 PG3 PG4 /atmega128/RESET 5V GND Net-_C103-Pad1_ Net-_C102-Pad1_ PD0 PD1 B_TXD B_RXD PD4 PD5 PD6 PD7 PG0 PG1 PC0 PC1 B_STAT PC3 PC4 PC5 M4A M4B M3A M3B M2A M2B M1A M1B PA2 PA1 PA0 5V GND PF7 PF6 PF5 PF4 PF3 PF2 PF1 PF0 Net-_C101-Pad1_ GND 5V ATmega128A-AU
+J1.6 PB7 PG3 PG4 PD0 PD1 B_TXD B_RXD PD4 PD5 PD6 PD7 Conn_01x11
+C104 GND 5V C
+C105 GND 5V C
+J1.7 GND 5V PD0 PD1 Conn_01x04
+J1.11 NC_18 EN
+J1.12 NC_19 ALED
+J1.13 NC_20 STAT
+J1.14 NC_21 SELECT
+J1.15 NC_22  
+J1.16 NC_23  
+J1.17 NC_24  
+J1.22 NC_25  
+J1.21 NC_26  
+J1.20 NC_27  
+J1.19 NC_28  
+J1.18 NC_29  
+J1.23 NC_30 GND
+J1.24 NC_31 VCC
+J1.25 NC_32 RST
+J1.26 NC_33  
+J1.27 NC_34 SWI
+J1.28 NC_35  
+J1.29 NC_36  
+J1.34 NC_37 RXD
+J1.33 NC_38 CTS
+J1.32 NC_39 RTS
+J1.31 NC_40  
+J1.30 NC_41  
+J1.35 NC_42 TXD
+R1.4 Net-_D1.2-Pad2_ Net-_J1.36-Pad4_ R
+D1.2 GND Net-_D1.2-Pad2_ LED
+R1.5 Net-_D1.3-Pad2_ Net-_J1.36-Pad3_ R
+D1.3 GND Net-_D1.3-Pad2_ LED
+R1.6 Net-_D1.4-Pad2_ Net-_J1.36-Pad2_ R
+D1.4 GND Net-_D1.4-Pad2_ LED
+R1.7 Net-_D1.5-Pad2_ Net-_J1.36-Pad1_ R
+D1.5 GND Net-_D1.5-Pad2_ LED
+J1.36 Net-_J1.36-Pad1_ Net-_J1.36-Pad2_ Net-_J1.36-Pad3_ Net-_J1.36-Pad4_ Conn_01x04
+JP1.1 Net-_J1.36-Pad4_ PB3 M4PWM
+JP1.2 Net-_J1.36-Pad3_ PB2 M4PWM
+JP1.3 Net-_J1.36-Pad2_ PB0 M4PWM
+JP1.4 Net-_J1.36-Pad1_ PE7 M4PWM
+J37 GND 3.3V Net-_J37-Pad3_ B_TXD B_STAT Conn_01x05
+Q1.1 Net-_Q1.1-Pad1_ 3.3V 5V AO3400A
+R1.8 Net-_Q1.1-Pad1_ 5V R
+R1.9 GND Net-_Q1.1-Pad1_ R
+R1.12 GND 3.3V R
+R1.10 Net-_J37-Pad3_ B_RXD R
+R1.11 GND Net-_J37-Pad3_ R
+SW1.2 PG3 GND SW_Push
+SW1.3 PG4 GND SW_Push
+R1.13 PG3 5V R
+R1.14 PG4 5V R
+A2.1 GND NC_43 Net-_A2.1-Pad3_ Net-_A2.1-Pad4_ Net-_A2.1-Pad5_ Net-_A2.1-Pad6_ GND V_MOT NC_44 NC_45 NC_46 NC_47 5V 5V Net-_A2.1-Pad15_ Net-_A2.1-Pad16_ Pololu_Breakout_DRV8825
+J2.1 Net-_A2.1-Pad4_ Net-_A2.1-Pad3_ Conn_01x02
+J2.2 Net-_A2.1-Pad6_ Net-_A2.1-Pad5_ Conn_01x02
+J2.3 V_MOT GND Conn_01x02
+J2.4 Net-_A2.1-Pad16_ Net-_A2.1-Pad15_ Conn_01x02
+JP2.1 PC1 Net-_A2.1-Pad15_ Jumper_2_Open
+JP2.2 PC0 Net-_A2.1-Pad16_ Jumper_2_Open
+H1 GND GND
+H4 GND GND
+H2 V_MOT IN+
+H3 5V OUT+
+H5 MountingHole
+H6 MountingHole
+H7 MountingHole
+TP1 5V TestPoint
+TP9 NC_48 TestPoint
+TP17 NC_49 TestPoint
+TP25 NC_50 TestPoint
+TP33 NC_51 TestPoint
+TP41 NC_52 TestPoint
+TP2 GND TestPoint
+TP10 NC_53 TestPoint
+TP18 NC_54 TestPoint
+TP26 NC_55 TestPoint
+TP34 NC_56 TestPoint
+TP42 NC_57 TestPoint
+TP3 NC_58 TestPoint
+TP11 NC_59 TestPoint
+TP19 NC_60 TestPoint
+TP27 GND TestPoint
+TP35 NC_61 TestPoint
+TP43 NC_62 TestPoint
+TP4 NC_63 TestPoint
+TP12 NC_64 TestPoint
+TP20 NC_65 TestPoint
+TP28 NC_66 TestPoint
+TP36 NC_67 TestPoint
+TP44 NC_68 TestPoint
+TP5 NC_69 TestPoint
+TP13 NC_70 TestPoint
+TP21 5V TestPoint
+TP29 NC_71 TestPoint
+TP37 NC_72 TestPoint
+TP45 NC_73 TestPoint
+TP6 NC_74 TestPoint
+TP14 NC_75 TestPoint
+TP22 NC_76 TestPoint
+TP30 NC_77 TestPoint
+TP38 NC_78 TestPoint
+TP46 NC_79 TestPoint
+TP7 NC_80 TestPoint
+TP15 NC_81 TestPoint
+TP23 NC_82 TestPoint
+TP31 NC_83 TestPoint
+TP39 NC_84 TestPoint
+TP47 NC_85 TestPoint
+TP8 NC_86 TestPoint
+TP16 NC_87 TestPoint
+TP24 NC_88 TestPoint
+TP32 5V TestPoint
+TP40 NC_89 TestPoint
+TP48 NC_90 TestPoint
+TP49 NC_91 TestPoint
+TP57 NC_92 TestPoint
+TP65 NC_93 TestPoint
+TP73 NC_94 TestPoint
+TP81 NC_95 TestPoint
+TP89 NC_96 TestPoint
+TP50 NC_97 TestPoint
+TP58 NC_98 TestPoint
+TP66 NC_99 TestPoint
+TP74 NC_100 TestPoint
+TP82 NC_101 TestPoint
+TP90 NC_102 TestPoint
+TP51 NC_103 TestPoint
+TP59 NC_104 TestPoint
+TP67 NC_105 TestPoint
+TP75 NC_106 TestPoint
+TP83 NC_107 TestPoint
+TP91 NC_108 TestPoint
+TP52 NC_109 TestPoint
+TP60 NC_110 TestPoint
+TP68 NC_111 TestPoint
+TP76 NC_112 TestPoint
+TP84 NC_113 TestPoint
+TP92 GND TestPoint
+TP53 NC_114 TestPoint
+TP61 NC_115 TestPoint
+TP69 NC_116 TestPoint
+TP77 NC_117 TestPoint
+TP85 NC_118 TestPoint
+TP93 NC_119 TestPoint
+TP54 NC_120 TestPoint
+TP62 NC_121 TestPoint
+TP70 NC_122 TestPoint
+TP78 NC_123 TestPoint
+TP86 NC_124 TestPoint
+TP94 NC_125 TestPoint
+TP55 NC_126 TestPoint
+TP63 NC_127 TestPoint
+TP71 NC_128 TestPoint
+TP79 NC_129 TestPoint
+TP87 NC_130 TestPoint
+TP95 NC_131 TestPoint
+TP56 NC_132 TestPoint
+TP64 NC_133 TestPoint
+TP72 NC_134 TestPoint
+TP80 NC_135 TestPoint
+TP88 NC_136 TestPoint
+TP96 NC_137 TestPoint
+U99 viking
+J2.5 GND Net-_J2.5-Pad2_ Net-_J2.5-Pad2_ 5V Conn_01x04
+J2.6 GND Net-_J2.6-Pad2_ Net-_J2.6-Pad2_ 5V Conn_01x04
+J2.7 GND Net-_J2.7-Pad2_ Net-_J2.7-Pad2_ 5V Conn_01x04
+J2.8 GND Net-_J2.8-Pad2_ Net-_J2.8-Pad2_ 5V Conn_01x04
+TP97 GND TestPoint
+TP98 NC_138 TestPoint
+TP99 NC_139 TestPoint
+TP100 NC_140 TestPoint
+TP101 NC_141 TestPoint
+TP102 NC_142 TestPoint
+U3.1 Net-_J3.5-Pad3_ Net-_J3.5-Pad2_ Net-_J3.1-Pad1_ GND GND Net-_J3.1-Pad2_ Net-_J3.5-Pad1_ V_MOT Net-_J3.5-Pad6_ Net-_J3.5-Pad5_ Net-_J3.2-Pad1_ GND GND Net-_J3.2-Pad2_ Net-_J3.5-Pad4_ V_MOT L293D
+J3.1 Net-_J3.1-Pad1_ Net-_J3.1-Pad2_ Conn_01x02
+J3.2 Net-_J3.2-Pad1_ Net-_J3.2-Pad2_ Conn_01x02
+R3.1 Net-_J3.5-Pad2_ Net-_D3.1-Pad2_ 200
+R3.2 Net-_J3.5-Pad1_ Net-_D3.2-Pad2_ 200
+R3.3 Net-_J3.5-Pad3_ Net-_D3.3-Pad2_ 200
+R3.4 Net-_J3.5-Pad5_ Net-_D3.4-Pad2_ 200
+R3.5 Net-_J3.5-Pad4_ Net-_D3.5-Pad2_ 200
+D3.1 GND Net-_D3.1-Pad2_ LED
+D3.2 GND Net-_D3.2-Pad2_ LED
+D3.3 GND Net-_D3.3-Pad2_ LED
+D3.4 GND Net-_D3.4-Pad2_ LED
+D3.5 GND Net-_D3.5-Pad2_ LED
+U3.2 Net-_J3.6-Pad2_ Net-_J3.6-Pad3_ Net-_J3.3-Pad1_ GND GND Net-_J3.3-Pad2_ Net-_J3.6-Pad1_ V_MOT Net-_J3.6-Pad6_ Net-_J3.6-Pad5_ Net-_J3.4-Pad1_ GND GND Net-_J3.4-Pad2_ Net-_J3.6-Pad4_ V_MOT L293D
+J3.3 Net-_J3.3-Pad1_ Net-_J3.3-Pad2_ Conn_01x02
+J3.4 Net-_J3.4-Pad1_ Net-_J3.4-Pad2_ Conn_01x02
+R3.7 Net-_J3.6-Pad3_ Net-_D3.7-Pad2_ 200
+R3.8 Net-_J3.6-Pad1_ Net-_D3.8-Pad2_ 200
+R3.9 Net-_J3.6-Pad2_ Net-_D3.9-Pad2_ 200
+R3.10 Net-_J3.6-Pad5_ Net-_D3.10-Pad2_ 200
+R3.11 Net-_J3.6-Pad4_ Net-_D3.11-Pad2_ 200
+D3.7 GND Net-_D3.7-Pad2_ LED
+D3.8 GND Net-_D3.8-Pad2_ LED
+D3.9 GND Net-_D3.9-Pad2_ LED
+D3.10 GND Net-_D3.10-Pad2_ LED
+D3.11 GND Net-_D3.11-Pad2_ LED
+R3.6 Net-_J3.5-Pad6_ Net-_D3.6-Pad2_ 200
+D3.6 GND Net-_D3.6-Pad2_ LED
+R3.12 Net-_J3.6-Pad6_ Net-_D3.12-Pad2_ 200
+D3.12 GND Net-_D3.12-Pad2_ LED
+JP3.5 M2PWM Net-_J3.5-Pad6_ M2PWM
+JP3.6 M2A Net-_J3.5-Pad5_ M2A
+J3.5 Net-_J3.5-Pad1_ Net-_J3.5-Pad2_ Net-_J3.5-Pad3_ Net-_J3.5-Pad4_ Net-_J3.5-Pad5_ Net-_J3.5-Pad6_ Conn_01x06
+JP3.7 M2B Net-_J3.5-Pad4_ M2B
+JP3.8 M1PWM Net-_J3.5-Pad3_ M1PWM
+JP3.9 M1A Net-_J3.5-Pad2_ M1A
+JP3.10 M1B Net-_J3.5-Pad1_ M1B
+JP3.11 M4PWM Net-_J3.6-Pad6_ M4PWM
+JP3.12 M4A Net-_J3.6-Pad5_ M4A
+J3.6 Net-_J3.6-Pad1_ Net-_J3.6-Pad2_ Net-_J3.6-Pad3_ Net-_J3.6-Pad4_ Net-_J3.6-Pad5_ Net-_J3.6-Pad6_ Conn_01x06
+JP3.13 M4B Net-_J3.6-Pad4_ M4B
+JP3.14 M3A Net-_J3.6-Pad3_ M3A
+JP3.15 M3PWM Net-_J3.6-Pad2_ M3PWM
+JP3.16 M3B Net-_J3.6-Pad1_ M3B
+.end

@@ -1,0 +1,17 @@
+.title KiCad schematic
+U2 +3.3V /GP0 NC_01 Net-_R1-Pad1_ /RX /TX NC_02 NC_03 NC_04 NC_05 +3.3V /D- /D+ GND MCP2221A
+C2 +3.3V GND 0.1u
+R1 Net-_R1-Pad1_ +3.3V 10k
+D1 +5V Net-_C1-Pad1_ DIODE
+C1 Net-_C1-Pad1_ GND 10u
+C3 +3.3V GND 22u
+P1 +5V /D- /D+ GND NC_06 USB_A
+P2 GND VCC /RX /TX CONN_01X04
+R2 Net-_D2-Pad1_ +5V R
+R3 Net-_D3-Pad1_ +3.3V R
+D2 Net-_D2-Pad1_ GND LED
+D3 Net-_D3-Pad1_ GND LED
+R4 Net-_D4-Pad1_ +3.3V R
+D4 Net-_D4-Pad1_ /GP0 LED
+U1 +3.3V GND Net-_C1-Pad1_ BD33FA1
+.end

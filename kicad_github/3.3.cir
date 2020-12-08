@@ -1,0 +1,6 @@
+.title KiCad schematic
+U1 /GND /3,3V /5V LM1117-3.3
+C2 /5V /GND 10uF
+C4 /3,3V /GND 0,1uF
+C3 /3,3V /GND 22uF
+.end

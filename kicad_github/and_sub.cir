@@ -1,0 +1,9 @@
+.title KiCad schematic
+.include "/home/akshay/Downloads/kicad-simulation-examples-master/libs/spice_models.lib"
+X1 a b out vdd AND
+R1 GND out 10meg
+V1 a GND dc 0 pulse(0 3.3 0 0 0 100m 200m)
+V2 b GND dc 0 pulse(0 3.3 50m 0 0 50m 100m)
+V3 vdd GND dc 3.3
+.tran 1m 400m
+.end

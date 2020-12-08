@@ -1,0 +1,42 @@
+.title KiCad schematic
+U1 Net-_D1-Pad2_ GND Net-_R8-Pad1_ Net-_C3-Pad1_ VCC IS31LT3360
+L1 Net-_D1-Pad2_ Net-_C3-Pad2_ 47uH
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 1uF
+C2 VCC GND 0.1uF
+R1 Net-_C3-Pad1_ VCC 0.3
+D3 Net-_D3-Pad1_ Net-_C3-Pad1_ LED
+D4 Net-_D4-Pad1_ Net-_D3-Pad1_ LED
+D5 Net-_D5-Pad1_ Net-_D4-Pad1_ LED
+D6 Net-_D6-Pad1_ Net-_D5-Pad1_ LED
+D7 Net-_C3-Pad2_ Net-_D6-Pad1_ LED
+D8 Net-_D8-Pad1_ Net-_C6-Pad1_ LED
+D9 Net-_D10-Pad2_ Net-_D8-Pad1_ LED
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ LED
+D11 Net-_D11-Pad1_ Net-_D10-Pad1_ LED
+D1 VCC Net-_D1-Pad2_ PMEG4010EGWX
+R8 Net-_R8-Pad1_ /adj 100
+U2 Net-_D2-Pad2_ GND Net-_R2-Pad1_ Net-_C6-Pad1_ VCC IS31LT3360
+L2 Net-_D2-Pad2_ Net-_C6-Pad2_ 47uH
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 1uF
+C5 VCC GND 0.1uF
+R3 Net-_C6-Pad1_ VCC 0.3
+D13 Net-_D13-Pad1_ Net-_C9-Pad1_ LED
+D14 Net-_D14-Pad1_ Net-_D13-Pad1_ LED
+D15 Net-_D15-Pad1_ Net-_D14-Pad1_ LED
+D16 Net-_D16-Pad1_ Net-_D15-Pad1_ LED
+D17 Net-_C9-Pad2_ Net-_D16-Pad1_ LED
+D2 VCC Net-_D2-Pad2_ PMEG4010EGWX
+R2 Net-_R2-Pad1_ /adj 100
+D12 Net-_C6-Pad2_ Net-_D11-Pad1_ LED
+U3 Net-_D18-Pad2_ GND Net-_R4-Pad1_ Net-_C9-Pad1_ VCC IS31LT3360
+L3 Net-_D18-Pad2_ Net-_C9-Pad2_ 47uH
+C9 Net-_C9-Pad1_ Net-_C9-Pad2_ 1uF
+C8 VCC GND 0.1uF
+R5 Net-_C9-Pad1_ VCC 0.3
+C7 VCC GND 22uF
+D18 VCC Net-_D18-Pad2_ PMEG4010EGWX
+R4 Net-_R4-Pad1_ /adj 100
+C4 VCC GND 22uF
+C1 VCC GND 22uF
+J1 /adj GND VCC NC_01 NC_02 109159003101916
+.end

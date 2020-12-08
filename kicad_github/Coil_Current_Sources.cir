@@ -1,0 +1,27 @@
+.title KiCad schematic
+C1 /PWR_IN+ NC_01 100n 16V X5R
+R4 Net-_R1-Pad2_ NC_02 10k 1%
+R3 /PWR_IN+ Net-_R1-Pad2_ 10k 1%
+R1 /COIL_F- Net-_R1-Pad2_ 10k 1%
+R7 /COIL_F+ Net-_Q3-Pad2_ 10k
+R9 NC_03 Net-_Q3-Pad6_ 1R
+R10 Net-_Q3-Pad3_ NC_04 1R
+R13 NC_05 /COIL_F- 10R
+TP1 Net-_R1-Pad2_ TP
+TP3 Net-_Q3-Pad2_ TP
+Q3 /COIL_F+ Net-_Q3-Pad2_ Net-_Q3-Pad3_ /COIL_F+ Net-_Q3-Pad2_ Net-_Q3-Pad6_ BC847PN-7-F
+RV3 /PWR_IN+ Net-_R1-Pad2_ NC_06 20k
+C2 /PWR_IN- NC_07 100n 16V X5R
+R6 Net-_R2-Pad2_ NC_08 10k 1%
+R5 /PWR_IN+ Net-_R2-Pad2_ 10k 1%
+R2 /COIL_T- Net-_R2-Pad2_ 10k 1%
+R8 /COIL_T+ Net-_Q4-Pad2_ 10k
+R11 NC_09 Net-_Q4-Pad6_ 1R
+R12 Net-_Q4-Pad3_ NC_10 1R
+R14 NC_11 /COIL_T- 10R
+TP2 Net-_R2-Pad2_ TP
+TP4 Net-_Q4-Pad2_ TP
+Q4 /COIL_T+ Net-_Q4-Pad2_ Net-_Q4-Pad3_ /COIL_T+ Net-_Q4-Pad2_ Net-_Q4-Pad6_ BC847PN-7-F
+RV4 /PWR_IN+ Net-_R2-Pad2_ NC_12 20k
+U14 Net-_Q3-Pad2_ Net-_R1-Pad2_ NC_13 /PWR_IN- NC_14 Net-_R2-Pad2_ Net-_Q4-Pad2_ /PWR_IN+ MCP6H02-E/SN
+.end

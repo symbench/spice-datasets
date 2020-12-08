@@ -1,0 +1,18 @@
+.title KiCad schematic
+C319 NC_01 Net-_C319-Pad2_ C
+C321 NC_02 Net-_C319-Pad2_ C
+C320 Net-_C320-Pad1_ NC_03 C
+C322 Net-_C320-Pad1_ NC_04 C
+J90 Net-_C319-Pad2_ NC_05 Net-_J90-Pad3_ Net-_J90-Pad3_ NC_06 Net-_C320-Pad1_ InConnector
+J91 NC_07 NC_08 Net-_J91-Pad3_ Net-_J91-Pad3_ NC_09 NC_10 OutConnector
+R383 Net-_R382-Pad2_ Net-_J91-Pad3_ R
+R380 NC_11 Net-_R379-Pad2_ R
+R381 Net-_R379-Pad2_ Net-_J91-Pad3_ R
+R382 Net-_R379-Pad2_ Net-_R382-Pad2_ R
+R379 Net-_R376-Pad2_ Net-_R379-Pad2_ R
+R378 NC_12 Net-_R377-Pad2_ R
+R376 Net-_R375-Pad2_ Net-_R376-Pad2_ R
+R377 Net-_R375-Pad2_ Net-_R377-Pad2_ R
+R375 Net-_J90-Pad3_ Net-_R375-Pad2_ R
+U4 Net-_R376-Pad2_ Net-_R376-Pad2_ Net-_R377-Pad2_ NC_13 Net-_R382-Pad2_ NC_14 Net-_J91-Pad3_ NC_15 ADA4075-2
+.end

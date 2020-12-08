@@ -1,0 +1,45 @@
+.title KiCad schematic
+F1 Net-_F1-Pad1_ /Battery+ 1.5A_Fuse
+C1 +5V GND C_10uF
+R2 Net-_J4-Pad03_ GND R_49.9K
+R1 +5V Net-_J4-Pad03_ R_75k
+C2 VBUS GND C_10uF
+TP1 VBUS TP
+U3 +5V Net-_L1-Pad2_ Net-_L1-Pad2_ GND GND GND +BATT Net-_R6-Pad2_ GND Net-_R10-Pad2_ Net-_Q1-Pad1_ GND Net-_R12-Pad2_ +5V +5V GND TPS61090RSAR
+L1 +BATT Net-_L1-Pad2_ L_6.8uH
+TP3 +BATT TP
+TP4 Net-_R10-Pad2_ TP
+R10 +BATT Net-_R10-Pad2_ R_200K
+C5 +BATT GND C_0.1uF
+C4 +BATT GND C_10uF
+R7 Net-_R6-Pad2_ GND R_340K
+C6 +5V GND C_2.2uF
+R16 +5V Net-_D4-Pad2_ R_1K
+D4 GND Net-_D4-Pad2_ LED_0805
+R13 Net-_R12-Pad2_ GND R_200K
+R12 +5V Net-_R12-Pad2_ R_1.87M
+TP5 Net-_Q1-Pad1_ TP
+R14 Net-_Q1-Pad1_ GND R_10K
+Q1 Net-_Q1-Pad1_ GND Net-_D3-Pad1_ SSM3K333R
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED_0805
+R15 +BATT Net-_D3-Pad2_ R_1K
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED_0805
+R11 VBUS Net-_D2-Pad2_ R_1K
+R5 Net-_R5-Pad1_ GND R_100K
+R9 Net-_R9-Pad1_ GND R_1K
+R3 VBUS Net-_R3-Pad2_ R_270K
+R4 Net-_R3-Pad2_ GND R_100K
+TP2 /Battery+ TP
+C3 /Battery+ GND C_10nF
+R17 +5V Net-_J4-Pad02_ R_43k
+R18 Net-_J4-Pad02_ GND R_49.9K
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED_0805_Amber
+R8 Net-_D1-Pad2_ VBUS R_1K
+U2 +BATT Net-_R3-Pad2_ VBUS VBUS /16KThermistor NC_01 Net-_D2-Pad1_ Net-_D1-Pad1_ VBUS GND GND Net-_R5-Pad1_ Net-_R9-Pad1_ /Battery+ /Battery+ /Battery+ VBUS VBUS VBUS +BATT GND MCP73871T-2CCI_ML
+J4 +5V Net-_J4-Pad02_ Net-_J4-Pad03_ GND GND GND USB-A-S-X-X-SM2
+J2 VBUS NC_02 NC_03 NC_04 GND GND GND GND GND GND GND USB-Micro-1981568-1
+C7 +5V GND C_100uF
+J1 GND /16KThermistor NanoFit_RA_TH_02
+J3 GND Net-_F1-Pad1_ NanoFit_RA_TH_02
+R6 +BATT Net-_R6-Pad2_ R_1.87M
+.end

@@ -1,0 +1,17 @@
+.title KiCad schematic
+C147 NC_01 Net-_C147-Pad2_ C
+C149 NC_02 Net-_C147-Pad2_ C
+C148 Net-_C148-Pad1_ NC_03 C
+C150 Net-_C148-Pad1_ NC_04 C
+J50 Net-_C147-Pad2_ NC_05 Net-_J50-Pad3_ Net-_J50-Pad3_ NC_06 Net-_C148-Pad1_ InConnector
+J51 NC_07 NC_08 Net-_C152-Pad1_ Net-_C152-Pad1_ NC_09 NC_10 OutConnector
+R286 Net-_C152-Pad2_ Net-_C152-Pad1_ 1k
+U30 Net-_C151-Pad2_ Net-_C151-Pad1_ Net-_J50-Pad3_ NC_11 Net-_D2-Pad1_ Net-_C152-Pad2_ Net-_C152-Pad1_ NC_12 ADA4807-2ARM
+C151 Net-_C151-Pad1_ Net-_C151-Pad2_ 47p
+R284 Net-_C151-Pad1_ Net-_C152-Pad2_ 1k
+D1 Net-_C151-Pad2_ Net-_C151-Pad1_ 1N4148
+D2 Net-_D2-Pad1_ Net-_C151-Pad2_ 1N4148
+R285 Net-_D2-Pad1_ NC_13 1k
+R283 Net-_J50-Pad3_ NC_14 49.9
+C152 Net-_C152-Pad1_ Net-_C152-Pad2_ C
+.end

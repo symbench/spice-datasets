@@ -1,0 +1,5 @@
+.title KiCad schematic
+T1 NC_01 NC_02 Net-_D1-Pad4_ Net-_D1-Pad3_ Transformer_1P_1S
+D1 /24VDC /GND_Out Net-_D1-Pad3_ Net-_D1-Pad4_ D_Bridge_+-AA
+C1 /24VDC /GND_Out 1500uF
+.end

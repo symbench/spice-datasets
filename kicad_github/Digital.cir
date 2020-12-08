@@ -1,0 +1,16 @@
+.title KiCad schematic
+OK1 Net-_OK1-Pad1_ GND Net-_OK1-Pad3_ GND GND Net-_OK1-Pad6_ GND Net-_OK1-Pad8_ ILD2
+OK2 Net-_OK2-Pad1_ GND Net-_OK2-Pad3_ GND GND Net-_OK2-Pad6_ GND Net-_OK2-Pad8_ ILD2
+R20 NC_01 Net-_OK1-Pad1_ 1k
+R22 Net-_OK1-Pad8_ /D48 1k
+R21 NC_02 Net-_OK2-Pad1_ 1k
+R26 NC_03 Net-_OK1-Pad3_ 1k
+R28 Net-_OK1-Pad6_ /D49 1k
+R29 Net-_OK2-Pad6_ /D51 1k
+R27 NC_04 Net-_OK2-Pad3_ 1k
+R30 /D49 +3V3 10k
+R31 /D51 +3V3 10k
+R25 /D50 +3V3 10k
+R23 Net-_OK2-Pad8_ /D50 1k
+R24 /D48 +3V3 10k
+.end

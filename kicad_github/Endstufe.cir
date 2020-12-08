@@ -1,0 +1,58 @@
+.title KiCad schematic
+T1 Net-_P4-Pad2_ Net-_J4-Pad1_ Net-_R10-Pad1_ Net-_C1-Pad2_ Net-_P4-Pad1_ Bias_1 KT88
+T2 Net-_P4-Pad2_ Net-_J4-Pad5_ Net-_R13-Pad1_ Net-_C11-Pad1_ Net-_P4-Pad1_ Bias_2 KT88
+U2 Net-_C10-Pad2_ Net-_C12-Pad1_ Net-_R11-Pad1_ Net-_P6-Pad1_ Net-_P6-Pad1_ Net-_C3-Pad2_ Net-_C7-Pad2_ Net-_R11-Pad1_ Net-_P6-Pad2_ ECC83
+U1 Net-_C11-Pad2_ Net-_C10-Pad1_ Net-_R12-Pad1_ Net-_P6-Pad1_ Net-_P6-Pad1_ Net-_C2-Pad2_ Net-_C3-Pad1_ Net-_R12-Pad1_ Net-_P6-Pad2_ ECC82
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 100nF / 400V
+RV2 Net-_R3-Pad1_ +240V Net-_R18-Pad2_ 20k
+R11 Net-_R11-Pad1_ -120V 68k
+R12 Net-_R12-Pad1_ -120V 27k/1W
+R1 GND Net-_C3-Pad1_ 1M
+C10 Net-_C10-Pad1_ Net-_C10-Pad2_ 100nF / 400V
+R22 GND Net-_C10-Pad1_ 1M
+C6 Net-_C6-Pad1_ Net-_C3-Pad2_ 33pF / 500V
+R19 Net-_C10-Pad2_ Net-_C6-Pad1_ 47k
+R18 Net-_C10-Pad2_ Net-_R18-Pad2_ 100k
+R3 Net-_R3-Pad1_ Net-_C3-Pad2_ 82k
+R16 Net-_C11-Pad2_ +300V 68k/1W
+R4 +300V Net-_C2-Pad2_ 68k/1W
+C11 Net-_C11-Pad1_ Net-_C11-Pad2_ 100nF/400V
+C4 Net-_C1-Pad2_ Net-_C2-Pad2_ 100nF/400V
+R20 Bias_2 GND 4R7/6W
+R5 GND Bias_1 4R7/6W
+C2 Net-_C1-Pad2_ Net-_C2-Pad2_ 100nF/400V
+C8 Net-_C11-Pad1_ Net-_C11-Pad2_ 100nF/400V
+R2 Net-_C14-Pad1_ Net-_C1-Pad2_ 220k
+R21 Net-_C11-Pad1_ Net-_C15-Pad1_ 220k
+R7 -60V Net-_C14-Pad1_ 1M
+P4 Net-_P4-Pad1_ Net-_P4-Pad2_ 6V3_AC
+P6 Net-_P6-Pad1_ Net-_P6-Pad2_ 6V3_DC
+R15 Net-_C12-Pad1_ GND 470R
+R6 GND Net-_C7-Pad2_ 470k
+P5 GND Net-_C12-Pad2_ Trafo_GK
+RV5 Net-_C12-Pad2_ Net-_C12-Pad1_ Net-_C12-Pad1_ 20k
+C12 Net-_C12-Pad1_ Net-_C12-Pad2_ 100pF / 500V
+R23 Net-_C12-Pad2_ GND 100R/6W
+R10 Net-_R10-Pad1_ Net-_J4-Pad4_ 100R/6W
+R13 Net-_R13-Pad1_ Net-_J4-Pad6_ 100R/6W
+C1 Bias_1 Net-_C1-Pad2_ 68pF / 500V
+C13 Bias_2 Net-_C11-Pad1_ 68pF / 500V
+R17 Net-_C15-Pad1_ -60V 1M
+C5 Net-_C14-Pad1_ Net-_C1-Pad2_ 68pF / 500V
+C9 Net-_C11-Pad1_ Net-_C15-Pad1_ 68pF / 500V
+RV3 Net-_P4-Pad2_ GND Net-_P4-Pad1_ 500R
+R9 Net-_J3-Pad1_ Net-_C7-Pad1_ 220R
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ 100nF
+P7 +450V GND VSup1
+P8 Bias_1 UG_1 -60V GND UG_2 Bias_2 Bias
+R8 Net-_C14-Pad1_ UG_1 10k
+R14 Net-_C15-Pad1_ UG_2 10k
+C14 Net-_C14-Pad1_ GND 10µF / 100V
+C15 Net-_C15-Pad1_ GND 10µF / 100V
+K1 Net-_D1-Pad1_ Net-_D1-Pad2_ GND Net-_C7-Pad1_ NC_01 G6E
+J1 -60V -120V GND +240V GND +300V HV In
+J3 Net-_J3-Pad1_ GND NF_In
+J2 Net-_D1-Pad1_ Net-_D1-Pad2_ Relais
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ 1N4001
+J4 Net-_J4-Pad1_ GND +450V Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Trafo
+.end

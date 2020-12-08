@@ -1,0 +1,53 @@
+.title KiCad schematic
+C1 V1 V0 270u
+C2 V2 V1 270u
+C3 V3 V2 270u
+C4 V4 V3 270u
+C5 V5 V4 270u
+C6 V6 V5 270u
+C7 V7 V6 270u
+C8 V8 V7 270u
+R5 V8 Net-_R4-Pad1_ 10meg
+R4 Net-_R4-Pad1_ Net-_R3-Pad1_ 10meg
+R3 Net-_R3-Pad1_ Net-_R2-Pad1_ 10meg
+R2 Net-_R2-Pad1_ PROBE 10meg
+R1 PROBE V0 47k
+D3 Net-_C10-Pad1_ AC1 R3000
+D1 AC1 V0 R3000
+D4 V8 AC2 R3000
+D2 AC2 V0 R3000
+J1 AC1 Conn_01x01_Female
+J2 AC2 Conn_01x01_Female
+J3 PROBE Conn_01x01_Female
+J4 V0 Conn_01x01_Female
+J5 V1 Conn_01x01_Female
+J6 V2 Conn_01x01_Female
+J7 V3 Conn_01x01_Female
+J8 V4 Conn_01x01_Female
+J9 V5 Conn_01x01_Female
+J10 V6 Conn_01x01_Female
+J12 V8 Conn_01x01_Female
+J11 V7 Conn_01x01_Female
+J14 V0 Conn_01x01_Female
+J13 PROBE Conn_01x01_Female
+J15 PROBE Conn_01x01_Female
+J16 V0 Conn_01x01_Female
+J17 V0 Conn_01x01_Female
+J18 V1 Conn_01x01_Female
+J19 V2 Conn_01x01_Female
+J20 V3 Conn_01x01_Female
+J21 V4 Conn_01x01_Female
+J22 V5 Conn_01x01_Female
+J23 V6 Conn_01x01_Female
+J25 V8 Conn_01x01_Female
+J24 V7 Conn_01x01_Female
+D5 V8 Net-_C10-Pad1_ R3000
+C10 Net-_C10-Pad1_ TRIG 10n
+C9 TRIG V0 1n
+J26 TRIG Conn_01x01_Female
+C11 TRIG V0 1n
+C12 Net-_C10-Pad1_ TRIG 10n
+R6 AC1 AC0 1meg
+R7 AC0 AC1 1meg
+J27 AC0 Conn_01x01_Female
+.end

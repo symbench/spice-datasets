@@ -1,0 +1,91 @@
+.title KiCad schematic
+CON1 GND Net-_C3-Pad1_ BARREL_JACK
+C3 Net-_C3-Pad1_ GND 10uF
+U2 Net-_C8-Pad1_ GND Net-_R2-Pad2_ Net-_C3-Pad1_ Net-_C3-Pad1_ Net-_C8-Pad2_ AP3211KTR
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 10nF
+L1 Net-_C8-Pad2_ Net-_C15-Pad1_ 4.7uH
+R2 Net-_C15-Pad1_ Net-_R2-Pad2_ 68k
+R3 Net-_R2-Pad2_ GND 12k
+C15 Net-_C15-Pad1_ GND 22uF
+D2 Net-_C8-Pad2_ GND D_Schottky_Small_ALT
+U3 GND 3.3V Net-_C15-Pad1_ AZ1117CH-3.3
+C18 Net-_C15-Pad1_ GND 10uF
+C24 3.3V GND 22uF
+U4 Net-_C15-Pad1_ GND Net-_C15-Pad1_ Net-_C23-Pad1_ 5V TC1185-5.0
+C16 Net-_C15-Pad1_ GND 1uF
+C23 Net-_C23-Pad1_ AGND 470pF
+C25 5V AGND 1uF
+J1 GND AGND JMP
+U1 Net-_C40-Pad1_ NC_01 NC_02 /controller/I2S2_CK /controller/I2S2_MCK /controller/I2S2_SD /controller/I2S2_WS /controller/I2S2_CK /controller/I2S2_MCK /controller/I2S2ext /controller/I2S2_WS GND 3.3V GND GND /controller/I2C1_SDA /controller/I2C1_SCL Net-_C43-Pad1_ Net-_C42-Pad1_ Net-_C13-Pad1_ AGND Net-_C14-Pad1_ Net-_C12-Pad1_ AGND Net-_C10-Pad1_ 5V AGND Net-_C41-Pad1_ WM8778-units
+C2 3.3V GND 100nF
+C1 3.3V GND 10uF
+C5 5V AGND 100nF
+C6 Net-_C14-Pad1_ AGND 100nF
+C7 Net-_C10-Pad1_ AGND 100nF
+C4 Net-_C12-Pad1_ AGND 100nF
+C9 Net-_C13-Pad1_ AGND 100nF
+C14 Net-_C14-Pad1_ AGND 10uF
+C11 5V AGND 10uF
+C12 Net-_C12-Pad1_ AGND 10uF
+C13 Net-_C13-Pad1_ AGND 10uF
+R1 5V Net-_C14-Pad1_ 33R
+C10 Net-_C10-Pad1_ AGND 10uF
+U5 3.3V NC_03 NC_04 NC_05 Net-_U5-Pad5_ Net-_U5-Pad6_ Net-_C17-Pad1_ NC_06 NC_07 NC_08 NC_09 GND 3.3V /controller/TIM2_CH1 /controller/TIM2_CH2 /controller/rot_but NC_10 GND 3.3V NC_11 /controller/ADC1_IN5 /controller/ADC1_IN6 /controller/ADC1_IN7 NC_12 NC_13 NC_14 NC_15 BOOT /controller/DISP_SCL Net-_C22-Pad1_ GND 3.3V /controller/I2S2_WS /controller/I2S2_CK /controller/I2S2ext /controller/I2S2_SD /controller/I2S2_MCK NC_16 /controller/SDIO_D0 /controller/SDIO_D1 NC_17 /controller/USART1_TX /controller/USART1_RX /controller/stomp_start /controller/stomp_stop Net-_J3-Pad4_ GND 3.3V Net-_J3-Pad2_ /controller/SDdetect /controller/SDIO_D2 /controller/SDIO_D3 /controller/SDIO_CK /controller/SDIO_CMD /controller/DISP_SDA NC_18 NC_19 /controller/I2C1_SCL /controller/I2C1_SDA BOOT NC_20 NC_21 GND 3.3V STM32F401RC
+C17 Net-_C17-Pad1_ GND 100nF
+SW1 GND Net-_C17-Pad1_ reset
+C22 Net-_C22-Pad1_ GND 4.7uF
+C29 3.3V GND 100nF
+C28 3.3V GND 100nF
+C27 3.3V GND 100nF
+C26 3.3V GND 100nF
+C21 3.3V GND 100nF
+C20 3.3V GND 1uF
+C30 3.3V GND 4.7uF
+C19 3.3V GND 100nF
+D1 Net-_C3-Pad1_ GND D_Small_ALT
+J3 3.3V Net-_J3-Pad2_ GND Net-_J3-Pad4_ programming header
+SW2 GND BOOT 3.3V RAM~FLASH
+J4 /controller/SDIO_D2 /controller/SDIO_D3 /controller/SDIO_CMD 3.3V /controller/SDIO_CK GND /controller/SDIO_D0 /controller/SDIO_D1 GND /controller/SDdetect GND Micro_SD_Card_Det
+R6 3.3V /controller/I2C1_SDA 4.7k
+R5 3.3V /controller/I2C1_SCL 4.7k
+R4 3.3V /controller/SDdetect 4.7k
+SW5 /controller/TIM2_CH2 /controller/TIM2_CH1 GND /controller/rot_but GND Rotary_Encoder_Switch
+R7 /controller/rot_but 3.3V 4.7k
+C33 /controller/rot_but GND 100nF
+U6 GND 3.3V /controller/DISP_SCL /controller/DISP_SDA lcd
+RV1 GND /controller/ADC1_IN5 3.3V pot_in_l
+RV2 GND /controller/ADC1_IN6 3.3V pot_in_r
+RV3 GND /controller/ADC1_IN7 3.3V pot_out
+SW3 /controller/stomp_start GND start
+SW4 /controller/stomp_stop GND stop
+J2 /controller/USART1_RX /controller/USART1_TX UART
+C32 GND 3.3V 10uF
+C31 GND 3.3V 4.7uF
+Y1 Net-_U5-Pad5_ GND Net-_U5-Pad6_ CSTLS4M00G53-B0
+R20 /Codec/voutl Net-_C43-Pad2_ 100
+C43 Net-_C43-Pad1_ Net-_C43-Pad2_ 10uF
+R18 AGND Net-_C43-Pad2_ 47k
+R19 /Codec/voutr Net-_C42-Pad2_ 100
+C42 Net-_C42-Pad1_ Net-_C42-Pad2_ 10uF
+R17 AGND Net-_C42-Pad2_ 47k
+U7 Net-_R11-Pad1_ AGND Net-_C37-Pad2_ Net-_C37-Pad1_ 5V MAX4466
+C36 Net-_C36-Pad1_ Net-_C36-Pad2_ 1uF
+R13 Net-_C36-Pad1_ Net-_C37-Pad2_ 10k
+R14 Net-_C37-Pad2_ Net-_C37-Pad1_ 100k
+C37 Net-_C37-Pad1_ Net-_C37-Pad2_ 100pF
+R11 Net-_R11-Pad1_ 5V 1M
+R12 AGND Net-_R11-Pad1_ 1M
+R10 Net-_J5-Pad2_ Net-_C34-Pad2_ 2k
+R9 Net-_C34-Pad2_ 5V 2k
+C34 AGND Net-_C34-Pad2_ 100nF
+J5 AGND Net-_J5-Pad2_ Net-_C36-Pad2_ electret mic
+R15 Net-_C37-Pad1_ Net-_C38-Pad1_ 680
+C38 Net-_C38-Pad1_ AGND 4.7nF
+C40 Net-_C40-Pad1_ Net-_C38-Pad1_ 10uF
+R16 Net-_J6-PadT_ Net-_C39-Pad1_ 680
+C39 Net-_C39-Pad1_ AGND 4.7nF
+C41 Net-_C41-Pad1_ Net-_C39-Pad1_ 10uF
+J6 NC_22 NC_23 AGND Net-_J6-PadT_ Net-_J6-PadTN_ line in
+R8 AGND Net-_J6-PadTN_ 1k
+J8 /Codec/voutr /Codec/voutl AGND stereo_out
+.end

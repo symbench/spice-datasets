@@ -1,0 +1,16 @@
+.title KiCad schematic
+J4 GND NC_01 Net-_J4-Pad3_ PJ398SM
+J1 GND NC_02 /Gate-Jack PJ398SM
+J2 GND NC_03 /Square-Jack PJ398SM
+J5 GND NC_04 /Triangle-Jack PJ398SM
+R4 Net-_D1-Pad1_ /Red-LED 150
+R3 Net-_D1-Pad4_ /Green-LED 82
+R5 Net-_D1-Pad3_ /Blue-LED 82
+D1 Net-_D1-Pad1_ GND Net-_D1-Pad3_ Net-_D1-Pad4_ LED_RCBG
+J3 -12V -12V GND GND +5V +5V +12V +12V /Triangle-Jack /Triangle-Jack /Square-Jack /Square-Jack /Gate-Jack /Gate-Jack /CV-Jack /CV-Scale Conn_02x08_Odd_Even
+J6 -12V -12V GND GND +5V +5V +12V +12V NC_05 NC_06 /Blue-LED /Blue-LED /Green-LED /Green-LED /Red-LED /Red-LED Conn_02x08_Odd_Even
+R1 /CV-Jack Net-_J4-Pad3_ 10k
+R2 Net-_R2-Pad1_ /CV-Jack 10k
+RV2 -12V Net-_R2-Pad1_ +12V 10k
+RV1 /CV-Scale /CV-Scale /CV-Jack 10k
+.end

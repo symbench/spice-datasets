@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 GND Net-_C2-Pad1_ NC_01 VCC Net-_C1-Pad1_ Net-_C2-Pad1_ Net-_R1-Pad2_ VCC LM555
+R1 VCC Net-_R1-Pad2_ R
+R2 Net-_R1-Pad2_ Net-_C2-Pad1_ R
+C1 Net-_C1-Pad1_ GND C
+C2 Net-_C2-Pad1_ GND C
+.end

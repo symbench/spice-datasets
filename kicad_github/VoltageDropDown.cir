@@ -1,0 +1,20 @@
+.title KiCad schematic
+U1 Net-_C3-Pad1_ /Vdd-OUT /Vdd-IN LM317_3PinPackage
+U2 Net-_C4-Pad2_ /Vss-IN /Vss-OUT LM337_TO220
+R1 /Vdd-OUT Net-_C3-Pad1_ 220
+R2 Net-_C3-Pad1_ GND 3300
+C3 Net-_C3-Pad1_ GND 10u
+C5 /Vdd-OUT GND 25u
+C1 /Vdd-IN GND 1u
+C4 GND Net-_C4-Pad2_ 10u
+R3 GND Net-_C4-Pad2_ 3300
+R4 Net-_C4-Pad2_ /Vss-OUT 220
+C6 GND /Vss-OUT 25u
+C2 GND /Vss-IN 1u
+J1 GND GND /Vdd-IN /Vss-IN IN
+J2 GND GND /Vdd-OUT /Vss-OUT OUT
+D1 /Vdd-IN /Vdd-OUT 1N4007
+D3 /Vdd-OUT Net-_C3-Pad1_ 1N4007
+D2 /Vss-OUT /Vss-IN 1N4007
+D4 Net-_C4-Pad2_ /Vss-OUT 1N4007
+.end

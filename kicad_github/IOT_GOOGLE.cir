@@ -1,0 +1,15 @@
+.title KiCad schematic
+R4 Net-_Q3-Pad2_ /D1 R_Small
+R5 Net-_Q4-Pad2_ Net-_Q1-Pad3_ R_Small
+R6 GND /OUT R_Small
+R1 Net-_Q1-Pad2_ /D0 R_Small
+R2 Net-_Q2-Pad2_ /PIR R_Small
+R3 GND Net-_Q1-Pad3_ R_Small
+J1 /D0 /D1 /PIR Conn_01x03_Male
+J2 VCC GND Conn_01x02_Male
+J3 /OUT GND Conn_01x02_Male
+Q1 VCC Net-_Q1-Pad2_ Net-_Q1-Pad3_ BC547
+Q2 VCC Net-_Q2-Pad2_ Net-_Q1-Pad3_ BC547
+Q3 VCC Net-_Q3-Pad2_ Net-_Q3-Pad3_ BC547
+Q4 Net-_Q3-Pad3_ Net-_Q4-Pad2_ /OUT BC547
+.end

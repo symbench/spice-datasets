@@ -1,0 +1,20 @@
+.title KiCad schematic
+.include "/home/akshay/Downloads/kicad-simulation-examples-master/libs/spice_models.lib"
+X3 Net-_X1-PadOut_ Net-_X3-PadB_ q12 4 NAND
+X1 6 1 Net-_X1-PadC_ Net-_X1-PadOut_ 4 NAND3
+X2 Net-_X1-PadC_ 3 5 Net-_X2-PadOut_ 4 NAND3
+X4 q12 Net-_X2-PadOut_ Net-_X3-PadB_ 4 NAND
+X6 q12 Net-_X5-PadOut_ Net-_X6-PadOut_ 4 NAND
+X7 Net-_X5-PadOut_ Net-_X3-PadB_ Net-_X7-PadOut_ 4 NAND
+X9 Net-_X6-PadOut_ 6 5 4 NAND
+X8 5 Net-_X7-PadOut_ 6 4 NAND
+X5 Net-_X1-PadC_ Net-_X5-PadOut_ 4 NOT
+R1 GND 5 10meg
+R2 GND 6 10meg
+V2 1 GND dc 3.3
+V1 3 GND dc 3.3
+V3 2 GND dc 0 pwl(0 0 5m 0 5.005m 3.3 10m 3.3 10.005m 0 15m 0 15.005m 3.3 20m 3.3 20.005m 0 25m 0 25.005m 3.3 30m 3.3 30.005m 0 35m 0 35.005m 3.3 40m 3.3 40.005m 0 45m 0 45.005m 3.3 50m 3.3)
+V4 4 GND dc 3.3
+X10 2 Net-_X1-PadC_ 4 NOT
+.tran .25m 50m
+.end

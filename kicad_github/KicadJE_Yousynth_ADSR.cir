@@ -1,0 +1,54 @@
+.title KiCad schematic
+C4 GND +12V 100n
+C2 GND +12V 1u
+C5 GND -12V 100n
+C3 GND -12V 1u
+D1 +12V GND 1N1007
+D2 GND -12V 1N1007
+J2 GND ADSR_out ADSR
+J1 Net-_J1-PadS_ Net-_J1-PadT_ Net-_J1-PadS_ ADSRGate
+U302 GND 555_Trig 555_Out 555_RST Net-_C6-Pad1_ 555_Threshold 555_Dis +12V TLC555
+C6 Net-_C6-Pad1_ GND 10n
+R8 Net-_J1-PadT_ ADSRGate 47k
+D3 +12V ADSRGate 1N1007
+D4 ADSRGate GND 1N1007
+RV1 Net-_R11-Pad2_ Net-_RV1-Pad2_ Net-_Q301-Pad3_ 10k Sust
+R5 +12V Net-_Q302-Pad1_ 22k
+R7 +12V 555_RST 22k
+R6 Net-_Q302-Pad2_ GND 10R
+R4 Net-_Q303-Pad1_ ADSRGate 1M
+R3 Net-_Q303-Pad1_ Net-_R3-Pad2_ 47k
+R1 GND ADSRGate 1M2
+R2 +12V Net-_R2-Pad2_ 10k
+SW302 Net-_R3-Pad2_ Net-_R2-Pad2_ Gate
+C1 Net-_C1-Pad1_ 555_RST 10n
+R9 Net-_C1-Pad1_ GND 22k
+R10 +12V 555_Trig 22k
+Q301 555_RST 555_Dis Net-_Q301-Pad3_ SI2302
+R11 +12V Net-_R11-Pad2_ 4k7
+U301 Net-_D6-Pad1_ Net-_D6-Pad1_ Net-_RV1-Pad2_ -12V Net-_C8-Pad2_ 555_Threshold 555_Threshold +12V TL072
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ 1N4148
+RV302 Net-_D6-Pad2_ Net-_R306-Pad2_ Net-_R13-Pad2_ 1M Decay
+R306 Net-_D6-Pad2_ Net-_R306-Pad2_ 0R
+R307 Net-_R13-Pad2_ Net-_R306-Pad2_ Open / 300K if lin pot
+RV304 Net-_D5-Pad2_ Net-_R315-Pad2_ Net-_R12-Pad2_ 1M Release
+R315 Net-_D5-Pad2_ Net-_R315-Pad2_ 0R
+R316 Net-_R12-Pad2_ Net-_R315-Pad2_ Open / 300K if lin pot
+RV301 Net-_R14-Pad1_ Net-_R301-Pad2_ 555_Out 1M Attack
+R301 Net-_R14-Pad1_ Net-_R301-Pad2_ 0R
+R302 555_Out Net-_R301-Pad2_ Open / 300K if lin pot
+R13 Net-_C8-Pad2_ Net-_R13-Pad2_ 100R
+SW301 Net-_R15-Pad2_ Net-_D7-Pad2_ NC_01 Net-_C8-Pad2_ Net-_C8-Pad2_ Net-_C7-Pad2_ SW_DPDT_x2
+C7 GND Net-_C7-Pad2_ 10u_N/A
+C8 GND Net-_C8-Pad2_ 1u
+R15 Net-_R14-Pad1_ Net-_R15-Pad2_ 120R_N/A
+R14 Net-_R14-Pad1_ Net-_D7-Pad2_ 680R
+D7 Net-_C8-Pad2_ Net-_D7-Pad2_ 1N4148
+R12 Net-_C8-Pad2_ Net-_R12-Pad2_ 100R
+D5 555_RST Net-_D5-Pad2_ 1N4148
+R16 ADSR_out 555_Threshold 1k
+Q303 Net-_Q303-Pad1_ Net-_Q302-Pad2_ Net-_Q302-Pad1_ MMBT3904
+Q302 Net-_Q302-Pad1_ Net-_Q302-Pad2_ 555_RST MMBT3904
+Q304 Net-_C1-Pad1_ GND 555_Trig MMBT3904
+P301 -12V -12V GND GND GND GND GND GND +12V +12V Doepfer_Power_10pin
+.end

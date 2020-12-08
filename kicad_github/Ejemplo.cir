@@ -1,0 +1,8 @@
+.title KiCad schematic
+U1 NC_01 Net-_J1-Pad2_ GND -12V NC_02 Net-_R2-Pad2_ +12V NC_03 LM741
+J1 GND Net-_J1-Pad2_ Conn_01x02_Female
+R1 Net-_R1-Pad1_ Net-_J1-Pad2_ 2k
+R2 Net-_R1-Pad1_ Net-_R2-Pad2_ 100
+R3 GND Net-_R1-Pad1_ 1k
+J2 GND +12V -12V Conn_01x03_Female
+.end

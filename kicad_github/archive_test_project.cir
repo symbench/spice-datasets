@@ -1,0 +1,10 @@
+.title KiCad schematic
+C1 +15V GND C
+J1 GND Net-_J1-Pad2_ Conn_01x02
+J2 GND +15V Conn_01x02
+J3 /subsheet/OUT GND Screw_Terminal_01x02
+U101 NC_01 NC_02 NC_03 /subsheet/IN Net-_J1-Pad2_ GND NC_04 NC_05 NC_06 /subsheet/IN +15V NC_07 NC_08 NC_09 LM318J
+C2 /subsheet/OUT GND C
+R1 /subsheet/OUT /subsheet/IN R
+C401 NC_10 NC_11 C
+.end

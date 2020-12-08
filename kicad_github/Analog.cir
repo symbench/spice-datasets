@@ -1,0 +1,76 @@
+.title KiCad schematic
+U10 Net-_C70-Pad1_ Net-_C70-Pad2_ Net-_C59-Pad1_ Net-_C65-Pad1_ Net-_C62-Pad1_ Net-_C64-Pad1_ Net-_C64-Pad2_ Net-_C77-Pad1_ Net-_C76-Pad1_ GND GND /CLKO Net-_C94-Pad1_ NC_01 /MISO /MOSI /SCK NC_02 +3V3 GND ADE7913
+C70 Net-_C70-Pad1_ Net-_C70-Pad2_ 0.1u
+C71 Net-_C70-Pad1_ Net-_C70-Pad2_ 10u
+R48 Net-_L5-Pad2_ Net-_C59-Pad1_ 14k .1%
+R49 GND Net-_C59-Pad1_ 1k .1%
+C59 Net-_C59-Pad1_ GND .1u
+R55 GND Net-_C62-Pad1_ 0R
+C62 Net-_C62-Pad1_ GND .1u
+R61 Net-_C65-Pad1_ GND 1k .1%
+C65 Net-_C65-Pad1_ GND .1u
+R54 Net-_C65-Pad1_ Net-_L9-Pad2_ 14k .1%
+C82 Net-_C76-Pad1_ GND 0.1u
+C76 Net-_C76-Pad1_ GND 4.7u
+C77 Net-_C77-Pad1_ GND 4.7u
+C83 Net-_C77-Pad1_ GND 0.1u
+L9 NC_03 Net-_L9-Pad2_ MH2029-300Y
+L5 NC_04 Net-_L5-Pad2_ MH2029-300Y
+L11 Net-_C64-Pad1_ NC_05 MH2029-300Y
+L12 Net-_L12-Pad1_ NC_06 MH2029-300Y
+R56 Net-_C64-Pad2_ Net-_L12-Pad1_ 1k .1%
+R60 Net-_C64-Pad1_ Net-_C64-Pad2_ 750R .1%
+C68 Net-_C64-Pad1_ GND 0.033u
+C69 Net-_C64-Pad2_ GND 0.033u
+C89 +3V3 GND 0.1u
+C88 +3V3 GND 10u
+U11 Net-_C72-Pad1_ Net-_C72-Pad2_ Net-_C60-Pad1_ Net-_C66-Pad1_ Net-_C63-Pad1_ Net-_U11-Pad6_ Net-_U11-Pad6_ Net-_C79-Pad1_ Net-_C78-Pad1_ GND GND NC_07 /CLKO NC_08 /MISO /MOSI /SCK NC_09 +3V3 GND ADE7913
+C72 Net-_C72-Pad1_ Net-_C72-Pad2_ 0.1u
+C73 Net-_C72-Pad1_ Net-_C72-Pad2_ 10u
+R50 Net-_L6-Pad2_ Net-_C60-Pad1_ 14k .1%
+R52 GND Net-_C60-Pad1_ 1k .1%
+C60 Net-_C60-Pad1_ GND .1u
+R58 GND Net-_C63-Pad1_ 0R
+C63 Net-_C63-Pad1_ GND 0.1u
+R62 Net-_C66-Pad1_ GND 1k .1%
+C66 Net-_C66-Pad1_ GND .1u
+R57 Net-_C66-Pad1_ Net-_L10-Pad2_ 14k .1%
+C84 Net-_C78-Pad1_ GND 0.1u
+C78 Net-_C78-Pad1_ GND 4.7u
+C79 Net-_C79-Pad1_ GND 4.7u
+C85 Net-_C79-Pad1_ GND 0.1u
+L10 NC_10 Net-_L10-Pad2_ MH2029-300Y
+L6 NC_11 Net-_L6-Pad2_ MH2029-300Y
+C91 +3V3 GND 0.1u
+C90 +3V3 GND 10u
+U12 Net-_C74-Pad1_ Net-_C74-Pad2_ Net-_C61-Pad1_ Net-_C67-Pad1_ Net-_C61-Pad2_ Net-_U12-Pad6_ Net-_U12-Pad6_ Net-_C81-Pad1_ Net-_C80-Pad1_ Net-_C61-Pad2_ GND NC_12 /CLKO NC_13 /MISO /MOSI /SCK NC_14 +3V3 GND ADE7913
+C74 Net-_C74-Pad1_ Net-_C74-Pad2_ 0.1u
+C75 Net-_C74-Pad1_ Net-_C74-Pad2_ 10u
+R51 Net-_L7-Pad2_ Net-_C61-Pad1_ 1M 0.1%
+R53 Net-_C61-Pad2_ Net-_C61-Pad1_ 1.5K 0.1%
+C61 Net-_C61-Pad1_ Net-_C61-Pad2_ .1u
+R63 Net-_C67-Pad1_ Net-_C61-Pad2_ 1.5K 0.1%
+C67 Net-_C67-Pad1_ Net-_C61-Pad2_ .1u
+R59 Net-_C67-Pad1_ Net-_L13-Pad2_ 1M 0.1%
+C86 Net-_C80-Pad1_ Net-_C61-Pad2_ 0.1u
+C80 Net-_C80-Pad1_ Net-_C61-Pad2_ 4.7u
+C81 Net-_C81-Pad1_ Net-_C61-Pad2_ 4.7u
+C87 Net-_C81-Pad1_ Net-_C61-Pad2_ 0.1u
+L13 NC_15 Net-_L13-Pad2_ MH2029-300Y
+L7 NC_16 Net-_L7-Pad2_ MH2029-300Y
+C93 +3V3 GND 0.1u
+C92 +3V3 GND 10u
+L8 NC_17 Net-_C61-Pad2_ MH2029-300Y
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ Net-_C62-Pad1_ Net-_D10-Pad2_ Net-_D10-Pad1_ Net-_C59-Pad1_ BAS70XY
+D13 Net-_D13-Pad1_ Net-_D13-Pad2_ Net-_C62-Pad1_ Net-_D13-Pad2_ Net-_D13-Pad1_ Net-_C65-Pad1_ BAS70XY
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ Net-_C63-Pad1_ Net-_D11-Pad2_ Net-_D11-Pad1_ Net-_C60-Pad1_ BAS70XY
+D15 Net-_D14-Pad5_ Net-_D14-Pad4_ Net-_C61-Pad2_ Net-_D15-Pad4_ Net-_D15-Pad5_ Net-_C66-Pad1_ BAS70XY
+D14 Net-_C64-Pad2_ Net-_C64-Pad2_ Net-_C63-Pad1_ Net-_D14-Pad4_ Net-_D14-Pad5_ Net-_C64-Pad1_ BAS70XY
+D12 Net-_D12-Pad1_ Net-_D12-Pad2_ Net-_C61-Pad2_ Net-_D12-Pad2_ Net-_D12-Pad1_ Net-_C61-Pad1_ BAS70XY
+D16 Net-_D15-Pad5_ Net-_D15-Pad4_ NC_18 NC_19 NC_20 Net-_C67-Pad1_ BAS70XY
+C64 Net-_C64-Pad1_ Net-_C64-Pad2_ 0.1u
+C95 GND +3V3 0.1u
+R64 /MISO +3V3 10k
+U$3 NC_21 GND Net-_C94-Pad1_ +3V3 ASE
+C94 Net-_C94-Pad1_ GND 22p
+.end

@@ -1,0 +1,5 @@
+.title KiCad schematic
+U3 /12V /GND /9V LM7809
+C7 /12V /GND 0,1uF
+C8 /9V /GND 0,1uF
+.end

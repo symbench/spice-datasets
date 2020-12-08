@@ -1,0 +1,8 @@
+.title KiCad schematic
+R6 /Vcc Net-_R6-Pad2_ 10k
+D5 Net-_C8-Pad2_ /GND D_Schottky
+C9 /3.3V /GND CP1_Small
+L4 Net-_C8-Pad2_ /3.3V 47uH
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 10nF
+U4 Net-_C8-Pad1_ NC_01 NC_02 /3.3V Net-_R6-Pad2_ /GND /Vcc Net-_C8-Pad2_ LM2675M-3.3
+.end

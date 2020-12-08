@@ -1,0 +1,12 @@
+.title KiCad schematic
+A1 Net-_A1-Pad1_ Net-_A1-Pad2_ NC_01 GND Net-_A1-Pad5_ Net-_A1-Pad6_ Net-_A1-Pad7_ Net-_A1-Pad8_ Net-_A1-Pad9_ Net-_A1-Pad10_ NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 Net-_A1-Pad23_ Net-_A1-Pad24_ Net-_A1-Pad25_ Net-_A1-Pad26_ /MCU_5V NC_14 GND Net-_A1-Pad30_ Arduino_Nano_v3.x
+J6 Net-_J6-Pad1_ Net-_J6-Pad2_ Net-_J6-Pad3_ Net-_J6-Pad4_ Net-_J6-Pad5_ Net-_J6-Pad6_ Net-_J6-Pad7_ Net-_J6-Pad8_ Net-_J6-Pad9_ Net-_J6-Pad10_ Net-_J6-Pad11_ Net-_J6-Pad12_ Net-_J6-Pad13_ Net-_J6-Pad14_ Net-_J6-Pad15_ Net-_J6-Pad16_ Conn_01x16_Female
+J8 /MCU_5V Net-_A1-Pad5_ GND TEMPERATURE
+J7 NC_15 NC_16 Net-_A1-Pad25_ Net-_A1-Pad26_ /MCU_5V GND RTC CLOCK
+J1 GND Net-_A1-Pad30_ Power Supply
+J9 Net-_J6-Pad1_ Net-_J6-Pad2_ Net-_J6-Pad3_ Net-_J6-Pad4_ Net-_J6-Pad5_ Net-_J6-Pad6_ Net-_J6-Pad7_ Net-_J6-Pad8_ Net-_J6-Pad9_ Net-_J6-Pad10_ Net-_J6-Pad11_ Net-_J6-Pad12_ Net-_J6-Pad13_ Net-_J6-Pad14_ Net-_J6-Pad15_ Net-_J6-Pad16_ Conn_01x16_Male
+J5 GND /MCU_5V Net-_A1-Pad24_ Net-_A1-Pad23_ LCD
+J3 /MCU_5V Net-_A1-Pad6_ Net-_A1-Pad7_ Net-_A1-Pad8_ Net-_A1-Pad9_ GND RELE
+J4 Net-_A1-Pad2_ Net-_A1-Pad1_ Serial 
+J2 GND NC_17 Net-_A1-Pad10_ BUZZER
+.end

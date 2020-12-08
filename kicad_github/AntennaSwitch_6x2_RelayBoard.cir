@@ -1,0 +1,36 @@
+.title KiCad schematic
+J9 +12V +3V3 /SEL1_1 Net-_J9-Pad4_ /SEL1_2 Net-_J9-Pad6_ /SEL1_3 Net-_J9-Pad8_ Conn_01x08
+J10 /SEL1_4 Net-_J10-Pad2_ /SEL1_5 Net-_J10-Pad4_ /SEL1_6 Net-_J10-Pad6_ GND GND Conn_01x08
+C1 +12V GND 100uF
+C2 +3V3 GND 100uF
+J2 Net-_J2-Pad1_ GNDPWR Conn_Coaxial
+J3 Net-_J3-Pad1_ GNDPWR Conn_Coaxial
+J4 Net-_J4-Pad1_ GNDPWR Conn_Coaxial
+J6 Net-_J6-Pad1_ GNDPWR Conn_Coaxial
+J7 Net-_J7-Pad1_ GNDPWR Conn_Coaxial
+J1 A GNDPWR Conn_Coaxial
+J8 B GNDPWR Conn_Coaxial
+J5 Net-_J5-Pad1_ GNDPWR Conn_Coaxial
+K1 Net-_K1-Pad1_ GNDPWR Net-_K1-Pad3_ A A Net-_K1-Pad3_ GNDPWR +12V G2RL-1-E
+K4 Net-_K4-Pad1_ GNDPWR Net-_K4-Pad3_ A A Net-_K4-Pad3_ GNDPWR +12V G2RL-1-E
+K7 Net-_K7-Pad1_ GNDPWR Net-_K7-Pad3_ A A Net-_K7-Pad3_ GNDPWR +12V G2RL-1-E
+K11 Net-_K10-Pad1_ GNDPWR Net-_K10-Pad4_ A A Net-_K10-Pad4_ GNDPWR +12V G2RL-1-E
+K14 Net-_K13-Pad1_ GNDPWR Net-_K13-Pad4_ A A Net-_K13-Pad4_ GNDPWR +12V G2RL-1-E
+K17 Net-_K16-Pad1_ GNDPWR Net-_K16-Pad4_ A A Net-_K16-Pad4_ GNDPWR +12V G2RL-1-E
+K3 Net-_K1-Pad1_ Net-_K2-Pad3_ Net-_J2-Pad1_ Net-_K1-Pad3_ Net-_K1-Pad3_ Net-_J2-Pad1_ Net-_K2-Pad3_ +12V G2RL-1-E
+K6 Net-_K4-Pad1_ Net-_K5-Pad3_ Net-_J3-Pad1_ Net-_K4-Pad3_ Net-_K4-Pad3_ Net-_J3-Pad1_ Net-_K5-Pad3_ +12V G2RL-1-E
+K8 Net-_K7-Pad1_ Net-_K8-Pad2_ Net-_J4-Pad1_ Net-_K7-Pad3_ Net-_K7-Pad3_ Net-_J4-Pad1_ Net-_K8-Pad2_ +12V G2RL-1-E
+K10 Net-_K10-Pad1_ Net-_K10-Pad2_ Net-_J5-Pad1_ Net-_K10-Pad4_ Net-_K10-Pad4_ Net-_J5-Pad1_ Net-_K10-Pad2_ +12V G2RL-1-E
+K13 Net-_K13-Pad1_ Net-_K13-Pad2_ Net-_J6-Pad1_ Net-_K13-Pad4_ Net-_K13-Pad4_ Net-_J6-Pad1_ Net-_K13-Pad2_ +12V G2RL-1-E
+K16 Net-_K16-Pad1_ Net-_K16-Pad2_ Net-_J7-Pad1_ Net-_K16-Pad4_ Net-_K16-Pad4_ Net-_J7-Pad1_ Net-_K16-Pad2_ +12V G2RL-1-E
+K2 Net-_K2-Pad1_ GNDPWR Net-_K2-Pad3_ B B Net-_K2-Pad3_ GNDPWR +12V G2RL-1-E
+K5 Net-_K5-Pad1_ GNDPWR Net-_K5-Pad3_ B B Net-_K5-Pad3_ GNDPWR +12V G2RL-1-E
+K9 Net-_K9-Pad1_ GNDPWR Net-_K8-Pad2_ B B Net-_K8-Pad2_ GNDPWR +12V G2RL-1-E
+K12 Net-_K12-Pad1_ GNDPWR Net-_K10-Pad2_ B B Net-_K10-Pad2_ GNDPWR +12V G2RL-1-E
+K15 Net-_K15-Pad1_ GNDPWR Net-_K13-Pad2_ B B Net-_K13-Pad2_ GNDPWR +12V G2RL-1-E
+U1 Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad5_ Net-_U1-Pad6_ GND GND +12V NC_01 Net-_K1-Pad1_ Net-_K2-Pad1_ Net-_K4-Pad1_ Net-_K5-Pad1_ Net-_K7-Pad1_ Net-_K9-Pad1_ ULN2003
+U2 Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U2-Pad3_ Net-_U2-Pad4_ Net-_U2-Pad5_ Net-_U2-Pad6_ GND GND +12V NC_02 Net-_K10-Pad1_ Net-_K12-Pad1_ Net-_K13-Pad1_ Net-_K15-Pad1_ Net-_K16-Pad1_ Net-_K18-Pad1_ ULN2003
+U4 /SEL1_4 Net-_U2-Pad6_ Net-_J10-Pad2_ Net-_U2-Pad5_ /SEL1_5 Net-_U2-Pad4_ GND Net-_U2-Pad3_ Net-_J10-Pad4_ Net-_U2-Pad2_ /SEL1_6 Net-_U2-Pad1_ Net-_J10-Pad6_ +3V3 74HC04
+U3 /SEL1_1 Net-_U1-Pad6_ Net-_J9-Pad4_ Net-_U1-Pad5_ /SEL1_2 Net-_U1-Pad4_ GND Net-_U1-Pad3_ Net-_J9-Pad6_ Net-_U1-Pad2_ /SEL1_3 Net-_U1-Pad1_ Net-_J9-Pad8_ +3V3 74HC04
+K18 Net-_K18-Pad1_ GNDPWR Net-_K16-Pad2_ B B Net-_K16-Pad2_ GNDPWR +12V G2RL-1-E
+.end

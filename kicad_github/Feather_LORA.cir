@@ -1,0 +1,14 @@
+.title KiCad schematic
+U2 NC_01 Net-_U1-Pad10_ Net-_U1-Pad9_ NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ GND NC_08 +3V3 NC_09 NC_10 NC_11 NC_12 NC_13 Net-_U1-Pad2_ NC_14 Net-_J3-Pad6_ Net-_J3-Pad5_ Net-_J3-Pad4_ NC_15 Net-_J2-Pad2_ Net-_J2-Pad1_ Feather32u4RFM95
+J1 +BATT +5V +3V3 GND Conn_01x04_Female
+U1 +3V3 Net-_U1-Pad2_ GND NC_16 Net-_D1-Pad2_ NC_17 NC_18 GND Net-_U1-Pad9_ Net-_U1-Pad10_ Net-_AE1-Pad1_ GND NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 GND NC_25 FGPMMOPA6H_GPS
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Conn_01x06_Male
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Conn_01x02_Male
+J4 +3V3 +3V3 +3V3 +3V3 +3V3 +3V3 Conn_01x06_Male
+J5 GND GND GND GND GND GND Conn_01x06_Male
+AE1 Net-_AE1-Pad1_ GND Antenna_Shield
+AE2 Net-_AE1-Pad1_ GND Antenna_Shield
+J6 +3V3 +5V NC_26 +5V NC_27 GND NC_28 NC_29 GND NC_30 NC_31 NC_32 NC_33 GND NC_34 NC_35 +3V3 NC_36 NC_37 GND NC_38 NC_39 NC_40 GPIO08 GND GPIO08 NC_41 NC_42 NC_43 GND NC_44 NC_45 NC_46 GND NC_47 NC_48 NC_49 NC_50 GND NC_51 Conn_02x20_Top_Bottom
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R1 GND Net-_D1-Pad1_ R330
+.end

@@ -1,0 +1,25 @@
+.title KiCad schematic
+U6 555_V+ -12V TL074
+C3 555_V+ 555_V- 1n
+C6 555_V+ 555_V- 100n
+C8 555_V+ 555_V- 10u
+U1 555_V- 555_V+ LM393
+J16 555_V+ Net-_C1-Pad2_ Conn_01x02_Male
+C1 555_V+ Net-_C1-Pad2_ 1000u
+C4 555_V+ Net-_C1-Pad2_ 10u
+C10 555_V+ Net-_C1-Pad2_ 1n
+C9 555_V+ Net-_C1-Pad2_ 100n
+C7 555_V+ 555_V- 1u
+C5 555_V+ 555_V- 10n
+C2 555_V+ 555_V- 100p
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+C60 555_V+ 555_V- 100n
+C58 555_V+ 555_V- 1n
+C62 555_V+ 555_V- 10u
+C61 555_V- -12V 100n
+C59 555_V- -12V 1n
+C63 555_V- -12V 10u
+.end

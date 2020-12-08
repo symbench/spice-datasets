@@ -1,0 +1,13 @@
+.title KiCad schematic
+U1 Net-_R4-Pad2_ rtcVcc gnd vcc gnd vcc NC_01 NC_02 NC_03 NC_04 busy reset d.c cs d11 d12 d13 vcc NC_05 vcc gnd NC_06 NC_07 NC_08 NC_09 NC_10 sda scl d10 NC_11 NC_12 NC_13 ATMEGA328P-AU
+J1 d10 d12 d13 d11 gnd vcc to_programmer
+R1 d10 vcc R
+SW1 Net-_R4-Pad2_ vcc SW_Push
+R4 gnd Net-_R4-Pad2_ R
+IC1 NC_14 rtcVcc NC_15 gnd gnd gnd gnd gnd gnd gnd gnd gnd gnd Net-_IC1-Pad14_ sda scl DS3231
+J3 Net-_IC1-Pad14_ gnd Conn_01x02_Female
+R2 vcc scl R
+R3 vcc sda R
+J2 busy reset d.c cs d13 d11 gnd vcc to_mhetboard
+R5 gnd rtcVcc R
+.end

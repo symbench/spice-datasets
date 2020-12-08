@@ -1,0 +1,49 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ GND 22pF
+C2 Net-_C2-Pad1_ GND 22pF
+Y1 Net-_C1-Pad1_ Net-_C2-Pad1_ 27.12MHz
+U1 GND NC_01 GND Net-_L1-Pad2_ +3V3 Net-_L2-Pad2_ GND +3V3 Net-_C17-Pad1_ Net-_C18-Pad2_ GND /AUX1 /AUX2 Net-_C1-Pad1_ Net-_C2-Pad1_ Net-_R1-Pad1_ Net-_R2-Pad1_ GND NC_02 NC_03 NC_04 NC_05 +3V3 /DBG_RX /IRQ /RSTOUTN /NSS_SCL_RX /MOSI_SDA_TX /MISO /SCK /DBG_TX /INT0 /INT1 /SIGCLK /SIGOUT /SIGIN NC_06 /RSTPPDN +3V3 +3V3 GND PN5321A3HN_C1xx
+C4 +3V3 GND 0.1uF
+C9 +3V3 GND 0.1uF
+C10 +3V3 GND 4.7uF
+C5 +3V3 GND 0.1uF
+C6 +3V3 GND 0.1uF
+C7 +3V3 GND 4.7uF
+C8 +3V3 GND 0.1uF
+D1 GND Net-_D1-Pad2_ Led blue
+R3 Net-_D1-Pad2_ +3V3 1K
+SW1 Net-_R1-Pad1_ Net-_R2-Pad1_ +3V3 +3V3 SW_DIP_x02
+R2 Net-_R2-Pad1_ GND 10K
+R1 Net-_R1-Pad1_ GND 10K
+L1 Net-_C11-Pad1_ Net-_L1-Pad2_ 560nH
+L2 Net-_C12-Pad2_ Net-_L2-Pad2_ 560nH
+C11 Net-_C11-Pad1_ GND 220pF
+C12 GND Net-_C12-Pad2_ 220pF
+C13 GND Net-_C11-Pad1_ 22pF
+C14 GND Net-_C12-Pad2_ 22pF
+C15 GND GND 220pF
+C16 GND GND 200pF
+J1 /AUX1 /AUX2 /DBG_RX /DBG_TX /INT0 /INT1 /SIGCLK /SIGOUT /SIGIN /RSTPPDN Conn_01x10_Male
+J4 GND GND Conn_Coaxial
+Q1 +3V3 /MOSI_SDA_TX +3V3 /SDA /NSS_SCL_RX /SCL 2N7002DM
+R4 +3V3 /NSS_SCL_RX 4.7K
+R5 +3V3 /MOSI_SDA_TX 4.7K
+J2 GND +3V3 /SDA /SCL Conn_01x04_Male
+R6 Net-_C18-Pad2_ Net-_C17-Pad1_ 1K
+C17 Net-_C17-Pad1_ GND 0.1uF
+C18 Net-_C18-Pad1_ Net-_C18-Pad2_ 1nF
+R7 Net-_C18-Pad1_ Net-_C11-Pad1_ 2.7K
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ +3V3 GND Net-_J3-Pad7_ /RSTOUTN Conn_01x08_Male
+R8 Net-_J3-Pad1_ /SCK 100
+R9 Net-_J3-Pad2_ /MISO 100
+R10 Net-_J3-Pad3_ /MOSI_SDA_TX 100
+R11 Net-_J3-Pad4_ /NSS_SCL_RX 100
+R12 Net-_J3-Pad7_ /IRQ 100
+H1 MountingHole
+H2 MountingHole
+FID1 Fiducial
+FID2 Fiducial
+FID3 Fiducial
+LOGO1 Logo_Open_Hardware_Small
+LOGO2 Logo_Open_Hardware_Small
+.end

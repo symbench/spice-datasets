@@ -1,0 +1,6 @@
+.title KiCad schematic
+C17 +3V3 GND CAP_0603
+C18 GND +5V CAP_0603
+R33 Net-_R33-Pad1_ +3V3 RES_0603
+U11 +3V3 GND NC_01 NC_02 Net-_R33-Pad1_ +5V Level_Shifter_single
+.end

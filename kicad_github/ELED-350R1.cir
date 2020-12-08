@@ -1,0 +1,79 @@
+.title KiCad schematic
+D8 Net-_D10-Pad2_ +24V LED
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ LED
+D12 Net-_D12-Pad1_ Net-_D10-Pad1_ LED
+D14 Net-_D14-Pad1_ Net-_D12-Pad1_ LED
+D16 Net-_D16-Pad1_ Net-_D14-Pad1_ LED
+D18 Net-_D18-Pad1_ Net-_D16-Pad1_ LED
+D20 Net-_D20-Pad1_ Net-_D18-Pad1_ LED
+U4 Net-_C12-Pad1_ D2 D6 NC_01 Net-_D20-Pad1_ Net-_R16-Pad1_ Net-_R16-Pad1_ GND Net-_C14-Pad1_ D8 STCS2A
+R21 Net-_R16-Pad1_ GND R
+C14 Net-_C14-Pad1_ GND C
+R20 +5V D8 R
+R12 D2 GND R
+R10 D6 GND R
+R14 Net-_C12-Pad1_ +5V R
+C12 Net-_C12-Pad1_ GND C
+D9 Net-_D11-Pad2_ +24V LED
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ LED
+D13 Net-_D13-Pad1_ Net-_D11-Pad1_ LED
+D15 Net-_D15-Pad1_ Net-_D13-Pad1_ LED
+D17 Net-_D17-Pad1_ Net-_D15-Pad1_ LED
+D19 Net-_D19-Pad1_ Net-_D17-Pad1_ LED
+D21 Net-_D21-Pad1_ Net-_D19-Pad1_ LED
+U5 Net-_C13-Pad1_ D3 D7 NC_02 Net-_D21-Pad1_ Net-_R17-Pad1_ Net-_R17-Pad1_ GND Net-_C15-Pad1_ D8 STCS2A
+R22 Net-_R17-Pad1_ GND R
+C15 Net-_C15-Pad1_ GND C
+R13 D3 GND R
+R11 D7 GND R
+R15 Net-_C13-Pad1_ +5V R
+C13 Net-_C13-Pad1_ GND C
+C2 +5V GND C
+C4 Net-_C4-Pad1_ GND C
+R2 Net-_C4-Pad1_ +5V R
+Y1 Net-_U2-Pad12_ GND Net-_U2-Pad13_ Resonator
+U3 Net-_C7-Pad1_ GND +5V L7805CD2T-TR
+Q1 Net-_Q1-Pad1_ +24V Vsup IPB057N06N
+R5 Net-_D4-Pad1_ +24V R
+R6 GND Net-_D4-Pad1_ R
+D4 Net-_D4-Pad1_ GND D_Zener
+D2 Vsup GND D_TVS
+C3 Vsup GND C
+U1 Net-_C1-Pad1_ Net-_Q1-Pad1_ NC_03 Vsup NC_04 Net-_Q1-Pad1_ Net-_C1-Pad2_ +24V LM74610-Q1
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ C
+C8 Net-_C7-Pad1_ GND C
+C10 +5V GND C
+C11 +5V GND CP
+C7 Net-_C7-Pad1_ GND CP
+R9 Net-_D7-Pad2_ +5V R
+D7 GND Net-_D7-Pad2_ LED
+R1 Net-_J1-Pad3_ A8 R
+D1 A8 GND D_Zener
+C5 A8 GND C
+R4 Net-_J1-Pad5_ A0 R
+D3 A0 GND D_Zener
+C6 A0 GND C
+TH1 +5V Net-_J1-Pad6_ Thermistor_PTC
+D6 +5V GND D_Zener
+R3 A8 +5V R
+J3 Net-_J3-Pad1_ +5V Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_C4-Pad1_ GND AVR-ISP-6
+R7 Net-_D5-Pad2_ +5V R
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ LED
+SW1 GND D11 SW_Push
+R8 D11 +5V R
+C9 D11 GND C
+R18 Net-_R16-Pad1_ Net-_JP3-Pad1_ R
+R16 Net-_R16-Pad1_ Net-_JP1-Pad1_ R
+JP3 Net-_JP3-Pad1_ GND  
+JP1 Net-_JP1-Pad1_ GND  
+R19 Net-_R17-Pad1_ Net-_JP4-Pad1_ R
+R17 Net-_R17-Pad1_ Net-_JP2-Pad1_ R
+JP4 Net-_JP4-Pad1_ GND  
+JP2 Net-_JP2-Pad1_ GND  
+U2 Net-_TP2-Pad1_ Net-_TP1-Pad1_ D2 D3 Net-_D5-Pad1_ A0 D6 D7 D8 GND +5V Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_C4-Pad1_ D11 Net-_J3-Pad3_ A9 A8 Net-_J3-Pad1_ Net-_J3-Pad4_ ATtiny1634-SU
+J1 Vsup GND Net-_J1-Pad3_ GND Net-_J1-Pad5_ Net-_J1-Pad6_ Screw_Terminal_01x06
+TP1 Net-_TP1-Pad1_ TestPoint
+TP2 Net-_TP2-Pad1_ TestPoint
+JP5 +24V Net-_C7-Pad1_ Jumper
+JP6 A9 Net-_D4-Pad1_ Jumper
+.end

@@ -1,0 +1,32 @@
+.title KiCad schematic
+J2 Net-_A1-Pad3_ Net-_A1-Pad4_ Net-_A1-Pad5_ Net-_A1-Pad6_ X_MOT
+JP6 +3V3 Net-_A1-Pad12_ SJ
+JP5 +3V3 Net-_A1-Pad11_ SJ
+JP4 +3V3 Net-_A1-Pad10_ SJ
+JP12 +3V3 Net-_A2-Pad12_ SJ
+JP11 +3V3 Net-_A2-Pad11_ SJ
+JP10 +3V3 Net-_A2-Pad10_ SJ
+C1 +12V GND 100uF
+C2 +12V GND 100uF
+C3 +12V GND 100uF
+C4 +12V GND 100uF
+C5 +12V GND 100uF
+A1 GND +3V3 Net-_A1-Pad3_ Net-_A1-Pad4_ Net-_A1-Pad5_ Net-_A1-Pad6_ GND +12V NC_01 Net-_A1-Pad10_ Net-_A1-Pad11_ Net-_A1-Pad12_ Net-_A1-Pad13_ Net-_A1-Pad13_ NC_02 NC_03 Pololu_Breakout_A4988
+A2 GND +3V3 Net-_A2-Pad3_ Net-_A2-Pad4_ Net-_A2-Pad5_ Net-_A2-Pad6_ GND +12V NC_04 Net-_A2-Pad10_ Net-_A2-Pad11_ Net-_A2-Pad12_ Net-_A2-Pad13_ Net-_A2-Pad13_ NC_05 NC_06 Pololu_Breakout_A4988
+J4 Net-_A2-Pad3_ Net-_A2-Pad4_ Net-_A2-Pad5_ Net-_A2-Pad6_ Y_MOT
+J1 Net-_A3-Pad3_ Net-_A3-Pad4_ Net-_A3-Pad5_ Net-_A3-Pad6_ Z_MOT_A
+JP3 +3V3 Net-_A3-Pad12_ SJ
+JP2 +3V3 Net-_A3-Pad11_ SJ
+JP1 +3V3 Net-_A3-Pad10_ SJ
+J5 Net-_A5-Pad3_ Net-_A5-Pad4_ Net-_A5-Pad5_ Net-_A5-Pad6_ E_MOT
+JP9 +3V3 Net-_A4-Pad12_ SJ
+JP8 +3V3 Net-_A4-Pad11_ SJ
+JP7 +3V3 Net-_A4-Pad10_ SJ
+J3 Net-_A4-Pad3_ Net-_A4-Pad4_ Net-_A4-Pad5_ Net-_A4-Pad6_ Z_MOT_B
+JP15 +3V3 Net-_A5-Pad12_ SJ
+JP14 +3V3 Net-_A5-Pad11_ SJ
+JP13 +3V3 Net-_A5-Pad10_ SJ
+A3 GND +3V3 Net-_A3-Pad3_ Net-_A3-Pad4_ Net-_A3-Pad5_ Net-_A3-Pad6_ GND +12V NC_07 Net-_A3-Pad10_ Net-_A3-Pad11_ Net-_A3-Pad12_ Net-_A3-Pad13_ Net-_A3-Pad13_ NC_08 NC_09 Pololu_Breakout_A4988
+A4 GND +3V3 Net-_A4-Pad3_ Net-_A4-Pad4_ Net-_A4-Pad5_ Net-_A4-Pad6_ GND +12V NC_10 Net-_A4-Pad10_ Net-_A4-Pad11_ Net-_A4-Pad12_ Net-_A4-Pad13_ Net-_A4-Pad13_ NC_11 NC_12 Pololu_Breakout_A4988
+A5 GND +3V3 Net-_A5-Pad3_ Net-_A5-Pad4_ Net-_A5-Pad5_ Net-_A5-Pad6_ GND +12V NC_13 Net-_A5-Pad10_ Net-_A5-Pad11_ Net-_A5-Pad12_ Net-_A5-Pad13_ Net-_A5-Pad13_ NC_14 NC_15 Pololu_Breakout_A4988
+.end

@@ -1,0 +1,27 @@
+.title KiCad schematic
+C270 NC_01 Net-_C270-Pad2_ C
+C272 NC_02 Net-_C270-Pad2_ C
+C271 Net-_C271-Pad1_ NC_03 C
+C273 Net-_C271-Pad1_ NC_04 C
+J79 Net-_C270-Pad2_ NC_05 Net-_J79-Pad3_ Net-_J79-Pad3_ NC_06 Net-_C271-Pad1_ InConnector
+J80 NC_07 NC_08 Net-_C277-Pad2_ Net-_C278-Pad2_ NC_09 NC_10 OutConnector
+C280 NC_11 Net-_C280-Pad2_ C
+C282 NC_12 Net-_C280-Pad2_ C
+R350 Net-_C277-Pad2_ Net-_C275-Pad1_ R
+R351 Net-_C278-Pad2_ Net-_R349-Pad2_ R
+C278 Net-_C277-Pad2_ Net-_C278-Pad2_ C
+C277 NC_13 Net-_C277-Pad2_ C
+C279 Net-_C278-Pad2_ NC_14 C
+R345 Net-_C274-Pad1_ Net-_C275-Pad1_ R
+R346 Net-_C274-Pad1_ Net-_C275-Pad2_ R
+R343 Net-_R343-Pad1_ Net-_C274-Pad1_ R
+U44 Net-_R349-Pad2_ Net-_R348-Pad2_ Net-_C276-Pad1_ Net-_C280-Pad2_ Net-_C276-Pad1_ Net-_C275-Pad2_ Net-_C275-Pad1_ NC_15 ADA4807-2ARM
+R349 Net-_R348-Pad2_ Net-_R349-Pad2_ 2.49k
+R348 Net-_C275-Pad1_ Net-_R348-Pad2_ 2.49k
+C274 Net-_C274-Pad1_ NC_16 C
+C275 Net-_C275-Pad1_ Net-_C275-Pad2_ C
+R344 NC_17 Net-_C276-Pad1_ 100k
+R347 Net-_C276-Pad1_ NC_18 100k
+C276 Net-_C276-Pad1_ NC_19 10u
+U51 NC_20 Net-_R343-Pad1_ Net-_J79-Pad3_ NC_21 NC_22 Net-_R343-Pad1_ NC_23 NC_24 OPA333xxD
+.end

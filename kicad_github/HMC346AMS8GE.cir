@@ -1,0 +1,18 @@
+.title KiCad schematic
+J2 Net-_J2-Pad1_ GND Conn_Coaxial
+J1 Net-_J1-Pad1_ GND Conn_Coaxial
+U1 Net-_R5-Pad2_ GND /V2 /I NC_01 /V1 GND Net-_R6-Pad1_ HMC346AMS8GE
+U2 NC_02 /I Net-_R2-Pad2_ /VEE NC_03 Net-_D1-Pad2_ /VCC NC_04 THS4631D
+D1 /I Net-_D1-Pad2_ 1N4148
+R2 GND Net-_R2-Pad2_ 500
+R3 /VEE Net-_R2-Pad2_ 3.92k
+R1 /VEE /I 3.92k
+C2 /VEE GND C
+C3 /VCC GND C
+C1 /I GND C
+R5 Net-_J1-Pad1_ Net-_R5-Pad2_ R
+R6 Net-_R6-Pad1_ Net-_J2-Pad1_ R
+R4 Net-_D1-Pad2_ /V2 R
+J4 /VCC GND /VEE Conn_01x03_Male
+J3 /V1 Conn_01x01_Male
+.end

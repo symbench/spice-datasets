@@ -1,0 +1,6 @@
+.title KiCad schematic
+U2 Net-_U1-Pad3_ Net-_U2-Pad7_ Net-_U2-Pad8_ Net-_U1-Pad2_ NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 Net-_U1-Pad8_ NC_10 NC_11 stm_nucleo_F303K8_fstqv
+U1 NC_12 Net-_U1-Pad2_ Net-_U1-Pad3_ Net-_U1-Pad4_ Net-_U1-Pad4_ NC_13 NC_14 Net-_U1-Pad8_ ISO1050
+U3 Net-_U2-Pad8_ Net-_U2-Pad7_ NC_15 NC_16 NC_17 SparkFun_MPU9250
+U4 Net-_U2-Pad8_ Net-_U2-Pad7_ NC_18 NC_19 NC_20 SparkFun_MPU9250
+.end

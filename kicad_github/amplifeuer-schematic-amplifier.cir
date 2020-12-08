@@ -1,0 +1,18 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 220nF
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 220nF
+C7 /+Vp GND 680μF
+C8 /+Vp GND 100nF
+J3 Net-_C3-Pad2_ GND Output1
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 680μF
+C4 Net-_C3-Pad1_ Net-_C4-Pad2_ 22nF
+R1 Net-_C4-Pad2_ GND 10R
+J4 Net-_C6-Pad2_ GND Output2
+C6 Net-_C5-Pad2_ Net-_C6-Pad2_ 680μF
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 22nF
+R2 Net-_C5-Pad1_ GND 10R
+J1 Net-_C2-Pad1_ GND Net-_C1-Pad1_ Input
+J5 GND NC_01 Power
+C9 Net-_C9-Pad1_ GND 100μF
+U1 Net-_C1-Pad2_ Net-_C9-Pad1_ Net-_C9-Pad1_ Net-_C3-Pad1_ GND Net-_C5-Pad2_ /+Vp Net-_C9-Pad1_ Net-_C2-Pad2_ TDA1521A
+.end

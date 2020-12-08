@@ -1,0 +1,85 @@
+.title KiCad schematic
+C138 NC_01 Net-_C138-Pad2_ C
+C140 NC_02 Net-_C138-Pad2_ C
+C139 Net-_C139-Pad1_ NC_03 C
+C141 Net-_C139-Pad1_ NC_04 C
+J46 Net-_C138-Pad2_ NC_05 NC_06 NC_07 NC_08 Net-_C139-Pad1_ InConnector
+J47 NC_09 NC_10 Net-_J47-Pad3_ Net-_J47-Pad3_ NC_11 NC_12 OutConnector
+U28 NC_13 Net-_R278-Pad1_ Net-_J47-Pad3_ NC_14 NC_15 Net-_R279-Pad2_ NC_16 NC_17 OPA333xxD
+R280 Net-_R279-Pad2_ Net-_R278-Pad1_ R
+R278 Net-_R278-Pad1_ NC_18 R
+R279 Net-_J47-Pad3_ Net-_R279-Pad2_ R
+C142 NC_19 Net-_C142-Pad2_ C
+C144 NC_20 Net-_C142-Pad2_ C
+C143 Net-_C143-Pad1_ NC_21 C
+C145 Net-_C143-Pad1_ NC_22 C
+J48 Net-_C142-Pad2_ NC_23 Net-_C146-Pad2_ Net-_C146-Pad2_ NC_24 Net-_C143-Pad1_ InConnector
+J49 NC_25 NC_26 Net-_J49-Pad3_ Net-_J49-Pad3_ NC_27 NC_28 OutConnector
+U29 NC_29 Net-_R281-Pad1_ Net-_C146-Pad1_ NC_30 NC_31 Net-_R281-Pad1_ NC_32 NC_33 OPA333xxD
+R281 Net-_R281-Pad1_ Net-_C146-Pad2_ R
+C146 Net-_C146-Pad1_ Net-_C146-Pad2_ C
+R282 NC_34 Net-_C146-Pad1_ R
+RV1 Net-_RV1-Pad1_ Net-_RV1-Pad1_ Net-_C146-Pad1_ POT
+C147 NC_35 Net-_C147-Pad2_ C
+C149 NC_36 Net-_C147-Pad2_ C
+C148 Net-_C148-Pad1_ NC_37 C
+C150 Net-_C148-Pad1_ NC_38 C
+J50 Net-_C147-Pad2_ NC_39 Net-_J50-Pad3_ Net-_J50-Pad3_ NC_40 Net-_C148-Pad1_ InConnector
+J51 NC_41 NC_42 Net-_C152-Pad1_ Net-_C152-Pad1_ NC_43 NC_44 OutConnector
+R286 Net-_C152-Pad2_ Net-_C152-Pad1_ 1k
+U30 Net-_C151-Pad2_ Net-_C151-Pad1_ Net-_J50-Pad3_ NC_45 Net-_D2-Pad1_ Net-_C152-Pad2_ Net-_C152-Pad1_ NC_46 ADA4807-2ARM
+C151 Net-_C151-Pad1_ Net-_C151-Pad2_ 47p
+R284 Net-_C151-Pad1_ Net-_C152-Pad2_ 1k
+D1 Net-_C151-Pad2_ Net-_C151-Pad1_ 1N4148
+D2 Net-_D2-Pad1_ Net-_C151-Pad2_ 1N4148
+R285 Net-_D2-Pad1_ NC_47 1k
+R283 Net-_J50-Pad3_ NC_48 49.9
+C152 Net-_C152-Pad1_ Net-_C152-Pad2_ C
+C153 NC_49 Net-_C153-Pad2_ C
+C155 NC_50 Net-_C153-Pad2_ C
+C154 Net-_C154-Pad1_ NC_51 C
+C156 Net-_C154-Pad1_ NC_52 C
+J52 Net-_C153-Pad2_ NC_53 Net-_J52-Pad3_ Net-_J52-Pad4_ NC_54 Net-_C154-Pad1_ InConnector
+J53 Net-_C161-Pad2_ NC_55 Net-_C159-Pad1_ Net-_C160-Pad1_ NC_56 Net-_C162-Pad1_ OutConnector
+R293 Net-_C159-Pad2_ Net-_C159-Pad1_ 1k
+U31 Net-_C157-Pad2_ Net-_C157-Pad1_ Net-_J52-Pad3_ NC_57 Net-_D5-Pad1_ Net-_C159-Pad2_ Net-_C159-Pad1_ NC_58 ADA4807-2ARM
+C157 Net-_C157-Pad1_ Net-_C157-Pad2_ 47p
+R289 Net-_C157-Pad1_ Net-_C159-Pad2_ 1k
+D3 Net-_C157-Pad2_ Net-_C157-Pad1_ 1N4148
+D5 Net-_D5-Pad1_ Net-_C157-Pad2_ 1N4148
+R291 Net-_D5-Pad1_ NC_59 1k
+R287 Net-_J52-Pad3_ NC_60 49.9
+C159 Net-_C159-Pad1_ Net-_C159-Pad2_ C
+R294 Net-_C160-Pad2_ Net-_C160-Pad1_ 1k
+U32 Net-_C158-Pad2_ Net-_C158-Pad1_ Net-_J52-Pad4_ NC_61 Net-_D6-Pad1_ Net-_C160-Pad2_ Net-_C160-Pad1_ NC_62 ADA4807-2ARM
+C158 Net-_C158-Pad1_ Net-_C158-Pad2_ 47p
+R290 Net-_C158-Pad1_ Net-_C160-Pad2_ 1k
+D4 Net-_C158-Pad2_ Net-_C158-Pad1_ 1N4148
+D6 Net-_D6-Pad1_ Net-_C158-Pad2_ 1N4148
+R292 Net-_D6-Pad1_ NC_63 1k
+R288 Net-_J52-Pad4_ NC_64 49.9
+C160 Net-_C160-Pad1_ Net-_C160-Pad2_ C
+C161 NC_65 Net-_C161-Pad2_ C
+C163 NC_66 Net-_C161-Pad2_ C
+C162 Net-_C162-Pad1_ NC_67 C
+C164 Net-_C162-Pad1_ NC_68 C
+C9 NC_69 Net-_C11-Pad2_ C
+C11 NC_70 Net-_C11-Pad2_ C
+C10 Net-_C10-Pad1_ NC_71 C
+C12 Net-_C10-Pad1_ NC_72 C
+J6 Net-_C11-Pad2_ NC_73 NC_74 NC_75 NC_76 Net-_C10-Pad1_ InConnector
+J7 NC_77 NC_78 Net-_J7-Pad3_ Net-_J7-Pad3_ NC_79 NC_80 OutConnector
+R5 Net-_J3-Pad3_ Net-_R1-Pad1_ R
+R2 Net-_R1-Pad1_ Net-_J1-Pad4_ R
+C1 NC_81 Net-_C1-Pad2_ C
+C3 NC_82 Net-_C1-Pad2_ C
+C2 Net-_C2-Pad1_ NC_83 C
+C4 Net-_C2-Pad1_ NC_84 C
+R1 Net-_R1-Pad1_ Net-_J1-Pad3_ R
+J1 Net-_C1-Pad2_ NC_85 Net-_J1-Pad3_ Net-_J1-Pad4_ NC_86 Net-_C2-Pad1_ InConnector
+J3 NC_87 NC_88 Net-_J3-Pad3_ Net-_J3-Pad3_ NC_89 NC_90 OutConnector
+U1 NC_91 Net-_R1-Pad1_ NC_92 NC_93 NC_94 Net-_J3-Pad3_ NC_95 NC_96 OPA333xxD
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad2_ Net-_J2-Pad4_ Ext_Input
+R3 Net-_J2-Pad4_ Net-_R1-Pad1_ R
+R4 Net-_J2-Pad1_ Net-_R1-Pad1_ R
+.end

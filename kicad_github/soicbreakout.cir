@@ -1,0 +1,5 @@
+.title KiCad schematic
+J2 Net-_J1-Pad4_ Net-_J1-Pad3_ Net-_J1-Pad2_ Net-_J1-Pad1_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ SOIC8
+J3 Net-_J2-Pad8_ Net-_J2-Pad7_ Net-_J2-Pad6_ Net-_J2-Pad5_ Conn_01x04
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Conn_01x04
+.end

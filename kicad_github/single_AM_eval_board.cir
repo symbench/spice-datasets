@@ -1,0 +1,33 @@
+.title KiCad schematic
+J2 Net-_C7-Pad2_ GND Conn_Coaxial
+J4 Net-_C9-Pad1_ GND Conn_Coaxial
+J3 Net-_C6-Pad1_ GND Net-_C2-Pad1_ Conn_01x03_Male
+U1 NC_01 Net-_R1-Pad1_ Net-_R5-Pad1_ /VEE NC_02 Net-_R10-Pad1_ /VCC Net-_JP3-Pad2_ ADA4522-1
+R2 Net-_JP2-Pad2_ GND R
+R5 Net-_R5-Pad1_ GND R
+R8 Net-_C9-Pad2_ Net-_R10-Pad1_ R
+C4 GND /VCC 100nF
+C5 GND /VEE 100nF
+R7 Net-_R10-Pad1_ Net-_R1-Pad1_ R
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ C
+RV1 Net-_R10-Pad1_ Net-_R1-Pad1_ NC_03 R_POT
+C1 /VCC GND 10uF
+R9 Net-_R5-Pad1_ Net-_JP2-Pad2_ R
+C2 Net-_C2-Pad1_ GND 10uF
+L1 /VCC Net-_C2-Pad1_ L_Core_Iron
+C6 Net-_C6-Pad1_ GND 10uF
+C8 /VEE GND 10uF
+L2 Net-_C6-Pad1_ /VEE L_Core_Iron
+D1 GND Net-_D1-Pad2_ LED_ALT
+D2 /VEE Net-_D2-Pad2_ LED_ALT
+R6 /VCC Net-_D1-Pad2_ 1K
+R11 Net-_D2-Pad2_ GND 1K
+R1 Net-_R1-Pad1_ Net-_JP1-Pad2_ R
+JP2 Net-_C7-Pad1_ Net-_JP2-Pad2_ Jumper_2_Open
+JP1 GND Net-_JP1-Pad2_ Net-_C7-Pad1_ Jumper_3_Open
+R3 /VCC Net-_JP2-Pad2_ R
+R4 Net-_JP2-Pad2_ GND R
+R10 Net-_R10-Pad1_ Net-_JP2-Pad2_ R
+JP3 GND Net-_JP3-Pad2_ /VCC Jumper_3_Open
+C9 Net-_C9-Pad1_ Net-_C9-Pad2_ C
+.end

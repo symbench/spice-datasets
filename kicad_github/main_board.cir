@@ -1,0 +1,36 @@
+.title KiCad schematic
+U1 Net-_R16-Pad1_ Net-_R14-Pad2_ Net-_R14-Pad1_ Net-_R17-Pad2_ Net-_R4-Pad2_ Net-_C1-Pad1_ Net-_RV3-Pad1_ Net-_R18-Pad2_ NC_01 Net-_R19-Pad2_ Net-_C5-Pad1_ GND Net-_R10-Pad2_ Net-_R13-Pad1_ Net-_R1-Pad2_ +12V AS3340
+R13 Net-_R13-Pad1_ GND 1.8k
+C4 Net-_C4-Pad1_ GND 10nF
+R11 Net-_R10-Pad2_ Net-_C4-Pad1_ 470
+R10 +12V Net-_R10-Pad2_ 1.5M
+R5 Net-_C2-Pad1_ Net-_R10-Pad2_ 1M
+C2 Net-_C2-Pad1_ ModIn 0.1uF
+C5 Net-_C5-Pad1_ GND 1nF
+R18 SawtoothOut Net-_R18-Pad2_ 1k
+R19 TriangleOut Net-_R19-Pad2_ 1k
+R17 SquareOut Net-_R17-Pad2_ 1k
+R20 SquareOut GND 10k
+R9 Net-_R4-Pad2_ GND 100k
+R8 +12V Net-_R4-Pad2_ 560k
+R4 PWIn Net-_R4-Pad2_ 1k
+R1 CoarseTune Net-_R1-Pad2_ 100k
+R3 1VOIn Net-_R1-Pad2_ 100k
+R2 FineTune Net-_R1-Pad2_ 1M
+C3 Net-_C3-Pad1_ GND 10nF
+R7 Net-_R1-Pad2_ Net-_C3-Pad1_ 470
+R6 +12V Net-_R1-Pad2_ 360k
+RV3 Net-_RV3-Pad1_ Net-_R12-Pad1_ GND 20k
+R12 Net-_R12-Pad1_ Net-_R1-Pad2_ 1M
+C1 Net-_C1-Pad1_ SyncIn 1nF
+R15 Net-_R14-Pad1_ -12V 820
+R16 Net-_R16-Pad1_ Net-_R16-Pad2_ 24k
+R14 Net-_R14-Pad1_ Net-_R14-Pad2_ 5.6k
+RV4 Net-_R16-Pad2_ Net-_R16-Pad2_ Net-_R14-Pad1_ 10k
+J5 Net-_D2-Pad1_ Net-_D2-Pad1_ GND GND GND GND GND GND Net-_D1-Pad2_ Net-_D1-Pad2_ Conn_01x10
+D1 +12V Net-_D1-Pad2_ 1N4148
+D2 Net-_D2-Pad1_ -12V 1N4148
+C6 +12V GND 0.1uF
+C7 GND -12V 0.1uF
+J1 +12V GND -12V CoarseTune FineTune 1VOIn ModIn PWIn SyncIn SquareOut TriangleOut SawtoothOut Conn_01x12
+.end

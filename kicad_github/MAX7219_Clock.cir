@@ -1,0 +1,58 @@
+.title KiCad schematic
+U1 /DIN0 Net-_LED1-Pad2_ Net-_LED1-Pad3_ GND Net-_LED1-Pad14_ Net-_LED1-Pad5_ Net-_LED1-Pad12_ Net-_LED1-Pad11_ GND Net-_LED1-Pad7_ Net-_LED1-Pad8_ /CS0 /CLK0 Net-_LED1-Pad9_ Net-_LED1-Pad10_ Net-_LED1-Pad6_ Net-_LED1-Pad13_ Net-_R1-Pad1_ +5V Net-_LED1-Pad4_ Net-_LED1-Pad15_ Net-_LED1-Pad16_ Net-_LED1-Pad1_ Net-_U1-Pad24_ MAX7219_7221
+LED1 Net-_LED1-Pad1_ Net-_LED1-Pad2_ Net-_LED1-Pad3_ Net-_LED1-Pad4_ Net-_LED1-Pad5_ Net-_LED1-Pad6_ Net-_LED1-Pad7_ Net-_LED1-Pad8_ Net-_LED1-Pad9_ Net-_LED1-Pad10_ Net-_LED1-Pad11_ Net-_LED1-Pad12_ Net-_LED1-Pad13_ Net-_LED1-Pad14_ Net-_LED1-Pad15_ Net-_LED1-Pad16_ 7088A_788
+C1 +5V GND 0.1u
+R1 Net-_R1-Pad1_ +5V 30k
+U6 /DIN1 Net-_LED6-Pad2_ Net-_LED6-Pad3_ GND Net-_LED6-Pad14_ Net-_LED6-Pad5_ Net-_LED6-Pad12_ Net-_LED6-Pad11_ GND Net-_LED6-Pad7_ Net-_LED6-Pad8_ /CS1 /CLK1 Net-_LED6-Pad9_ Net-_LED6-Pad10_ Net-_LED6-Pad6_ Net-_LED6-Pad13_ Net-_R6-Pad1_ +5V Net-_LED6-Pad4_ Net-_LED6-Pad15_ Net-_LED6-Pad16_ Net-_LED6-Pad1_ Net-_U6-Pad24_ MAX7219_7221
+LED6 Net-_LED6-Pad1_ Net-_LED6-Pad2_ Net-_LED6-Pad3_ Net-_LED6-Pad4_ Net-_LED6-Pad5_ Net-_LED6-Pad6_ Net-_LED6-Pad7_ Net-_LED6-Pad8_ Net-_LED6-Pad9_ Net-_LED6-Pad10_ Net-_LED6-Pad11_ Net-_LED6-Pad12_ Net-_LED6-Pad13_ Net-_LED6-Pad14_ Net-_LED6-Pad15_ Net-_LED6-Pad16_ 7088A_788
+C6 +5V GND 0.1u
+R6 Net-_R6-Pad1_ +5V 30k
+U2 Net-_U1-Pad24_ Net-_LED2-Pad2_ Net-_LED2-Pad3_ GND Net-_LED2-Pad14_ Net-_LED2-Pad5_ Net-_LED2-Pad12_ Net-_LED2-Pad11_ GND Net-_LED2-Pad7_ Net-_LED2-Pad8_ /CS0 /CLK0 Net-_LED2-Pad9_ Net-_LED2-Pad10_ Net-_LED2-Pad6_ Net-_LED2-Pad13_ Net-_R2-Pad1_ +5V Net-_LED2-Pad4_ Net-_LED2-Pad15_ Net-_LED2-Pad16_ Net-_LED2-Pad1_ Net-_U2-Pad24_ MAX7219_7221
+LED2 Net-_LED2-Pad1_ Net-_LED2-Pad2_ Net-_LED2-Pad3_ Net-_LED2-Pad4_ Net-_LED2-Pad5_ Net-_LED2-Pad6_ Net-_LED2-Pad7_ Net-_LED2-Pad8_ Net-_LED2-Pad9_ Net-_LED2-Pad10_ Net-_LED2-Pad11_ Net-_LED2-Pad12_ Net-_LED2-Pad13_ Net-_LED2-Pad14_ Net-_LED2-Pad15_ Net-_LED2-Pad16_ 7088A_788
+C2 +5V GND 0.1u
+R2 Net-_R2-Pad1_ +5V 30k
+U7 Net-_U6-Pad24_ Net-_LED7-Pad2_ Net-_LED7-Pad3_ GND Net-_LED7-Pad14_ Net-_LED7-Pad5_ Net-_LED7-Pad12_ Net-_LED7-Pad11_ GND Net-_LED7-Pad7_ Net-_LED7-Pad8_ /CS1 /CLK1 Net-_LED7-Pad9_ Net-_LED7-Pad10_ Net-_LED7-Pad6_ Net-_LED7-Pad13_ Net-_R7-Pad1_ +5V Net-_LED7-Pad4_ Net-_LED7-Pad15_ Net-_LED7-Pad16_ Net-_LED7-Pad1_ Net-_U7-Pad24_ MAX7219_7221
+LED7 Net-_LED7-Pad1_ Net-_LED7-Pad2_ Net-_LED7-Pad3_ Net-_LED7-Pad4_ Net-_LED7-Pad5_ Net-_LED7-Pad6_ Net-_LED7-Pad7_ Net-_LED7-Pad8_ Net-_LED7-Pad9_ Net-_LED7-Pad10_ Net-_LED7-Pad11_ Net-_LED7-Pad12_ Net-_LED7-Pad13_ Net-_LED7-Pad14_ Net-_LED7-Pad15_ Net-_LED7-Pad16_ 7088A_788
+C7 +5V GND 0.1u
+R7 Net-_R7-Pad1_ +5V 30k
+U3 Net-_U2-Pad24_ Net-_LED3-Pad2_ Net-_LED3-Pad3_ GND Net-_LED3-Pad14_ Net-_LED3-Pad5_ Net-_LED3-Pad12_ Net-_LED3-Pad11_ GND Net-_LED3-Pad7_ Net-_LED3-Pad8_ /CS0 /CLK0 Net-_LED3-Pad9_ Net-_LED3-Pad10_ Net-_LED3-Pad6_ Net-_LED3-Pad13_ Net-_R3-Pad1_ +5V Net-_LED3-Pad4_ Net-_LED3-Pad15_ Net-_LED3-Pad16_ Net-_LED3-Pad1_ Net-_U3-Pad24_ MAX7219_7221
+LED3 Net-_LED3-Pad1_ Net-_LED3-Pad2_ Net-_LED3-Pad3_ Net-_LED3-Pad4_ Net-_LED3-Pad5_ Net-_LED3-Pad6_ Net-_LED3-Pad7_ Net-_LED3-Pad8_ Net-_LED3-Pad9_ Net-_LED3-Pad10_ Net-_LED3-Pad11_ Net-_LED3-Pad12_ Net-_LED3-Pad13_ Net-_LED3-Pad14_ Net-_LED3-Pad15_ Net-_LED3-Pad16_ 7088A_788
+C3 +5V GND 0.1u
+R3 Net-_R3-Pad1_ +5V 30k
+U4 Net-_U3-Pad24_ Net-_LED4-Pad2_ Net-_LED4-Pad3_ GND Net-_LED4-Pad14_ Net-_LED4-Pad5_ Net-_LED4-Pad12_ Net-_LED4-Pad11_ GND Net-_LED4-Pad7_ Net-_LED4-Pad8_ /CS0 /CLK0 Net-_LED4-Pad9_ Net-_LED4-Pad10_ Net-_LED4-Pad6_ Net-_LED4-Pad13_ Net-_R4-Pad1_ +5V Net-_LED4-Pad4_ Net-_LED4-Pad15_ Net-_LED4-Pad16_ Net-_LED4-Pad1_ Net-_U4-Pad24_ MAX7219_7221
+LED4 Net-_LED4-Pad1_ Net-_LED4-Pad2_ Net-_LED4-Pad3_ Net-_LED4-Pad4_ Net-_LED4-Pad5_ Net-_LED4-Pad6_ Net-_LED4-Pad7_ Net-_LED4-Pad8_ Net-_LED4-Pad9_ Net-_LED4-Pad10_ Net-_LED4-Pad11_ Net-_LED4-Pad12_ Net-_LED4-Pad13_ Net-_LED4-Pad14_ Net-_LED4-Pad15_ Net-_LED4-Pad16_ 7088A_788
+C4 +5V GND 0.1u
+R4 Net-_R4-Pad1_ +5V 30k
+U5 Net-_U4-Pad24_ Net-_LED5-Pad2_ Net-_LED5-Pad3_ GND Net-_LED5-Pad14_ Net-_LED5-Pad5_ Net-_LED5-Pad12_ Net-_LED5-Pad11_ GND Net-_LED5-Pad7_ Net-_LED5-Pad8_ /CS0 /CLK0 Net-_LED5-Pad9_ Net-_LED5-Pad10_ Net-_LED5-Pad6_ Net-_LED5-Pad13_ Net-_R5-Pad1_ +5V Net-_LED5-Pad4_ Net-_LED5-Pad15_ Net-_LED5-Pad16_ Net-_LED5-Pad1_ /R0D MAX7219_7221
+LED5 Net-_LED5-Pad1_ Net-_LED5-Pad2_ Net-_LED5-Pad3_ Net-_LED5-Pad4_ Net-_LED5-Pad5_ Net-_LED5-Pad6_ Net-_LED5-Pad7_ Net-_LED5-Pad8_ Net-_LED5-Pad9_ Net-_LED5-Pad10_ Net-_LED5-Pad11_ Net-_LED5-Pad12_ Net-_LED5-Pad13_ Net-_LED5-Pad14_ Net-_LED5-Pad15_ Net-_LED5-Pad16_ 7088A_788
+C5 +5V GND 0.1u
+R5 Net-_R5-Pad1_ +5V 30k
+U8 Net-_U7-Pad24_ Net-_LED8-Pad2_ Net-_LED8-Pad3_ GND Net-_LED8-Pad14_ Net-_LED8-Pad5_ Net-_LED8-Pad12_ Net-_LED8-Pad11_ GND Net-_LED8-Pad7_ Net-_LED8-Pad8_ /CS1 /CLK1 Net-_LED8-Pad9_ Net-_LED8-Pad10_ Net-_LED8-Pad6_ Net-_LED8-Pad13_ Net-_R8-Pad1_ +5V Net-_LED8-Pad4_ Net-_LED8-Pad15_ Net-_LED8-Pad16_ Net-_LED8-Pad1_ Net-_U8-Pad24_ MAX7219_7221
+LED8 Net-_LED8-Pad1_ Net-_LED8-Pad2_ Net-_LED8-Pad3_ Net-_LED8-Pad4_ Net-_LED8-Pad5_ Net-_LED8-Pad6_ Net-_LED8-Pad7_ Net-_LED8-Pad8_ Net-_LED8-Pad9_ Net-_LED8-Pad10_ Net-_LED8-Pad11_ Net-_LED8-Pad12_ Net-_LED8-Pad13_ Net-_LED8-Pad14_ Net-_LED8-Pad15_ Net-_LED8-Pad16_ 7088A_788
+C8 +5V GND 0.1u
+R8 Net-_R8-Pad1_ +5V 30k
+U9 Net-_U8-Pad24_ Net-_LED9-Pad2_ Net-_LED9-Pad3_ GND Net-_LED9-Pad14_ Net-_LED9-Pad5_ Net-_LED9-Pad12_ Net-_LED9-Pad11_ GND Net-_LED9-Pad7_ Net-_LED9-Pad8_ /CS1 /CLK1 Net-_LED9-Pad9_ Net-_LED9-Pad10_ Net-_LED9-Pad6_ Net-_LED9-Pad13_ Net-_R9-Pad1_ +5V Net-_LED9-Pad4_ Net-_LED9-Pad15_ Net-_LED9-Pad16_ Net-_LED9-Pad1_ Net-_U10-Pad1_ MAX7219_7221
+LED9 Net-_LED9-Pad1_ Net-_LED9-Pad2_ Net-_LED9-Pad3_ Net-_LED9-Pad4_ Net-_LED9-Pad5_ Net-_LED9-Pad6_ Net-_LED9-Pad7_ Net-_LED9-Pad8_ Net-_LED9-Pad9_ Net-_LED9-Pad10_ Net-_LED9-Pad11_ Net-_LED9-Pad12_ Net-_LED9-Pad13_ Net-_LED9-Pad14_ Net-_LED9-Pad15_ Net-_LED9-Pad16_ 7088A_788
+C9 +5V GND 0.1u
+R9 Net-_R9-Pad1_ +5V 30k
+U10 Net-_U10-Pad1_ Net-_LED10-Pad2_ Net-_LED10-Pad3_ GND Net-_LED10-Pad14_ Net-_LED10-Pad5_ Net-_LED10-Pad12_ Net-_LED10-Pad11_ GND Net-_LED10-Pad7_ Net-_LED10-Pad8_ /CS1 /CLK1 Net-_LED10-Pad9_ Net-_LED10-Pad10_ Net-_LED10-Pad6_ Net-_LED10-Pad13_ Net-_R10-Pad1_ +5V Net-_LED10-Pad4_ Net-_LED10-Pad15_ Net-_LED10-Pad16_ Net-_LED10-Pad1_ /R1D MAX7219_7221
+LED10 Net-_LED10-Pad1_ Net-_LED10-Pad2_ Net-_LED10-Pad3_ Net-_LED10-Pad4_ Net-_LED10-Pad5_ Net-_LED10-Pad6_ Net-_LED10-Pad7_ Net-_LED10-Pad8_ Net-_LED10-Pad9_ Net-_LED10-Pad10_ Net-_LED10-Pad11_ Net-_LED10-Pad12_ Net-_LED10-Pad13_ Net-_LED10-Pad14_ Net-_LED10-Pad15_ Net-_LED10-Pad16_ 7088A_788
+C10 +5V GND 0.1u
+R10 Net-_R10-Pad1_ +5V 30k
+U11 /R0D Net-_LED11-Pad2_ Net-_LED11-Pad3_ GND Net-_LED11-Pad14_ Net-_LED11-Pad5_ Net-_LED11-Pad12_ Net-_LED11-Pad11_ GND Net-_LED11-Pad7_ Net-_LED11-Pad8_ /CS0 /CLK0 Net-_LED11-Pad9_ Net-_LED11-Pad10_ Net-_LED11-Pad6_ Net-_LED11-Pad13_ Net-_R14-Pad1_ +5V Net-_LED11-Pad4_ Net-_LED11-Pad15_ Net-_LED11-Pad16_ Net-_LED11-Pad1_ /DOUT0 MAX7219_7221
+LED11 Net-_LED11-Pad1_ Net-_LED11-Pad2_ Net-_LED11-Pad3_ Net-_LED11-Pad4_ Net-_LED11-Pad5_ Net-_LED11-Pad6_ Net-_LED11-Pad7_ Net-_LED11-Pad8_ Net-_LED11-Pad9_ Net-_LED11-Pad10_ Net-_LED11-Pad11_ Net-_LED11-Pad12_ Net-_LED11-Pad13_ Net-_LED11-Pad14_ Net-_LED11-Pad15_ Net-_LED11-Pad16_ 7088A_788
+C11 +5V GND 0.1u
+R14 Net-_R14-Pad1_ +5V 30k
+U12 /R1D Net-_LED12-Pad2_ Net-_LED12-Pad3_ GND Net-_LED12-Pad14_ Net-_LED12-Pad5_ Net-_LED12-Pad12_ Net-_LED12-Pad11_ GND Net-_LED12-Pad7_ Net-_LED12-Pad8_ /CS1 /CLK1 Net-_LED12-Pad9_ Net-_LED12-Pad10_ Net-_LED12-Pad6_ Net-_LED12-Pad13_ Net-_R15-Pad1_ +5V Net-_LED12-Pad4_ Net-_LED12-Pad15_ Net-_LED12-Pad16_ Net-_LED12-Pad1_ NC_01 MAX7219_7221
+LED12 Net-_LED12-Pad1_ Net-_LED12-Pad2_ Net-_LED12-Pad3_ Net-_LED12-Pad4_ Net-_LED12-Pad5_ Net-_LED12-Pad6_ Net-_LED12-Pad7_ Net-_LED12-Pad8_ Net-_LED12-Pad9_ Net-_LED12-Pad10_ Net-_LED12-Pad11_ Net-_LED12-Pad12_ Net-_LED12-Pad13_ Net-_LED12-Pad14_ Net-_LED12-Pad15_ Net-_LED12-Pad16_ 7088A_788
+C12 +5V GND 0.1u
+R15 Net-_R15-Pad1_ +5V 30k
+R11 /DIN1 /DOUT0 0R
+R12 /CLK1 /CLK0 0R
+R13 /CS1 /CS0 0R
+J1 +5V +5V GND GND /DIN0 /DIN1 /CLK0 /CLK1 /CS0 /CS1 Conn_02x05_Odd_Even
+H1 GND MountingHole_Pad
+H2 GND MountingHole_Pad
+H3 GND MountingHole_Pad
+H4 GND MountingHole_Pad
+.end

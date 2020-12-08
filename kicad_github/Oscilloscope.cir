@@ -1,0 +1,37 @@
+.title KiCad schematic
+U1 Mic_Jack_Left Net-_R5-Pad1_ Vbias VPP NC_01 Net-_R9-Pad2_ Net-_R9-Pad2_ Mic_Jack_GND Vbias Net-_R6-Pad1_ Mic_Jack_Right LM324N
+P1 VPP NC_02 NC_03 Mic_Jack_GND NC_04 USB_A
+R7 Mic_Jack_Left Net-_R5-Pad1_ 10kΩ
+R5 Net-_R5-Pad1_ Net-_R5-Pad2_ 220kΩ
+R8 Mic_Jack_Right Net-_R8-Pad2_ 6.8kΩ
+R6 Net-_R6-Pad1_ Net-_R6-Pad2_ 220kΩ
+RV1 Net-_R6-Pad1_ Net-_R8-Pad2_ NC_05 5 kΩ
+D3 Right_Input Net-_D3-Pad2_ 33V
+D2 Net-_D1-Pad1_ Right_Input 36 V
+F1 Right_Probe Net-_F1-Pad2_ 100 mA
+D1 Net-_D1-Pad1_ VPP D
+D4 Mic_Jack_GND Net-_D3-Pad2_ D
+R1 Right_Input Net-_F1-Pad2_ 100 Ω
+D7 Left_Input Net-_D7-Pad2_ 33V
+D6 Net-_D5-Pad1_ Left_Input 36 V
+F2 Left_Probe Net-_F2-Pad2_ 100 mA
+D5 Net-_D5-Pad1_ VPP D
+D8 Mic_Jack_GND Net-_D7-Pad2_ D
+R2 Left_Input Net-_F2-Pad2_ 100 Ω
+J3 Mic_Jack_GND Mic_Jack_Left Mic_Jack_Right NC_06 NC_07 NC_08 JACK_TRS_6PINS
+J2 Left_Probe Bannana_Plug
+J1 Right_Probe Bannana_Plug
+C1 Right_Input Mic_Jack_GND 22 nF
+C2 Left_Input Mic_Jack_GND 22 nF
+RV2 Net-_R9-Pad1_ Vbias Net-_R10-Pad2_ 50KΩ
+R9 Net-_R9-Pad1_ Net-_R9-Pad2_ 27kΩ
+R10 Mic_Jack_GND Net-_R10-Pad2_ 1MΩ
+SW1 Net-_C3-Pad1_ Net-_R5-Pad2_ Left_Input SWITCH_INV
+R3 Net-_C3-Pad1_ Mic_Jack_GND 39kΩ
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 47 μF
+SW2 Net-_C4-Pad1_ Net-_R6-Pad2_ Right_Input SWITCH_INV
+R4 Net-_C4-Pad1_ Mic_Jack_GND 39kΩ
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 47 μF
+SW4 Net-_C4-Pad2_ Right_Input NC_09 SWITCH_INV
+SW3 Net-_C3-Pad2_ Left_Input NC_10 SWITCH_INV
+.end

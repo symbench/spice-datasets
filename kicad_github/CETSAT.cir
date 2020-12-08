@@ -1,0 +1,11 @@
+.title KiCad schematic
+R2 Net-_C1-Pad1_ vin- 1K
+C1 Net-_C1-Pad1_ vin+ 90nF
+T1 AC Earth vin- vin+ t
+D1 vout+ vin+ D
+D3 vin- vout- D
+D2 vout+ vin+ D
+Diode1 vin+ vout- D
+D4 vout+ vin- D
+R1 vout- vout+ 1k
+.end

@@ -1,0 +1,33 @@
+.title KiCad schematic
+J2 Net-_J2-Pad1_ GNDREF -VIN
+J3 Net-_J3-Pad1_ GNDREF +VIN
+R5 Net-_C3-Pad2_ Net-_J2-Pad1_ R
+R6 GNDREF Net-_C3-Pad2_ R
+R2 GNDREF Net-_J2-Pad1_ RTN
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ CF
+R4 Net-_R4-Pad1_ Net-_J3-Pad1_ R
+R3 Net-_J3-Pad1_ GNDREF RTP
+R7 Net-_R4-Pad1_ GNDREF R
+R9 Net-_C5-Pad1_ Net-_R11-Pad1_ RS
+R11 Net-_R11-Pad1_ Net-_J5-Pad1_ R
+R12 GNDREF Net-_J5-Pad1_ R
+C5 Net-_C5-Pad1_ GNDREF CL
+J5 Net-_J5-Pad1_ GNDREF VOUT
+R10 Net-_C6-Pad2_ Net-_C6-Pad1_ R
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ C
+C8 /VEE Net-_C6-Pad1_ C
+U1 Net-_C3-Pad1_ Net-_C3-Pad2_ Net-_R4-Pad1_ /VEE Net-_C6-Pad2_ Net-_R11-Pad1_ /VCC /PD ADA4817-1
+R1 /VCC /PD 1kΩ
+C10 GNDREF /VEE 10uF
+C4 /VCC GNDREF 10uF
+C1 /VCC GNDREF 0.1uF
+C9 /VEE GNDREF 0.1uF
+C7 /VEE GNDREF 0.1uF
+C2 /VCC GNDREF 0.1uF
+J4 /VEE GNDREF /VCC Conn_01x03_Male
+RF2 Net-_C3-Pad2_ Net-_JP1-Pad1_ R
+RV1 Net-_C3-Pad2_ Net-_JP1-Pad3_ NC_01 R_POT
+JP1 Net-_JP1-Pad1_ Net-_C3-Pad1_ Net-_JP1-Pad3_ Jumper_3_Open
+RF1 Net-_C3-Pad2_ Net-_JP1-Pad1_ R
+RF3 Net-_JP1-Pad1_ Net-_C3-Pad2_ R
+.end

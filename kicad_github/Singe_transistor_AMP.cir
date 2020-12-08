@@ -1,0 +1,13 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 10uF
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 10uF
+Q1 Net-_C3-Pad1_ Net-_C1-Pad2_ Net-_Q1-Pad3_ NPN
+R1 VDD Net-_C1-Pad2_ 39k
+R2 Net-_C1-Pad2_ GND 10k
+R4 Net-_Q1-Pad3_ GND 560
+J2 Net-_C3-Pad2_ GND Conn_01x02
+R3 VDD Net-_C3-Pad1_ 1.8k
+C2 Net-_C2-Pad1_ GND 470uF
+J1 GND Net-_C1-Pad1_ VDD Conn_01x03
+RV1 Net-_C2-Pad1_ Net-_Q1-Pad3_ NC_01 R_POT
+.end

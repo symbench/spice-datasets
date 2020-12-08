@@ -1,0 +1,10 @@
+.title KiCad schematic
+.include "/home/akshay/Downloads/Design_Of_Binary_Phase_Shift_Keying_(bpsk)_Modulator_&_Demodulator_Using_Esim_By_Prof_Raghu_K/Design_Of_BPSK_by_Raghu/BPSK/ZenerD1N750.lib"
+.include "/home/akshay/kicad-source-mirror-master/demos/simulation/laser_driver/fzt1049a.lib"
+V1 Net-_Q1-Pad1_ GND VSOURCE
+R1 Net-_Q1-Pad1_ Net-_D1-Pad1_ 1.5k
+R2 vout GND 1k
+Q1 Net-_Q1-Pad1_ Net-_D1-Pad1_ vout FZT1049A
+D1 GND Net-_D1-Pad1_ D1N750
+.dc V1 1 16 1
+.end

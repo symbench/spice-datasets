@@ -1,0 +1,4 @@
+.title KiCad schematic
+T1 NC_01 NC_02 Net-_D1-Pad3_ Net-_D1-Pad4_ Transformer_1P_1S
+D1 NC_03 NC_04 Net-_D1-Pad3_ Net-_D1-Pad4_ D_Bridge_+-AA
+.end

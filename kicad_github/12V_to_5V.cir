@@ -1,0 +1,12 @@
+.title KiCad schematic
+U1 GND Net-_L1-Pad1_ /12VIN Net-_C4-Pad2_ NC_01 Net-_C3-Pad2_ TPS563200
+J1 GND /12VIN Conn_01x02_Female
+L1 Net-_L1-Pad1_ /5VO 4.7uH
+C3 /5VO Net-_C3-Pad2_ 0.1uF
+R1 /5VO Net-_C4-Pad2_ 54.9k
+R2 Net-_C4-Pad2_ GND 10k
+C4 /5VO Net-_C4-Pad2_ 0.1uF
+C5 Net-_C4-Pad2_ GND 0.1uF
+C2 /12VIN GND 10uF
+C1 /12VIN GND C
+.end

@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ Net-_J4-Pad9_ Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Altera_MAX10
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Conn_01x09_Male
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ Net-_J4-Pad9_ Conn_01x09_Male
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Conn_01x05_Male
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Conn_01x05_Male
+.end

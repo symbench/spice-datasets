@@ -1,0 +1,4 @@
+.title KiCad schematic
+J502 NC_01 NC_02 /MOSI +3V3 /SCLK GNDD /MISO NC_03 GNDD Micro_SD_Card
+J501 NC_04 NC_05 /MOSI +3V3 /SCLK GNDD /MISO NC_06 GNDD Micro_SD_Card
+.end

@@ -1,0 +1,10 @@
+.title KiCad schematic
+Q7 Net-_Q7-Pad1_ +VDC /OUT CSD19531KCS
+Q8 Net-_Q8-Pad1_ /OUT -VDC CSD19531KCS
+U6 NC_01 NC_02 -VDC Net-_R9-Pad1_ +15V /OUT Net-_R8-Pad1_ Net-_C9-Pad1_ IR2181
+R8 Net-_R8-Pad1_ Net-_Q7-Pad1_ 22R
+R9 Net-_R9-Pad1_ Net-_Q8-Pad1_ 22R
+C8 +15V -VDC 100n
+C9 Net-_C9-Pad1_ /OUT 100n
+D4 Net-_C9-Pad1_ +15V LL4148
+.end

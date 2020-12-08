@@ -1,0 +1,48 @@
+.title KiCad schematic
+Q1 GND Net-_Q1-Pad2_ Net-_Q1-Pad3_ 2N3904
+U2 GND Net-_Q3-Pad3_ Q R Net-_C6-Pad1_ thr disable +12V ICM7555xP
+Q4 Net-_Q4-Pad1_ led Net-_D4-Pad1_ 2N3904
+J1 GND gate_in NC_01 Gate In
+J2 GND Net-_J2-PadT_ NC_02 Out 1
+J3 GND Net-_J3-PadT_ NC_03 Out 2
+U1 Net-_R13-Pad2_ Net-_R13-Pad2_ sustain_wiper +12V thr led led out_1 out_1 Net-_RV1-Pad2_ -12V Net-_RV1-Pad2_ out_2 out_2 TL074
+R3 +12V Net-_Q1-Pad3_ 4.7K
+Q2 GND Net-_Q2-Pad2_ R 2N3904
+R5 +12V R 4.7K
+Q3 GND Net-_C5-Pad1_ Net-_Q3-Pad3_ 2N3904
+R6 +12V Net-_Q3-Pad3_ 4.7K
+R1 Net-_Q1-Pad2_ gate_in 10K
+R2 GND Net-_Q1-Pad2_ 100K
+R4 Net-_Q2-Pad2_ Net-_Q1-Pad3_ 10K
+C5 Net-_C5-Pad1_ R 10nF
+D3 Net-_C5-Pad1_ GND 1N4148
+C6 Net-_C6-Pad1_ GND 10uF
+R9 Net-_R9-Pad1_ Q 100
+R10 Net-_R10-Pad1_ R 100
+RV4 Net-_D6-Pad2_ Net-_R9-Pad1_ Net-_R9-Pad1_ A1M
+RV5 Net-_D7-Pad1_ Net-_R10-Pad1_ Net-_R10-Pad1_ A1M
+D6 thr Net-_D6-Pad2_ 1N4148
+D7 Net-_D7-Pad1_ thr 1N4148
+RV2 disable sustain_wiper Net-_R8-Pad2_ B10K
+R8 +12V Net-_R8-Pad2_ 5.6K
+RV3 decay Net-_D5-Pad1_ Net-_D5-Pad1_ A1M
+D5 Net-_D5-Pad1_ thr 1N4148
+R13 decay Net-_R13-Pad2_ 1K
+SW1 Net-_C8-Pad1_ thr Net-_C7-Pad2_ SW_SPDT
+C8 Net-_C8-Pad1_ GND 10uF
+C7 GND Net-_C7-Pad2_ 220nF
+RV1 led Net-_RV1-Pad2_ GND 100K
+D4 Net-_D4-Pad1_ +12V LED
+R7 GND Net-_Q4-Pad1_ 1K
+R11 out_1 Net-_J2-PadT_ 1K
+R12 out_2 Net-_J3-PadT_ 1K
+C3 +12V GND 100nF
+C4 -12V GND 100nF
+C1 +12V GND 10uF
+D2 Net-_D2-Pad1_ -12V 1N4148
+D1 +12V Net-_D1-Pad2_ 1N4148
+J5 Net-_D2-Pad1_ Net-_D2-Pad1_ GND GND GND GND GND GND Net-_D1-Pad2_ Net-_D1-Pad2_ Conn_01x10
+C2 GND -12V 10uF
+J4 +12V sustain_wiper out_1 decay thr gate_in NC_04 NC_05 NC_06 NC_07 Q R led disable out_2 GND Conn_02x08_Counter_Clockwise
+J6 +12V sustain_wiper out_1 decay thr gate_in NC_08 NC_09 NC_10 NC_11 Q R led disable out_2 GND Conn_02x08_Counter_Clockwise
+.end

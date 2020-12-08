@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 /Vin Net-_D1-Pad1_ GND Net-_R1-Pad2_ GND LM2576HVT-ADJ
+C1 /Vin GND 100uF
+L1 Net-_D1-Pad1_ /Vout 100uH
+C2 /Vout GND 1000uF
+R1 /Vout Net-_R1-Pad2_ R
+R2 Net-_R1-Pad2_ GND 1k
+D1 Net-_D1-Pad1_ GND B360
+.end

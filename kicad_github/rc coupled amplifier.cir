@@ -1,0 +1,22 @@
+.title KiCad schematic
+.include "/home/akshay/kicad-source-mirror-master/demos/simulation/laser_driver/fzt1049a.lib"
+C1 Net-_C1-Pad1_ ip 10u
+R1 VDD Net-_C1-Pad1_ 33k
+R2 Net-_C1-Pad1_ GND 3.3k
+R3 VDD Net-_C3-Pad2_ 1k
+R4 Net-_C2-Pad2_ GND 330
+C2 GND Net-_C2-Pad2_ 100u
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 10u
+R5 VDD Net-_C3-Pad1_ 33k
+R6 Net-_C3-Pad1_ GND 3.3k
+R7 VDD Net-_C5-Pad2_ 1k
+R8 Net-_C4-Pad2_ GND 330
+C4 GND Net-_C4-Pad2_ 100u
+C5 out Net-_C5-Pad2_ 10u
+R9 out GND 4.7k
+V1 ip GND ac 20 0
+V2 VDD GND dc 25
+Q1 Net-_C3-Pad2_ Net-_C1-Pad1_ Net-_C2-Pad2_ FZT1049A
+Q2 Net-_C5-Pad2_ Net-_C3-Pad1_ Net-_C4-Pad2_ FZT1049A
+.ac dec 10 1 1meg
+.end

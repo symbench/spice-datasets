@@ -1,0 +1,37 @@
+.title KiCad schematic
+R15 GND Net-_Q5-Pad1_ 10k
+R9 GND Net-_Q3-Pad1_ 10k
+R4 GND Net-_Q1-Pad1_ 10k
+R12 GND Net-_Q4-Pad1_ 10k
+R6 GND Net-_Q2-Pad1_ 10k
+D4 +12V /Hotend_OUT SS54
+Q4 Net-_Q4-Pad1_ /Heatbed_OUT GND IRLR8743
+Q2 Net-_Q2-Pad1_ /Hotend_OUT GND IRLR8743
+J3 +12V /FAN_2_OUT FAN_2_OUT
+D8 GND Net-_D8-Pad2_ LED_RED
+D7 GND Net-_D7-Pad2_ LED_RED
+J2 +12V /FAN_1_OUT FAN_1_OUT
+D5 GND Net-_D5-Pad2_ LED_RED
+R1 Net-_D1-Pad2_ Hotend_Buff 330
+D1 GND Net-_D1-Pad2_ LED_RED
+J1 +12V /FAN_0_OUT FAN_0_OUT
+D2 GND Net-_D2-Pad2_ LED_RED
+Q1 Net-_Q1-Pad1_ GND /FAN_0_OUT AO3400A
+D3 +12V /FAN_0_OUT SS14
+R10 Net-_D7-Pad2_ Heatbed_Buff 330
+R5 Net-_Q2-Pad1_ Hotend_Buff 150R
+R11 Net-_Q4-Pad1_ Heatbed_Buff 150R
+R3 Net-_Q1-Pad1_ FAN_0 150R
+R8 Net-_Q3-Pad1_ FAN_1 150R
+R14 Net-_Q5-Pad1_ FAN_2 150R
+R2 Net-_D2-Pad2_ FAN_0 150R
+R7 Net-_D5-Pad2_ FAN_1 150R
+R13 Net-_D8-Pad2_ FAN_2 150R
+Q3 Net-_Q3-Pad1_ GND /FAN_1_OUT AO3400A
+Q5 Net-_Q5-Pad1_ GND /FAN_2_OUT AO3400A
+D9 V_Bed /Heatbed_OUT SS54
+D6 +12V /FAN_1_OUT SS14
+D10 +12V /FAN_2_OUT SS14
+J8 +12V /Hotend_OUT Hotend_OUT
+J9 V_Bed /Heatbed_OUT Heatbed_OUT
+.end

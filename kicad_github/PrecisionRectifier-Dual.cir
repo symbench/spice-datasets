@@ -1,0 +1,30 @@
+.title KiCad schematic
+C153 NC_01 Net-_C153-Pad2_ C
+C155 NC_02 Net-_C153-Pad2_ C
+C154 Net-_C154-Pad1_ NC_03 C
+C156 Net-_C154-Pad1_ NC_04 C
+J52 Net-_C153-Pad2_ NC_05 Net-_J52-Pad3_ Net-_J52-Pad4_ NC_06 Net-_C154-Pad1_ InConnector
+J53 Net-_C161-Pad2_ NC_07 Net-_C159-Pad1_ Net-_C160-Pad1_ NC_08 Net-_C162-Pad1_ OutConnector
+R293 Net-_C159-Pad2_ Net-_C159-Pad1_ 1k
+U31 Net-_C158-Pad2_ Net-_C158-Pad1_ Net-_J52-Pad4_ NC_09 Net-_J52-Pad3_ Net-_C157-Pad1_ Net-_C157-Pad2_ NC_10 ADA4807-2ARM
+U32 Net-_C160-Pad1_ Net-_C160-Pad2_ Net-_D6-Pad1_ NC_11 Net-_D5-Pad1_ Net-_C159-Pad2_ Net-_C159-Pad1_ NC_12 ADA4807-2ARM
+C157 Net-_C157-Pad1_ Net-_C157-Pad2_ 47p
+R289 Net-_C157-Pad1_ Net-_C159-Pad2_ 1k
+D3 Net-_C157-Pad2_ Net-_C157-Pad1_ 1N4148
+D5 Net-_D5-Pad1_ Net-_C157-Pad2_ 1N4148
+R291 Net-_D5-Pad1_ NC_13 1k
+R287 Net-_J52-Pad3_ NC_14 49.9
+C159 Net-_C159-Pad1_ Net-_C159-Pad2_ C
+R294 Net-_C160-Pad2_ Net-_C160-Pad1_ 1k
+C158 Net-_C158-Pad1_ Net-_C158-Pad2_ 47p
+R290 Net-_C158-Pad1_ Net-_C160-Pad2_ 1k
+D4 Net-_C158-Pad2_ Net-_C158-Pad1_ 1N4148
+D6 Net-_D6-Pad1_ Net-_C158-Pad2_ 1N4148
+R292 Net-_D6-Pad1_ NC_15 1k
+R288 Net-_J52-Pad4_ NC_16 49.9
+C160 Net-_C160-Pad1_ Net-_C160-Pad2_ C
+C161 NC_17 Net-_C161-Pad2_ C
+C163 NC_18 Net-_C161-Pad2_ C
+C162 Net-_C162-Pad1_ NC_19 C
+C164 Net-_C162-Pad1_ NC_20 C
+.end

@@ -1,0 +1,7 @@
+.title KiCad schematic
+P1 /GND Net-_J1-Pad1_ Net-_P1-PadA5_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad1_ /GND /GND Net-_J1-Pad1_ NC_01 Net-_J1-Pad1_ /GND NC_02 USB_C_Plug_USB2.0
+J3 Net-_J2-Pad1_ Net-_J2-Pad3_ Net-_J2-Pad2_ NC_03 Net-_J2-Pad4_ NC_04 USB_B_Mini
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ /GND NC_05 Conn_01x04_MountingPin
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ NC_06 Conn_01x04_MountingPin
+R1 /GND Net-_P1-PadA5_ 5.1k
+.end

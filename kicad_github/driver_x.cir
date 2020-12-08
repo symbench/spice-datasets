@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 /X-EN Net-_J1-Pad1_ Net-_J1-Pad3_ Net-_J1-Pad5_ Net-_U1-Pad5_ Net-_U1-Pad5_ NC_01 NC_02 GND VCC Net-_J2-Pad4_ Net-_J2-Pad3_ Net-_J2-Pad2_ Net-_J2-Pad1_ GND +12V A4988_MODULE
+R2 VCC /X-EN R103,0805
+R1 GND Net-_J1-Pad1_ R104,0805
+J1 Net-_J1-Pad1_ VCC Net-_J1-Pad3_ VCC Net-_J1-Pad5_ VCC Conn_02x03_Odd_Even
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ X-MOT
+.end

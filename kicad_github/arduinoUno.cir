@@ -1,0 +1,24 @@
+.title KiCad schematic
+SW1 GND /~RST SW_Push
+R3 +5V /~RST 10K
+Y1 Net-_U2-Pad9_ Net-_U2-Pad10_ Crystal
+C4 +5V GND .1uF
+U2 /~RST /RX_DBG /TX_DBG /DIR_A1 /DIR_A2 /EN_A +5V GND Net-_U2-Pad9_ Net-_U2-Pad10_ /EN_B /DIR_B2 /DIR_B1 /RXD /TXD NC_01 /MOSI /MISO /SCK +5V NC_02 GND Net-_J5-Pad1_ Net-_J5-Pad3_ Net-_J5-Pad5_ Net-_J5-Pad7_ Net-_J5-Pad9_ NC_03 ATmega328-PU
+C5 +5V GND .1uF
+C3 +5V GND CP
+J1 NC_04 /RXD /TXD GND +5V NC_05 Conn_01x06_Male
+C1 +5V GND .1uF
+J5 Net-_J5-Pad1_ +5V Net-_J5-Pad3_ GND Net-_J5-Pad5_ NC_06 Net-_J5-Pad7_ NC_07 Net-_J5-Pad9_ NC_08 .
+J3 /EN_A /DIR_A2 /DIR_A1 JST_XH_3P
+J4 /EN_B /DIR_B2 /DIR_B1 JST_XH_3P
+J2 GND /TXD NC_09 +3V3 NC_10 NC_11 Net-_J2-Pad7_ +3V3 ESP01 Module
+U1 GND +3V3 +5V AMS1117-3.3
+C2 +3V3 GND CP
+R1 /RXD Net-_J2-Pad7_ 1K
+R2 Net-_J2-Pad7_ GND 1K
+J7 /MISO NC_12 /SCK /MOSI /~RST NC_13 AVR-ISP-6
+J6 GND /TX_DBG /RX_DBG Serial_Conn
+J8 GND +5V Screw_Terminal_01x02
+R4 +5V Net-_D1-Pad2_ 1K
+D1 GND Net-_D1-Pad2_ LED
+.end

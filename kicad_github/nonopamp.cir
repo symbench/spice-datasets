@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 NC_01 Net-_R2-Pad1_ Net-_R1-Pad1_ NC_02 NC_03 Net-_R3-Pad1_ NC_04 NC_05 LM741
+V1 Net-_R2-Pad2_ Earth VSOURCE
+R2 Net-_R2-Pad1_ Net-_R2-Pad2_ R
+R1 Net-_R1-Pad1_ Earth R
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ R
+.end

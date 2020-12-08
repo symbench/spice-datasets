@@ -1,0 +1,28 @@
+.title KiCad schematic
+U17 Net-_R38-Pad1_ Net-_R41-Pad1_ Net-_C67-Pad1_ GND Net-_R39-Pad1_ GND +3V3 +3V3 Net-_L9-Pad2_ GND Net-_L9-Pad1_ Net-_C64-Pad1_ Net-_C64-Pad1_ Net-_R38-Pad1_ GND TPS63070RNM
+D2 Net-_D2-Pad1_ NC_01 D
+C64 Net-_C64-Pad1_ GND 10uF
+C65 Net-_C64-Pad1_ GND 10uF
+C66 Net-_C64-Pad1_ GND 10uF
+C67 Net-_C67-Pad1_ GND 0.1uF
+R38 Net-_R38-Pad1_ Net-_C64-Pad1_ 10k
+C69 +3V3 GND 22uF
+C70 +3V3 GND 22uF
+C71 +3V3 GND 22uF
+C68 +3V3 GND 10uF
+R41 Net-_R41-Pad1_ +3V3 100k
+R40 Net-_R39-Pad1_ +3V3 470k
+R39 Net-_R39-Pad1_ GND 150k
+L9 Net-_L9-Pad1_ Net-_L9-Pad2_ 1.5uH
+D3 Net-_D2-Pad1_ NC_02 D
+R42 +3V3 Net-_D4-Pad2_ 330
+D4 GND Net-_D4-Pad2_ LG L29K-F2J1-24-Z 
+U16 CC_ADC_CH2 CC_ADC_CH2 Net-_R34-Pad1_ GND Net-_R33-Pad1_ CC_ADC_CH3 CC_ADC_CH3 +3V3 OPA2340
+C62 +3V3 GND 0.01uF
+R34 Net-_R34-Pad1_ Net-_C64-Pad1_ ???
+R36 Net-_C64-Pad1_ Net-_D2-Pad1_ 0.05
+C63 +3V3 GND 0.01uF
+R35 GND Net-_R34-Pad1_ ???
+R37 Net-_R33-Pad1_ Net-_D2-Pad1_ ???
+R33 Net-_R33-Pad1_ GND ???
+.end

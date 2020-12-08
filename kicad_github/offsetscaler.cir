@@ -1,0 +1,38 @@
+.title KiCad schematic
+J4 +12V +12V GND GND GND GND GND GND -12V -12V EURO_PWR_2x5
+U1 Net-_R3-Pad2_ Net-_R1-Pad1_ GND +12V GND Net-_R3-Pad1_ Net-_R10-Pad2_ Net-_R14-Pad1_ Net-_R12-Pad1_ GND -12V GND Net-_R15-Pad1_ Net-_R16-Pad1_ TL074
+J1 GND GND Net-_J1-PadT_ NC_01 IN 1
+R1 Net-_R1-Pad1_ Net-_J1-PadT_ 10k
+R8 +12V Net-_R2-Pad2_ -12V 100K
+R2 Net-_R1-Pad1_ Net-_R2-Pad2_ 10k
+R7 Net-_R3-Pad2_ Net-_R3-Pad2_ Net-_R1-Pad1_ 100K
+R3 Net-_R3-Pad1_ Net-_R3-Pad2_ 10k
+R4 Net-_R10-Pad2_ Net-_R3-Pad1_ 10k
+R5 Net-_J2-PadT_ Net-_R10-Pad2_ 1k
+R6 Net-_J3-PadT_ Net-_R3-Pad2_ 1k
+J2 GND GND Net-_J2-PadT_ NC_02 OUT 1
+J3 GND GND Net-_J3-PadT_ NC_03 INV OUT 1
+R9 Net-_D1-Pad2_ Net-_R10-Pad2_ 1k
+R10 Net-_D2-Pad1_ Net-_R10-Pad2_ 1k
+D2 Net-_D2-Pad1_ GND RED
+D1 GND Net-_D1-Pad2_ GREEN
+J5 GND GND Net-_J5-PadT_ NC_04 IN 2
+R12 Net-_R12-Pad1_ Net-_J5-PadT_ 10k
+R11 +12V Net-_R11-Pad2_ -12V 100K
+R13 Net-_R12-Pad1_ Net-_R11-Pad2_ 10k
+R14 Net-_R14-Pad1_ Net-_R14-Pad1_ Net-_R12-Pad1_ 100K
+R15 Net-_R15-Pad1_ Net-_R14-Pad1_ 10k
+R16 Net-_R16-Pad1_ Net-_R15-Pad1_ 10k
+R19 Net-_J6-PadT_ Net-_R16-Pad1_ 1k
+R20 Net-_J7-PadT_ Net-_R14-Pad1_ 1k
+J6 GND GND Net-_J6-PadT_ NC_05 OUT 2
+J7 GND GND Net-_J7-PadT_ NC_06 INV OUT 2
+R17 Net-_D3-Pad2_ Net-_R16-Pad1_ 1k
+R18 Net-_D4-Pad1_ Net-_R16-Pad1_ 1k
+D4 Net-_D4-Pad1_ GND RED
+D3 GND Net-_D3-Pad2_ GREEN
+C2 +12V GND 10uF
+C1 GND -12V 10uF
+H1 MountingHole
+H2 MountingHole
+.end

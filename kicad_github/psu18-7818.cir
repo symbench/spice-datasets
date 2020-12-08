@@ -1,0 +1,25 @@
+.title KiCad schematic
+D3 Net-_C2-Pad1_ /AC18B /AC18A /-18VDC D_Bridge_+AA-
+U1 Net-_C2-Pad1_ /0VDC /+18VDC L7818
+U2 GND /-18VDC /0VDC L7818
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 220nF
+C3 Net-_C2-Pad1_ Net-_C2-Pad2_ 3300uF
+C4 /0VDC /-18VDC 470uF
+C1 /+18VDC /0VDC 470uF
+C6 GND /-18VDC 220nF
+D1 /+18VDC /0VDC 1N4007
+D2 Net-_C2-Pad2_ /+18VDC 1N4007
+D4 /0VDC /-18VDC 1N4007
+R1 /0VDC Net-_D5-Pad2_ R
+R2 /0VDC Net-_D6-Pad1_ R
+D5 /+18VDC Net-_D5-Pad2_ LED
+D6 Net-_D6-Pad1_ /-18VDC LED
+D7 GND /0VDC 1N4007
+C5 /-18VDC GND 3300uF
+J1 /AC18B GND /AC18A Screw_Terminal_01x03
+J2 /-18VDC /0VDC /+18VDC Screw_Terminal_01x03
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+.end

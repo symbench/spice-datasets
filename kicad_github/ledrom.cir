@@ -1,0 +1,214 @@
+.title KiCad schematic
+U1 /A3 /A4 /A5 /~ROB /~ROB VCC /8bytes7/~E1 GND /8bytes6/~E1 /8bytes5/~E1 /8bytes4/~E1 /8bytes3/~E1 /8bytes2/~E1 /8bytes1/~E1 /8bytes0/~E1 VCC 74AC138
+JB1 VCC /D5 /D6 /D3 /D4 /A2 /A4 /A5 /A6 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 /A14 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 /A13 /A9 NC_19 GND VCC NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 /~ROB NC_44 NC_45 NC_46 NC_47 NC_48 GND VCC /D0 /D7 /D2 /A0 /A3 /A1 /A8 /A7 NC_49 NC_50 NC_51 NC_52 /D1 NC_53 NC_54 /A11 /A10 NC_55 NC_56 NC_57 NC_58 NC_59 /~RD NC_60 NC_61 /A12 /A15 NC_62 /~MREQ NC_63 GND C96ABC
+C1 VCC GND 1µF
+C2 VCC GND 10nF
+C3 VCC GND 10nF
+C4 VCC GND 10nF
+RN1 GND /8bytes0/D0 /8bytes0/D1 /8bytes0/D2 /8bytes0/D3 /8bytes0/D4 /8bytes0/D5 /8bytes0/D6 /8bytes0/D7 220Ω
+U2 /~ROB /8bytes0/D0 /D7 /8bytes0/D1 /D6 /8bytes0/D2 /D5 /8bytes0/D3 /D4 GND /8bytes0/D4 /D3 /8bytes0/D5 /D2 /8bytes0/D6 /D1 /8bytes0/D7 /D0 /~ROB VCC 74ACT244
+R1 VCC /AddrDecode/~ON 10kΩ
+JP1 GND /AddrDecode/~ON DIPSWITCH
+U3 /A0 /A1 /A2 /8bytes0/~E1 /8bytes0/~E1 VCC Net-_Q8-Pad2_ GND Net-_Q7-Pad2_ Net-_Q6-Pad2_ Net-_Q5-Pad2_ Net-_Q4-Pad2_ Net-_Q3-Pad2_ Net-_Q2-Pad2_ Net-_Q1-Pad2_ VCC 74AC138
+J1 Net-_J1-Pad1_ /8bytes0/D0 Net-_J1-Pad1_ /8bytes0/D1 Net-_J1-Pad1_ /8bytes0/D2 Net-_J1-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J2 Net-_J1-Pad1_ /8bytes0/D4 Net-_J1-Pad1_ /8bytes0/D5 Net-_J1-Pad1_ /8bytes0/D6 Net-_J1-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J3 Net-_J3-Pad1_ /8bytes0/D0 Net-_J3-Pad1_ /8bytes0/D1 Net-_J3-Pad1_ /8bytes0/D2 Net-_J3-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J4 Net-_J3-Pad1_ /8bytes0/D4 Net-_J3-Pad1_ /8bytes0/D5 Net-_J3-Pad1_ /8bytes0/D6 Net-_J3-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J5 Net-_J5-Pad1_ /8bytes0/D0 Net-_J5-Pad1_ /8bytes0/D1 Net-_J5-Pad1_ /8bytes0/D2 Net-_J5-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J6 Net-_J5-Pad1_ /8bytes0/D4 Net-_J5-Pad1_ /8bytes0/D5 Net-_J5-Pad1_ /8bytes0/D6 Net-_J5-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J7 Net-_J7-Pad1_ /8bytes0/D0 Net-_J7-Pad1_ /8bytes0/D1 Net-_J7-Pad1_ /8bytes0/D2 Net-_J7-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J8 Net-_J7-Pad1_ /8bytes0/D4 Net-_J7-Pad1_ /8bytes0/D5 Net-_J7-Pad1_ /8bytes0/D6 Net-_J7-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J9 Net-_J10-Pad1_ /8bytes0/D0 Net-_J10-Pad1_ /8bytes0/D1 Net-_J10-Pad1_ /8bytes0/D2 Net-_J10-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J10 Net-_J10-Pad1_ /8bytes0/D4 Net-_J10-Pad1_ /8bytes0/D5 Net-_J10-Pad1_ /8bytes0/D6 Net-_J10-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J11 Net-_J11-Pad1_ /8bytes0/D0 Net-_J11-Pad1_ /8bytes0/D1 Net-_J11-Pad1_ /8bytes0/D2 Net-_J11-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J12 Net-_J11-Pad1_ /8bytes0/D4 Net-_J11-Pad1_ /8bytes0/D5 Net-_J11-Pad1_ /8bytes0/D6 Net-_J11-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J13 Net-_J13-Pad1_ /8bytes0/D0 Net-_J13-Pad1_ /8bytes0/D1 Net-_J13-Pad1_ /8bytes0/D2 Net-_J13-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J14 Net-_J13-Pad1_ /8bytes0/D4 Net-_J13-Pad1_ /8bytes0/D5 Net-_J13-Pad1_ /8bytes0/D6 Net-_J13-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J15 Net-_J15-Pad1_ /8bytes0/D0 Net-_J15-Pad1_ /8bytes0/D1 Net-_J15-Pad1_ /8bytes0/D2 Net-_J15-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J16 Net-_J15-Pad1_ /8bytes0/D4 Net-_J15-Pad1_ /8bytes0/D5 Net-_J15-Pad1_ /8bytes0/D6 Net-_J15-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q1 VCC Net-_Q1-Pad2_ Net-_J1-Pad1_ ZVP3306A
+Q2 VCC Net-_Q2-Pad2_ Net-_J3-Pad1_ ZVP3306A
+Q3 VCC Net-_Q3-Pad2_ Net-_J5-Pad1_ ZVP3306A
+Q4 VCC Net-_Q4-Pad2_ Net-_J7-Pad1_ ZVP3306A
+Q5 VCC Net-_Q5-Pad2_ Net-_J10-Pad1_ ZVP3306A
+Q6 VCC Net-_Q6-Pad2_ Net-_J11-Pad1_ ZVP3306A
+Q7 VCC Net-_Q7-Pad2_ Net-_J13-Pad1_ ZVP3306A
+Q8 VCC Net-_Q8-Pad2_ Net-_J15-Pad1_ ZVP3306A
+U4 /A0 /A1 /A2 /8bytes1/~E1 /8bytes1/~E1 VCC Net-_Q16-Pad2_ GND Net-_Q15-Pad2_ Net-_Q14-Pad2_ Net-_Q13-Pad2_ Net-_Q12-Pad2_ Net-_Q11-Pad2_ Net-_Q10-Pad2_ Net-_Q9-Pad2_ VCC 74AC138
+J17 Net-_J17-Pad1_ /8bytes0/D0 Net-_J17-Pad1_ /8bytes0/D1 Net-_J17-Pad1_ /8bytes0/D2 Net-_J17-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J18 Net-_J17-Pad1_ /8bytes0/D4 Net-_J17-Pad1_ /8bytes0/D5 Net-_J17-Pad1_ /8bytes0/D6 Net-_J17-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J19 Net-_J19-Pad1_ /8bytes0/D0 Net-_J19-Pad1_ /8bytes0/D1 Net-_J19-Pad1_ /8bytes0/D2 Net-_J19-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J20 Net-_J19-Pad1_ /8bytes0/D4 Net-_J19-Pad1_ /8bytes0/D5 Net-_J19-Pad1_ /8bytes0/D6 Net-_J19-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J21 Net-_J21-Pad1_ /8bytes0/D0 Net-_J21-Pad1_ /8bytes0/D1 Net-_J21-Pad1_ /8bytes0/D2 Net-_J21-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J22 Net-_J21-Pad1_ /8bytes0/D4 Net-_J21-Pad1_ /8bytes0/D5 Net-_J21-Pad1_ /8bytes0/D6 Net-_J21-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J23 Net-_J23-Pad1_ /8bytes0/D0 Net-_J23-Pad1_ /8bytes0/D1 Net-_J23-Pad1_ /8bytes0/D2 Net-_J23-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J24 Net-_J23-Pad1_ /8bytes0/D4 Net-_J23-Pad1_ /8bytes0/D5 Net-_J23-Pad1_ /8bytes0/D6 Net-_J23-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J25 Net-_J25-Pad1_ /8bytes0/D0 Net-_J25-Pad1_ /8bytes0/D1 Net-_J25-Pad1_ /8bytes0/D2 Net-_J25-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J26 Net-_J25-Pad1_ /8bytes0/D4 Net-_J25-Pad1_ /8bytes0/D5 Net-_J25-Pad1_ /8bytes0/D6 Net-_J25-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J27 Net-_J27-Pad1_ /8bytes0/D0 Net-_J27-Pad1_ /8bytes0/D1 Net-_J27-Pad1_ /8bytes0/D2 Net-_J27-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J28 Net-_J27-Pad1_ /8bytes0/D4 Net-_J27-Pad1_ /8bytes0/D5 Net-_J27-Pad1_ /8bytes0/D6 Net-_J27-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J29 Net-_J29-Pad1_ /8bytes0/D0 Net-_J29-Pad1_ /8bytes0/D1 Net-_J29-Pad1_ /8bytes0/D2 Net-_J29-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J30 Net-_J29-Pad1_ /8bytes0/D4 Net-_J29-Pad1_ /8bytes0/D5 Net-_J29-Pad1_ /8bytes0/D6 Net-_J29-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J31 Net-_J31-Pad1_ /8bytes0/D0 Net-_J31-Pad1_ /8bytes0/D1 Net-_J31-Pad1_ /8bytes0/D2 Net-_J31-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J32 Net-_J31-Pad1_ /8bytes0/D4 Net-_J31-Pad1_ /8bytes0/D5 Net-_J31-Pad1_ /8bytes0/D6 Net-_J31-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q9 VCC Net-_Q9-Pad2_ Net-_J17-Pad1_ ZVP3306A
+Q10 VCC Net-_Q10-Pad2_ Net-_J19-Pad1_ ZVP3306A
+Q11 VCC Net-_Q11-Pad2_ Net-_J21-Pad1_ ZVP3306A
+Q12 VCC Net-_Q12-Pad2_ Net-_J23-Pad1_ ZVP3306A
+Q13 VCC Net-_Q13-Pad2_ Net-_J25-Pad1_ ZVP3306A
+Q14 VCC Net-_Q14-Pad2_ Net-_J27-Pad1_ ZVP3306A
+Q15 VCC Net-_Q15-Pad2_ Net-_J29-Pad1_ ZVP3306A
+Q16 VCC Net-_Q16-Pad2_ Net-_J31-Pad1_ ZVP3306A
+U5 /A0 /A1 /A2 /8bytes2/~E1 /8bytes2/~E1 VCC Net-_Q24-Pad2_ GND Net-_Q23-Pad2_ Net-_Q22-Pad2_ Net-_Q21-Pad2_ Net-_Q20-Pad2_ Net-_Q19-Pad2_ Net-_Q18-Pad2_ Net-_Q17-Pad2_ VCC 74AC138
+J33 Net-_J33-Pad1_ /8bytes0/D0 Net-_J33-Pad1_ /8bytes0/D1 Net-_J33-Pad1_ /8bytes0/D2 Net-_J33-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J34 Net-_J33-Pad1_ /8bytes0/D4 Net-_J33-Pad1_ /8bytes0/D5 Net-_J33-Pad1_ /8bytes0/D6 Net-_J33-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J35 Net-_J35-Pad1_ /8bytes0/D0 Net-_J35-Pad1_ /8bytes0/D1 Net-_J35-Pad1_ /8bytes0/D2 Net-_J35-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J36 Net-_J35-Pad1_ /8bytes0/D4 Net-_J35-Pad1_ /8bytes0/D5 Net-_J35-Pad1_ /8bytes0/D6 Net-_J35-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J37 Net-_J37-Pad1_ /8bytes0/D0 Net-_J37-Pad1_ /8bytes0/D1 Net-_J37-Pad1_ /8bytes0/D2 Net-_J37-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J38 Net-_J37-Pad1_ /8bytes0/D4 Net-_J37-Pad1_ /8bytes0/D5 Net-_J37-Pad1_ /8bytes0/D6 Net-_J37-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J39 Net-_J39-Pad1_ /8bytes0/D0 Net-_J39-Pad1_ /8bytes0/D1 Net-_J39-Pad1_ /8bytes0/D2 Net-_J39-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J40 Net-_J39-Pad1_ /8bytes0/D4 Net-_J39-Pad1_ /8bytes0/D5 Net-_J39-Pad1_ /8bytes0/D6 Net-_J39-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J41 Net-_J41-Pad1_ /8bytes0/D0 Net-_J41-Pad1_ /8bytes0/D1 Net-_J41-Pad1_ /8bytes0/D2 Net-_J41-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J42 Net-_J41-Pad1_ /8bytes0/D4 Net-_J41-Pad1_ /8bytes0/D5 Net-_J41-Pad1_ /8bytes0/D6 Net-_J41-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J43 Net-_J43-Pad1_ /8bytes0/D0 Net-_J43-Pad1_ /8bytes0/D1 Net-_J43-Pad1_ /8bytes0/D2 Net-_J43-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J44 Net-_J43-Pad1_ /8bytes0/D4 Net-_J43-Pad1_ /8bytes0/D5 Net-_J43-Pad1_ /8bytes0/D6 Net-_J43-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J45 Net-_J45-Pad1_ /8bytes0/D0 Net-_J45-Pad1_ /8bytes0/D1 Net-_J45-Pad1_ /8bytes0/D2 Net-_J45-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J46 Net-_J45-Pad1_ /8bytes0/D4 Net-_J45-Pad1_ /8bytes0/D5 Net-_J45-Pad1_ /8bytes0/D6 Net-_J45-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J47 Net-_J47-Pad1_ /8bytes0/D0 Net-_J47-Pad1_ /8bytes0/D1 Net-_J47-Pad1_ /8bytes0/D2 Net-_J47-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J48 Net-_J47-Pad1_ /8bytes0/D4 Net-_J47-Pad1_ /8bytes0/D5 Net-_J47-Pad1_ /8bytes0/D6 Net-_J47-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q17 VCC Net-_Q17-Pad2_ Net-_J33-Pad1_ ZVP3306A
+Q18 VCC Net-_Q18-Pad2_ Net-_J35-Pad1_ ZVP3306A
+Q19 VCC Net-_Q19-Pad2_ Net-_J37-Pad1_ ZVP3306A
+Q20 VCC Net-_Q20-Pad2_ Net-_J39-Pad1_ ZVP3306A
+Q21 VCC Net-_Q21-Pad2_ Net-_J41-Pad1_ ZVP3306A
+Q22 VCC Net-_Q22-Pad2_ Net-_J43-Pad1_ ZVP3306A
+Q23 VCC Net-_Q23-Pad2_ Net-_J45-Pad1_ ZVP3306A
+Q24 VCC Net-_Q24-Pad2_ Net-_J47-Pad1_ ZVP3306A
+U6 /A0 /A1 /A2 /8bytes3/~E1 /8bytes3/~E1 VCC Net-_Q32-Pad2_ GND Net-_Q31-Pad2_ Net-_Q30-Pad2_ Net-_Q29-Pad2_ Net-_Q28-Pad2_ Net-_Q27-Pad2_ Net-_Q26-Pad2_ Net-_Q25-Pad2_ VCC 74AC138
+J49 Net-_J49-Pad1_ /8bytes0/D0 Net-_J49-Pad1_ /8bytes0/D1 Net-_J49-Pad1_ /8bytes0/D2 Net-_J49-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J50 Net-_J49-Pad1_ /8bytes0/D4 Net-_J49-Pad1_ /8bytes0/D5 Net-_J49-Pad1_ /8bytes0/D6 Net-_J49-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J51 Net-_J51-Pad1_ /8bytes0/D0 Net-_J51-Pad1_ /8bytes0/D1 Net-_J51-Pad1_ /8bytes0/D2 Net-_J51-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J52 Net-_J51-Pad1_ /8bytes0/D4 Net-_J51-Pad1_ /8bytes0/D5 Net-_J51-Pad1_ /8bytes0/D6 Net-_J51-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J53 Net-_J53-Pad1_ /8bytes0/D0 Net-_J53-Pad1_ /8bytes0/D1 Net-_J53-Pad1_ /8bytes0/D2 Net-_J53-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J54 Net-_J53-Pad1_ /8bytes0/D4 Net-_J53-Pad1_ /8bytes0/D5 Net-_J53-Pad1_ /8bytes0/D6 Net-_J53-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J55 Net-_J55-Pad1_ /8bytes0/D0 Net-_J55-Pad1_ /8bytes0/D1 Net-_J55-Pad1_ /8bytes0/D2 Net-_J55-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J56 Net-_J55-Pad1_ /8bytes0/D4 Net-_J55-Pad1_ /8bytes0/D5 Net-_J55-Pad1_ /8bytes0/D6 Net-_J55-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J57 Net-_J57-Pad1_ /8bytes0/D0 Net-_J57-Pad1_ /8bytes0/D1 Net-_J57-Pad1_ /8bytes0/D2 Net-_J57-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J58 Net-_J57-Pad1_ /8bytes0/D4 Net-_J57-Pad1_ /8bytes0/D5 Net-_J57-Pad1_ /8bytes0/D6 Net-_J57-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J59 Net-_J59-Pad1_ /8bytes0/D0 Net-_J59-Pad1_ /8bytes0/D1 Net-_J59-Pad1_ /8bytes0/D2 Net-_J59-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J60 Net-_J59-Pad1_ /8bytes0/D4 Net-_J59-Pad1_ /8bytes0/D5 Net-_J59-Pad1_ /8bytes0/D6 Net-_J59-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J61 Net-_J61-Pad1_ /8bytes0/D0 Net-_J61-Pad1_ /8bytes0/D1 Net-_J61-Pad1_ /8bytes0/D2 Net-_J61-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J62 Net-_J61-Pad1_ /8bytes0/D4 Net-_J61-Pad1_ /8bytes0/D5 Net-_J61-Pad1_ /8bytes0/D6 Net-_J61-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J63 Net-_J63-Pad1_ /8bytes0/D0 Net-_J63-Pad1_ /8bytes0/D1 Net-_J63-Pad1_ /8bytes0/D2 Net-_J63-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J64 Net-_J63-Pad1_ /8bytes0/D4 Net-_J63-Pad1_ /8bytes0/D5 Net-_J63-Pad1_ /8bytes0/D6 Net-_J63-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q25 VCC Net-_Q25-Pad2_ Net-_J49-Pad1_ ZVP3306A
+Q26 VCC Net-_Q26-Pad2_ Net-_J51-Pad1_ ZVP3306A
+Q27 VCC Net-_Q27-Pad2_ Net-_J53-Pad1_ ZVP3306A
+Q28 VCC Net-_Q28-Pad2_ Net-_J55-Pad1_ ZVP3306A
+Q29 VCC Net-_Q29-Pad2_ Net-_J57-Pad1_ ZVP3306A
+Q30 VCC Net-_Q30-Pad2_ Net-_J59-Pad1_ ZVP3306A
+Q31 VCC Net-_Q31-Pad2_ Net-_J61-Pad1_ ZVP3306A
+Q32 VCC Net-_Q32-Pad2_ Net-_J63-Pad1_ ZVP3306A
+U7 /A0 /A1 /A2 /8bytes4/~E1 /8bytes4/~E1 VCC Net-_Q40-Pad2_ GND Net-_Q39-Pad2_ Net-_Q38-Pad2_ Net-_Q37-Pad2_ Net-_Q36-Pad2_ Net-_Q35-Pad2_ Net-_Q34-Pad2_ Net-_Q33-Pad2_ VCC 74AC138
+J65 Net-_J65-Pad1_ /8bytes0/D0 Net-_J65-Pad1_ /8bytes0/D1 Net-_J65-Pad1_ /8bytes0/D2 Net-_J65-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J66 Net-_J65-Pad1_ /8bytes0/D4 Net-_J65-Pad1_ /8bytes0/D5 Net-_J65-Pad1_ /8bytes0/D6 Net-_J65-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J67 Net-_J67-Pad1_ /8bytes0/D0 Net-_J67-Pad1_ /8bytes0/D1 Net-_J67-Pad1_ /8bytes0/D2 Net-_J67-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J68 Net-_J67-Pad1_ /8bytes0/D4 Net-_J67-Pad1_ /8bytes0/D5 Net-_J67-Pad1_ /8bytes0/D6 Net-_J67-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J69 Net-_J69-Pad1_ /8bytes0/D0 Net-_J69-Pad1_ /8bytes0/D1 Net-_J69-Pad1_ /8bytes0/D2 Net-_J69-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J70 Net-_J69-Pad1_ /8bytes0/D4 Net-_J69-Pad1_ /8bytes0/D5 Net-_J69-Pad1_ /8bytes0/D6 Net-_J69-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J71 Net-_J71-Pad1_ /8bytes0/D0 Net-_J71-Pad1_ /8bytes0/D1 Net-_J71-Pad1_ /8bytes0/D2 Net-_J71-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J72 Net-_J71-Pad1_ /8bytes0/D4 Net-_J71-Pad1_ /8bytes0/D5 Net-_J71-Pad1_ /8bytes0/D6 Net-_J71-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J73 Net-_J73-Pad1_ /8bytes0/D0 Net-_J73-Pad1_ /8bytes0/D1 Net-_J73-Pad1_ /8bytes0/D2 Net-_J73-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J74 Net-_J73-Pad1_ /8bytes0/D4 Net-_J73-Pad1_ /8bytes0/D5 Net-_J73-Pad1_ /8bytes0/D6 Net-_J73-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J75 Net-_J75-Pad1_ /8bytes0/D0 Net-_J75-Pad1_ /8bytes0/D1 Net-_J75-Pad1_ /8bytes0/D2 Net-_J75-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J76 Net-_J75-Pad1_ /8bytes0/D4 Net-_J75-Pad1_ /8bytes0/D5 Net-_J75-Pad1_ /8bytes0/D6 Net-_J75-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J77 Net-_J77-Pad1_ /8bytes0/D0 Net-_J77-Pad1_ /8bytes0/D1 Net-_J77-Pad1_ /8bytes0/D2 Net-_J77-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J78 Net-_J77-Pad1_ /8bytes0/D4 Net-_J77-Pad1_ /8bytes0/D5 Net-_J77-Pad1_ /8bytes0/D6 Net-_J77-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J79 Net-_J79-Pad1_ /8bytes0/D0 Net-_J79-Pad1_ /8bytes0/D1 Net-_J79-Pad1_ /8bytes0/D2 Net-_J79-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J80 Net-_J79-Pad1_ /8bytes0/D4 Net-_J79-Pad1_ /8bytes0/D5 Net-_J79-Pad1_ /8bytes0/D6 Net-_J79-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q33 VCC Net-_Q33-Pad2_ Net-_J65-Pad1_ ZVP3306A
+Q34 VCC Net-_Q34-Pad2_ Net-_J67-Pad1_ ZVP3306A
+Q35 VCC Net-_Q35-Pad2_ Net-_J69-Pad1_ ZVP3306A
+Q36 VCC Net-_Q36-Pad2_ Net-_J71-Pad1_ ZVP3306A
+Q37 VCC Net-_Q37-Pad2_ Net-_J73-Pad1_ ZVP3306A
+Q38 VCC Net-_Q38-Pad2_ Net-_J75-Pad1_ ZVP3306A
+Q39 VCC Net-_Q39-Pad2_ Net-_J77-Pad1_ ZVP3306A
+Q40 VCC Net-_Q40-Pad2_ Net-_J79-Pad1_ ZVP3306A
+U8 /A0 /A1 /A2 /8bytes5/~E1 /8bytes5/~E1 VCC Net-_Q48-Pad2_ GND Net-_Q47-Pad2_ Net-_Q46-Pad2_ Net-_Q45-Pad2_ Net-_Q44-Pad2_ Net-_Q43-Pad2_ Net-_Q42-Pad2_ Net-_Q41-Pad2_ VCC 74AC138
+J81 Net-_J81-Pad1_ /8bytes0/D0 Net-_J81-Pad1_ /8bytes0/D1 Net-_J81-Pad1_ /8bytes0/D2 Net-_J81-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J82 Net-_J81-Pad1_ /8bytes0/D4 Net-_J81-Pad1_ /8bytes0/D5 Net-_J81-Pad1_ /8bytes0/D6 Net-_J81-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J83 Net-_J83-Pad1_ /8bytes0/D0 Net-_J83-Pad1_ /8bytes0/D1 Net-_J83-Pad1_ /8bytes0/D2 Net-_J83-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J84 Net-_J83-Pad1_ /8bytes0/D4 Net-_J83-Pad1_ /8bytes0/D5 Net-_J83-Pad1_ /8bytes0/D6 Net-_J83-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J85 Net-_J85-Pad1_ /8bytes0/D0 Net-_J85-Pad1_ /8bytes0/D1 Net-_J85-Pad1_ /8bytes0/D2 Net-_J85-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J86 Net-_J85-Pad1_ /8bytes0/D4 Net-_J85-Pad1_ /8bytes0/D5 Net-_J85-Pad1_ /8bytes0/D6 Net-_J85-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J87 Net-_J87-Pad1_ /8bytes0/D0 Net-_J87-Pad1_ /8bytes0/D1 Net-_J87-Pad1_ /8bytes0/D2 Net-_J87-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J88 Net-_J87-Pad1_ /8bytes0/D4 Net-_J87-Pad1_ /8bytes0/D5 Net-_J87-Pad1_ /8bytes0/D6 Net-_J87-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J89 Net-_J89-Pad1_ /8bytes0/D0 Net-_J89-Pad1_ /8bytes0/D1 Net-_J89-Pad1_ /8bytes0/D2 Net-_J89-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J90 Net-_J89-Pad1_ /8bytes0/D4 Net-_J89-Pad1_ /8bytes0/D5 Net-_J89-Pad1_ /8bytes0/D6 Net-_J89-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J91 Net-_J91-Pad1_ /8bytes0/D0 Net-_J91-Pad1_ /8bytes0/D1 Net-_J91-Pad1_ /8bytes0/D2 Net-_J91-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J92 Net-_J91-Pad1_ /8bytes0/D4 Net-_J91-Pad1_ /8bytes0/D5 Net-_J91-Pad1_ /8bytes0/D6 Net-_J91-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J93 Net-_J93-Pad1_ /8bytes0/D0 Net-_J93-Pad1_ /8bytes0/D1 Net-_J93-Pad1_ /8bytes0/D2 Net-_J93-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J94 Net-_J93-Pad1_ /8bytes0/D4 Net-_J93-Pad1_ /8bytes0/D5 Net-_J93-Pad1_ /8bytes0/D6 Net-_J93-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J95 Net-_J95-Pad1_ /8bytes0/D0 Net-_J95-Pad1_ /8bytes0/D1 Net-_J95-Pad1_ /8bytes0/D2 Net-_J95-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J96 Net-_J95-Pad1_ /8bytes0/D4 Net-_J95-Pad1_ /8bytes0/D5 Net-_J95-Pad1_ /8bytes0/D6 Net-_J95-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q41 VCC Net-_Q41-Pad2_ Net-_J81-Pad1_ ZVP3306A
+Q42 VCC Net-_Q42-Pad2_ Net-_J83-Pad1_ ZVP3306A
+Q43 VCC Net-_Q43-Pad2_ Net-_J85-Pad1_ ZVP3306A
+Q44 VCC Net-_Q44-Pad2_ Net-_J87-Pad1_ ZVP3306A
+Q45 VCC Net-_Q45-Pad2_ Net-_J89-Pad1_ ZVP3306A
+Q46 VCC Net-_Q46-Pad2_ Net-_J91-Pad1_ ZVP3306A
+Q47 VCC Net-_Q47-Pad2_ Net-_J93-Pad1_ ZVP3306A
+Q48 VCC Net-_Q48-Pad2_ Net-_J95-Pad1_ ZVP3306A
+U9 /A0 /A1 /A2 /8bytes6/~E1 /8bytes6/~E1 VCC Net-_Q56-Pad2_ GND Net-_Q55-Pad2_ Net-_Q54-Pad2_ Net-_Q53-Pad2_ Net-_Q52-Pad2_ Net-_Q51-Pad2_ Net-_Q50-Pad2_ Net-_Q49-Pad2_ VCC 74AC138
+J97 Net-_J97-Pad1_ /8bytes0/D0 Net-_J97-Pad1_ /8bytes0/D1 Net-_J97-Pad1_ /8bytes0/D2 Net-_J97-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J98 Net-_J97-Pad1_ /8bytes0/D4 Net-_J97-Pad1_ /8bytes0/D5 Net-_J97-Pad1_ /8bytes0/D6 Net-_J97-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J99 Net-_J100-Pad1_ /8bytes0/D0 Net-_J100-Pad1_ /8bytes0/D1 Net-_J100-Pad1_ /8bytes0/D2 Net-_J100-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J100 Net-_J100-Pad1_ /8bytes0/D4 Net-_J100-Pad1_ /8bytes0/D5 Net-_J100-Pad1_ /8bytes0/D6 Net-_J100-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J101 Net-_J101-Pad1_ /8bytes0/D0 Net-_J101-Pad1_ /8bytes0/D1 Net-_J101-Pad1_ /8bytes0/D2 Net-_J101-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J102 Net-_J101-Pad1_ /8bytes0/D4 Net-_J101-Pad1_ /8bytes0/D5 Net-_J101-Pad1_ /8bytes0/D6 Net-_J101-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J103 Net-_J103-Pad1_ /8bytes0/D0 Net-_J103-Pad1_ /8bytes0/D1 Net-_J103-Pad1_ /8bytes0/D2 Net-_J103-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J104 Net-_J103-Pad1_ /8bytes0/D4 Net-_J103-Pad1_ /8bytes0/D5 Net-_J103-Pad1_ /8bytes0/D6 Net-_J103-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J105 Net-_J105-Pad1_ /8bytes0/D0 Net-_J105-Pad1_ /8bytes0/D1 Net-_J105-Pad1_ /8bytes0/D2 Net-_J105-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J106 Net-_J105-Pad1_ /8bytes0/D4 Net-_J105-Pad1_ /8bytes0/D5 Net-_J105-Pad1_ /8bytes0/D6 Net-_J105-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J107 Net-_J107-Pad1_ /8bytes0/D0 Net-_J107-Pad1_ /8bytes0/D1 Net-_J107-Pad1_ /8bytes0/D2 Net-_J107-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J108 Net-_J107-Pad1_ /8bytes0/D4 Net-_J107-Pad1_ /8bytes0/D5 Net-_J107-Pad1_ /8bytes0/D6 Net-_J107-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J109 Net-_J109-Pad1_ /8bytes0/D0 Net-_J109-Pad1_ /8bytes0/D1 Net-_J109-Pad1_ /8bytes0/D2 Net-_J109-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J110 Net-_J109-Pad1_ /8bytes0/D4 Net-_J109-Pad1_ /8bytes0/D5 Net-_J109-Pad1_ /8bytes0/D6 Net-_J109-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J111 Net-_J111-Pad1_ /8bytes0/D0 Net-_J111-Pad1_ /8bytes0/D1 Net-_J111-Pad1_ /8bytes0/D2 Net-_J111-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J112 Net-_J111-Pad1_ /8bytes0/D4 Net-_J111-Pad1_ /8bytes0/D5 Net-_J111-Pad1_ /8bytes0/D6 Net-_J111-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q49 VCC Net-_Q49-Pad2_ Net-_J97-Pad1_ ZVP3306A
+Q50 VCC Net-_Q50-Pad2_ Net-_J100-Pad1_ ZVP3306A
+Q51 VCC Net-_Q51-Pad2_ Net-_J101-Pad1_ ZVP3306A
+Q52 VCC Net-_Q52-Pad2_ Net-_J103-Pad1_ ZVP3306A
+Q53 VCC Net-_Q53-Pad2_ Net-_J105-Pad1_ ZVP3306A
+Q54 VCC Net-_Q54-Pad2_ Net-_J107-Pad1_ ZVP3306A
+Q55 VCC Net-_Q55-Pad2_ Net-_J109-Pad1_ ZVP3306A
+Q56 VCC Net-_Q56-Pad2_ Net-_J111-Pad1_ ZVP3306A
+U10 /A0 /A1 /A2 /8bytes7/~E1 /8bytes7/~E1 VCC Net-_Q64-Pad2_ GND Net-_Q63-Pad2_ Net-_Q62-Pad2_ Net-_Q61-Pad2_ Net-_Q60-Pad2_ Net-_Q59-Pad2_ Net-_Q58-Pad2_ Net-_Q57-Pad2_ VCC 74AC138
+J113 Net-_J113-Pad1_ /8bytes0/D0 Net-_J113-Pad1_ /8bytes0/D1 Net-_J113-Pad1_ /8bytes0/D2 Net-_J113-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J114 Net-_J113-Pad1_ /8bytes0/D4 Net-_J113-Pad1_ /8bytes0/D5 Net-_J113-Pad1_ /8bytes0/D6 Net-_J113-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J115 Net-_J115-Pad1_ /8bytes0/D0 Net-_J115-Pad1_ /8bytes0/D1 Net-_J115-Pad1_ /8bytes0/D2 Net-_J115-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J116 Net-_J115-Pad1_ /8bytes0/D4 Net-_J115-Pad1_ /8bytes0/D5 Net-_J115-Pad1_ /8bytes0/D6 Net-_J115-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J117 Net-_J117-Pad1_ /8bytes0/D0 Net-_J117-Pad1_ /8bytes0/D1 Net-_J117-Pad1_ /8bytes0/D2 Net-_J117-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J118 Net-_J117-Pad1_ /8bytes0/D4 Net-_J117-Pad1_ /8bytes0/D5 Net-_J117-Pad1_ /8bytes0/D6 Net-_J117-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J119 Net-_J119-Pad1_ /8bytes0/D0 Net-_J119-Pad1_ /8bytes0/D1 Net-_J119-Pad1_ /8bytes0/D2 Net-_J119-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J120 Net-_J119-Pad1_ /8bytes0/D4 Net-_J119-Pad1_ /8bytes0/D5 Net-_J119-Pad1_ /8bytes0/D6 Net-_J119-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J121 Net-_J121-Pad1_ /8bytes0/D0 Net-_J121-Pad1_ /8bytes0/D1 Net-_J121-Pad1_ /8bytes0/D2 Net-_J121-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J122 Net-_J121-Pad1_ /8bytes0/D4 Net-_J121-Pad1_ /8bytes0/D5 Net-_J121-Pad1_ /8bytes0/D6 Net-_J121-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J123 Net-_J123-Pad1_ /8bytes0/D0 Net-_J123-Pad1_ /8bytes0/D1 Net-_J123-Pad1_ /8bytes0/D2 Net-_J123-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J124 Net-_J123-Pad1_ /8bytes0/D4 Net-_J123-Pad1_ /8bytes0/D5 Net-_J123-Pad1_ /8bytes0/D6 Net-_J123-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J125 Net-_J125-Pad1_ /8bytes0/D0 Net-_J125-Pad1_ /8bytes0/D1 Net-_J125-Pad1_ /8bytes0/D2 Net-_J125-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J126 Net-_J125-Pad1_ /8bytes0/D4 Net-_J125-Pad1_ /8bytes0/D5 Net-_J125-Pad1_ /8bytes0/D6 Net-_J125-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+J127 Net-_J127-Pad1_ /8bytes0/D0 Net-_J127-Pad1_ /8bytes0/D1 Net-_J127-Pad1_ /8bytes0/D2 Net-_J127-Pad1_ /8bytes0/D3 Conn_02x04_Odd_Even
+J128 Net-_J127-Pad1_ /8bytes0/D4 Net-_J127-Pad1_ /8bytes0/D5 Net-_J127-Pad1_ /8bytes0/D6 Net-_J127-Pad1_ /8bytes0/D7 Conn_02x04_Odd_Even
+Q57 VCC Net-_Q57-Pad2_ Net-_J113-Pad1_ ZVP3306A
+Q58 VCC Net-_Q58-Pad2_ Net-_J115-Pad1_ ZVP3306A
+Q59 VCC Net-_Q59-Pad2_ Net-_J117-Pad1_ ZVP3306A
+Q60 VCC Net-_Q60-Pad2_ Net-_J119-Pad1_ ZVP3306A
+Q61 VCC Net-_Q61-Pad2_ Net-_J121-Pad1_ ZVP3306A
+Q62 VCC Net-_Q62-Pad2_ Net-_J123-Pad1_ ZVP3306A
+Q63 VCC Net-_Q63-Pad2_ Net-_J125-Pad1_ ZVP3306A
+Q64 VCC Net-_Q64-Pad2_ Net-_J127-Pad1_ ZVP3306A
+U12 Net-_U12-Pad1_ Net-_U12-Pad10_ /A13 /A9 /~MREQ Net-_U12-Pad1_ GND /~RD /~ROB Net-_U12-Pad10_ Net-_U11-Pad6_ Net-_U11-Pad10_ Net-_U11-Pad9_ VCC 74HC4075
+U11 /A8 /A6 /A7 /A11 /A14 Net-_U11-Pad6_ GND /AddrDecode/~ON Net-_U11-Pad9_ Net-_U11-Pad10_ /A15 /A12 /A10 VCC 74HC4075
+.end

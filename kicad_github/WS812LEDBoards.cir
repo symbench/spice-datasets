@@ -1,0 +1,6 @@
+.title KiCad schematic
+D1 +5V Net-_D1-Pad2_ GND Net-_D1-Pad4_ WS2812B
+J1 +5V Net-_D1-Pad4_ GND Conn_01x03_Male
+J2 Net-_D1-Pad2_ Conn_01x01_Male
+C1 +5V GND 0.1u
+.end

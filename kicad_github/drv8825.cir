@@ -1,0 +1,123 @@
+.title KiCad schematic
+A2.1 GND NC_01 Net-_A2.1-Pad3_ Net-_A2.1-Pad4_ Net-_A2.1-Pad5_ Net-_A2.1-Pad6_ GND V_MOT NC_02 NC_03 NC_04 NC_05 5V 5V Net-_A2.1-Pad15_ Net-_A2.1-Pad16_ Pololu_Breakout_DRV8825
+J2.1 Net-_A2.1-Pad4_ Net-_A2.1-Pad3_ Conn_01x02
+J2.2 Net-_A2.1-Pad6_ Net-_A2.1-Pad5_ Conn_01x02
+J2.3 V_MOT GND Conn_01x02
+J2.4 Net-_A2.1-Pad16_ Net-_A2.1-Pad15_ Conn_01x02
+JP2.1 NC_06 Net-_A2.1-Pad15_ Jumper_2_Open
+JP2.2 NC_07 Net-_A2.1-Pad16_ Jumper_2_Open
+H1 GND GND
+H4 GND GND
+H2 V_MOT IN+
+H3 5V OUT+
+H5 MountingHole
+H6 MountingHole
+H7 MountingHole
+TP1 5V TestPoint
+TP9 NC_08 TestPoint
+TP17 NC_09 TestPoint
+TP25 NC_10 TestPoint
+TP33 NC_11 TestPoint
+TP41 NC_12 TestPoint
+TP2 GND TestPoint
+TP10 NC_13 TestPoint
+TP18 NC_14 TestPoint
+TP26 NC_15 TestPoint
+TP34 NC_16 TestPoint
+TP42 NC_17 TestPoint
+TP3 NC_18 TestPoint
+TP11 NC_19 TestPoint
+TP19 NC_20 TestPoint
+TP27 GND TestPoint
+TP35 NC_21 TestPoint
+TP43 NC_22 TestPoint
+TP4 NC_23 TestPoint
+TP12 NC_24 TestPoint
+TP20 NC_25 TestPoint
+TP28 NC_26 TestPoint
+TP36 NC_27 TestPoint
+TP44 NC_28 TestPoint
+TP5 NC_29 TestPoint
+TP13 NC_30 TestPoint
+TP21 5V TestPoint
+TP29 NC_31 TestPoint
+TP37 NC_32 TestPoint
+TP45 NC_33 TestPoint
+TP6 NC_34 TestPoint
+TP14 NC_35 TestPoint
+TP22 NC_36 TestPoint
+TP30 NC_37 TestPoint
+TP38 NC_38 TestPoint
+TP46 NC_39 TestPoint
+TP7 NC_40 TestPoint
+TP15 NC_41 TestPoint
+TP23 NC_42 TestPoint
+TP31 NC_43 TestPoint
+TP39 NC_44 TestPoint
+TP47 NC_45 TestPoint
+TP8 NC_46 TestPoint
+TP16 NC_47 TestPoint
+TP24 NC_48 TestPoint
+TP32 5V TestPoint
+TP40 NC_49 TestPoint
+TP48 NC_50 TestPoint
+TP49 NC_51 TestPoint
+TP57 NC_52 TestPoint
+TP65 NC_53 TestPoint
+TP73 NC_54 TestPoint
+TP81 NC_55 TestPoint
+TP89 NC_56 TestPoint
+TP50 NC_57 TestPoint
+TP58 NC_58 TestPoint
+TP66 NC_59 TestPoint
+TP74 NC_60 TestPoint
+TP82 NC_61 TestPoint
+TP90 NC_62 TestPoint
+TP51 NC_63 TestPoint
+TP59 NC_64 TestPoint
+TP67 NC_65 TestPoint
+TP75 NC_66 TestPoint
+TP83 NC_67 TestPoint
+TP91 NC_68 TestPoint
+TP52 NC_69 TestPoint
+TP60 NC_70 TestPoint
+TP68 NC_71 TestPoint
+TP76 NC_72 TestPoint
+TP84 NC_73 TestPoint
+TP92 GND TestPoint
+TP53 NC_74 TestPoint
+TP61 NC_75 TestPoint
+TP69 NC_76 TestPoint
+TP77 NC_77 TestPoint
+TP85 NC_78 TestPoint
+TP93 NC_79 TestPoint
+TP54 NC_80 TestPoint
+TP62 NC_81 TestPoint
+TP70 NC_82 TestPoint
+TP78 NC_83 TestPoint
+TP86 NC_84 TestPoint
+TP94 NC_85 TestPoint
+TP55 NC_86 TestPoint
+TP63 NC_87 TestPoint
+TP71 NC_88 TestPoint
+TP79 NC_89 TestPoint
+TP87 NC_90 TestPoint
+TP95 NC_91 TestPoint
+TP56 NC_92 TestPoint
+TP64 NC_93 TestPoint
+TP72 NC_94 TestPoint
+TP80 NC_95 TestPoint
+TP88 NC_96 TestPoint
+TP96 NC_97 TestPoint
+U99 viking
+J2.5 GND Net-_J2.5-Pad2_ Net-_J2.5-Pad2_ 5V Conn_01x04
+J2.6 GND Net-_J2.6-Pad2_ Net-_J2.6-Pad2_ 5V Conn_01x04
+J2.7 GND Net-_J2.7-Pad2_ Net-_J2.7-Pad2_ 5V Conn_01x04
+J2.8 GND Net-_J2.8-Pad2_ Net-_J2.8-Pad2_ 5V Conn_01x04
+TP97 GND TestPoint
+TP98 NC_98 TestPoint
+TP99 NC_99 TestPoint
+TP100 NC_100 TestPoint
+TP101 NC_101 TestPoint
+TP102 NC_102 TestPoint
+.end

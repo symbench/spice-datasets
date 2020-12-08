@@ -1,0 +1,50 @@
+.title KiCad schematic
+F1 Net-_F1-Pad1_ Net-_C1-Pad1_ F_Small
+P2 Net-_F1-Pad1_ Net-_P2-Pad2_ 320V_AC
+R1 Net-_C3-Pad1_ Net-_D2-Pad1_ 10R
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 100µF/450V
+C9 Net-_C3-Pad2_ GND 100µF/450V
+R2 Net-_C3-Pad2_ Net-_C3-Pad1_ 100k
+R5 GND Net-_C3-Pad2_ 100k
+C4 Net-_C3-Pad1_ GND 1µF/630V
+P1 Net-_C3-Pad1_ /+450V_DC Drossel
+C5 /+450V_DC GND 1µF/630V
+C6 /+450V_DC Net-_C10-Pad1_ 540µF/450V
+C10 Net-_C10-Pad1_ GND 540µF/450V
+R3 Net-_C10-Pad1_ /+450V_DC 100k
+R6 GND Net-_C10-Pad1_ 100k
+Q1 Net-_D5-Pad1_ /+450V_DC Net-_Q1-Pad3_ 2SC2979
+D5 Net-_D5-Pad1_ GND BZX9-B4V7
+D6 GND Net-_D6-Pad2_ LED
+R7 Net-_D6-Pad2_ Net-_Q1-Pad3_ 1k2
+R4 Net-_D5-Pad1_ /+450V_DC 150k
+R8 /-180V_DC Net-_D10-Pad2_ 100R
+C13 GND /-180V_DC 47µF/450V
+C14 /-180V_DC GND 1µF/600V
+D1 Net-_C1-Pad1_ GND BY359-1500
+D3 Net-_C7-Pad2_ GND BY359-1500
+D2 Net-_D2-Pad1_ Net-_C1-Pad1_ BY359-1500
+D4 Net-_D2-Pad1_ Net-_C7-Pad2_ BY359-1500
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 1nF
+C7 Net-_C1-Pad2_ Net-_C7-Pad2_ 1nF
+C2 Net-_C1-Pad1_ Net-_C2-Pad2_ 1nF
+C8 Net-_C2-Pad2_ Net-_C7-Pad2_ 1nF
+F3 Net-_F3-Pad1_ Net-_C11-Pad1_ F_Small
+P4 Net-_F3-Pad1_ Net-_P4-Pad2_ 133V_AC
+C11 Net-_C11-Pad1_ Net-_C11-Pad2_ 1nF
+C15 Net-_C11-Pad2_ Net-_C15-Pad2_ 1nF
+C12 Net-_C11-Pad1_ Net-_C12-Pad2_ 1nF
+C16 Net-_C12-Pad2_ Net-_C15-Pad2_ 1nF
+D7 GND Net-_C11-Pad1_ 1N4007
+D9 GND Net-_C15-Pad2_ 1N4007
+D8 Net-_C11-Pad1_ Net-_D10-Pad2_ 1N4007
+D10 Net-_C15-Pad2_ Net-_D10-Pad2_ 1N4007
+P5 /+450V_DC GND /-180V_DC Stabi
+P3 /+450V_DC GND /-180V_DC Stabi
+P7 /+450V_DC GND Trafo
+P6 /+450V_DC GND Trafo
+P8 Net-_D11-Pad1_ Net-_D11-Pad2_ Relay
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ 1N4001
+RLY1 Net-_D11-Pad1_ Net-_D11-Pad2_ Net-_P4-Pad2_ NC_01 Net-_C15-Pad2_ RELAY_40.51
+RLY2 Net-_D11-Pad1_ Net-_D11-Pad2_ Net-_P2-Pad2_ NC_02 Net-_C7-Pad2_ RELAY_40.51
+.end

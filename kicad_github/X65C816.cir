@@ -1,0 +1,88 @@
+.title KiCad schematic
+C101 +5V GNDD 10uF
+J101 +5V Net-_J101-Pad2_ Net-_J101-Pad3_ NC_01 GNDD NC_02 USB_B_Micro
+R101 Net-_J101-Pad3_ Net-_J101-Pad2_ 180R
+X201 NC_03 GNDD Net-_C204-Pad1_ +5V 28MHz
+C204 Net-_C204-Pad1_ GNDD 15pF
+C203 +5V GNDD 100nF
+C205 GNDD +5V 100nF
+U202 Net-_C204-Pad1_ /~RESET +5V +5V +5V +5V +5V GNDD /Address decode/~WAIT NC_04 NC_05 /Bus clock & reset/QPHI2 /QPHI3 +5V CLKGEN_PDIP
+U201 /~RESET /RESET /RESET /RESET Net-_C202-Pad1_ Net-_C202-Pad1_ GNDD +5V 74HC02
+C202 Net-_C202-Pad1_ GNDD 100nF
+R201 +5V Net-_C202-Pad1_ 1M
+D201 +5V Net-_C202-Pad1_ D
+SW201 GNDD Net-_C202-Pad1_ SW_Push
+C201 +5V GNDD 100nF
+D202 /RESET Net-_D202-Pad2_ LED
+R202 Net-_D202-Pad2_ +5V 1k
+U301 NC_06 /Address decode/~WAIT +5V /~IRQ /Address decode/~ML +5V /Address decode/VPA +5V /CPU/A0 /CPU/A1 /CPU/A2 /CPU/A3 /CPU/A4 /CPU/A5 /CPU/A6 /Address decode/A7 /Address decode/A8 /Address decode/A9 /Address decode/A10 /Address decode/A11 GNDD /Address decode/A12 /Address decode/A13 /Address decode/A14 /Address decode/A15 /CPU/DA7 /CPU/DA6 /CPU/DA5 /CPU/DA4 /CPU/DA3 /CPU/DA2 /CPU/DA1 /CPU/DA0 /R~W NC_07 +5V /QPHI3 NC_08 /Address decode/VDA /~RESET W65C816S_PDIP
+U303 /R~W /CPU/D7 /CPU/D6 /CPU/D5 /CPU/D4 /CPU/D3 /CPU/D2 /CPU/D1 /CPU/D0 GNDD /CPU/DA0 /CPU/DA1 /CPU/DA2 /CPU/DA3 /CPU/DA4 /CPU/DA5 /CPU/DA6 /CPU/DA7 /Address decode/~DBUS +5V 74HC245
+C302 +5V GNDD 100nF
+C301 +5V GNDD 1uF
+C304 GNDD +5V 100nF
+U302 /Bus clock & reset/QPHI2 /QPHI3 /CPU/DA0 /CPU/DA1 /CPU/DA2 /CPU/DA3 /CPU/DA4 /CPU/DA5 /CPU/DA6 /CPU/DA7 +5V GNDD /Address decode/~WAIT /Address decode/~BANK0 /CPU/A16 /CPU/A17 /CPU/A18 NC_09 NC_10 NC_11 NC_12 NC_13 +5V BANKSY_PDIP
+C303 GNDD +5V 100nF
+U401 /CPU/A17 /CPU/A16 /Address decode/A14 /Address decode/A12 /Address decode/A7 /CPU/A6 /CPU/A5 /CPU/A4 /CPU/A3 /CPU/A2 /CPU/A1 /CPU/A0 /CPU/D0 /CPU/D1 /CPU/D2 GNDD /CPU/D3 /CPU/D4 /CPU/D5 /CPU/D6 /CPU/D7 /Address decode/~RAMCS /Address decode/A10 /~READ /Address decode/A11 /Address decode/A9 /Address decode/A8 /Address decode/A13 /~WRITE /CPU/A18 /Address decode/A15 +5V CY62148GN-45SXI
+C401 +5V GNDD C
+C402 GNDD +5V C
+U1 NC_14 NC_15 /Address decode/A12 /Address decode/A7 /CPU/A6 /CPU/A5 /CPU/A4 /CPU/A3 /CPU/A2 /CPU/A1 /CPU/A0 NC_16 /CPU/D0 /CPU/D1 /CPU/D2 GNDD NC_17 /CPU/D3 /CPU/D4 /CPU/D5 /CPU/D6 /CPU/D7 /Address decode/~ROMCS /Address decode/A10 /~READ NC_18 /Address decode/A11 /Address decode/A9 /Address decode/A8 NC_19 +5V +5V AT28HC64B-70JU
+J502 NC_20 /~SPI3_CS0 /SPI3_MOSI +3V3 /SPI3_SCLK GNDD /SPI3_MISO NC_21 GNDD Micro_SD_Card
+J501 NC_22 /~SPI3_CS1 /SPI3_MOSI +3V3 /SPI3_SCLK GNDD /SPI3_MISO NC_23 GNDD Micro_SD_Card
+J801 GNDD Net-_J801-Pad2_ Net-_J801-Pad3_ Net-_J801-Pad4_ Net-_J801-Pad5_ Net-_J801-Pad6_ FTDI Male
+Y801 Net-_C802-Pad1_ Net-_C801-Pad1_ 1.8432MHz
+C801 Net-_C801-Pad1_ GNDD 33pF
+C802 Net-_C802-Pad1_ GNDD 33pF
+C804 GNDD +5V 100nF
+C803 GNDD +5V 100pF
+U802 NC_24 /CPU/D0 /CPU/D1 /CPU/D2 /CPU/D3 /CPU/D4 /CPU/D5 /CPU/D6 /CPU/D7 /CPU/A3 Net-_C801-Pad1_ GNDD Net-_C802-Pad1_ /CPU/A4 /CPU/A5 /CPU/A6 Net-_U801-Pad3_ /~IOCS7 NC_25 /~WRITE /RESET GNDD Net-_J802-Pad2_ /~READ Net-_J802-Pad4_ Net-_J802-Pad5_ NC_26 Net-_J802-Pad6_ Net-_U801-Pad10_ +5V +5V NC_27 +5V Net-_U801-Pad2_ NC_28 Net-_J801-Pad2_ NC_29 Net-_J801-Pad5_ Net-_J801-Pad4_ Net-_J801-Pad6_ Net-_U801-Pad4_ +5V +5V +5V ST16C2552_PLCC
+R801 Net-_C802-Pad1_ Net-_C801-Pad1_ 680k
+U801 Net-_D801-Pad1_ Net-_U801-Pad2_ Net-_U801-Pad3_ Net-_U801-Pad4_ Net-_J801-Pad3_ Net-_J801-Pad3_ Net-_J802-Pad3_ Net-_J802-Pad3_ Net-_U801-Pad10_ 74HC02
+D801 Net-_D801-Pad1_ /UART to FTDI/~IRQ D
+J802 GNDD Net-_J802-Pad2_ Net-_J802-Pad3_ Net-_J802-Pad4_ Net-_J802-Pad5_ Net-_J802-Pad6_ FTDI Male
+R802 GNDD Net-_J801-Pad3_ 4k7
+R803 GNDD Net-_J802-Pad3_ 4k7
+U1002 /Address decode/A8 /Address decode/A9 /Address decode/A10 GNDD Net-_U1001-Pad20_ +5V /~IOCS7 GNDD NC_30 /~IOCS5 /Address decode/~IOCS4 /Address decode/~IOCS3 /Address decode/~IOCS2 /Address decode/~IOCS1 /Address decode/~IOCS0 +5V 74HC138
+C1002 +5V GNDD 100n
+C1001 +5V GNDD 100n
+U1001 /QPHI3 /Address decode/~BANK0 /Address decode/A15 /Address decode/A14 /Address decode/A13 /Address decode/A12 /Address decode/A11 /Address decode/A7 /Address decode/VDA /Address decode/VPA /Address decode/~ML GNDD /R~W /Address decode/~WAIT +5V /Address decode/~DBUS /Address decode/~RAMCS /Address decode/~ROMCS Net-_U1001-Pad20_ /~READ /~WRITE NC_31 +5V BUSCON_PDIP
+J1101 +5V +5V +5V +5V /I/O Expansion/~READ NC_32 /I/O Expansion/~WRITE /I/O Expansion/~RESET /I/O Expansion/A0 /I/O Expansion/D0 /I/O Expansion/A1 /I/O Expansion/D1 /I/O Expansion/A2 /I/O Expansion/D2 /I/O Expansion/A3 /I/O Expansion/D3 /I/O Expansion/A4 /I/O Expansion/D4 /I/O Expansion/A5 /I/O Expansion/D5 /I/O Expansion/A6 /I/O Expansion/D6 NC_33 /I/O Expansion/D7 NC_34 Net-_D1101-Pad1_ GNDD GNDD GNDD GNDD GNDD GNDD Conn_02x16_Odd_Even
+C1101 GNDD +5V C
+C1102 GNDD +5V 100n
+D1101 Net-_D1101-Pad1_ /I/O Expansion/~WAIT D
+J1102 +5V +5V +5V +5V /I/O Expansion/~READ NC_35 /I/O Expansion/~WRITE /I/O Expansion/~RESET /I/O Expansion/A0 /I/O Expansion/D0 /I/O Expansion/A1 /I/O Expansion/D1 /I/O Expansion/A2 /I/O Expansion/D2 /I/O Expansion/A3 /I/O Expansion/D3 /I/O Expansion/A4 /I/O Expansion/D4 /I/O Expansion/A5 /I/O Expansion/D5 /I/O Expansion/A6 /I/O Expansion/D6 NC_36 /I/O Expansion/D7 NC_37 Net-_D1102-Pad1_ GNDD GNDD GNDD GNDD GNDD GNDD Conn_02x16_Odd_Even
+C1103 GNDD +5V C
+C1104 GNDD +5V 100n
+D1102 Net-_D1102-Pad1_ /I/O Expansion/~WAIT D
+J1103 +5V +5V +5V +5V /I/O Expansion/~READ NC_38 /I/O Expansion/~WRITE /I/O Expansion/~RESET /I/O Expansion/A0 /I/O Expansion/D0 /I/O Expansion/A1 /I/O Expansion/D1 /I/O Expansion/A2 /I/O Expansion/D2 /I/O Expansion/A3 /I/O Expansion/D3 /I/O Expansion/A4 /I/O Expansion/D4 /I/O Expansion/A5 /I/O Expansion/D5 /I/O Expansion/A6 /I/O Expansion/D6 NC_39 /I/O Expansion/D7 NC_40 Net-_D1103-Pad1_ GNDD GNDD GNDD GNDD GNDD GNDD Conn_02x16_Odd_Even
+C1105 GNDD +5V C
+C1107 GNDD +5V 100n
+D1103 Net-_D1103-Pad1_ /I/O Expansion/~WAIT D
+J1104 +5V +5V +5V +5V /I/O Expansion/~READ NC_41 /I/O Expansion/~WRITE /I/O Expansion/~RESET /I/O Expansion/A0 /I/O Expansion/D0 /I/O Expansion/A1 /I/O Expansion/D1 /I/O Expansion/A2 /I/O Expansion/D2 /I/O Expansion/A3 /I/O Expansion/D3 /I/O Expansion/A4 /I/O Expansion/D4 /I/O Expansion/A5 /I/O Expansion/D5 /I/O Expansion/A6 /I/O Expansion/D6 NC_42 /I/O Expansion/D7 NC_43 Net-_D1104-Pad1_ GNDD GNDD GNDD GNDD GNDD GNDD Conn_02x16_Odd_Even
+C1108 GNDD +5V C
+C1109 GNDD +5V 100n
+D1104 Net-_D1104-Pad1_ /I/O Expansion/~WAIT D
+J1105 +5V +5V +5V +5V /I/O Expansion/~READ NC_44 /I/O Expansion/~WRITE /I/O Expansion/~RESET /I/O Expansion/A0 /I/O Expansion/D0 /I/O Expansion/A1 /I/O Expansion/D1 /I/O Expansion/A2 /I/O Expansion/D2 /I/O Expansion/A3 /I/O Expansion/D3 /I/O Expansion/A4 /I/O Expansion/D4 /I/O Expansion/A5 /I/O Expansion/D5 /I/O Expansion/A6 /I/O Expansion/D6 NC_45 /I/O Expansion/D7 NC_46 Net-_D1105-Pad1_ GNDD GNDD GNDD GNDD GNDD GNDD Conn_02x16_Odd_Even
+C1110 GNDD +5V C
+C1111 GNDD +5V 100n
+D1105 Net-_D1105-Pad1_ /I/O Expansion/~WAIT D
+C1201 GNDD +5V 100n
+U1202 GNDD /CPU/A0 /XIO Control/XA4 /CPU/A1 /XIO Control/XA5 /CPU/A2 /XIO Control/XA6 /CPU/A3 NC_47 GNDD GNDD /XIO Control/XA3 /CPU/A6 /XIO Control/XA2 /CPU/A5 /XIO Control/XA1 /CPU/A4 /XIO Control/XA0 GNDD +5V 74HC244
+U1203 /R~W /XIO Control/XD7 /XIO Control/XD6 /XIO Control/XD5 /XIO Control/XD4 /XIO Control/XD3 /XIO Control/XD2 /XIO Control/XD1 /XIO Control/XD0 GNDD /CPU/D0 /CPU/D1 /CPU/D2 /CPU/D3 /CPU/D4 /CPU/D5 /CPU/D6 /CPU/D7 /Address decode/~DBUS +5V 74HC245
+U1201 /XIO Control/~XCD0 /VIA 65C22/~XIRQ0 /Address decode/~IOCS0 /XIO Control/~XCD1 /VIA 65C22/~XIRQ1 /Address decode/~IOCS1 /XIO Control/~XCD2 /VIA 65C22/~XIRQ2 /Address decode/~IOCS2 /XIO Control/~XCD3 GNDD /VIA 65C22/~XIRQ3 /Address decode/~IOCS3 /XIO Control/~XCD4 /VIA 65C22/~XIRQ4 /Address decode/~IOCS4 NC_48 /VIA 65C22/~XIRQ +5V XIOCON_PDIP
+J1201 +5V +5V /VIA 65C22/~XIRQ0 /VIA 65C22/~XIRQ1 /VIA 65C22/~XIRQ2 /VIA 65C22/~XIRQ3 /VIA 65C22/~XIRQ4 /XIO Control/XA0 /XIO Control/XA1 /XIO Control/XA2 /XIO Control/XA3 /XIO Control/XA4 /XIO Control/XA5 /XIO Control/XA6 /XIO Control/XD0 /XIO Control/XD1 /XIO Control/XD2 /XIO Control/XD3 /XIO Control/XD4 /XIO Control/XD5 /XIO Control/XD6 /XIO Control/XD7 /~READ +5V +5V +5V +5V /~WRITE /~RESET /Address decode/~IOCS4 /Address decode/~IOCS3 /Address decode/~IOCS2 /Address decode/~IOCS1 /Address decode/~IOCS0 GNDD GNDD GNDD GNDD GNDD GNDD GNDD GNDD GNDD /XIO Control/~XCD4 /XIO Control/~XCD3 /XIO Control/~XCD2 /XIO Control/~XCD1 /XIO Control/~XCD0 +5V +5V Conn_02x25_Counter_Clockwise
+C1204 +5V GNDD 100n
+C1205 +5V GNDD 1u
+C1202 +5V GNDD 100n
+C1203 GNDD +5V 100n
+RN1201 +5V /XIO Control/~XCD4 /XIO Control/~XCD3 /XIO Control/~XCD2 /XIO Control/~XCD1 /XIO Control/~XCD0 47k
+U2 GNDD /VIA 65C22/SPI_A0 /VIA 65C22/SPI_A1 /VIA 65C22/SPI_A2 /VIA 65C22/~XIRQ0 /VIA 65C22/~XIRQ1 /VIA 65C22/~XIRQ2 /VIA 65C22/~XIRQ3 /VIA 65C22/~XIRQ4 Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U2-Pad17_ /VIA 65C22/VIA_CLK /SPI5_MOSI +5V Net-_D1-Pad1_ /R~W /~IOCS5 +5V /QPHI3 /CPU/D7 /CPU/D6 /CPU/D5 /CPU/D4 /CPU/D3 /CPU/D2 /CPU/D1 /CPU/D0 /~RESET /CPU/A3 /CPU/A2 /CPU/A1 /CPU/A0 /UART to FTDI/~IRQ /VIA 65C22/~XIRQ W65C22S_PDIP
+U4 +5V /SPI5_MISO Net-_U2-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ Net-_U2-Pad13_ GNDD /SPI5_SCLK +5V Net-_U2-Pad14_ Net-_U2-Pad15_ Net-_U2-Pad16_ Net-_U2-Pad17_ +5V 74HC164
+U3 GNDD /VIA 65C22/VIA_CLK /Bus clock & reset/QPHI2 +5V NC_49 /SPI5_SCLK 74AC74
+U604 /VIA 65C22/SPI_A0 /VIA 65C22/SPI_A1 /VIA 65C22/SPI_A2 GNDD GNDD +5V Net-_U604-Pad7_ GNDD Net-_U604-Pad9_ Net-_U604-Pad10_ Net-_U604-Pad11_ NC_50 NC_51 NC_52 NC_53 +5V 74HC138
+D1 Net-_D1-Pad1_ /~IRQ D
+U605 /~SPI3_CS0 +3V3 /~SPI3_CS1 NC_54 NC_55 NC_56 /SPI3_MISO /SPI3_SCLK /SPI3_MOSI Net-_R1-Pad2_ GNDD /SPI5_MOSI /SPI5_SCLK /SPI5_MISO NC_57 Net-_U604-Pad7_ Net-_U604-Pad9_ Net-_U604-Pad10_ +5V Net-_U604-Pad11_ TXS0108EPW
+C1 +5V GNDD 100n
+C2 +3V3 GNDD 100n
+R1 /VIA 65C22/SPI_A2 Net-_R1-Pad2_ 2k7
+R2 GNDD Net-_R1-Pad2_ 4k7
+.end

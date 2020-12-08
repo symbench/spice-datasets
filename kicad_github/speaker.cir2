@@ -1,0 +1,8 @@
+.title KiCad schematic
+C2 Net-_C2-Pad1_ GND 1uf
+R2 Net-_J1-Pad2_ Net-_R1-Pad1_ 20k
+U1 NC_01 Net-_C2-Pad1_ Net-_C2-Pad1_ Net-_R1-Pad1_ Net-_J1-Pad2_ +BATT GND Net-_J1-Pad1_ TC8002D
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Speaker
+R1 Net-_R1-Pad1_ Net-_C1-Pad1_ 20k
+C1 Net-_C1-Pad1_ NC_02 0.39uf
+.end

@@ -1,0 +1,8 @@
+.title KiCad schematic
+BT1 NC_01 GND Battery_Cell
+SW1 GND NC_02 NC_03 GND NC_04 NC_05 SW_Push_DPDT
+R1 NC_06 NC_07 1k
+R2 NC_08 NC_09 1k
+D1 NC_10 NC_11 LED
+D2 NC_12 NC_13 LED
+.end

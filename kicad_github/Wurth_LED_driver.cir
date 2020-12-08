@@ -1,0 +1,5 @@
+.title KiCad schematic
+VR1 /LED+ /LED+ NC_01 GND NC_02 GND /LED- Wurth-LDHM
+C1 /LED+ /LED- 2.2u
+C2 /LED+ GND 2.2u
+.end

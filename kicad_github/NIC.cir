@@ -1,0 +1,12 @@
+.title KiCad schematic
+C138 NC_01 Net-_C138-Pad2_ C
+C140 NC_02 Net-_C138-Pad2_ C
+C139 Net-_C139-Pad1_ NC_03 C
+C141 Net-_C139-Pad1_ NC_04 C
+J46 Net-_C138-Pad2_ NC_05 NC_06 NC_07 NC_08 Net-_C139-Pad1_ InConnector
+J47 NC_09 NC_10 Net-_J47-Pad3_ Net-_J47-Pad3_ NC_11 NC_12 OutConnector
+U28 NC_13 Net-_R278-Pad1_ Net-_J47-Pad3_ NC_14 NC_15 Net-_R279-Pad2_ NC_16 NC_17 OPA333xxD
+R280 Net-_R279-Pad2_ Net-_R278-Pad1_ R
+R278 Net-_R278-Pad1_ NC_18 R
+R279 Net-_J47-Pad3_ Net-_R279-Pad2_ R
+.end

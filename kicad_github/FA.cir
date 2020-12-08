@@ -1,0 +1,15 @@
+.title KiCad schematic
+.include "C:\Users\Mind\Downloads\Kicad\new_file\libs\spice_models.lib"
+V1 a GND dc 0
+R2 GND carry 10meg
+R1 GND sum 10meg
+X5 Net-_X3-Pad3_ Net-_X4-Pad3_ carry VDD OR
+X1 a b Net-_X1-Pad3_ VDD XOR
+X2 Net-_X1-Pad3_ c sum VDD XOR
+X3 c Net-_X1-Pad3_ Net-_X3-Pad3_ VDD AND
+X4 b a Net-_X4-Pad3_ VDD AND
+V2 b GND dc 5
+V3 c GND dc 5
+V4 VDD GND dc 5
+.tran .25m 30m
+.end

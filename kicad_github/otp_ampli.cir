@@ -1,0 +1,23 @@
+.title KiCad schematic
+D2 Net-_C2-Pad1_ prevgl MBR0530
+D1 gnd Net-_C2-Pad1_ MBR0530
+D3 prevgh Net-_C2-Pad2_ MBR0530
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ C
+Q1 gdr rese Net-_C2-Pad2_ 2N7000 //switched S ang G due to footprint
+L1 vcc Net-_C2-Pad2_ 330 INDUCTOR
+R1 gdr gnd R
+R2 rese gnd R
+C1 vcc gnd C
+J2 NC_01 gdr rese Net-_C11-Pad1_ Net-_C12-Pad1_ NC_02 NC_03 gnd busy rst d.c cs sclk sdi vcc vcc gnd Net-_C7-Pad1_ Net-_C4-Pad1_ Net-_C8-Pad1_ prevgh Net-_C9-Pad1_ prevgl Net-_C10-Pad1_ otp_FPC24
+C10 Net-_C10-Pad1_ gnd C
+C6 prevgl gnd C
+C9 Net-_C9-Pad1_ gnd C
+C5 prevgh gnd C
+C8 Net-_C8-Pad1_ gnd C
+C4 Net-_C4-Pad1_ gnd C
+C7 Net-_C7-Pad1_ gnd C
+C3 vcc gnd C
+J3 vcc gnd sdi sclk cs d.c rst busy Conn_01x08_Female
+C12 Net-_C12-Pad1_ gnd C
+C11 Net-_C11-Pad1_ gnd C
+.end

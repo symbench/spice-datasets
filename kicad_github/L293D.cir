@@ -1,0 +1,46 @@
+.title KiCad schematic
+U3.1 Net-_J3.5-Pad3_ Net-_J3.5-Pad2_ Net-_J1-Pad1_ GND GND Net-_J1-Pad2_ Net-_J3.5-Pad1_ V_MOT Net-_J3.5-Pad6_ Net-_J3.5-Pad5_ Net-_J3.1-Pad1_ GND GND Net-_J3.1-Pad2_ Net-_J3.5-Pad4_ V_MOT L293D
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Conn_01x02
+J3.1 Net-_J3.1-Pad1_ Net-_J3.1-Pad2_ Conn_01x02
+R1 Net-_J3.5-Pad2_ Net-_D1-Pad2_ 200
+R2 Net-_J3.5-Pad1_ Net-_D2-Pad2_ 200
+R3 Net-_J3.5-Pad3_ Net-_D3-Pad2_ 200
+R4 Net-_J3.5-Pad5_ Net-_D4-Pad2_ 200
+R5 Net-_J3.5-Pad4_ Net-_D5-Pad2_ 200
+D1 GND Net-_D1-Pad2_ LED
+D2 GND Net-_D2-Pad2_ LED
+D3 GND Net-_D3-Pad2_ LED
+D4 GND Net-_D4-Pad2_ LED
+D5 GND Net-_D5-Pad2_ LED
+U3.2 Net-_J3.6-Pad2_ Net-_J3.6-Pad3_ Net-_J3.2-Pad1_ GND GND Net-_J3.2-Pad2_ Net-_J3.6-Pad1_ V_MOT Net-_J3.6-Pad6_ Net-_J3.6-Pad5_ Net-_J3.3-Pad1_ GND GND Net-_J3.3-Pad2_ Net-_J3.6-Pad4_ V_MOT L293D
+J3.2 Net-_J3.2-Pad1_ Net-_J3.2-Pad2_ Conn_01x02
+J3.3 Net-_J3.3-Pad1_ Net-_J3.3-Pad2_ Conn_01x02
+R3.2 Net-_J3.6-Pad3_ Net-_D3.2-Pad2_ 200
+R3.3 Net-_J3.6-Pad1_ Net-_D3.3-Pad2_ 200
+R3.4 Net-_J3.6-Pad2_ Net-_D3.4-Pad2_ 200
+R3.5 Net-_J3.6-Pad5_ Net-_D3.5-Pad2_ 200
+R3.6 Net-_J3.6-Pad4_ Net-_D3.6-Pad2_ 200
+D3.2 GND Net-_D3.2-Pad2_ LED
+D3.3 GND Net-_D3.3-Pad2_ LED
+D3.4 GND Net-_D3.4-Pad2_ LED
+D3.5 GND Net-_D3.5-Pad2_ LED
+D3.6 GND Net-_D3.6-Pad2_ LED
+R3.1 Net-_J3.5-Pad6_ Net-_D3.1-Pad2_ 200
+D3.1 GND Net-_D3.1-Pad2_ LED
+R3.7 Net-_J3.6-Pad6_ Net-_D3.7-Pad2_ 200
+D3.7 GND Net-_D3.7-Pad2_ LED
+JP3.5 NC_01 Net-_J3.5-Pad6_ M2PWM
+JP3.6 NC_02 Net-_J3.5-Pad5_ M2A
+J3.5 Net-_J3.5-Pad1_ Net-_J3.5-Pad2_ Net-_J3.5-Pad3_ Net-_J3.5-Pad4_ Net-_J3.5-Pad5_ Net-_J3.5-Pad6_ Conn_01x06
+JP3.7 NC_03 Net-_J3.5-Pad4_ M2B
+JP3.8 NC_04 Net-_J3.5-Pad3_ M1PWM
+JP3.9 NC_05 Net-_J3.5-Pad2_ M1A
+JP3.10 NC_06 Net-_J3.5-Pad1_ M1B
+JP3.11 NC_07 Net-_J3.6-Pad6_ M4PWM
+JP3.12 NC_08 Net-_J3.6-Pad5_ M4A
+J3.6 Net-_J3.6-Pad1_ Net-_J3.6-Pad2_ Net-_J3.6-Pad3_ Net-_J3.6-Pad4_ Net-_J3.6-Pad5_ Net-_J3.6-Pad6_ Conn_01x06
+JP3.13 NC_09 Net-_J3.6-Pad4_ M4B
+JP3.14 NC_10 Net-_J3.6-Pad3_ M3A
+JP3.15 NC_11 Net-_J3.6-Pad2_ M3PWM
+JP3.16 NC_12 Net-_J3.6-Pad1_ M3B
+.end

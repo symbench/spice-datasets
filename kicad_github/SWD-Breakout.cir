@@ -1,0 +1,4 @@
+.title KiCad schematic
+J1 NC_01 /SWDCLK NC_02 /SWDIO GND GND +3V3 +3V3 +5V +5V Conn_02x05_Odd_Even
+J2 +3V3 /SWDIO /SWDCLK GND Conn_01x04
+.end

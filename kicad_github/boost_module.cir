@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 Net-_L1-Pad2_ GND +1V5 Net-_R1-Pad2_ +3V3 +1V5 MCP1640BCH
+C1 +1V5 GND 4.7uF
+C2 GND +3V3 10uF
+R1 +3V3 Net-_R1-Pad2_ 976k
+L1 +1V5 Net-_L1-Pad2_ 4.7uH
+J1 +1V5 +3V3 GND Conn_01x03
+RV1 Net-_R1-Pad2_ NC_01 GND 500k
+.end

@@ -1,0 +1,5 @@
+.title KiCad schematic
+SW1 +5V Net-_D1-Pad2_ +5V Net-_D1-Pad2_ SW_DPST
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED_0805
+R1 NC_01 Net-_D1-Pad1_ R_200
+.end

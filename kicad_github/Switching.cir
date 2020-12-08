@@ -1,0 +1,45 @@
+.title KiCad schematic
+U39 Net-_C225-Pad2_ Net-_R326-Pad2_ Net-_R326-Pad1_ Net-_C224-Pad2_ Net-_C228-Pad1_ NC_01 Net-_R329-Pad1_ Net-_C230-Pad1_ AD8422BRMZ
+C230 Net-_C230-Pad1_ NC_02 100n
+C231 Net-_C230-Pad1_ NC_03 10u
+C229 Net-_C228-Pad1_ NC_04 100n
+C228 Net-_C228-Pad1_ NC_05 10u
+U40 Net-_C227-Pad2_ Net-_R327-Pad2_ Net-_R327-Pad1_ Net-_C226-Pad2_ Net-_C232-Pad1_ NC_06 Net-_R328-Pad1_ Net-_C234-Pad1_ AD8422BRMZ
+C234 Net-_C234-Pad1_ NC_07 100n
+C235 Net-_C234-Pad1_ NC_08 10u
+C233 Net-_C232-Pad1_ NC_09 100n
+C232 Net-_C232-Pad1_ NC_10 10u
+R326 Net-_R326-Pad1_ Net-_R326-Pad2_ 450
+R327 Net-_R327-Pad1_ Net-_R327-Pad2_ 450
+U38 Net-_J73-Pad3_ Net-_J72-Pad3_ Net-_R322-Pad1_ Net-_U38-Pad14_ Net-_C223-Pad1_ NC_11 Net-_J72-Pad3_ Net-_R323-Pad1_ Net-_U38-Pad14_ Net-_J73-Pad3_ Net-_J73-Pad1_ Net-_J72-Pad3_ Net-_R324-Pad1_ Net-_U38-Pad14_ Net-_C222-Pad1_ Net-_J72-Pad3_ Net-_R325-Pad1_ Net-_U38-Pad14_ Net-_J73-Pad1_ ADG734BRU
+C223 Net-_C223-Pad1_ NC_12 100n
+C222 Net-_C222-Pad1_ NC_13 100n
+R332 Net-_C236-Pad1_ Net-_C240-Pad2_ 27k4
+R328 Net-_R328-Pad1_ Net-_C236-Pad1_ 56k2
+R330 Net-_C240-Pad1_ Net-_C236-Pad1_ 56k2
+C236 Net-_C236-Pad1_ NC_14 470n
+C240 Net-_C240-Pad1_ Net-_C240-Pad2_ 270n
+C238 Net-_C236-Pad1_ NC_15 470n
+C243 Net-_C242-Pad1_ NC_16 100n
+C242 Net-_C242-Pad1_ NC_17 10u
+C244 Net-_C244-Pad1_ NC_18 100n
+C245 Net-_C244-Pad1_ NC_19 10u
+C226 NC_20 Net-_C226-Pad2_ 1n5
+C227 NC_21 Net-_C227-Pad2_ 1n5
+C224 NC_22 Net-_C224-Pad2_ 1n5
+C225 NC_23 Net-_C225-Pad2_ 1n5
+R322 Net-_R322-Pad1_ Net-_C224-Pad2_ 5k
+R323 Net-_R323-Pad1_ Net-_C225-Pad2_ 5k
+R324 Net-_R324-Pad1_ Net-_C226-Pad2_ 5k
+R325 Net-_R325-Pad1_ Net-_C227-Pad2_ 5k
+U41 Net-_C240-Pad1_ Net-_C240-Pad2_ NC_24 Net-_C244-Pad1_ NC_25 Net-_C241-Pad2_ Net-_C241-Pad1_ Net-_C242-Pad1_ ADA4807-2ARM
+R333 Net-_C237-Pad1_ Net-_C241-Pad2_ 27k4
+R329 Net-_R329-Pad1_ Net-_C237-Pad1_ 56k2
+R331 Net-_C241-Pad1_ Net-_C237-Pad1_ 56k2
+C237 Net-_C237-Pad1_ NC_26 470n
+C241 Net-_C241-Pad1_ Net-_C241-Pad2_ 270n
+C239 Net-_C237-Pad1_ NC_27 470n
+J72 NC_28 NC_29 Net-_J72-Pad3_ Net-_J72-Pad3_ NC_30 NC_31 InConnector
+J74 NC_32 NC_33 Net-_C241-Pad1_ Net-_C240-Pad1_ NC_34 NC_35 OutConnector
+J73 Net-_J73-Pad1_ NC_36 Net-_J73-Pad3_ NC_37 Conn_01x04
+.end

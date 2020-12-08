@@ -1,0 +1,12 @@
+.title KiCad schematic
+.include "/home/akshay/newopamp.cir"
+R3 Net-_R1-Pad1_ GND 100k
+R1 Net-_R1-Pad1_ i1 100k
+R2 Net-_R2-Pad1_ i2 100k
+R4 out Net-_R2-Pad1_ 100k
+V1 i1 GND dc 10
+V2 i2 GND dc 3
+V4 GND VSS dc 10
+V3 VDD GND dc 10
+XU1 out Net-_R2-Pad1_ Net-_R1-Pad1_ OPAMP1
+.end

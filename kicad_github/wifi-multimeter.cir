@@ -1,0 +1,38 @@
+.title KiCad schematic
+R1 +3V3 Net-_C1-Pad1_ 10K
+U1 GND +3V3 Net-_C1-Pad1_ /ADC_CH0 /ADC_CH3 NC_01 NC_02 NC_03 NC_04 /speaker/SHUTDOWN /speaker/INPUT /power/CHRG NC_05 NC_06 GND NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 /IO_2 /IO_0 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 /RXD0 /TXD0 NC_23 NC_24 GND GND ESP32-WROOM-32D
+J1 GND +3V3 /IO_2 /IO_0 /RXD0 /TXD0 download
+C1 Net-_C1-Pad1_ GND 1uf
+C3 +3V3 GND 0.1uf
+C2 +3V3 GND 10uf
+R5 Net-_J4-Pad1_ /ADC_CH0 1K
+J4 Net-_J4-Pad1_ /ADC_CH3 GND Conn_01x03
+C8 Net-_C8-Pad1_ GND 1uf
+J2 +5V NC_25 NC_26 NC_27 GND GND USB_B_Micro
+U3 /power/CHRG GND Net-_C8-Pad1_ +5V Net-_R4-Pad2_ LTC4054ES5-4.2
+J3 Net-_C8-Pad1_ GND BATT
+D1 /power/CHRG Net-_D1-Pad2_ LED
+R3 Net-_D1-Pad2_ +5V 1K
+R2 /power/CHRG +5V 10K
+R4 GND Net-_R4-Pad2_ 1.5K
+C7 GND +5V 10uf
+C6 GND +5V 1uf
+U2 GND +3V3 +5V AMS1117-3.3
+C4 +5V GND 10uf
+C5 +3V3 GND 10uf
+R6 Net-_R6-Pad1_ Net-_J6-Pad1_ 1M
+C9 NC_28 NC_29 C
+R7 GND Net-_R7-Pad2_ 3.6k
+R8 GND Net-_R8-Pad2_ 24k
+R9 Net-_R9-Pad1_ GND 75k
+U4 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 Net-_R7-Pad2_ NC_40 Net-_R6-Pad1_ Net-_R9-Pad1_ Net-_R8-Pad2_ NC_41 CD4052B
+J6 Net-_J6-Pad1_ V_Ω
+J5 NC_42 GROUND
+J7 NC_43 Current
+C11 Net-_C11-Pad1_ GND 1uf
+R11 Net-_J8-Pad2_ Net-_R10-Pad1_ 20k
+U5 /speaker/SHUTDOWN Net-_C11-Pad1_ Net-_C11-Pad1_ Net-_R10-Pad1_ Net-_J8-Pad2_ +BATT GND Net-_J8-Pad1_ TC8002D
+J8 Net-_J8-Pad1_ Net-_J8-Pad2_ Speaker
+R10 Net-_R10-Pad1_ Net-_C10-Pad1_ 20k
+C10 Net-_C10-Pad1_ /speaker/INPUT 0.39uf
+.end

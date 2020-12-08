@@ -1,0 +1,4 @@
+.title KiCad schematic
+J2 /MISO /VCC /SCK /MOSI /RST /GND AVR-ISP-6
+J1 /MISO /VCC /MOSI /SCK /RST /GND Conn_01x06
+.end

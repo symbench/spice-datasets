@@ -1,0 +1,6 @@
+.title KiCad schematic
+J4 Net-_J2-Pad1_ Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J3-Pad1_ CAM
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ USB
+J2 Net-_J2-Pad1_ 1
+J3 Net-_J3-Pad1_ 1
+.end

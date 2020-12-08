@@ -1,0 +1,12 @@
+.title KiCad schematic
+BT1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ 9V
+D1 Net-_D1-Pad1_ Net-_BT1-Pad1_ LED
+D2 Net-_D2-Pad1_ Net-_BT1-Pad1_ LED
+R1 Net-_D1-Pad1_ Net-_C1-Pad1_ 470R
+R4 Net-_D2-Pad1_ Net-_C2-Pad1_ 470R
+R3 Net-_BT1-Pad1_ Net-_C2-Pad2_ 47k
+R2 Net-_BT1-Pad1_ Net-_C1-Pad2_ 47k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 47uF
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 47uF
+U1 Net-_BT1-Pad2_ Net-_C2-Pad2_ Net-_C2-Pad1_ Net-_BT1-Pad2_ Net-_C1-Pad2_ Net-_C1-Pad1_ BC846BDW1
+.end

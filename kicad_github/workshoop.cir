@@ -1,0 +1,10 @@
+.title KiCad schematic
+J1 Net-_D1-Pad1_ Net-_D3-Pad1_ Conn_01x02_Male
+D1 Net-_D1-Pad1_ Net-_C1-Pad1_ DIODE
+D3 Net-_D3-Pad1_ Net-_C1-Pad1_ DIODE
+D4 Net-_D2-Pad1_ Net-_D3-Pad1_ DIODE
+D2 Net-_D2-Pad1_ Net-_D1-Pad1_ DIODE
+C1 Net-_C1-Pad1_ GND CAP
+U1 Net-_C1-Pad1_ GND Net-_R1-Pad1_ L7805
+R1 Net-_R1-Pad1_ GND R
+.end

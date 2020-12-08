@@ -1,0 +1,6 @@
+.title KiCad schematic
+F1 Net-_F1-Pad1_ Net-_F1-Pad2_ Fuse
+J1 Net-_F1-Pad2_ Net-_F1-Pad2_ 1
+J2 Net-_F1-Pad1_ Net-_F1-Pad1_ 1
+F2 Net-_F1-Pad1_ Net-_F1-Pad2_ Fuse
+.end

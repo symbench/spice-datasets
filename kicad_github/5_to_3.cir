@@ -1,0 +1,5 @@
+.title KiCad schematic
+U1 +5V GND +5V NC_01 +3V3 ADP150AUJZ-3.3-R7
+C2 +3V3 GND 100n
+C1 +3V3 GND 1u
+.end

@@ -1,0 +1,4 @@
+.title KiCad schematic
+C2 /OUT GND C
+R1 /OUT NC_01 R
+.end

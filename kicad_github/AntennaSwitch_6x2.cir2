@@ -1,0 +1,162 @@
+.title KiCad schematic
+U2 /Interlock/EnableRemote Net-_R4-Pad2_ Net-_R5-Pad2_ Net-_R6-Pad2_ Net-_R7-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad2_ chasis chasis chasis /Interlock/Load Net-_R18-Pad2_ Net-_R20-Pad2_ /Interlock/SELECT1_5 /Interlock/SELECT1_4 /Interlock/SELECT1_3 /Interlock/SELECT1_2 /Interlock/SELECT1_1 /Interlock/SELECT1_0 +3V3 74HC573
+U6 /Interlock/SELECT1_0 Net-_J2-Pad4_ Net-_J2-Pad3_ Net-_J2-Pad3_ /Interlock/SELECT2_0 Net-_J2-Pad4_ chasis Net-_J2-Pad5_ /Interlock/SELECT1_1 Net-_J2-Pad6_ Net-_J2-Pad6_ Net-_J2-Pad5_ /Interlock/SELECT2_1 +3V3 74HC00
+U5 /Interlock/SELECT1_4 Net-_J3-Pad4_ Net-_J3-Pad3_ Net-_J3-Pad3_ /Interlock/SELECT2_4 Net-_J3-Pad4_ chasis Net-_J3-Pad5_ /Interlock/SELECT1_5 Net-_J3-Pad6_ Net-_J3-Pad6_ Net-_J3-Pad5_ /Interlock/SELECT2_5 +3V3 74HC00
+U7 /Interlock/SELECT1_2 Net-_J2-Pad8_ Net-_J2-Pad7_ Net-_J2-Pad7_ /Interlock/SELECT2_2 Net-_J2-Pad8_ chasis Net-_J3-Pad1_ /Interlock/SELECT1_3 Net-_J3-Pad2_ Net-_J3-Pad2_ Net-_J3-Pad1_ /Interlock/SELECT2_3 +3V3 74HC00
+R19 Net-_R19-Pad1_ chasis 10K
+R21 Net-_R21-Pad1_ chasis 10K
+R23 /Interlock/SELECT2_5 /Interlock/REMOTE2_6 10K
+R25 /Interlock/SELECT2_4 /Interlock/REMOTE2_5 10K
+R27 /Interlock/SELECT2_3 /Interlock/REMOTE2_4 10K
+R29 /Interlock/SELECT2_2 /Interlock/REMOTE2_3 10K
+R31 /Interlock/SELECT2_1 /Interlock/REMOTE2_2 10K
+R33 /Interlock/SELECT2_0 /Interlock/REMOTE2_1 10K
+R32 NC_01 /Interlock/SELECT1_0 10K
+R30 /Interlock/REMOTE1_2 /Interlock/SELECT1_1 10K
+R28 /Interlock/REMOTE1_3 /Interlock/SELECT1_2 10K
+R26 /Interlock/REMOTE1_4 /Interlock/SELECT1_3 10K
+R24 /Interlock/REMOTE1_5 /Interlock/SELECT1_4 10K
+R22 /Interlock/REMOTE1_6 /Interlock/SELECT1_5 10K
+R18 chasis Net-_R18-Pad2_ 10K
+R20 chasis Net-_R20-Pad2_ 10K
+U1 BCD1_0 BCD1_1 BCD1_2 chasis chasis +3V3 NC_02 chasis /Interlock/REMOTE1_6 /Interlock/REMOTE1_5 /Interlock/REMOTE1_4 /Interlock/REMOTE1_3 /Interlock/REMOTE1_2 NC_03 NC_04 +3V3 74HC238
+R16 /Interlock/EnableRemote chasis 47K
+R4 chasis Net-_R4-Pad2_ 10K
+R5 chasis Net-_R5-Pad2_ 10K
+R6 chasis Net-_R6-Pad2_ 10K
+R7 chasis Net-_R7-Pad2_ 10K
+R8 chasis Net-_R8-Pad2_ 10K
+R9 chasis Net-_R9-Pad2_ 10K
+R10 chasis Net-_R10-Pad2_ 10K
+R11 chasis Net-_R11-Pad2_ 10K
+R12 chasis Net-_R12-Pad2_ 10K
+R13 chasis Net-_R13-Pad2_ 10K
+R14 chasis Net-_R14-Pad2_ 10K
+R15 chasis Net-_R15-Pad2_ 10K
+R2 +3V3 Net-_R2-Pad2_ 100
+R1 +3V3 Net-_R1-Pad2_ 100
+SW1 +3V3 /Interlock/Load LOAD
+SW4 NC_05 /Interlock/EnableRemote +3V3 M/R
+R3 /Interlock/Load chasis 47K
+J2 +12V +3V3 Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Conn_01x08
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ chasis chasis Conn_01x08
+SW2 NC_06 Net-_R1-Pad2_ Net-_R4-Pad2_ Net-_R5-Pad2_ Net-_R6-Pad2_ Net-_R7-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad2_ NC_07 Net-_R1-Pad2_ SRBV170501
+SW3 NC_08 Net-_R2-Pad2_ Net-_R10-Pad2_ Net-_R11-Pad2_ Net-_R12-Pad2_ Net-_R13-Pad2_ Net-_R14-Pad2_ Net-_R15-Pad2_ NC_09 Net-_R2-Pad2_ SRBV170501
+U11 Net-_J3-Pad2_ Net-_J3-Pad4_ Net-_J3-Pad6_ Net-_R37-Pad2_ chasis Net-_U11-Pad6_ Net-_U11-Pad7_ chasis Net-_U11-Pad9_ Net-_R37-Pad2_ Net-_J2-Pad4_ Net-_J2-Pad6_ Net-_J2-Pad8_ NC_10 NC_11 +3V3 74HC148
+U8 Net-_U10-Pad9_ BCDM_1_0 Net-_U10-Pad7_ BCDM_1_1 Net-_U10-Pad6_ BCDM_1_2 chasis BCDM_2_0 Net-_U11-Pad9_ BCDM_2_1 Net-_U11-Pad7_ BCDM_2_2 Net-_U11-Pad6_ +3V3 74HC04
+U12 BCDM_1_1 BCDM_1_2 +3V3 Net-_R34-Pad1_ chasis chasis BCDM_1_0 chasis Net-_R42-Pad2_ Net-_R41-Pad2_ Net-_R40-Pad2_ Net-_R39-Pad2_ Net-_R38-Pad2_ Net-_R44-Pad2_ Net-_R43-Pad2_ +3V3 4511
+U13 BCDM_2_1 BCDM_2_2 +3V3 Net-_R34-Pad1_ chasis chasis BCDM_2_0 chasis Net-_R49-Pad2_ Net-_R48-Pad2_ Net-_R47-Pad2_ Net-_R46-Pad2_ Net-_R45-Pad2_ Net-_R51-Pad2_ Net-_R50-Pad2_ +3V3 4511
+U14 Net-_R42-Pad1_ Net-_R41-Pad1_ chasis Net-_R40-Pad1_ NC_12 Net-_R39-Pad1_ Net-_R38-Pad1_ chasis Net-_R43-Pad1_ Net-_R44-Pad1_ Blue 0.56'' CC
+R38 Net-_R38-Pad1_ Net-_R38-Pad2_ 33
+R39 Net-_R39-Pad1_ Net-_R39-Pad2_ 33
+R40 Net-_R40-Pad1_ Net-_R40-Pad2_ 33
+R41 Net-_R41-Pad1_ Net-_R41-Pad2_ 33
+R42 Net-_R42-Pad1_ Net-_R42-Pad2_ 33
+R43 Net-_R43-Pad1_ Net-_R43-Pad2_ 33
+R44 Net-_R44-Pad1_ Net-_R44-Pad2_ 33
+R45 Net-_R45-Pad1_ Net-_R45-Pad2_ 33
+R46 Net-_R46-Pad1_ Net-_R46-Pad2_ 33
+R47 Net-_R47-Pad1_ Net-_R47-Pad2_ 33
+R48 Net-_R48-Pad1_ Net-_R48-Pad2_ 33
+R49 Net-_R49-Pad1_ Net-_R49-Pad2_ 33
+R50 Net-_R50-Pad1_ Net-_R50-Pad2_ 33
+R51 Net-_R51-Pad1_ Net-_R51-Pad2_ 33
+R37 +3V3 Net-_R37-Pad2_ 10K
+U10 Net-_J3-Pad1_ Net-_J3-Pad3_ Net-_J3-Pad5_ Net-_R36-Pad2_ chasis Net-_U10-Pad6_ Net-_U10-Pad7_ chasis Net-_U10-Pad9_ Net-_R36-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad5_ Net-_J2-Pad7_ NC_13 NC_14 +3V3 74HC148
+R36 +3V3 Net-_R36-Pad2_ 10K
+U15 Net-_R49-Pad1_ Net-_R48-Pad1_ chasis Net-_R47-Pad1_ NC_15 Net-_R46-Pad1_ Net-_R45-Pad1_ chasis Net-_R50-Pad1_ Net-_R51-Pad1_ Blue 0.56'' CC
+U3 /Interlock/EnableRemote Net-_R10-Pad2_ Net-_R11-Pad2_ Net-_R12-Pad2_ Net-_R13-Pad2_ Net-_R14-Pad2_ Net-_R15-Pad2_ chasis chasis chasis /Interlock/Load Net-_R19-Pad1_ Net-_R21-Pad1_ /Interlock/SELECT2_5 /Interlock/SELECT2_4 /Interlock/SELECT2_3 /Interlock/SELECT2_2 /Interlock/SELECT2_1 /Interlock/SELECT2_0 +3V3 74HC573
+U4 BCD2_0 BCD2_1 BCD2_2 chasis chasis +3V3 NC_16 chasis /Interlock/REMOTE2_6 /Interlock/REMOTE2_5 /Interlock/REMOTE2_4 /Interlock/REMOTE2_3 /Interlock/REMOTE2_2 /Interlock/REMOTE2_1 NC_17 +3V3 74HC238
+C4 chasis +3V3 4.7uF
+C3 chasis +3V3 4.7uF
+J1 +3V3 BCD1_2 BCD1_1 BCD1_0 BCD2_2 BCD2_1 BCD2_0 chasis Conn_01x08
+D1 Net-_D1-Pad1_ /Interlock/EnableRemote Green
+R17 Net-_D1-Pad1_ chasis 220
+C1 +3V3 /Interlock/Load 104
+U9 chasis Net-_Q1-Pad3_ Net-_R34-Pad1_ +3V3 NC_18 Net-_C2-Pad1_ Net-_R77-Pad1_ +3V3 TLC555
+R35 +3V3 Net-_Q1-Pad3_ 100K
+R34 Net-_R34-Pad1_ Net-_C2-Pad1_ 470K
+C2 Net-_C2-Pad1_ chasis 22uF
+Q1 /Interlock/Load chasis Net-_Q1-Pad3_ 2N7002
+R77 Net-_R77-Pad1_ Net-_C2-Pad1_ 100
+U16 Net-_R54-Pad2_ Net-_R52-Pad1_ Net-_R58-Pad2_ /Remote/RST Net-_L2-Pad2_ Net-_R57-Pad2_ Net-_R56-Pad2_ /Remote/TXD /Remote/RXD /Remote/SPI_CS /Remote/SPI_SCK /Remote/SPI_MISO /Remote/SPI_MOSI /Remote/INT chasis Net-_C6-Pad1_ Net-_R55-Pad2_ Net-_R53-Pad1_ /Remote/SWDIO /Remote/SWCLK STM32F030F4Px
+J5 +3V3 /Remote/SWDIO /Remote/SWCLK chasis SWD
+R62 Net-_J4-Pad9_ +3V3 330
+SW5 chasis /Remote/RST RESET
+C5 /Remote/RST chasis 104
+R54 chasis Net-_R54-Pad2_ 10K
+U17 /Remote/RXD /Remote/485RW /Remote/485RW /Remote/TXD chasis /Remote/A /Remote/B +3V3 MAX485E
+C6 Net-_C6-Pad1_ chasis 104
+L2 Net-_C6-Pad1_ Net-_L2-Pad2_ 47uH
+C8 /Remote/X+ chasis 10pF
+C9 /Remote/X- chasis 10pF
+R63 chasis Net-_R63-Pad2_ 12K
+R64 Net-_J4-Pad12_ +3V3 330
+C7 chasis +3V3 104
+R59 chasis /Remote/B 1K
+R60 /Remote/A +3V3 1K
+J6 /Remote/A chasis /Remote/B 485
+C10 /Remote/RST chasis 104
+U19 chasis +1V8 Net-_C13-Pad1_ AZ1117-1.8
+C13 Net-_C13-Pad1_ chasis 104
+C14 +1V8 chasis 22uF
+J4 /Remote/TXP /Remote/TXN /Remote/RXP +3V3 +3V3 /Remote/RXN chasis Net-_J4-Pad9_ Net-_J4-Pad10_ /Remote/INT Net-_J4-Pad12_ HR913550A
+R52 Net-_R52-Pad1_ BCD1_0 10K
+R53 Net-_R53-Pad1_ BCD1_1 10K
+R55 BCD1_2 Net-_R55-Pad2_ 10K
+R56 BCD2_0 Net-_R56-Pad2_ 10K
+R57 BCD2_1 Net-_R57-Pad2_ 10K
+R58 BCD2_2 Net-_R58-Pad2_ 10K
+Y1 /Remote/X+ chasis /Remote/X- chasis 30MHz
+L1 +3V3 Net-_C6-Pad1_ 22uH
+L3 +3V3 Net-_C13-Pad1_ 22uH
+U18 Net-_R63-Pad2_ +3V3 chasis /Remote/RXP /Remote/RXN +1V8 /Remote/TXP /Remote/TXN chasis /Remote/X+ /Remote/X- +3V3 chasis +3V3 chasis +1V8 chasis +3V3 Net-_R68-Pad2_ Net-_R67-Pad2_ Net-_R66-Pad2_ NC_19 NC_20 NC_21 +1V8 +3V3 Net-_R69-Pad2_ Net-_R71-Pad2_ Net-_R70-Pad2_ /Remote/485RW /Remote/RST chasis +3V3 chasis +3V3 +1V8 chasis +3V3 chasis Net-_R61-Pad1_ Net-_J4-Pad10_ +1V8 NC_22 chasis /Remote/SPI_CS /Remote/SPI_SCK /Remote/SPI_MOSI /Remote/SPI_MISO +3V3 +1V8 CH395Q
+C11 chasis +3V3 104
+C12 +1V8 chasis 104
+R61 Net-_R61-Pad1_ /Remote/INT 100
+R66 BCDM_1_0 Net-_R66-Pad2_ 10K
+R67 BCDM_1_1 Net-_R67-Pad2_ 10K
+R68 BCDM_1_2 Net-_R68-Pad2_ 10K
+R69 BCDM_2_0 Net-_R69-Pad2_ 10K
+R70 BCDM_2_1 Net-_R70-Pad2_ 10K
+R71 BCDM_2_2 Net-_R71-Pad2_ 10K
+R78 /Remote/RXN +3V3 49.9
+R79 /Remote/RXP +3V3 49.9
+R80 /Remote/TXN +3V3 49.9
+R81 /Remote/TXP +3V3 49.9
+C21 +3V3 chasis 104
+C20 +3V3 chasis 2.2uF
+C122 +1V8 chasis 104
+C123 +1V8 chasis 104
+C124 +1V8 chasis 104
+C125 +1V8 chasis 104
+C112 +3V3 chasis 104
+C113 +3V3 chasis 104
+C114 +3V3 chasis 104
+C115 +3V3 chasis 104
+C116 +3V3 chasis 104
+C117 +3V3 chasis 104
+C118 +3V3 chasis 104
+C119 +3V3 chasis 104
+C126 +1V8 chasis 104
+J8 /Remote/RST Conn_01x01
+U20 Net-_C18-Pad2_ Net-_R73*1-Pad1_ chasis chasis Net-_C15-Pad1_ Net-_C17-Pad1_ Net-_C17-Pad2_ Net-_R72-Pad2_ SY8303
+C17 Net-_C17-Pad1_ Net-_C17-Pad2_ 10nF
+L5 Net-_C17-Pad1_ +3V3 22uH 1A
+C19 +3V3 chasis 22uF
+R74 +3V3 Net-_C18-Pad2_ 100K
+R75 Net-_C18-Pad2_ chasis 22K
+R73 Net-_R73*1-Pad1_ Net-_R73-Pad2_ 51K
+F1 +12V Net-_F1-Pad2_ 2A
+J7 Net-_F1-Pad2_ chasis 12VDC
+C18 +3V3 Net-_C18-Pad2_ 47pF
+D2 +12V chasis 16V
+C16 Net-_C15-Pad1_ chasis 4.7uF 25V
+R72 Net-_C15-Pad1_ Net-_R72-Pad2_ 100K
+L4 +12V Net-_C15-Pad1_ 22uH 1A
+C15 Net-_C15-Pad1_ chasis 104
+D3 chasis Net-_D3-Pad2_ Red
+R76 +3V3 Net-_D3-Pad2_ 300
+RV1 Net-_R73-Pad2_ Net-_R73-Pad2_ chasis 100K
+R73*1 Net-_R73*1-Pad1_ chasis 100K
+.end

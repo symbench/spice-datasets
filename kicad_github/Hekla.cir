@@ -1,0 +1,103 @@
+.title KiCad schematic
+JP2 /SDA /SCL /D5 /D6 /D9 /D10 /D11 /D12 /D13 NC_01 NC_02 NC_03 Conn_01x12_Female
+JP1 GND /D1 /D0 /MISO /MOSI NC_04 /A5 /A4 /A3 /A2 /A1 /A0 GND NC_05 +3V3 NC_06 Conn_01x16_Female
+C1 /A0 Net-_C1-Pad2_ 10u
+R1 Net-_C1-Pad2_ GND 47k
+R2 Net-_C6-Pad2_ Net-_C1-Pad2_ 6k8
+U1 Net-_C6-Pad1_ Net-_C6-Pad2_ GND -12V Net-_C5-Pad2_ GND Net-_C5-Pad1_ +12V TL072
+R8 Net-_C6-Pad2_ Net-_C6-Pad1_ 47k
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 18p
+C2 /A1 Net-_C2-Pad2_ 10u
+R3 Net-_C2-Pad2_ GND 47k
+R4 Net-_C5-Pad2_ Net-_C2-Pad2_ 6k8
+R7 Net-_C5-Pad2_ Net-_C5-Pad1_ 47k
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 18p
+R11 Net-_C5-Pad1_ /CVO2 1k
+R12 Net-_C6-Pad1_ /CVO1 1k
+J4 GND /CVO1 NC_07 Thonkiconn
+J3 GND /CVO2 NC_08 Thonkiconn
+C3 GND +12V 100n
+C4 GND -12V 100n
+C8 /A2 Net-_C8-Pad2_ 18p
+U4 /A3 GND GND Net-_C9-Pad2_ +3V3 MCP6001T-E/OT 
+R23 Net-_C9-Pad2_ /A3 82k
+C9 /A3 Net-_C9-Pad2_ 18p
+R21 /-10Ref Net-_C9-Pad2_ 510k
+R20 /CVI2 Net-_C9-Pad2_ 100k
+J8 GND /CVI2 GND Thonkiconn
+R17 /-10Ref -12V 2k2
+C7 GND /-10Ref 100n
+J7 GND /CVI1 GND Thonkiconn
+R18 /CVI1 Net-_C8-Pad2_ 100k
+R19 /-10Ref Net-_C8-Pad2_ 510k
+R22 Net-_C8-Pad2_ /A2 82k
+U3 /A2 GND GND Net-_C8-Pad2_ +3V3 MCP6001-OT
+U8 GND /D13 Net-_R31-Pad1_ GND /D12 Net-_R32-Pad1_ GND Net-_R33-Pad1_ /D10 GND Net-_R34-Pad1_ /D11 GND +5V 74LS125
+R31 Net-_R31-Pad1_ /GO1 1k
+J11 GND /GO1 NC_09 Thonkiconn
+R32 Net-_R32-Pad1_ /GO2 1k
+J12 GND /GO2 NC_10 Thonkiconn
+R33 Net-_R33-Pad1_ /GO3 1k
+J13 GND /GO3 NC_11 Thonkiconn
+R34 Net-_R34-Pad1_ /GO4 1k
+J14 GND /GO4 NC_12 Thonkiconn
+R24 /10Ref GND 2k2
+C10 +12V /10Ref 100n
+RV1 /10Ref Net-_R36-Pad1_ /-10Ref R_POT
+RV2 /10Ref Net-_R37-Pad1_ /-10Ref R_POT
+C11 /A4 Net-_C11-Pad2_ 18p
+U7 /A5 GND GND Net-_C12-Pad2_ +3V3 MCP6001T-E/OT 
+R30 Net-_C12-Pad2_ /A5 82k
+C12 /A5 Net-_C12-Pad2_ 18p
+R28 /-10Ref Net-_C12-Pad2_ 510k
+R27 /CVI4 Net-_C12-Pad2_ 100k
+J10 GND /CVI4 GND Thonkiconn
+J9 GND /CVI3 GND Thonkiconn
+R25 /CVI3 Net-_C11-Pad2_ 100k
+R26 /-10Ref Net-_C11-Pad2_ 510k
+R29 Net-_C11-Pad2_ /A4 82k
+U6 /A4 GND GND Net-_C11-Pad2_ +3V3 MCP6001T-E/OT 
+RV3 /10Ref Net-_R38-Pad1_ /-10Ref R_POT
+Q1 Net-_Q1-Pad1_ GND /D6 MMBT3904
+R5 /GI1 Net-_Q1-Pad1_ 100k
+J1 GND /GI1 NC_13 Thonkiconn
+R9 +3V3 /D6 10k
+Q2 Net-_Q2-Pad1_ GND /D5 MMBT3904
+R6 /GI2 Net-_Q2-Pad1_ 100k
+J2 GND /GI2 NC_14 Thonkiconn
+R10 +3V3 /D5 10k
+Q3 Net-_Q3-Pad1_ GND /D1 MMBT3904
+R13 /GI3 Net-_Q3-Pad1_ 100k
+J5 GND /GI3 NC_15 Thonkiconn
+R15 +3V3 /D1 10k
+Q4 Net-_Q4-Pad1_ GND /D0 MMBT3904
+R14 /GI4 Net-_Q4-Pad1_ 100k
+J6 GND /GI4 NC_16 Thonkiconn
+R16 +3V3 /D0 10k
+D1 +5V Net-_D1-Pad2_ GND Net-_D1-Pad4_ WS2812B
+D2 +5V Net-_D2-Pad2_ GND Net-_D1-Pad2_ WS2812B
+D3 +5V Net-_D3-Pad2_ GND Net-_D2-Pad2_ WS2812B
+D4 +5V NC_17 GND Net-_D3-Pad2_ WS2812B
+C14 +3V3 GND 100n
+C15 +3V3 GND 100n
+C16 +3V3 GND 100n
+C17 +3V3 GND 100n
+C18 +5V GND 100n
+C13 +5V GND 100n
+R35 Net-_D1-Pad4_ /D9 100R
+J15 Net-_D6-Pad2_ Net-_D6-Pad2_ GND GND GND GND GND GND Net-_D5-Pad2_ Net-_D5-Pad2_ Conn_02x05_Odd_Even
+C19 +12V GND 10u
+C20 +5V GND 10u
+C21 +5V GND 100n
+RV4 /10Ref Net-_R39-Pad1_ /-10Ref R_POT
+R36 Net-_R36-Pad1_ Net-_C8-Pad2_ 510k
+R38 Net-_R38-Pad1_ Net-_C11-Pad2_ 510k
+R37 Net-_R37-Pad1_ Net-_C9-Pad2_ 510k
+R39 Net-_R39-Pad1_ Net-_C12-Pad2_ 510k
+J16 +3V3 GND /SDA /SCL /MOSI /MISO Conn_02x03_Odd_Even
+U9 GND +5V +12V AMS1117-5.0
+U2 GND /-10Ref LM4040DIM3-10.0/NOPB
+U5 +12V /10Ref LM4040DIM3-10.0/NOPB
+D6 -12V Net-_D6-Pad2_ US1M
+D5 +12V Net-_D5-Pad2_ US1M
+.end

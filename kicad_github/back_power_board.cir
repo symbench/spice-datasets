@@ -1,0 +1,16 @@
+.title KiCad schematic
+U1 /ampCurr Net-_R3-Pad1_ Net-_R2-Pad1_ GND Net-_RV1-Pad2_ /ampCurr /currSwitch +12V Opamp_Dual_Generic
+U2 Net-_K1-Pad7_ /vSupply +12V LM317_3PinPackage
+R2 Net-_R2-Pad1_ Net-_J1-Pad1_ 3.3k
+R8 /vSupply Net-_K1-Pad7_ Rreg1
+R4 Net-_R2-Pad1_ GND 3.3M
+R5 Net-_R3-Pad1_ /ampCurr 3.3M
+R3 Net-_R3-Pad1_ GND 3.3k
+R1 Net-_J1-Pad1_ GND 0
+R7 Net-_K1-Pad7_ GND Rreg2
+R6 Net-_K1-Pad1_ GND Rreg2
+J1 Net-_J1-Pad1_ /vSupply Conn_01x02_Female
+RV1 +12V Net-_RV1-Pad2_ GND R_POT
+J2 +12V GND Conn_01x02
+K1 Net-_K1-Pad1_ GND /currSwitch Net-_K1-Pad7_ Net-_K1-Pad7_ GND Net-_K1-Pad1_ DIPxx-1Axx-12x
+.end

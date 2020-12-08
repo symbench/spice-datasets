@@ -1,0 +1,16 @@
+.title KiCad schematic
+V1 Net-_R1-Pad1_ 0 12
+R1 Net-_R1-Pad1_ Net-_C1-Pad1_ 100k
+R3 Net-_R1-Pad1_ out 3.9k
+R2 Net-_C1-Pad1_ 0 24k
+R4 Net-_Q1-Pad3_ 0 1k
+C1 Net-_C1-Pad1_ v1 10u
+V2 v1 0 0 ac 1.0 sin(0 1 1k)
+Q1 out Net-_C1-Pad1_ Net-_Q1-Pad3_ Net-_Q1-Pad3_ QNPN
+.tran 1e-5 2e-3
+.model qnpn npn
+.control
+run
+plot v(base) v(v1)
+.endc
+.end

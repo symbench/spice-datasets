@@ -1,0 +1,15 @@
+.title KiCad schematic
+.include "/home/akshay/Desktop/analog circuits/libs/ad8051.lib"
+R1 Net-_C1-Pad2_ Net-_R1-Pad2_ 5.6k
+R2 Net-_R2-Pad1_ Net-_R1-Pad2_ 5.6k
+R3 Net-_R2-Pad1_ GND 5.6k
+R4 out Net-_C1-Pad1_ 5.6k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 0.1u
+C2 out Net-_C1-Pad2_ 1000p
+R5 out GND 5.6k
+V1 Net-_R1-Pad2_ GND ac 1
+XU1 Net-_C1-Pad1_ Net-_R2-Pad1_ VDD VSS out AD8051
+V2 VDD GND DC 10
+V3 GND VSS DC 10
+.ac dec 10 1 1Meg
+.end

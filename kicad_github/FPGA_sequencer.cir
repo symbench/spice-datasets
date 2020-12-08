@@ -1,0 +1,115 @@
+.title KiCad schematic
+U1 Net-_R5-Pad1_ Net-_R13-Pad2_ +3V3 +3V3 Net-_R6-Pad1_ Net-_R2-Pad1_ Net-_R3-Pad2_ Net-_R7-Pad1_ +3V3 +3V3 Net-_R1-Pad1_ Net-_R11-Pad2_ Net-_R10-Pad1_ Net-_U1-Pad14_ -3V3 -3V3 Net-_R1-Pad1_ Net-_R13-Pad2_ Net-_R12-Pad2_ Net-_U1-Pad20_ Net-_U1-Pad21_ -3V3 Net-_R8-Pad1_ Net-_R4-Pad1_ -3V3 ADA4940-2ACPZ-R7_a
+U3 Net-_R12-Pad1_ Net-_R13-Pad1_ Net-_C1-Pad2_ DB3S406F0L
+U4 Net-_R12-Pad1_ Net-_R13-Pad1_ Net-_C2-Pad1_ DB3S406F0L
+R8 Net-_R8-Pad1_ Net-_R4-Pad1_ 4.99k
+R9 Net-_R13-Pad2_ Net-_R5-Pad1_ 4.99k
+R12 Net-_R12-Pad1_ Net-_R12-Pad2_ 4.99
+R4 Net-_R4-Pad1_ NC_01 6.34k
+R5 Net-_R5-Pad1_ GNDA 6.34k
+R13 Net-_R13-Pad1_ Net-_R13-Pad2_ 4.99
+R10 Net-_R10-Pad1_ Net-_C2-Pad1_ 100
+R11 Net-_C1-Pad2_ Net-_R11-Pad2_ 100
+R7 Net-_R7-Pad1_ Net-_R3-Pad2_ 3.9k
+R6 Net-_R6-Pad1_ Net-_R2-Pad1_ 3.9k
+R3 GNDA Net-_R3-Pad2_ 2.2k
+R2 Net-_R2-Pad1_ Net-_C30-Pad2_ 2.2k
+C1 GNDA Net-_C1-Pad2_ 22p
+C2 Net-_C2-Pad1_ GNDA 22p
+R1 Net-_R1-Pad1_ Vcom 33
+C11 GNDA +3V3 0.1u
+C9 GNDA +3V3 0.1u
+C7 GNDA +3V3 0.1u
+C12 -3V3 GNDA 0.1u
+C10 -3V3 GNDA 0.1u
+C8 -3V3 GNDA 0.1u
+C3 GNDA +3V3 10u
+C4 -3V3 GNDA 10u
+C5 GNDA +3V3 1u
+C6 -3V3 GNDA 1u
+C14 GNDA +3V3 10n
+C13 GNDA +3V3 10n
+C15 -3V3 GNDA 10n
+10n1 -3V3 GNDA 0.1u
+U5 Net-_C30-Pad2_ Net-_C27-Pad1_ Net-_U5-Pad3_ Net-_C30-Pad1_ Net-_C26-Pad2_ AD8065ARTZ-R2
+C28 Net-_C26-Pad1_ Net-_C26-Pad2_ 0.1u
+C29 Net-_C27-Pad1_ Net-_C26-Pad1_ 0.1u
+C26 Net-_C26-Pad1_ Net-_C26-Pad2_ 1u
+C27 Net-_C27-Pad1_ Net-_C26-Pad1_ 1u
+C32 Net-_C27-Pad1_ Net-_C26-Pad1_ 10n
+R17 Net-_C30-Pad2_ Net-_C30-Pad1_ 10k
+C30 Net-_C30-Pad1_ Net-_C30-Pad2_ 150p
+U6 Net-_C16-Pad1_ Net-_C20-Pad2_ NC_02 Net-_C18-Pad1_ GNDA Net-_C21-Pad2_ NC_03 Net-_U5-Pad3_ MAX4564EKA+T
+R14 Net-_C16-Pad1_ Net-_C17-Pad2_ 820k
+R15 Net-_C18-Pad1_ Net-_C16-Pad1_ 820k
+R16 GNDA Net-_C18-Pad1_ 820k
+C19 GNDA Net-_C18-Pad1_ 1n
+C18 Net-_C18-Pad1_ Net-_C16-Pad1_ 91p
+C17 Net-_C16-Pad1_ Net-_C17-Pad2_ 33p
+C16 Net-_C16-Pad1_ GNDA C_Variable
+J1 Net-_C17-Pad2_ GNDA Conn_Coaxial
+C31 Net-_C26-Pad1_ Net-_C26-Pad2_ 10n
+C25 GNDA Net-_C21-Pad2_ 1u
+C23 GNDA Net-_C21-Pad2_ 0.1u
+C21 GNDA Net-_C21-Pad2_ 10n
+C24 GNDA Net-_C20-Pad2_ 1u
+C22 GNDA Net-_C20-Pad2_ 0.1u
+C20 GNDA Net-_C20-Pad2_ 10n
+U2 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 NC_56 NC_57 NC_58 NC_59 NC_60 NC_61 NC_62 NC_63 NC_64 NC_65 NC_66 NC_67 NC_68 AD9648BCPZ-125
+10n2 -3V3 GNDA 0.1u
+C45 -3V3 GNDA 10n
+C43 GNDA +3V3 10n
+C44 GNDA +3V3 10n
+C36 -3V3 GNDA 1u
+C35 GNDA +3V3 1u
+C34 -3V3 GNDA 10u
+C33 GNDA +3V3 10u
+C38 -3V3 GNDA 0.1u
+C40 -3V3 GNDA 0.1u
+C42 -3V3 GNDA 0.1u
+C37 GNDA +3V3 1u
+C39 GNDA +3V3 0.1u
+C41 GNDA +3V3 0.1u
+U7 Net-_R22-Pad1_ Net-_R26-Pad1_ +3V3 +3V3 Net-_R23-Pad1_ Net-_R19-Pad1_ Net-_R20-Pad2_ Net-_R24-Pad1_ +3V3 +3V3 Net-_R18-Pad1_ Net-_R28-Pad2_ Net-_R27-Pad1_ Net-_U7-Pad14_ -3V3 -3V3 Net-_R18-Pad1_ Net-_R26-Pad1_ Net-_R29-Pad2_ Net-_U7-Pad20_ Net-_U7-Pad21_ -3V3 Net-_R25-Pad1_ Net-_R21-Pad1_ -3V3 ADA4940-2ACPZ-R7_a
+U8 Net-_R29-Pad1_ Net-_R30-Pad1_ Net-_C46-Pad2_ DB3S406F0L
+U9 Net-_R29-Pad1_ Net-_R30-Pad1_ Net-_C47-Pad1_ DB3S406F0L
+R25 Net-_R25-Pad1_ Net-_R21-Pad1_ 4.99k
+R26 Net-_R26-Pad1_ Net-_R22-Pad1_ 4.99k
+R29 Net-_R29-Pad1_ Net-_R29-Pad2_ 4.99
+R21 Net-_R21-Pad1_ NC_69 6.34k
+R22 Net-_R22-Pad1_ GNDA 6.34k
+R30 Net-_R30-Pad1_ Net-_R26-Pad1_ 4.99
+R27 Net-_R27-Pad1_ Net-_C47-Pad1_ 100
+R28 Net-_C46-Pad2_ Net-_R28-Pad2_ 100
+R24 Net-_R24-Pad1_ Net-_R20-Pad2_ 3.9k
+R23 Net-_R23-Pad1_ Net-_R19-Pad1_ 3.9k
+R20 GNDA Net-_R20-Pad2_ 2.2k
+R19 Net-_R19-Pad1_ Net-_C52-Pad2_ 2.2k
+C46 GNDA Net-_C46-Pad2_ 22p
+C47 Net-_C47-Pad1_ GNDA 22p
+R18 Net-_R18-Pad1_ Vcom 33
+U10 Net-_C52-Pad2_ Net-_C49-Pad1_ Net-_U10-Pad3_ Net-_C52-Pad1_ Net-_C48-Pad2_ AD8065ARTZ-R2
+C50 Net-_C48-Pad1_ Net-_C48-Pad2_ 0.1u
+C51 Net-_C49-Pad1_ Net-_C48-Pad1_ 0.1u
+C48 Net-_C48-Pad1_ Net-_C48-Pad2_ 1u
+C49 Net-_C49-Pad1_ Net-_C48-Pad1_ 1u
+C54 Net-_C49-Pad1_ Net-_C48-Pad1_ 10n
+R31 Net-_C52-Pad2_ Net-_C52-Pad1_ 10k
+C52 Net-_C52-Pad1_ Net-_C52-Pad2_ 150p
+C53 Net-_C48-Pad1_ Net-_C48-Pad2_ 10n
+U11 Net-_C55-Pad1_ Net-_C60-Pad2_ NC_70 Net-_C57-Pad1_ GNDA Net-_C59-Pad2_ NC_71 Net-_U10-Pad3_ MAX4564EKA+T
+R32 Net-_C55-Pad1_ Net-_C56-Pad2_ 820k
+R33 Net-_C57-Pad1_ Net-_C55-Pad1_ 820k
+R34 GNDA Net-_C57-Pad1_ 820k
+C58 GNDA Net-_C57-Pad1_ 1n
+C57 Net-_C57-Pad1_ Net-_C55-Pad1_ 91p
+C56 Net-_C55-Pad1_ Net-_C56-Pad2_ 33p
+C55 Net-_C55-Pad1_ GNDA C_Variable
+J2 Net-_C56-Pad2_ GNDA Conn_Coaxial
+C63 GNDA Net-_C59-Pad2_ 1u
+C61 GNDA Net-_C59-Pad2_ 0.1u
+C59 GNDA Net-_C59-Pad2_ 10n
+C64 GNDA Net-_C60-Pad2_ 1u
+C62 GNDA Net-_C60-Pad2_ 0.1u
+C60 GNDA Net-_C60-Pad2_ 10n
+.end

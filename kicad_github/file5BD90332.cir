@@ -1,0 +1,5 @@
+.title KiCad schematic
+U1 /Vin+ /VOUT- /VOUT+ L7805
+C2 /VOUT+ /VOUT- C
+C1 /Vin+ /VOUT- C
+.end

@@ -1,0 +1,22 @@
+.title KiCad schematic
+J2 NC_01 /Vin_Buck GND +3V3 BuckConverter
+J1 /Sound_Signal NC_02 /supply_on GND Sound Sensor
+J4 /Anemometer_Out +3V3 Anemometer
+IC1 /supply_on /DHT22_Data NC_03 GND DHT22
+U1 /Microcontroller/IO27 /Microcontroller/IO32 /Microcontroller/IO33 /Microcontroller/IO19 /Microcontroller/IO18 /Microcontroller/I021 /Microcontroller/IO17 GND /Microcontroller/IO16 /Opto_Anemometer_Out /reset_counter /Microcontroller/IO23 /Microcontroller/IO22 /Microcontroller/IO25 /Microcontroller/IO26 +3V3 4020
+R1 /Opto_Anemometer_Out GND 10k
+R2 /Anemometer_Out Net-_R2-Pad2_ 620
+U2 Net-_R2-Pad2_ GND NC_04 /Opto_Anemometer_Out +3V3 NC_05 4N25
+J3 Net-_J3-Pad1_ GND /Battery_status Charge controller
+SW1 /Vin_Buck Net-_J3-Pad1_ NC_06 SW_SPDT
+U3 GND +3V3 /Microcontroller/EN NC_07 NC_08 /Battery_status /Sound_Signal /Microcontroller/IO32 /Microcontroller/IO33 /Microcontroller/IO25 /Microcontroller/IO26 /Microcontroller/IO27 /supply_on NC_09 GND /DHT22_Data NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 /reset_counter /Microcontroller/IO2 /Microcontroller/IO0 NC_16 /Microcontroller/IO16 /Microcontroller/IO17 NC_17 /Microcontroller/IO18 /Microcontroller/IO19 NC_18 /Microcontroller/I021 /Microcontroller/RXD0 /Microcontroller/TXD0 /Microcontroller/IO22 /Microcontroller/IO23 GND GND ESP32-WROOM-32
+R3 +3V3 /Microcontroller/EN 10kR
+C1 /Microcontroller/EN GND 0.1uF
+C5 +3V3 GND 0.1uF
+C4 +3V3 GND 22uF
+C2 GND /Microcontroller/IO0 0.1uF
+SW2 GND /Microcontroller/IO0 BOOT
+C3 GND /Microcontroller/EN 0.1uF
+SW3 GND /Microcontroller/EN RESET
+J5 /Microcontroller/RXD0 +3V3 /Microcontroller/IO0 NC_19 /Microcontroller/IO2 NC_20 GND /Microcontroller/TXD0 Conn_02x04_Odd_Even
+.end

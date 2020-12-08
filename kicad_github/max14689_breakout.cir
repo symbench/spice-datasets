@@ -1,0 +1,8 @@
+.title KiCad schematic
+U1 Net-_J2-Pad3_ /SEL Net-_J4-Pad3_ Net-_J2-Pad2_ GND Net-_J4-Pad2_ Net-_J2-Pad1_ /VCC Net-_J4-Pad1_ MAX14689
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ C2
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ C1
+J1 /VCC GND VCC
+J3 /SEL GND SEL
+C1 /VCC GND 100nF
+.end

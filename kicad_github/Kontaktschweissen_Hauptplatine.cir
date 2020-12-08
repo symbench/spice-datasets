@@ -1,0 +1,5 @@
+.title KiCad schematic
+P1 NC_01 NC_02 /Reset GND NC_03 NC_04 NC_05 NC_06 NC_07 /7 /8 /9_**_ /10_**/SS_ /11_**/MOSI_ /12_MISO_ Digital
+P2 NC_08 GND /Reset +5V NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 +3V3 NC_18 Analog
+U1 NC_19 NC_20 NC_21 /7 NC_22 /8 NC_23 NC_24 NC_25 NC_26 /9_**_ /10_**/SS_ /11_**/MOSI_ /12_MISO_ NC_27 NC_28 RC1602A
+.end

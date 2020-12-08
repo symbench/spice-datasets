@@ -1,0 +1,34 @@
+.title KiCad schematic
+U9 Net-_R9-Pad2_ GND /MISO_5V /chipSelect-LED_5V GND /LED0 /LED1 /LED2 /LED3 GND /LED4 /LED5 /LED6 /LED7 /Button7 /Button6 /Button5 /Button4 GND /Button3 /Button2 /Button1 /Button0 GND /Reset /SCLK_5V /MOSI_5V +5V LED_shift_register_SPI
+Q1 /3V_source /SCLK_3V /SCLK_5V BSN20
+Q2 /3V_source /chipSelect-LED_3V /chipSelect-LED_5V BSN20
+Q3 /3V_source /MISO_3V /MISO_5V BSN20
+Q4 /3V_source /MOSI_3V /MOSI_5V BSN20
+R10 /3V_source /SCLK_3V 10k
+R14 /5V_source /SCLK_5V 10k
+R11 /3V_source /chipSelect-LED_3V 10k
+R15 /5V_source /chipSelect-LED_5V 10k
+R12 /3V_source /MISO_3V 10k
+R16 /5V_source /MISO_5V 10k
+R13 /3V_source /MOSI_3V 10k
+R17 /5V_source /MOSI_5V 10k
+J2 +5V NC_01 NC_02 NC_03 GND NC_04 USB_B_Micro
+U2 +5V /LED1 Net-_R2-Pad2_ /Button1 LED_Button_connector
+U3 +5V /LED2 Net-_R3-Pad2_ /Button2 LED_Button_connector
+U4 +5V /LED3 Net-_R4-Pad2_ /Button3 LED_Button_connector
+U1 +5V /LED0 Net-_R1-Pad2_ /Button0 LED_Button_connector
+U5 +5V /LED4 Net-_R5-Pad2_ /Button4 LED_Button_connector
+U6 +5V /LED5 Net-_R6-Pad2_ /Button5 LED_Button_connector
+U7 +5V /LED6 Net-_R7-Pad2_ /Button6 LED_Button_connector
+U8 +5V /LED7 Net-_R8-Pad2_ /Button7 LED_Button_connector
+R1 +5V Net-_R1-Pad2_ 10k
+R2 +5V Net-_R2-Pad2_ 10k
+R3 +5V Net-_R3-Pad2_ 10k
+R4 +5V Net-_R4-Pad2_ 10k
+R5 +5V Net-_R5-Pad2_ 10k
+R6 +5V Net-_R6-Pad2_ 10k
+R7 +5V Net-_R7-Pad2_ 10k
+R8 +5V Net-_R8-Pad2_ 10k
+R9 +5V Net-_R9-Pad2_ 10k
+J1 /3V_source /5V_source /Reset NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 /MOSI_3V NC_20 /MISO_3V NC_21 /SCLK_3V /chipSelect-LED_3V NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 GND NC_36 Raspberry_Pi_2_3
+.end

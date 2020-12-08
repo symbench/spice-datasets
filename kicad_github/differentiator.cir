@@ -1,0 +1,9 @@
+.title KiCad schematic
+R1 Net-_C1-Pad2_ Net-_R1-Pad2_ 100k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 20n
+R3 Net-_R3-Pad1_ Net-_C1-Pad1_ 10k
+R4 GND Net-_R3-Pad1_ 1k
+R2 GND Net-_R2-Pad2_ 1k
+V1 Net-_R1-Pad2_ GND pwl(0 5 30m 5 30.0005m -5 50m -5 50.0005m 5)
+VU1 Net-_R3-Pad1_ Net-_C1-Pad1_ Net-_R2-Pad2_ AD8620
+.end

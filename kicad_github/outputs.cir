@@ -1,0 +1,15 @@
+.title KiCad schematic
+D1 GND Net-_D1-Pad2_ LED
+R1 Net-_D1-Pad2_ Net-_R1-Pad2_ 1K
+RV1 Net-_R1-Pad2_ Net-_D2-Pad2_ GND B100K
+D2 NC_01 Net-_D2-Pad2_ 1N4148
+RV2 Net-_R1-Pad2_ Net-_D3-Pad2_ GND B100K
+D3 NC_02 Net-_D3-Pad2_ 1N4148
+D4 NC_03 Net-_D4-Pad2_ 1N4148
+RV3 Net-_R1-Pad2_ Net-_D4-Pad2_ GND B100K
+D5 NC_04 Net-_D5-Pad2_ 1N4148
+RV4 Net-_R1-Pad2_ Net-_D5-Pad2_ GND B100K
+SW1 Net-_D6-Pad2_ Net-_R1-Pad2_ Net-_D7-Pad2_ SW_SPDT
+D6 NC_05 Net-_D6-Pad2_ 1N4148
+D7 NC_06 Net-_D7-Pad2_ 1N4148
+.end

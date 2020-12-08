@@ -1,0 +1,63 @@
+.title KiCad schematic
+R6 Net-_R2-Pad1_ +15V Net-_R10-Pad1_ 2SCR544P5T100
+U3 Net-_R9-Pad3_ +15V Net-_R12-Pad1_ D44H11
+U7 Net-_J3-Pad2_ Net-_R14-Pad1_ Net-_R14-Pad2_ GND -12VA Net-_TP3-Pad1_ Net-_R11-Pad1_ +12VA AD8421BRZ
+U5 +15V GND +12VA L7812
+U6 GND -15V -12VA L7912
+C12 GND -15V 1u
+C11 +15V GND 1u
+FL2 Net-_FL2-Pad1_ GND -15V EMI_Filter_LCL
+FL1 Net-_FL1-Pad1_ GND +15V EMI_Filter_LCL
+C16 GND -12VA 1u
+C15 +12VA GND 1u
+C14 GND -12VA 10u
+C13 +12VA GND 10u
+J1 Net-_FL2-Pad1_ GND Net-_FL1-Pad1_ Conn_01x03
+U1 Net-_C2-Pad1_ -12VA Net-_C1-Pad2_ Net-_C2-Pad2_ +12VA AD8603
+R7 +15V Net-_D1-Pad2_ 1k
+C9 +15V GND 10u
+C10 GND -15V 10u
+C7 +15V GND 10u
+C8 GND -15V 10u
+C5 +15V GND 10u
+C6 GND -15V 10u
+C3 +15V GND 10u
+C4 GND -15V 10u
+C18 GND -12VA 1u
+C19 +12VA GND 1u
+C20 GND -12VA 1u
+J2 Net-_J2-Pad1_ GND Conn_Coaxial
+R5 Net-_R2-Pad1_ Net-_D1-Pad1_ -15V 2SAR544P5T100
+R9 Net-_D1-Pad2_ +15V Net-_R9-Pad3_ 2SCR544P5T100
+R10 Net-_R10-Pad1_ Net-_R10-Pad2_ Net-_R10-Pad3_ 2SAR544P5T100
+U4 Net-_R10-Pad3_ Net-_R10-Pad2_ -15V D44H11
+R12 Net-_R12-Pad1_ Net-_J3-Pad1_ 0.1
+R13 Net-_J3-Pad1_ Net-_R10-Pad2_ 0.1
+R8 Net-_R10-Pad1_ -15V 1k
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ 1N4148
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Conn_Coaxial
+R15 Net-_J3-Pad2_ GND 0.01
+R14 Net-_R14-Pad1_ Net-_R14-Pad2_ 100
+U2 Net-_TP3-Pad1_ -12VA Net-_C21-Pad2_ Net-_TP3-Pad1_ +12VA AD8603
+R3 +12VA Net-_R3-Pad2_ 1k
+R4 Net-_R4-Pad1_ -12VA 1k
+RV1 Net-_R3-Pad2_ Net-_C21-Pad2_ Net-_R4-Pad1_ R_POT_TRIM
+R11 Net-_R11-Pad1_ Net-_C2-Pad2_ 5k
+R2 Net-_R2-Pad1_ Net-_C2-Pad1_ 100
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 2.2n
+R1 Net-_C1-Pad2_ Net-_J2-Pad1_ 1k
+C1 GND Net-_C1-Pad2_ 22n
+C17 +12VA GND 1u
+C21 GND Net-_C21-Pad2_ 2.2n
+TP1 Net-_C1-Pad2_ TestPoint
+TP4 Net-_J3-Pad1_ TestPoint
+TP2 Net-_C2-Pad2_ TestPoint
+TP3 Net-_TP3-Pad1_ TestPoint
+TP5 GND TestPoint
+TP6 +15V TestPoint
+TP7 -15V TestPoint
+H2 MountingHole
+H1 GND MountingHole_Pad
+H3 MountingHole
+H4 MountingHole
+.end

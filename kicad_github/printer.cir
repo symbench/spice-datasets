@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 Net-_Connector1-Pad6_ Net-_Connector1-Pad5_ NC_01 NC_02 Net-_Connector1-Pad1_ Net-_R3-Pad1_ Net-_R2-Pad2_ GND NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 +3V3 NC_09 NC_10 NC_11 NC_12 Net-_R1-Pad2_ NC_13 Net-_Connector1-Pad2_ ESP-12F
+R2 GND Net-_R2-Pad2_ 10K
+Connector1 Net-_Connector1-Pad1_ Net-_Connector1-Pad2_ +3V3 GND Net-_Connector1-Pad5_ Net-_Connector1-Pad6_ Printer Programmer
+R1 +3V3 Net-_R1-Pad2_ 10K
+R3 Net-_R3-Pad1_ +3V3 10K
+.end

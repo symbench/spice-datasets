@@ -1,0 +1,4 @@
+.title KiCad schematic
+U2 Net-_U1-Pad6_ Net-_U1-Pad10_ NC_01 NC_02 NC_03 Net-_U2-Pad11_ GND Net-_U1-Pad9_ Net-_U2-Pad12_ NC_04 Net-_U2-Pad11_ Net-_U2-Pad12_ NC_05 VCC 74HC4075
+U1 NC_06 NC_07 NC_08 NC_09 NC_10 Net-_U1-Pad6_ GND NC_11 Net-_U1-Pad9_ Net-_U1-Pad10_ NC_12 NC_13 NC_14 VCC 74HC4075
+.end

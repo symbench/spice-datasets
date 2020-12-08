@@ -1,0 +1,5 @@
+.title KiCad schematic
+IC1 Net-_IC1-Pad1_ Net-_IC1-Pad2_ Net-_IC1-Pad3_ Net-_IC1-Pad4_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad14_ Net-_IC1-Pad15_ Net-_IC1-Pad16_ DS3231
+J1 Net-_IC1-Pad4_ Net-_IC1-Pad3_ Net-_IC1-Pad2_ Net-_IC1-Pad1_ Conn_01x04_Female
+J2 Net-_IC1-Pad16_ Net-_IC1-Pad15_ Net-_IC1-Pad14_ Net-_IC1-Pad10_ Conn_01x04_Female
+.end

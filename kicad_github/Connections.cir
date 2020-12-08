@@ -1,0 +1,6 @@
+.title KiCad schematic
+R1 NC_01 +3V3 100k
+R2 NC_02 +3V3 100k
+R4 NC_03 +3V3 100k
+R3 NC_04 +3V3 100k
+.end

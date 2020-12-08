@@ -1,0 +1,39 @@
+.title KiCad schematic
+U2 GND vccad NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 gpstx gpsrx GND NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 IOBoot NC_20 NC_21 NC_22 IO5 NC_23 NC_24 NC_25 sda rxtotx txtorx scl NC_26 GND GND ESP32-WROOM
+U4 NC_27 GND d+ d- NC_28 NC_29 +5V +5V NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 rts Net-_R7-Pad2_ Net-_R8-Pad2_ NC_40 dtr NC_41 GND CP2102N-A01-GQFN24
+R7 txtorx Net-_R7-Pad2_ 100R
+R8 rxtotx Net-_R8-Pad2_ 100R
+J1 +5V d- d+ NC_42 GND GND USB_B_Micro
+U3 GND vccad vcc NCP1117-3.3_SOT223
+C6 vccad GND 0.1uF
+C7 vccad GND 10uF
+C8 +5V GND 0.1uF
+C9 vcc GND 0.1uF
+C10 vcc GND 10uF
+C5 vccad GND 100uF
+D2 vcc +5V D
+Q2 Net-_Q2-Pad1_ dtr IOBoot MMBT3904
+Q1 Net-_Q1-Pad1_ rts en MMBT3904
+R6 rts Net-_Q2-Pad1_ 10K
+R5 dtr Net-_Q1-Pad1_ 10K
+U1 GND vccad sda scl GND vccad GND vccad BME280
+C2 vccad GND 100n
+C1 vccad GND 100n
+R1 sda vccad 4.7K
+R2 scl vccad 4.7K
+R3 Net-_D1-Pad2_ IO5 10K
+D1 GND Net-_D1-Pad2_ LED
+SW2 en GND SW_Push
+SW1 IOBoot GND SW_Push
+C3 en GND 1nF
+C4 IOBoot GND 1nF
+R4 vccad en 10K
+U5 vccad GND NC_43 GND GND vccad NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 sda scl ADXL345
+MODULE1 gpsrx gpstx Net-_MODULE1-Pad12_ vccad vccad NC_50 NC_51 NC_52 NC_53 NC_54 Net-_MODULE1-Pad12_ L80-M39
+C12 GND vccad 0.1uF
+C13 vccad GND 10uF
+C11 vccad GND 0.1uF
+C14 GND vccad 10uF
+C16 vccad GND 100nF
+C15 GND vccad 100nF
+.end

@@ -1,0 +1,51 @@
+.title KiCad schematic
+R4 Net-_C12-Pad1_ Net-_C4-Pad2_ 10k
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 1u
+R5 Net-_C12-Pad1_ Net-_C4-Pad1_ 100k
+C5 Net-_C12-Pad1_ Net-_C4-Pad1_ 100n
+Q1 Net-_C4-Pad1_ +12V Net-_C12-Pad1_ FDD6685
+Q2 Net-_C6-Pad2_ GND Net-_C4-Pad1_ 2N7002K
+C7 Net-_C6-Pad2_ GND 100n
+C6 +12V Net-_C6-Pad2_ 100n
+R6 Net-_D1-Pad1_ Net-_C6-Pad2_ 180k
+R7 +12V Net-_D1-Pad1_ 100k
+D1 Net-_D1-Pad1_ NC_01 Net-_C4-Pad2_ BAS16J
+SW1 GND Net-_C4-Pad2_ ON_OFF
+C10 +12V GND 10u
+C12 Net-_C12-Pad1_ GND 10u
+L1 Net-_C12-Pad1_ Net-_C16-Pad1_ 74279226101
+C16 Net-_C16-Pad1_ GND 22u/35V
+D2 Net-_C16-Pad1_ GND SK54
+F1 Net-_C16-Pad1_ Net-_C19-Pad1_ 5A
+C19 Net-_C19-Pad1_ GND 100n
+C21 Net-_C19-Pad1_ GND 10u
+J4 Net-_C19-Pad1_ GND 12V_IN
+C11 +12V GND 100n
+C13 +12V GND 1u
+FB2 Net-_C15-Pad1_ +12V TBD
+C15 Net-_C15-Pad1_ GND 100n
+C17 Net-_C15-Pad1_ GND 1u
+J3 Net-_C15-Pad1_ GND GND Net-_C15-Pad1_ 12V_SWITCHED
+FB1 Net-_C8-Pad1_ +12V TBD
+C8 Net-_C8-Pad1_ GND 47u/35V
+C9 Net-_C8-Pad1_ GND 100n
+U2 Net-_C8-Pad1_ Net-_R8-Pad2_ NC_02 GND Net-_R10-Pad1_ Net-_C14-Pad1_ Net-_C18-Pad1_ GND LMZ22005
+R8 GND Net-_R8-Pad2_ 1k5
+R9 GND Net-_R10-Pad1_ 620
+C14 Net-_C14-Pad1_ GND 100n
+R10 Net-_R10-Pad1_ Net-_R10-Pad2_ 3k3
+R11 Net-_R10-Pad2_ Net-_C18-Pad1_ 47
+C18 Net-_C18-Pad1_ GND 100n
+C20 Net-_C18-Pad1_ GND 10u
+C22 Net-_C18-Pad1_ GND 100u/10V
+FB3 Net-_C18-Pad1_ +5V TBD
+C23 +5V GND 100n
+C24 +5V GND 10u
+C25 +5V GND 100u/10V
+C26 +5V GND 10u
+C27 +5V GND 100u/6.3V
+J5 +5V GND +5V 5V/3A
+R12 Net-_D3-Pad2_ +5V 1k5
+D3 GND Net-_D3-Pad2_ Green
+J6 +5V NC_03 NC_04 NC_05 GND TO_DISPLAY
+.end

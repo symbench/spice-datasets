@@ -1,0 +1,18 @@
+.title KiCad schematic
+C6 +5V GND 22uF
+C10 Net-_C10-Pad1_ GND 10uF
+L1 Net-_L1-Pad1_ Net-_C10-Pad1_ 2.2uH
+R5 Net-_C10-Pad1_ Net-_C9-Pad2_ 249K
+C9 Net-_C10-Pad1_ Net-_C9-Pad2_ 22pF
+R4 GND Net-_C9-Pad2_ 287K
+R3 GND Net-_R3-Pad2_ 549K
+R2 Net-_C4-Pad1_ Net-_R2-Pad2_ 16.9K
+C4 Net-_C4-Pad1_ GND 680pF
+L2 Net-_C10-Pad1_ Net-_C11-Pad1_ 6.8uH
+C11 Net-_C11-Pad1_ GND 10uF
+TP3 +5V +5V
+TP4 GND GND
+TP5 Net-_C10-Pad1_ 1.5V Core
+TP6 Net-_C11-Pad1_ 1.5V PLL
+U2 Net-_R3-Pad2_ GND Net-_L1-Pad1_ GND +5V +5V Net-_C9-Pad2_ Net-_R2-Pad2_ GND LTC3561A
+.end

@@ -1,0 +1,11 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ GND 0.1uf
+R1 Net-_C2-Pad1_ GND 1k
+R2 Net-_C3-Pad1_ Net-_C2-Pad1_ 220ohm
+C2 Net-_C2-Pad1_ GND 10uf
+D1 Net-_C3-Pad1_ Net-_C2-Pad1_ 1N4002
+C3 Net-_C3-Pad1_ GND 1uf
+J1 Net-_C1-Pad1_ GND Conn_01x02_Male
+J2 Net-_C3-Pad1_ GND Conn_01x02_Male
+U1 Net-_C2-Pad1_ Net-_C3-Pad1_ Net-_C1-Pad1_ LM317_3PinPackage
+.end

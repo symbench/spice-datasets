@@ -1,0 +1,13 @@
+.title KiCad schematic
+.include "../libs/spice_models.lib"
+V1 A 0 dc 0 pulse(0 3.3 0 0 0 100m 200m)
+V2 VDD 0 3.3
+V3 B 0 dc 0 pulse(0 3.3 0 0 0 50m 100m)
+X1 A B Out VDD NAND
+R1 0 Out 10meg
+.tran 1m 400m
+.control
+run
+plot v(a)+5 v(b)+10 v(out)
+.endc
+.end

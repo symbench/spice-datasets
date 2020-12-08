@@ -1,0 +1,10 @@
+.title KiCad schematic
+T2 Net-_F3-Pad1_ N-230V 12V 0V 12V 230-2x12V
+T1 Net-_F3-Pad1_ N-230V Power-1 ADC_Temp Power-1 ADC_Temp Toroidal 220-2x15V 160VA
+F3 Net-_F3-Pad1_ NC_01 Fuse 1A
+Re1 Earth Net-_Ce1-Pad1_ 1M
+JP1 Net-_Ce1-Pad1_ 0V PE-GND
+Ce1 Net-_Ce1-Pad1_ Earth 100nF
+R-JBC1 NC_02 NC_03 Heater 3R
+SW1 Power-1 NC_04 Control SSR
+.end

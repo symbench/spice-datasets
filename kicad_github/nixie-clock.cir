@@ -1,0 +1,57 @@
+.title KiCad schematic
+U2 SPI_RST SRDATA SRCLK SRLATCH NC_01 NC_02 +5V GND XTAL2 XTAL1 NC_03 NC_04 NC_05 pb_display_on NC_06 NC_07 SPI_SCK SPI_MISO SPI_MOSI +5V NC_08 GND pb_plus pb_minus pb_programming_select NC_09 SDA SCL ATmega328P-PU
+Y1 XTAL1 XTAL2 8MHz
+C3 XTAL1 GND 22pF
+C4 XTAL2 GND 22pF
+J4 SPI_MISO +5V SPI_SCK SPI_MOSI SPI_RST GND AVR-ISP-6
+U1 +12V NC_10 GND +170V GND NCH6100HV
+R8 +5V SCL 10k
+R9 +5V SDA 10k
+J3 NC_11 NC_12 SCL SDA +5V GND Conn_01x06
+C6 pb_minus GND 0.1uF
+R5 GND Net-_J2-Pad4_ 1k
+C5 pb_programming_select GND 0.1uF
+R4 GND Net-_J2-Pad2_ 1k
+C8 pb_display_on GND 0.1uF
+R7 GND Net-_J2-Pad8_ 1k
+C7 pb_plus GND 0.1uF
+R6 GND Net-_J2-Pad6_ 1k
+J1 +12V GND GND Barrel_Jack_Switch
+R1 +5V SPI_RST 10k
+C1 +5V GND 0.1uF
+U3 +12V GND +5V GND Mini360_Buck
+C2 +170V GND 1uF
+N7 /AnodeN7 GND IN-3
+N8 /AnodeN8 GND IN-3
+R2 +170V /AnodeN7 220k
+R3 +170V /AnodeN8 220k
+J2 pb_programming_select Net-_J2-Pad2_ pb_minus Net-_J2-Pad4_ pb_plus Net-_J2-Pad6_ pb_display_on Net-_J2-Pad8_ Conn_01x08
+SW4 pb_programming_select Net-_J2-Pad2_ SW_Push
+SW3 pb_minus Net-_J2-Pad4_ SW_Push
+SW2 pb_plus Net-_J2-Pad6_ SW_Push
+SW1 pb_display_on Net-_J2-Pad8_ SW_Push
+U6 /shiftout/N2_8 /shiftout/N2_9 /shiftout/N2_A /shiftout/N2_D +5V /shiftout/N2_B /shiftout/N2_C /shiftout/N2_2 /shiftout/N2_3 /shiftout/N2_7 /shiftout/N2_6 GND /shiftout/N2_4 /shiftout/N2_5 /shiftout/N2_1 /shiftout/N2_0 74141
+U5 /shiftout/N1_8 /shiftout/N1_9 /shiftout/N1_A /shiftout/N1_D +5V /shiftout/N1_B /shiftout/N1_C /shiftout/N1_2 /shiftout/N1_3 /shiftout/N1_7 /shiftout/N1_6 GND /shiftout/N1_4 /shiftout/N1_5 /shiftout/N1_1 /shiftout/N1_0 74141
+U4 /shiftout/N1_B /shiftout/N1_C /shiftout/N1_D /shiftout/N2_A /shiftout/N2_B /shiftout/N2_C /shiftout/N2_D GND Net-_U4-Pad9_ +5V SRCLK SRLATCH GND SRDATA /shiftout/N1_A +5V 74HC595
+N1 /shiftout/N1_0 /shiftout/N1_1 /shiftout/N1_2 /shiftout/N1_3 /shiftout/N1_4 /shiftout/N1_5 /shiftout/N1_6 /shiftout/N1_7 /shiftout/N1_8 /shiftout/N1_9 /shiftout/AnodeN1 IN-2
+C9 +5V GND 0.1uF
+R10 +170V /shiftout/AnodeN1 22k
+N2 /shiftout/N2_0 /shiftout/N2_1 /shiftout/N2_2 /shiftout/N2_3 /shiftout/N2_4 /shiftout/N2_5 /shiftout/N2_6 /shiftout/N2_7 /shiftout/N2_8 /shiftout/N2_9 /shiftout/AnodeN2 IN-2
+R11 +170V /shiftout/AnodeN2 22k
+U9 /shiftout/N4_8 /shiftout/N4_9 /shiftout/N4_A /shiftout/N4_D +5V /shiftout/N4_B /shiftout/N4_C /shiftout/N4_2 /shiftout/N4_3 /shiftout/N4_7 /shiftout/N4_6 GND /shiftout/N4_4 /shiftout/N4_5 /shiftout/N4_1 /shiftout/N4_0 74141
+U8 /shiftout/N3_8 /shiftout/N3_9 /shiftout/N3_A /shiftout/N3_D +5V /shiftout/N3_B /shiftout/N3_C /shiftout/N3_2 /shiftout/N3_3 /shiftout/N3_7 /shiftout/N3_6 GND /shiftout/N3_4 /shiftout/N3_5 /shiftout/N3_1 /shiftout/N3_0 74141
+U7 /shiftout/N3_B /shiftout/N3_C /shiftout/N3_D /shiftout/N4_A /shiftout/N4_B /shiftout/N4_C /shiftout/N4_D GND Net-_U10-Pad14_ +5V SRCLK SRLATCH GND Net-_U4-Pad9_ /shiftout/N3_A +5V 74HC595
+N3 /shiftout/N3_0 /shiftout/N3_1 /shiftout/N3_2 /shiftout/N3_3 /shiftout/N3_4 /shiftout/N3_5 /shiftout/N3_6 /shiftout/N3_7 /shiftout/N3_8 /shiftout/N3_9 /shiftout/AnodeN3 IN-12A
+C11 +5V GND 0.1uF
+R12 +170V /shiftout/AnodeN3 12k
+N4 /shiftout/N4_0 /shiftout/N4_1 /shiftout/N4_2 /shiftout/N4_3 /shiftout/N4_4 /shiftout/N4_5 /shiftout/N4_6 /shiftout/N4_7 /shiftout/N4_8 /shiftout/N4_9 /shiftout/AnodeN4 IN-12A
+R13 +170V /shiftout/AnodeN4 12k
+U12 /shiftout/N6_8 /shiftout/N6_9 /shiftout/N6_A /shiftout/N6_D +5V /shiftout/N6_B /shiftout/N6_C /shiftout/N6_2 /shiftout/N6_3 /shiftout/N6_7 /shiftout/N6_6 GND /shiftout/N6_4 /shiftout/N6_5 /shiftout/N6_1 /shiftout/N6_0 74141
+U11 /shiftout/N5_8 /shiftout/N5_9 /shiftout/N5_A /shiftout/N5_D +5V /shiftout/N5_B /shiftout/N5_C /shiftout/N5_2 /shiftout/N5_3 /shiftout/N5_7 /shiftout/N5_6 GND /shiftout/N5_4 /shiftout/N5_5 /shiftout/N5_1 /shiftout/N5_0 74141
+U10 /shiftout/N5_B /shiftout/N5_C /shiftout/N5_D /shiftout/N6_A /shiftout/N6_B /shiftout/N6_C /shiftout/N6_D GND NC_13 +5V SRCLK SRLATCH GND Net-_U10-Pad14_ /shiftout/N5_A +5V 74HC595
+N5 /shiftout/N5_0 /shiftout/N5_1 /shiftout/N5_2 /shiftout/N5_3 /shiftout/N5_4 /shiftout/N5_5 /shiftout/N5_6 /shiftout/N5_7 /shiftout/N5_8 /shiftout/N5_9 /shiftout/AnodeN5 IN-1
+C10 +5V GND 0.1uF
+R14 +170V /shiftout/AnodeN5 15k
+N6 /shiftout/N6_0 /shiftout/N6_1 /shiftout/N6_2 /shiftout/N6_3 /shiftout/N6_4 /shiftout/N6_5 /shiftout/N6_6 /shiftout/N6_7 /shiftout/N6_8 /shiftout/N6_9 /shiftout/AnodeN6 IN-1
+R15 +170V /shiftout/AnodeN6 15k
+.end

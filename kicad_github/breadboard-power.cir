@@ -1,0 +1,13 @@
+.title KiCad schematic
+J2 Net-_C1-Pad1_ GND Barrel_Jack
+C1 Net-_C1-Pad1_ GND 10uf
+C2 Net-_C2-Pad1_ GND 22uf
+U1 GND Net-_C2-Pad1_ Net-_C1-Pad1_ AZ1117-3.3
+C3 Net-_C1-Pad1_ GND 10uf
+C4 Net-_C4-Pad1_ GND 22uf
+U2 GND Net-_C4-Pad1_ Net-_C1-Pad1_ AZ1117-5.0
+R1 Net-_C4-Pad1_ Net-_D1-Pad2_ 1k
+D1 GND Net-_D1-Pad2_ LED
+J1 Net-_C2-Pad1_ Net-_C2-Pad1_ GND GND Conn_02x02_Odd_Even
+J3 Net-_C4-Pad1_ Net-_C4-Pad1_ GND GND Conn_02x02_Odd_Even
+.end

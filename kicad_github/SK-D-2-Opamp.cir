@@ -1,0 +1,38 @@
+.title KiCad schematic
+C65 NC_01 Net-_C65-Pad2_ C
+C67 NC_02 Net-_C65-Pad2_ C
+C66 Net-_C66-Pad1_ NC_03 C
+C68 Net-_C66-Pad1_ NC_04 C
+J26 Net-_C65-Pad2_ NC_05 Net-_J26-Pad3_ Net-_J26-Pad4_ NC_06 Net-_C66-Pad1_ InConnector
+J27 Net-_C69-Pad2_ NC_07 Net-_J27-Pad3_ Net-_J27-Pad4_ NC_08 Net-_C70-Pad1_ OutConnector
+R171 NC_09 Net-_R168-Pad2_ R
+R167 Net-_R165-Pad2_ Net-_R167-Pad2_ R
+R168 Net-_R165-Pad2_ Net-_R168-Pad2_ R
+R165 Net-_J26-Pad3_ Net-_R165-Pad2_ R
+U16 Net-_R167-Pad2_ Net-_R173-Pad1_ Net-_R168-Pad2_ NC_10 Net-_R180-Pad2_ Net-_R185-Pad1_ Net-_J27-Pad3_ NC_11 ADA4807-2ARM
+R183 NC_12 Net-_R180-Pad2_ R
+R179 Net-_R177-Pad2_ Net-_J27-Pad3_ R
+R180 Net-_R177-Pad2_ Net-_R180-Pad2_ R
+R177 Net-_R167-Pad2_ Net-_R177-Pad2_ R
+R173 Net-_R173-Pad1_ Net-_R167-Pad2_ R
+R174 NC_13 Net-_R173-Pad1_ R
+R185 Net-_R185-Pad1_ Net-_J27-Pad3_ R
+R186 NC_14 Net-_R185-Pad1_ R
+C69 NC_15 Net-_C69-Pad2_ C
+C71 NC_16 Net-_C69-Pad2_ C
+C70 Net-_C70-Pad1_ NC_17 C
+C72 Net-_C70-Pad1_ NC_18 C
+R172 NC_19 Net-_R170-Pad2_ R
+R169 Net-_R166-Pad2_ Net-_R169-Pad2_ R
+R170 Net-_R166-Pad2_ Net-_R170-Pad2_ R
+R166 Net-_J26-Pad4_ Net-_R166-Pad2_ R
+U17 Net-_R169-Pad2_ Net-_R175-Pad1_ Net-_R170-Pad2_ NC_20 Net-_R182-Pad2_ Net-_R187-Pad1_ Net-_J27-Pad4_ NC_21 ADA4807-2ARM
+R184 NC_22 Net-_R182-Pad2_ R
+R181 Net-_R178-Pad2_ Net-_J27-Pad4_ R
+R182 Net-_R178-Pad2_ Net-_R182-Pad2_ R
+R178 Net-_R169-Pad2_ Net-_R178-Pad2_ R
+R175 Net-_R175-Pad1_ Net-_R169-Pad2_ R
+R176 NC_23 Net-_R175-Pad1_ R
+R187 Net-_R187-Pad1_ Net-_J27-Pad4_ R
+R188 NC_24 Net-_R187-Pad1_ R
+.end

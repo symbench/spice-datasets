@@ -1,0 +1,96 @@
+.title KiCad schematic
+U1 GND Trou-3
+U2 GND Trou-3
+U3 GND Trou-3
+U4 GND Trou-3
+U5 /motor_part/Hall_sensor_11 /motor_part/DIAG_1 Net-_Rsense1-Pad1_ Net-_Coff1-Pad2_ /motor_part/Out_11 GND GND /motor_part/TACHO_1 Net-_Cpul1-Pad2_ Net-_Rsense1-Pad1_ /motor_part/DIR_1 /motor_part/DIAG_1 Net-_Cref1-Pad1_ /motor_part/BRAKE_1 Net-_Cboot1-Pad2_ /motor_part/Out_31 +12V GND GND +12V /motor_part/Out_21 Net-_Rp1-Pad1_ /motor_part/Hall_sensor_21 /motor_part/Hall_sensor_31 L6235D
+K1 /motor_part/Out_11 /motor_part/Out_11 /motor_part/Out_21 /motor_part/Out_21 /motor_part/Out_31 /motor_part/Out_31 GND /motor_part/Hall_sensor_21 /motor_part/Hall_sensor_11 /motor_part/Hall_sensor_31 +5V Maxon-200142
+Coff1 GND Net-_Coff1-Pad2_ 1n
+Roff1 GND Net-_Coff1-Pad2_ 33k
+Rtacho1 +5V /motor_part/TACHO_1 1k
+D1 Net-_Cp1-Pad2_ +12V 1N4148
+D2 Net-_Cboot1-Pad2_ Net-_Cp1-Pad2_ 1N4148
+Rp1 Net-_Rp1-Pad1_ Net-_Cp1-Pad1_ 100
+Cp1 Net-_Cp1-Pad1_ Net-_Cp1-Pad2_ 10n
+Cboot1 +12V Net-_Cboot1-Pad2_ 220n
+Rsense1 Net-_Rsense1-Pad1_ GNDPWR 0.3
+Ren1 /motor_part/EN_1 /motor_part/DIAG_1 100k
+Cen1 GND /motor_part/DIAG_1 5.6n
+Rpul1 GND Net-_Cpul1-Pad2_ 47k
+Cpul1 GND Net-_Cpul1-Pad2_ 10n
+Rref2 Net-_Cref1-Pad1_ GND 220
+Cref1 Net-_Cref1-Pad1_ GND 10n
+Rref1 +5V Net-_Cref1-Pad1_ 1.2k
+U6 /motor_part/Hall_sensor_12 /motor_part/DIAG_2 Net-_Rsense2-Pad1_ Net-_Coff2-Pad2_ /motor_part/Out_12 GND GND /motor_part/TACHO_2 Net-_Cpul2-Pad2_ Net-_Rsense2-Pad1_ /motor_part/DIR_2 /motor_part/DIAG_2 Net-_Cref2-Pad1_ /motor_part/BRAKE_2 Net-_Cboot2-Pad2_ /motor_part/Out_33 +12V GND GND +12V /motor_part/Out_22 Net-_Rp2-Pad1_ /motor_part/Hall_sensor_22 /motor_part/Hall_sensor_32 L6235D
+K2 /motor_part/Out_12 /motor_part/Out_12 /motor_part/Out_22 /motor_part/Out_22 /motor_part/Out_33 /motor_part/Out_33 GND /motor_part/Hall_sensor_22 /motor_part/Hall_sensor_12 /motor_part/Hall_sensor_32 +5V Maxon-200142
+Coff2 GND Net-_Coff2-Pad2_ 1n
+Roff2 GND Net-_Coff2-Pad2_ 33k
+Rtacho2 +5V /motor_part/TACHO_2 1k
+D3 Net-_Cp2-Pad2_ +12V 1N4148
+D4 Net-_Cboot2-Pad2_ Net-_Cp2-Pad2_ 1N4148
+Rp2 Net-_Rp2-Pad1_ Net-_Cp2-Pad1_ 100
+Cp2 Net-_Cp2-Pad1_ Net-_Cp2-Pad2_ 10n
+Cboot2 +12V Net-_Cboot2-Pad2_ 220n
+Rsense2 Net-_Rsense2-Pad1_ GNDPWR 0.3
+Ren2 /motor_part/EN_2 /motor_part/DIAG_2 100k
+Cen2 GND /motor_part/DIAG_2 5.6n
+Rpul2 GND Net-_Cpul2-Pad2_ 47k
+Cpul2 GND Net-_Cpul2-Pad2_ 10n
+Rref4 Net-_Cref2-Pad1_ GND 220
+Cref2 Net-_Cref2-Pad1_ GND 10n
+Rref3 +5V Net-_Cref2-Pad1_ 1.2k
+U8 +3V3 NC_01 NC_02 /uC/nrst_3V3_ +3V3 /encodeurs/Ch_A1 /encodeurs/Ch_B1 /uC/TX_3V3_ /uC/RX_3V3_ /uC/Free_1_3V3_ /uC/Free_2_3V3_ /uC/Cmd_En_1_3V3_ /uC/Brake_1_3V3_ /uC/Dir_1_3V3_ /uC/Diag_1_3V3_ GND Net-_C15-Pad2_ /encodeurs/Ch_A2 /encodeurs/Ch_B2 /uC/Tacho_1_3V3_ Net-_R4-Pad1_ /uC/Tacho_2_3V3_ /uC/swdio_3V3_ /uC/swclk_3V3_ /uC/Diag_2_3V3_ /uC/Dir_2_3V3_ /uC/Brake_2_3V3_ /uC/Cmd_En_2_3V3_ /uC/I2C_SCL_3V3_ /uC/I2C_SDA_3V3_ Net-_R3-Pad1_ GND stm32f303k8t6
+C2 /uC/nrst_3V3_ GND 100n
+J2 GND /uC/nrst_3V3_ /uC/swclk_3V3_ /uC/swdio_3V3_ swdio
+D5 GND Net-_D5-Pad2_ LED_ALT
+R4 Net-_R4-Pad1_ Net-_D5-Pad2_ 470
+R3 Net-_R3-Pad1_ Net-_JP1-Pad2_ 10k
+JP1 GND Net-_JP1-Pad2_ NC_03 Jumper_NC_Dual
+U7 /uC/nrst_3V3_ /uC/Cmd_En_1_3V3_ Net-_U7-Pad3_ Net-_U7-Pad3_ Net-_U7-Pad3_ Net-_U10-Pad5_ GND Net-_U7-Pad12_ /uC/nrst_3V3_ /uC/Cmd_En_2_3V3_ Net-_U10-Pad6_ Net-_U7-Pad12_ Net-_U7-Pad12_ +3V3 74HC00
+R1 /uC/Cmd_En_1_3V3_ GND 10k
+R2 /uC/Cmd_En_2_3V3_ GND 10k
+C1 GND +3V3 100n
+U10 /uC/Diag_2_3V3_ +3V3 /uC/Tacho_2_3V3_ Net-_U10-Pad5_ Net-_U10-Pad6_ /uC/Tacho_1_3V3_ /encodeurs/Ch_B2 /encodeurs/Ch_A2 +3V3 GND /encodeurs/Ch_A2_+5V_ /encodeurs/Ch_B2_+5V_ /motor_part/TACHO_1 /motor_part/EN_2 /motor_part/EN_1 /motor_part/TACHO_2 +5V /motor_part/DIAG_2 txb0108
+U9 /uC/Diag_1_3V3_ Net-_C11-Pad1_ /uC/Dir_1_3V3_ /uC/Brake_1_3V3_ /uC/Brake_2_3V3_ /uC/Dir_2_3V3_ /encodeurs/Ch_A1 /encodeurs/Ch_B1 Net-_C11-Pad1_ GND /encodeurs/Ch_B1_+5V_ /encodeurs/Ch_A1_+5V_ /motor_part/DIR_2 /motor_part/BRAKE_2 /motor_part/BRAKE_1 /motor_part/DIR_1 +5V /motor_part/DIAG_1 txb0108
+P1 /uC/I2C_SDA_3V3_ /uC/I2C_SCL_3V3_ CONN_I2C
+P2 /uC/Free_1_3V3_ /uC/Free_2_3V3_ CONN_FREE
+J1 /uC/RX_3V3_ /uC/TX_3V3_ CONN_SERIAL
+C11 Net-_C11-Pad1_ GND 0,1u
+C12 +5V GND 0,1u
+C15 GND Net-_C15-Pad2_ 100n
+C14 +3V3 GND 100n
+C13 +3V3 GND 100n
+U11 /power_part/Alim_num GND B_Plug_5mm
+F2 +10V /power_part/Alim_num Fuse_Num
+D6 +10V GND D_10A
+U13 Net-_R7-Pad1_ +5V +10V LM317_SOT223
+U14 Net-_R10-Pad2_ +3V3 +10V LM317_SOT223
+R7 Net-_R7-Pad1_ GND 820
+R8 +5V Net-_R7-Pad1_ 270
+R10 GND Net-_R10-Pad2_ 370
+R11 +3V3 Net-_R10-Pad2_ 220
+R6 Net-_D8-Pad2_ +10V 2k
+R9 Net-_D10-Pad2_ +5V 470
+R12 Net-_D11-Pad2_ +3V3 470
+D10 GND Net-_D10-Pad2_ LED_5V
+D11 GND Net-_D11-Pad2_ LED_3.3V
+D8 GND Net-_D8-Pad2_ LED_VCC
+C7 +5V GND 10u
+C8 +3V3 GND 10u
+C5 +10V GND 100n
+C3 +10V GND 100u
+J3 +5V GND FAN
+U12 /power_part/Alim_puiss GNDPWR B_Plug_5mm
+F1 +12V /power_part/Alim_puiss Fuse_Puiss
+D7 +12V GNDPWR D_10A
+C6 +12V GNDPWR 100n
+C4 +12V GNDPWR 100u
+R5 Net-_D9-Pad2_ +12V 2k
+D9 GNDPWR Net-_D9-Pad2_ LED_ALT
+Cin_1 +10V GND 0,1u
+Cin_2 +10V GND 0,1u
+P3 +5V /encodeurs/Ch_A1_+5V_ GND /encodeurs/Ch_B1_+5V_ encoder_1
+P4 +5V /encodeurs/Ch_A2_+5V_ GND /encodeurs/Ch_B2_+5V_ encoder_2
+C9 +5V GND 0,1u
+C10 +3V3 GND 0,1u
+.end

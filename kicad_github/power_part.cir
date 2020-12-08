@@ -1,0 +1,31 @@
+.title KiCad schematic
+U11 /Alim_num GND B_Plug_5mm
+F2 +10V /Alim_num Fuse_Num
+D6 +10V GND D_10A
+U13 Net-_R7-Pad1_ +5V +10V LM317_SOT223
+U14 Net-_R10-Pad2_ +3V3 +10V LM317_SOT223
+R7 Net-_R7-Pad1_ GND 820
+R8 +5V Net-_R7-Pad1_ 270
+R10 GND Net-_R10-Pad2_ 370
+R11 +3V3 Net-_R10-Pad2_ 220
+R6 Net-_D8-Pad2_ +10V 2k
+R9 Net-_D10-Pad2_ +5V 470
+R12 Net-_D11-Pad2_ +3V3 470
+D10 GND Net-_D10-Pad2_ LED_5V
+D11 GND Net-_D11-Pad2_ LED_3.3V
+D8 GND Net-_D8-Pad2_ LED_VCC
+C7 +5V GND 10u
+C8 +3V3 GND 10u
+C5 +10V GND 100n
+C3 +10V GND 100u
+J3 +5V GND FAN
+U12 /Alim_puiss GNDPWR B_Plug_5mm
+F1 +12V /Alim_puiss Fuse_Puiss
+D7 +12V GNDPWR D_10A
+C6 +12V GNDPWR 100n
+C4 +12V GNDPWR 100u
+R5 Net-_D9-Pad2_ +12V 2k
+D9 GNDPWR Net-_D9-Pad2_ LED_ALT
+Cin_1 +10V GND 0,1u
+Cin_2 +10V GND 0,1u
+.end

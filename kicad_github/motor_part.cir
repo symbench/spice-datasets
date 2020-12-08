@@ -1,0 +1,38 @@
+.title KiCad schematic
+U5 /Hall_sensor_11 /DIAG_1 Net-_Rsense1-Pad1_ Net-_Coff1-Pad2_ /Out_11 GND GND /TACHO_1 Net-_Cpul1-Pad2_ Net-_Rsense1-Pad1_ NC_01 /DIAG_1 Net-_Cref1-Pad1_ NC_02 Net-_Cboot1-Pad2_ /Out_31 +12V GND GND +12V /Out_21 Net-_Rp1-Pad1_ /Hall_sensor_21 /Hall_sensor_31 L6235D
+K1 /Out_11 /Out_11 /Out_21 /Out_21 /Out_31 /Out_31 GND /Hall_sensor_21 /Hall_sensor_11 /Hall_sensor_31 +5V Maxon-200142
+Coff1 GND Net-_Coff1-Pad2_ 1n
+Roff1 GND Net-_Coff1-Pad2_ 33k
+Rtacho1 +5V /TACHO_1 1k
+D1 Net-_Cp1-Pad2_ +12V 1N4148
+D2 Net-_Cboot1-Pad2_ Net-_Cp1-Pad2_ 1N4148
+Rp1 Net-_Rp1-Pad1_ Net-_Cp1-Pad1_ 100
+Cp1 Net-_Cp1-Pad1_ Net-_Cp1-Pad2_ 10n
+Cboot1 +12V Net-_Cboot1-Pad2_ 220n
+Rsense1 Net-_Rsense1-Pad1_ GNDPWR 0.3
+Ren1 NC_03 /DIAG_1 100k
+Cen1 GND /DIAG_1 5.6n
+Rpul1 GND Net-_Cpul1-Pad2_ 47k
+Cpul1 GND Net-_Cpul1-Pad2_ 10n
+Rref2 Net-_Cref1-Pad1_ GND 220
+Cref1 Net-_Cref1-Pad1_ GND 10n
+Rref1 +5V Net-_Cref1-Pad1_ 1.2k
+U6 /Hall_sensor_12 /DIAG_2 Net-_Rsense2-Pad1_ Net-_Coff2-Pad2_ /Out_12 GND GND /TACHO_2 Net-_Cpul2-Pad2_ Net-_Rsense2-Pad1_ NC_04 /DIAG_2 Net-_Cref2-Pad1_ NC_05 Net-_Cboot2-Pad2_ /Out_33 +12V GND GND +12V /Out_22 Net-_Rp2-Pad1_ /Hall_sensor_22 /Hall_sensor_32 L6235D
+K2 /Out_12 /Out_12 /Out_22 /Out_22 /Out_33 /Out_33 GND /Hall_sensor_22 /Hall_sensor_12 /Hall_sensor_32 +5V Maxon-200142
+Coff2 GND Net-_Coff2-Pad2_ 1n
+Roff2 GND Net-_Coff2-Pad2_ 33k
+Rtacho2 +5V /TACHO_2 1k
+D3 Net-_Cp2-Pad2_ +12V 1N4148
+D4 Net-_Cboot2-Pad2_ Net-_Cp2-Pad2_ 1N4148
+Rp2 Net-_Rp2-Pad1_ Net-_Cp2-Pad1_ 100
+Cp2 Net-_Cp2-Pad1_ Net-_Cp2-Pad2_ 10n
+Cboot2 +12V Net-_Cboot2-Pad2_ 220n
+Rsense2 Net-_Rsense2-Pad1_ GNDPWR 0.3
+Ren2 NC_06 /DIAG_2 100k
+Cen2 GND /DIAG_2 5.6n
+Rpul2 GND Net-_Cpul2-Pad2_ 47k
+Cpul2 GND Net-_Cpul2-Pad2_ 10n
+Rref4 Net-_Cref2-Pad1_ GND 220
+Cref2 Net-_Cref2-Pad1_ GND 10n
+Rref3 +5V Net-_Cref2-Pad1_ 1.2k
+.end

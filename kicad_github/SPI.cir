@@ -1,0 +1,15 @@
+.title KiCad schematic
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Conn_01x03_Male
+J2 Net-_J11-Pad3_ Net-_J11-Pad2_ Net-_J11-Pad1_ Conn_01x03_Male
+J3 Net-_J12-Pad3_ Net-_J12-Pad2_ Net-_J12-Pad1_ Conn_01x03_Male
+J4 Net-_J13-Pad3_ Net-_J13-Pad2_ Net-_J13-Pad1_ Conn_01x03_Male
+J5 Net-_J1-Pad3_ Net-_J1-Pad2_ Net-_J1-Pad1_ Conn_01x03_Male
+J6 /VCC /GND Conn_01x02_Male
+J11 Net-_J11-Pad1_ Net-_J11-Pad2_ Net-_J11-Pad3_ Conn_01x03_Male
+J12 Net-_J12-Pad1_ Net-_J12-Pad2_ Net-_J12-Pad3_ Conn_01x03_Male
+J13 Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Conn_01x03_Male
+J8 /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC Conn_01x20_Male
+J7 /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND Conn_01x20_Male
+J9 /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND /GND Conn_01x20_Male
+J10 /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC /VCC Conn_01x20_Male
+.end

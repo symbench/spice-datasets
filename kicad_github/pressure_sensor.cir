@@ -1,0 +1,6 @@
+.title KiCad schematic
+U1 NC_01 +5V GND Net-_R10-Pad1_ NC_02 NC_03 NC_04 NC_05 MPX5100
+C3 GND +5V CAP_0603
+R10 Net-_R10-Pad1_ /V_TankLevel RES_0603
+R15 /V_TankLevel GND RES_0603
+.end

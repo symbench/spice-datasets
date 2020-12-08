@@ -1,0 +1,7 @@
+.title KiCad schematic
+T1 /power supply/V+ /power supply/V- Net-_D1-Pad3_ Net-_D1-Pad4_ Transformer_1P_1S
+D1 NC_01 NC_02 Net-_D1-Pad3_ Net-_D1-Pad4_ D_Bridge_+-AA
+U1 /power supply/V+ /power supply/V- /regulator/VOUT+ L7805
+C2 /regulator/VOUT+ /power supply/V- C
+C1 /power supply/V+ /power supply/V- C
+.end

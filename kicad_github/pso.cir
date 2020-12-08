@@ -1,0 +1,17 @@
+* /opt/3043096/kicad/phase shift oscillator/pso.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: dom 10 dic 2017 11:56:33 CET
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+C3  Vout Net-_C2-Pad1_ 10nF		
+C2  Net-_C2-Pad1_ Net-_C1-Pad1_ 10nF		
+C1  Net-_C1-Pad1_ Net-_C1-Pad2_ 10nF		
+R4  VCC Vout 2.2k		
+R3  Vout Net-_C1-Pad2_ 220k		
+R2  Net-_C2-Pad1_ 0 2.2k		
+R1  Net-_C1-Pad1_ 0 2.2k		
+Q1  0 Net-_C1-Pad2_ Vout 2N3904		
+

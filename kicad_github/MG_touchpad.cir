@@ -1,0 +1,12 @@
+.title KiCad schematic
+U1 /V_out Net-_R4-Pad1_ Net-_Q1-Pad1_ GND +5V LM2904
+RV1 NC_01 Net-_R4-Pad1_ +5V R_POT
+R4 Net-_R4-Pad1_ GND R
+R3 +5V Net-_Q1-Pad1_ R
+Q1 Net-_Q1-Pad1_ GND BP103BF
+R2 +5V Net-_D2-Pad2_ R
+D2 GND Net-_D2-Pad2_ CQY99
+R1 +5P Net-_D1-Pad2_ R
+D1 GND Net-_D1-Pad2_ LED
+J1 +5V GND +5P /V_out Conn_01x04
+.end

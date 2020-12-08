@@ -1,0 +1,60 @@
+.title KiCad schematic
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+R4 Net-_C4-Pad1_ Net-_Q1-Pad1_ 1k
+R10 Net-_C10-Pad1_ Net-_Q2-Pad3_ 33
+R6 Net-_Q2-Pad1_ Net-_Q1-Pad3_ 10k
+R5 Net-_Q2-Pad1_ Net-_J1-Pad2_ 15k
+R1 -2V5 Net-_Q1-Pad3_ 7k4
+J1 /+15V_ein Net-_J1-Pad2_ Conn_01x02_Male
+R12 Net-_C10-Pad1_ /Ua_aus 220
+R13 Net-_Q3-Pad2_ /Ua_aus 10
+C3 NC_01 -2V5 100n
+Q3 NC_02 Net-_Q3-Pad2_ Net-_Q3-Pad3_ BD139
+HS1 Heatsink
+C10 Net-_C10-Pad1_ -2V5 10u
+J2 -2V5 -2V5 Net-_C10-Pad1_ Conn_01x03_Male
+Q2 Net-_Q2-Pad1_ -2V5 Net-_Q2-Pad3_ BC850
+Q1 Net-_Q1-Pad1_ /+15V_ein Net-_Q1-Pad3_ BC860
+J3 Net-_D4-Pad1_ Net-_J3-Pad2_ Conn_01x02_Male
+C5 Net-_C4-Pad1_ NC_03 3u3
+C7 Net-_C4-Pad1_ NC_04 330n
+C4 Net-_C4-Pad1_ NC_05 330u
+D3 /Ua_aus NC_06 1N5818
+R15 NC_07 Net-_Q4-Pad1_ 100
+R14 /Ua_aus Net-_Q4-Pad3_ 4k7
+D4 Net-_D4-Pad1_ /Ua_aus LED
+Q5 Net-_Q4-Pad3_ Net-_Q4-Pad1_ Net-_J3-Pad2_ BC847
+Q4 Net-_Q4-Pad1_ NC_08 Net-_Q4-Pad3_ BC847
+D1 /+15V_ein /Ua_aus MRA4003T3G
+D2 /Ua_aus Net-_C10-Pad1_ MRA4003T3G
+U3 Net-_C10-Pad1_ /Ua_aus Net-_C4-Pad1_ LM317_TO-220
+TP8 /Ua_aus TestPoint
+TP2 -2V5 TestPoint
+TP5 Net-_C4-Pad1_ TestPoint
+TP7 Net-_C10-Pad1_ TestPoint
+TP3 /+15V_ein TestPoint
+TP1 Net-_J1-Pad2_ TestPoint
+R7 Net-_J1-Pad2_ Net-_Q3-Pad3_ 1k
+R3 /+15V_ein Net-_C4-Pad1_ 1R2
+U1 NC_09 /+15V_ein NC_10 /GND NC_11 Net-_R8-Pad2_ NC_12 NC_13 ADR421ARMZ
+R8 Net-_R11-Pad2_ Net-_R8-Pad2_ 10k
+R11 -2V5 Net-_R11-Pad2_ 10k
+R9 NC_14 Net-_R9-Pad2_ 5k
+C11 V+ /GND 1u
+C8 V+ /GND 10n
+C9 /GND V- 10n
+C2 /+15V_ein /GND 100n
+C1 /+15V_ein /GND 1u
+C6 -2V5 NC_15 10n
+C12 /GND V- 1u
+TP6 -2V5 TestPoint
+TP4 Net-_R8-Pad2_ TestPoint
+U2 NC_16 Net-_R11-Pad2_ Net-_R9-Pad2_ V- NC_17 -2V5 V+ NC_18 OP07
+C15 /Ua_aus NC_19 150n
+C14 /Ua_aus NC_20 15u
+C13 /Ua_aus NC_21 1500u
+R2 /+15V_ein Net-_C4-Pad1_ 1R2
+.end

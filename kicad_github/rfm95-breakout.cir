@@ -1,0 +1,6 @@
+.title KiCad schematic
+U1 GND Net-_J1-Pad1_ /MOSI Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ GND Net-_J3-Pad1_ GND Net-_J2-Pad1_ Net-_J2-Pad2_ VCC Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ RFM95W-868S2
+J3 Net-_J3-Pad1_ Conn_01x01_Male
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ VCC Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Conn_01x06_Male
+J1 Net-_J1-Pad1_ /MOSI Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ GND Conn_01x07_Male
+.end

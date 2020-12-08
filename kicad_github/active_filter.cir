@@ -1,0 +1,26 @@
+.title KiCad schematic
+C3 Net-_C3-Pad1_ GND C
+R1 Net-_C6-Pad2_ Net-_J1-Pad1_ R
+C4 GND /VEE 10uF
+J1 Net-_J1-Pad1_ GND IN_A
+J2 Net-_J2-Pad1_ GND IN_B
+J3 /VEE GND /VCC Conn_01x03_Male
+R3 Net-_C3-Pad1_ Net-_C6-Pad2_ R
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ C
+U1 Net-_C6-Pad1_ Net-_RV1-Pad3_ Net-_C3-Pad1_ /VEE Net-_C5-Pad1_ Net-_RV2-Pad3_ Net-_C7-Pad1_ /VCC ADA4075-2
+C2 /VEE GND 0.1uf
+C1 /VEE GND 0.1uf
+C9 /VCC GND 0.1uF
+C8 /VCC GND 10uF
+C10 /VCC GND 0.1uF
+R2 Net-_C7-Pad2_ Net-_J2-Pad1_ R
+R4 Net-_C5-Pad1_ Net-_C7-Pad2_ R
+C5 Net-_C5-Pad1_ GND C
+J4 Net-_C6-Pad1_ GND OUT_A
+J5 Net-_C7-Pad1_ GND OUT_B
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ C
+RV2 NC_01 Net-_C7-Pad1_ Net-_RV2-Pad3_ R_POT
+RV4 NC_02 GND Net-_C7-Pad1_ R_POT
+RV3 NC_03 GND Net-_C6-Pad1_ R_POT
+RV1 NC_04 Net-_C6-Pad1_ Net-_RV1-Pad3_ R_POT
+.end

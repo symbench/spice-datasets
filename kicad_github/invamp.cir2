@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 NC_01 Net-_R2-Pad1_ Net-_R1-Pad1_ NC_02 NC_03 Net-_R3-Pad1_ NC_04 NC_05 LM741
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ 5k
+R1 Net-_R1-Pad1_ Net-_BT1-Pad1_ 1k
+R2 Net-_R2-Pad1_ Earth .833k
+BT1 Net-_BT1-Pad1_ Earth Battery
+.end

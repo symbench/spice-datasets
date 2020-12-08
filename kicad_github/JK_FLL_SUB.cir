@@ -1,0 +1,11 @@
+.title KiCad schematic
+.include "/home/akshay/kicad_examples/masterslave_jkff/masterslave_jkff.sub"
+X1 j clk k vdd q0 q1 JKFLIPFLOP
+V1 j GND dc 3.3
+V2 clk GND dc 0 pwl(0 0 5m 0 5.005m 3.3 10m 3.3 10.005m 0 15m 0 15.005m 3.3 20m 3.3 20.005m 0 25m 0 25.005m 3.3 30m 3.3 30.005m 0 35m 0 35.005m 3.3 40m 3.3 40.005m 0 45m 0 45.005m 3.3 50m 3.3)
+V3 k GND dc 3.3
+V4 vdd GND dc 3.3
+R1 GND q0 10meg
+R2 GND q1 10meg
+.tran .25m 30m
+.end

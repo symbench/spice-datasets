@@ -1,0 +1,14 @@
+.title KiCad schematic
+R4 Net-_J1-Pad4_ Net-_J3-Pad3_ R
+J1 Net-_BZ1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Conn_01x04
+J2 Net-_J1-Pad4_ Net-_BZ1-Pad1_ Conn_01x02
+J3 Net-_J1-Pad4_ Net-_BZ1-Pad1_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Conn_01x06
+R2 Net-_R2-Pad1_ Net-_D1-Pad2_ R
+D1 Net-_BZ1-Pad1_ Net-_D1-Pad2_ LED
+SW1 Net-_J1-Pad4_ Net-_R1-Pad2_ Switch_SW_Push
+U1 Net-_J3-Pad3_ NC_01 NC_02 Net-_J1-Pad3_ Net-_J1-Pad2_ Net-_R3-Pad1_ Net-_J1-Pad4_ Net-_BZ1-Pad1_ NC_03 NC_04 Net-_R2-Pad1_ Net-_BZ1-Pad2_ Net-_R1-Pad2_ NC_05 NC_06 NC_07 Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Net-_J1-Pad4_ NC_08 Net-_BZ1-Pad1_ NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 ATMEGA328P-PU
+D2 Net-_BZ1-Pad1_ Net-_D2-Pad2_ LED
+R3 Net-_R3-Pad1_ Net-_D2-Pad2_ R
+R1 Net-_BZ1-Pad1_ Net-_R1-Pad2_ R
+BZ1 Net-_BZ1-Pad1_ Net-_BZ1-Pad2_ Buzzer
+.end

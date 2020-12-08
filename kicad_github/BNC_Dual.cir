@@ -1,0 +1,10 @@
+.title KiCad schematic
+C188 NC_01 Net-_C188-Pad2_ C
+C190 NC_02 Net-_C188-Pad2_ C
+C189 Net-_C189-Pad1_ NC_03 C
+C191 Net-_C189-Pad1_ NC_04 C
+J63 Net-_C188-Pad2_ NC_05 Net-_J63-Pad3_ Net-_J63-Pad4_ NC_06 Net-_C189-Pad1_ InConnector
+J66 NC_07 NC_08 Net-_J63-Pad3_ Net-_J63-Pad4_ NC_09 NC_10 OutConnector
+J65 Net-_J63-Pad4_ NC_11 Conn_Coaxial
+J64 Net-_J63-Pad3_ NC_12 Conn_Coaxial
+.end

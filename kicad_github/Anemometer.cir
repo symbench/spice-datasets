@@ -1,0 +1,4 @@
+.title KiCad schematic
+SW1 /Out /COM SW_Reed
+J1 NC_01 /COM /Out NC_02 RJ22
+.end

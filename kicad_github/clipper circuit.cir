@@ -1,0 +1,6 @@
+.title KiCad schematic
+V1 ip GND sin(0 5)
+D1 out ip D_ALT
+R1 out GND 1k
+.tran .25m 30m
+.end

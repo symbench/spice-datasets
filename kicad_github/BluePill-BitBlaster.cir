@@ -1,0 +1,4 @@
+.title KiCad schematic
+J1 +3V3 GND NC_01 NC_02 NC_03 NC_04 /TMS /TDI /TDO /TCK Conn_01x10
+J2 /TCK GND /TDO +3V3 /TMS NC_05 NC_06 NC_07 /TDI GND Conn_02x05_Odd_Even
+.end

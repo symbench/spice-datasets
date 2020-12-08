@@ -1,0 +1,51 @@
+.title KiCad schematic
+Q1 /CurentSensor5V_Scale_10X GND Net-_Q1-Pad3_ 2N7002
+R3 /CurentSensor5V_Scale_10X GND 10K
+R1 /CurentSensor5V Net-_Q1-Pad3_ 10K
+U4 Net-_C12-Pad1_ GND /Enable_5V Net-_C7-Pad1_ Net-_Q5-Pad4_ +5V_BUS LM5050-1
+U3 GND +3V3 Net-_C3-Pad1_ LM1117-3.3
+C9 +3V3 GND 100pF
+C10 +3V3 GND 10uF
+C11 +3V3 GND 10uF
+C6 Net-_C3-Pad1_ GND 25V 10uF
+C3 Net-_C3-Pad1_ GND 50V 100pF
+Q5 Net-_C7-Pad1_ Net-_C7-Pad1_ Net-_C7-Pad1_ Net-_Q5-Pad4_ +5V_BUS PSMN1R8-40YLC
+R13 +5V_BUS Net-_C12-Pad1_ 100R
+C18 +5V_BUS GND 2.2uF
+C12 Net-_C12-Pad1_ GND 100pF
+C14 +5V_BUS GND 100pF
+C16 +5V_BUS GND 1uF
+D3 +5V_BUS GND SMBJxxxAQ
+R11 /Enable_5V GND 10K
+D1 Net-_C7-Pad1_ GND SMBJxxxAQ
+U1 /CurentSensor5V GND +5V_IN Net-_C7-Pad1_ +3V3 INA139
+C7 Net-_C7-Pad1_ GND 1uF
+R9 +5V_IN Net-_C7-Pad1_ 0.5mR
+C4 +3V3 GND 100pF
+C1 +3V3 GND 1uF
+Q3 /CurentSensor5V_Scale_100X GND Net-_Q3-Pad3_ 2N7002
+R7 /CurentSensor5V_Scale_100X GND 10K
+R5 /CurentSensor5V Net-_Q3-Pad3_ 100K
+Q7 Net-_C8-Pad1_ Net-_C8-Pad1_ Net-_C8-Pad1_ Net-_Q6-Pad4_ +12V_BUS PSMN1R8-40YLC
+R10 +12V_IN Net-_C8-Pad1_ 0.5mR
+R6 /CurentSensor12V Net-_Q4-Pad3_ 100K
+R8 /CurentSensor12V_Scale_100X GND 10K
+Q4 /CurentSensor12V_Scale_100X GND Net-_Q4-Pad3_ 2N7002
+C2 +3V3 GND 1uF
+C5 +3V3 GND 100pF
+C8 Net-_C8-Pad1_ GND 1uF
+U2 /CurentSensor12V GND +12V_IN Net-_C8-Pad1_ +3V3 INA139
+D2 Net-_C8-Pad1_ GND SMBJxxxAQ
+R12 /Enable_12V GND 10K
+D4 +12V_BUS GND SMBJxxxAQ
+C17 +12V_BUS GND 1uF
+C15 +12V_BUS GND 100pF
+C13 Net-_C13-Pad1_ GND 100pF
+C19 +12V_BUS GND 2.2uF
+R14 +12V_BUS Net-_C13-Pad1_ 100R
+Q6 Net-_C8-Pad1_ Net-_C8-Pad1_ Net-_C8-Pad1_ Net-_Q6-Pad4_ +12V_BUS PSMN1R8-40YLC
+U5 Net-_C13-Pad1_ GND /Enable_12V Net-_C8-Pad1_ Net-_Q6-Pad4_ +12V_BUS LM5050-1
+R2 /CurentSensor12V Net-_Q2-Pad3_ 10K
+R4 /CurentSensor12V_Scale_10X GND 10K
+Q2 /CurentSensor12V_Scale_10X GND Net-_Q2-Pad3_ 2N7002
+.end

@@ -1,0 +1,19 @@
+.title KiCad schematic
+C13 NC_01 Net-_C13-Pad2_ C
+C15 NC_02 Net-_C13-Pad2_ C
+C14 Net-_C14-Pad1_ NC_03 C
+C16 Net-_C14-Pad1_ NC_04 C
+J8 Net-_C13-Pad2_ NC_05 Net-_J8-Pad3_ Net-_J8-Pad3_ NC_06 Net-_C14-Pad1_ InConnector
+J9 NC_07 NC_08 Net-_J9-Pad3_ Net-_J9-Pad3_ NC_09 NC_10 OutConnector
+R15 Net-_R14-Pad2_ Net-_R13-Pad2_ R
+R12 NC_11 Net-_R11-Pad2_ R
+R13 Net-_R11-Pad2_ Net-_R13-Pad2_ R
+R14 Net-_R11-Pad2_ Net-_R14-Pad2_ R
+R11 Net-_J8-Pad3_ Net-_R11-Pad2_ R
+U3 Net-_R13-Pad2_ Net-_R14-Pad2_ NC_12 NC_13 NC_14 Net-_R19-Pad2_ Net-_J9-Pad3_ NC_15 ADA4807-2ARM
+R20 Net-_R19-Pad2_ Net-_J9-Pad3_ R
+R17 NC_16 Net-_R16-Pad2_ R
+R18 Net-_R16-Pad2_ Net-_J9-Pad3_ R
+R19 Net-_R16-Pad2_ Net-_R19-Pad2_ R
+R16 Net-_R13-Pad2_ Net-_R16-Pad2_ R
+.end

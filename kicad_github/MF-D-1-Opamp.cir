@@ -1,0 +1,24 @@
+.title KiCad schematic
+C21 NC_01 Net-_C21-Pad2_ C
+C23 NC_02 Net-_C21-Pad2_ C
+C22 Net-_C22-Pad1_ NC_03 C
+C24 Net-_C22-Pad1_ NC_04 C
+J12 Net-_C21-Pad2_ NC_05 Net-_J12-Pad3_ Net-_J12-Pad4_ NC_06 Net-_C22-Pad1_ InConnector
+J13 Net-_C25-Pad2_ NC_07 Net-_J13-Pad3_ Net-_J13-Pad4_ NC_08 Net-_C26-Pad1_ OutConnector
+U5 NC_09 Net-_R46-Pad2_ NC_10 NC_11 NC_12 Net-_J13-Pad3_ NC_13 NC_14 OPA333xxD
+R49 Net-_R46-Pad2_ Net-_J13-Pad3_ R
+R43 NC_15 Net-_R41-Pad2_ R
+R45 Net-_R41-Pad2_ Net-_J13-Pad3_ R
+R46 Net-_R41-Pad2_ Net-_R46-Pad2_ R
+R41 Net-_J12-Pad3_ Net-_R41-Pad2_ R
+U6 NC_16 Net-_R48-Pad2_ NC_17 NC_18 NC_19 Net-_J13-Pad4_ NC_20 NC_21 OPA333xxD
+R50 Net-_R48-Pad2_ Net-_J13-Pad4_ R
+R44 NC_22 Net-_R42-Pad2_ R
+R47 Net-_R42-Pad2_ Net-_J13-Pad4_ R
+R48 Net-_R42-Pad2_ Net-_R48-Pad2_ R
+R42 Net-_J12-Pad4_ Net-_R42-Pad2_ R
+C25 NC_23 Net-_C25-Pad2_ C
+C27 NC_24 Net-_C25-Pad2_ C
+C26 Net-_C26-Pad1_ NC_25 C
+C28 Net-_C26-Pad1_ NC_26 C
+.end

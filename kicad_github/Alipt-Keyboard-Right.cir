@@ -1,0 +1,91 @@
+.title KiCad schematic
+U1 LED DATA GND GND SDA SCL SW34A row0 row1 row2 row3 row4 col5 col4 col3 col2 col1 col0 ENCB ENCA VCC RESET GND NC_01 ProMicro
+SW28 col5 Net-_D28-Pad2_ SW_PUSH
+SW0 SW34A Net-_D0-Pad2_ SW_PUSH
+D0 row0 Net-_D0-Pad2_ D
+D1 row0 Net-_D1-Pad2_ D
+SW2 col4 Net-_D2-Pad2_ SW_PUSH
+D2 row0 Net-_D2-Pad2_ D
+SW3 col3 Net-_D3-Pad2_ SW_PUSH
+D3 row0 Net-_D3-Pad2_ D
+SW4 col2 Net-_D4-Pad2_ SW_PUSH
+D4 row0 Net-_D4-Pad2_ D
+SW5 col1 Net-_D5-Pad2_ SW_PUSH
+D5 row0 Net-_D5-Pad2_ D
+SW8 col5 Net-_D8-Pad2_ SW_PUSH
+SW9 col4 Net-_D9-Pad2_ SW_PUSH
+SW10 col3 Net-_D10-Pad2_ SW_PUSH
+SW11 col2 Net-_D11-Pad2_ SW_PUSH
+SW12 col1 Net-_D12-Pad2_ SW_PUSH
+SW7 SW34A Net-_D7-Pad2_ SW_PUSH
+D7 row1 Net-_D7-Pad2_ D
+D8 row1 Net-_D8-Pad2_ D
+D9 row1 Net-_D9-Pad2_ D
+D10 row1 Net-_D10-Pad2_ D
+D11 row1 Net-_D11-Pad2_ D
+D12 row1 Net-_D12-Pad2_ D
+SW14 SW34A Net-_D14-Pad2_ SW_PUSH
+SW15 col5 Net-_D15-Pad2_ SW_PUSH
+SW16 col4 Net-_D16-Pad2_ SW_PUSH
+SW17 col3 Net-_D17-Pad2_ SW_PUSH
+SW18 col2 Net-_D18-Pad2_ SW_PUSH
+SW19 col1 Net-_D19-Pad2_ SW_PUSH
+D14 row2 Net-_D14-Pad2_ D
+D15 row2 Net-_D15-Pad2_ D
+D16 row2 Net-_D16-Pad2_ D
+D17 row2 Net-_D17-Pad2_ D
+D18 row2 Net-_D18-Pad2_ D
+D19 row2 Net-_D19-Pad2_ D
+SW23 col4 Net-_D23-Pad2_ SW_PUSH
+SW24 col3 Net-_D24-Pad2_ SW_PUSH
+SW25 col2 Net-_D25-Pad2_ SW_PUSH
+SW26 col1 Net-_D26-Pad2_ SW_PUSH
+SW22 col5 Net-_D22-Pad2_ SW_PUSH
+SW21 SW34A Net-_D21-Pad2_ SW_PUSH
+D21 row3 Net-_D21-Pad2_ D
+D22 row3 Net-_D22-Pad2_ D
+D23 row3 Net-_D23-Pad2_ D
+D24 row3 Net-_D24-Pad2_ D
+D25 row3 Net-_D25-Pad2_ D
+D26 row3 Net-_D26-Pad2_ D
+SW29 col4 Net-_D29-Pad2_ SW_PUSH
+SW30 col3 Net-_D30-Pad2_ SW_PUSH
+SW31 col2 Net-_D31-Pad2_ SW_PUSH
+D34 row4 SW34B D
+D28 row4 Net-_D28-Pad2_ D
+D29 row4 Net-_D29-Pad2_ D
+D30 row4 Net-_D30-Pad2_ D
+D31 row4 Net-_D31-Pad2_ D
+R1 VCC SDA R
+R2 VCC SCL R
+J2 VCC GND /i2c_d /i2c_c 4PIN
+J1 VCC LED GND LED
+TH1 HOLE
+TH2 HOLE
+TH4 HOLE
+TH5 HOLE
+TH6 HOLE
+TH7 HOLE
+TH3 HOLE
+RSW1 GND RESET SW_RST
+P1 /i2c_c i2c_pin
+P2 /i2c_d i2c_pin
+W1 DATA /i2c_d jumper
+J3 SDA SCL VCC GND OLED
+SW32 col1 Net-_D32-Pad2_ SW_PUSH
+D32 row4 Net-_D32-Pad2_ D
+SW34 ENCA ENCB GND SW34A SW34B Rotary_Encoder_Switch
+SW6 col0 Net-_D6-Pad2_ SW_PUSH
+D6 row0 Net-_D6-Pad2_ D
+SW131 col0 Net-_D13-Pad2_ SW_PUSH
+D13 row1 Net-_D13-Pad2_ D
+SW20 col0 Net-_D20-Pad2_ SW_PUSH
+D20 row2 Net-_D20-Pad2_ D
+SW27 col0 Net-_D27-Pad2_ SW_PUSH
+D27 row3 Net-_D27-Pad2_ D
+SW33 col0 Net-_D33-Pad2_ SW_PUSH
+D33 row4 Net-_D33-Pad2_ D
+SW1 col5 Net-_D1-Pad2_ SW_PUSH
+SW132 col0 Net-_D13-Pad2_ SW_PUSH
+. 
+.end

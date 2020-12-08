@@ -1,0 +1,6 @@
+.title KiCad schematic
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Conn_01x02
+T1 Net-_J2-Pad2_ Net-_J2-Pad1_ Net-_D1-Pad4_ Net-_D1-Pad3_ Transformer_1P_1S
+D1 /Vcc /GND Net-_D1-Pad3_ Net-_D1-Pad4_ FB_RECT
+C1 /Vcc /GND 470uF 50v
+.end

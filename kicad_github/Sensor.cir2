@@ -1,0 +1,5 @@
+.title KiCad schematic
+R10 NC_01 Net-_R10-Pad2_ Net-_R10-Pad3_ NC_02 R_Shunt
+U7 NC_03 Net-_R10-Pad3_ Net-_R10-Pad2_ GND +3V3 +3V3 GND NC_04 INA240
+C10 +3V3 GND C1206
+.end

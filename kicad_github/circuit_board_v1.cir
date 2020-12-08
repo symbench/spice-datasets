@@ -1,0 +1,35 @@
+.title KiCad schematic
+U4 Net-_R3-Pad2_ Net-_R2-Pad1_ NC_01 DB7 DB6 DB5 +5V GND Net-_C5-Pad2_ Net-_C6-Pad1_ DB4 NC_02 NC_03 NC_04 PWM_OUT GATE_OUT E RS NC_05 +5V NC_06 GND NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 ATmega328-PU
+J1 NC_13 Net-_J1-Pad2_ NC_14 Net-_J1-Pad4_ NC_15 DIN-5
+R1 Net-_R1-Pad1_ Net-_J1-Pad2_ 220
+U3 Net-_R1-Pad1_ Net-_J1-Pad4_ NC_16 GND Net-_R2-Pad1_ NC_17 4N35
+Y1 Net-_C5-Pad2_ Net-_C6-Pad1_ 16 MHz Crystal
+C6 Net-_C6-Pad1_ GND 22pF
+C5 GND Net-_C5-Pad2_ 22pF
+R3 +5V Net-_R3-Pad2_ 10K
+J5 Net-_D2-Pad1_ Net-_D2-Pad1_ GND GND GND GND GND GND Net-_D1-Pad2_ Net-_D1-Pad2_ Conn_01x10
+D1 +12V Net-_D1-Pad2_ 1N4148
+D2 Net-_D2-Pad1_ -12V 1N4148
+U2 +12V GND +5V LM7805_TO220
+R2 Net-_R2-Pad1_ +5V 1k
+C1 +12V GND 10uF
+C4 +5V GND 10uF
+J2 GND +5V Net-_J2-Pad3_ RS GND E NC_18 NC_19 NC_20 NC_21 DB4 DB5 DB6 DB7 Net-_J2-Pad15_ GND LCD Connector
+RV1 GND Net-_J2-Pad3_ +5V 10K
+R5 +5V Net-_J2-Pad15_ 220
+U1 Net-_J4-PadT_ Net-_J4-PadT_ Net-_C10-Pad2_ -12V GATE_OUT Net-_J3-PadT_ Net-_J3-PadT_ +12V TL072
+C2 GND +12V 0.1uF
+C7 +12V GND 10uF
+C8 GND -12V 10uF
+C3 -12V GND 0.1uF
+R4 PWM_OUT Net-_C10-Pad2_ 5.7k
+C10 GND Net-_C10-Pad2_ 0.47uF
+J4 GND Net-_J4-PadT_ NC_22 CV Note
+J3 GND Net-_J3-PadT_ NC_23 Gate Out
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+Q1 GND Net-_Q1-Pad2_ Net-_D3-Pad1_ 2N3904
+R7 +5V Net-_D3-Pad2_ 1K
+R6 GATE_OUT Net-_Q1-Pad2_ 1K
+C9 GND Net-_C10-Pad2_ 0.47uF
+R8 GND GATE_OUT 10M
+.end

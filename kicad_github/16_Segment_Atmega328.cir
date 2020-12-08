@@ -1,0 +1,21 @@
+.title KiCad schematic
+U1 NC_01 NC_02 Net-_U1-Pad21_ Net-_U1-Pad4_ Net-_U1-Pad21_ Net-_U1-Pad4_ NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 Net-_U1-Pad21_ NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 ATmega168PA-AU
+U2 Net-_R1-Pad2_ Net-_R2-Pad2_ Net-_R3-Pad2_ Net-_R4-Pad2_ Net-_R5-Pad2_ Net-_R6-Pad2_ Net-_R7-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad2_ Net-_R10-Pad2_ NC_28 Net-_R11-Pad2_ Net-_R12-Pad2_ Net-_R13-Pad2_ Net-_R14-Pad2_ Net-_R15-Pad2_ Net-_R16-Pad2_ Net-_R17-Pad2_ 16_Segment
+R1 NC_29 Net-_R1-Pad2_ ~
+R2 NC_30 Net-_R2-Pad2_ ~
+R3 NC_31 Net-_R3-Pad2_ ~
+R4 NC_32 Net-_R4-Pad2_ ~
+R5 NC_33 Net-_R5-Pad2_ ~
+R6 NC_34 Net-_R6-Pad2_ ~
+R7 NC_35 Net-_R7-Pad2_ ~
+R8 NC_36 Net-_R8-Pad2_ ~
+R9 NC_37 Net-_R9-Pad2_ ~
+R17 NC_38 Net-_R17-Pad2_ ~
+R16 NC_39 Net-_R16-Pad2_ ~
+R15 NC_40 Net-_R15-Pad2_ ~
+R14 NC_41 Net-_R14-Pad2_ ~
+R13 NC_42 Net-_R13-Pad2_ ~
+R12 NC_43 Net-_R12-Pad2_ ~
+R11 NC_44 Net-_R11-Pad2_ ~
+R10 NC_45 Net-_R10-Pad2_ ~
+.end

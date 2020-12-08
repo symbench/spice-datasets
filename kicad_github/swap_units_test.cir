@@ -1,0 +1,24 @@
+.title KiCad schematic
+U2 NC_01 /Level1/out_level_1 /Level1/out_level_2 Net-_U1-Pad1_ Net-_U1-Pad6_ NC_02 NC_03 NC_04 NC_05 NC_06 +5V GND NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 GND +5V NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 PIC18F452-IP
+U1 Net-_U1-Pad1_ Net-_U1-Pad1_ Net-_R1-Pad2_ +5V Net-_R2-Pad2_ Net-_U1-Pad6_ Net-_U1-Pad6_ /Level1/out_level_1 /Level1/out_level_1 Net-_R4-Pad2_ GND Net-_R6-Pad2_ /Level1/out_level_2 /Level1/out_level_2 LM324
+R1 +5V Net-_R1-Pad2_ R
+R2 Net-_R1-Pad2_ Net-_R2-Pad2_ R
+R3 Net-_R2-Pad2_ GND R
+U3 NC_33 NC_34 NC_35 Net-_R8-Pad2_ /Level1/Level2b/out_level_2 /Level1/Level2b/out_level_2 LM324
+R4 +5V Net-_R4-Pad2_ R
+R5 Net-_R4-Pad2_ GND R
+R6 +5V Net-_R6-Pad2_ R
+R7 Net-_R6-Pad2_ GND R
+R8 +5V Net-_R8-Pad2_ R
+R9 Net-_R8-Pad2_ GND R
+R10 +5V Net-_R10-Pad2_ R
+R11 Net-_R10-Pad2_ GND R
+U7 Net-_R12-Pad2_ /Level1/Level3a/out_level_1 /Level1/Level3a/out_level_1 Net-_R10-Pad2_ /Level1/Level3a/out_level_2 /Level1/Level3a/out_level_2 LM324
+R12 +5V Net-_R12-Pad2_ R
+R13 Net-_R12-Pad2_ GND R
+R14 +5V Net-_R14-Pad2_ R
+R15 Net-_R14-Pad2_ GND R
+U8 Net-_R16-Pad2_ /Level1/Level3b/out_level_1 /Level1/Level3b/out_level_1 Net-_R14-Pad2_ /Level1/Level3b/out_level_2 /Level1/Level3b/out_level_2 LM324
+R16 +5V Net-_R16-Pad2_ R
+R17 Net-_R16-Pad2_ GND R
+.end

@@ -1,0 +1,62 @@
+.title KiCad schematic
+U1 Net-_R4-Pad2_ Net-_U1-Pad2_ Net-_R7-Pad2_ Net-_C4-Pad2_ Net-_C1-Pad1_ N-jfet_dual
+R4 Net-_R4-Pad1_ Net-_R4-Pad2_ 1k
+C1 Net-_C1-Pad1_ GND 5p
+R7 Net-_R7-Pad1_ Net-_R7-Pad2_ 1k
+R1 Net-_C1-Pad1_ GND 100M
+R11 Net-_C4-Pad2_ Net-_C5-Pad2_ 20
+R10 Net-_C4-Pad1_ Net-_C4-Pad2_ 1k
+R12 Net-_C5-Pad2_ Net-_C5-Pad1_ 1.24k
+U3 NC_01 Net-_R4-Pad2_ Net-_R7-Pad2_ Vee+ NC_02 Net-_C4-Pad1_ Vcc+ NC_03 LM6171D
+R5 Vcc+ Net-_R5-Pad2_ 1k
+C2 Net-_C2-Pad1_ GND 5p
+R8 Vcc+ Net-_R8-Pad2_ 1k
+R2 Net-_C2-Pad1_ GND 100M
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 10p
+U5 NC_04 GND GND Vee+ NC_05 Net-_R9-Pad1_ NC_06 NC_07 LT6657BHMS8-5
+C3 Vee+ Net-_C3-Pad2_ 1u
+R3 Net-_R3-Pad1_ Vee+ 430
+R6 Net-_R6-Pad1_ Vee+ 430
+R9 Net-_R9-Pad1_ Net-_C3-Pad2_ 200
+J2 Net-_FL1-Pad1_ GND Net-_FL2-Pad3_ Conn_01x03_Male
+C19 GND Vee+ 0.1u
+FL2 Vee GND Net-_FL2-Pad3_ EMI_Filter_LCL
+C10 GND Vee 100u
+C7 GND Vee 0.1u
+C12 GND Vee+ 100u
+C14 GND Vee 0.1u
+C16 GND Vee+ 0.1u
+U6 Net-_C5-Pad1_ Net-_C5-Pad1_ Net-_C5-Pad1_ Vee GND Net-_R13-Pad2_ Vcc Net-_C4-Pad1_ Net-_C4-Pad1_ Net-_C4-Pad1_ LT1995
+J3 Net-_C17-Pad1_ GND Conn_Coaxial
+R13 Net-_C17-Pad1_ Net-_R13-Pad2_ 50
+C17 Net-_C17-Pad1_ GND 5p
+U4 NC_08 Net-_R5-Pad2_ Net-_R8-Pad2_ Vee+ NC_09 Net-_C5-Pad1_ Vcc+ NC_10 LM6171D
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 10p
+R15 Vee+ Vee 50
+C21 GND Vee+ 0.1u
+C20 Vcc+ GND 0.1u
+C22 Vcc+ GND 0.1u
+R14 Vcc+ Vcc 50
+C9 Vcc GND 100u
+C15 Vcc+ GND 0.1u
+C13 Vcc GND 0.1u
+C11 Vcc+ GND 100u
+C6 Vcc GND 0.1u
+FL1 Net-_FL1-Pad1_ GND Vcc EMI_Filter_LCL
+TP1 Net-_C17-Pad1_ TestPoint
+C18 Vcc+ GND 0.1u
+C25 GND Vee+ 0.1u
+C24 Vcc+ GND 0.1u
+RV1 Net-_R7-Pad1_ Vcc+ Net-_R4-Pad1_ 100
+RV2 Net-_C5-Pad1_ Net-_C5-Pad1_ Net-_C5-Pad2_ 4.75k
+TP2 Net-_C4-Pad1_ TestPoint
+TP3 Net-_C5-Pad1_ TestPoint
+U2 Net-_R5-Pad2_ Net-_U2-Pad2_ Net-_R8-Pad2_ Net-_C5-Pad2_ Net-_C2-Pad1_ N-jfet_dual
+C23 GND Vee+ 0.1u
+U7 Net-_C3-Pad2_ Net-_C3-Pad2_ Net-_U1-Pad2_ Net-_R3-Pad1_ Net-_R6-Pad1_ Net-_U2-Pad2_ DMMT3904
+H1 GND MountingHole_Pad
+H2 GND MountingHole_Pad
+H3 GND MountingHole_Pad
+H4 GND MountingHole_Pad
+J1 Net-_C1-Pad1_ GND Net-_C2-Pad1_ Conn_01x03_Male
+.end

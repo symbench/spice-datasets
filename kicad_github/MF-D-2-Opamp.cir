@@ -1,0 +1,34 @@
+.title KiCad schematic
+C29 NC_01 Net-_C29-Pad2_ C
+C31 NC_02 Net-_C29-Pad2_ C
+C30 Net-_C30-Pad1_ NC_03 C
+C32 Net-_C30-Pad1_ NC_04 C
+J14 Net-_C29-Pad2_ NC_05 Net-_J14-Pad3_ Net-_J14-Pad4_ NC_06 Net-_C30-Pad1_ InConnector
+J15 Net-_C33-Pad2_ NC_07 Net-_J15-Pad3_ Net-_J15-Pad4_ NC_08 Net-_C34-Pad1_ OutConnector
+R59 Net-_R56-Pad2_ Net-_R55-Pad2_ R
+R53 NC_09 Net-_R51-Pad2_ R
+R55 Net-_R51-Pad2_ Net-_R55-Pad2_ R
+R56 Net-_R51-Pad2_ Net-_R56-Pad2_ R
+R51 Net-_J14-Pad3_ Net-_R51-Pad2_ R
+U7 Net-_R55-Pad2_ Net-_R56-Pad2_ NC_10 NC_11 NC_12 Net-_R66-Pad2_ Net-_J15-Pad3_ NC_13 ADA4807-2ARM
+R69 Net-_R66-Pad2_ Net-_J15-Pad3_ R
+R63 NC_14 Net-_R61-Pad2_ R
+R65 Net-_R61-Pad2_ Net-_J15-Pad3_ R
+R66 Net-_R61-Pad2_ Net-_R66-Pad2_ R
+R61 Net-_R55-Pad2_ Net-_R61-Pad2_ R
+R60 Net-_R58-Pad2_ Net-_R57-Pad2_ R
+R54 NC_15 Net-_R52-Pad2_ R
+R57 Net-_R52-Pad2_ Net-_R57-Pad2_ R
+R58 Net-_R52-Pad2_ Net-_R58-Pad2_ R
+R52 Net-_J14-Pad4_ Net-_R52-Pad2_ R
+U8 Net-_R57-Pad2_ Net-_R58-Pad2_ NC_16 NC_17 NC_18 Net-_R68-Pad2_ Net-_J15-Pad4_ NC_19 ADA4807-2ARM
+R70 Net-_R68-Pad2_ Net-_J15-Pad4_ R
+R64 NC_20 Net-_R62-Pad2_ R
+R67 Net-_R62-Pad2_ Net-_J15-Pad4_ R
+R68 Net-_R62-Pad2_ Net-_R68-Pad2_ R
+R62 Net-_R57-Pad2_ Net-_R62-Pad2_ R
+C33 NC_21 Net-_C33-Pad2_ C
+C35 NC_22 Net-_C33-Pad2_ C
+C34 Net-_C34-Pad1_ NC_23 C
+C36 Net-_C34-Pad1_ NC_24 C
+.end

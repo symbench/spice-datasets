@@ -1,0 +1,34 @@
+.title KiCad schematic
+C45 NC_01 Net-_C45-Pad2_ C
+C47 NC_02 Net-_C45-Pad2_ C
+C46 Net-_C46-Pad1_ NC_03 C
+C48 Net-_C46-Pad1_ NC_04 C
+J18 Net-_C45-Pad2_ NC_05 Net-_J18-Pad3_ Net-_J18-Pad3_ NC_06 Net-_C46-Pad1_ InConnector
+J19 NC_07 NC_08 Net-_J19-Pad3_ Net-_J19-Pad3_ NC_09 NC_10 OutConnector
+U11 NC_11 Net-_R115-Pad1_ Net-_R113-Pad2_ NC_12 NC_13 Net-_J19-Pad3_ NC_14 NC_15 OPA333xxD
+R115 Net-_R115-Pad1_ Net-_J19-Pad3_ R
+R114 NC_16 Net-_R113-Pad2_ R
+R112 Net-_R111-Pad2_ Net-_J19-Pad3_ R
+R113 Net-_R111-Pad2_ Net-_R113-Pad2_ R
+R111 Net-_J18-Pad3_ Net-_R111-Pad2_ R
+R116 NC_17 Net-_R115-Pad1_ R
+C49 NC_18 Net-_C49-Pad2_ C
+C51 NC_19 Net-_C49-Pad2_ C
+C50 Net-_C50-Pad1_ NC_20 C
+C52 Net-_C50-Pad1_ NC_21 C
+J20 Net-_C49-Pad2_ NC_22 Net-_J20-Pad3_ Net-_J20-Pad3_ NC_23 Net-_C50-Pad1_ InConnector
+J21 NC_24 NC_25 Net-_J21-Pad3_ Net-_J21-Pad3_ NC_26 NC_27 OutConnector
+R120 NC_28 Net-_R119-Pad2_ R
+R118 Net-_R117-Pad2_ Net-_R118-Pad2_ R
+R119 Net-_R117-Pad2_ Net-_R119-Pad2_ R
+R117 Net-_J20-Pad3_ Net-_R117-Pad2_ R
+U12 Net-_R118-Pad2_ Net-_R121-Pad1_ Net-_R119-Pad2_ NC_29 Net-_R125-Pad2_ Net-_R127-Pad1_ Net-_J21-Pad3_ NC_30 ADA4807-2ARM
+R126 NC_31 Net-_R125-Pad2_ R
+R124 Net-_R123-Pad2_ Net-_J21-Pad3_ R
+R125 Net-_R123-Pad2_ Net-_R125-Pad2_ R
+R123 Net-_R118-Pad2_ Net-_R123-Pad2_ R
+R121 Net-_R121-Pad1_ Net-_R118-Pad2_ R
+R122 NC_32 Net-_R121-Pad1_ R
+R127 Net-_R127-Pad1_ Net-_J21-Pad3_ R
+R128 NC_33 Net-_R127-Pad1_ R
+.end

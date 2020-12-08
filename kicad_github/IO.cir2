@@ -1,0 +1,42 @@
+.title KiCad schematic
+J2 IO0 Net-_J2-Pad2_ GND Conn_01x03
+J3 IO1 Net-_J2-Pad2_ GND Conn_01x03
+J4 IO2 Net-_J2-Pad2_ GND Conn_01x03
+J5 IO3 Net-_J2-Pad2_ GND Conn_01x03
+J7 IO4 Net-_J10-Pad2_ GND Conn_01x03
+J8 IO5 Net-_J10-Pad2_ GND Conn_01x03
+J9 IO6 Net-_J10-Pad2_ GND Conn_01x03
+J10 IO7 Net-_J10-Pad2_ GND Conn_01x03
+J12 IO8 Net-_J12-Pad2_ GND Conn_01x03
+J13 IO9 Net-_J12-Pad2_ GND Conn_01x03
+J14 IO10 Net-_J12-Pad2_ GND Conn_01x03
+J15 IO11 Net-_J12-Pad2_ GND Conn_01x03
+J17 IO12 Net-_J17-Pad2_ GND Conn_01x03
+J18 IO13 Net-_J17-Pad2_ GND Conn_01x03
+J19 IO14 Net-_J17-Pad2_ GND Conn_01x03
+J20 IO15 Net-_J17-Pad2_ GND Conn_01x03
+JP1 +5V Net-_J2-Pad2_ +3V3 VCC Source
+JP2 +5V Net-_J10-Pad2_ +3V3 VCC Source
+JP3 +5V Net-_J12-Pad2_ +3V3 VCC Source
+JP4 +5V Net-_J17-Pad2_ +3V3 VCC Source
+U2 Net-_R11-Pad1_ Net-_R11-Pad1_ Net-_R11-Pad1_ Net-_R11-Pad1_ Net-_R11-Pad1_ Net-_R18-Pad1_ Net-_R17-Pad1_ Net-_R16-Pad1_ Net-_R15-Pad1_ Net-_R19-Pad1_ Net-_R20-Pad1_ Net-_R21-Pad1_ Net-_R22-Pad1_ GND Net-_R27-Pad1_ Net-_R28-Pad1_ Net-_R29-Pad1_ Net-_R30-Pad1_ Net-_R26-Pad1_ Net-_R25-Pad1_ Net-_R24-Pad1_ Net-_R23-Pad1_ Net-_R12-Pad1_ Net-_R11-Pad1_ GND NC_01 NC_02 +3V3 PCA9685PW
+R12 Net-_R12-Pad1_ GND 10k
+C10 +3V3 GND 10uF
+R11 Net-_R11-Pad1_ GND 10k
+R15 Net-_R15-Pad1_ IO11 220
+R16 Net-_R16-Pad1_ IO10 220
+R17 Net-_R17-Pad1_ IO9 220
+R18 Net-_R18-Pad1_ IO8 220
+R19 Net-_R19-Pad1_ IO12 220
+R20 Net-_R20-Pad1_ IO13 220
+R21 Net-_R21-Pad1_ IO14 220
+R22 Net-_R22-Pad1_ IO15 220
+R23 Net-_R23-Pad1_ IO7 220
+R24 Net-_R24-Pad1_ IO6 220
+R25 Net-_R25-Pad1_ IO5 220
+R26 Net-_R26-Pad1_ IO4 220
+R27 Net-_R27-Pad1_ IO0 220
+R28 Net-_R28-Pad1_ IO1 220
+R29 Net-_R29-Pad1_ IO2 220
+R30 Net-_R30-Pad1_ IO3 220
+.end

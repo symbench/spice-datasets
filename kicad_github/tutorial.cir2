@@ -1,0 +1,14 @@
+.title KiCad schematic
+Q1 Net-_C3-Pad2_ Net-_C1-Pad1_ Net-_C2-Pad1_ BC547
+R4 Net-_C2-Pad1_ Earth R
+C1 Net-_C1-Pad1_ NC_01 C
+C2 Net-_C2-Pad1_ Earth C
+R2 Net-_C1-Pad1_ Earth R
+R1 VCC Net-_C1-Pad1_ R
+R3 VCC Net-_C3-Pad2_ R
+C3 NC_02 Net-_C3-Pad2_ C
+T1 VAC Earth OUT- Net-_C4-Pad1_ Transformer_1P_1S
+U1 Net-_C4-Pad1_ OUT- OUT+ L7805
+C4 Net-_C4-Pad1_ OUT- .0002mF
+C5 OUT+ OUT- C
+.end

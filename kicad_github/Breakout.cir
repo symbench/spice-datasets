@@ -1,0 +1,22 @@
+.title KiCad schematic
+J3 GND Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ DB9_Female_MountingHoles
+J4 GND Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ DB9_Female_MountingHoles
+J5 GND Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ DB9_Female_MountingHoles
+J1 GND Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ DB9_Male_MountingHoles
+J10 GND Net-_J10-Pad1_ Net-_J10-Pad2_ Net-_J10-Pad3_ Net-_J10-Pad4_ Net-_J10-Pad5_ Net-_J10-Pad6_ Net-_J10-Pad7_ Net-_J10-Pad8_ Net-_J10-Pad9_ DB9_Female_MountingHoles
+J11 GND Net-_J10-Pad1_ Net-_J10-Pad2_ Net-_J10-Pad3_ Net-_J10-Pad4_ Net-_J10-Pad5_ Net-_J10-Pad6_ Net-_J10-Pad7_ Net-_J10-Pad8_ Net-_J10-Pad9_ DB9_Female_MountingHoles
+J12 GND Net-_J10-Pad1_ Net-_J10-Pad2_ Net-_J10-Pad3_ Net-_J10-Pad4_ Net-_J10-Pad5_ Net-_J10-Pad6_ Net-_J10-Pad7_ Net-_J10-Pad8_ Net-_J10-Pad9_ DB9_Female_MountingHoles
+J9 GND Net-_J10-Pad1_ Net-_J10-Pad2_ Net-_J10-Pad3_ Net-_J10-Pad4_ Net-_J10-Pad5_ Net-_J10-Pad6_ Net-_J10-Pad7_ Net-_J10-Pad8_ Net-_J10-Pad9_ DB9_Male_MountingHoles
+J14 GND Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Net-_J13-Pad4_ Net-_J13-Pad5_ Net-_J13-Pad6_ Net-_J13-Pad7_ Net-_J13-Pad8_ Net-_J13-Pad9_ DB9_Female_MountingHoles
+J15 GND Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Net-_J13-Pad4_ Net-_J13-Pad5_ Net-_J13-Pad6_ Net-_J13-Pad7_ Net-_J13-Pad8_ Net-_J13-Pad9_ DB9_Female_MountingHoles
+J16 GND Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Net-_J13-Pad4_ Net-_J13-Pad5_ Net-_J13-Pad6_ Net-_J13-Pad7_ Net-_J13-Pad8_ Net-_J13-Pad9_ DB9_Female_MountingHoles
+J13 GND Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Net-_J13-Pad4_ Net-_J13-Pad5_ Net-_J13-Pad6_ Net-_J13-Pad7_ Net-_J13-Pad8_ Net-_J13-Pad9_ DB9_Male_MountingHoles
+J6 GND Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ DB9_Female_MountingHoles
+J7 GND Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ DB9_Female_MountingHoles
+J8 GND Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ DB9_Female_MountingHoles
+J2 GND Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ DB9_Male_MountingHoles
+H1 GND MountingHole_Pad
+H2 GND MountingHole_Pad
+H3 GND MountingHole_Pad
+H4 GND MountingHole_Pad
+.end

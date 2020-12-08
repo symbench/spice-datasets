@@ -1,0 +1,17 @@
+.title KiCad schematic
+U1 +3V3 /P1.0 Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ Net-_J2-Pad10_ Net-_J3-Pad10_ Net-_J3-Pad9_ Net-_J3-Pad8_ Net-_J3-Pad7_ Net-_J3-Pad6_ /~RST Net-_J3-Pad4_ Net-_J3-Pad3_ Net-_J3-Pad2_ GND MSP430G2553_AK
+J3 GND Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ /~RST Net-_J3-Pad6_ Net-_J3-Pad7_ Net-_J3-Pad8_ Net-_J3-Pad9_ Net-_J3-Pad10_ Conn_01x10
+J2 +3V3 /P1.0 Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ Net-_J2-Pad10_ Conn_01x10
+C1 +3V3 GND 1uF
+U2 GND +3V3 +5V AMS1117-3.3
+C3 +3V3 GND 10uF
+C2 +5V GND 10uF
+D1 Net-_D1-Pad1_ +3V3 LED
+D2 Net-_D2-Pad1_ +3V3 LED
+R1 Net-_D1-Pad1_ GND 100
+R2 Net-_D2-Pad1_ /P1.0 100
+SW1 GND /~RST SW_Push
+R3 +3V3 /~RST 100
+C4 /~RST GND 10nF
+J1 +5V NC_01 NC_02 NC_03 GND GND USB_B_Mini
+.end

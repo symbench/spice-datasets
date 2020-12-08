@@ -1,0 +1,7 @@
+.title KiCad schematic
+L1 VCC Net-_D1-Pad2_ Meter Coil
+R1 Net-_Q1-Pad1_ Net-_D11-Pad1_ 220
+D1 VCC Net-_D1-Pad2_ SKIF08 26
+Q1 Net-_Q1-Pad1_ Net-_D1-Pad2_ GND IRLR024N
+D11 Net-_D11-Pad1_ Arduino
+.end

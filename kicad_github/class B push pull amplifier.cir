@@ -1,0 +1,21 @@
+.title KiCad schematic
+.include "/home/akshay/Downloads/Design_Of_Binary_Phase_Shift_Keying_(bpsk)_Modulator_&_Demodulator_Using_Esim_By_Prof_Raghu_K/Design_Of_BPSK_by_Raghu/BPSK/PNP.lib"
+.include "/home/akshay/Downloads/Rc_Phase_Shift_Oscillator_By_Ms_Rohini.n,_Parkavi.k/NPN.lib"
+V1 ip GND sin(0 20 1000)
+C2 Net-_C2-Pad1_ ip 100u
+C1 Net-_C1-Pad1_ ip 100u
+R1 Net-_Q3-Pad1_ Net-_D1-Pad2_ 68
+D1 Net-_D1-Pad2_ Net-_D1-Pad1_ D_ALT
+R2 Net-_D1-Pad1_ Net-_R2-Pad2_ 1
+R3 Net-_R2-Pad2_ Net-_Q1-Pad1_ 68
+R5 Net-_Q3-Pad1_ Net-_Q2-Pad1_ 1
+V3 GND Net-_Q1-Pad1_ dc 12
+V2 Net-_Q3-Pad1_ GND dc 12
+Q2 Net-_Q2-Pad1_ Net-_C2-Pad1_ Net-_Q2-Pad3_ Q2N2222
+C3 Net-_C3-Pad1_ out 100u
+R4 Net-_C3-Pad1_ GND 4
+Q1 Net-_Q1-Pad1_ Net-_C1-Pad1_ out Q2N2907A
+Q3 Net-_Q3-Pad1_ Net-_Q2-Pad3_ out Q2N2222
+Q4 out Net-_Q1-Pad1_ Net-_Q1-Pad1_ Q2N2222
+.tran .25m 30m
+.end

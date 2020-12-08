@@ -1,0 +1,51 @@
+.title KiCad schematic
+R3 Net-_D1-Pad1_ Net-_D1-Pad2_ 150k
+TP1 Net-_D1-Pad1_ TestPoint
+TP7 /VDCGND TestPoint
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ BZX84Cxx
+D3 Net-_D1-Pad1_ /V-1 1.5KExxCA
+D5 Net-_D5-Pad1_ /VDC+ LED
+R5 /VDC+ Net-_Q3-Pad3_ 4k7
+R7 Net-_Q3-Pad1_ /VDCGND 100
+Q5 Net-_Q3-Pad3_ Net-_Q3-Pad1_ Net-_J1-Pad2_ BC847
+Q3 Net-_Q3-Pad1_ /VDCGND Net-_Q3-Pad3_ BC847
+J1 Net-_D5-Pad1_ Net-_J1-Pad2_ Conn_01x02_Male
+L3 /VDC+ Net-_C1-Pad1_ 100u
+TP2 Net-_D2-Pad2_ TestPoint
+TP8 /VDC+ TestPoint
+L6 /VDC- Net-_C2-Pad2_ 100u
+D4 /V+2 Net-_D2-Pad2_ 1.5KExxCA
+R2 /V+2 Net-_D2-Pad1_ 100k
+R4 Net-_D2-Pad1_ Net-_D2-Pad2_ 150k
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ BZX84Cxx
+Q2 Net-_D2-Pad1_ Net-_D2-Pad2_ NC_01 IRLML0030
+Q1 Net-_D1-Pad2_ Net-_D1-Pad1_ NC_02 IRLML9301
+R1 Net-_D1-Pad2_ /V-1 100k
+D6 Net-_D6-Pad1_ /VDCGND LED
+R6 /VDCGND Net-_Q4-Pad3_ 4k7
+R8 Net-_Q4-Pad1_ /VDC- 100
+Q6 Net-_Q4-Pad3_ Net-_Q4-Pad1_ Net-_J2-Pad2_ BC847
+Q4 Net-_Q4-Pad1_ /VDC- Net-_Q4-Pad3_ BC847
+J2 Net-_D6-Pad1_ Net-_J2-Pad2_ Conn_01x02_Male
+TP9 /VDC- TestPoint
+C3 Net-_C1-Pad1_ Net-_C1-Pad2_ 330n
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 33u
+C5 Net-_C1-Pad1_ Net-_C1-Pad2_ 3n3
+C9 /VDC+ /VDCGND 330n
+C7 /VDC+ /VDCGND 33u
+C11 /VDC+ /VDCGND 3n3
+C4 Net-_C2-Pad1_ Net-_C2-Pad2_ 330n
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 33u
+C6 Net-_C2-Pad1_ Net-_C2-Pad2_ 3n3
+C10 /VDCGND /VDC- 330n
+C8 /VDCGND /VDC- 33u
+C12 /VDCGND /VDC- 3n3
+L4 /VDCGND Net-_C1-Pad2_ 100u
+L5 /VDCGND Net-_C2-Pad1_ 100u
+TP3 Net-_C1-Pad1_ TestPoint
+TP6 Net-_C2-Pad2_ TestPoint
+TP4 Net-_C1-Pad2_ TestPoint
+TP5 Net-_C2-Pad1_ TestPoint
+L2 Net-_D2-Pad2_ Net-_C2-Pad2_ Net-_C2-Pad1_ /V+2 L_Core_Ferrite_Coupled_1243
+L1 /V-1 Net-_C1-Pad2_ Net-_C1-Pad1_ Net-_D1-Pad1_ L_Core_Ferrite_Coupled_1243
+.end

@@ -1,0 +1,10 @@
+.title KiCad schematic
+.include "/home/akshay/Downloads/kicad-simulation-examples-master/libs/spice_models.lib"
+X1 1 2 Net-_X1-PadOut_ 4 NAND
+X2 Net-_X1-PadOut_ Net-_X1-PadOut_ 3 4 NAND
+R1 GND 3 10meg
+V1 1 GND dc 0 pulse(0 3.3 0 0 0 100m 200m)
+V2 2 GND dc 0 pulse(0 3.3 50m 0 0 50m 100m)
+V3 4 GND dc 3.3
+.tran 1m 400m
+.end

@@ -1,0 +1,29 @@
+.title KiCad schematic
+U1 Net-_C2-Pad1_ Net-_R1-Pad2_ Net-_R2-Pad1_ GND /~RES /RES VCC VCC TL7705B
+R1 VCC Net-_R1-Pad2_ 22k
+R3 /RES GND 3.3k
+R2 Net-_R2-Pad1_ Net-_C1-Pad1_ 470
+SW1 GND Net-_R1-Pad2_ RESET
+C1 Net-_C1-Pad1_ GND 15uF
+C2 Net-_C2-Pad1_ GND 0.1uF
+SW2 GND /~NMI PANIC
+Q1 /~NMI VCC GND DS1813
+X1 NC_01 GND Net-_U2-Pad3_ VCC 16MHz
+U2 VCC Net-_U2-Pad2_ Net-_U2-Pad3_ VCC NC_02 Net-_U2-Pad2_ GND NC_03 NC_04 GND GND GND GND VCC 74HC74
+J1 /POWER_IN GND GND NC_05 POWER_IN
+F2 /POWER_IN Net-_C4-Pad1_ 1A
+F1 VCC +5V 200mA
+R4 VCC Net-_D1-Pad2_ 470
+D1 GND Net-_D1-Pad2_ LED
+C3 +5V GND 100uF
+C4 Net-_C4-Pad1_ GND 100uF
+SW3 Net-_C4-Pad1_ VCC NC_06 SPDT
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+H5 MountingHole
+H6 MountingHole
+C8 VCC GND 0.1uF
+RN1 /~RES NC_07 NC_08 NC_09 VCC NC_10 /~NMI NC_11 NC_12 VCC 3.3k
+.end

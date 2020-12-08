@@ -1,0 +1,21 @@
+.title KiCad schematic
+C115 NC_01 Net-_C115-Pad2_ C
+C117 NC_02 Net-_C115-Pad2_ C
+C116 Net-_C116-Pad1_ NC_03 C
+C118 Net-_C116-Pad1_ NC_04 C
+J40 Net-_C115-Pad2_ NC_05 Net-_J40-Pad3_ Net-_J40-Pad4_ NC_06 Net-_C116-Pad1_ InConnector
+J41 NC_07 NC_08 Net-_C120-Pad1_ Net-_C119-Pad1_ NC_09 NC_10 OutConnector
+R265 Net-_C119-Pad1_ Net-_C119-Pad2_ R
+R258 Net-_C119-Pad2_ Net-_J40-Pad4_ R
+R257 Net-_R257-Pad1_ Net-_J40-Pad4_ R
+R261 Net-_R257-Pad1_ NC_11 R
+R262 Net-_C119-Pad2_ NC_12 R
+C119 Net-_C119-Pad1_ Net-_C119-Pad2_ C
+R266 Net-_C120-Pad1_ Net-_C120-Pad2_ R
+R260 Net-_C120-Pad2_ Net-_J40-Pad3_ R
+R259 Net-_R259-Pad1_ Net-_J40-Pad3_ R
+R263 Net-_R259-Pad1_ NC_13 R
+R264 Net-_C120-Pad2_ NC_14 R
+C120 Net-_C120-Pad1_ Net-_C120-Pad2_ C
+U24 Net-_C119-Pad1_ Net-_C119-Pad2_ Net-_R257-Pad1_ NC_15 Net-_R259-Pad1_ Net-_C120-Pad2_ Net-_C120-Pad1_ NC_16 ADA4807-2ARM
+.end

@@ -1,0 +1,9 @@
+.title KiCad schematic
+U13 +5V NC_01 /VIN_AC /SW_24V_1 /SW_24V_2 /VIN_AC NC_02 Net-_D6-PadA_ Relay-EC2-5NU
+D6 Net-_D6-PadA_ +5V Schottky_SMA
+Q4 Net-_D6-PadA_ Net-_Q4-PadG_ GND MOSFET-N
+R32 Net-_Q4-PadG_ NC_03 RES_0603
+R31 Net-_D6-PadA_ Net-_D5-PadC_ RES_0603
+J3 /SW_24V_1 /VIN_GND /SW_24V_2 /VIN_GND term_block_4-pin
+D5 +5V Net-_D5-PadC_ LED_0603
+.end

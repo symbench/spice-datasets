@@ -1,0 +1,19 @@
+.title KiCad schematic
+.include "../libs/spice_models.lib"
+V1 D 0 dc 0 pulse(0 3.3 0 0 0 100m 200m)
+V2 VDD GND 3.3
+V3 CLK 0 dc 0 pulse(0 3.3 25m 0 0 50m 100m)
+X1 Net-_X1-PadA_ nq q VDD NAND
+X2 Net-_X2-PadA_ CLK Net-_X1-PadA_ VDD NAND
+X3 Net-_X1-PadA_ CLK Net-_X3-PadC_ Net-_X3-PadOut_ VDD NAND3
+X4 q Net-_X3-PadOut_ nq VDD NAND
+X5 Net-_X3-PadC_ Net-_X1-PadA_ Net-_X2-PadA_ VDD NAND
+X6 Net-_X3-PadOut_ D Net-_X3-PadC_ VDD NAND
+R2 0 q 10meg
+R1 0 nq 10meg
+.tran 1m 400m
+.control
+run
+plot v(D)+15 v(CLK)+10 v(Q)+5 v(nQ)
+.endc
+.end

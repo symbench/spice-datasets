@@ -1,0 +1,6 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ DIODE
+T1 AC Earth Net-_D2-Pad1_ Net-_R1-Pad2_ Net-_D1-Pad1_ Transformer_1P_SS
+D2 Net-_D2-Pad1_ Net-_D1-Pad2_ DIODE
+R1 Net-_D1-Pad2_ Net-_R1-Pad2_ 500ohm
+.end

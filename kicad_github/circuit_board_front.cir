@@ -1,0 +1,13 @@
+.title KiCad schematic
+J2 GND Net-_J2-PadT_ NC_01 Out 1
+R11 out_1 Net-_J2-PadT_ 1K
+J4 GND Net-_J4-PadT_ NC_02 CV input 1
+J3 GND in_1 NC_03 audio input 1
+RV1 GND cv_1 Net-_J4-PadT_ B100K
+R32 out_2 Net-_J7-PadT_ 1K
+J1 GND Net-_J1-PadT_ NC_04 CV input 2
+J6 GND in_2 NC_05 audio input 2
+RV4 GND cv_2 Net-_J1-PadT_ B100K
+J7 GND Net-_J7-PadT_ NC_06 Out
+J8 in_1 cv_1 in_2 cv_2 out_1 out_2 GND front board connector
+.end

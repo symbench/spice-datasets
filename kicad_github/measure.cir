@@ -1,0 +1,11 @@
+.title KiCad schematic
+R1 Net-_R1-Pad1_ Net-_J2-Pad1_ 1M
+C1 NC_01 NC_02 C
+R2 GND Net-_R2-Pad2_ 3.6k
+R3 GND Net-_R3-Pad2_ 24k
+R4 Net-_R4-Pad1_ GND 75k
+U1 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 Net-_R2-Pad2_ NC_13 Net-_R1-Pad1_ Net-_R4-Pad1_ Net-_R3-Pad2_ NC_14 CD4052B
+J2 Net-_J2-Pad1_ V_Ω
+J1 NC_15 GROUND
+J3 NC_16 Current
+.end

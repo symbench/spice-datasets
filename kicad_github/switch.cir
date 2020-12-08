@@ -1,0 +1,45 @@
+.title KiCad schematic
+R13 NC_01 NC_02 R_PHOTO
+K1 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 AZ850P2-x
+Q2 NC_13 NC_14 NC_15 Q_NPN_EBC
+Q3 NC_16 NC_17 NC_18 Q_NPN_EBC
+D5 NC_19 NC_20 D
+D7 NC_21 NC_22 D
+R11 NC_23 NC_24 R
+R15 NC_25 NC_26 R
+R14 NC_27 NC_28 R
+R9 NC_29 NC_30 R
+J4 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 Screw_Terminal_01x06
+J1 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 Conn_02x04_Odd_Even
+J2 NC_45 NC_46 NC_47 NC_48 Conn_01x04_Male
+J3 NC_49 NC_50 NC_51 NC_52 Conn_01x04_Male
+SW2 NC_53 NC_54 SW_Resistave_Touch
+SW1 NC_55 NC_56 SW_Resistave_Touch
+U2 Net-_C3-Pad1_ Net-_C3-Pad2_ Net-_R1-Pad1_ +12V Net-_D1-Pad1_ Net-_C4-Pad1_ Net-_C5-Pad1_ Net-_D3-Pad2_ Net-_D1-Pad2_ Net-_C5-Pad1_ GND Net-_D2-Pad1_ Net-_C5-Pad1_ Net-_D4-Pad2_ LM324
+U1 Net-_C1-Pad1_ Net-_R1-Pad1_ GND PIR
+R1 Net-_R1-Pad1_ GND R
+R2 Net-_C3-Pad2_ Net-_C2-Pad1_ R
+R4 Net-_C3-Pad1_ Net-_C3-Pad2_ R
+C2 Net-_C2-Pad1_ GND CP
+C1 Net-_C1-Pad1_ GND CP
+R3 +12V Net-_C1-Pad1_ R
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ CP
+R6 Net-_C4-Pad2_ Net-_C3-Pad1_ R
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D
+D2 Net-_D2-Pad1_ Net-_D1-Pad1_ D
+R7 Net-_D2-Pad1_ GND R
+R5 +12V Net-_D1-Pad2_ R
+R8 Net-_C5-Pad1_ Net-_C4-Pad1_ R
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ D
+D4 Net-_D3-Pad1_ Net-_D4-Pad2_ D
+R10 Net-_D3-Pad1_ GND R
+R12 +12V Net-_C6-Pad1_ R
+C6 Net-_C6-Pad1_ GND CP
+C5 Net-_C5-Pad1_ Net-_C4-Pad1_ C
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ C
+U3 GND Net-_C6-Pad1_ +12V Net-_D3-Pad1_ +12V Net-_R16-Pad1_ NC_57 GND Net-_D6-Pad1_ 4538
+R16 Net-_R16-Pad1_ Net-_Q1-Pad2_ R
+R17 Net-_Q1-Pad2_ GND R
+Q1 GND Net-_Q1-Pad2_ Analog_0 2N3904
+D6 Net-_D6-Pad1_ Analog_0 D
+.end

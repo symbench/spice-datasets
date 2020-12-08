@@ -1,0 +1,4 @@
+.title KiCad schematic
+C1 GND +3V3 100n
+U1 NC_01 GND +3V3 NC_02 GND NC_03 NC_04 GND SN65HVD233
+.end

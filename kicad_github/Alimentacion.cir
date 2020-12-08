@@ -1,0 +1,19 @@
+.title KiCad schematic
+U1 Net-_Q1-Pad3_ Net-_C2-Pad1_ Net-_C3-Pad1_ LM317_TO3
+C3 Net-_C3-Pad1_ GND C
+C1 Net-_C1-Pad1_ GND C
+R5 Net-_C3-Pad1_ Net-_Q1-Pad3_ R
+R6 Net-_Q1-Pad3_ Net-_J2-Pad2_ R
+R3 Net-_J2-Pad2_ GND R
+R1 Net-_C3-Pad1_ Net-_D1-Pad2_ R
+R2 Net-_C1-Pad1_ Net-_R2-Pad2_ R
+R4 Net-_Q1-Pad1_ Net-_J2-Pad2_ R
+Q1 Net-_Q1-Pad1_ GND Net-_Q1-Pad3_ BC847
+D1 GND Net-_D1-Pad2_ LED
+C2 Net-_C2-Pad1_ GND CP
+SW1 GND Net-_Q1-Pad3_ Pulsador
+RV1 Net-_C3-Pad1_ Net-_R2-Pad2_ GND R_POT
+J2 Net-_D2-Pad1_ Net-_J2-Pad2_ Conn_01x02_Female
+J1 GND Net-_C2-Pad1_ Conn_01x02_Female
+D2 Net-_D2-Pad1_ Net-_C3-Pad1_ 1N4001
+.end

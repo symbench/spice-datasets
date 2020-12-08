@@ -1,0 +1,12 @@
+.title KiCad schematic
+.include "/home/akshay/kicad-source-mirror-master/demos/simulation/sallen_key/ad8051.lib"
+V1 Net-_C1-Pad2_ GND ac 5 0
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 10n
+R1 Net-_C1-Pad1_ GND 1k
+R3 out Net-_R2-Pad1_ 9k
+R2 Net-_R2-Pad1_ GND 3k
+V2 VDD GND dc 15
+V3 GND VSS dc 15
+XU1 Net-_C1-Pad1_ Net-_R2-Pad1_ VDD VSS out AD8051
+.ac dec 10  1 1meg
+.end

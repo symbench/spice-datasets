@@ -1,0 +1,28 @@
+.title KiCad schematic
+J1 /TX_IN /TX_OUT /RX_IN /RX_OUT term_block_4-pin
+J2 Net-_C1-Pad2_ Net-_C2-Pad2_ +5V GND term_block_4-pin
+C3 Net-_C3-Pad1_ /TX_IN CAP_0603
+U1 Net-_R4-Pad2_ Net-_R5-Pad2_ GND Net-_R8-Pad1_ +5V NC7SZ125
+U2 Net-_Q1-Pad3_ Net-_R7-Pad2_ GND Net-_R9-Pad1_ +5V NC7SZ125
+C4 Net-_C4-Pad1_ /RX_IN CAP_0603
+R6 GND Net-_Q1-Pad3_ RES_0603
+C5 /RX_OUT Net-_C5-Pad2_ CAP_0603
+C6 /TX_OUT Net-_C6-Pad2_ CAP_0603
+R7 Net-_C4-Pad1_ Net-_R7-Pad2_ RES_0603
+R9 Net-_R9-Pad1_ Net-_C5-Pad2_ RES_0603
+R8 Net-_R8-Pad1_ Net-_C6-Pad2_ RES_0603
+R4 GND Net-_R4-Pad2_ RES_0603
+R5 Net-_C3-Pad1_ Net-_R5-Pad2_ RES_0603
+R2 Net-_C4-Pad1_ GND RES_0603
+R1 GND Net-_C3-Pad1_ RES_0603
+C1 GND Net-_C1-Pad2_ CAP_0603
+C2 GND Net-_C2-Pad2_ CAP_0603
+Q1 Net-_Q1-Pad1_ GND Net-_Q1-Pad3_ NPN
+R3 NC_01 Net-_Q1-Pad1_ RES_0603
+D2 GND Net-_C4-Pad1_ Zener_SOD123
+D1 GND Net-_C3-Pad1_ Zener_SOD123
+D3 GND Net-_C6-Pad2_ Zener_SOD123
+D4 GND Net-_C5-Pad2_ Zener_SOD123
+C8 GND +5V CAP_0603
+C7 GND +5V CAP_0603
+.end

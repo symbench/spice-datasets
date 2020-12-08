@@ -1,0 +1,16 @@
+.title KiCad schematic
+.include "/home/akshay/Desktop/analog circuits/libs/fzt1049a.lib"
+R1 Net-_C1-Pad2_ Net-_R1-Pad2_ 50
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 40u
+R2 Net-_R2-Pad1_ Net-_R2-Pad2_ 200k
+R3 GND Net-_R2-Pad1_ 50k
+R5 Net-_C3-Pad2_ Net-_R2-Pad2_ 2k
+C3 out Net-_C3-Pad2_ 10p
+R4 GND Net-_C2-Pad2_ 1.5k
+C2 GND Net-_C2-Pad2_ 100u
+R6 GND out 1k
+Q1 Net-_C3-Pad2_ Net-_C1-Pad1_ Net-_C2-Pad2_ FZT1049A
+V1 Net-_R1-Pad2_ GND ac 500m
+V2 Net-_R2-Pad2_ GND dc 10
+.ac dec 10 1 1000meg 
+.end

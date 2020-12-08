@@ -1,0 +1,8 @@
+.title KiCad schematic
+Vs1 IN 0 dc 0 ac 1
+R1 Net-_C1-Pad1_ IN 10k
+R2 Our Net-_C1-Pad1_ 1k
+C1 Net-_C1-Pad1_ 0 1u
+C2 Our 0 100n
+.ac dec 10 1 100k 
+.end

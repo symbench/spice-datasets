@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 NC_01 Net-_R2-Pad1_ Net-_R1-Pad1_ Net-_BT1-Pad2_ NC_02 Net-_R3-Pad1_ Net-_BT2-Pad1_ NC_03 LM741
+R1 Net-_R1-Pad1_ Net-_5V1-Pad1_ 1k
+V5V1 Net-_5V1-Pad1_ 0 sin(1m 5 10000 2m 1)
+R2 Net-_R2-Pad1_ 0 833
+R3 Net-_R3-Pad1_ Net-_R1-Pad1_ 5k
+BT2 Net-_BT2-Pad1_ Earth 15V
+BT1 Earth Net-_BT1-Pad2_ 15V
+.end

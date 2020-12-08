@@ -1,0 +1,34 @@
+.title KiCad schematic
+Q1 Net-_Q1-Pad1_ GND Net-_D1-Pad2_ MMBT3904
+R5 Net-_Q1-Pad1_ NC_01 1k
+J1 NC_02 NC_03 Out0
+D1 +3V3 Net-_D1-Pad2_ B5819W
+Q3 Net-_Q3-Pad1_ GND Net-_D3-Pad2_ MMBT3904
+R7 Net-_Q3-Pad1_ NC_04 1k
+J11 NC_05 NC_06 Out1
+D3 +3V3 Net-_D3-Pad2_ B5819W
+Q5 Net-_Q5-Pad1_ GND Net-_D5-Pad2_ MMBT3904
+R9 Net-_Q5-Pad1_ NC_07 1k
+J21 NC_08 NC_09 Out2
+D5 +3V3 Net-_D5-Pad2_ B5819W
+Q7 Net-_Q7-Pad1_ GND Net-_D7-Pad2_ MMBT3904
+R13 Net-_Q7-Pad1_ NC_10 1k
+J23 NC_11 NC_12 Out3
+D7 +3V3 Net-_D7-Pad2_ B5819W
+Q2 Net-_Q2-Pad1_ GND Net-_D2-Pad2_ MMBT3904
+R6 Net-_Q2-Pad1_ NC_13 1k
+J6 NC_14 NC_15 Out4
+D2 +3V3 Net-_D2-Pad2_ B5819W
+Q4 Net-_Q4-Pad1_ GND Net-_D4-Pad2_ MMBT3904
+R8 Net-_Q4-Pad1_ NC_16 1k
+J16 NC_17 NC_18 Out5
+D4 +3V3 Net-_D4-Pad2_ B5819W
+Q6 Net-_Q6-Pad1_ GND Net-_D6-Pad2_ MMBT3904
+R10 Net-_Q6-Pad1_ NC_19 1k
+J22 NC_20 NC_21 Out6
+D6 +3V3 Net-_D6-Pad2_ B5819W
+Q8 Net-_Q8-Pad1_ GND Net-_D8-Pad2_ MMBT3904
+R14 Net-_Q8-Pad1_ NC_22 1k
+J24 NC_23 NC_24 Out7
+D8 +3V3 Net-_D8-Pad2_ B5819W
+.end

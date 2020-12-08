@@ -1,0 +1,59 @@
+.title KiCad schematic
+L1 Net-_L1-Pad1_ +3V3 22uH
+R4 Net-_P3-Pad7_ SCK 5K1
+R5 Net-_P3-Pad5_ MISO 1K0
+R3 Net-_C5-Pad1_ ADC1 5K1
+C2 ADC1 GND 10n
+P2 MISO +3V3 SCK MOSI RST GND PROG
+P3 Therm4 Therm3 Therm2 Therm1 Net-_P3-Pad5_ GND Net-_P3-Pad7_ Net-_L1-Pad1_ INPUT2
+M4 M_2.9mm
+M5 M_2.9mm
+M6 M_2.9mm
+M7 M_2.9mm
+M8 M_2.9mm
+M3 M_2.9mm
+M1 FID
+M2 FID
+C1 +3V3 GND 100n
+R2 Net-_D3-Pad2_ Net-_R2-Pad2_ 150R
+D3 GND Net-_D3-Pad2_ Comms
+P7 P_Fan_+ P_Fan_- Print Fan
+P9 H_Fan_+ H_Fan_- Hotend Fan
+P4 Heater- Heater+ HEATER
+M13 Ziptie
+D4 Net-_D4-Pad1_ Heater+ Heat
+R6 Net-_D4-Pad1_ Heater- 1K5_0.5W+
+R7 RST +3V3 5K1
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ Comms
+D7 H_Fan_- Net-_D7-Pad2_ Comms
+D9 Net-_D7-Pad2_ Net-_D1-Pad1_ Comms
+R8 Net-_JP3-Pad1_ Net-_D1-Pad2_ 140R_0.33W+
+P8 Heater- P_Fan_+ P_Fan_- Heater+ H_Fan_+ H_Fan_- Input 1
+R9 H_Fan_+ Net-_JP3-Pad1_ 604R_0.33W+
+JP3 Net-_JP3-Pad1_ H_Fan_+ Jumper for 12V input
+C3 +3V3 GND 1u
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 47p
+C4 GND ADC0 1u
+M16 12mm
+R14 Net-_C6-Pad2_ GND 10K_1%
+R13 B Net-_C6-Pad2_ 10K_1%
+U3 Net-_C5-Pad1_ GND Net-_C8-Pad1_ Net-_C5-Pad2_ +3V3 MCP6286T-E/OT
+R1 Net-_C5-Pad2_ Net-_C5-Pad1_ 10M
+C6 Net-_C5-Pad2_ Net-_C6-Pad2_ 22u<20%
+P5 Therm4 Therm3 Therm2 Therm1 TEMP
+C7 GND Net-_C7-Pad2_ 10n
+JP2 Therm3 Therm4 Solder Jumper
+JP1 Therm1 Therm2 Jumpered for 2 Wire
+C8 Net-_C8-Pad1_ GND 10n
+M11 M_2.9mm
+M9 M_2.9mm
+M10 M_2.9mm
+U2 SCK NC_01 NC_02 ADC1 ADC0 NC_03 NC_04 GND +3V3 NC_05 NC_06 NC_07 RST NC_08 Net-_R2-Pad2_ MOSI NC_09 NC_10 NC_11 MISO GND ATtiny44A-MMH-PAD
+U1 +3V3 GND +3V3 Net-_C7-Pad2_ ADC0 LDK130M10
+R10 GND MISO 330K
+NT1 ADC0 B NetTie-ADC0-Bottom
+NT2 B /TB-R11 NetTie-Bottom-Amp
+NT3 /TB-R11 T NetTie-Top-Amp
+R11 /TB-R11 Net-_C8-Pad1_ 5K1
+NT4 T GND NetTie-Top-GND
+.end

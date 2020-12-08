@@ -1,0 +1,14 @@
+.title KiCad schematic
+J58 Net-_J58-Pad1_ Net-_J58-Pad2_ NC_01 Audio-Jack-3
+C176 NC_02 Net-_C176-Pad2_ C
+C178 NC_03 Net-_C176-Pad2_ C
+C177 Net-_C177-Pad1_ NC_04 C
+C179 Net-_C177-Pad1_ NC_05 C
+J57 Net-_C176-Pad2_ NC_06 Net-_J57-Pad3_ Net-_J57-Pad4_ NC_07 Net-_C177-Pad1_ InConnector
+J59 NC_08 NC_09 Net-_J58-Pad2_ Net-_J58-Pad1_ NC_10 NC_11 OutConnector
+R306 Net-_R306-Pad1_ Net-_J58-Pad1_ R
+R305 NC_12 Net-_J58-Pad1_ R
+U34 Net-_J58-Pad1_ Net-_R306-Pad1_ Net-_J57-Pad4_ NC_13 Net-_J57-Pad3_ Net-_R307-Pad1_ Net-_J58-Pad2_ NC_14 ADA4807-2ARM
+R307 Net-_R307-Pad1_ Net-_J58-Pad2_ R
+R308 NC_15 Net-_J58-Pad2_ R
+.end

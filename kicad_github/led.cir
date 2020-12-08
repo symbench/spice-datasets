@@ -1,0 +1,6 @@
+.title KiCad schematic
+R19 Net-_D2-PadC_ Net-_Q1-PadD_ RES_0603
+Q1 Net-_Q1-PadD_ Net-_Q1-PadG_ GND MOSFET-N
+D2 +5V Net-_D2-PadC_ LED_0603
+R46 Net-_Q1-PadG_ NC_01 RES_0603
+.end

@@ -1,0 +1,9 @@
+.title KiCad schematic
+R1 Net-_R1-Pad1_ Net-_MES1-Pad2_ 240
+U1 Net-_R1-Pad1_ Net-_MES1-Pad2_ Net-_BT1-Pad1_ LM317_TO-220
+BT1 Net-_BT1-Pad1_ GND 9V
+H2 GND Banana Plug Gnd
+RV1 NC_01 GND Net-_R1-Pad1_ 2.5K
+MES1 GND Net-_MES1-Pad2_ Net-_H1-Pad1_ Volt_Ammeter
+H1 Net-_H1-Pad1_ Banana Plug Vout
+.end

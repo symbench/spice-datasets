@@ -1,0 +1,8 @@
+.title KiCad schematic
+J1 3.3V GND NC_01 NC_02 NC_03 Conn_01x05
+J3 PRI_HI PRI_LO Conn_01x02
+J4 PRI_HI PRI_LO Conn_01x02
+J2 PRI_HI PRI_LO Conn_01x02
+J5 NC_04 NC_05 NC_06 Conn_01x03
+J6 NC_07 GND 5V Conn_01x03
+.end

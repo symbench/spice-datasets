@@ -1,0 +1,11 @@
+.title KiCad schematic
+U1 Net-_J1-Pad3_ NC_01 NC_02 NC_03 Net-_R4-Pad1_ NC_04 Net-_J1-Pad2_ Net-_J1-Pad1_ NC_05 NC_06 NC_07 NC_08 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J1-Pad6_ Net-_J1-Pad5_ Net-_J1-Pad4_ Net-_J1-Pad2_ Net-_J1-Pad2_ Net-_J1-Pad1_ NC_09 NC_10 NC_11 NC_12 Net-_J3-Pad3_ Net-_J3-Pad4_ ATMEGA328P-PU
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Conn_01x06_Female
+R1 Net-_J1-Pad3_ Net-_J1-Pad2_ R
+R4 Net-_R4-Pad1_ Net-_J1-Pad1_ R
+SW1 Net-_J1-Pad2_ Net-_R4-Pad1_ SW_Push
+J3 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Conn_01x04_Female
+R2 Net-_J1-Pad2_ Net-_J3-Pad4_ R
+R3 Net-_J1-Pad2_ Net-_J3-Pad3_ R
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J1-Pad6_ Net-_J1-Pad4_ Net-_J1-Pad2_ Net-_J1-Pad1_ Conn_01x08_Female
+.end

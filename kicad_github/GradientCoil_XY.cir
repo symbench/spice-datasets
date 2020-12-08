@@ -1,0 +1,5 @@
+.title KiCad schematic
+J1 Net-_J1-Pad1_ GND Conn_Coaxial
+Ls1 Net-_J1-Pad1_ Net-_Lb1-Pad2_ L
+Lb1 GND Net-_Lb1-Pad2_ L
+.end

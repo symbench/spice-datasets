@@ -1,0 +1,7 @@
+.title KiCad schematic
+J1 GND Net-_C1-Pad1_ Net-_C3-Pad1_ Net-_C2-Pad1_ Conn_01x04
+SW1 Net-_C2-Pad1_ Net-_C3-Pad1_ GND GND Net-_C1-Pad1_ Rotary_Encoder_Switch
+C1 Net-_C1-Pad1_ GND C_Small
+C2 Net-_C2-Pad1_ GND C_Small
+C3 Net-_C3-Pad1_ GND C_Small
+.end

@@ -1,0 +1,86 @@
+.title KiCad schematic
+D3 Net-_D3-Pad1_ Net-_D2-Pad1_ LED
+D4 Net-_D4-Pad1_ Net-_D3-Pad1_ LED
+D5 Net-_D5-Pad1_ Net-_D4-Pad1_ LED
+D6 Net-_D6-Pad1_ Net-_D5-Pad1_ LED
+D7 Net-_D7-Pad1_ Net-_D6-Pad1_ LED
+D8 Net-_D8-Pad1_ Net-_D7-Pad1_ LED
+D9 Net-_D10-Pad2_ Net-_D8-Pad1_ LED
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ LED
+D11 Net-_D11-Pad1_ Net-_D10-Pad1_ LED
+D12 Net-_D12-Pad1_ Net-_D11-Pad1_ LED
+TH1 /3.3V /NTC Thermistor_NTC
+R1 GND Net-_IC1-Pad8_ 22K
+R2 GND Net-_IC1-Pad8_ 6.8K
+C2 /+48V GND 0.1/50V
+IC1 /ADJ_LED GND /+48V NC_01 GND GND GND Net-_IC1-Pad8_ Net-_C4-Pad1_ Net-_D60-Pad1_ NC_02 Net-_D45-Pad1_ NC_03 Net-_D30-Pad1_ NC_04 Net-_D15-Pad1_ GND IS31LT3117-ZLS4-TR
+C4 Net-_C4-Pad1_ GND 1u/10V
+D2 Net-_D2-Pad1_ Net-_D1-Pad1_ LED
+D1 Net-_D1-Pad1_ /+48V LED
+D13 Net-_D13-Pad1_ Net-_D12-Pad1_ LED
+D14 Net-_D14-Pad1_ Net-_D13-Pad1_ LED
+D15 Net-_D15-Pad1_ Net-_D14-Pad1_ LED
+D18 Net-_D18-Pad1_ Net-_D17-Pad1_ LED
+D19 Net-_D19-Pad1_ Net-_D18-Pad1_ LED
+D20 Net-_D20-Pad1_ Net-_D19-Pad1_ LED
+D21 Net-_D21-Pad1_ Net-_D20-Pad1_ LED
+D22 Net-_D22-Pad1_ Net-_D21-Pad1_ LED
+D23 Net-_D23-Pad1_ Net-_D22-Pad1_ LED
+D24 Net-_D24-Pad1_ Net-_D23-Pad1_ LED
+D25 Net-_D25-Pad1_ Net-_D24-Pad1_ LED
+D26 Net-_D26-Pad1_ Net-_D25-Pad1_ LED
+D27 Net-_D27-Pad1_ Net-_D26-Pad1_ LED
+D17 Net-_D17-Pad1_ Net-_D16-Pad1_ LED
+D16 Net-_D16-Pad1_ /+48V LED
+D28 Net-_D28-Pad1_ Net-_D27-Pad1_ LED
+D29 Net-_D29-Pad1_ Net-_D28-Pad1_ LED
+D30 Net-_D30-Pad1_ Net-_D29-Pad1_ LED
+D33 Net-_D33-Pad1_ Net-_D32-Pad1_ LED
+D34 Net-_D34-Pad1_ Net-_D33-Pad1_ LED
+D35 Net-_D35-Pad1_ Net-_D34-Pad1_ LED
+D36 Net-_D36-Pad1_ Net-_D35-Pad1_ LED
+D37 Net-_D37-Pad1_ Net-_D36-Pad1_ LED
+D38 Net-_D38-Pad1_ Net-_D37-Pad1_ LED
+D39 Net-_D39-Pad1_ Net-_D38-Pad1_ LED
+D40 Net-_D40-Pad1_ Net-_D39-Pad1_ LED
+D41 Net-_D41-Pad1_ Net-_D40-Pad1_ LED
+D42 Net-_D42-Pad1_ Net-_D41-Pad1_ LED
+D32 Net-_D32-Pad1_ Net-_D31-Pad1_ LED
+D31 Net-_D31-Pad1_ /+48V LED
+D43 Net-_D43-Pad1_ Net-_D42-Pad1_ LED
+D44 Net-_D44-Pad1_ Net-_D43-Pad1_ LED
+D45 Net-_D45-Pad1_ Net-_D44-Pad1_ LED
+D48 Net-_D48-Pad1_ Net-_D47-Pad1_ LED
+D49 Net-_D49-Pad1_ Net-_D48-Pad1_ LED
+D50 Net-_D50-Pad1_ Net-_D49-Pad1_ LED
+D51 Net-_D51-Pad1_ Net-_D50-Pad1_ LED
+D52 Net-_D52-Pad1_ Net-_D51-Pad1_ LED
+D53 Net-_D53-Pad1_ Net-_D52-Pad1_ LED
+D54 Net-_D54-Pad1_ Net-_D53-Pad1_ LED
+D55 Net-_D55-Pad1_ Net-_D54-Pad1_ LED
+D56 Net-_D56-Pad1_ Net-_D55-Pad1_ LED
+D57 Net-_D57-Pad1_ Net-_D56-Pad1_ LED
+D47 Net-_D47-Pad1_ Net-_D46-Pad1_ LED
+D46 Net-_D46-Pad1_ /+48V LED
+D58 Net-_D58-Pad1_ Net-_D57-Pad1_ LED
+D59 Net-_D59-Pad1_ Net-_D58-Pad1_ LED
+D60 Net-_D60-Pad1_ Net-_D59-Pad1_ LED
+J1 GND /ADJ_LED /NTC /+48V /48V_Fan /3.3V Net-_J1-Pad7_ /+48V 43045-0809
+R3 Net-_R3-Pad1_ Net-_J1-Pad7_ 220
+D61 Net-_D11-Pad1_ Net-_D10-Pad1_ CREE_LED
+D62 Net-_D5-Pad1_ Net-_D4-Pad1_ CREE_LED
+D63 Net-_D20-Pad1_ Net-_D19-Pad1_ CREE_LED
+D64 Net-_D26-Pad1_ Net-_D25-Pad1_ CREE_LED
+D65 Net-_D35-Pad1_ Net-_D34-Pad1_ CREE_LED
+D68 Net-_D50-Pad1_ Net-_D49-Pad1_ CREE_LED
+D67 Net-_D56-Pad1_ Net-_D55-Pad1_ CREE_LED
+D66 Net-_D41-Pad1_ Net-_D40-Pad1_ CREE_LED
+R4 /48V_Fan Net-_R3-Pad1_ 220
+C3 /+48V GND 33u/VE-330M1HTR-0607
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+H5 throughHole
+C1 /+48V GND 10u 50V
+.end

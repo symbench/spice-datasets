@@ -1,0 +1,70 @@
+.title KiCad schematic
+U1 Net-_R11-Pad1_ Net-_R12-Pad1_ -5V PULSOUT PWMCTL HARDSYNC Net-_RV3-Pad1_ SAWOUT SOFTSYNC TRIOUT Net-_C5-Pad1_ GND LINFM Net-_R13-Pad1_ Net-_R10-Pad1_ +12V AS3340
+R11 Net-_R11-Pad1_ Net-_R11-Pad2_ 24k
+RV5 Net-_R11-Pad2_ -5V -5V 10k
+R12 Net-_R12-Pad1_ -5V 5.6k
+C6 SOFTSYNC Net-_C6-Pad2_ 1n
+R15 GND PULSOUT 51k
+C5 Net-_C5-Pad1_ GND 1n
+R13 Net-_R13-Pad1_ GND 1k8
+U2 Net-_R21-Pad1_ Net-_R16-Pad1_ TRIOUT -12V Net-_R20-Pad1_ Net-_R19-Pad1_ Net-_R22-Pad1_ +12V TL072
+R20 Net-_R20-Pad1_ SAWOUT 10k
+R19 Net-_R19-Pad1_ +12V 20k
+R22 Net-_R22-Pad1_ Net-_R19-Pad1_ 10k
+R26 Net-_R26-Pad1_ Net-_R22-Pad1_ 1k5
+R29 GND Net-_R26-Pad1_ 3k
+R18 Net-_R18-Pad1_ +12V 10k
+R23 Net-_R23-Pad1_ Net-_R18-Pad1_ 10k
+R25 Net-_R25-Pad1_ Net-_R23-Pad1_ 3k
+R28 GND Net-_R25-Pad1_ 1k8
+R6 Net-_R10-Pad1_ Net-_J4-PadT_ 100k
+R31 Net-_J8-PadT_ Net-_R25-Pad1_ 0?
+R32 Net-_J9-PadT_ Net-_R26-Pad1_ 0?
+R30 Net-_J7-PadT_ Net-_R24-Pad1_ 0?
+R27 GND Net-_R24-Pad1_ 3k
+R24 Net-_R24-Pad1_ Net-_R21-Pad1_ 1k5
+R21 Net-_R21-Pad1_ Net-_R16-Pad1_ 15k
+R16 Net-_R16-Pad1_ +12V 30k
+R17 GND Net-_R16-Pad1_ 10k
+J6 -12V -12V GND GND GND GND GND GND +12V +12V +5V +5V CV CV GATE GATE Conn_02x08_Odd_Even
+D1 HARDSYNC Net-_C2-Pad1_ 1N914
+D2 Net-_C3-Pad1_ HARDSYNC 1N914
+R4 Net-_C2-Pad1_ -12V 10k
+R5 GND Net-_C3-Pad1_ 10k
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 1n
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 1n
+RV1 Net-_J10-PadT_ PWMCTL GND 100k
+R1 GND PWMCTL 150k
+R2 +5V PWMCTL 100k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 0.1u
+R3 LINFM Net-_C1-Pad1_ 1M
+C4 GND Net-_C4-Pad2_ 10n
+R10 Net-_R10-Pad1_ Net-_C4-Pad2_ 470
+RV2 +12V Net-_R10-Pad1_ Net-_R8-Pad2_ 10k
+RV4 +12V Net-_R10-Pad1_ Net-_R9-Pad2_ 100k
+R8 GND Net-_R8-Pad2_ 47k
+R9 GND Net-_R9-Pad2_ 1.5M
+R7 Net-_R10-Pad1_ +12V 220k
+J1 GND Net-_C1-Pad2_ GND LinFM
+J2 GND Net-_C2-Pad2_ GND Hard Sync +
+J3 GND Net-_C3-Pad2_ GND Hard Sync -
+J8 GND Net-_J8-PadT_ NC_01 Square Wave Output
+J9 GND Net-_J9-PadT_ NC_02 Saw Wave Output
+J7 GND Net-_J7-PadT_ NC_03 Triangular Wave Output
+J5 GND Net-_C6-Pad2_ GND Soft Sync Input
+J10 GND Net-_J10-PadT_ +5V PWMControl
+U3 -12V PULSOUT Net-_R18-Pad1_ Net-_R23-Pad1_ +12V TL072
+C7 +12V -12V 0.1u
+C8 +12V -12V 0.1u
+J4 GND Net-_J4-PadT_ NC_04 VOct
+R33 Net-_R33-Pad1_ Net-_R10-Pad1_ 1M
+R14 LINFM +12V 1.5M
+U4 GND -12V -5V L79L05_SOT89
+C10 GND -12V 1u
+C9 -5V GND 1u
+RV3 Net-_RV3-Pad1_ Net-_R33-Pad1_ GND 20k
+R34 LINFM Net-_C11-Pad2_ 470
+C11 GND Net-_C11-Pad2_ 10n
+C12 +12V GND 0.1u
+R35 PULSOUT PWMCTL 1M
+.end

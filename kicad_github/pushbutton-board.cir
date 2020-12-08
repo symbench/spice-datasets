@@ -1,0 +1,7 @@
+.title KiCad schematic
+J1 /prog /prog_return /minus /minus_return /plus /plus_return /display /display_return Conn_01x08
+SW1 /display_return /display SW_Push
+SW2 /plus_return /plus SW_Push
+SW3 /minus_return /minus SW_Push
+SW4 /prog_return /prog SW_Push
+.end

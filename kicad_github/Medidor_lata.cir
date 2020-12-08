@@ -1,0 +1,25 @@
+.title KiCad schematic
+U1 NC_01 Net-_R4-Pad2_ GND +5V GND +5V Net-_C1-Pad2_ Net-_C2-Pad2_ NC_02 NC_03 Net-_R2-Pad2_ NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 GND NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 Net-_R1-Pad2_ NC_20 Net-_Sw2-Pad1_ Net-_Sw3-Pad1_ ATmega328P-AU
+R1 +5V Net-_R1-Pad2_ R
+J1 +5V GND Conn_01x02_Female
+Y1 Net-_C1-Pad2_ Net-_C2-Pad2_ Crystal
+C1 GND Net-_C1-Pad2_ C
+C2 GND Net-_C2-Pad2_ C
+D1 GND Net-_D1-Pad2_ LED
+R2 Net-_D1-Pad2_ Net-_R2-Pad2_ R
+Sw1 Net-_R1-Pad2_ GND Pulsador
+Sw3 Net-_Sw3-Pad1_ GND Pulsador
+Sw4 Net-_R5-Pad1_ +5V Pulsador
+Sw2 Net-_Sw2-Pad1_ GND Pulsador
+R3 Net-_D2-Pad2_ +5V R
+D2 GND Net-_D2-Pad2_ LED
+Q3 Net-_Q1-Pad3_ GND Net-_Q2-Pad1_ BC847
+R6 +5V Net-_R6-Pad2_ R
+R5 Net-_R5-Pad1_ Net-_Q1-Pad3_ R
+R7 Net-_Q1-Pad3_ GND R
+R8 +5V Net-_Q2-Pad1_ R
+Q2 Net-_Q2-Pad1_ Net-_Q2-Pad2_ Net-_Q1-Pad3_ BC856
+Q1 Net-_Q1-Pad1_ GND Net-_Q1-Pad3_ BC847
+R4 Net-_Q1-Pad1_ Net-_R4-Pad2_ R
+U2 Net-_R6-Pad2_ Net-_Q2-Pad2_ NC_21 NC_22 PC817
+.end

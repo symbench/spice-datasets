@@ -1,0 +1,18 @@
+.title KiCad schematic
+C131 NC_01 Net-_C131-Pad2_ C
+C133 NC_02 Net-_C131-Pad2_ C
+C132 Net-_C132-Pad1_ NC_03 C
+C134 Net-_C132-Pad1_ NC_04 C
+J44 Net-_C131-Pad2_ NC_05 Net-_J44-Pad3_ Net-_J44-Pad4_ NC_06 Net-_C132-Pad1_ InConnector
+J45 NC_07 NC_08 Net-_J45-Pad3_ Net-_J45-Pad4_ NC_09 NC_10 OutConnector
+U27 Net-_C135-Pad2_ Net-_R276-Pad1_ Net-_R276-Pad2_ Net-_C136-Pad2_ NC_11 Net-_J45-Pad3_ Net-_J45-Pad4_ NC_12 AD8421
+R276 Net-_R276-Pad1_ Net-_R276-Pad2_ R
+C136 Net-_C135-Pad2_ Net-_C136-Pad2_ C
+C135 NC_13 Net-_C135-Pad2_ C
+C137 Net-_C136-Pad2_ NC_14 C
+R271 Net-_C135-Pad2_ Net-_J44-Pad4_ R
+R272 Net-_C136-Pad2_ Net-_J44-Pad3_ R
+R274 NC_15 Net-_C136-Pad2_ R
+R273 Net-_C135-Pad2_ NC_16 R
+R277 Net-_J45-Pad3_ NC_17 R
+.end

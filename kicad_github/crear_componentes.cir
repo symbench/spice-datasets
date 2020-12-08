@@ -1,0 +1,10 @@
+.title KiCad schematic
+U1 Net-_SW1-Pad2_ NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 +5V GND NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 Net-_D1-Pad1_ ULN2003A
+SW1 +5V Net-_SW1-Pad2_ SW_Push
+R1 Net-_D1-Pad2_ GND R
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+J1 +5V GND Conn_01x02_Female
+R2 Net-_D2-Pad2_ GND R
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+SW2 +5V Net-_D2-Pad1_ TopPush
+.end

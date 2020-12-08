@@ -1,0 +1,45 @@
+.title KiCad schematic
+U1 Net-_C1-Pad2_ Left Earth +12V Earth Net-_C11-Pad1_ LeftOut Net-_C2-Pad2_ Right Earth -12V Earth Net-_C12-Pad1_ Net-_C12-Pad2_ TL074
+J1 Earth NC_01 Mono1 IN1L
+RV1 Earth Net-_R1-Pad2_ Mono1 100K
+R1 Left Net-_R1-Pad2_ 10K
+C1 Left Net-_C1-Pad2_ 10pF
+R7 Net-_C1-Pad2_ Left 10K
+J8 Earth NC_02 Net-_J8-Pad3_ PJ301M-12
+J2 Earth Mono1 Net-_J2-Pad3_ IN1R
+RV2 Earth Net-_R2-Pad2_ Net-_J2-Pad3_ 100K
+R2 Right Net-_R2-Pad2_ 10K
+J3 Earth NC_03 Mono2 IN2L
+RV3 Earth Net-_R3-Pad2_ Mono2 100K
+R3 Left Net-_R3-Pad2_ 10K
+J4 Earth Mono2 Net-_J4-Pad3_ IN2R
+RV4 Earth Net-_R4-Pad2_ Net-_J4-Pad3_ 100K
+R4 Right Net-_R4-Pad2_ 10K
+J5 Earth NC_04 Mono3 IN3L
+RV5 Earth Net-_R5-Pad2_ Mono3 100K
+R5 Left Net-_R5-Pad2_ 10K
+J6 Earth Mono3 Net-_J6-Pad3_ IN3R
+RV6 Earth Net-_R6-Pad2_ Net-_J6-Pad3_ 100K
+R6 Right Net-_R6-Pad2_ 10K
+R9 Net-_C11-Pad1_ Net-_C1-Pad2_ 10K
+C11 Net-_C11-Pad1_ LeftOut 10pF
+R11 LeftOut Net-_C11-Pad1_ 10K
+C2 Right Net-_C2-Pad2_ 10pF
+R8 Net-_C2-Pad2_ Right 10K
+J9 Earth NC_05 Net-_J9-Pad3_ PJ301M-12
+R10 Net-_C12-Pad1_ Net-_C2-Pad2_ 10K
+C12 Net-_C12-Pad1_ Net-_C12-Pad2_ 10pF
+R12 Net-_C12-Pad2_ Net-_C12-Pad1_ 10K
+RV7 LeftOut Net-_J8-Pad3_ Earth Net-_C12-Pad2_ Net-_J9-Pad3_ Earth R_POT_Dual_Separate
+C9 +12V Earth 10uF
+D1 +12V Net-_D1-Pad2_ D
+D2 Net-_D2-Pad1_ -12V D
+J7 Net-_D1-Pad2_ Net-_D1-Pad2_ Earth Earth Earth Earth Earth Earth Net-_D2-Pad1_ Net-_D2-Pad1_ EURO_PWR_2x5
+C10 Earth -12V 10uF
+C7 +12V Earth 100nF
+C5 +12V Earth 100nF
+C3 +12V Earth 100nF
+C8 Earth -12V 100nF
+C6 Earth -12V 100nF
+C4 Earth -12V 100nF
+.end

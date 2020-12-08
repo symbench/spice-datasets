@@ -1,0 +1,39 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ +5V SFH4550
+U1 Net-_R7-Pad2_ GNDREF Net-_C1-Pad1_ TSOP45xx
+R9 +3V3 Net-_C1-Pad1_ R_US
+C1 Net-_C1-Pad1_ GNDREF C
+R7 GPIO19 Net-_R7-Pad2_ 0K
+R5 Net-_Q1-Pad2_ Net-_D1-Pad1_ 0K
+Q1 GNDREF Net-_Q1-Pad2_ Net-_Q1-Pad3_ Q_NMOS_SDG
+R6 Net-_Q1-Pad3_ NC_01 0K
+R8 GNDREF Net-_Q1-Pad3_ 0K
+U2 Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ /GPIOx GNDREF NC_02 NC_03 NC_04 NC_05 Net-_R3-Pad1_ Net-_R2-Pad1_ Net-_R1-Pad1_ Net-_R4-Pad1_ NC_06 NC_07 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ NC_08 MCP23017_ML
+R1 Net-_R1-Pad1_ GNDREF 0K
+R2 Net-_R2-Pad1_ GNDREF 0K
+R3 Net-_R3-Pad1_ GNDREF 0K
+R4 Net-_R4-Pad1_ /GPIOx 0K
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Conn_02x04_Counter_Clockwise
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Conn_02x04_Counter_Clockwise
+U3 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 GPIO19 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 TTGO_T18_2.1
+D2 5V_L Net-_D2-Pad2_ 5V_L NC_48 WS2812B
+D4 5V_L Net-_D4-Pad2_ 5V_L Net-_D2-Pad2_ WS2812B
+D6 5V_L Net-_D6-Pad2_ 5V_L Net-_D4-Pad2_ WS2812B
+D7 5V_L Net-_D7-Pad2_ 5V_L Net-_D6-Pad2_ WS2812B
+D8 5V_L Net-_D8-Pad2_ 5V_L Net-_D7-Pad2_ WS2812B
+D9 5V_L Net-_D10-Pad4_ 5V_L Net-_D8-Pad2_ WS2812B
+D10 5V_L Net-_D10-Pad2_ 5V_L Net-_D10-Pad4_ WS2812B
+D11 5V_L /LED/DOUT..LINK 5V_L Net-_D10-Pad2_ WS2812B
+D3 5V_L Net-_D3-Pad2_ GNDL /LED/DOUT..LINK WS2812B
+D5 5V_L NC_49 GNDL Net-_D3-Pad2_ WS2812B
+C3 GNDL 5V_L C_Small
+C5 GNDL 5V_L C_Small
+C4 5V_L GNDL C_Small
+C2 5V_L 5V_L C_Small
+C6 5V_L GNDL C_Small
+C7 5V_L GNDL C_Small
+C8 5V_L GNDL C_Small
+C9 5V_L GNDL C_Small
+C10 5V_L GNDL C_Small
+C11 5V_L GNDL C_Small
+.end

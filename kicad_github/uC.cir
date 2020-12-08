@@ -1,0 +1,23 @@
+.title KiCad schematic
+U8 +3V3 NC_01 NC_02 /nrst_3V3_ +3V3 NC_03 NC_04 /TX_3V3_ /RX_3V3_ /Free_1_3V3_ /Free_2_3V3_ /Cmd_En_1_3V3_ /Brake_1_3V3_ /Dir_1_3V3_ /Diag_1_3V3_ GND Net-_C15-Pad2_ NC_05 NC_06 /Tacho_1_3V3_ Net-_R4-Pad1_ /Tacho_2_3V3_ /swdio_3V3_ /swclk_3V3_ /Diag_2_3V3_ /Dir_2_3V3_ /Brake_2_3V3_ /Cmd_En_2_3V3_ /I2C_SCL_3V3_ /I2C_SDA_3V3_ Net-_R3-Pad1_ GND stm32f303k8t6
+C2 /nrst_3V3_ GND 100n
+J2 GND /nrst_3V3_ /swclk_3V3_ /swdio_3V3_ swdio
+D5 GND Net-_D5-Pad2_ LED_ALT
+R4 Net-_R4-Pad1_ Net-_D5-Pad2_ 470
+R3 Net-_R3-Pad1_ Net-_JP1-Pad2_ 10k
+JP1 GND Net-_JP1-Pad2_ NC_07 Jumper_NC_Dual
+U7 /nrst_3V3_ /Cmd_En_1_3V3_ Net-_U7-Pad3_ Net-_U7-Pad3_ Net-_U7-Pad3_ Net-_U10-Pad5_ GND Net-_U7-Pad12_ /nrst_3V3_ /Cmd_En_2_3V3_ Net-_U10-Pad6_ Net-_U7-Pad12_ Net-_U7-Pad12_ +3V3 74HC00
+R1 /Cmd_En_1_3V3_ GND 10k
+R2 /Cmd_En_2_3V3_ GND 10k
+C1 GND +3V3 100n
+U10 /Diag_2_3V3_ /Tacho_2_3V3_ Net-_U10-Pad5_ Net-_U10-Pad6_ /Tacho_1_3V3_ NC_08 NC_09 NC_10 NC_11 NC_12 txb0108
+U9 /Diag_1_3V3_ Net-_C11-Pad1_ /Dir_1_3V3_ /Brake_1_3V3_ /Brake_2_3V3_ /Dir_2_3V3_ Net-_C11-Pad1_ GND NC_13 NC_14 NC_15 NC_16 +5V NC_17 txb0108
+P1 /I2C_SDA_3V3_ /I2C_SCL_3V3_ CONN_I2C
+P2 /Free_1_3V3_ /Free_2_3V3_ CONN_FREE
+J1 /RX_3V3_ /TX_3V3_ CONN_SERIAL
+C11 Net-_C11-Pad1_ GND 0,1u
+C12 +5V GND 0,1u
+C15 GND Net-_C15-Pad2_ 100n
+C14 +3V3 GND 100n
+C13 +3V3 GND 100n
+.end

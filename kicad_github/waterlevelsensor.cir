@@ -1,0 +1,13 @@
+.title KiCad schematic
+Q1 Net-_D1-Pad2_ Net-_Q1-Pad2_ GND BC547
+R5 Net-_Q1-Pad2_ NC_01 10k
+D1 12V Net-_D1-Pad2_ 1N4007
+R2 NC_02 /2 10k
+R1 NC_03 /6 10k
+R4 /2 GND 1M
+R3 /6 GND 1M
+R6 Net-_Q1-Pad2_ GND 100k
+RL1 motorin Net-_D1-Pad2_ 12V Motor Motor motorin 12V
+C1 NC_04 GND 0.01u
+U1 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 LM555
+.end

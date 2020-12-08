@@ -1,0 +1,11 @@
+.title KiCad schematic
+U2 NC_01 GND Net-_RV1-Pad2_ GND Net-_C1-Pad1_ Net-_J1-Pad1_ NC_02 NC_03 LM386
+LS1 Net-_C2-Pad2_ GND Speaker
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 47n
+R1 Net-_C1-Pad2_ GND 10
+C2 Net-_C1-Pad1_ Net-_C2-Pad2_ 220u
+RV1 Net-_RV1-Pad1_ Net-_RV1-Pad2_ GND 10k
+U1 Net-_R2-Pad2_ Net-_J1-Pad20_ Net-_J1-Pad19_ Net-_J1-Pad18_ Net-_J1-Pad17_ Net-_J1-Pad16_ Net-_J1-Pad1_ GND NC_04 NC_05 Net-_J1-Pad15_ Net-_J1-Pad14_ Net-_J1-Pad13_ Net-_RV1-Pad1_ NC_06 NC_07 NC_08 NC_09 NC_10 Net-_J1-Pad1_ NC_11 GND Net-_J1-Pad6_ Net-_J1-Pad22_ NC_12 NC_13 NC_14 NC_15 ATmega328P-PU
+J1 Net-_J1-Pad1_ NC_16 GND NC_17 NC_18 Net-_J1-Pad6_ NC_19 NC_20 NC_21 NC_22 NC_23 GND Net-_J1-Pad13_ Net-_J1-Pad14_ Net-_J1-Pad15_ Net-_J1-Pad16_ Net-_J1-Pad17_ Net-_J1-Pad18_ Net-_J1-Pad19_ Net-_J1-Pad20_ NC_24 Net-_J1-Pad22_ GND NC_25 Rainbow Bus Connector
+R2 Net-_J1-Pad1_ Net-_R2-Pad2_ 10k
+.end

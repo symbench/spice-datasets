@@ -1,0 +1,24 @@
+.title KiCad schematic
+J1 GND Net-_J1-PadT_ NC_01 AudioJack2_SwitchT
+J2 GND Net-_J2-PadT_ NC_02 AudioJack2_SwitchT
+J3 GND Net-_J3-PadT_ NC_03 AudioJack2_SwitchT
+RV1 GND Net-_R1-Pad2_ Net-_J1-PadT_ A100k
+RV2 GND Net-_R2-Pad2_ Net-_J2-PadT_ A100k
+RV3 GND Net-_R3-Pad2_ Net-_J3-PadT_ A100k
+R1 Net-_C1-Pad1_ Net-_R1-Pad2_ 100k
+R2 Net-_C1-Pad1_ Net-_R2-Pad2_ 100k
+R3 Net-_C1-Pad1_ Net-_R3-Pad2_ 100k
+U1 Net-_C1-Pad2_ Net-_C1-Pad1_ GND -12V GND Net-_C2-Pad1_ Net-_C2-Pad2_ +12V TL072
+R4 Net-_C2-Pad1_ Net-_C1-Pad2_ 100k
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 47pF
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 47pF
+R5 Net-_C2-Pad2_ Net-_C2-Pad1_ 100k
+R6 Net-_J4-PadT_ Net-_C2-Pad2_ 330
+J4 GND Net-_J4-PadT_ NC_04 AudioJack2_SwitchT
+RV4 Net-_C1-Pad1_ Net-_C1-Pad2_ NC_05 A100k
+J5 Net-_D2-Pad1_ Net-_D2-Pad1_ GND GND GND GND GND GND Net-_D1-Pad2_ Net-_D1-Pad2_ Conn_01x10
+D1 +12V Net-_D1-Pad2_ 1N4148
+D2 Net-_D2-Pad1_ -12V 1N4148
+C6 +12V GND 0.1uF
+C7 GND -12V 0.1uF
+.end

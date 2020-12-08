@@ -1,0 +1,28 @@
+.title KiCad schematic
+U7 Net-_C38-Pad2_ Net-_R59*1-Pad1_ chasis chasis +12V Net-_C37-Pad1_ Net-_C37-Pad2_ Net-_R55-Pad2_ SY8303
+C37 Net-_C37-Pad1_ Net-_C37-Pad2_ 10nF
+L1 Net-_C37-Pad1_ Net-_C38-Pad1_ 22uH 1A
+C41 Net-_C38-Pad1_ chasis 10uF
+R56 Net-_C38-Pad1_ Net-_C38-Pad2_ 100K
+R58 Net-_C38-Pad2_ chasis 15K
+R59 Net-_R59*1-Pad1_ Net-_R59-Pad2_ 51K
+F1 +12V Net-_F1-Pad2_ 1A
+J8 Net-_F1-Pad2_ chasis 12VDC
+C38 Net-_C38-Pad1_ Net-_C38-Pad2_ 47pF
+D2 +12V chasis 16V
+C40 +12V chasis 2.2uF 50V
+R55 +12V Net-_R55-Pad2_ 100K
+C39 +12V chasis 104
+D4 chasis Net-_D4-Pad2_ Red
+R57 +3V3 Net-_D4-Pad2_ 300
+RV1 Net-_R59-Pad2_ Net-_R59-Pad2_ chasis 100K
+R59*1 Net-_R59*1-Pad1_ chasis 100K
+SC1 chasis Conn_01x01
+SC2 chasis Conn_01x01
+SC3 chasis Conn_01x01
+SC4 chasis Conn_01x01
+U8 chasis +3V3 Net-_R20-Pad1_ AZ1117-3.3
+C42 +3V3 chasis 22uF
+D3 chasis +12V SS34
+R20 Net-_R20-Pad1_ Net-_C38-Pad1_ 0
+.end

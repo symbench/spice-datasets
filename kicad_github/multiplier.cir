@@ -1,0 +1,66 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ NC_01 10n
+C2 Net-_C2-Pad1_ Net-_C1-Pad1_ 10n
+C3 Net-_C3-Pad1_ Net-_C2-Pad1_ 10n
+C4 Net-_C4-Pad1_ Net-_C3-Pad1_ 10n
+C5 Net-_C5-Pad1_ Net-_C4-Pad1_ 10n
+C6 Net-_C6-Pad1_ Net-_C5-Pad1_ 10n
+C7 Net-_C7-Pad1_ Net-_C6-Pad1_ 10n
+C8 /OUT1 Net-_C7-Pad1_ 10n
+D1 Net-_C1-Pad1_ /HV0 R3000
+D2 /HV1 Net-_C1-Pad1_ R3000
+D3 Net-_C2-Pad1_ /HV1 R3000
+D4 Net-_C12-Pad1_ Net-_C2-Pad1_ R3000
+D5 Net-_C3-Pad1_ Net-_C12-Pad1_ R3000
+D6 Net-_C13-Pad1_ Net-_C3-Pad1_ R3000
+D7 Net-_C4-Pad1_ Net-_C13-Pad1_ R3000
+D8 Net-_C14-Pad1_ Net-_C4-Pad1_ R3000
+D9 Net-_C5-Pad1_ Net-_C14-Pad1_ R3000
+D10 Net-_C15-Pad1_ Net-_C5-Pad1_ R3000
+D11 Net-_C6-Pad1_ Net-_C15-Pad1_ R3000
+D12 Net-_C16-Pad1_ Net-_C6-Pad1_ R3000
+D13 Net-_C7-Pad1_ Net-_C16-Pad1_ R3000
+D14 /HV7 Net-_C7-Pad1_ R3000
+D15 /OUT1 /HV7 R3000
+D16 /HV8 /OUT1 R3000
+C11 /HV1 /HV0 10n
+C12 Net-_C12-Pad1_ /HV1 10n
+C13 Net-_C13-Pad1_ Net-_C12-Pad1_ 10n
+C14 Net-_C14-Pad1_ Net-_C13-Pad1_ 10n
+C15 Net-_C15-Pad1_ Net-_C14-Pad1_ 10n
+C16 Net-_C16-Pad1_ Net-_C15-Pad1_ 10n
+C17 /HV7 Net-_C16-Pad1_ 10n
+C18 /HV8 /HV7 10n
+D21 Net-_C21-Pad1_ /HV0 R3000
+D22 /HV1 Net-_C21-Pad1_ R3000
+D23 Net-_C22-Pad1_ /HV1 R3000
+D24 Net-_C12-Pad1_ Net-_C22-Pad1_ R3000
+D25 Net-_C23-Pad1_ Net-_C12-Pad1_ R3000
+D26 Net-_C13-Pad1_ Net-_C23-Pad1_ R3000
+D27 Net-_C24-Pad1_ Net-_C13-Pad1_ R3000
+D28 Net-_C14-Pad1_ Net-_C24-Pad1_ R3000
+D29 Net-_C25-Pad1_ Net-_C14-Pad1_ R3000
+D30 Net-_C15-Pad1_ Net-_C25-Pad1_ R3000
+D31 Net-_C26-Pad1_ Net-_C15-Pad1_ R3000
+D32 Net-_C16-Pad1_ Net-_C26-Pad1_ R3000
+D33 Net-_C27-Pad1_ Net-_C16-Pad1_ R3000
+D34 /HV7 Net-_C27-Pad1_ R3000
+D35 /OUT2 /HV7 R3000
+D36 /HV8 /OUT2 R3000
+C21 Net-_C21-Pad1_ NC_02 10n
+C22 Net-_C22-Pad1_ Net-_C21-Pad1_ 10n
+C23 Net-_C23-Pad1_ Net-_C22-Pad1_ 10n
+C24 Net-_C24-Pad1_ Net-_C23-Pad1_ 10n
+C25 Net-_C25-Pad1_ Net-_C24-Pad1_ 10n
+C26 Net-_C26-Pad1_ Net-_C25-Pad1_ 10n
+C27 Net-_C27-Pad1_ Net-_C26-Pad1_ 10n
+C28 /OUT2 Net-_C27-Pad1_ 10n
+IN1 NC_03 Conn_01x01
+HV0 NC_04 Conn_01x01
+IN2 NC_05 Conn_01x01
+OUT1 NC_06 Conn_01x01
+HV7 NC_07 Conn_01x01
+HV8 NC_08 Conn_01x01
+OUT2 NC_09 Conn_01x01
+HV1 NC_10 Conn_01x01
+.end

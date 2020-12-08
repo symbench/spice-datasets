@@ -1,0 +1,8 @@
+.title KiCad schematic
+C9 NC_01 Net-_C11-Pad2_ C
+C11 NC_02 Net-_C11-Pad2_ C
+C10 Net-_C10-Pad1_ NC_03 C
+C12 Net-_C10-Pad1_ NC_04 C
+J6 Net-_C11-Pad2_ NC_05 NC_06 NC_07 NC_08 Net-_C10-Pad1_ InConnector
+J7 NC_09 NC_10 Net-_J7-Pad3_ Net-_J7-Pad3_ NC_11 NC_12 OutConnector
+.end

@@ -1,0 +1,7 @@
+.title KiCad schematic
+N2 20191112
+N1 OHWLOGO
+J1 /A_WAVEFORM NC_01 Pulse in
+J2 /A_WAVEFORM NC_02 Pulse out
+J3 NC_03 NC_04 Output
+.end

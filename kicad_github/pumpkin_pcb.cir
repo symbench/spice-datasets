@@ -1,0 +1,4 @@
+.title KiCad schematic
+BT1 NC_01 NC_02 Battery_Cell
+SW1 NC_03 NC_04 NC_05 SW_SPDT
+.end

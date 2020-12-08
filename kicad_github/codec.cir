@@ -1,0 +1,29 @@
+.title KiCad schematic
+U1 Net-_C40-Pad1_ Net-_C43-Pad1_ Net-_C42-Pad1_ Net-_C41-Pad1_ WM8778-units
+R20 /voutl Net-_C43-Pad2_ 100
+C43 Net-_C43-Pad1_ Net-_C43-Pad2_ 10uF
+R18 AGND Net-_C43-Pad2_ 47k
+R19 /voutr Net-_C42-Pad2_ 100
+C42 Net-_C42-Pad1_ Net-_C42-Pad2_ 10uF
+R17 AGND Net-_C42-Pad2_ 47k
+U7 Net-_R11-Pad1_ AGND Net-_C37-Pad2_ Net-_C37-Pad1_ 5V MAX4466
+C36 Net-_C36-Pad1_ Net-_C36-Pad2_ 1uF
+R13 Net-_C36-Pad1_ Net-_C37-Pad2_ 10k
+R14 Net-_C37-Pad2_ Net-_C37-Pad1_ 100k
+C37 Net-_C37-Pad1_ Net-_C37-Pad2_ 100pF
+R11 Net-_R11-Pad1_ 5V 1M
+R12 AGND Net-_R11-Pad1_ 1M
+R10 Net-_J5-Pad2_ Net-_C34-Pad2_ 2k
+R9 Net-_C34-Pad2_ 5V 2k
+C34 AGND Net-_C34-Pad2_ 100nF
+J5 AGND Net-_J5-Pad2_ Net-_C36-Pad2_ electret mic
+R15 Net-_C37-Pad1_ Net-_C38-Pad1_ 680
+C38 Net-_C38-Pad1_ AGND 4.7nF
+C40 Net-_C40-Pad1_ Net-_C38-Pad1_ 10uF
+R16 Net-_J6-PadT_ Net-_C39-Pad1_ 680
+C39 Net-_C39-Pad1_ AGND 4.7nF
+C41 Net-_C41-Pad1_ Net-_C39-Pad1_ 10uF
+J6 NC_01 NC_02 AGND Net-_J6-PadT_ Net-_J6-PadTN_ line in
+R8 AGND Net-_J6-PadTN_ 1k
+J8 /voutr /voutl AGND stereo_out
+.end

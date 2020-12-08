@@ -1,0 +1,58 @@
+.title KiCad schematic
+J9 Net-_C6-Pad1_ Net-_J9-Pad2_ Net-_J9-Pad3_ GND NC_01 USB_A
+U3 /TXCAN NC_02 NC_03 Net-_C8-Pad2_ /RXCAN NC_04 GND NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 Net-_J9-Pad3_ Net-_J9-Pad2_ Net-_C7-Pad1_ GND NC_11 Net-_F1-Pad1_ GND NC_12 NC_13 GND GND NC_14 NC_15 FT232RL
+J12 /LSD_1 /Final_Shutdown /Air+Aux+ /Air+Aux- /Air+Coll+ GND /Air-Aux+ /Air-Aux- /Air-Coll+ GND GND /Final_Shutdown MicroFit_VT_12
+J8 /Digital_1 /Digital_2 MicroFit_V_2
+J10 GND /12V /CAN_H /CAN_L UF_4_VT_TireTemp
+J7 /12V GND /CAN_H /CAN_L NC_16 /Analog_1 GND GND MM_F_RA_08_SuspTravel+WS
+J11 /Digital_1 /Digital_2 /Digital_3 VCC MM_F_VT_04_Throttle
+R12 /Analog_3 Net-_R12-Pad2_ R_100
+R11 /Analog_2 Net-_R11-Pad2_ R_100
+R10 /Analog_1 Net-_R10-Pad2_ R_100
+R9 /Digital_10 Net-_R9-Pad2_ R_100
+R8 /Digital_9 Net-_R8-Pad2_ R_100
+R17 Net-_D1-Pad2_ Net-_R17-Pad2_ R_200
+D1 GND Net-_D1-Pad2_ LED_Red
+D2 GND Net-_D2-Pad2_ LED_Green
+R18 Net-_D2-Pad2_ Net-_R18-Pad2_ R_200
+R16 /Digital_8 Net-_R16-Pad2_ R_100
+R15 /Digital_7 Net-_R15-Pad2_ R_100
+R14 /Digital_6 Net-_R14-Pad2_ R_100
+R13 /Digital_5 Net-_R13-Pad2_ R_100
+R7 /Digital_4 Net-_R7-Pad2_ R_100
+R6 /Digital_3 Net-_R6-Pad2_ R_100
+R5 /Digital_2 Net-_R5-Pad2_ R_100
+R4 /Digital_1 Net-_R4-Pad2_ R_100
+C2 VCC GND C_0.1uF
+R3 VCC /RESET R_10K
+C5 Net-_C5-Pad1_ GND C_30pF
+C4 Net-_C4-Pad1_ GND C_30pF
+Y1 Net-_C4-Pad1_ GND Net-_C5-Pad1_ GND Crystal_SMD
+C3 Net-_C3-Pad1_ GND C_100pF
+R1 VCC Net-_C3-Pad1_ R_100
+J6 /Digital_1 /Digital_2 /Digital_3 /Digital_4 /Digital_5 VCC GND GND GND GND MM_F_VT_10
+C7 Net-_C7-Pad1_ GND C_100nF
+J1 /MISO VCC /SCK /MOSI /RESET GND CONN_02X03
+J4 GND /12V VCC /MISO /MOSI /SCK /RESET /CAN_H /CAN_L /Digital_1 /Analog_1 /Digital_2 /Digital_3 /Analog_2 /Digital_4 /Digital_5 /Digital_6 /Digital_7 /Analog_3 /Digital_8 MM_F_VT_20_Dashboard+Throttle
+J5 GND /12V /CAN_H /CAN_L VCC /MISO /MOSI /SCK /RESET /Digital_1 /Analog_1 /Digital_2 /LSD_1 /Digital_3 /Digital_4 /Digital_5 /LSD_2 /Analog_2 /Analog_3 GND MM_F_RA_20_BSPD
+J2 GND /12V VCC /MISO /MOSI /SCK /RESET /Digital_1 /Digital_2 /CAN_H /CAN_L /Digital_3 /Digital_4 /Digital_5 /Digital_6 /Digital_7 /Digital_8 /Digital_9 /Digital_10 GND MM_F_VT_20_BMSCore+AirControl
+J3 GND /12V /CAN_H /CAN_L /Digital_1 /Digital_2 GND GND GND GND GND GND GND GND GND GND GND GND GND GND MM_F_RA_20_ShutdownSense
+R19 VCC /LSD_1 R_1K
+U2 /MISO /MOSI Net-_R18-Pad2_ VCC GND /TXCAN /RXCAN Net-_R4-Pad2_ Net-_R5-Pad2_ Net-_C5-Pad1_ Net-_C4-Pad1_ /SCK Net-_R10-Pad2_ Net-_R11-Pad2_ Net-_R12-Pad2_ Net-_R6-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad2_ Net-_C3-Pad1_ GND NC_17 /LSD_1 Net-_R7-Pad2_ Net-_R13-Pad2_ /LSD_2 Net-_R14-Pad2_ Net-_R15-Pad2_ Net-_R16-Pad2_ Net-_R21-Pad2_ Net-_R17-Pad2_ /RESET Net-_R23-Pad2_ ATMEGA16M1
+R20 VCC /LSD_2 R_1K
+R22 GND Net-_R21-Pad2_ R_1K
+R21 /Air+Coll+ Net-_R21-Pad2_ R_1K
+R26 GND not_enough_connectors_ATmega16 R_1K
+R25 /Final_Shutdown not_enough_connectors_ATmega16 R_1K
+K2 not_enough_connectors_ATmega16 /Air-Aux+ /Air-Aux- GND G5Q-1A4-DC12
+K1 not_enough_connectors_ATmega16 /Air+Aux+ /Air+Aux- GND G5Q-1A4-DC12
+R23 /Air-Coll+ Net-_R23-Pad2_ R_1K
+R24 GND Net-_R23-Pad2_ R_1K
+F1 Net-_F1-Pad1_ Net-_C6-Pad1_ F_500mA_16V
+C6 Net-_C6-Pad1_ GND C_10nF
+C8 VCC Net-_C8-Pad2_ C_100nF
+R2 /CAN_H /CAN_L R_200
+C1 VCC GND C_0.1uF
+U1 /TXCAN GND VCC /RXCAN NC_18 /CAN_L /CAN_H GND MCP2561-E_SN
+J13 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 INPUT_POWER_CONNECTOR_PLACEHOLDER
+.end

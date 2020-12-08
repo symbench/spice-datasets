@@ -1,0 +1,23 @@
+.title KiCad schematic
+J2 Net-_C12-Pad2_ prevgl Net-_C10-Pad2_ prevgh Net-_C8-Pad2_ Net-_C7-Pad2_ Net-_C6-Pad2_ gnd vcc vcc Net-_J1-Pad6_ Net-_J1-Pad5_ Net-_J1-Pad4_ Net-_J1-Pad3_ Net-_J1-Pad2_ Net-_J1-Pad1_ gnd NC_01 NC_02 Net-_C4-Pad2_ Net-_C3-Pad2_ rese gdr NC_03 Conn_01x24
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ gnd vcc Conn_01x08_Female
+C12 gnd Net-_C12-Pad2_ C
+C11 gnd prevgl C
+C10 gnd Net-_C10-Pad2_ C
+C9 gnd prevgh C
+C8 gnd Net-_C8-Pad2_ C
+C7 gnd Net-_C7-Pad2_ C
+C6 gnd Net-_C6-Pad2_ C
+C5 gnd vcc C
+C4 gnd Net-_C4-Pad2_ C
+C3 gnd Net-_C3-Pad2_ C
+C1 vcc gnd C
+L1 vcc Net-_C2-Pad2_ 330 uH INDUCTOR
+Q1 Net-_C2-Pad2_ gdr rese A90T mosfet
+D3 Net-_C2-Pad2_ prevgh DIODE
+D2 prevgl Net-_C2-Pad1_ DIODE
+D1 Net-_C2-Pad1_ gnd DIODE
+R1 gdr gnd R
+R2 rese gnd R
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ C
+.end

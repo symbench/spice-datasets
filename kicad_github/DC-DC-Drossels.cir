@@ -1,0 +1,19 @@
+.title KiCad schematic
+L1 Net-_D1-Pad1_ Net-_C1-Pad1_ Net-_J2-Pad1_ GND L_Core_Ferrite_Coupled
+U1 Net-_C1-Pad1_ GND GND Net-_C2-Pad1_ MP1584ENBB
+L2 GND Net-_C3-Pad2_ Net-_C2-Pad1_ Net-_C3-Pad1_ L_Core_Ferrite_Coupled
+C1 Net-_C1-Pad1_ GND CP
+C2 Net-_C2-Pad1_ GND CP
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D_Schottky
+J3 Net-_C3-Pad2_ Conn_01x01
+J4 Net-_C3-Pad1_ Conn_01x01
+J1 Net-_D1-Pad2_ Conn_01x01
+J2 Net-_J2-Pad1_ Conn_01x01
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ CP
+J6 Net-_C3-Pad2_ Conn_01x01
+J5 Net-_C3-Pad2_ Conn_01x01
+J7 Net-_C3-Pad2_ Conn_01x01
+J8 Net-_C3-Pad1_ Conn_01x01
+J9 Net-_C3-Pad1_ Conn_01x01
+J10 Net-_C3-Pad1_ Conn_01x01
+.end

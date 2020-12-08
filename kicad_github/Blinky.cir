@@ -1,0 +1,7 @@
+.title KiCad schematic
+J1 Net-_J1-Pad1_ Ground Conn_01x02
+RV1 Net-_J1-Pad1_ Ground Net-_D1-Pad3_ POT
+RV2 Net-_J1-Pad1_ Ground Net-_D1-Pad4_ POT
+RV3 Net-_J1-Pad1_ Ground Net-_D1-Pad1_ POT
+D1 Net-_D1-Pad1_ Ground Net-_D1-Pad3_ Net-_D1-Pad4_ LED_RABG
+.end

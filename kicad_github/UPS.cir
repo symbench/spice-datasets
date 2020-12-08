@@ -1,0 +1,10 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D
+D2 Net-_D2-Pad1_ Net-_D1-Pad2_ D
+D3 Net-_D3-Pad1_ Net-_D1-Pad1_ D
+D4 Net-_D3-Pad1_ Net-_D2-Pad1_ D
+J2 Net-_D3-Pad1_ Net-_D1-Pad2_ TO RELAY
+J1 Net-_D2-Pad1_ Net-_D1-Pad1_ FROM TRANSFORMER
+J3 Net-_D3-Pad1_ Net-_D1-Pad2_ TO DC INPUT OF INVERTER
+J4 Net-_D3-Pad1_ Net-_D1-Pad2_ TO BATTERY FOR CHARGING
+.end

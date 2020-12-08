@@ -1,0 +1,21 @@
+.title KiCad schematic
+U20 Net-_C18-Pad2_ Net-_R73*1-Pad1_ chasis chasis Net-_C15-Pad1_ Net-_C17-Pad1_ Net-_C17-Pad2_ Net-_R72-Pad2_ SY8303
+C17 Net-_C17-Pad1_ Net-_C17-Pad2_ 10nF
+L5 Net-_C17-Pad1_ +3V3 22uH 1A
+C19 +3V3 chasis 22uF
+R74 +3V3 Net-_C18-Pad2_ 100K
+R75 Net-_C18-Pad2_ chasis 22K
+R73 Net-_R73*1-Pad1_ Net-_R73-Pad2_ 51K
+F1 +12V Net-_F1-Pad2_ 2A
+J7 Net-_F1-Pad2_ chasis 12VDC
+C18 +3V3 Net-_C18-Pad2_ 47pF
+D2 +12V chasis 16V
+C16 Net-_C15-Pad1_ chasis 4.7uF 25V
+R72 Net-_C15-Pad1_ Net-_R72-Pad2_ 100K
+L4 +12V Net-_C15-Pad1_ 22uH 1A
+C15 Net-_C15-Pad1_ chasis 104
+D3 chasis Net-_D3-Pad2_ Red
+R76 +3V3 Net-_D3-Pad2_ 300
+RV1 Net-_R73-Pad2_ Net-_R73-Pad2_ chasis 100K
+R73*1 Net-_R73*1-Pad1_ chasis 100K
+.end

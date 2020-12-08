@@ -1,0 +1,10 @@
+.title KiCad schematic
+U2 Net-_BT1-Pad2_ Net-_C1-Pad1_ Net-_BT1-Pad1_ AMS1117-3.3
+U1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ NC_01 NC_02 NC_03 NC_04 NC_05 Net-_R2-Pad2_ Net-_J2-Pad2_ Net-_BT1-Pad2_ NC_06 NC_07 Net-_R1-Pad2_ NC_08 NC_09 Net-_C1-Pad1_ Net-_C1-Pad1_ Net-_C1-Pad1_ Net-_BT1-Pad2_ Net-_BT1-Pad2_ Net-_BT1-Pad2_ Net-_BT1-Pad2_ Net-_BT1-Pad2_ Net-_BT1-Pad2_ NC_10 Net-_BT1-Pad2_ NC_11 Net-_BT1-Pad2_ NC_12 Net-_BT1-Pad2_ CBTMN11_module
+J2 Net-_BT1-Pad2_ Net-_J2-Pad2_ Net-_BT1-Pad1_ PIR
+C1 Net-_C1-Pad1_ Net-_BT1-Pad2_ 10uF
+R1 Net-_BT1-Pad2_ Net-_R1-Pad2_ 1K
+BT1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ POWER 5V
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ NC_13 Conn_01x03_MountingPin
+R2 Net-_R1-Pad2_ Net-_R2-Pad2_ R_PHOTO
+.end

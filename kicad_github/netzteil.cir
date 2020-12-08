@@ -1,0 +1,105 @@
+.title KiCad schematic
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+J2 /15V/-15V gesiebt/VDC+ GND /15V/-15V gesiebt/VDC- Screw_Terminal_01x03
+J3 /15V/-15V gesiebt/+15V_aus GND /15V/-15V gesiebt/-15V_aus Screw_Terminal_01x03
+J1 /Verpolschutz und Filterung/V-2 /Verpolschutz und Filterung/V+2 /Verpolschutz und Filterung/V-1 /Verpolschutz und Filterung/V+1 Screw_Terminal_01x04
+R3 Net-_D1-Pad1_ Net-_D1-Pad2_ 150k
+TP1 Net-_D1-Pad1_ TestPoint
+TP7 GND TestPoint
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ BZX84Cxx
+D3 Net-_D1-Pad1_ /Verpolschutz und Filterung/V-1 1.5KExxCA
+D5 Net-_D5-Pad1_ /15V/-15V gesiebt/VDC+ LED
+R5 /15V/-15V gesiebt/VDC+ Net-_Q3-Pad3_ 4k7
+R7 Net-_Q3-Pad1_ GND 100
+Q5 Net-_Q3-Pad3_ Net-_Q3-Pad1_ Net-_J4-Pad2_ BC847
+Q3 Net-_Q3-Pad1_ GND Net-_Q3-Pad3_ BC847
+J4 Net-_D5-Pad1_ Net-_J4-Pad2_ Conn_01x02_Male
+L3 /15V/-15V gesiebt/VDC+ Net-_C1-Pad1_ 100u
+TP2 Net-_D2-Pad2_ TestPoint
+TP8 /15V/-15V gesiebt/VDC+ TestPoint
+L6 /15V/-15V gesiebt/VDC- Net-_C2-Pad2_ 100u
+D4 /Verpolschutz und Filterung/V+2 Net-_D2-Pad2_ 1.5KExxCA
+R2 /Verpolschutz und Filterung/V+2 Net-_D2-Pad1_ 100k
+R4 Net-_D2-Pad1_ Net-_D2-Pad2_ 150k
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ BZX84Cxx
+Q2 Net-_D2-Pad1_ Net-_D2-Pad2_ /Verpolschutz und Filterung/V-2 IRLML0030
+Q1 Net-_D1-Pad2_ Net-_D1-Pad1_ /Verpolschutz und Filterung/V+1 IRLML9301
+R1 Net-_D1-Pad2_ /Verpolschutz und Filterung/V-1 100k
+D6 Net-_D6-Pad1_ GND LED
+R6 GND Net-_Q4-Pad3_ 4k7
+R8 Net-_Q4-Pad1_ /15V/-15V gesiebt/VDC- 100
+Q6 Net-_Q4-Pad3_ Net-_Q4-Pad1_ Net-_J5-Pad2_ BC847
+Q4 Net-_Q4-Pad1_ /15V/-15V gesiebt/VDC- Net-_Q4-Pad3_ BC847
+J5 Net-_D6-Pad1_ Net-_J5-Pad2_ Conn_01x02_Male
+TP9 /15V/-15V gesiebt/VDC- TestPoint
+C3 Net-_C1-Pad1_ Net-_C1-Pad2_ 330n
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 33u
+C5 Net-_C1-Pad1_ Net-_C1-Pad2_ 3n3
+C9 /15V/-15V gesiebt/VDC+ GND 330n
+C7 /15V/-15V gesiebt/VDC+ GND 33u
+C11 /15V/-15V gesiebt/VDC+ GND 3n3
+C4 Net-_C2-Pad1_ Net-_C2-Pad2_ 330n
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 33u
+C6 Net-_C2-Pad1_ Net-_C2-Pad2_ 3n3
+C10 GND /15V/-15V gesiebt/VDC- 330n
+C8 GND /15V/-15V gesiebt/VDC- 33u
+C12 GND /15V/-15V gesiebt/VDC- 3n3
+L4 GND Net-_C1-Pad2_ 100u
+L5 GND Net-_C2-Pad1_ 100u
+TP3 Net-_C1-Pad1_ TestPoint
+TP6 Net-_C2-Pad2_ TestPoint
+TP4 Net-_C1-Pad2_ TestPoint
+TP5 Net-_C2-Pad1_ TestPoint
+L2 Net-_D2-Pad2_ Net-_C2-Pad2_ Net-_C2-Pad1_ /Verpolschutz und Filterung/V+2 L_Core_Ferrite_Coupled_1243
+L1 /Verpolschutz und Filterung/V-1 Net-_C1-Pad2_ Net-_C1-Pad1_ Net-_D1-Pad1_ L_Core_Ferrite_Coupled_1243
+R13 /15V/-15V gesiebt/+15V_aus Net-_C25-Pad1_ 240
+R14 Net-_C26-Pad2_ /15V/-15V gesiebt/-15V_aus 240
+C25 Net-_C25-Pad1_ GND 10u
+C26 GND Net-_C26-Pad2_ 10u
+HS3 Heatsink
+RV1 GND GND Net-_C25-Pad1_ 5k
+RV2 GND GND Net-_C26-Pad2_ 5k
+HS4 Heatsink
+D11 /15V/-15V gesiebt/+15V_aus GND 1N5408
+D12 GND /15V/-15V gesiebt/-15V_aus 1N5408
+D7 Net-_C19-Pad1_ /15V/-15V gesiebt/+15V_aus MRA4003T3G
+D8 /15V/-15V gesiebt/-15V_aus Net-_C20-Pad2_ MRA4003T3G
+TP13 /15V/-15V gesiebt/+15V_aus TestPoint
+TP14 /15V/-15V gesiebt/-15V_aus TestPoint
+U2 Net-_C26-Pad2_ Net-_C20-Pad2_ /15V/-15V gesiebt/-15V_aus LM337_TO220
+U1 Net-_C25-Pad1_ /15V/-15V gesiebt/+15V_aus Net-_C19-Pad1_ LM317_TO-220
+TP12 GND TestPoint
+D9 /15V/-15V gesiebt/+15V_aus Net-_C25-Pad1_ MRA4003T3G
+D10 Net-_C26-Pad2_ /15V/-15V gesiebt/-15V_aus MRA4003T3G
+R9 Net-_C13-Pad1_ /15V/-15V gesiebt/VDC+ 220
+HS1 Heatsink
+Q7 Net-_C13-Pad1_ /15V/-15V gesiebt/VDC+ Net-_C19-Pad1_ TIP120
+Q8 Net-_C14-Pad2_ /15V/-15V gesiebt/VDC- Net-_C20-Pad2_ TIP125
+R10 Net-_C14-Pad2_ /15V/-15V gesiebt/VDC- 220
+C17 Net-_C13-Pad1_ GND 47n
+C15 Net-_C13-Pad1_ GND 4u7
+C13 Net-_C13-Pad1_ GND 470u
+TP10 Net-_C19-Pad1_ TestPoint
+TP11 Net-_C20-Pad2_ TestPoint
+HS2 Heatsink
+C31 /15V/-15V gesiebt/+15V_aus GND 150n
+C29 /15V/-15V gesiebt/+15V_aus GND 15u
+C32 GND /15V/-15V gesiebt/-15V_aus 150n
+C30 GND /15V/-15V gesiebt/-15V_aus 15u
+C21 Net-_C19-Pad1_ GND 3u3
+C23 Net-_C19-Pad1_ GND 33n
+C19 Net-_C19-Pad1_ GND 100u
+C22 GND Net-_C20-Pad2_ 3u3
+C24 GND Net-_C20-Pad2_ 33n
+C20 GND Net-_C20-Pad2_ 100u
+R11 Net-_C13-Pad1_ GND 1Meg
+R12 GND Net-_C14-Pad2_ 1Meg
+C18 GND Net-_C14-Pad2_ 47n
+C16 GND Net-_C14-Pad2_ 4u7
+C14 GND Net-_C14-Pad2_ 470u
+C27 /15V/-15V gesiebt/+15V_aus GND 1500u
+C28 GND /15V/-15V gesiebt/-15V_aus 1500u
+.end

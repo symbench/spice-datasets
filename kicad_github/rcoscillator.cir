@@ -1,0 +1,15 @@
+.title KiCad schematic
+R3 Net-_R1-Pad1_ Net-_C2-Pad2_ 2.2k
+R1 Net-_R1-Pad1_ Net-_Q1-Pad2_ 4.7k
+R4 Net-_C1-Pad1_ 0 680
+C3 Net-_C3-Pad1_ Net-_C2-Pad2_ 0.01u
+R6 Net-_C3-Pad1_ 0 4.7k
+R7 Net-_C4-Pad1_ 0 4.7k
+C4 Net-_C4-Pad1_ Net-_C3-Pad1_ 0.01u
+C1 Net-_C1-Pad1_ 0 22u
+V1 Net-_R1-Pad1_ 0 dc 12
+R5 Net-_C4-Pad1_ Net-_Q1-Pad2_ 4.7k
+R2 Net-_Q1-Pad2_ 0 10k
+C2 NC_01 Net-_C2-Pad2_ .01u
+Q1 Net-_C2-Pad2_ Net-_Q1-Pad2_ Net-_C1-Pad1_ NC_02 QNPN
+.end

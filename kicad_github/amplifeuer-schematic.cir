@@ -1,0 +1,35 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 220nF
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 220nF
+C7 /amplifier/+Vp GND 680μF
+C8 /amplifier/+Vp GND 100nF
+J3 Net-_C3-Pad2_ GND Output1
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 680μF
+C4 Net-_C3-Pad1_ Net-_C4-Pad2_ 22nF
+R1 Net-_C4-Pad2_ GND 10R
+J4 Net-_C6-Pad2_ GND Output2
+C6 Net-_C5-Pad2_ Net-_C6-Pad2_ 680μF
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 22nF
+R2 Net-_C5-Pad1_ GND 10R
+J1 Net-_C2-Pad1_ GND Net-_C1-Pad1_ Input
+J5 GND /amplifier/+Vp Power
+C9 Net-_C9-Pad1_ GND 100μF
+U1 Net-_C1-Pad2_ Net-_C9-Pad1_ Net-_C9-Pad1_ Net-_C3-Pad1_ GND Net-_C5-Pad2_ /amplifier/+Vp Net-_C9-Pad1_ Net-_C2-Pad2_ TDA1521A
+U11 Net-_R11-Pad1_ Net-_RV11-Pad2_ GND Net-_D11-Pad2_ +12V LT1071
+J11 GND /amplifier/+Vp Power out
+C13 Net-_C13-Pad1_ GND 1000μF
+RV11 GND Net-_RV11-Pad2_ Net-_D13-Pad1_ 5000RTRIM
+D11 Net-_C13-Pad1_ Net-_D11-Pad2_ 1N5822
+L11 +12V Net-_D11-Pad2_ 100μH
+C11 +12V GND 100μF
+R11 Net-_R11-Pad1_ Net-_C12-Pad1_ 1000R
+C12 Net-_C12-Pad1_ GND 1μF
+J12 GND +12V Power in
+L12 Net-_C13-Pad1_ /amplifier/+Vp 10μH
+C15 /amplifier/+Vp GND 100nF
+C14 /amplifier/+Vp GND 100μF
+D13 Net-_D13-Pad1_ /amplifier/+Vp Green
+D12 Net-_D12-Pad1_ +12V Red
+R12 Net-_D12-Pad1_ GND 2200R
+HS11 GND Aavid-5342B
+.end

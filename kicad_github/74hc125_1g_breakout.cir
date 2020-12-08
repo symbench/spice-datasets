@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 Net-_J1-Pad3_ Net-_J1-Pad1_ GND Net-_J2-Pad1_ VCC 74AHC1G125
+C1 VCC GND 100nF
+R1 VCC Net-_J1-Pad3_ PU
+J1 Net-_J1-Pad1_ GND Net-_J1-Pad3_ Conn_01x03
+J2 Net-_J2-Pad1_ GND VCC Conn_01x03
+.end

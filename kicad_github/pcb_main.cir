@@ -1,0 +1,28 @@
+.title KiCad schematic
+U1 Net-_C1-Pad1_ Net-_C1-Pad2_ Net-_R1-Pad1_ -12V Net-_R2-Pad1_ Net-_C2-Pad2_ Net-_C2-Pad1_ +12V LF412CN
+R1 Net-_R1-Pad1_ Net-_J1-PadT_ 100kΩ
+R3 GND Net-_R1-Pad1_ 10kΩ
+R5 GND Net-_R2-Pad1_ 10kΩ
+R2 Net-_R2-Pad1_ Net-_J1-PadR_ 100kΩ
+R7 Net-_C1-Pad1_ Net-_C1-Pad2_ 47kΩ
+R8 Net-_C2-Pad1_ Net-_C2-Pad2_ 47kΩ
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 100μF
+J1 Net-_J1-PadR_ GND Net-_J1-PadT_ MJ-352W-0
+J2 Net-_J1-PadR_ GND Net-_J1-PadT_ MJ-352W-0
+C4 +12V GND 2.2μF
+C5 -12V GND 2.2μF
+J5 GND Net-_J5-Pad2_ LAMP
+R9 Net-_C3-Pad1_ Net-_C1-Pad1_ 3.9kΩ
+J4 -12V -12V GND GND GND GND GND GND +12V +12V +5V +5V NC_01 NC_02 NC_03 NC_04 POWER
+J3 Net-_C2-Pad1_ NC_05 Net-_C3-Pad2_ METER
+R10 Net-_J5-Pad2_ +5V 390Ω
+C6 +12V GND 100μF
+C7 GND -12V 100μF
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 10pF
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 10pF
+SW1 Net-_R6-Pad2_ Net-_C1-Pad2_ Net-_R4-Pad2_ GND 4MS1R202M6QES
+RV1 Net-_C2-Pad2_ Net-_C2-Pad2_ Net-_R4-Pad1_ 5kΩ
+R6 Net-_R6-Pad1_ Net-_R6-Pad2_ 820Ω
+RV2 Net-_C2-Pad2_ Net-_C2-Pad2_ Net-_R6-Pad1_ 5kΩ
+R4 Net-_R4-Pad1_ Net-_R4-Pad2_ 820Ω
+.end

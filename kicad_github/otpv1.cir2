@@ -1,0 +1,13 @@
+.title KiCad schematic
+U1 Net-_J2-Pad1_ NC_01 NC_02 NC_03 Net-_R1-Pad2_ Net-_IC1-Pad2_ Net-_J1-Pad8_ Net-_J1-Pad7_ NC_04 NC_05 NC_06 NC_07 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad6_ Net-_J2-Pad3_ Net-_J1-Pad5_ Net-_J1-Pad8_ Net-_J1-Pad8_ Net-_J1-Pad7_ NC_08 NC_09 NC_10 NC_11 Net-_IC1-Pad15_ Net-_IC1-Pad16_ ATMEGA328P-PU
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ OTP board
+J2 Net-_J2-Pad1_ Net-_J1-Pad6_ Net-_J2-Pad3_ Net-_J1-Pad5_ Net-_J1-Pad8_ Net-_J1-Pad7_ Programmer
+R2 Net-_J2-Pad1_ Net-_J1-Pad8_ R
+R3 Net-_IC1-Pad16_ Net-_J1-Pad8_ R
+R4 Net-_IC1-Pad15_ Net-_J1-Pad8_ R
+SW1 Net-_J2-Pad1_ Net-_R1-Pad2_ Switch_SW_Push
+R1 Net-_J1-Pad7_ Net-_R1-Pad2_ R
+IC1 NC_12 Net-_IC1-Pad2_ NC_13 Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad10_ Net-_IC1-Pad14_ Net-_IC1-Pad15_ Net-_IC1-Pad16_ DS3231
+R5 Net-_IC1-Pad2_ Net-_IC1-Pad10_ R
+J3 Net-_IC1-Pad14_ Net-_IC1-Pad10_ Conn_01x02_Female
+.end

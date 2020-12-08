@@ -1,0 +1,11 @@
+.title KiCad schematic
+R2 Net-_Q1-Pad3_ Net-_BT1-Pad2_ 22
+R1 Net-_C2-Pad1_ Net-_C1-Pad2_ 820K
+C2 Net-_C2-Pad1_ Net-_C1-Pad2_ 4,7nF
+C3 Net-_C2-Pad1_ Net-_BT1-Pad2_ 10nF
+Q1 Net-_C2-Pad1_ Net-_C1-Pad2_ Net-_Q1-Pad3_ BC547
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 1uF
+BT1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ 3V
+J2 Net-_C2-Pad1_ Net-_BT1-Pad1_ Signal_Out
+J1 Net-_BT1-Pad2_ Net-_C1-Pad1_ Signal_IN
+.end

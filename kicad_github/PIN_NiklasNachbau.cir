@@ -1,0 +1,24 @@
+.title KiCad schematic
+D1 Net-_C2-Pad2_ GND D_Photo
+D2 Net-_C2-Pad2_ GND D_Photo
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ C
+R2 Net-_C1-Pad1_ Net-_C2-Pad2_ R
+C1 Net-_C1-Pad1_ GND C
+R1 +24V Net-_C1-Pad1_ R
+R4 Net-_C3-Pad1_ Net-_C2-Pad1_ R
+C3 Net-_C3-Pad1_ Net-_C2-Pad1_ C
+D3 GND Net-_C4-Pad1_ D
+C4 Net-_C4-Pad1_ GND C
+C5 Net-_C5-Pad1_ Net-_C3-Pad1_ C
+R5 Net-_C5-Pad1_ Net-_C4-Pad1_ R
+R6 Net-_C4-Pad1_ Net-_R6-Pad2_ R
+R7 Net-_R6-Pad2_ Net-_R7-Pad2_ R
+R3 Net-_C4-Pad1_ +3V3 R
+R9 Net-_R8-Pad2_ GND R
+R8 Net-_R7-Pad2_ Net-_R8-Pad2_ R
+U1 Net-_C3-Pad1_ Net-_C2-Pad1_ Net-_C4-Pad1_ GND Net-_C5-Pad1_ Net-_R6-Pad2_ Net-_R7-Pad2_ +3V3 Opamp_Dual_Generic
+TP2 GND TestPoint
+TP1 Net-_R8-Pad2_ TestPoint
+J1 +24V GND Screw_Terminal_01x02
+J2 +3V3 GND Screw_Terminal_01x02
+.end

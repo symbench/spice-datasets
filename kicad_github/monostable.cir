@@ -1,0 +1,14 @@
+.title KiCad schematic
+R2 Net-_C2-Pad2_ GND 10k
+R1 Net-_R1-Pad1_ Net-_C2-Pad2_ 240k
+R3 Net-_C1-Pad1_ GND 150k
+C2 out Net-_C2-Pad2_ 0.03u
+C1 Net-_C1-Pad1_ in 0.0001u
+V2 in GND pulse(0 3 100n 1n 1n 20n 100n)
+D1 GND Net-_C1-Pad1_ D
+V1 GND Net-_R1-Pad1_ dc 12
+V3 VDD GND dc 15
+V4 GND VSS dc 15
+U1 out Net-_C1-Pad1_ Net-_C2-Pad2_ AD8620
+.tran 15p 300n
+.end

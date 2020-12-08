@@ -1,0 +1,8 @@
+.title KiCad schematic
+V1 ip GND sin(0 20 1000)
+C1 Net-_C1-Pad1_ ip 100u
+D1 GND Net-_C1-Pad1_ D_ALT
+D2 Net-_C1-Pad1_ out D_ALT
+C2 GND out 100u
+R1 out GND 20k
+.end

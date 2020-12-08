@@ -1,0 +1,13 @@
+.title KiCad schematic
+Q1 Net-_C2-Pad2_ Net-_C1-Pad1_ Net-_BT1-Pad2_ BC548
+BT1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ 9V
+R1 Net-_D1-Pad1_ Net-_C1-Pad1_ 470R
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 47uF
+D1 Net-_D1-Pad1_ Net-_BT1-Pad1_ LED
+R2 Net-_BT1-Pad1_ Net-_C1-Pad2_ 47K
+Q2 Net-_C1-Pad2_ Net-_C2-Pad1_ Net-_BT1-Pad2_ BC548
+R3 Net-_BT1-Pad1_ Net-_C2-Pad2_ 47K
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 47uF
+R4 Net-_D2-Pad2_ Net-_C2-Pad1_ 470R
+D2 Net-_BT1-Pad1_ Net-_D2-Pad2_ LED
+.end

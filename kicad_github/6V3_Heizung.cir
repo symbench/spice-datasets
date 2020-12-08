@@ -1,0 +1,67 @@
+.title KiCad schematic
+P1 Net-_C2-Pad2_ Net-_F1-Pad2_ 7V5_AC
+D1 Net-_C1-Pad1_ GND 18TQ045
+D2 Net-_C2-Pad2_ GND 18TQ045
+D3 Net-_C8-Pad2_ Net-_C1-Pad1_ 18TQ045
+D4 Net-_C8-Pad2_ Net-_C2-Pad2_ 18TQ045
+C1 Net-_C1-Pad1_ GND 22nF
+C2 GND Net-_C2-Pad2_ 22nF
+C9 Net-_C8-Pad2_ Net-_C2-Pad2_ 22nF
+C8 Net-_C1-Pad1_ Net-_C8-Pad2_ 22nF
+C10 /V_Unreg GND 33000µF/16V
+R5 Net-_Q1-Pad1_ Net-_R3-Pad2_ 1k
+R3 Net-_C7-Pad1_ Net-_R3-Pad2_ 100R
+C7 Net-_C7-Pad1_ Net-_C14-Pad1_ 1nF
+C12 Net-_C12-Pad1_ GND 680µF
+R8 Net-_C14-Pad1_ Net-_C12-Pad1_ 4k12
+R9 GND Net-_C14-Pad1_ 1k
+C14 Net-_C14-Pad1_ Net-_C12-Pad1_ 1nF
+C16 GND Net-_C12-Pad1_ 100nF
+P4 Net-_C12-Pad1_ GND 6V3_DC_2
+P2 GND +12V 12V_DC
+R1 +12V /Reference 22k
+C3 /Reference GND 680µF/16V
+D5 /Reference GND LM385Z-1.2
+R4 Net-_Q2-Pad1_ Net-_R2-Pad2_ 1k
+R2 Net-_C6-Pad1_ Net-_R2-Pad2_ 100R
+C6 Net-_C6-Pad1_ Net-_C13-Pad1_ 1nF
+C11 Net-_C11-Pad1_ GND 680µF
+R6 Net-_C13-Pad1_ Net-_C11-Pad1_ 4k12
+R7 GND Net-_C13-Pad1_ 1k
+C13 Net-_C13-Pad1_ Net-_C11-Pad1_ 1nF
+C15 GND Net-_C11-Pad1_ 100nF
+P3 Net-_C11-Pad1_ GND 6V3_DC_1
+Q2 Net-_Q2-Pad1_ /V_Unreg Net-_C11-Pad1_ IRF540N
+Q1 Net-_Q1-Pad1_ /V_Unreg Net-_C12-Pad1_ IRF540N
+C5 GND +12V 100nF
+U1 Net-_R2-Pad2_ Net-_C13-Pad1_ /Reference GND /Reference Net-_C14-Pad1_ Net-_R3-Pad2_ +12V TL072
+P5 +12V Net-_D11-Pad1_ Relais
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ LED
+R22 +12V Net-_D11-Pad2_ 47k
+U2 Net-_D9-Pad1_ /Vref Net-_R13-Pad1_ GND Net-_R18-Pad2_ /Vref Net-_D10-Pad1_ +12V LM393
+R11 Net-_D7-Pad1_ Net-_C18-Pad1_ 82K
+R12 Net-_C18-Pad1_ GND 100K
+R13 Net-_R13-Pad1_ Net-_C18-Pad1_ 10K
+C18 Net-_C18-Pad1_ GND 1µF / 16V
+R14 Net-_D9-Pad1_ Net-_R13-Pad1_ 1M
+R15 Net-_D9-Pad1_ +12V 10K
+R16 GND Net-_D9-Pad1_ 10K
+R17 Net-_D9-Pad1_ Net-_C19-Pad1_ 470K
+D9 Net-_D9-Pad1_ Net-_C19-Pad1_ 1N4148
+C19 Net-_C19-Pad1_ GND 47µF / 16V
+R18 Net-_C19-Pad1_ Net-_R18-Pad2_ 10K
+R19 Net-_R18-Pad2_ Net-_D10-Pad1_ 5M1
+R20 +12V Net-_D10-Pad1_ 10K
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ ZD5V6
+R21 Net-_D10-Pad2_ GND 10K
+Q3 Net-_D11-Pad1_ Net-_D10-Pad2_ GND BS170
+C17 +12V GND 100nF / 63V
+D7 Net-_D7-Pad1_ Net-_C8-Pad2_ SB190
+D6 /Vref GND ZD3V9
+R10 +12V /Vref 4K7
+C4 /Vref GND 100nF / 63V
+D8 /V_Unreg Net-_C8-Pad2_ 18TQ045
+F1 Net-_C1-Pad1_ Net-_F1-Pad2_ Fuse
+D12 GND Net-_D12-Pad2_ LED
+R23 Net-_C11-Pad1_ Net-_D12-Pad2_ 23k
+.end

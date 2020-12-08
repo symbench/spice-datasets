@@ -1,0 +1,84 @@
+.title KiCad schematic
+J4 VCC GND Screw_Terminal_01x02
+U1 VCC Net-_D1-Pad1_ GND Net-_R1-Pad1_ GND LM2576HVS-ADJ
+L1 Net-_D1-Pad1_ +15V 220uH
+C4 +15V GND CP
+D1 Net-_D1-Pad1_ GND SS24
+U2 +15V GND +5V L7805
+C7 +5V GND C
+R1 Net-_R1-Pad1_ +15V 240
+R2 Net-_R1-Pad1_ GND 2k7
+J2 /MISO +5V /SCK /MOSI /RST GND AVR-ISP-6
+J6 GND +5V /TX /RX UART HDR
+J8 GND GND GND GND GND HDR
+J7 +5V +5V +5V +5V 5V HDR
+D2 Net-_D2-Pad1_ +5V POWER_LED
+R3 GND Net-_D2-Pad1_ 540
+J3 /SCL /SDA GND +5V I2C HDR
+J10 GND +5V /B /A ENCODER HDR
+J9 GND +5V /svo servo hdr
+C1 VCC GND 470
+C2 VCC GND 470
+U6 /B Net-_C15-Pad1_ GND +5V GND +5V Net-_R17-Pad1_ Net-_R18-Pad1_ Net-_C14-Pad1_ NC_01 Net-_D11-Pad1_ /svo Net-_D12-Pad1_ Net-_D13-Pad1_ /MOSI /MISO /SCK +5V NC_02 NC_03 GND /Isense Net-_SW2-Pad4_ Net-_SW2-Pad3_ Net-_SW2-Pad2_ Net-_SW2-Pad1_ /SDA /SCL /RST /RX /TX /A ATmega328P-AU-MCU_Microchip_ATmega
+C12 +5V GND C_Small
+C13 +5V GND C_Small
+C11 +5V GND CP_Small
+R19 +5V /RST 10K
+R20 +5V /SCL 4K7
+R21 +5V /SDA 4K7
+R23 GND /SGN1 10K
+D12 Net-_D12-Pad1_ GND 5.1V
+R24 GND /SGN2 10K
+D13 Net-_D13-Pad1_ GND 5.1V
+SW2 Net-_SW2-Pad1_ Net-_SW2-Pad2_ Net-_SW2-Pad3_ Net-_SW2-Pad4_ GND GND GND GND SW_DIP_x04
+C10 /RST GND C_Small
+D9 GND Net-_D9-Pad2_ LED
+R17 Net-_R17-Pad1_ Net-_D9-Pad2_ 540
+D10 GND Net-_D10-Pad2_ LED
+R18 Net-_R18-Pad1_ Net-_D10-Pad2_ 540
+D11 Net-_D11-Pad1_ GND 5.1V
+R25 /SGN1 Net-_D12-Pad1_ 1K
+SW3 Net-_C14-Pad1_ GND SW_Push
+SW4 Net-_C15-Pad1_ GND SW_Push
+SW1 GND /RST SW_Push
+R22 /~SD Net-_D11-Pad1_ 4K7
+R26 /SGN2 Net-_D13-Pad1_ 1K
+U3 +15V /IN1 /~SD GND Net-_D5-Pad1_ Net-_C8-Pad2_ Net-_D4-Pad1_ Net-_C8-Pad1_ IR2104
+D3 Net-_C8-Pad1_ +15V D
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ D
+R5 Net-_D4-Pad2_ Net-_D4-Pad1_ R
+Q2 Net-_D5-Pad2_ /M1 Net-_Q2-Pad3_ IRF540N
+R6 Net-_D5-Pad2_ Net-_D5-Pad1_ R
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ D
+CB1 Net-_C8-Pad1_ Net-_C8-Pad2_ .1
+R4 /~SD +5V R
+U5 +15V /IN2 /~SD GND Net-_D7-Pad1_ Net-_C9-Pad2_ Net-_D6-Pad1_ Net-_C9-Pad1_ IR2104
+D8 Net-_C9-Pad1_ +15V D
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ D
+R14 Net-_D6-Pad2_ Net-_D6-Pad1_ R
+Q3 Net-_D6-Pad2_ VCC /M2 IRF540N
+Q4 Net-_D7-Pad2_ /M2 Net-_Q2-Pad3_ IRF540N
+R15 Net-_D7-Pad2_ Net-_D7-Pad1_ R
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ D
+CB6 Net-_C9-Pad1_ Net-_C9-Pad2_ .1u
+J11 /SGN2 /IN1 /IN2 /SGN1 CROSS CONN
+CB2 +15V GND 1uF
+CB3 +15V GND .1uF
+CB4 +15V GND 1uF
+CB5 +15V GND .1uF
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 22u
+C9 Net-_C9-Pad1_ Net-_C9-Pad2_ 22u
+J12 /M2 /M1 motor
+U4 /Isense Net-_R10-Pad1_ /IS+ GND GND GND NC_04 +5V LM358
+R13 Net-_R10-Pad1_ /Isense 10K
+R10 Net-_R10-Pad1_ GND 1K
+C15 Net-_C15-Pad1_ GND C_Small
+C14 Net-_C14-Pad1_ GND C_Small
+C16 +15V GND 470
+C17 VCC GND 470
+C18 VCC GND 470
+J1 /SCL /SDA GND +5V I2C HDR
+J13 VCC +15V Conn_01x02_Female
+Q1 Net-_D4-Pad2_ VCC /M1 IRF540N
+R7 Net-_Q2-Pad3_ /IS+ NC_05 GND R_Shunt
+.end

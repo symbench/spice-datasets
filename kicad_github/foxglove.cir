@@ -1,0 +1,71 @@
+.title KiCad schematic
+J2 GND +5V NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NEIGHBOR2
+J1 GND VCC NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 NC_56 NC_57 NC_58 NC_59 NC_60 NC_61 NC_62 NC_63 NC_64 NC_65 NC_66 NC_67 NC_68 NC_69 NC_70 NC_71 NC_72 NC_73 NC_74 NC_75 NC_76 NEIGHBOR1
+J7 NC_77 NC_78 NC_79 NC_80 NC_81 NC_82 NC_83 NC_84 NC_85 NC_86 NC_87 NC_88 NC_89 NC_90 NC_91 NC_92 NC_93 NC_94 NC_95 NC_96 BONUS_ROW
+MH3 GND MOUNTING_HOLE
+MH4 GND MOUNTING_HOLE
+MH1 GND MOUNTING_HOLE
+MH2 GND MOUNTING_HOLE
+U10 NC_97 NC_98 NC_99 NC_100 GND VCC NC_101 NC_102 NC_103 NC_104 NC_105 NC_106 GND NC_107 NC_108 NC_109 NC_110 NC_111 NC_112 NC_113 NC_114 NC_115 NC_116 NC_117 NC_118 NC_119 +1V2 NC_120 NC_121 VCC NC_122 NC_123 NC_124 NC_125 NC_126 NC_127 NC_128 NC_129 NC_130 +1V2 NC_131 NC_132 NC_133 NC_134 NC_135 VCC NC_136 NC_137 NC_138 NC_139 NC_140 NC_141 Net-_C1-Pad2_ Net-_C1-Pad1_ NC_142 NC_143 VCC NC_144 GND NC_145 NC_146 NC_147 NC_148 NC_149 /CDONE /CRESET NC_150 NC_151 GND NC_152 /SPI_SSEL VCC NC_153 NC_154 NC_155 NC_156 NC_157 NC_158 NC_159 NC_160 NC_161 NC_162 NC_163 NC_164 NC_165 GND NC_166 NC_167 VCC NC_168 NC_169 +1V2 NC_170 NC_171 NC_172 NC_173 NC_174 NC_175 NC_176 VCC NC_177 NC_178 GND NC_179 NC_180 NC_181 NC_182 +2V5 Net-_J3-Pad1_ NC_183 +1V2 NC_184 NC_185 NC_186 NC_187 NC_188 NC_189 NC_190 NC_191 NC_192 NC_193 NC_194 VCC NC_195 NC_196 Net-_C3-Pad1_ Net-_C3-Pad2_ NC_197 NC_198 NC_199 VCC GND NC_200 NC_201 NC_202 NC_203 NC_204 NC_205 NC_206 GND NC_207 NC_208 NC_209 NC_210 iCE40HX4K
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 100nF
+C2 Net-_C1-Pad1_ Net-_C1-Pad2_ 10uF
+R1 Net-_C1-Pad1_ +1V2 100
+J3 Net-_J3-Pad1_ GND Conn_01x02
+C4 Net-_C3-Pad1_ Net-_C3-Pad2_ 100nF
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 10uF
+R2 Net-_C3-Pad1_ +1V2 100
+R5 GND /SPI_SSEL 10k
+R4 VCC /CRESET 10k
+R3 VCC /CDONE 10k
+U18 NC_211 NC_212 +5V /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 /inputs, level shifters, comparators/COMP1 NC_213 /inputs, level shifters, comparators/COMP2 GND NC_214 NC_215 LM339
+C5 +5V GND 0.1uF
+J4 /inputs, level shifters, comparators/A1 /inputs, level shifters, comparators/A2 /inputs, level shifters, comparators/A3 /inputs, level shifters, comparators/A4 /inputs, level shifters, comparators/A5 /inputs, level shifters, comparators/A6 /inputs, level shifters, comparators/A7 /inputs, level shifters, comparators/A8 /inputs, level shifters, comparators/VCCA GND Conn_02x05_Odd_Even
+J5 NC_216 NC_217 NC_218 NC_219 NC_220 NC_221 NC_222 NC_223 NC_224 GND Conn_02x05_Odd_Even
+U1 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A1 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_225 GND GND NC_226 NC_227 NC_228 /inputs, level shifters, comparators/ADC Net-_R6-Pad1_ Net-_R10-Pad1_ Net-_U1-Pad15_ +5V 74HC4051
+R6 Net-_R6-Pad1_ GND R
+R10 Net-_R10-Pad1_ /inputs, level shifters, comparators/VCCA R
+U5 +1V2 GND NC_229 Net-_U1-Pad15_ NC_230 /inputs, level shifters, comparators/VCCA SHIFTER1
+R22 /inputs, level shifters, comparators/gf_adc /inputs, level shifters, comparators/ADC 5k
+R23 GND /inputs, level shifters, comparators/gf_adc 10k
+U2 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A2 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_231 GND GND NC_232 NC_233 NC_234 /inputs, level shifters, comparators/ADC Net-_R7-Pad1_ Net-_R11-Pad1_ Net-_U2-Pad15_ +5V 74HC4051
+R7 Net-_R7-Pad1_ GND R
+R11 Net-_R11-Pad1_ /inputs, level shifters, comparators/VCCA R
+U6 +1V2 GND NC_235 Net-_U2-Pad15_ NC_236 /inputs, level shifters, comparators/VCCA SHIFTER2
+U3 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A3 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_237 GND GND NC_238 NC_239 NC_240 /inputs, level shifters, comparators/ADC Net-_R8-Pad1_ Net-_R12-Pad1_ Net-_U3-Pad15_ +5V 74HC4051
+R8 Net-_R8-Pad1_ GND R
+R12 Net-_R12-Pad1_ /inputs, level shifters, comparators/VCCA R
+U7 +1V2 GND NC_241 Net-_U3-Pad15_ NC_242 /inputs, level shifters, comparators/VCCA SHIFTER3
+U4 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A4 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_243 GND GND NC_244 NC_245 NC_246 /inputs, level shifters, comparators/ADC Net-_R9-Pad1_ Net-_R13-Pad1_ Net-_U4-Pad15_ +5V 74HC4051
+R9 Net-_R9-Pad1_ GND R
+R13 Net-_R13-Pad1_ /inputs, level shifters, comparators/VCCA R
+U8 +1V2 GND NC_247 Net-_U4-Pad15_ NC_248 /inputs, level shifters, comparators/VCCA SHIFTER4
+U9 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A5 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_249 GND GND NC_250 NC_251 NC_252 /inputs, level shifters, comparators/ADC Net-_R14-Pad1_ Net-_R18-Pad1_ Net-_U14-Pad4_ +5V 74HC4051
+R14 Net-_R14-Pad1_ GND R
+R18 Net-_R18-Pad1_ /inputs, level shifters, comparators/VCCA R
+U14 +1V2 GND NC_253 Net-_U14-Pad4_ NC_254 /inputs, level shifters, comparators/VCCA SHIFTER5
+U11 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A6 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_255 GND GND NC_256 NC_257 NC_258 /inputs, level shifters, comparators/ADC Net-_R15-Pad1_ Net-_R19-Pad1_ Net-_U11-Pad15_ +5V 74HC4051
+R15 Net-_R15-Pad1_ GND R
+R19 Net-_R19-Pad1_ /inputs, level shifters, comparators/VCCA R
+U15 +1V2 GND NC_259 Net-_U11-Pad15_ NC_260 /inputs, level shifters, comparators/VCCA SHIFTER6
+U12 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A7 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_261 GND GND NC_262 NC_263 NC_264 /inputs, level shifters, comparators/ADC Net-_R16-Pad1_ Net-_R20-Pad1_ Net-_U12-Pad15_ +5V 74HC4051
+R16 Net-_R16-Pad1_ GND R
+R20 Net-_R20-Pad1_ /inputs, level shifters, comparators/VCCA R
+U16 +1V2 GND NC_265 Net-_U12-Pad15_ NC_266 /inputs, level shifters, comparators/VCCA SHIFTER7
+U13 /inputs, level shifters, comparators/DAC2 /inputs, level shifters, comparators/COMP1 /inputs, level shifters, comparators/A8 /inputs, level shifters, comparators/COMP2 /inputs, level shifters, comparators/DAC3 NC_267 GND GND NC_268 NC_269 NC_270 /inputs, level shifters, comparators/ADC Net-_R17-Pad1_ Net-_R21-Pad1_ Net-_U13-Pad15_ +5V 74HC4051
+R17 Net-_R17-Pad1_ GND R
+R21 Net-_R21-Pad1_ /inputs, level shifters, comparators/VCCA R
+U17 +1V2 GND NC_271 Net-_U13-Pad15_ NC_272 /inputs, level shifters, comparators/VCCA SHIFTER8
+U19 /power supplies/VCCA /power supplies/VCCA Net-_J6-Pad2_ GND Net-_U19-Pad5_ /power supplies/DAC2 /power supplies/DAC2 +5V MC4558CPT
+C6 GND +5V 0.1uF
+U20 /power supplies/DAC3 /power supplies/DAC3 Net-_U20-Pad3_ GND Net-_U20-Pad5_ /power supplies/DAC4 /power supplies/DAC4 +5V MC4558CPT
+C7 GND +5V 0.1uF
+U21 +5V Net-_J6-Pad2_ Net-_U19-Pad5_ Net-_U20-Pad3_ Net-_U20-Pad5_ GND +5V NC_273 /power supplies/SSEL NC_274 DAC084S085
+R24 +5V /power supplies/SSEL 10k
+J6 GND Net-_J6-Pad2_ Conn_01x02_Female
+U22 VCC GND VCC NC_275 +1V2 MIC94310
+C9 +1V2 GND 10uF
+C8 GND VCC 0.47uF
+U23 VCC GND VCC NC_276 +2V5 MIC94310
+C11 +2V5 GND 10uF
+C10 GND VCC 0.47uF
+.end

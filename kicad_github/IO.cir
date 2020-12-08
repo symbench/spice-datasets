@@ -1,0 +1,54 @@
+.title KiCad schematic
+J55 Net-_J54-Pad4_ Net-_J54-Pad3_ NC_01 Audio-Jack-3
+J54 NC_02 NC_03 Net-_J54-Pad3_ Net-_J54-Pad4_ NC_04 NC_05 InConnector
+J56 Net-_C172-Pad2_ NC_06 Net-_J56-Pad3_ Net-_J56-Pad4_ NC_07 Net-_C173-Pad1_ OutConnector
+R302 Net-_R302-Pad1_ Net-_J56-Pad4_ R
+R301 NC_08 Net-_J56-Pad4_ R
+U33 Net-_J56-Pad4_ Net-_R302-Pad1_ Net-_C169-Pad1_ NC_09 Net-_C170-Pad1_ Net-_R303-Pad1_ Net-_J56-Pad3_ NC_10 ADA4807-2ARM
+R303 Net-_R303-Pad1_ Net-_J56-Pad3_ R
+R304 NC_11 Net-_J56-Pad3_ R
+C172 NC_12 Net-_C172-Pad2_ C
+C174 NC_13 Net-_C172-Pad2_ C
+C173 Net-_C173-Pad1_ NC_14 C
+C175 Net-_C173-Pad1_ NC_15 C
+C169 Net-_C169-Pad1_ Net-_C169-Pad2_ C
+C170 Net-_C170-Pad1_ Net-_C170-Pad2_ C
+R299 Net-_C171-Pad2_ Net-_C169-Pad1_ R
+R300 Net-_C170-Pad1_ Net-_C171-Pad2_ R
+R297 NC_16 Net-_C171-Pad2_ 10k
+R298 Net-_C171-Pad2_ NC_17 10k
+C171 NC_18 Net-_C171-Pad2_ 10u
+R295 Net-_J54-Pad3_ Net-_C169-Pad2_ 2k2
+R296 Net-_J54-Pad4_ Net-_C170-Pad2_ 2k2
+D7 NC_19 Net-_C169-Pad2_ D
+D9 Net-_C169-Pad2_ NC_20 D
+D8 NC_21 Net-_C170-Pad2_ D
+D10 Net-_C170-Pad2_ NC_22 D
+J58 Net-_J58-Pad1_ Net-_J58-Pad2_ NC_23 Audio-Jack-3
+C176 NC_24 Net-_C176-Pad2_ C
+C178 NC_25 Net-_C176-Pad2_ C
+C177 Net-_C177-Pad1_ NC_26 C
+C179 Net-_C177-Pad1_ NC_27 C
+J57 Net-_C176-Pad2_ NC_28 Net-_J57-Pad3_ Net-_J57-Pad4_ NC_29 Net-_C177-Pad1_ InConnector
+J59 NC_30 NC_31 Net-_J58-Pad2_ Net-_J58-Pad1_ NC_32 NC_33 OutConnector
+R306 Net-_R306-Pad1_ Net-_J58-Pad1_ R
+R305 NC_34 Net-_J58-Pad1_ R
+U34 Net-_J58-Pad1_ Net-_R306-Pad1_ Net-_J57-Pad4_ NC_35 Net-_J57-Pad3_ Net-_R307-Pad1_ Net-_J58-Pad2_ NC_36 ADA4807-2ARM
+R307 Net-_R307-Pad1_ Net-_J58-Pad2_ R
+R308 NC_37 Net-_J58-Pad2_ R
+C184 NC_38 Net-_C184-Pad2_ C
+C186 NC_39 Net-_C184-Pad2_ C
+C185 Net-_C185-Pad1_ NC_40 C
+C187 Net-_C185-Pad1_ NC_41 C
+J60 Net-_C184-Pad2_ NC_42 Net-_J60-Pad3_ Net-_J60-Pad3_ NC_43 Net-_C185-Pad1_ InConnector
+J62 NC_44 NC_45 Net-_J60-Pad3_ Net-_J60-Pad3_ NC_46 NC_47 OutConnector
+J61 Net-_J60-Pad3_ NC_48 Conn_Coaxial
+C188 NC_49 Net-_C188-Pad2_ C
+C190 NC_50 Net-_C188-Pad2_ C
+C189 Net-_C189-Pad1_ NC_51 C
+C191 Net-_C189-Pad1_ NC_52 C
+J63 Net-_C188-Pad2_ NC_53 Net-_J63-Pad3_ Net-_J63-Pad4_ NC_54 Net-_C189-Pad1_ InConnector
+J66 NC_55 NC_56 Net-_J63-Pad3_ Net-_J63-Pad4_ NC_57 NC_58 OutConnector
+J65 Net-_J63-Pad4_ NC_59 Conn_Coaxial
+J64 Net-_J63-Pad3_ NC_60 Conn_Coaxial
+.end

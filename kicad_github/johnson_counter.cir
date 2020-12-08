@@ -1,0 +1,11 @@
+.title KiCad schematic
+.include "/home/akshay/Music/kicad-simulation-examples-master/libs/spice_models.lib"
+X1 Net-_X1-Pad1_ clk q0 NC_01 VDD DFLIPFLOP
+V2 VDD GND dc 5
+R1 GND q3 10meg
+X2 q0 clk q1 NC_02 VDD DFLIPFLOP
+X3 q1 clk q2 NC_03 VDD DFLIPFLOP
+X4 q2 clk q3 Net-_X1-Pad1_ VDD DFLIPFLOP
+V1 clk GND dc 0 pwl(0 0 5m 0 5.005m 5 10m 5 10.005m 0 15m 0 15.005m 5 20m 5)
+.tran .25m 20m
+.end

@@ -1,0 +1,20 @@
+.title KiCad schematic
+U3 Net-_D23-Pad2_ GND Net-_R1-Pad1_ Net-_C9-Pad1_ VCC IS31LT3360
+L3 Net-_D23-Pad2_ Net-_C9-Pad2_ 47uH
+C9 Net-_C9-Pad1_ Net-_C9-Pad2_ 1uF
+C8 VCC GND 0.1uF
+R4 Net-_C9-Pad1_ VCC 0.22
+D24 Net-_D24-Pad1_ Net-_C9-Pad1_ LED
+D25 Net-_D25-Pad1_ Net-_D24-Pad1_ LED
+D26 Net-_D26-Pad1_ Net-_D25-Pad1_ LED
+D27 Net-_D27-Pad1_ Net-_D26-Pad1_ LED
+D28 Net-_D28-Pad1_ Net-_D27-Pad1_ LED
+D29 Net-_D29-Pad1_ Net-_D28-Pad1_ LED
+D30 Net-_D30-Pad1_ Net-_D29-Pad1_ LED
+D31 Net-_D31-Pad1_ Net-_D30-Pad1_ LED
+D32 Net-_D32-Pad1_ Net-_D31-Pad1_ LED
+D33 Net-_C9-Pad2_ Net-_D32-Pad1_ LED
+C7 VCC GND 100uF
+D23 VCC Net-_D23-Pad2_ PMEG4010EGWX
+R1 Net-_R1-Pad1_ NC_01 100
+.end

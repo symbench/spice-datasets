@@ -1,0 +1,12 @@
+.title KiCad schematic
+RV1 +12V CoarseTune GND 20k
+RV2 +12V FineTune GND 20k
+J9 +12V GND NC_01 CoarseTune FineTune 1VOIn ModIn PWIn SyncIn SquareOut TriangleOut SawtoothOut Conn_01x12
+J8 GND TriangleOut NC_02 TriangleOut
+J7 GND SawtoothOut NC_03 SawtoothOut
+J6 GND SquareOut NC_04 SquareOut
+J4 GND ModIn NC_05 ModIn
+J3 GND 1VOIn NC_06 1VOin
+J2 GND SyncIn NC_07 SyncIn
+J1 GND PWIn NC_08 PWIn
+.end

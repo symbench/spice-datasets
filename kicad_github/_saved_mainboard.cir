@@ -1,0 +1,23 @@
+.title KiCad schematic
+U1 +5V NC_01 NC_02 NC_03 GND hoverboard_serial_Rx hoverboard_serial_Tx bluetooth_serial_2_Rx bluetooth_serial_2_Tx NC_04 NC_05 NC_06 NC_07 R_hall_B_LPF R_hall_C_LPF L_hall_A_LPF NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 L_hall_B_LPF R_hall_A_LPF L_hall_C_LPF NC_16 NC_17 IMU_SCL IMU_SDA NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 IMU_INT NC_30 NC_31 serial3_Rx serial3_Tx bluetooth_serial_1_Rx NC_32 NC_33 NC_34 bluetooth_serial_1_Tx NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 STM32F446RETx
+C2 R_hall_C_LPF GND 5nF
+C4 R_hall_B_LPF GND 5nF
+C6 R_hall_A_LPF GND 5nF
+C1 L_hall_C_LPF GND 5nF
+C3 L_hall_B_LPF GND 5nF
+C5 L_hall_A_LPF GND 5nF
+R2 GND Net-_J1_btcomms_1-Pad5_ 2k
+R1 bluetooth_serial_1_Rx Net-_J1_btcomms_1-Pad5_ 1k
+J1_btcomms_1 NC_42 +5V GND bluetooth_serial_1_Tx Net-_J1_btcomms_1-Pad5_ NC_43 Conn_01x06
+J6_RIGHT_HALL_IN1 GND R_hall_C_LPF R_hall_B_LPF R_hall_A_LPF Conn_01x04
+J5_LEFT_HALL_IN1 GND L_hall_C_LPF L_hall_B_LPF L_hall_A_LPF Conn_01x04
+J2_IMU1 +5V GND IMU_SCL IMU_SDA NC_44 NC_45 NC_46 IMU_INT Conn_01x08
+J3_hoverboard_serial1 GND hoverboard_serial_Rx hoverboard_serial_Tx Conn_01x03
+J4_serial3 GND serial3_Rx serial3_Tx +5V Conn_01x04
+R4 GND Net-_J7_btcomms_2-Pad5_ 2k
+R3 bluetooth_serial_2_Rx Net-_J7_btcomms_2-Pad5_ 1k
+J7_btcomms_2 NC_47 +5V GND bluetooth_serial_2_Tx Net-_J7_btcomms_2-Pad5_ NC_48 Conn_01x06
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+.end

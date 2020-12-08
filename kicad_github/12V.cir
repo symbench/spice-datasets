@@ -1,0 +1,5 @@
+.title KiCad schematic
+U4 /24V /GND /12V LM7812
+C9 /24V /GND 0,1uF
+C10 /12V /GND 0,1uF
+.end

@@ -1,0 +1,8 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ Net-_D1-Pad3_ Net-_D1-Pad4_ WS2812B
+D2 Net-_D1-Pad1_ Net-_D2-Pad2_ Net-_D1-Pad3_ Net-_D1-Pad2_ WS2812B
+D3 Net-_D1-Pad1_ Net-_D3-Pad2_ Net-_D1-Pad3_ Net-_D2-Pad2_ WS2812B
+D4 Net-_D1-Pad1_ Net-_D4-Pad2_ Net-_D1-Pad3_ Net-_D3-Pad2_ WS2812B
+J1 Net-_D1-Pad3_ Net-_D1-Pad4_ Net-_D1-Pad1_ IN
+J2 Net-_D1-Pad3_ Net-_D4-Pad2_ Net-_D1-Pad1_ OUT
+.end

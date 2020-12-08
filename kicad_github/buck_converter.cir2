@@ -1,0 +1,20 @@
+.title KiCad schematic
+U1 Net-_L1-Pad1_ /Vin /EN GNDREF Net-_R7-Pad2_ Net-_C8-Pad1_ GNDREF Net-_C10-Pad1_ /Vout Net-_L1-Pad2_ GNDREF TPS63060
+L1 Net-_L1-Pad1_ Net-_L1-Pad2_ 1.2u
+C2 /Vin GNDREF 10u
+C9 /Vin GNDREF 0.1u
+C8 Net-_C8-Pad1_ GNDREF 0.1u
+R6 /EN /Vin 100k
+R7 /Vout Net-_R7-Pad2_ 100k
+R2 Net-_C10-Pad1_ GNDREF 64.9k
+C10 Net-_C10-Pad1_ GNDREF 2.2p
+C11 /Vout GNDREF 0.1u
+C3 /Vout GNDREF 10u
+C4 /Vout GNDREF 10u
+R1 /Vout Net-_C10-Pad1_ 360k
+C5 /Vout GNDREF 10u
+C6 /Vout GNDREF 10u
+C7 /Vout GNDREF 10u
+C12 /Vout GNDREF 10u
+C1 /Vin GNDREF 10u
+.end

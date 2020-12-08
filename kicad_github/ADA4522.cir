@@ -1,0 +1,27 @@
+.title KiCad schematic
+R3 Net-_R3-Pad1_ Net-_C1-Pad1_ R
+R7 Net-_C1-Pad1_ GND R
+C1 Net-_C1-Pad1_ GND 100pF
+R11 Net-_R11-Pad1_ Net-_J1-Pad1_ R
+J2 Net-_C6-Pad2_ GND OUT_A
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 100pF
+R10 GND Net-_J1-Pad1_ R
+J1 Net-_J1-Pad1_ GND IN_A
+R9 Net-_J4-Pad1_ Net-_R8-Pad2_ R
+R8 GND Net-_R8-Pad2_ R
+R6 GND Net-_J4-Pad1_ R
+J5 Net-_C8-Pad1_ GND OUT_B
+J4 Net-_J4-Pad1_ GND IN_B
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 100pF
+C2 Net-_C2-Pad1_ GND 10uf
+C3 Net-_C2-Pad1_ GND 0.1uf
+C4 Net-_C4-Pad1_ GND 10uf
+C5 Net-_C4-Pad1_ GND 0.1uf
+J3 Net-_C2-Pad1_ GND Net-_C4-Pad1_ Conn_01x03_Male
+U1 Net-_C1-Pad1_ Net-_R3-Pad1_ Net-_R11-Pad1_ Net-_C4-Pad1_ Net-_R8-Pad2_ Net-_R4-Pad2_ Net-_C7-Pad1_ Net-_C2-Pad1_ ADA4522-2
+R4 Net-_C7-Pad1_ Net-_R4-Pad2_ R
+C7 Net-_C7-Pad1_ GND 100pF
+R1 Net-_C1-Pad1_ Net-_C6-Pad1_ R
+R2 GND Net-_R11-Pad1_ R
+R5 Net-_C8-Pad2_ Net-_C7-Pad1_ R
+.end

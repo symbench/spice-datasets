@@ -1,0 +1,8 @@
+.title KiCad schematic
+U1 Net-_C2-Pad1_ NC_01 NC_02 /12V Net-_R1-Pad2_ /GND /Vcc Net-_C2-Pad2_ LM2675M-12
+R1 /Vcc Net-_R1-Pad2_ 10k
+D2 Net-_C2-Pad2_ /GND D_Schottky
+C3 /12V /GND CP1_Small
+L1 Net-_C2-Pad2_ /12V 47uH
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 10nF
+.end

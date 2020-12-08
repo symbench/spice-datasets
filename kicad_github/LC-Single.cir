@@ -1,0 +1,13 @@
+.title KiCad schematic
+C81 NC_01 Net-_C81-Pad2_ C
+C83 NC_02 Net-_C81-Pad2_ C
+C82 Net-_C82-Pad1_ NC_03 C
+C84 Net-_C82-Pad1_ NC_04 C
+J30 Net-_C81-Pad2_ NC_05 Net-_J30-Pad3_ Net-_J30-Pad3_ NC_06 Net-_C82-Pad1_ InConnector
+J31 NC_07 NC_08 Net-_C246-Pad1_ Net-_C246-Pad1_ NC_09 NC_10 OutConnector
+C85 Net-_C246-Pad1_ NC_11 C
+R237 Net-_C246-Pad1_ Net-_J30-Pad3_ R
+L1 Net-_C246-Pad1_ NC_12 L
+C246 Net-_C246-Pad1_ NC_13 C
+C247 Net-_C246-Pad1_ NC_14 C
+.end

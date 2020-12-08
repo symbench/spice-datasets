@@ -1,0 +1,30 @@
+.title KiCad schematic
+.include "C:\Users\Mind\Downloads\Kicad\kicad-source-mirror-master\kicad-source-mirror-master\demos\simulation\sallen_key\ad8051.lib"
+R3 Net-_D2-Pad1_ in 5.6k
+R7 GND Net-_R7-Pad2_ 1.8k
+R4 Net-_D2-Pad1_ Net-_R4-Pad2_ 5.6k
+R8 Net-_D4-Pad2_ Net-_D2-Pad1_ 5.6k
+R11 Net-_R10-Pad1_ Net-_D4-Pad2_ 5.6k
+R12 out Net-_R10-Pad1_ 5.6k
+R13 GND Net-_R13-Pad2_ 1.5k
+R14 GND out 5.6k
+R5 GND Net-_R5-Pad2_ 1.8k
+R9 Net-_R10-Pad1_ in 5.6k
+R10 Net-_R10-Pad1_ Net-_D3-Pad1_ 5.6k
+R2 Net-_D1-Pad2_ Net-_R2-Pad2_ 5.6k
+R6 Net-_D3-Pad1_ Net-_D1-Pad2_ 5.6k
+R1 Net-_D1-Pad2_ in 5.6k
+V1 in GND sin(0 5 50)
+V2 Net-_R4-Pad2_ GND dc -2
+V3 Net-_R2-Pad2_ GND dc 2
+D4 Net-_D2-Pad2_ Net-_D4-Pad2_ D
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ D
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D
+D3 Net-_D3-Pad1_ Net-_D1-Pad1_ D
+R15 GND out 10meg
+V5 GND VSS dc 15
+V4 VDD GND dc 15
+XU1 Net-_R5-Pad2_ Net-_D1-Pad2_ VDD VSS Net-_D1-Pad1_ AD8051
+XU3 Net-_R13-Pad2_ Net-_R10-Pad1_ VDD VSS out AD8051
+XU2 Net-_R7-Pad2_ Net-_D2-Pad1_ VDD VSS Net-_D2-Pad2_ AD8051
+.end

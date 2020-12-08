@@ -1,0 +1,22 @@
+.title KiCad schematic
+C258 NC_01 Net-_C258-Pad2_ C
+C260 NC_02 Net-_C258-Pad2_ C
+C259 Net-_C259-Pad1_ NC_03 C
+C261 Net-_C259-Pad1_ NC_04 C
+J77 Net-_C258-Pad2_ NC_05 Net-_J77-Pad3_ Net-_J77-Pad3_ NC_06 Net-_C259-Pad1_ InConnector
+J78 NC_07 NC_08 Net-_C264-Pad2_ Net-_C263-Pad2_ NC_09 NC_10 OutConnector
+C266 NC_11 Net-_C266-Pad2_ C
+C268 NC_12 Net-_C266-Pad2_ C
+R341 Net-_C263-Pad2_ Net-_R340-Pad1_ R
+R342 Net-_C264-Pad2_ Net-_R339-Pad1_ R
+C264 Net-_C263-Pad2_ Net-_C264-Pad2_ C
+C263 NC_13 Net-_C263-Pad2_ C
+C265 Net-_C264-Pad2_ NC_14 C
+R337 Net-_R337-Pad1_ NC_15 R
+R339 Net-_R339-Pad1_ Net-_R337-Pad1_ R
+R338 Net-_R338-Pad1_ Net-_R338-Pad2_ R
+R340 Net-_R340-Pad1_ Net-_R338-Pad1_ R
+C262 Net-_C262-Pad1_ NC_16 100n
+U50 NC_17 Net-_R338-Pad2_ Net-_J77-Pad3_ NC_18 NC_19 Net-_R338-Pad2_ NC_20 NC_21 OPA333xxD
+U43 Net-_R337-Pad1_ Net-_C262-Pad1_ Net-_C266-Pad2_ Net-_R339-Pad1_ Net-_R340-Pad1_ NC_22 NC_23 Net-_R338-Pad1_ LTC6363
+.end

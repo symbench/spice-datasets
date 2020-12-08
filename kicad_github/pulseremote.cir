@@ -1,0 +1,29 @@
+.title KiCad schematic
+J1 GND VCC Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ Amphenol A
+J2 GND VCC Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Amphenol B
+J3 VCC Net-_J1-Pad3_ GND Pulse Amp
+J4 VCC Net-_J1-Pad7_ GND Base Amp
+J5 VCC Net-_J1-Pad9_ GND Pulse freq.
+J6 VCC Net-_J1-Pad10_ GND Duty cycle
+J7 GND Net-_J7-Pad2_ Net-_J7-Pad3_ Net-_J7-Pad4_ Net-_J7-Pad5_ Net-_J1-Pad8_ Pulse select SW
+C1 Earth GND 1n 3kv
+C2 GND VCC 2n2 3kv
+J8 Earth Chassis GND
+C3 VCC GND 100u 16v
+R5 VCC Net-_J7-Pad3_ 22k1
+R6 Net-_J7-Pad3_ GND 1k8
+R7 VCC Net-_J7-Pad3_ 17k4
+R1 VCC Net-_J7-Pad2_ 22k1
+R2 Net-_J7-Pad2_ GND 1k8
+R8 VCC Net-_J7-Pad5_ 10k
+R9 Net-_J7-Pad5_ GND 2k74
+R10 VCC Net-_J7-Pad5_ 24k
+R3 VCC Net-_J7-Pad4_ 10k
+R4 Net-_J7-Pad4_ GND 2k74
+R11 VCC Net-_J1-Pad5_ 1k8
+R12 Net-_J1-Pad5_ GND 22k1
+R13 VCC Net-_J1-Pad6_ 22k1
+R14 Net-_J1-Pad6_ GND 1k8
+R15 VCC Net-_J1-Pad6_ 17k4
+C4 GND VCC 100n 63v
+.end

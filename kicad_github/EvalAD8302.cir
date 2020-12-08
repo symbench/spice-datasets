@@ -1,0 +1,23 @@
+.title KiCad schematic
+C9 GND Net-_C9-Pad2_ C_Small
+C8 GND Net-_C8-Pad2_ C_Small
+J6 /VMAG /VMAG Conn_01x02_Male
+U2 GND /INPA /OFSA /VCC3.3 /OFSB /INPB GND Net-_C9-Pad2_ /VPHS /PSET /VREF /MSET /VMAG Net-_C8-Pad2_ AD8302
+R3 /VREF /MSET R_Small
+R4 /MSET /VMAG R_Small
+J4 /VMAG GND Conn_Coaxial
+C3 /INPA Net-_C3-Pad2_ C_Small
+C4 /OFSA GND C_Small
+R1 GND Net-_C3-Pad2_ R_Small
+J2 Net-_C3-Pad2_ GND Conn_Coaxial
+R2 Net-_C6-Pad2_ GND R_Small
+C6 /INPB Net-_C6-Pad2_ C_Small
+C5 /OFSB GND C_Small
+J3 Net-_C6-Pad2_ GND Conn_Coaxial
+J9 /VPHS /VPHS Conn_01x02_Male
+R5 /VREF /PSET R_Small
+R6 /PSET /VPHS R_Small
+J7 /VPHS GND Conn_Coaxial
+C10 GND /VCC3.3 C_Small
+J1 GND /VCC3.3 Conn_01x02_Male
+.end

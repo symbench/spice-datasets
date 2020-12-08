@@ -1,0 +1,34 @@
+.title KiCad schematic
+U1 /S1 Net-_D2-Pad2_ Net-_D4-Pad2_ VCC Net-_J3-Pad1_ Net-_J3-Pad3_ Net-_J3-Pad2_ GND VCC Net-_J4-Pad1_ Net-_J4-Pad3_ Net-_J4-Pad2_ Net-_D6-Pad2_ Net-_D8-Pad2_ /S2 L298HN
+R1 /S1 GND R_Small
+R2 /S2 GND R_Small
+J5 Net-_D2-Pad2_ Net-_D4-Pad2_ Screw_Terminal_01x02
+J6 Net-_D6-Pad2_ Net-_D8-Pad2_ Screw_Terminal_01x02
+D2 VCC Net-_D2-Pad2_ 1N4001
+D4 VCC Net-_D4-Pad2_ 1N4001
+D6 VCC Net-_D6-Pad2_ 1N4001
+D8 VCC Net-_D8-Pad2_ 1N4001
+D3 Net-_D2-Pad2_ GND 1N4001
+D5 Net-_D4-Pad2_ GND 1N4001
+D7 Net-_D6-Pad2_ GND 1N4001
+D9 Net-_D8-Pad2_ GND 1N4001
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Signal A
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Signal B
+J1 GND VDC Screw_Terminal_01x02
+C1 VCC GND CP1
+C3 VCC GND 100nF
+C2 VCC GND 470uF
+J2 /S1 /S2 Current_Sense
+U2 VCC GND +5V L7805
+J7 +5V +5V +5V +5V +5V +5V
+J8 GND GND GND GND GND gnd
+D1 VCC VDC 1N4001
+C4 VCC GND .33uF
+C5 +5V GND .1uF
+R3 +5V Net-_D10-Pad2_ R_Small
+D10 GND Net-_D10-Pad2_ LED
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+.end

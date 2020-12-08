@@ -1,0 +1,16 @@
+.title KiCad schematic
+J3 /SCS_USB /SDO_USB /SDI_USB /SCLK_USB Net-_J2-Pad12_ NC_01 /WR#_GPS /TXE#_USB Net-_J2-Pad9_ Net-_J2-Pad8_ NC_02 /D3_GPS /D2_GPS /D1_GPS /D0_GPS /SHDN_GPS /LD_GPS NC_03 GND NC_04 Conn_01x20
+J4 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 GND NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 Conn_01x20
+J6 NC_24 NC_25 NC_26 NC_27 NC_28 GND NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 Net-_J6-Pad16_ Net-_J6-Pad17_ Net-_J6-Pad18_ Net-_J6-Pad19_ Net-_J6-Pad20_ Conn_01x20
+J7 Net-_J7-Pad1_ GND Net-_J6-Pad18_ NC_38 Net-_J6-Pad20_ Net-_J6-Pad16_ Net-_J6-Pad19_ Net-_J6-Pad17_ Net-_J5-Pad1_ GND Microsemi_FlashPro-JTAG-10
+J5 Net-_J5-Pad1_ Net-_J5-Pad2_ NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 GND NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 Conn_01x20
+J2 GND /LD_GPS /SHDN_GPS /D0_GPS /D1_GPS /D2_GPS /D3_GPS Net-_J2-Pad8_ Net-_J2-Pad9_ /TXE#_USB /WR#_GPS Net-_J2-Pad12_ /SCLK_USB /SDI_USB /SDO_USB /SCS_USB Conn_01x16
+TP3 NC_56 wire jumper
+TP6 Net-_J2-Pad9_ wire jumper
+TP2 NC_57 wire jumper
+TP5 Net-_J2-Pad12_ wire jumper
+TP1 NC_58 wire jumper
+TP4 Net-_J2-Pad8_ wire jumper
+TP7 Net-_J5-Pad2_ wire jumper
+TP8 Net-_J7-Pad1_ wire jumper
+.end
