@@ -1,0 +1,74 @@
+.title KiCad schematic
+J1 Mic_In Mic_In Audio_In_L Audio_Out_L NC_01 Audio_Out_R +5V GND Conn_02x04_Odd_Even
+C1 +5V GND 10uF
+C2 +5V GND 1uF
+R1 Audio_Out_L /Mixer/Audio_Out_L 1
+R2 Audio_Out_R /Mixer/Audio_Out_R 1
+RV1 NC_02 /Low EQ/AudioFilter/Audio_Out Net-_R3-Pad2_ 10k
+R3 /Mixer/Audio_In Net-_R3-Pad2_ 10k
+P1 Net-_A2-Pad1_ /High EQ/Audio_In R
+P2 Net-_A1-Pad2_ Net-_A2-Pad1_ R
+P3 Net-_A3-Pad1_ Net-_A1-Pad2_ R
+A1 Net-_A1-Pad1_ Net-_A1-Pad2_ C
+A3 Net-_A3-Pad1_ GNDA C
+A2 Net-_A2-Pad1_ GNDA C
+U1 Net-_A1-Pad1_ Net-_A1-Pad1_ Net-_A3-Pad1_ GND Net-_A6-Pad1_ /Low EQ/AudioFilter/Audio_Out /Low EQ/AudioFilter/Audio_Out +5V OPA1678
+P4 Net-_A5-Pad1_ Net-_A1-Pad1_ R
+P5 Net-_A4-Pad2_ Net-_A5-Pad1_ R
+P6 Net-_A6-Pad1_ Net-_A4-Pad2_ R
+A4 /Low EQ/AudioFilter/Audio_Out Net-_A4-Pad2_ C
+A6 Net-_A6-Pad1_ GNDA C
+A5 Net-_A5-Pad1_ GNDA C
+C3 +5V GND 0.1uF
+R5 +5V Net-_C5-Pad2_ 10k
+R6 Net-_C5-Pad2_ GND 10k
+U2 /High EQ/Audio_In /High EQ/Audio_In Net-_C4-Pad1_ GND Net-_FB2-Pad1_ GNDA GNDA +5V OPA1678
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 0.1uF
+C9 +5V GND 0.1uF
+C5 +5V Net-_C5-Pad2_ 1uF
+C7 Net-_C5-Pad2_ GND 1uF
+C6 +5V GNDA 10uF
+C8 GNDA GND 10uF
+R4 Net-_C4-Pad1_ GNDA 10k
+FB1 Net-_C4-Pad2_ Audio_In_L Ferrite_Bead
+FB2 Net-_FB2-Pad1_ Net-_C5-Pad2_ Ferrite_Bead
+TP4 /High EQ/Audio_In TestPoint
+TP5 GNDA TestPoint
+RV2 NC_03 /Mid EQ/AudioFilter/Audio_Out Net-_R7-Pad2_ 10k
+R7 /Mixer/Audio_In Net-_R7-Pad2_ 10k
+P7 Net-_A8-Pad1_ /High EQ/Audio_In R
+P8 Net-_A7-Pad2_ Net-_A8-Pad1_ R
+P9 Net-_A9-Pad1_ Net-_A7-Pad2_ R
+A7 Net-_A7-Pad1_ Net-_A7-Pad2_ C
+A9 Net-_A9-Pad1_ GNDA C
+A8 Net-_A8-Pad1_ GNDA C
+U3 Net-_A7-Pad1_ Net-_A7-Pad1_ Net-_A9-Pad1_ GND Net-_A12-Pad1_ /Mid EQ/AudioFilter/Audio_Out /Mid EQ/AudioFilter/Audio_Out +5V OPA1678
+P10 Net-_A11-Pad1_ Net-_A7-Pad1_ R
+P11 Net-_A10-Pad2_ Net-_A11-Pad1_ R
+P12 Net-_A12-Pad1_ Net-_A10-Pad2_ R
+A10 /Mid EQ/AudioFilter/Audio_Out Net-_A10-Pad2_ C
+A12 Net-_A12-Pad1_ GNDA C
+A11 Net-_A11-Pad1_ GNDA C
+C10 +5V GND 0.1uF
+RV3 NC_04 /High EQ/AudioFilter/Audio_Out Net-_R8-Pad2_ 10k
+R8 /Mixer/Audio_In Net-_R8-Pad2_ 10k
+P13 Net-_A14-Pad1_ /High EQ/Audio_In R
+P14 Net-_A13-Pad2_ Net-_A14-Pad1_ R
+P15 Net-_A15-Pad1_ Net-_A13-Pad2_ R
+A13 Net-_A13-Pad1_ Net-_A13-Pad2_ C
+A15 Net-_A15-Pad1_ GNDA C
+A14 Net-_A14-Pad1_ GNDA C
+U4 Net-_A13-Pad1_ Net-_A13-Pad1_ Net-_A15-Pad1_ GND Net-_A18-Pad1_ /High EQ/AudioFilter/Audio_Out /High EQ/AudioFilter/Audio_Out +5V OPA1678
+P16 Net-_A17-Pad1_ Net-_A13-Pad1_ R
+P17 Net-_A16-Pad2_ Net-_A17-Pad1_ R
+P18 Net-_A18-Pad1_ Net-_A16-Pad2_ R
+A16 /High EQ/AudioFilter/Audio_Out Net-_A16-Pad2_ C
+A18 Net-_A18-Pad1_ GNDA C
+A17 Net-_A17-Pad1_ GNDA C
+C11 +5V GND 0.1uF
+U5 /Mixer/Audio_Out_L Net-_C13-Pad2_ GNDA GND /Mixer/Audio_Out_L /Mixer/Audio_Out_R /Mixer/Audio_Out_R +5V OPA1678
+C12 +5V GND 0.1uF
+R9 Net-_C13-Pad2_ /Mixer/Audio_In 4.7k
+RV4 NC_05 /Mixer/Audio_Out_L Net-_C13-Pad2_ 10k
+C13 /Mixer/Audio_Out_L Net-_C13-Pad2_ 1nF
+.end

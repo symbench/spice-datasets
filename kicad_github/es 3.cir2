@@ -1,0 +1,20 @@
+.title KiCad schematic
+P1 NC_01 NC_02 NC_03 +3V3 +5V GND GND NC_04 Power
+P2 NC_05 NC_06 NC_07 NC_08 /A4_SDA_ /A5_SCL_ Analog
+P5 NC_09 CONN_01X01
+P6 NC_10 CONN_01X01
+P7 NC_11 CONN_01X01
+P8 NC_12 CONN_01X01
+P4 /7 NC_13 /5_**_ NC_14 /3_**_ GND NC_15 NC_16 Digital
+P3 /A5_SCL_ /A4_SDA_ NC_17 GND /13_SCK_ NC_18 /11_**/MOSI_ /10_**/SS_ NC_19 NC_20 Digital
+R3 GND Net-_D3-Pad1_ R
+D3 Net-_D3-Pad1_ /3_**_ LED rosso2
+U1 +5V /13_SCK_ GND DHT11
+SW1 Net-_R4-Pad1_ +5V SW_Push
+R4 Net-_R4-Pad1_ GND R
+R1 GND Net-_D1-Pad1_ R
+D1 Net-_D1-Pad1_ /7 LED verde
+R2 GND Net-_D2-Pad1_ R
+D2 Net-_D2-Pad1_ /5_**_ LED rosso1
+J1 GND +5V /11_**/MOSI_ /10_**/SS_ Conn_01x04_Male
+.end

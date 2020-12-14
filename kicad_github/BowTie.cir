@@ -1,0 +1,34 @@
+.title KiCad schematic
+U1 VCC Net-_SW1-Pad1_ Net-_U1-Pad3_ RESET Net-_U1-Pad5_ Net-_D17-Pad1_ MOSI MISO SCK Net-_D13-Pad1_ Net-_D10-Pad1_ Net-_D5-Pad1_ Net-_D1-Pad1_ GND ATtiny84A-SSU
+BT1 VCC GND Battery_Cell
+J1 MISO VCC SCK MOSI RESET GND AVR-ISP-6
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+U2 Net-_U1-Pad5_ GND Net-_U1-Pad3_ TSOP331xx
+R1 Net-_D13-Pad2_ Net-_D1-Pad1_ 50
+D2 Net-_D1-Pad1_ Net-_D15-Pad2_ LED
+D3 Net-_D1-Pad1_ Net-_D11-Pad2_ LED
+D6 Net-_D5-Pad1_ Net-_D15-Pad2_ LED
+R2 Net-_D1-Pad2_ Net-_D5-Pad1_ 50
+D7 Net-_D5-Pad1_ Net-_D11-Pad2_ LED
+D8 Net-_D5-Pad1_ Net-_D12-Pad2_ LED
+D11 Net-_D10-Pad1_ Net-_D11-Pad2_ LED
+R3 Net-_D15-Pad2_ Net-_D10-Pad1_ 50
+D12 Net-_D10-Pad1_ Net-_D12-Pad2_ LED
+D16 Net-_D13-Pad1_ Net-_D12-Pad2_ LED
+R4 Net-_D11-Pad2_ Net-_D13-Pad1_ 50
+D17 Net-_D17-Pad1_ Net-_D13-Pad2_ LED
+D18 Net-_D17-Pad1_ Net-_D1-Pad2_ LED
+D19 Net-_D17-Pad1_ Net-_D15-Pad2_ LED
+D20 Net-_D17-Pad1_ Net-_D11-Pad2_ LED
+D13 Net-_D13-Pad1_ Net-_D13-Pad2_ LED
+D14 Net-_D13-Pad1_ Net-_D1-Pad2_ LED
+D15 Net-_D13-Pad1_ Net-_D15-Pad2_ LED
+D9 Net-_D10-Pad1_ Net-_D13-Pad2_ LED
+D10 Net-_D10-Pad1_ Net-_D1-Pad2_ LED
+D5 Net-_D5-Pad1_ Net-_D13-Pad2_ LED
+D4 Net-_D1-Pad1_ Net-_D12-Pad2_ LED
+R6 Net-_D12-Pad2_ Net-_D17-Pad1_ 50
+R5 RESET VCC R_US
+C1 VCC GND C
+SW1 Net-_SW1-Pad1_ GND SW_Push
+.end

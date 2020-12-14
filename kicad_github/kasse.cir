@@ -1,0 +1,28 @@
+.title KiCad schematic
+C8 Net-_C6-Pad2_ GND CP1_Small
+C4 Net-_C2-Pad1_ GND CP1
+RV2 Net-_R6-Pad2_ Net-_R6-Pad2_ GND R_POT_TRIM_US
+U2 Net-_C10-Pad1_ Net-_C6-Pad2_ -12V LM337_SOT223
+T1 Net-_D2-Pad3_ GND Net-_D2-Pad2_ NC_01 NC_02 Transformer_SP_1S
+C5 Net-_C2-Pad1_ GND CP1
+C6 GND Net-_C6-Pad2_ CP1
+C7 GND Net-_C6-Pad2_ CP1
+D3 -12V Net-_C6-Pad2_ D_ALT
+D5 Net-_C10-Pad1_ -12V D_ALT
+R6 Net-_C10-Pad1_ Net-_R6-Pad2_ R_US
+R4 -12V Net-_C10-Pad1_ R_US
+C9 -12V GND CP1_Small
+R5 -12V GND R_US
+C10 Net-_C10-Pad1_ GND CP1_Small
+C2 Net-_C2-Pad1_ GND CP1_Small
+RV1 Net-_R1-Pad2_ Net-_R1-Pad2_ GND R_POT_TRIM_US
+D4 +12V Net-_C2-Pad1_ D_ALT
+D1 Net-_C1-Pad1_ +12V D_ALT
+R1 Net-_C1-Pad1_ Net-_R1-Pad2_ R_US
+R2 +12V Net-_C1-Pad1_ R_US
+C3 +12V GND CP1_Small
+R3 +12V GND R_US
+C1 Net-_C1-Pad1_ GND CP1_Small
+U1 Net-_C1-Pad1_ +12V Net-_C2-Pad1_ LM317_3PinPackage
+D2 Net-_C2-Pad1_ Net-_D2-Pad2_ Net-_D2-Pad3_ Net-_C6-Pad2_ KBU4A
+.end

@@ -1,0 +1,57 @@
+.title KiCad schematic
+U1 Net-_R5-Pad1_ Net-_R5-Pad1_ Net-_J1-Pad3_ Net-_C1-Pad1_ Net-_J1-Pad3_ Net-_R6-Pad1_ Net-_R6-Pad1_ Net-_R7-Pad1_ Net-_R7-Pad1_ Net-_J1-Pad3_ Net-_C2-Pad2_ Net-_J1-Pad3_ Net-_D1-Pad2_ Net-_D1-Pad1_ TL074
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R1 Net-_J1-Pad3_ GND 10m
+J1 GND GND Net-_J1-Pad3_ PJ301M-12
+R3 GND Net-_D1-Pad2_ 1k
+R5 Net-_R5-Pad1_ Net-_J3-Pad3_ 51
+R6 Net-_R6-Pad1_ Net-_J4-Pad3_ 51
+R7 Net-_R7-Pad1_ Net-_J5-Pad3_ 51
+J3 GND NC_01 Net-_J3-Pad3_ PJ301M-12
+J4 GND NC_02 Net-_J4-Pad3_ PJ301M-12
+J5 GND NC_03 Net-_J5-Pad3_ PJ301M-12
+H1 Net-_D5-Pad2_ Net-_D5-Pad2_ GND GND GND GND GND GND Net-_D6-Pad1_ Net-_D6-Pad1_ PIN_HEADER_2x5
+D5 Net-_C1-Pad1_ Net-_D5-Pad2_ D
+D6 Net-_D6-Pad1_ Net-_C2-Pad2_ D
+C5 Net-_C1-Pad1_ GND 100n
+C3 Net-_C1-Pad1_ GND 100n
+C1 Net-_C1-Pad1_ GND 100n
+C7 Net-_C1-Pad1_ GND 1.7u
+C6 GND Net-_C2-Pad2_ 100n
+C4 GND Net-_C2-Pad2_ 100n
+C2 GND Net-_C2-Pad2_ 100n
+C8 GND Net-_C2-Pad2_ 1.7u
+U2 Net-_R8-Pad1_ Net-_R8-Pad1_ Net-_J2-Pad1_ Net-_C1-Pad1_ Net-_J2-Pad1_ Net-_R9-Pad1_ Net-_R9-Pad1_ Net-_R10-Pad1_ Net-_R10-Pad1_ Net-_J2-Pad1_ Net-_C2-Pad2_ Net-_J2-Pad1_ Net-_D2-Pad2_ Net-_D2-Pad1_ TL074
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+R2 Net-_J2-Pad1_ GND 10m
+J2 Net-_J2-Pad1_ GND GND PJ301M-12
+R4 GND Net-_D2-Pad2_ 1k
+R8 Net-_R8-Pad1_ Net-_J6-Pad3_ 51
+R9 Net-_R9-Pad1_ Net-_J7-Pad3_ 51
+R10 Net-_R10-Pad1_ Net-_J8-Pad3_ 51
+J6 GND NC_04 Net-_J6-Pad3_ PJ301M-12
+J7 GND NC_05 Net-_J7-Pad3_ PJ301M-12
+J8 GND NC_06 Net-_J8-Pad3_ PJ301M-12
+U3 Net-_R15-Pad1_ Net-_R15-Pad1_ Net-_J9-Pad3_ Net-_C1-Pad1_ Net-_J9-Pad3_ Net-_R16-Pad1_ Net-_R16-Pad1_ Net-_R17-Pad1_ Net-_R17-Pad1_ Net-_J9-Pad3_ Net-_C2-Pad2_ Net-_J9-Pad3_ Net-_D3-Pad2_ Net-_D3-Pad1_ TL074
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+R11 Net-_J9-Pad3_ GND 10m
+J9 GND GND Net-_J9-Pad3_ PJ301M-12
+R13 GND Net-_D3-Pad2_ 1k
+R15 Net-_R15-Pad1_ Net-_J11-Pad3_ 51
+R16 Net-_R16-Pad1_ Net-_J12-Pad3_ 51
+R17 Net-_R17-Pad1_ Net-_J13-Pad3_ 51
+J11 GND NC_07 Net-_J11-Pad3_ PJ301M-12
+J12 GND NC_08 Net-_J12-Pad3_ PJ301M-12
+J13 GND NC_09 Net-_J13-Pad3_ PJ301M-12
+U4 Net-_R18-Pad1_ Net-_R18-Pad1_ Net-_J10-Pad3_ Net-_C1-Pad1_ Net-_J10-Pad3_ Net-_R19-Pad1_ Net-_R19-Pad1_ Net-_R20-Pad1_ Net-_R20-Pad1_ Net-_J10-Pad3_ Net-_C2-Pad2_ Net-_J10-Pad3_ Net-_D4-Pad2_ Net-_D4-Pad1_ TL074
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED
+R12 Net-_J10-Pad3_ GND 10m
+J10 GND GND Net-_J10-Pad3_ PJ301M-12
+R14 GND Net-_D4-Pad2_ 1k
+R18 Net-_R18-Pad1_ Net-_J14-Pad3_ 51
+R19 Net-_R19-Pad1_ Net-_J15-Pad3_ 51
+R20 Net-_R20-Pad1_ Net-_J16-Pad3_ 51
+J14 GND NC_10 Net-_J14-Pad3_ PJ301M-12
+J15 GND NC_11 Net-_J15-Pad3_ PJ301M-12
+J16 GND NC_12 Net-_J16-Pad3_ PJ301M-12
+.end

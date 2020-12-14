@@ -1,0 +1,258 @@
+.title KiCad schematic
+D70 GND Net-_D70-Pad2_ LED
+D71 GND Net-_D71-Pad2_ LED
+D72 GND Net-_D72-Pad2_ LED
+R1 /LED2 Net-_D70-Pad2_ R
+R2 /LED1 Net-_D71-Pad2_ R
+R3 /LED0 Net-_D72-Pad2_ R
+SW1 /ROW0 Net-_D1-Pad1_ +3V3 /RGB0_OUT GND Net-_SW1-Pad6_ Esc
+D1 Net-_D1-Pad1_ /COL0 D_Small
+SW6 /ROW0 Net-_D6-Pad1_ +3V3 Net-_SW1-Pad6_ GND Net-_SW10-Pad4_ 1
+D6 Net-_D6-Pad1_ /COL1 D_Small
+SW10 /ROW0 Net-_D10-Pad1_ +3V3 Net-_SW10-Pad4_ GND Net-_SW10-Pad6_ 2
+D10 Net-_D10-Pad1_ /COL2 D_Small
+SW15 /ROW0 Net-_D15-Pad1_ +3V3 Net-_SW10-Pad6_ GND Net-_SW15-Pad6_ 3
+D15 Net-_D15-Pad1_ /COL3 D_Small
+SW19 /ROW0 Net-_D19-Pad1_ +3V3 Net-_SW15-Pad6_ GND Net-_SW19-Pad6_ 4
+D19 Net-_D19-Pad1_ /COL4 D_Small
+SW23 /ROW0 Net-_D23-Pad1_ +3V3 Net-_SW19-Pad6_ GND Net-_SW23-Pad6_ 5
+D23 Net-_D23-Pad1_ /COL5 D_Small
+SW27 /ROW0 Net-_D27-Pad1_ +3V3 Net-_SW23-Pad6_ GND Net-_SW27-Pad6_ 6
+D27 Net-_D27-Pad1_ /COL6 D_Small
+SW32 /ROW0 Net-_D32-Pad1_ +3V3 Net-_SW27-Pad6_ GND Net-_SW32-Pad6_ 7
+D32 Net-_D32-Pad1_ /COL7 D_Small
+SW36 /ROW0 Net-_D36-Pad1_ +3V3 Net-_SW32-Pad6_ GND Net-_SW36-Pad6_ 8
+D36 Net-_D36-Pad1_ /COL8 D_Small
+SW40 /ROW0 Net-_D40-Pad1_ +3V3 Net-_SW36-Pad6_ GND Net-_SW40-Pad6_ 9
+D40 Net-_D40-Pad1_ /COL9 D_Small
+SW44 /ROW0 Net-_D44-Pad1_ +3V3 Net-_SW40-Pad6_ GND Net-_SW44-Pad6_ 0
+D44 Net-_D44-Pad1_ /COL10 D_Small
+SW49 /ROW0 Net-_D49-Pad1_ +3V3 Net-_SW44-Pad6_ GND Net-_SW49-Pad6_ Minus
+D49 Net-_D49-Pad1_ /COL11 D_Small
+SW2 /ROW1 Net-_D2-Pad1_ +3V3 /RGB1_OUT GND Net-_SW2-Pad6_ Tab
+D2 Net-_D2-Pad1_ /COL0 D_Small
+SW7 /ROW1 Net-_D7-Pad1_ +3V3 Net-_SW2-Pad6_ GND Net-_SW11-Pad4_ Q
+SW11 /ROW1 Net-_D11-Pad1_ +3V3 Net-_SW11-Pad4_ GND Net-_SW11-Pad6_ W
+D11 Net-_D11-Pad1_ /COL2 D_Small
+SW16 /ROW1 Net-_D16-Pad1_ +3V3 Net-_SW11-Pad6_ GND Net-_SW16-Pad6_ E
+D16 Net-_D16-Pad1_ /COL3 D_Small
+SW20 /ROW1 Net-_D20-Pad1_ +3V3 Net-_SW16-Pad6_ GND Net-_SW20-Pad6_ R
+D20 Net-_D20-Pad1_ /COL4 D_Small
+SW24 /ROW1 Net-_D24-Pad1_ +3V3 Net-_SW20-Pad6_ GND Net-_SW24-Pad6_ T
+D24 Net-_D24-Pad1_ /COL5 D_Small
+SW28 /ROW1 Net-_D28-Pad1_ +3V3 Net-_SW24-Pad6_ GND Net-_SW28-Pad6_ Y
+D28 Net-_D28-Pad1_ /COL6 D_Small
+SW33 /ROW1 Net-_D33-Pad1_ +3V3 Net-_SW28-Pad6_ GND Net-_SW33-Pad6_ U
+D33 Net-_D33-Pad1_ /COL7 D_Small
+SW37 /ROW1 Net-_D37-Pad1_ +3V3 Net-_SW33-Pad6_ GND Net-_SW37-Pad6_ I
+D37 Net-_D37-Pad1_ /COL8 D_Small
+SW41 /ROW1 Net-_D41-Pad1_ +3V3 Net-_SW37-Pad6_ GND Net-_SW41-Pad6_ O
+D41 Net-_D41-Pad1_ /COL9 D_Small
+SW45 /ROW1 Net-_D45-Pad1_ +3V3 Net-_SW41-Pad6_ GND Net-_SW45-Pad6_ P
+D45 Net-_D45-Pad1_ /COL10 D_Small
+SW50 /ROW1 Net-_D50-Pad1_ +3V3 Net-_SW45-Pad6_ GND Net-_SW50-Pad6_ [
+D50 Net-_D50-Pad1_ /COL11 D_Small
+SW3 /ROW2 Net-_D3-Pad1_ +3V3 /RGB2_OUT GND Net-_SW3-Pad6_ Caps
+D3 Net-_D3-Pad1_ /COL0 D_Small
+SW8 /ROW2 Net-_D8-Pad1_ +3V3 Net-_SW3-Pad6_ GND Net-_SW12-Pad4_ A
+D8 Net-_D8-Pad1_ /COL1 D_Small
+SW12 /ROW2 Net-_D12-Pad1_ +3V3 Net-_SW12-Pad4_ GND Net-_SW12-Pad6_ S
+D12 Net-_D12-Pad1_ /COL2 D_Small
+SW17 /ROW2 Net-_D17-Pad1_ +3V3 Net-_SW12-Pad6_ GND Net-_SW17-Pad6_ D
+SW21 /ROW2 Net-_D21-Pad1_ +3V3 Net-_SW17-Pad6_ GND Net-_SW21-Pad6_ F
+D21 Net-_D21-Pad1_ /COL4 D_Small
+SW25 /ROW2 Net-_D25-Pad1_ +3V3 Net-_SW21-Pad6_ GND Net-_SW25-Pad6_ G
+D25 Net-_D25-Pad1_ /COL5 D_Small
+SW29 /ROW2 Net-_D29-Pad1_ +3V3 Net-_SW25-Pad6_ GND Net-_SW29-Pad6_ H
+D29 Net-_D29-Pad1_ /COL6 D_Small
+SW34 /ROW2 Net-_D34-Pad1_ +3V3 Net-_SW29-Pad6_ GND Net-_SW34-Pad6_ J
+D34 Net-_D34-Pad1_ /COL7 D_Small
+SW38 /ROW2 Net-_D38-Pad1_ +3V3 Net-_SW34-Pad6_ GND Net-_SW38-Pad6_ K
+D38 Net-_D38-Pad1_ /COL8 D_Small
+SW42 /ROW2 Net-_D42-Pad1_ +3V3 Net-_SW38-Pad6_ GND Net-_SW42-Pad6_ L
+D42 Net-_D42-Pad1_ /COL9 D_Small
+SW46 /ROW2 Net-_D46-Pad1_ +3V3 Net-_SW42-Pad6_ GND Net-_SW46-Pad6_ ;
+D46 Net-_D46-Pad1_ /COL10 D_Small
+SW51 /ROW2 Net-_D51-Pad1_ +3V3 Net-_SW46-Pad6_ GND Net-_SW51-Pad6_ "
+D51 Net-_D51-Pad1_ /COL11 D_Small
+SW13 /ROW3 Net-_D13-Pad1_ +3V3 Net-_SW13-Pad4_ GND Net-_SW13-Pad6_ Z
+D13 Net-_D13-Pad1_ /COL2 D_Small
+SW18 /ROW3 Net-_D18-Pad1_ +3V3 Net-_SW13-Pad6_ GND Net-_SW18-Pad6_ X
+D18 Net-_D18-Pad1_ /COL3 D_Small
+SW22 /ROW3 Net-_D22-Pad1_ +3V3 Net-_SW18-Pad6_ GND Net-_SW22-Pad6_ C
+D22 Net-_D22-Pad1_ /COL4 D_Small
+SW26 /ROW3 Net-_D26-Pad1_ +3V3 Net-_SW22-Pad6_ GND Net-_SW26-Pad6_ V
+D26 Net-_D26-Pad1_ /COL5 D_Small
+SW30 /ROW3 Net-_D30-Pad1_ +3V3 Net-_SW26-Pad6_ GND Net-_SW30-Pad6_ B
+D30 Net-_D30-Pad1_ /COL6 D_Small
+SW35 /ROW3 Net-_D35-Pad1_ +3V3 Net-_SW30-Pad6_ GND Net-_SW35-Pad6_ N
+D35 Net-_D35-Pad1_ /COL7 D_Small
+SW39 /ROW3 Net-_D39-Pad1_ +3V3 Net-_SW35-Pad6_ GND Net-_SW39-Pad6_ M
+D39 Net-_D39-Pad1_ /COL8 D_Small
+SW43 /ROW3 Net-_D43-Pad1_ +3V3 Net-_SW39-Pad6_ GND Net-_SW43-Pad6_ <
+D43 Net-_D43-Pad1_ /COL9 D_Small
+SW47 /ROW3 Net-_D47-Pad1_ +3V3 Net-_SW43-Pad6_ GND Net-_SW47-Pad6_ >
+D47 Net-_D47-Pad1_ /COL10 D_Small
+SW52 /ROW3 Net-_D52-Pad1_ +3V3 Net-_SW47-Pad6_ GND Net-_SW52-Pad6_ /
+D52 Net-_D52-Pad1_ /COL11 D_Small
+D5 Net-_D5-Pad1_ /COL0 D_Small
+D14 Net-_D14-Pad1_ /COL2 D_Small
+D48 Net-_D48-Pad1_ /COL9 D_Small
+D53 Net-_D53-Pad1_ /COL10 D_Small
+SW54 /ROW0 Net-_D54-Pad1_ +3V3 Net-_SW49-Pad6_ GND Net-_SW54-Pad6_ =
+D54 Net-_D54-Pad1_ /COL12 D_Small
+SW55 /ROW1 Net-_D55-Pad1_ +3V3 Net-_SW50-Pad6_ GND Net-_SW55-Pad6_ ]
+D55 Net-_D55-Pad1_ /COL12 D_Small
+D57 Net-_D57-Pad1_ /COL12 D_Small
+D58 Net-_D58-Pad1_ /COL11 D_Small
+C12 GND +3V3 C_Small
+C9 GND +3V3 C_Small
+C11 GND +3V3 C_Small
+C16 GND +3V3 C_Small
+C17 GND +3V3 C_Small
+C18 GND +3V3 C_Small
+C19 GND +3V3 C_Small
+C14 GND +3V3 C_Small
+C13 GND +3V3 C_Small
+C6 GND +3V3 C_Small
+C5 GND +3V3 C_Small
+C4 GND +3V3 C_Small
+C1 GND +3V3 C_Small
+C7 GND +3V3 C_Small
+C10 GND +3V3 C_Small
+C15 GND +3V3 C_Small
+C23 GND +3V3 C_Small
+C22 GND +3V3 C_Small
+C27 GND +3V3 C_Small
+C28 GND +3V3 C_Small
+C32 GND +3V3 C_Small
+C31 GND +3V3 C_Small
+C26 GND +3V3 C_Small
+C25 GND +3V3 C_Small
+C29 GND +3V3 C_Small
+C34 GND +3V3 C_Small
+C38 GND +3V3 C_Small
+C39 GND +3V3 C_Small
+C40 GND +3V3 C_Small
+C41 GND +3V3 C_Small
+C37 GND +3V3 C_Small
+C42 GND +3V3 C_Small
+C46 GND +3V3 C_Small
+C45 GND +3V3 C_Small
+C49 GND +3V3 C_Small
+C50 GND +3V3 C_Small
+C51 GND +3V3 C_Small
+C48 GND +3V3 C_Small
+C47 GND +3V3 C_Small
+C43 GND +3V3 C_Small
+C52 GND +3V3 C_Small
+C57 GND +3V3 C_Small
+C58 GND +3V3 C_Small
+C53 GND +3V3 C_Small
+C54 GND +3V3 C_Small
+C55 GND +3V3 C_Small
+C59 GND +3V3 C_Small
+C60 GND +3V3 C_Small
+C56 GND +3V3 C_Small
+C63 GND +3V3 C_Small
+C62 GND +3V3 C_Small
+C30 GND +3V3 C_Small
+C35 GND +3V3 C_Small
+C36 GND +3V3 C_Small
+C44 GND +3V3 C_Small
+C20 GND +3V3 C_Small
+C21 GND +3V3 C_Small
+C65 GND +3V3 C_Small
+D67 Net-_D67-Pad1_ /COL13 D_Small
+C73 GND +3V3 C_Small
+D56 Net-_D56-Pad1_ /COL13 D_Small
+C68 GND +3V3 C_Small
+C8 GND +3V3 C_Small
+D7 Net-_D7-Pad1_ /COL1 D_Small
+D17 Net-_D17-Pad1_ /COL3 D_Small
+U5 /ROW4 Net-_D5-Pad1_ +3V3 NC_01 GND Net-_U5-Pad10_ /ROW4 Net-_D9-Pad1_ +3V3 Net-_U5-Pad10_ GND Net-_U5-Pad12_ /ROW4 Net-_D14-Pad1_ +3V3 Net-_U5-Pad12_ GND Net-_U5-Pad18_ /ROW4 Net-_D31-Pad1_ +3V3 Net-_U5-Pad18_ GND Net-_U5-Pad24_ /ROW4 Net-_D48-Pad1_ +3V3 Net-_U5-Pad28_ GND Net-_U5-Pad30_ /ROW4 Net-_D53-Pad1_ +3V3 Net-_U5-Pad30_ GND Net-_U5-Pad36_ /ROW4 Net-_D58-Pad1_ +3V3 Net-_U5-Pad36_ GND Net-_U5-Pad42_ /ROW4 Net-_D62-Pad1_ +3V3 Net-_U5-Pad42_ GND Net-_U5-Pad48_ /ROW4 Net-_D67-Pad1_ +3V3 Net-_U5-Pad48_ GND Net-_SW5-Pad4_ +3V3 Net-_U5-Pad24_ GND Net-_U5-Pad28_ Cherry_bottom_row
+C33 GND +3V3 C_Small
+D31 Net-_D31-Pad1_ /COL6 D_Small
+D62 Net-_D62-Pad1_ /COL12 D_Small
+D9 Net-_D9-Pad1_ /COL1 D_Small
+D68 Net-_D68-Pad1_ /COL14 D_Small
+C24 GND +3V3 C_Small
+SW5 /ROW4 Net-_D68-Pad1_ +3V3 Net-_SW5-Pad4_ GND /RGB4 End/Home
+C64 GND +3V3 C_Small
+JP7 /MicroSheet/USB+D+ /usb_hub/Din+ SolderJumper_2_Bridged
+JP5 /MicroSheet/USB_D- /usb_hub/Din- SolderJumper_2_Bridged
+JP8 /PowerSheet/USB_D- /usb_hub/Dout- SolderJumper_2_Bridged
+JP6 /PowerSheet/USB_D+ /usb_hub/Dout+ SolderJumper_2_Bridged
+JP3 /MicroSheet/USB_D- /PowerSheet/USB_D- SolderJumper_2_Open
+JP4 /MicroSheet/USB+D+ /PowerSheet/USB_D+ SolderJumper_2_Open
+SW9 /ROW3 Net-_D57-Pad1_ /ROW3 Net-_D56-Pad1_ +3V3 Net-_SW52-Pad6_ GND Net-_SW9-Pad10_ +3V3 Net-_SW9-Pad10_ GND Net-_SW66-Pad4_ double_key
+SW4 /ROW3 Net-_D4-Pad1_ /ROW3 Net-_D77-Pad1_ +3V3 /RGB3_OUT GND Net-_SW4-Pad10_ +3V3 Net-_SW4-Pad10_ GND Net-_SW13-Pad4_ double_key
+D77 Net-_D77-Pad1_ /COL1 D_Small
+C79 GND +3V3 C_Small
+D4 Net-_D4-Pad1_ /COL0 D_Small
+SW59 /ROW0 Net-_D59-Pad1_ +3V3 Net-_SW54-Pad6_ GND Net-_SW59-Pad6_ BKSPC
+SW60 /ROW1 Net-_D60-Pad1_ +3V3 Net-_SW55-Pad6_ GND Net-_SW60-Pad6_ \
+SW61 /ROW2 Net-_D61-Pad1_ +3V3 Net-_SW51-Pad6_ GND Net-_SW61-Pad6_ Enter
+C72 GND +3V3 C_Small
+D66 Net-_D66-Pad1_ /COL14 D_Small
+SW66 /ROW3 Net-_D66-Pad1_ +3V3 Net-_SW66-Pad4_ GND /RGB3 Pg Dw
+C69 GND +3V3 C_Small
+C70 GND +3V3 C_Small
+C71 GND +3V3 C_Small
+D65 Net-_D65-Pad1_ /COL14 D_Small
+SW65 /ROW2 Net-_D65-Pad1_ +3V3 Net-_SW61-Pad6_ GND /RGB2 Pg Up
+D64 Net-_D64-Pad1_ /COL14 D_Small
+SW64 /ROW1 Net-_D64-Pad1_ +3V3 Net-_SW60-Pad6_ GND /RGB1 Del
+D63 Net-_D63-Pad1_ /COL14 D_Small
+SW63 /ROW0 Net-_D63-Pad1_ +3V3 Net-_SW59-Pad6_ GND /RGB0 Til
+D61 Net-_D61-Pad1_ /COL13 D_Small
+D60 Net-_D60-Pad1_ /COL13 D_Small
+D59 Net-_D59-Pad1_ /COL13 D_Small
+JP9 /RGB0_OUT /RGB1 SolderJumper_2_Open
+JP10 /RGB1_OUT /RGB2 SolderJumper_2_Open
+JP11 /RGB2_OUT /RGB3 SolderJumper_2_Open
+JP12 /RGB3_OUT /RGB4 SolderJumper_2_Open
+U1 Net-_RP1-Pad8_ Net-_RP1-Pad7_ Net-_RP1-Pad6_ GND SDA SCL GND +3V3 AT24C02
+RP2 SCL SDA NC_02 NC_03 +3V3 +3V3 +3V3 +3V3 R_PACK4
+U3 Net-_JP1-Pad2_ /COL0 /COL1 /COL2 /COL3 /COL4 /COL5 /COL6 /COL7 /MicroSheet/MUX0 /MicroSheet/MUX1 GND /MicroSheet/MUX3 /MicroSheet/MUX2 Net-_R4-Pad1_ NC_04 /COL14 /COL13 /COL12 /COL11 /COL10 /COL9 /COL8 +3V3 CD74HC4067SM
+JP2 GND Net-_JP1-Pad2_ SolderJumper_2_Open
+JP1 +3V3 Net-_JP1-Pad2_ SolderJumper_2_Bridged
+RP1 +3V3 +3V3 +3V3 NC_05 NC_06 Net-_RP1-Pad6_ Net-_RP1-Pad7_ Net-_RP1-Pad8_ R_PACK4
+C2 GND +3V3 C_Small
+R4 Net-_R4-Pad1_ GND 10K
+J1 +5V GND +3V3 /LED0 /LED1 /LED2 SDA SCL /MicroSheet/USB_D- /MicroSheet/USB+D+ /RGB4 /RGB3 /RGB2 /RGB1 /RGB0 /ROW0 /ROW1 /ROW2 /ROW3 /ROW4 /MicroSheet/MUX3 /MicroSheet/MUX2 /MicroSheet/MUX0 /MicroSheet/MUX1 GND +3V3 /MicroSheet/MOUSE_X /MicroSheet/MOUSE_Y /MicroSheet/BOOT_SWITCH NC_07 Conn_01x30
+J6 GND +3V3 /MicroSheet/MOUSE_X /MicroSheet/MOUSE_Y Conn_01x04
+SW14 +3V3 /MicroSheet/BOOT_SWITCH GND SW_SPDT
+U2 GND Net-_U2-Pad2_ Net-_U2-Pad3_ /usb_hub/Din- /usb_hub/Din+ Net-_J5-Pad2_ Net-_J5-Pad3_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_C75-Pad2_ +3V3 Net-_R9-Pad1_ /usb_hub/Dout- /usb_hub/Dout+ +3V3 Net-_R5-Pad1_ +3V3 +5V +3V3 Net-_D69-Pad1_ Net-_R13-Pad2_ Net-_R10-Pad2_ NC_08 +3V3 NC_09 Net-_C75-Pad2_ FE1.1s
+D74 Net-_D69-Pad1_ Net-_D74-Pad2_ Green
+D75 Net-_D74-Pad2_ Net-_D69-Pad1_ Green
+D73 Net-_D69-Pad2_ Net-_D69-Pad1_ Green
+D69 Net-_D69-Pad1_ Net-_D69-Pad2_ Green
+R13 Net-_D74-Pad2_ Net-_R13-Pad2_ 330
+R10 Net-_D69-Pad2_ Net-_R10-Pad2_ 330
+D76 Net-_D76-Pad1_ Net-_D69-Pad1_ Red
+R14 GND Net-_D76-Pad1_ 330
+Y1 Net-_U2-Pad2_ Net-_U2-Pad3_ 12MHz
+C3 GND +5V 0.1uF
+C74 GND +5V 10uF
+R5 Net-_R5-Pad1_ GND 100K
+R9 Net-_R9-Pad1_ GND 2K7
+C75 GND Net-_C75-Pad2_ 10uF
+C76 GND Net-_C75-Pad2_ 0.1uF
+C77 GND +3V3 0.1uF
+C78 GND +3V3 10uF
+R8 Net-_R5-Pad1_ +5V 47K
+J3 +5V Net-_J3-Pad2_ Net-_J3-Pad3_ GND GND USB_A
+J4 +5V Net-_J4-Pad2_ Net-_J4-Pad3_ GND GND USB_A
+J5 +5V Net-_J5-Pad2_ Net-_J5-Pad3_ GND GND USB_A
+T1 +5V Vin
+P7 Net-_P7-Pad1_ +3V3 +5V AMS1117
+R6 +3V3 Net-_P7-Pad1_ R
+R7 Net-_P7-Pad1_ GND R
+C67 +3V3 GND CP1
+C66 +5V GND C
+T3 +3V3 Vout
+J2 GND +5V Net-_J2-PadA5_ /PowerSheet/USB_D+ /PowerSheet/USB_D- NC_10 +5V GND GND +5V Net-_J2-PadB5_ /PowerSheet/USB_D+ /PowerSheet/USB_D- NC_11 +5V GND GND USB_C_Receptacle_USB2.0
+R11 GND Net-_J2-PadA5_ 5K1
+R12 GND Net-_J2-PadB5_ 5K1
+.end

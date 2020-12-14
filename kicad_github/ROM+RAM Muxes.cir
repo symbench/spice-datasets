@@ -1,0 +1,36 @@
+.title KiCad schematic
+D4 /D_0_ /D_8_ GND BAS40-06
+D6 /D_1_ /D_9_ NC_01 BAS40-06
+D8 /D_2_ /D_10_ NC_02 BAS40-06
+D10 /D_3_ /D_11_ NC_03 BAS40-06
+D12 /D_4_ /D_12_ NC_04 BAS40-06
+D14 /D_5_ /D_13_ NC_05 BAS40-06
+D16 /D_6_ /D_14_ NC_06 BAS40-06
+D18 /D_7_ /D_15_ NC_07 BAS40-06
+D5 /D_16_ /D_24_ NC_08 BAS40-06
+D7 /D_17_ /D_25_ NC_09 BAS40-06
+D9 /D_18_ /D_26_ NC_10 BAS40-06
+D11 /D_19_ /D_27_ NC_11 BAS40-06
+D13 /D_20_ /D_28_ NC_12 BAS40-06
+D15 /D_21_ /D_29_ NC_13 BAS40-06
+D17 /D_22_ /D_30_ NC_14 BAS40-06
+D19 /D_23_ /D_31_ NC_15 BAS40-06
+RP5 Net-_RP5-Pad1_ Net-_RP5-Pad2_ Net-_RP5-Pad3_ Net-_RP5-Pad4_ Net-_RP5-Pad5_ Net-_RP5-Pad6_ Net-_RP5-Pad7_ Net-_RP5-Pad8_ NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 22
+RP6 Net-_RP6-Pad1_ Net-_RP6-Pad2_ Net-_RP6-Pad3_ Net-_RP6-Pad4_ Net-_RP6-Pad5_ Net-_RP6-Pad6_ Net-_RP6-Pad7_ Net-_RP6-Pad8_ NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 22
+UJ2 RCMUX /A_3_ /A_2_ Net-_RP4-Pad1_ /A_3_ /A_2_ Net-_RP4-Pad2_ Net-_RP4-Pad4_ /A_4_ /A_5_ Net-_RP4-Pad3_ /A_4_ /A_5_ GND 74F258
+UI2 RCMUX /A_7_ /A_6_ Net-_RP4-Pad5_ /A_7_ /A_6_ Net-_RP4-Pad6_ Net-_RP4-Pad8_ /A_8_ /A_9_ Net-_RP4-Pad7_ /A_8_ /A_9_ GND 74F258
+UI3 RCMUX /A_11_ /A_10_ Net-_RP5-Pad1_ /A_11_ /A_10_ Net-_RP5-Pad2_ Net-_RP5-Pad4_ /A_12_ /A_13_ Net-_RP5-Pad3_ /A_12_ /A_13_ GND 74F258
+UJ3 RCMUX /A_15_ /A_14_ Net-_RP5-Pad5_ /A_15_ /A_14_ Net-_RP5-Pad6_ Net-_RP5-Pad8_ /A_16_ /A_17_ Net-_RP5-Pad7_ /A_16_ /A_17_ GND 74F258
+UJ4 RCMUX /A_19_ /A_18_ Net-_RP6-Pad1_ /A_19_ /A_18_ Net-_RP6-Pad2_ Net-_RP6-Pad4_ /A_20_ /A_21_ Net-_RP6-Pad3_ /A_20_ /A_21_ GND 74F258
+UI4 RCMUX /A_23_ /A_22_ Net-_RP6-Pad5_ /A_23_ /A_22_ Net-_RP6-Pad6_ Net-_RP6-Pad8_ /A_24_ /A_25_ Net-_RP6-Pad7_ /A_24_ /A_25_ GND 74F258
+Y2 GND Net-_UH7-Pad8_ Net-_L14-Pad1_ Oscilator
+UH7 GND RCMUX NC_32 NC_33 NC_34 GND NC_35 Net-_UH7-Pad8_ NC_36 GND GND Net-_R28-Pad2_ NC_37 NC_38 NC_39 NC_40 NC_41 Net-_L15-Pad1_ NC_42 NC_43 PAL16L8D
+RP4 Net-_RP4-Pad1_ Net-_RP4-Pad2_ Net-_RP4-Pad3_ Net-_RP4-Pad4_ Net-_RP4-Pad5_ Net-_RP4-Pad6_ Net-_RP4-Pad7_ Net-_RP4-Pad8_ NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 22
+ROMSIMM1 +5V NC_52 NC_53 /A_2_ /A_3_ /A_4_ /A_5_ /A_6_ /A_7_ GND ROM* ROM* +5V /D_0_ /D_1_ /D_2_ /D_3_ /D_4_ /D_5_ /D_6_ /D_7_ /D_8_ /D_9_ /D_10_ /D_11_ /D_12_ /D_13_ /D_14_ /D_15_ +5V /A_8_ /A_9_ /A_10_ /A_11_ /A_12_ /A_13_ /A_14_ /A_15_ /A_16_ /A_17_ /A_18_ /A_19_ /A_20_ /A_21_ /A_22_ +5V /D_16_ /D_17_ /D_18_ /D_19_ /D_20_ /D_21_ /D_22_ /D_23_ /D_24_ /D_25_ /D_26_ /D_27_ /D_28_ /D_29_ /D_30_ /D_31_ +5V GND ROMSIMM
+L15 Net-_L15-Pad1_ RCMUX Ferrite Bead
+R28 NC_54 Net-_R28-Pad2_ 47
+L14 Net-_L14-Pad1_ Net-_L13-Pad1_ Ferrite Bead
+L13 Net-_L13-Pad1_ Net-_L12-Pad1_ Ferrite Bead
+L12 Net-_L12-Pad1_ +5V Ferrite Bead
+C49 +5V GND 0.01
+.end

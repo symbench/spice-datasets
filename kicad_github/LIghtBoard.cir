@@ -1,0 +1,14 @@
+.title KiCad schematic
+D1 5V NC_01 GND Net-_D1-Pad4_ WS2812B
+D2 5V NC_02 GND Net-_D1-Pad4_ WS2812B
+D3 5V NC_03 GND Net-_D1-Pad4_ WS2812B
+D4 5V /Dout GND Net-_D1-Pad4_ WS2812B
+H1 GND MountingHole_Pad
+H2 GND MountingHole_Pad
+C1 5V GND C
+JP1 Net-_D1-Pad4_ /Din Jumper_2_Open
+R1 /Din Net-_D1-Pad4_ R_US
+J1 5V GND /Din Conn_01x03
+J2 5V GND /Dout Conn_01x03
+C2 5V GND C
+.end

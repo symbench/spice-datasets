@@ -1,0 +1,12 @@
+.title KiCad schematic
+T1 +5V Vin
+P7 Net-_P7-Pad1_ +3V3 +5V AMS1117
+R6 +3V3 Net-_P7-Pad1_ R
+R7 Net-_P7-Pad1_ GND R
+C67 +3V3 GND CP1
+C66 +5V GND C
+T3 +3V3 Vout
+J2 GND +5V Net-_J2-PadA5_ /USB_D+ /USB_D- NC_01 +5V GND GND +5V Net-_J2-PadB5_ /USB_D+ /USB_D- NC_02 +5V GND GND USB_C_Receptacle_USB2.0
+R11 GND Net-_J2-PadA5_ 5K1
+R12 GND Net-_J2-PadB5_ 5K1
+.end

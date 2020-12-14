@@ -1,0 +1,41 @@
+.title KiCad schematic
+U3 S1 NC_01 NC_02 +5V +6V NC_03 Net-_C6-Pad1_ Net-_C5-Pad2_ S2 NC_04 Net-_J5-Pad1_ NC_05 Net-_U3-Pad13_ Net-_U3-Pad14_ SI SO SCK +5V NC_06 +6V +6V NC_07 ENC1 PT NC_08 NC_09 NC_10 NC_11 RST NC_12 NC_13 NC_14 +6V ATmega328PB-MU
+R5 +5V RST 10k
+J8 Net-_J8-Pad1_ Net-_J8-Pad2_ NC_15 NC_16 NC_17 NC_18 +6V Net-_D2-Pad2_ RJ45
+U5 Net-_U5-Pad1_ Net-_U5-Pad2_ NC_19 NC_20 NC_21 NC_22 Net-_C7-Pad2_ Net-_C8-Pad1_ +6V NC_23 NC_24 NC_25 SCK SI SO Net-_U3-Pad14_ Net-_R7-Pad2_ +5V MCP2515-xSO
+U6 Net-_U5-Pad1_ +6V +5V Net-_U5-Pad2_ NC_26 Net-_J8-Pad2_ Net-_J8-Pad1_ NC_27 MCP2561-E-SN
+Y2 Net-_C8-Pad1_ Net-_C7-Pad2_ 16MHz
+C7 +6V Net-_C7-Pad2_ 20pF
+C8 Net-_C8-Pad1_ +6V 20pF
+U1 Net-_R1-Pad2_ NC_28 NC_29 +5V Net-_L2-Pad1_ +6V +6V +BATT MCP1642D-50I_MS-ND
+BT1 +BATT +6V 3.7V
+C3 +6V +BATT 22μF
+R1 +BATT Net-_R1-Pad2_ 10k
+L2 Net-_L2-Pad1_ +BATT 4.7μH
+JP1 Net-_J8-Pad2_ Net-_JP1-Pad2_ SolderJumper_2_Open
+R8 Net-_JP1-Pad2_ Net-_J8-Pad1_ 120
+R7 +5V Net-_R7-Pad2_ 10k
+J7 +6V SI +5V SO SCK RST Conn_02x03_Counter_Clockwise
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+R6 Net-_D2-Pad1_ +6V 220
+U4 +6V Net-_J3-Pad2_ Net-_J3-Pad1_ +5V SCK Net-_U3-Pad13_ SO NC_30 MAX6675
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Screw_Terminal_01x02
+U2 Net-_D1-Pad2_ +6V Net-_R2-Pad1_ Net-_R3-Pad2_ +BATT NC_31 MT3608
+C4 +6V +BATT 22μF
+L1 Net-_D1-Pad2_ +BATT L
+D1 +6V Net-_D1-Pad2_ D_Schottky
+R2 Net-_R2-Pad1_ +6V 900
+C2 +6V +6V 22μF
+R3 +BATT Net-_R3-Pad2_ 1k
+RV1 +6V Net-_R2-Pad1_ Net-_R2-Pad1_ R_POT_TRIM
+J1 S1 +6V +6V Ball Servo 1
+J2 S2 +6V +6V Ball Servo 2
+J4 ENC1 NC_32 +6V +6V Continuous Rotation Servo
+J5 Net-_J5-Pad1_ +5V Limit Switch
+J6 PT +5V +6V Pressure Transducer
+C6 Net-_C6-Pad1_ +6V 20pF
+C5 +6V Net-_C5-Pad2_ 20pF
+R4 Net-_C6-Pad1_ Net-_C5-Pad2_ 1M
+Y1 Net-_C6-Pad1_ Net-_C5-Pad2_ 16MHz
+C1 +5V +6V 22μF
+.end

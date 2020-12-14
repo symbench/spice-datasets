@@ -1,0 +1,20 @@
+.title KiCad schematic
+R2 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+R3 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+R4 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+R5 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+R6 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+R7 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+R8 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+U2 NC_01 Net-_R1-Pad1_ GND -VCC NC_02 Net-_R10-Pad2_ VCC NC_03 LM741
+R9 Net-_R10-Pad2_ Net-_R1-Pad1_ 1K
+J1 VCC -VCC Conn_01x02_Female
+U1 NC_04 Net-_R1-Pad2_ Net-_RV1-Pad2_ -VCC NC_05 Net-_R1-Pad2_ VCC NC_06 LM741
+RV1 +3.7V Net-_RV1-Pad2_ GND R_POT
+U3 NC_07 Net-_R10-Pad1_ GND -VCC NC_08 Net-_J2-Pad1_ VCC NC_09 LM741
+R10 Net-_R10-Pad1_ Net-_R10-Pad2_ 10k
+R11 Net-_J2-Pad1_ Net-_R10-Pad1_ 10k
+J2 Net-_J2-Pad1_ Conn_01x01_Female
+J3 GND +3.7V Conn_01x02_Female
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ LDR03
+.end

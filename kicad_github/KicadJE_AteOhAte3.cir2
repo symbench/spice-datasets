@@ -1,0 +1,90 @@
+.title KiCad schematic
+U302 L_Rumble_Out Net-_R304-Pad1_ Net-_C313-Pad1_ -12V Net-_C328-Pad1_ Net-_R319-Pad1_ R_Rumble_Out +12V TL072
+C336 GND +12V 100n
+C339 -12V GND 100n
+C340 -12V GND 100n
+C337 GND +12V 100n
+H301 2,5mm
+H303 2,5mm
+H304 2,2mm
+H302 2,2mm
+U301 L_GainOut Net-_C306-Pad1_ Net-_C306-Pad2_ -12V Net-_C318-Pad2_ Net-_C318-Pad1_ R_GainOut +12V TL072
+C333 Net-_C331-Pad2_ In_L 10u
+C341 Net-_C341-Pad1_ In_R 10u
+U303 Net-_C301-Pad1_ Net-_C304-Pad2_ GND -12V GND Net-_C320-Pad2_ Net-_C317-Pad1_ +12V TL072
+R307 Net-_C306-Pad2_ Net-_C310-Pad1_ 470R
+R312 L_Rumble_Out Net-_C312-Pad1_ 18k
+R301 Net-_C306-Pad1_ Net-_C302-Pad1_ 220R
+R302 L_GainOut Net-_C306-Pad1_ 2k2
+D304 Net-_D304-Pad1_ Net-_D304-Pad2_ LED
+R327 Net-_F301-Pad2_ Net-_D304-Pad2_ 12k
+C334 Net-_C332-Pad2_ Out_L 1u
+C342 Net-_C342-Pad1_ Out_R 1u
+C331 In_L Net-_C331-Pad2_ 10u
+C343 In_R Net-_C341-Pad1_ 10u
+J301 Net-_C342-Pad1_ Net-_C341-Pad1_ GND Net-_C332-Pad2_ GND Net-_C331-Pad2_ PJRAS2X2S01AUX
+C344 Out_R Net-_C342-Pad1_ 22u
+C332 Out_L Net-_C332-Pad2_ 22u
+R328 GND Net-_C341-Pad1_ 680k
+R326 Net-_C331-Pad2_ GND 680k
+R306 Net-_C310-Pad1_ In_L 470R
+R310 GND Net-_C310-Pad1_ 47k
+C306 Net-_C306-Pad1_ Net-_C306-Pad2_ 47p
+C310 Net-_C310-Pad1_ GND 47p
+C302 Net-_C302-Pad1_ GND 100u
+C312 Net-_C312-Pad1_ L_GainOut 470n
+C313 Net-_C313-Pad1_ Net-_C312-Pad1_ 470n
+R305 L_Rumble_Out Net-_R304-Pad1_ 2k2
+R304 Net-_R304-Pad1_ GND 2k2
+R318 Net-_C318-Pad2_ Net-_C322-Pad1_ 470R
+R314 Net-_C318-Pad1_ Net-_C316-Pad1_ 220R
+R315 R_GainOut Net-_C318-Pad1_ 2k2
+R317 Net-_C322-Pad1_ In_R 470R
+R321 GND Net-_C322-Pad1_ 47k
+C318 Net-_C318-Pad1_ Net-_C318-Pad2_ 47p
+C322 Net-_C322-Pad1_ GND 47p
+C316 Net-_C316-Pad1_ GND 100u
+R325 R_Rumble_Out Net-_C327-Pad1_ 18k
+C327 Net-_C327-Pad1_ R_GainOut 470n
+C328 Net-_C328-Pad1_ Net-_C327-Pad1_ 470n
+R320 R_Rumble_Out Net-_R319-Pad1_ 2k2
+R319 Net-_R319-Pad1_ GND 2k2
+C309 Net-_C309-Pad1_ L_Rumble_Out 470n_THT
+C311 Net-_C309-Pad1_ L_Rumble_Out 470n
+C314 Net-_C312-Pad1_ L_GainOut 470n_THT
+C315 Net-_C313-Pad1_ Net-_C312-Pad1_ 470n_THT
+C329 Net-_C327-Pad1_ R_GainOut 470n_THT
+C330 Net-_C328-Pad1_ Net-_C327-Pad1_ 470n_THT
+R313 GND Net-_C313-Pad1_ 18k
+R308 Net-_C304-Pad2_ Net-_C309-Pad1_ 18k
+R309 Net-_C301-Pad1_ Net-_C304-Pad2_ 1M
+C304 Net-_C301-Pad2_ Net-_C304-Pad2_ 1n_THT
+C307 Net-_C301-Pad2_ Net-_C304-Pad2_ 1n
+C305 Net-_C301-Pad1_ Net-_C301-Pad2_ 680p_THT
+C308 Net-_C301-Pad1_ Net-_C301-Pad2_ 680p
+C301 Net-_C301-Pad1_ Net-_C301-Pad2_ 2n2_THT
+C303 Net-_C301-Pad1_ Net-_C301-Pad2_ 2n2
+R303 Net-_C301-Pad2_ Net-_C304-Pad2_ 82k
+R311 Out_L Net-_C301-Pad1_ 470R
+C325 Net-_C325-Pad1_ R_Rumble_Out 470n_THT
+C326 Net-_C325-Pad1_ R_Rumble_Out 470n
+R322 Net-_C320-Pad2_ Net-_C325-Pad1_ 18k
+R323 Net-_C317-Pad1_ Net-_C320-Pad2_ 1M
+C320 Net-_C317-Pad2_ Net-_C320-Pad2_ 1n_THT
+C323 Net-_C317-Pad2_ Net-_C320-Pad2_ 1n
+C321 Net-_C317-Pad1_ Net-_C317-Pad2_ 680p_THT
+C324 Net-_C317-Pad1_ Net-_C317-Pad2_ 680p
+C317 Net-_C317-Pad1_ Net-_C317-Pad2_ 2n2_THT
+C319 Net-_C317-Pad1_ Net-_C317-Pad2_ 2n2
+R316 Net-_C317-Pad2_ Net-_C320-Pad2_ 82k
+R324 Out_R Net-_C317-Pad1_ 470R
+C335 GND +12V 100n
+C338 -12V GND 100n
+J302 /-PSU NC_01 /+PSU Conn_01x03
+C345 +12V GND 470u
+C346 GND -12V 470u
+R329 +12V Net-_F301-Pad2_ 1R1
+R330 -12V Net-_D304-Pad1_ 1R1
+F301 /+PSU Net-_F301-Pad2_ Polyfuse
+F302 Net-_D304-Pad1_ /-PSU Polyfuse
+.end

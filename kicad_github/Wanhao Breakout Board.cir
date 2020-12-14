@@ -1,0 +1,37 @@
+.title KiCad schematic
+JA3 Net-_JA1-Pad1_ Net-_JA1-Pad2_ Net-_JA1-Pad3_ Net-_JA1-Pad4_ Net-_JA1-Pad5_ Net-_JA1-Pad6_ Conn_01x06
+JA2 Net-_JA1-Pad1_ Net-_JA1-Pad2_ Net-_JA1-Pad3_ Net-_JA1-Pad4_ Net-_JA1-Pad5_ Net-_JA1-Pad6_ Conn_01x06
+JA1 Net-_JA1-Pad1_ Net-_JA1-Pad2_ Net-_JA1-Pad3_ Net-_JA1-Pad4_ Net-_JA1-Pad5_ Net-_JA1-Pad6_ Conn_01x06
+JB3 Net-_JB1-Pad1_ Net-_JB1-Pad2_ Net-_JB1-Pad3_ Net-_JB1-Pad4_ Net-_JB1-Pad5_ Net-_JB1-Pad6_ Conn_01x06
+JB2 Net-_JB1-Pad1_ Net-_JB1-Pad2_ Net-_JB1-Pad3_ Net-_JB1-Pad4_ Net-_JB1-Pad5_ Net-_JB1-Pad6_ Conn_01x06
+JB1 Net-_JB1-Pad1_ Net-_JB1-Pad2_ Net-_JB1-Pad3_ Net-_JB1-Pad4_ Net-_JB1-Pad5_ Net-_JB1-Pad6_ Conn_01x06
+JC1 Net-_JC1-Pad1_ Net-_JC1-Pad2_ Conn_01x02
+JC2 Net-_JC1-Pad1_ Net-_JC1-Pad2_ Conn_01x02
+JC3 Net-_JC1-Pad1_ Net-_JC1-Pad2_ Conn_01x02
+JD1 Net-_JD1-Pad1_ Net-_JD1-Pad2_ Conn_01x02
+JD2 Net-_JD1-Pad1_ Net-_JD1-Pad2_ Conn_01x02
+JD3 Net-_JD1-Pad1_ Net-_JD1-Pad2_ Conn_01x02
+JE1 Net-_JE1-Pad1_ Net-_JE1-Pad2_ Conn_01x02
+JE2 Net-_JE2-Pad1_ Net-_JE2-Pad2_ Conn_01x02
+JE3 Net-_JE2-Pad1_ Net-_JE2-Pad2_ Conn_01x02
+U1 Net-_JE1-Pad1_ Net-_JE1-Pad1_ Net-_JE1-Pad2_ Net-_JE1-Pad2_ Net-_SW1-Pad3_ Net-_SW1-Pad3_ Net-_JE2-Pad2_ Net-_JE2-Pad2_ D-Sun_Adjustable_Buck_Boost_Regulator
+SW1 Net-_JE1-Pad1_ Net-_JE2-Pad1_ Net-_SW1-Pad3_ SW_SPDT
+JF1 Net-_JF1-Pad1_ Net-_JF1-Pad2_ Conn_01x02
+JF2 Net-_JF2-Pad1_ Net-_JF2-Pad2_ Conn_01x02
+JF3 Net-_JF2-Pad1_ Net-_JF2-Pad2_ Conn_01x02
+U2 Net-_JF1-Pad1_ Net-_JF1-Pad1_ Net-_JF1-Pad2_ Net-_JF1-Pad2_ Net-_SW2-Pad3_ Net-_SW2-Pad3_ Net-_JF2-Pad2_ Net-_JF2-Pad2_ D-Sun_Adjustable_Buck_Boost_Regulator
+SW2 Net-_JF1-Pad1_ Net-_JF2-Pad1_ Net-_SW2-Pad3_ SW_SPDT
+JG1 Net-_JG1-Pad1_ Net-_JG1-Pad2_ Net-_JG1-Pad3_ Conn_01x03
+JG2 Net-_JG1-Pad1_ Net-_JG1-Pad2_ Net-_JG1-Pad3_ Conn_01x03
+JUSBIN1 VBUS DM1 DP1 GND GND USB_A
+U3 DM1 DP1 DM2 DP2 DM3 DP3 DM4 DP4 Net-_R1-Pad1_ UDM UDP +3V3 Net-_C1-Pad1_ +3V3 NC_01 GND HS8836A
+R1 Net-_R1-Pad1_ GND 100K
+JUSBOUT1 VBUS UDM UDP GND GND USB_A
+C1 Net-_C1-Pad1_ GND 4.7UF
+C2 +3V3 GND 4.7UF
+C3 +3V3 GND 0.1UF
+R2 VBUS Net-_C1-Pad1_ R4.7
+JUSBIN2 VBUS DM2 DP2 GND GND USB_A
+JUSBIN3 VBUS DM3 DP3 GND GND USB_A
+JUSBIN4 VBUS DM4 DP4 GND GND USB_A
+.end

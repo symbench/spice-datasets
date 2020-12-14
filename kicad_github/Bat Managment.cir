@@ -1,0 +1,17 @@
+.title KiCad schematic
+R3 GND BatV 10k
+R2 BatV +BATT 47k
+R5 GND half_BatV 10k
+R4 half_BatV half_Bat 47k
+C6 half_BatV GND 10uF
+J1 /PowerIn half_Bat half_Bat GND Battery
+U301 +BATT GND +5V MC78M05_TO252
+C2 +BATT GND 10uF
+C1 +BATT GND 100pF
+C3 +5V GND 10uF
+C4 +5V GND 100pF
+SW301 /PowerIn +BATT SW_SPST
+C5 BatV GND 10uF
+D301 Net-_D301-Pad1_ +BATT Power
+R1 GND Net-_D301-Pad1_ 470
+.end

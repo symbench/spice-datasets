@@ -1,0 +1,72 @@
+.title KiCad schematic
+A1 NC_01 NC_02 NC_03 GND Net-_47Kohm1-Pad1_ Net-_47Kohm2-Pad1_ Net-_47Kohm3-Pad1_ Net-_47Kohm4-Pad1_ Net-_47Kohm5-Pad1_ Net-_47Kohm6-Pad1_ Net-_220ohm1-Pad2_ Net-_220ohm2-Pad2_ Net-_220ohm3-Pad2_ Net-_220ohm4-Pad2_ Net-_A1-Pad15_ NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 +5V NC_15 GND Net-_A1-Pad30_ Arduino_Nano_v3.x
+SW1 +5V Net-_47Kohm1-Pad1_ SW_Push
+SW2 +5V Net-_47Kohm2-Pad1_ SW_Push
+SW3 +5V Net-_47Kohm3-Pad1_ SW_Push
+SW4 +5V Net-_47Kohm4-Pad1_ SW_Push
+SW5 +5V Net-_47Kohm5-Pad1_ SW_Push
+D1 +5V Net-_D1-Pad2_ GND Net-_A1-Pad15_ WS2812B
+D2 +5V Net-_D2-Pad2_ GND Net-_D1-Pad2_ WS2812B
+0.1uF1 +5V GND CAP
+47Kohm1 Net-_47Kohm1-Pad1_ GND R
+47Kohm2 Net-_47Kohm2-Pad1_ GND R
+47Kohm3 Net-_47Kohm3-Pad1_ GND R
+47Kohm4 Net-_47Kohm4-Pad1_ GND R
+47Kohm5 Net-_47Kohm5-Pad1_ GND R
+D3 +5V Net-_D3-Pad2_ GND Net-_D2-Pad2_ WS2812B
+0.1uF2 +5V GND CAP
+D4 +5V Net-_D4-Pad2_ GND Net-_D3-Pad2_ WS2812B
+0.1uF3 +5V GND CAP
+D5 +5V Net-_D5-Pad2_ GND Net-_D4-Pad2_ WS2812B
+0.1uF4 +5V GND CAP
+D7 +5V Net-_D7-Pad2_ GND Net-_D6-Pad2_ WS2812B
+0.1uF6 +5V GND CAP
+D8 +5V Net-_D8-Pad2_ GND Net-_D7-Pad2_ WS2812B
+0.1uF7 +5V GND CAP
+D9 +5V Net-_D10-Pad4_ GND Net-_D8-Pad2_ WS2812B
+0.1uF8 +5V GND CAP
+D10 +5V Net-_D10-Pad2_ GND Net-_D10-Pad4_ WS2812B
+0.1uF9 +5V GND CAP
+D11 +5V Net-_D11-Pad2_ GND Net-_D10-Pad2_ WS2812B
+D12 +5V Net-_D12-Pad2_ GND Net-_D11-Pad2_ WS2812B
+0.1uF11 +5V GND CAP
+D13 +5V Net-_D13-Pad2_ GND Net-_D12-Pad2_ WS2812B
+0.1uF12 +5V GND CAP
+D14 +5V Net-_D14-Pad2_ GND Net-_D13-Pad2_ WS2812B
+0.1uF13 +5V GND CAP
+D15 +5V Net-_D15-Pad2_ GND Net-_D14-Pad2_ WS2812B
+0.1uF14 +5V GND CAP
+D16 +5V Net-_D16-Pad2_ GND Net-_D15-Pad2_ WS2812B
+D17 +5V Net-_D17-Pad2_ GND Net-_D16-Pad2_ WS2812B
+0.1uF16 +5V GND CAP
+D18 +5V Net-_D18-Pad2_ GND Net-_D17-Pad2_ WS2812B
+0.1uF17 +5V GND CAP
+D19 +5V Net-_D19-Pad2_ GND Net-_D18-Pad2_ WS2812B
+0.1uF18 +5V GND CAP
+D20 +5V NC_16 GND Net-_D19-Pad2_ WS2812B
+D6 +5V Net-_D6-Pad2_ GND Net-_D5-Pad2_ WS2812B
+D21 GND Net-_220ohm1-Pad1_ LED
+D22 GND Net-_220ohm2-Pad1_ LED
+D23 GND Net-_220ohm3-Pad1_ LED
+220ohm1 Net-_220ohm1-Pad1_ Net-_220ohm1-Pad2_ R
+220ohm2 Net-_220ohm2-Pad1_ Net-_220ohm2-Pad2_ R
+220ohm3 Net-_220ohm3-Pad1_ Net-_220ohm3-Pad2_ R
+D24 GND Net-_220ohm4-Pad1_ LED
+220ohm4 Net-_220ohm4-Pad1_ Net-_220ohm4-Pad2_ R
+SW6 +5V Net-_47Kohm6-Pad1_ SW_Push
+47Kohm6 Net-_47Kohm6-Pad1_ GND R
+0.1uF5 +5V GND CAP
+0.1uF10 +5V GND CAP
+0.1uF15 +5V GND CAP
+0.1uF20 +5V GND CAP
+0.1uF19 +5V GND CAP
+J1 GND Net-_A1-Pad30_ Net-_A1-Pad30_ Barrel_Jack_Switch
+H1 MountingHole
+H2 MountingHole
+H3 MountingHole
+H4 MountingHole
+H5 MountingHole
+H6 MountingHole
+H7 MountingHole
+H8 MountingHole
+.end

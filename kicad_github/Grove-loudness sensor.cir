@@ -1,0 +1,22 @@
+.title KiCad schematic
+J2 /SIG NC_01 /VCC /GND TWIG_2.0
+C1 /MIC Net-_C1-Pad2_ 1uF
+R1 /MIC /VCC 10k
+U1 Net-_R9-Pad1_ Net-_R9-Pad1_ Net-_R2-Pad2_ /GND Net-_C2-Pad1_ Net-_R4-Pad1_ Net-_R4-Pad2_ /VCC LM2904DR
+R2 Net-_C1-Pad2_ Net-_R2-Pad2_ 100k
+R3 /GND Net-_C2-Pad1_ 16K
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 4.7uF
+R4 Net-_R4-Pad1_ Net-_R4-Pad2_ 560k
+C4 /VCC /GND 100nF
+R7 Net-_R5-Pad2_ NC_02 Net-_R4-Pad1_ 1k
+MIC1 /MIC /GND  microphone
+MIC2 /MIC /GND  microphone
+U4 /MIC /GND /GND /VCC SENSOR-MULPS4CX
+C5 /GND /VCC 1uF
+R8 /GND Net-_C1-Pad2_ 100k
+R5 /GND Net-_R5-Pad2_ 1K
+R9 Net-_R9-Pad1_ Net-_C2-Pad2_ 10K
+C6 /GND Net-_C2-Pad2_ 4.7pF
+R6 Net-_R4-Pad2_ /SIG 47K
+C3 /SIG /GND 1uF
+.end

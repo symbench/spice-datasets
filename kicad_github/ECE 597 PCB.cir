@@ -1,0 +1,10 @@
+.title KiCad schematic
+U3 Net-_U3-Pad1_ Net-_U3-Pad2_ Net-_U1-Pad3_ Net-_J1-Pad1_ Net-_U3-Pad5_ Net-_U3-Pad6_ Net-_U3-Pad7_ Net-_U3-Pad8_ NC_01 Net-_U1-Pad10_ Net-_U3-Pad11_ Net-_U3-Pad12_ LogicShifter1
+U2 Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_U1-Pad3_ Net-_J1-Pad1_ Net-_U2-Pad5_ Net-_U2-Pad6_ Net-_U2-Pad7_ Net-_U2-Pad8_ NC_02 Net-_U1-Pad10_ Net-_U2-Pad11_ Net-_U2-Pad12_ LogicShifter2
+U1 Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ NC_03 Net-_U1-Pad5_ Net-_U1-Pad6_ Net-_U1-Pad7_ Net-_U1-Pad8_ NC_04 Net-_U1-Pad10_ Net-_U1-Pad11_ Net-_U1-Pad12_ LogicShifter3
+U5 NC_05 Net-_J1-Pad1_ NC_06 Net-_U3-Pad12_ Net-_U3-Pad11_ Net-_U3-Pad8_ Net-_U3-Pad7_ Net-_U2-Pad12_ Net-_U2-Pad11_ NC_07 NC_08 NC_09 Net-_U1-Pad10_ MC1
+U6 NC_10 Net-_J1-Pad1_ NC_11 Net-_U2-Pad8_ Net-_U2-Pad7_ Net-_U1-Pad12_ Net-_U1-Pad11_ Net-_U1-Pad8_ Net-_U1-Pad7_ NC_12 NC_13 NC_14 Net-_U1-Pad10_ MC2
+U4 NC_15 Net-_U1-Pad10_ NC_16 NC_17 Net-_U1-Pad6_ Net-_U1-Pad5_ Net-_U1-Pad2_ Net-_U1-Pad1_ Net-_U2-Pad6_ Net-_U2-Pad5_ Net-_U2-Pad2_ Net-_U2-Pad1_ Net-_U3-Pad6_ Net-_U3-Pad5_ Net-_U3-Pad2_ Net-_U3-Pad1_ NC_18 NC_19 Net-_U4-Pad19_ Net-_U4-Pad20_ NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad1_ NC_30 NC_31 NC_32 WiFiKit32
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Conn_01x03
+U7 NC_33 NC_34 Net-_U4-Pad20_ Net-_U4-Pad19_ Net-_J1-Pad1_ Net-_U1-Pad3_ Waveshare10dof
+.end

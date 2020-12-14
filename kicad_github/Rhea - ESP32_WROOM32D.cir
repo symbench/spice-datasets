@@ -1,0 +1,92 @@
+.title KiCad schematic
+BT1 Net-_BT1-Pad1_ GND BAT
+Y1 Net-_U2-Pad1_ Net-_U2-Pad2_ Crystal
+J1 NC_01 NC_02 NC_03 /3V3_SYS NC_04 GND NC_05 NC_06 Earth Micro_SD_Card
+U1 NC_07 GND NC_08 NC_09 TEMP-HUM-PRES-BME280
+NT1 Earth_Protective GNDPWR GNDA GND Net-Tie_4
+U2 Net-_U2-Pad1_ Net-_U2-Pad2_ Net-_BT1-Pad1_ GND NC_10 NC_11 NC_12 /3V3_SYS MCP7940N-xP
+U11 /Power Management/3V3_REG /Power Management/3V3_SYS /Power Management/3V3_REG /Power Management/3V3_EXT GND Net-_R14-Pad1_ NC_13 NC_14 NC_15 /Power Management/3V3_REG PAC1720
+R11 /Power Management/3V3_SYS /Power Management/3V3_REG R_US
+R12 /Power Management/3V3_REG /Power Management/3V3_EXT R_US
+R14 Net-_R14-Pad1_ GND R_US
+U6 Net-_TH1-Pad1_ /Power Management/PACK+ /Power Management/PACK+ GND /Power Management/EN_JACK /Power Management/EN_USB Net-_D4-Pad1_ GND Net-_D5-Pad1_ /Power Management/VIN_UNREG /Power Management/VIN_UNREG Net-_R7-Pad1_ Net-_C2-Pad1_ Net-_R8-Pad1_ GND Net-_R6-Pad1_ GND BQ24075
+TH1 Net-_TH1-Pad1_ GNDA 10k
+R1 /Power Management/VIN_UNREG Net-_D4-Pad2_ 1.5k
+R2 /Power Management/VIN_UNREG Net-_D5-Pad2_ 1.5k
+C2 Net-_C2-Pad1_ GNDPWR 4.7u
+C1 /Power Management/VIN_UNREG GNDPWR 4.7u
+R8 Net-_R8-Pad1_ GNDA 50k
+R7 Net-_R7-Pad1_ GNDA 1k
+R6 Net-_R6-Pad1_ GNDA 510R
+U7 NC_16 Net-_Q1-Pad2_ Net-_Q2-Pad2_ Net-_BT2-Pad2_ Net-_C3-Pad1_ Net-_R4-Pad1_ BQ29700
+Q1 Net-_Q1-Pad1_ Net-_Q1-Pad2_ GNDPWR Q_NMOS_DGS
+Q2 Net-_Q1-Pad1_ Net-_Q2-Pad2_ Net-_BT2-Pad2_ Q_NMOS_DGS
+R4 Net-_R4-Pad1_ GNDPWR R_US
+C3 Net-_C3-Pad1_ Net-_BT2-Pad2_ 0.1u
+BT2 /Power Management/PACK+ Net-_BT2-Pad2_ Li-Ion
+R3 /Power Management/PACK+ Net-_C3-Pad1_ 330R
+C7 /Power Management/3V3_REG GNDPWR 10u
+C4 /Power Management/VIN_UNREG GNDPWR 4.7u
+L1 Net-_L1-Pad1_ /Power Management/3V45_REG 2.2u
+R9 /Power Management/3V45_REG Net-_R13-Pad1_ 475k
+R13 Net-_R13-Pad1_ GNDA 100k
+C5 /Power Management/3V45_REG GNDPWR 10u
+U10 GND NC_17 NC_18 /Power Management/3V3_SYS STM6315
+U5 Net-_J2-Pad3_ GND GND /Power Management/EN_JACK VCC /Power Management/EN_USB 74LVC1G19
+R5 Net-_J2-Pad3_ GND 475k
+J3 Net-_J2-Pad3_ Net-_J3-Pad2_ Net-_J3-Pad3_ NC_19 GNDPWR Earth_Protective USB_B_Micro
+J2 GND VCC Net-_J2-Pad3_ Barrel_Jack_Switch
+D3 Net-_D3-Pad1_ VCC D_Schottky
+F1 Net-_F1-Pad1_ Net-_D3-Pad1_ Polyfuse
+U4 Net-_F1-Pad1_ Net-_J3-Pad3_ Net-_J3-Pad2_ GND GND NC_20 NC_21 Net-_C2-Pad1_ USB6B1
+C6 Net-_C6-Pad1_ GNDA 10n
+U9 /Power Management/3V45_REG /Power Management/3V3_REG GNDPWR Net-_C6-Pad1_ Net-_R10-Pad2_ TPS73733DCQ
+U8 /Power Management/VIN_UNREG GNDPWR Net-_L1-Pad1_ /Power Management/VIN_UNREG Net-_R10-Pad2_ Net-_R13-Pad1_ TLV62568DDC
+R10 /Power Management/3V45_REG Net-_R10-Pad2_ 475k
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED_CON
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ LED_CHG
+C9 /Power Management/PACK+ GNDPWR 4.7u
+U12 GND /MCU/3V3_SYS NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 GND NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 GND ESP32-WROOM-32D
+C8 /MCU/3V3_SYS GNDPWR C
+J5 GNDA GND Earth_Protective NC_56 NC_57 NC_58 Conn_02x03_Counter_Clockwise
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ Conn_01x08
+U13 NC_59 NC_60 NC_61 NC_62 NC_63 NC_64 NC_65 NC_66 Net-_R29-Pad2_ Net-_R27-Pad2_ Net-_R25-Pad2_ Net-_R23-Pad2_ Net-_R21-Pad2_ Net-_R19-Pad2_ Net-_R17-Pad2_ Net-_R15-Pad2_ Earth_Protective NUF8402MN
+U15 Net-_U15-Pad1_ Net-_U15-Pad2_ Net-_U15-Pad3_ Net-_U15-Pad4_ Net-_U15-Pad5_ Net-_U15-Pad6_ Net-_U15-Pad7_ Net-_U15-Pad8_ Net-_R38-Pad2_ Net-_R37-Pad2_ Net-_R36-Pad2_ Net-_R35-Pad2_ Net-_R34-Pad2_ Net-_R33-Pad2_ Net-_R32-Pad2_ Net-_R31-Pad2_ Earth_Protective NUF8402MN
+U14 /Extension Headers/I2C_SCL /Extension Headers/I2C_SDA NC_67 NC_68 NC_69 NC_70 NC_71 NC_72 Net-_R30-Pad2_ Net-_R28-Pad2_ Net-_R26-Pad2_ Net-_R24-Pad2_ Net-_R22-Pad2_ Net-_R20-Pad2_ Net-_R18-Pad2_ Net-_R16-Pad2_ Earth_Protective NUF8402MN
+J6 Net-_J6-Pad1_ Net-_J6-Pad2_ Net-_J6-Pad3_ Net-_J6-Pad4_ Net-_J6-Pad5_ Net-_J6-Pad6_ Net-_J6-Pad7_ Net-_J6-Pad8_ Conn_01x08
+U17 Net-_U16-Pad13_ Net-_U16-Pad14_ Net-_U16-Pad15_ Net-_U16-Pad16_ Net-_U16-Pad17_ Net-_U16-Pad18_ Net-_U16-Pad19_ Net-_U16-Pad20_ Net-_R46-Pad2_ Net-_R45-Pad2_ Net-_R44-Pad2_ Net-_R43-Pad2_ Net-_R42-Pad2_ Net-_R41-Pad2_ Net-_R40-Pad2_ Net-_R39-Pad2_ Earth_Protective NUF8402MN
+U16 NC_73 NC_74 NC_75 Net-_U15-Pad1_ Net-_U15-Pad2_ Net-_U15-Pad3_ Net-_U15-Pad4_ Net-_U15-Pad5_ Net-_U15-Pad6_ Net-_U15-Pad7_ Net-_U15-Pad8_ GND Net-_U16-Pad13_ Net-_U16-Pad14_ Net-_U16-Pad15_ Net-_U16-Pad16_ Net-_U16-Pad17_ Net-_U16-Pad18_ Net-_U16-Pad19_ Net-_U16-Pad20_ NC_76 /Extension Headers/I2C_SCL /Extension Headers/I2C_SDA NC_77 TCA9555DBR
+R15 Net-_J4-Pad1_ Net-_R15-Pad2_ 200R
+R17 Net-_J4-Pad2_ Net-_R17-Pad2_ 200R
+R19 Net-_J4-Pad3_ Net-_R19-Pad2_ 200R
+R21 Net-_J4-Pad4_ Net-_R21-Pad2_ 200R
+R23 Net-_J4-Pad5_ Net-_R23-Pad2_ 200R
+R25 Net-_J4-Pad6_ Net-_R25-Pad2_ 200R
+R27 Net-_J4-Pad7_ Net-_R27-Pad2_ 200R
+R29 Net-_J4-Pad8_ Net-_R29-Pad2_ 200R
+R16 Net-_J6-Pad1_ Net-_R16-Pad2_ 200R
+R18 Net-_J6-Pad2_ Net-_R18-Pad2_ 200R
+R20 Net-_J6-Pad3_ Net-_R20-Pad2_ 200R
+R22 Net-_J6-Pad4_ Net-_R22-Pad2_ 200R
+R24 Net-_J6-Pad5_ Net-_R24-Pad2_ 200R
+R26 Net-_J6-Pad6_ Net-_R26-Pad2_ 200R
+R28 Net-_J6-Pad7_ Net-_R28-Pad2_ 200R
+R30 Net-_J6-Pad8_ Net-_R30-Pad2_ 200R
+R31 /Extension Headers/D0 Net-_R31-Pad2_ 200R
+R32 /Extension Headers/D1 Net-_R32-Pad2_ 200R
+R33 /Extension Headers/D2 Net-_R33-Pad2_ 200R
+R34 /Extension Headers/D3 Net-_R34-Pad2_ 200R
+R35 /Extension Headers/D4 Net-_R35-Pad2_ 200R
+R36 /Extension Headers/D5 Net-_R36-Pad2_ 200R
+R37 /Extension Headers/D6 Net-_R37-Pad2_ 200R
+R38 /Extension Headers/D7 Net-_R38-Pad2_ 200R
+J7 /Extension Headers/D0 /Extension Headers/D1 /Extension Headers/D2 /Extension Headers/D3 /Extension Headers/D4 /Extension Headers/D5 /Extension Headers/D6 /Extension Headers/D7 /Extension Headers/D8 /Extension Headers/D9 /Extension Headers/D10 /Extension Headers/D11 /Extension Headers/D12 /Extension Headers/D13 /Extension Headers/D14 /Extension Headers/D15 Conn_02x08_Counter_Clockwise
+R39 /Extension Headers/D8 Net-_R39-Pad2_ 200R
+R40 /Extension Headers/D9 Net-_R40-Pad2_ 200R
+R41 /Extension Headers/D10 Net-_R41-Pad2_ 200R
+R42 /Extension Headers/D11 Net-_R42-Pad2_ 200R
+R43 /Extension Headers/D12 Net-_R43-Pad2_ 200R
+R44 /Extension Headers/D13 Net-_R44-Pad2_ 200R
+R45 /Extension Headers/D14 Net-_R45-Pad2_ 200R
+R46 /Extension Headers/D15 Net-_R46-Pad2_ 200R
+.end

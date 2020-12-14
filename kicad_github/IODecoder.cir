@@ -1,0 +1,7 @@
+.title KiCad schematic
+U2 Net-_J2-Pad5_ Net-_J2-Pad4_ Net-_J2-Pad3_ GND Net-_J1-Pad11_ VCC Net-_J3-Pad14_ GND Net-_J3-Pad15_ Net-_J3-Pad16_ Net-_J3-Pad17_ Net-_J3-Pad18_ Net-_J3-Pad19_ Net-_J3-Pad20_ Net-_J3-Pad21_ VCC 74HCT138
+C1 VCC GND 100n
+J3 NC_01 GND Net-_J2-Pad2_ Net-_J2-Pad1_ D0 D1 D2 D3 D4 D5 D6 D7 GND Net-_J3-Pad14_ Net-_J3-Pad15_ Net-_J3-Pad16_ Net-_J3-Pad17_ Net-_J3-Pad18_ Net-_J3-Pad19_ Net-_J3-Pad20_ Net-_J3-Pad21_ GND Net-_J1-Pad12_ VCC Backplane  (Paralleled Connectors)
+J1 VCC GND D7 D6 D5 D4 D3 D2 D1 D0 Net-_J1-Pad11_ Net-_J1-Pad12_ Z80 Bus (Display port) - Left to Right
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Secondary Connector - Left to Right
+.end

@@ -1,0 +1,5 @@
+.title KiCad schematic
+MS1 Net-_JP3-Pad16_ Net-_JP3-Pad15_ Net-_JP3-Pad14_ Net-_JP3-Pad13_ Net-_JP3-Pad12_ Net-_JP3-Pad11_ Net-_JP3-Pad10_ Net-_JP3-Pad9_ Net-_JP3-Pad8_ Net-_JP3-Pad7_ Net-_JP3-Pad6_ Net-_JP3-Pad5_ Net-_JP3-Pad4_ Net-_JP3-Pad3_ Net-_JP3-Pad2_ Net-_JP3-Pad1_ Net-_JP1-Pad12_ Net-_JP1-Pad11_ Net-_JP1-Pad10_ Net-_JP1-Pad9_ Net-_JP1-Pad8_ Net-_JP1-Pad7_ Net-_JP1-Pad6_ Net-_JP1-Pad5_ Net-_JP1-Pad4_ Net-_JP1-Pad3_ Net-_JP1-Pad2_ Net-_JP1-Pad1_ FEATHERWING
+JP3 Net-_JP3-Pad1_ Net-_JP3-Pad2_ Net-_JP3-Pad3_ Net-_JP3-Pad4_ Net-_JP3-Pad5_ Net-_JP3-Pad6_ Net-_JP3-Pad7_ Net-_JP3-Pad8_ Net-_JP3-Pad9_ Net-_JP3-Pad10_ Net-_JP3-Pad11_ Net-_JP3-Pad12_ Net-_JP3-Pad13_ Net-_JP3-Pad14_ Net-_JP3-Pad15_ Net-_JP3-Pad16_ HEADER-1X16_76MIL
+JP1 Net-_JP1-Pad1_ Net-_JP1-Pad2_ Net-_JP1-Pad3_ Net-_JP1-Pad4_ Net-_JP1-Pad5_ Net-_JP1-Pad6_ Net-_JP1-Pad7_ Net-_JP1-Pad8_ Net-_JP1-Pad9_ Net-_JP1-Pad10_ Net-_JP1-Pad11_ Net-_JP1-Pad12_ HEADER-1X1276MIL
+.end

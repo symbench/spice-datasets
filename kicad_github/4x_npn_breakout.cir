@@ -1,0 +1,13 @@
+.title KiCad schematic
+J2 C1 C2 C3 C4 E4 E3 RIGHT
+J1 B1 B2 B3 B4 E1 E2 LEFT
+Q4 Net-_Q4-Pad1_ E4 C4 BC857
+R4 Net-_Q4-Pad1_ B4 1K
+R2 Net-_Q2-Pad1_ B3 1K
+R1 Net-_Q1-Pad1_ B1 1K
+R3 Net-_Q3-Pad1_ B2 1K
+Q3 Net-_Q3-Pad1_ E2 C2 BC857
+Q2 Net-_Q2-Pad1_ E3 C3 BC857
+Q1 Net-_Q1-Pad1_ E1 C1 BC857
+JP1 E1 E2 E3 E4 SolderJumper_4way_Open
+.end

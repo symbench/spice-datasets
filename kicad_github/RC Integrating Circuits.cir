@@ -1,0 +1,5 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ 0 10u
+R1 Net-_C1-Pad1_ Net-_R1-Pad2_ 1k
+V1 Net-_R1-Pad2_ 0 pulse(0 5 10m 1u 1u 10m 20m)
+.end

@@ -1,0 +1,25 @@
+.title KiCad schematic
+SW1 VCC VCC VCC Net-_R1-Pad1_ Net-_R2-Pad1_ Net-_R3-Pad1_ SW_DIP_x03
+R1 Net-_R1-Pad1_ GND 1K
+R2 Net-_R2-Pad1_ GND 1K
+R3 Net-_R3-Pad1_ GND 1K
+R4 Net-_D1-Pad2_ Net-_R4-Pad2_ 330
+R5 Net-_D2-Pad2_ Net-_R5-Pad2_ 330
+R6 Net-_D3-Pad2_ Net-_R6-Pad2_ 330
+R7 Net-_D4-Pad2_ Net-_R7-Pad2_ 330
+R8 Net-_D5-Pad2_ Net-_R8-Pad2_ 330
+R9 Net-_D6-Pad2_ Net-_R9-Pad2_ 330
+R10 Net-_D7-Pad2_ Net-_R10-Pad2_ 330
+R11 Net-_D8-Pad2_ Net-_R11-Pad2_ 330
+D1 GND Net-_D1-Pad2_ LED
+D2 GND Net-_D2-Pad2_ LED
+D3 GND Net-_D3-Pad2_ LED
+D4 GND Net-_D4-Pad2_ LED
+D5 GND Net-_D5-Pad2_ LED
+D6 GND Net-_D6-Pad2_ LED
+D7 GND Net-_D7-Pad2_ LED
+D8 GND Net-_D8-Pad2_ LED
+U1 Net-_R1-Pad1_ Net-_R2-Pad1_ Net-_R3-Pad1_ GND GND VCC Net-_R11-Pad2_ GND Net-_R10-Pad2_ Net-_R9-Pad2_ Net-_R8-Pad2_ Net-_R7-Pad2_ Net-_R6-Pad2_ Net-_R5-Pad2_ Net-_R4-Pad2_ VCC 74HC138
+C1 VCC GND 1μF
+C2 VCC GND 100 nF
+.end

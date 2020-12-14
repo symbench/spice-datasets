@@ -1,0 +1,9 @@
+.title KiCad schematic
+R2 Net-_R2-Pad1_ Net-_R1-Pad1_ 5k
+R3 Net-_R3-Pad1_ 0 833
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ 1k
+V1 Net-_R1-Pad2_ 0 sin(0 5 50 0)
+U1 Net-_R3-Pad1_ Net-_R1-Pad1_ Net-_R2-Pad1_ Net-_U1-Pad4_ Net-_U1-Pad5_ OPAMP
+V2 Net-_U1-Pad5_ 0 +15v
+V3 Net-_U1-Pad4_ 0 -15v
+.end

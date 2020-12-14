@@ -1,0 +1,27 @@
+.title KiCad schematic
+R2 Net-_J1-Pad13_ Net-_J1-Pad2_ 100K ohm
+R3 Net-_J1-Pad3_ Net-_J1-Pad13_ 100K ohm
+R4 Net-_J1-Pad12_ Net-_J1-Pad3_ 100K ohm
+R5 Net-_J1-Pad4_ Net-_J1-Pad12_ 100K ohm
+R6 Net-_J1-Pad11_ Net-_J1-Pad4_ 100K ohm
+R7 Net-_J1-Pad5_ Net-_J1-Pad11_ 100K ohm
+R8 Net-_C1-Pad2_ Net-_J1-Pad5_ 100K ohm
+R9 Net-_C1-Pad1_ Net-_C1-Pad2_ 100K ohm
+R10 Net-_C2-Pad1_ Net-_C1-Pad1_ 100K ohm
+R11 Net-_C3-Pad1_ Net-_C2-Pad1_ 100K ohm
+C3 Net-_C3-Pad1_ Net-_C2-Pad1_ 0.01uF
+C2 Net-_C2-Pad1_ Net-_C1-Pad1_ 0.001uF
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 0.001uF
+C4 Net-_C4-Pad1_ Net-_C3-Pad1_ 0.05uF
+R12 Net-_L1-Pad1_ Net-_C3-Pad1_ 100K ohm
+J2 Net-_J2-Pad1_ GND HV
+J3 Net-_Cc1-Pad1_ GND Amp
+Cc1 Net-_Cc1-Pad1_ Net-_Cc1-Pad2_ 4.7 nF
+J1 NC_01 Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_C1-Pad1_ Net-_C3-Pad1_ Net-_J1-Pad8_ Net-_C2-Pad1_ Net-_C1-Pad2_ Net-_J1-Pad11_ Net-_J1-Pad12_ Net-_J1-Pad13_ NC_02 GND Socket
+Ra1 Net-_Cc1-Pad2_ Net-_J1-Pad8_ 50 ohm
+RL1 Net-_Cc1-Pad2_ Net-_L1-Pad1_ 10K ohm
+Rc1 Net-_Cc1-Pad1_ GND 50 ohm
+R1 Net-_J1-Pad2_ GND Rk
+L1 Net-_L1-Pad1_ Net-_J2-Pad1_ L
+C5 GND Net-_C4-Pad1_ 0.05uF
+.end

@@ -1,0 +1,36 @@
+.title KiCad schematic
+U2 OUT1 Net-_RV2-Pad2_ Earth +12V Earth Net-_D1-Pad1_ Net-_D1-Pad2_ OUT2 Net-_RV5-Pad2_ Earth -12V Earth Net-_D2-Pad1_ Net-_D2-Pad2_ TL074
+U1 Net-_R14-Pad2_ Net-_R10-Pad1_ Net-_R12-Pad1_ Net-_R11-Pad2_ Net-_RV5-Pad2_ -12V NC_01 NC_02 NC_03 NC_04 +12V Net-_RV2-Pad2_ Net-_R1-Pad1_ Net-_R4-Pad1_ Net-_R2-Pad1_ Net-_R6-Pad2_ LM13600
+RV1 +12V Net-_R1-Pad2_ -12V R_POT_US
+R2 Net-_R2-Pad1_ +12V R_US
+R4 Net-_R4-Pad1_ IN1 R_US
+R5 Earth Net-_R4-Pad1_ R_US
+R3 Earth Net-_R1-Pad1_ R_US
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ R_US
+RV2 OUT1 Net-_RV2-Pad2_ Net-_RV2-Pad2_ R_POT_US
+R7 Net-_D1-Pad1_ CV1 R_US
+R8 Net-_R8-Pad1_ Net-_D1-Pad1_ R_US
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D
+RV3 +12V Net-_R8-Pad1_ -12V R_POT_US
+Q1 Net-_D1-Pad1_ Net-_D1-Pad2_ Net-_Q1-Pad3_ 2N3906
+R6 Net-_Q1-Pad3_ Net-_R6-Pad2_ R_US
+J1 Earth Earth IN1 PJ301M-12
+J2 Earth Earth OUT1 PJ301M-12
+J3 Earth Earth CV1 PJ301M-12
+J6 Earth Earth CV2 PJ301M-12
+J5 Earth Earth OUT2 PJ301M-12
+J4 Earth Earth IN2 PJ301M-12
+R14 Net-_Q2-Pad3_ Net-_R14-Pad2_ R_US
+Q2 Net-_D2-Pad1_ Net-_D2-Pad2_ Net-_Q2-Pad3_ 2N3906
+RV6 +12V Net-_R16-Pad1_ -12V R_POT_US
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ D
+R16 Net-_R16-Pad1_ Net-_D2-Pad1_ R_US
+R15 Net-_D2-Pad1_ CV2 R_US
+RV5 OUT2 Net-_RV5-Pad2_ Net-_RV5-Pad2_ R_POT_US
+R9 Net-_R11-Pad2_ Net-_R9-Pad2_ R_US
+R11 Earth Net-_R11-Pad2_ R_US
+R13 Earth Net-_R12-Pad1_ R_US
+R12 Net-_R12-Pad1_ IN2 R_US
+R10 Net-_R10-Pad1_ +12V R_US
+RV4 +12V Net-_R9-Pad2_ -12V R_POT_US
+.end

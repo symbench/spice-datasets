@@ -1,0 +1,10 @@
+.title KiCad schematic
+R2 IN GND 10K
+R1 IN Net-_Q1-Pad1_ 1K
+J1 GND VCC IN CONN
+TP1 VCC +
+TP2 Net-_D1-Pad2_ -
+C1 VCC GND 100nF
+D1 VCC Net-_D1-Pad2_ 1N4148
+Q1 Net-_Q1-Pad1_ GND Net-_D1-Pad2_ BC817
+.end

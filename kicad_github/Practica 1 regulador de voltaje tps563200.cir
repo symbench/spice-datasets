@@ -1,0 +1,18 @@
+.title KiCad schematic
+J1 GND VDD Screw_Terminal_01x02
+C1 VDD GND 10uF
+U1 GND Net-_C4-Pad1_ VDD Net-_R1-Pad2_ VDD Net-_C4-Pad2_ TPS563200
+L1 Net-_C4-Pad1_ +5V 2.2uH
+C6 +5V GND 22uF
+R1 +5V Net-_R1-Pad2_ 54.9K
+C2 VDD GND 10uF
+C3 VDD GND 0.1uF
+C5 +5V GND 22uF
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ 0.1uF
+R2 Net-_R1-Pad2_ GND 10K
+J2 GND +5V Screw_Terminal_01x02
+MH1 GND MountingHole_Pad
+MH2 GND MountingHole_Pad
+MH3 GND MountingHole_Pad
+MH4 GND MountingHole_Pad
+.end

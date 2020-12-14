@@ -1,0 +1,17 @@
+.title KiCad schematic
+U3 /A7 /A6 /A5 /A4 /A3 /A2 /A1 /A0 /D0 /D1 /D2 GND /D3 /D4 /D5 /D6 /D7 Net-_U2-Pad14_ /A10 /~RD /~WR /A9 /A8 VCC 6116
+U1 NC_01 /A12 /A7 /A6 /A5 /A4 /A3 /A2 /A1 /A0 /D0 /D1 /D2 GND /D3 /D4 /D5 /D6 /D7 Net-_U1-Pad20_ /A10 /~RD /A11 /A9 /A8 NC_02 VCC VCC Atmel 28C64
+U2 /A13 GND GND GND /~MREQ Net-_U2-Pad6_ NC_03 GND NC_04 NC_05 NC_06 NC_07 NC_08 Net-_U2-Pad14_ Net-_U1-Pad20_ VCC 74HCT138
+U4 /A11 /A12 /A13 /A14 /A15 /CLK /D4 /D3 /D5 /D6 VCC /D2 /D7 /D0 /D1 VCC VCC /~HALT /~MREQ /~IORQ /~RD /~WR /~BUSACK VCC VCC Net-_C3-Pad1_ /~M1 Net-_U2-Pad6_ GND /A0 /A1 /A2 /A3 /A4 /A5 /A6 /A7 /A8 /A9 /A10 Z80CPU
+C1 VCC GND 1μF
+C2 VCC GND 100nF
+R1 VCC Net-_C3-Pad1_ 4k7
+C3 Net-_C3-Pad1_ GND 100nF
+C4 VCC GND 100nF
+C5 VCC GND 100nF
+J1 /A0 /A1 /A2 /A3 /A4 /A5 /A6 /A7 /A8 /A9 /A10 /A11 /A12 /A13 /A14 /A15 Address Bus Connector (to Bus Spy)
+J2 /DO /D1 /D2 /D3 /D4 /D5 /D6 /D7 Data Bus Connector (to Data Spy)
+J3 GND VCC /~BUSACK VCC /~IORQ /~MREQ /~WR /~RD /~HALT /~M1 /CLK Control Bus, Clock & Power
+J4 /~IORQ /DO /D1 /D2 /D3 /D4 /D5 /D6 /D7 Data Bus Connector (to Display Interface)
+C6 VCC GND 100nF
+.end

@@ -1,0 +1,10 @@
+.title KiCad schematic
+U1 DIR Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ GND Net-_J2-Pad10_ Net-_J2-Pad9_ Net-_J2-Pad8_ Net-_J2-Pad7_ Net-_J2-Pad6_ Net-_J2-Pad5_ Net-_J2-Pad4_ Net-_J2-Pad3_ EN VCC 74LS245
+J1 DIR EN Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ GND Conn_01x11
+J2 VCC GND Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ Net-_J2-Pad10_ GND Conn_01x11
+C1 VCC GND 100nF
+R1 EN GND EN
+R2 DIR GND DIR
+J3 GND G
+J4 GND G
+.end

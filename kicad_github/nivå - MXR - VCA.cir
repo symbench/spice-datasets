@@ -1,0 +1,117 @@
+.title KiCad schematic
+U2 OUT1 Net-_RV9-Pad2_ Earth +12V Earth Net-_D1-Pad1_ Net-_D1-Pad2_ OUT2 Net-_RV10-Pad2_ Earth -12V Earth Net-_D2-Pad1_ Net-_D2-Pad2_ TL074
+R65 NC_01 NC_02 R_US
+C1 NC_03 NC_04 CP1_Small
+RV25 NC_05 NC_06 NC_07 R_POT_US
+U1 Net-_R30-Pad2_ Net-_R4-Pad1_ Net-_R15-Pad2_ Net-_R22-Pad1_ Net-_RV10-Pad2_ -12V NC_08 NC_09 NC_10 NC_11 +12V Net-_RV9-Pad2_ Net-_R21-Pad1_ Net-_R13-Pad2_ Net-_R1-Pad1_ Net-_R29-Pad2_ LM13600
+RV5 +12V Net-_R21-Pad2_ -12V R_POT_US
+R1 Net-_R1-Pad1_ +12V R_US
+R2 Net-_R13-Pad2_ NC_12 R_US
+R13 Earth Net-_R13-Pad2_ R_US
+R25 Earth Net-_R21-Pad1_ R_US
+R21 Net-_R21-Pad1_ Net-_R21-Pad2_ R_US
+RV9 OUT1 Net-_RV9-Pad2_ Net-_RV9-Pad2_ R_POT_US
+R3 Net-_D1-Pad1_ NC_13 R_US
+R14 Net-_R14-Pad1_ Net-_D1-Pad1_ R_US
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D
+RV1 -12V Net-_R14-Pad1_ +12V R_POT_US
+Q1 Net-_D1-Pad1_ Net-_D1-Pad2_ Net-_Q1-Pad3_ 2N3906
+R29 Net-_Q1-Pad3_ Net-_R29-Pad2_ R_US
+RV6 +12V Net-_R22-Pad2_ -12V R_POT_US
+R4 Net-_R4-Pad1_ +12V R_US
+R5 Net-_R15-Pad2_ NC_14 R_US
+R15 Earth Net-_R15-Pad2_ R_US
+R26 Earth Net-_R22-Pad1_ R_US
+R22 Net-_R22-Pad1_ Net-_R22-Pad2_ R_US
+RV10 OUT2 Net-_RV10-Pad2_ Net-_RV10-Pad2_ R_POT_US
+R6 Net-_D2-Pad1_ NC_15 R_US
+R16 Net-_R16-Pad1_ Net-_D2-Pad1_ R_US
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ D
+RV2 -12V Net-_R16-Pad1_ +12V R_POT_US
+Q2 Net-_D2-Pad1_ Net-_D2-Pad2_ Net-_Q2-Pad3_ 2N3906
+R30 Net-_Q2-Pad3_ Net-_R30-Pad2_ R_US
+U3 OUT3 Net-_RV11-Pad2_ Earth +12V Earth Net-_D3-Pad1_ Net-_D3-Pad2_ OUT4 Net-_RV12-Pad2_ Earth -12V Earth Net-_D4-Pad1_ Net-_D4-Pad2_ TL074
+U4 Net-_R32-Pad2_ Net-_R10-Pad1_ Net-_R11-Pad1_ Net-_R24-Pad1_ Net-_RV12-Pad2_ -12V NC_16 NC_17 NC_18 NC_19 +12V Net-_RV11-Pad2_ Net-_R23-Pad1_ Net-_R17-Pad2_ Net-_R7-Pad1_ Net-_R31-Pad2_ LM13600
+RV7 +12V Net-_R23-Pad2_ -12V R_POT_US
+R7 Net-_R7-Pad1_ +12V R_US
+R8 Net-_R17-Pad2_ NC_20 R_US
+R17 Earth Net-_R17-Pad2_ R_US
+R27 Earth Net-_R23-Pad1_ R_US
+R23 Net-_R23-Pad1_ Net-_R23-Pad2_ R_US
+RV11 OUT3 Net-_RV11-Pad2_ Net-_RV11-Pad2_ R_POT_US
+R9 Net-_D3-Pad1_ NC_21 R_US
+R18 Net-_R18-Pad1_ Net-_D3-Pad1_ R_US
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ D
+RV3 -12V Net-_R18-Pad1_ +12V R_POT_US
+Q3 Net-_D3-Pad1_ Net-_D3-Pad2_ Net-_Q3-Pad3_ 2N3906
+R31 Net-_Q3-Pad3_ Net-_R31-Pad2_ R_US
+RV8 +12V Net-_R24-Pad2_ -12V R_POT_US
+R10 Net-_R10-Pad1_ +12V R_US
+R11 Net-_R11-Pad1_ NC_22 R_US
+R19 Earth Net-_R11-Pad1_ R_US
+R28 Earth Net-_R24-Pad1_ R_US
+R24 Net-_R24-Pad1_ Net-_R24-Pad2_ R_US
+RV12 OUT4 Net-_RV12-Pad2_ Net-_RV12-Pad2_ R_POT_US
+R12 Net-_D4-Pad1_ NC_23 R_US
+R20 Net-_R20-Pad1_ Net-_D4-Pad1_ R_US
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ D
+RV4 -12V Net-_R20-Pad1_ +12V R_POT_US
+Q4 Net-_D4-Pad1_ Net-_D4-Pad2_ Net-_Q4-Pad3_ 2N3906
+R32 Net-_Q4-Pad3_ Net-_R32-Pad2_ R_US
+U6 OUT5 Net-_RV21-Pad2_ Earth +12V Earth Net-_D5-Pad1_ Net-_D5-Pad2_ OUT6 Net-_RV22-Pad2_ Earth -12V Earth Net-_D6-Pad1_ Net-_D6-Pad2_ TL074
+U5 Net-_R62-Pad2_ Net-_R36-Pad1_ Net-_R37-Pad1_ Net-_R54-Pad1_ Net-_RV22-Pad2_ -12V NC_24 NC_25 NC_26 NC_27 +12V Net-_RV21-Pad2_ Net-_R53-Pad1_ Net-_R34-Pad1_ Net-_R33-Pad1_ Net-_R61-Pad2_ LM13600
+RV17 +12V Net-_R53-Pad2_ -12V R_POT_US
+R33 Net-_R33-Pad1_ +12V R_US
+R34 Net-_R34-Pad1_ NC_28 R_US
+R45 Earth Net-_R34-Pad1_ R_US
+R57 Earth Net-_R53-Pad1_ R_US
+R53 Net-_R53-Pad1_ Net-_R53-Pad2_ R_US
+RV21 OUT5 Net-_RV21-Pad2_ Net-_RV21-Pad2_ R_POT_US
+R35 Net-_D5-Pad1_ NC_29 R_US
+R46 Net-_R46-Pad1_ Net-_D5-Pad1_ R_US
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ D
+RV13 -12V Net-_R46-Pad1_ +12V R_POT_US
+Q5 Net-_D5-Pad1_ Net-_D5-Pad2_ Net-_Q5-Pad3_ 2N3906
+R61 Net-_Q5-Pad3_ Net-_R61-Pad2_ R_US
+RV18 +12V Net-_R54-Pad2_ -12V R_POT_US
+R36 Net-_R36-Pad1_ +12V R_US
+R37 Net-_R37-Pad1_ NC_30 R_US
+R47 Earth Net-_R37-Pad1_ R_US
+R58 Earth Net-_R54-Pad1_ R_US
+R54 Net-_R54-Pad1_ Net-_R54-Pad2_ R_US
+RV22 OUT6 Net-_RV22-Pad2_ Net-_RV22-Pad2_ R_POT_US
+R38 Net-_D6-Pad1_ NC_31 R_US
+R48 Net-_R48-Pad1_ Net-_D6-Pad1_ R_US
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ D
+RV14 -12V Net-_R48-Pad1_ +12V R_POT_US
+Q6 Net-_D6-Pad1_ Net-_D6-Pad2_ Net-_Q6-Pad3_ 2N3906
+R62 Net-_Q6-Pad3_ Net-_R62-Pad2_ R_US
+U8 OUT7 Net-_RV23-Pad2_ Earth +12V Earth Net-_D7-Pad1_ Net-_D7-Pad2_ OUT8 Net-_RV24-Pad2_ Earth -12V Earth Net-_D8-Pad1_ Net-_D8-Pad2_ TL074
+U7 Net-_R64-Pad2_ Net-_R42-Pad1_ Net-_R43-Pad1_ Net-_R56-Pad1_ Net-_RV24-Pad2_ -12V NC_32 NC_33 NC_34 NC_35 +12V Net-_RV23-Pad2_ Net-_R55-Pad1_ Net-_R40-Pad1_ Net-_R39-Pad1_ Net-_R63-Pad2_ LM13600
+RV19 +12V Net-_R55-Pad2_ -12V R_POT_US
+R39 Net-_R39-Pad1_ +12V R_US
+R40 Net-_R40-Pad1_ NC_36 R_US
+R49 Earth Net-_R40-Pad1_ R_US
+R59 Earth Net-_R55-Pad1_ R_US
+R55 Net-_R55-Pad1_ Net-_R55-Pad2_ R_US
+RV23 OUT7 Net-_RV23-Pad2_ Net-_RV23-Pad2_ R_POT_US
+R41 Net-_D7-Pad1_ NC_37 R_US
+R50 Net-_R50-Pad1_ Net-_D7-Pad1_ R_US
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ D
+RV15 -12V Net-_R50-Pad1_ +12V R_POT_US
+Q7 Net-_D7-Pad1_ Net-_D7-Pad2_ Net-_Q7-Pad3_ 2N3906
+R63 Net-_Q7-Pad3_ Net-_R63-Pad2_ R_US
+RV20 +12V Net-_R56-Pad2_ -12V R_POT_US
+R42 Net-_R42-Pad1_ +12V R_US
+R43 Net-_R43-Pad1_ NC_38 R_US
+R51 Earth Net-_R43-Pad1_ R_US
+R60 Earth Net-_R56-Pad1_ R_US
+R56 Net-_R56-Pad1_ Net-_R56-Pad2_ R_US
+RV24 OUT8 Net-_RV24-Pad2_ Net-_RV24-Pad2_ R_POT_US
+R44 Net-_D8-Pad1_ NC_39 R_US
+R52 Net-_R52-Pad1_ Net-_D8-Pad1_ R_US
+D8 Net-_D8-Pad1_ Net-_D8-Pad2_ D
+RV16 -12V Net-_R52-Pad1_ +12V R_POT_US
+Q8 Net-_D8-Pad1_ Net-_D8-Pad2_ Net-_Q8-Pad3_ 2N3906
+R64 Net-_Q8-Pad3_ Net-_R64-Pad2_ R_US
+.end

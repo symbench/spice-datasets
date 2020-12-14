@@ -1,0 +1,4 @@
+.title KiCad schematic
+BT1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ Battery_Cell
+BT2 Net-_BT1-Pad1_ Net-_BT1-Pad2_ Battery_Cell
+.end

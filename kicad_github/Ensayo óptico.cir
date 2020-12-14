@@ -1,0 +1,20 @@
+.title KiCad schematic
+Rs1 Net-_Js11-Pad2_ Net-_Rs1-Pad2_ 1k
+Rs2 Net-_Js12-Pad2_ Net-_Rs1-Pad2_ 2k
+Rs3 Net-_Js13-Pad2_ Net-_Rs1-Pad2_ 4k7
+Rs4 Net-_Js14-Pad2_ Net-_Rs1-Pad2_ 10k
+Js11 +12V Net-_Js11-Pad2_ Jumper_NC_Small
+Js12 +12V Net-_Js12-Pad2_ Jumper_NC_Small
+Js13 +12V Net-_Js13-Pad2_ Jumper_NC_Small
+Js14 +12V Net-_Js14-Pad2_ Jumper_NC_Small
+U1 Net-_Rs1-Pad2_ GND Net-_Rdr1-Pad2_ GND TCRT5000
+RVdr1 Net-_Jdr1-Pad1_ Net-_RVdr1-Pad2_ Net-_RVdr1-Pad2_ 10k
+Rdr1 Net-_RVdr1-Pad2_ Net-_Rdr1-Pad2_ 1k
+Jdr1 Net-_Jdr1-Pad1_ +12V Jumper_NC_Small
+Jdr3 Net-_Jdr3-Pad1_ +12V Jumper_NC_Small
+Jdr2 Net-_Jdr2-Pad1_ +12V Jumper_NC_Small
+Rdr3 Net-_RVdr3-Pad2_ Net-_Rdr1-Pad2_ 100k
+Rdr2 Net-_RVdr2-Pad2_ Net-_Rdr1-Pad2_ 10k
+RVdr3 Net-_Jdr3-Pad1_ Net-_RVdr3-Pad2_ Net-_RVdr3-Pad2_ 1Meg
+RVdr2 Net-_Jdr2-Pad1_ Net-_RVdr2-Pad2_ Net-_RVdr2-Pad2_ 100k
+.end

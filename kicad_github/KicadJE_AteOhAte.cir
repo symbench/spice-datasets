@@ -1,0 +1,216 @@
+.title KiCad schematic
+U203 Net-_C214-Pad2_ Net-_C214-Pad1_ Net-_R233-Pad2_ +12V Net-_R247-Pad1_ Net-_R253-Pad2_ Net-_R240-Pad1_ -12V TL072
+U202 Net-_C211-Pad2_ Net-_C212-Pad1_ Net-_R230-Pad1_ +12V GND Net-_R217-Pad1_ Net-_R217-Pad2_ -12V TL072
+RV204 NC_01 Net-_R217-Pad2_ Net-_R215-Pad1_ 1M Decay
+RV203 Net-_D205-Pad1_ Net-_R214-Pad1_ GND 500R Tune
+C202 GND -12V 100n
+C205 +12V GND 100n
+C206 +12V GND 100n
+C203 GND -12V 100n
+D201 -12V GND 1N1007
+D202 GND +12V 1N1007
+H201 2,5mm
+H202 2,5mm
+H204 2,2mm
+H203 2,2mm
+SW201 NC_02 Net-_C211-Pad1_ Net-_C212-Pad2_ GND Net-_R230-Pad2_ NC_03 Con/Tom
+P201 -12V -12V GND GND GND GND GND GND +12V +12V Doepfer_Power_10pin
+RV206 GND Net-_R234-Pad2_ Net-_C220-Pad1_ 100k A Reverb
+Q204 Net-_Q204-Pad1_ GND Net-_Q204-Pad3_ MMBT2222A
+R220 Net-_Q203-Pad3_ InAccent 4k7
+R218 InAccent +12V 100k
+R251 GND InGate 100k
+C219 InGate Net-_C219-Pad2_ 10n
+R247 Net-_R247-Pad1_ Net-_C219-Pad2_ 47k
+R252 GND Net-_R247-Pad1_ 100k
+R253 +12V Net-_R253-Pad2_ 100k
+R254 Net-_R253-Pad2_ GND 100k
+R221 Net-_Q202-Pad1_ Net-_Q203-Pad3_ 4k7
+R219 Net-_Q202-Pad1_ +12V 100k
+Q203 Net-_Q203-Pad1_ Net-_Q203-Pad2_ Net-_Q203-Pad3_ MMBT2222A
+Q202 Net-_Q202-Pad1_ /KicadJE_AteOhAte2/PNP_E +12V MMBT2222A
+R228 GND /KicadJE_AteOhAte2/PNP_E 4k7
+R235 GND Net-_Q203-Pad2_ 4k7
+R227 Net-_Q203-Pad2_ +12V 10k
+R226 Net-_Q204-Pad3_ Net-_Q203-Pad1_ 15k
+R237 Net-_Q204-Pad1_ GND 10k
+R240 Net-_R240-Pad1_ Net-_Q204-Pad1_ 22k
+R241 Net-_Q206-Pad1_ Net-_R240-Pad1_ 22k
+R246 GND Net-_Q206-Pad1_ 10k
+Q206 Net-_Q206-Pad1_ GND Net-_Q206-Pad3_ MMBT2222A
+R236 Net-_Q206-Pad3_ /KicadJE_AteOhAte2/PNP_B 10k
+R229 /KicadJE_AteOhAte2/PNP_B /KicadJE_AteOhAte2/PNP_E 4k7
+Q205 /KicadJE_AteOhAte2/PNP_B /KicadJE_AteOhAte2/PNP_E /KicadJE_AteOhAte2/Coupling MMBT2907A
+R238 GND /KicadJE_AteOhAte2/Coupling 4k7
+R239 Net-_D208-Pad2_ /KicadJE_AteOhAte2/Coupling 4k7
+D208 Net-_C221-Pad1_ Net-_D208-Pad2_ 1N4148
+C221 Net-_C221-Pad1_ GND C4
+R248 Net-_C221-Pad1_ Net-_C218-Pad2_ 2M2
+R249 Net-_C218-Pad2_ Net-_Q207-Pad1_ 33k
+Q207 Net-_Q207-Pad1_ GND Net-_C217-Pad2_ MMBT2222A
+R242 Net-_C217-Pad2_ +12V 4k7
+C217 Net-_C217-Pad1_ Net-_C217-Pad2_ C6
+C216 Net-_C216-Pad1_ /KicadJE_AteOhAte2/Coupling C8
+D207 Net-_C216-Pad1_ GND 1N4148
+R232 Net-_R230-Pad1_ Net-_C216-Pad1_ 22k
+R230 Net-_R230-Pad1_ Net-_R230-Pad2_ R17
+R231 Net-_R230-Pad1_ GND R18
+R216 Net-_C211-Pad2_ Net-_C212-Pad1_ 820k
+C212 Net-_C212-Pad1_ Net-_C212-Pad2_ C9
+C213 Net-_C212-Pad2_ Net-_C211-Pad2_ C10
+R223 Net-_C211-Pad2_ Net-_R217-Pad1_ 33k
+R217 Net-_R217-Pad1_ Net-_R217-Pad2_ 33k
+R215 Net-_R215-Pad1_ Net-_C212-Pad2_ 470k
+D205 Net-_D205-Pad1_ Net-_C212-Pad2_ 1N4148
+D206 Net-_C212-Pad2_ Net-_D205-Pad1_ 1N4148
+C211 Net-_C211-Pad1_ Net-_C211-Pad2_ C11
+R214 Net-_R214-Pad1_ Net-_C212-Pad2_ 1k
+R224 Net-_R217-Pad2_ Net-_C215-Pad1_ 100k
+C215 Net-_C215-Pad1_ Net-_C214-Pad1_ C12
+R233 GND Net-_R233-Pad2_ 4k7
+R222 Net-_C214-Pad2_ Net-_C214-Pad1_ 470k
+C214 Net-_C214-Pad1_ Net-_C214-Pad2_ 1n
+R250 GND Net-_C217-Pad1_ 22k
+R245 Net-_C217-Pad1_ Net-_C220-Pad1_ 22k
+C220 Net-_C220-Pad1_ GND C7
+R234 Net-_C215-Pad1_ Net-_R234-Pad2_ 100k
+R225 Net-_C214-Pad2_ OutTom 1k
+R209 Net-_J201-PadT_ InAccent 1K
+R210 InAccent GND OPEN
+R211 Net-_J202-PadT_ InGate 1K
+R213 InGate GND OPEN
+J202 GND Net-_J202-PadT_ GND In Gate
+J203 GND Net-_J203-PadT_ Out Tom
+D203 InAccent GND D_Zener
+D204 InGate GND D_Zener
+J201 GND Net-_J201-PadT_ GND In_Accent
+R212 Net-_J203-PadT_ OutTom 0R
+RV205 Net-_C214-Pad1_ Net-_C214-Pad2_ NC_04 100k A Level
+C218 Net-_C218-Pad1_ Net-_C218-Pad2_ 47n
+R243 GND Net-_C218-Pad1_ 3k3
+R244 Net-_C218-Pad1_ NoiseIn 33k
+D209 Net-_C219-Pad2_ GND 1N4148
+U201 /KicadJE_AteOhAte2/WhiteNoise Net-_R203-Pad2_ Net-_C208-Pad1_ +12V Net-_C210-Pad1_ /KicadJE_AteOhAte2/PinkNoise /KicadJE_AteOhAte2/PinkNoise -12V TL072
+R204 +12V Net-_C209-Pad1_ 100R
+C209 Net-_C209-Pad1_ GND 22u
+R206 Net-_C208-Pad2_ Net-_C209-Pad1_ 1M
+Q201 GND Net-_C208-Pad2_ NC_05 MMBT2222A
+C208 Net-_C208-Pad1_ Net-_C208-Pad2_ 1u
+R208 Net-_C208-Pad1_ GND 300R
+R203 Net-_R201-Pad2_ Net-_R203-Pad2_ 330K
+R202 GND Net-_R202-Pad2_ 4k7
+RV201 Net-_R201-Pad2_ Net-_R202-Pad2_ NC_06 100K
+R201 /KicadJE_AteOhAte2/WhiteNoise Net-_R201-Pad2_ 1M
+R205 /KicadJE_AteOhAte2/WhiteNoise Net-_C207-Pad2_ 22k
+R207 Net-_C207-Pad2_ Net-_C210-Pad1_ 22k
+C207 /KicadJE_AteOhAte2/PinkNoise Net-_C207-Pad2_ 39n
+C210 Net-_C210-Pad1_ GND 18n
+RV202 /KicadJE_AteOhAte2/WhiteNoise Net-_JP201-Pad1_ /KicadJE_AteOhAte2/PinkNoise 50K
+JP201 Net-_JP201-Pad1_ NoiseIn Jumper
+TP201 /KicadJE_AteOhAte2/WhiteNoise WhiteNoise
+TP202 GND GND
+TP203 /KicadJE_AteOhAte2/Coupling Coupling
+C201 GND -12V 10u
+C204 +12V GND 10u
+U302 Net-_C310-Pad2_ Net-_C310-Pad1_ Net-_R327-Pad2_ +12V Net-_R341-Pad1_ Net-_R347-Pad2_ Net-_R334-Pad1_ -12V TL072
+U301 Net-_C307-Pad2_ Net-_C308-Pad1_ Net-_R324-Pad1_ +12V GND Net-_R311-Pad1_ Net-_R311-Pad2_ -12V TL072
+RV302 NC_07 Net-_R311-Pad2_ Net-_R309-Pad1_ 1M Decay
+RV301 Net-_D309-Pad1_ Net-_R308-Pad1_ GND 500R Tune
+C302 GND -12V 100n
+C305 +12V GND 100n
+C306 +12V GND 100n
+C303 GND -12V 100n
+D301 -12V GND 1N1007
+D302 GND +12V 1N1007
+H301 2,5mm
+H302 2,5mm
+H304 2,2mm
+H303 2,2mm
+SW301 NC_08 Net-_C307-Pad1_ Net-_C308-Pad2_ GND Net-_R324-Pad2_ NC_09 Con/Tom
+P301 -12V -12V GND GND NC_10 NC_11 GND GND +12V +12V Doepfer_Power_10pin
+RV304 GND Net-_R328-Pad2_ Net-_C316-Pad1_ 100k A Reverb
+Q303 Net-_Q303-Pad1_ GND Net-_Q303-Pad3_ MMBT2222A
+R314 Net-_Q302-Pad3_ InAccent2 4k7
+R312 InAccent2 +12V 100k
+R345 GND InGate2 100k
+C315 InGate2 Net-_C315-Pad2_ 10n
+R341 Net-_R341-Pad1_ Net-_C315-Pad2_ 47k
+R346 GND Net-_R341-Pad1_ 100k
+R347 +12V Net-_R347-Pad2_ 100k
+R348 Net-_R347-Pad2_ GND 100k
+R315 Net-_Q301-Pad1_ Net-_Q302-Pad3_ 4k7
+R313 Net-_Q301-Pad1_ +12V 100k
+Q302 Net-_Q302-Pad1_ Net-_Q302-Pad2_ Net-_Q302-Pad3_ MMBT2222A
+Q301 Net-_Q301-Pad1_ /KicadJE_AteOhAte3/PNP_E +12V MMBT2222A
+R322 GND /KicadJE_AteOhAte3/PNP_E 4k7
+R329 GND Net-_Q302-Pad2_ 4k7
+R321 Net-_Q302-Pad2_ +12V 10k
+R320 Net-_Q303-Pad3_ Net-_Q302-Pad1_ 15k
+R331 Net-_Q303-Pad1_ GND 10k
+R334 Net-_R334-Pad1_ Net-_Q303-Pad1_ 22k
+R335 Net-_Q305-Pad1_ Net-_R334-Pad1_ 22k
+R340 GND Net-_Q305-Pad1_ 10k
+Q305 Net-_Q305-Pad1_ GND Net-_Q305-Pad3_ MMBT2222A
+R330 Net-_Q305-Pad3_ /KicadJE_AteOhAte3/PNP_B 10k
+R323 /KicadJE_AteOhAte3/PNP_B /KicadJE_AteOhAte3/PNP_E 4k7
+Q304 /KicadJE_AteOhAte3/PNP_B /KicadJE_AteOhAte3/PNP_E /KicadJE_AteOhAte3/Coupling MMBT2907A
+R332 GND /KicadJE_AteOhAte3/Coupling 4k7
+R333 Net-_D312-Pad2_ /KicadJE_AteOhAte3/Coupling 4k7
+D312 Net-_C317-Pad1_ Net-_D312-Pad2_ 1N4148
+C317 Net-_C317-Pad1_ GND 33n
+R342 Net-_C317-Pad1_ Net-_C314-Pad2_ 2M2
+R343 Net-_C314-Pad2_ Net-_Q306-Pad1_ 33k
+Q306 Net-_Q306-Pad1_ GND Net-_C313-Pad2_ MMBT2222A
+R336 Net-_C313-Pad2_ +12V 4k7
+C313 Net-_C313-Pad1_ Net-_C313-Pad2_ 33n
+C312 Net-_C312-Pad1_ /KicadJE_AteOhAte3/Coupling 2n7
+D311 Net-_C312-Pad1_ GND 1N4148
+R326 Net-_R324-Pad1_ Net-_C312-Pad1_ 22k
+R324 Net-_R324-Pad1_ Net-_R324-Pad2_ 2k5
+R325 Net-_R324-Pad1_ GND 6k8
+R310 Net-_C307-Pad2_ Net-_C308-Pad1_ 820k
+C308 Net-_C308-Pad1_ Net-_C308-Pad2_ 27n
+C309 Net-_C308-Pad2_ Net-_C307-Pad2_ 12n
+R317 Net-_C307-Pad2_ Net-_R311-Pad1_ 33k
+R311 Net-_R311-Pad1_ Net-_R311-Pad2_ 33k
+R309 Net-_R309-Pad1_ Net-_C308-Pad2_ 470k
+D309 Net-_D309-Pad1_ Net-_C308-Pad2_ 1N4148
+D310 Net-_C308-Pad2_ Net-_D309-Pad1_ 1N4148
+C307 Net-_C307-Pad1_ Net-_C307-Pad2_ 27n
+R308 Net-_R308-Pad1_ Net-_C308-Pad2_ 1k
+R318 Net-_R311-Pad2_ Net-_C311-Pad1_ 100k
+C311 Net-_C311-Pad1_ Net-_C310-Pad1_ 39n
+R327 GND Net-_R327-Pad2_ 4k7
+R316 Net-_C310-Pad2_ Net-_C310-Pad1_ 470k
+C310 Net-_C310-Pad1_ Net-_C310-Pad2_ 1n
+R344 GND Net-_C313-Pad1_ 22k
+R339 Net-_C313-Pad1_ Net-_C316-Pad1_ 22k
+C316 Net-_C316-Pad1_ GND 15n
+R328 Net-_C311-Pad1_ Net-_R328-Pad2_ 100k
+R319 Net-_C310-Pad2_ OutTom2 1k
+R302 Net-_J302-PadT_ InAccent2 1K
+R304 InAccent2 GND OPEN
+R305 Net-_J303-PadT_ InGate2 1K
+R306 InGate2 GND OPEN
+J303 GND Net-_J303-PadT_ GND In Gate
+J304 GND Net-_J304-PadT_ Out Tom
+J302 GND Net-_J302-PadT_ GND In_Accent
+R307 Net-_J304-PadT_ OutTom2 0R
+RV303 Net-_C310-Pad1_ Net-_C310-Pad2_ NC_12 100k A Level
+C314 Net-_C314-Pad1_ Net-_C314-Pad2_ 47n
+R337 GND Net-_C314-Pad1_ 3k3
+R338 Net-_C314-Pad1_ NoiseIn2 33k
+D313 Net-_C315-Pad2_ GND 1N4148
+TP301 /KicadJE_AteOhAte3/Coupling Coupling
+C301 GND -12V 10u
+C304 +12V GND 10u
+R301 Net-_J301-PadT_ NoiseIn2 1K
+R303 NoiseIn2 GND OPEN
+D303 NoiseIn2 Net-_D303-Pad2_ Zener
+J301 GND Net-_J301-PadT_ GND Noise_In
+D306 GND Net-_D303-Pad2_ Zener
+D304 InAccent2 Net-_D304-Pad2_ Zener
+D307 InGate2 Net-_D307-Pad2_ Zener
+D308 GND Net-_D307-Pad2_ Zener
+D305 GND Net-_D304-Pad2_ Zener
+.end

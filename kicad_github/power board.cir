@@ -1,0 +1,44 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ GND 3UF
+U1 Net-_L1-Pad2_ GND 5V_4A Net-_R3-Pad1_ ISO_GND_5V NC_01 THL-25-2411
+R2 Net-_C1-Pad1_ GND 1M
+R1 +24V Net-_C1-Pad1_ 500K
+C2 GND +24V 3.3UF
+L1 +24V Net-_L1-Pad2_ INDUCTOR
+R4 Net-_R3-Pad1_ 5V_4A OP
+R3 Net-_R3-Pad1_ ISO_GND_5V OP
+J1 safe-V24 +24V Conn_01x02_Female
+J2 safe-V24 +24V Conn_01x02_Female
+J3 safe-V24 +24V Conn_01x02_Female
+J4 safe-V24 +24V Conn_01x02_Female
+J5 safe-V24 +24V Conn_01x02_Female
+J6 safe-V24 +24V Conn_01x02_Female
+J7 safe-V24 +24V Conn_01x02_Female
+J8 safe-V24 +24V Conn_01x02_Female
+J9 safe-V24 +24V Conn_01x02_Female
+C3 +24V safe-V24 470UF
+C5 +24V safe-V24 470UF
+C6 +24V safe-V24 470UF
+C7 +24V safe-V24 470UF
+C8 +24V safe-V24 470UF
+C4 +24V safe-V24 470UF
+J11 +24V +24V Conn_01x02_Female
+J12 GND GND Conn_01x02_Female
+C9 GND +24V 3.3UF
+H1 MountingHole
+H3 MountingHole
+H2 MountingHole
+H4 MountingHole
+D1 safe-V24 Net-_D1-Pad2_ LED
+R5 +24V Net-_D1-Pad2_ 10K
+S1 Net-_C1-Pad1_ /drain Net-_C10-Pad2_ EG1218
+D2 ISO_GND_5V Net-_D2-Pad2_ LED
+R6 5V_4A Net-_D2-Pad2_ 10K
+Q2 safe-V24 /drain GND STP160N3LL
+Q1 safe-V24 /drain GND STP160N3LL
+R7 +24V safe-V24 R
+J10 5V_4A Net-_C12-Pad2_ Barrel_Jack
+C10 GND Net-_C10-Pad2_ 3UF
+C11 ISO_GND_5V 5V_4A 3UF
+C12 ISO_GND_5V Net-_C12-Pad2_ 3UF
+.end

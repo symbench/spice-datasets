@@ -1,0 +1,39 @@
+.title KiCad schematic
+J1 Net-_IF1-Pad3_ Net-_J1-Pad2_ Conn_01x02_Female
+J2 Net-_IF1-Pad3_ Net-_J1-Pad2_ Conn_01x02_Female
+IF1 Net-_IF1-Pad1_ Net-_IF1-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+IF2 Net-_IF2-Pad1_ Net-_IF2-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+IF3 Net-_IF3-Pad1_ Net-_IF3-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+R1 Net-_J1-Pad2_ Net-_IF1-Pad1_ R
+R2 Net-_J1-Pad2_ Net-_IF2-Pad1_ R
+R3 Net-_J1-Pad2_ Net-_IF3-Pad1_ R
+IF4 Net-_IF4-Pad1_ Net-_IF4-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+IF5 Net-_IF5-Pad1_ Net-_IF5-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+IF6 Net-_IF6-Pad1_ Net-_IF6-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+IF7 Net-_IF7-Pad1_ Net-_IF7-Pad2_ Net-_IF1-Pad3_ Net-_IF1-Pad3_ TCRT5000
+R4 Net-_IF1-Pad3_ Net-_IF4-Pad1_ R
+R5 Net-_IF1-Pad3_ Net-_IF5-Pad1_ R
+R6 Net-_IF1-Pad3_ Net-_IF6-Pad1_ R
+R7 Net-_IF1-Pad3_ Net-_IF7-Pad1_ R
+R8 Net-_IF1-Pad2_ Net-_J1-Pad2_ R
+R10 Net-_IF2-Pad2_ Net-_J1-Pad2_ R
+R12 Net-_IF3-Pad2_ Net-_J1-Pad2_ R
+R14 Net-_IF4-Pad2_ Net-_J1-Pad2_ R
+R16 Net-_IF5-Pad2_ Net-_J1-Pad2_ R
+R18 Net-_IF6-Pad2_ Net-_J1-Pad2_ R
+R20 Net-_IF7-Pad2_ Net-_J1-Pad2_ R
+Q1 Net-_IF1-Pad2_ Net-_J1-Pad2_ Net-_Q1-Pad3_ BC857
+Q2 Net-_IF2-Pad2_ Net-_J1-Pad2_ Net-_Q2-Pad3_ BC857
+Q3 Net-_IF3-Pad2_ Net-_J1-Pad2_ Net-_Q3-Pad3_ BC857
+Q4 Net-_IF4-Pad2_ Net-_J1-Pad2_ Net-_Q4-Pad3_ BC857
+Q5 Net-_IF5-Pad2_ Net-_J1-Pad2_ Net-_Q5-Pad3_ BC857
+Q6 Net-_IF6-Pad2_ Net-_J1-Pad2_ Net-_Q6-Pad3_ BC857
+Q7 Net-_IF7-Pad2_ Net-_J1-Pad2_ Net-_Q7-Pad3_ BC857
+R9 Net-_Q1-Pad3_ Net-_R11-Pad2_ R
+R11 Net-_Q2-Pad3_ Net-_R11-Pad2_ R
+R15 Net-_Q4-Pad3_ Net-_R11-Pad2_ R
+R13 Net-_Q3-Pad3_ Net-_R11-Pad2_ R
+R17 Net-_Q5-Pad3_ Net-_R11-Pad2_ R
+R19 Net-_Q6-Pad3_ Net-_R11-Pad2_ R
+R21 Net-_Q7-Pad3_ Net-_R11-Pad2_ R
+.end

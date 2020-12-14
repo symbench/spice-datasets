@@ -1,0 +1,63 @@
+.title KiCad schematic
+U4 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 74LS93
+U1 Net-_C4-Pad2_ Net-_R2-Pad1_ NC_11 NC_12 NC_13 Net-_C2-Pad2_ Net-_C2-Pad1_ Net-_J8-Pad1_ NC_14 Net-_R10-Pad1_ NC_15 Net-_C6-Pad1_ Earth Net-_C8-Pad1_ TL074
+U3 Net-_C5-Pad2_ Net-_R14-Pad2_ NC_16 NC_17 Net-_C5-Pad1_ Net-_R19-Pad2_ Net-_J9-Pad3_ NC_18 TL072
+U2 NC_19 NC_20 Net-_R12-Pad2_ NC_21 Net-_R9-Pad1_ Net-_R8-Pad1_ NC_22 NC_23 CA3080
+D3 NC_24 NC_25 1N914
+D2 NC_26 NC_27 1N47xxA
+RV4 NC_28 NC_29 NC_30 R_POT_TRIM_US
+RV2 NC_31 Net-_R5-Pad2_ NC_32 R_POT_TRIM_US
+J6 NC_33 NC_34 NC_35 PJ301M-12
+Q5 Net-_C6-Pad2_ NC_36 NC_37 2N3904
+Q7 NC_38 NC_39 NC_40 2N3906
+Q6 NC_41 NC_42 NC_43 2N3819_NonStock
+Q1 Net-_C3-Pad1_ Net-_D1-Pad2_ Net-_J1-Pad1_ 2N3819_NonStock
+R24 NC_44 NC_45 R_US
+C7 NC_46 NC_47 CP1_Small
+J1 Net-_J1-Pad1_ NC_48 NC_49 S&H IN
+R1 Net-_J1-Pad1_ Net-_D1-Pad2_ R_US
+D1 Net-_C1-Pad1_ Net-_D1-Pad2_ 1N914
+C3 Net-_C3-Pad1_ NC_50 CP1_Small
+R11 Net-_J5-Pad1_ NC_51 R_US
+Q3 Net-_J5-Pad1_ Net-_C3-Pad1_ NC_52 2N3819_NonStock
+J2 Net-_C1-Pad2_ NC_53 NC_54 CLK IN
+J3 Net-_J3-Pad1_ NC_55 NC_56 CV IN
+J4 NC_57 NC_58 NC_59 PJ301M-12
+R7 Net-_C1-Pad1_ NC_60 R_US
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ CP1_Small
+J5 Net-_J5-Pad1_ NC_61 NC_62 S&H OUT
+RV1 NC_63 Net-_R4-Pad2_ NC_64 R_POT_TRIM_US
+R2 Net-_R2-Pad1_ Net-_J3-Pad1_ R_US
+R3 Net-_R2-Pad1_ NC_65 R_US
+R4 Net-_R2-Pad1_ Net-_R4-Pad2_ R_US
+R5 Net-_R2-Pad1_ Net-_R5-Pad2_ R_US
+J7 Net-_C2-Pad1_ NC_66 NC_67 TRI
+J8 Net-_J8-Pad1_ NC_68 NC_69 PLS
+Q2 Net-_C4-Pad1_ Net-_C4-Pad2_ Net-_Q2-Pad3_ 2N3906
+R9 Net-_R9-Pad1_ Net-_Q2-Pad3_ R_US
+R8 Net-_R8-Pad1_ Net-_C2-Pad2_ R_US
+R6 Net-_C4-Pad1_ Net-_R2-Pad1_ R_US
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ CP1_Small
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ CP1_Small
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ CP1_Small
+R10 Net-_R10-Pad1_ Net-_C2-Pad1_ R_US
+R13 Net-_J8-Pad1_ Net-_R10-Pad1_ R_US
+R15 Net-_J8-Pad1_ Net-_R12-Pad2_ R_US
+R12 NC_70 Net-_R12-Pad2_ R_US
+R16 Net-_R14-Pad2_ Net-_C2-Pad1_ R_US
+R14 Net-_R14-Pad1_ Net-_R14-Pad2_ R_US
+RV3 NC_71 Net-_R14-Pad1_ NC_72 R_POT_TRIM_US
+Q4 NC_73 Net-_Q4-Pad2_ Net-_C5-Pad1_ 2N3819_NonStock
+J9 Earth NC_74 Net-_J9-Pad3_ SAW
+R18 Net-_R14-Pad2_ Net-_C5-Pad2_ R_US
+R19 Net-_C5-Pad2_ Net-_R19-Pad2_ R_US
+R21 Net-_R19-Pad2_ Net-_J9-Pad3_ R_US
+R17 Net-_J8-Pad1_ Net-_Q4-Pad2_ R_US
+R20 Net-_C5-Pad2_ Net-_C5-Pad1_ R_US
+R22 NC_75 Net-_C6-Pad2_ R_US
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ CP1_Small
+R23 Net-_C8-Pad1_ Net-_C6-Pad1_ R_US
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ CP1_Small
+R25 Net-_C8-Pad2_ NC_76 R_US
+J10 Earth NC_77 Net-_C8-Pad2_ SAW
+.end

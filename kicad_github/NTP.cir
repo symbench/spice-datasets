@@ -1,0 +1,97 @@
+.title KiCad schematic
+A1 NC_01 NC_02 NC_03 GND Tr1 Tr2 Tr3 Tr4 Tr5 Tr6 Tr7 Tr8 Tr9 NC_04 NC_05 NC_06 NC_07 Net-_A1-Pad18_ Net-_A1-Pad19_ NC_08 NC_09 NC_10 SDA SDC NC_11 NC_12 NC_13 NC_14 GND 12V Arduino_Nano_v3.x
+RV1 GND Net-_A1-Pad19_ Net-_A1-Pad18_ R_POT_US
+D1 GND Net-_D1-Pad2_ LED
+R3 5V Net-_Q2-Pad3_ 10k
+Q2 GND Net-_Q2-Pad2_ Net-_Q2-Pad3_ 2N3904
+Q1 GND Net-_Q1-Pad2_ Net-_J1-Pad3_ 2N3904
+R1 5V Net-_J1-Pad3_ 1k
+D10 Net-_D10-Pad1_ 12V 1N4006
+C8 5V GND 22n
+D9 Net-_D9-Pad1_ 5V 1N4006
+R2 Net-_Q2-Pad3_ Net-_Q1-Pad2_ 1k
+R4 Tr1 Net-_Q2-Pad2_ 1k
+R5 Tr1 Net-_D1-Pad2_ 200
+C6 5V GND 22n
+C4 5V GND 22n
+C2 5V GND 470n
+C7 12V GND 22n
+C5 12V GND 22n
+C3 12V GND 22n
+C1 12V GND 470n
+H1 NC_15 NC_16 GND GND GND GND GND GND Net-_D10-Pad1_ Net-_D10-Pad1_ Net-_D9-Pad1_ Net-_D9-Pad1_ NC_17 NC_18 NC_19 NC_20 PIN_HEADER_2x8
+D2 GND Net-_D2-Pad2_ LED
+R8 5V Net-_Q4-Pad3_ 10k
+Q4 GND Net-_Q4-Pad2_ Net-_Q4-Pad3_ 2N3904
+Q3 GND Net-_Q3-Pad2_ Net-_J2-Pad3_ 2N3904
+R6 5V Net-_J2-Pad3_ 1k
+R7 Net-_Q4-Pad3_ Net-_Q3-Pad2_ 1k
+R9 Tr2 Net-_Q4-Pad2_ 1k
+R10 Tr2 Net-_D2-Pad2_ 200
+D3 GND Net-_D3-Pad2_ LED
+R13 5V Net-_Q6-Pad3_ 10k
+Q6 GND Net-_Q6-Pad2_ Net-_Q6-Pad3_ 2N3904
+Q5 GND Net-_Q5-Pad2_ Net-_J3-Pad3_ 2N3904
+R11 5V Net-_J3-Pad3_ 1k
+R12 Net-_Q6-Pad3_ Net-_Q5-Pad2_ 1k
+R14 Tr3 Net-_Q6-Pad2_ 1k
+R15 Tr3 Net-_D3-Pad2_ 200
+D4 GND Net-_D4-Pad2_ LED
+R18 5V Net-_Q8-Pad3_ 10k
+Q8 GND Net-_Q8-Pad2_ Net-_Q8-Pad3_ 2N3904
+Q7 GND Net-_Q7-Pad2_ Net-_J4-Pad3_ 2N3904
+R16 5V Net-_J4-Pad3_ 1k
+R17 Net-_Q8-Pad3_ Net-_Q7-Pad2_ 1k
+R19 Tr4 Net-_Q8-Pad2_ 1k
+R20 Tr4 Net-_D4-Pad2_ 200
+D5 GND Net-_D5-Pad2_ LED
+R23 5V Net-_Q10-Pad3_ 10k
+Q10 GND Net-_Q10-Pad2_ Net-_Q10-Pad3_ 2N3904
+Q9 GND Net-_Q9-Pad2_ Net-_J5-Pad3_ 2N3904
+R21 5V Net-_J5-Pad3_ 1k
+R22 Net-_Q10-Pad3_ Net-_Q9-Pad2_ 1k
+R24 Tr5 Net-_Q10-Pad2_ 1k
+R25 Tr5 Net-_D5-Pad2_ 200
+D6 GND Net-_D6-Pad2_ LED
+R28 5V Net-_Q12-Pad3_ 10k
+Q12 GND Net-_Q12-Pad2_ Net-_Q12-Pad3_ 2N3904
+Q11 GND Net-_Q11-Pad2_ Net-_J6-Pad3_ 2N3904
+R26 5V Net-_J6-Pad3_ 1k
+R27 Net-_Q12-Pad3_ Net-_Q11-Pad2_ 1k
+R29 Tr6 Net-_Q12-Pad2_ 1k
+R30 Tr6 Net-_D6-Pad2_ 200
+D7 GND Net-_D7-Pad2_ LED
+R33 5V Net-_Q14-Pad3_ 10k
+Q14 GND Net-_Q14-Pad2_ Net-_Q14-Pad3_ 2N3904
+Q13 GND Net-_Q13-Pad2_ Net-_J7-Pad3_ 2N3904
+R31 5V Net-_J7-Pad3_ 1k
+R32 Net-_Q14-Pad3_ Net-_Q13-Pad2_ 1k
+R34 Tr7 Net-_Q14-Pad2_ 1k
+R35 Tr7 Net-_D7-Pad2_ 200
+D8 GND Net-_D8-Pad2_ LED
+R38 5V Net-_Q16-Pad3_ 10k
+Q16 GND Net-_Q16-Pad2_ Net-_Q16-Pad3_ 2N3904
+Q15 GND Net-_Q15-Pad2_ Net-_J8-Pad3_ 2N3904
+R36 5V Net-_J8-Pad3_ 1k
+R37 Net-_Q16-Pad3_ Net-_Q15-Pad2_ 1k
+R39 Tr8 Net-_Q16-Pad2_ 1k
+R40 Tr8 Net-_D8-Pad2_ 200
+D11 GND Net-_D11-Pad2_ LED
+R43 5V Net-_Q18-Pad3_ 10k
+Q18 GND Net-_Q18-Pad2_ Net-_Q18-Pad3_ 2N3904
+Q17 GND Net-_Q17-Pad2_ Net-_J9-Pad3_ 2N3904
+R41 5V Net-_J9-Pad3_ 1k
+R42 Net-_Q18-Pad3_ Net-_Q17-Pad2_ 1k
+R44 Tr9 Net-_Q18-Pad2_ 1k
+R45 Tr9 Net-_D11-Pad2_ 200
+J1 GND GND Net-_J1-Pad3_ PJ301M-12
+J2 GND GND Net-_J2-Pad3_ PJ301M-12
+J3 GND GND Net-_J3-Pad3_ PJ301M-12
+J4 GND GND Net-_J4-Pad3_ PJ301M-12
+J5 GND GND Net-_J5-Pad3_ PJ301M-12
+J6 GND GND Net-_J6-Pad3_ PJ301M-12
+J7 GND GND Net-_J7-Pad3_ PJ301M-12
+J8 GND GND Net-_J8-Pad3_ PJ301M-12
+J9 GND GND Net-_J9-Pad3_ PJ301M-12
+H2 Tr1 Tr2 Tr3 Tr4 Tr5 Tr6 Tr7 Tr8 Tr9 NC_21 SDA SDC GND GND 5V 5V Expander
+.end
