@@ -1,0 +1,36 @@
+.title KiCad schematic
+U1 GND Net-_C2-Pad2_ Net-_R3-Pad2_ VCC Net-_C1-Pad2_ Net-_C2-Pad2_ Net-_R1-Pad1_ VCC LM555N
+C1 GND Net-_C1-Pad2_ 10n
+R2 Net-_R1-Pad1_ Net-_C2-Pad2_ 12k
+R1 Net-_R1-Pad1_ VCC 2.2k
+C2 GND Net-_C2-Pad2_ 47n
+R3 Net-_2N1-Pad1_ Net-_R3-Pad2_ 3.3k
+2N2 Net-_2N1-Pad2_ GND Net-_2N2-Pad3_ Q_PNP_BCE
+2N2222_1 Net-_2N1-Pad2_ VCC Net-_2N2-Pad3_ Q_NPN_BCE
+R4 VCC Net-_2N1-Pad2_ 1.8k
+2N1 Net-_2N1-Pad1_ Net-_2N1-Pad2_ GND Q_NPN_BCE
+C3 Net-_2N2-Pad3_ Net-_C3-Pad2_ 47u
+D1 GND Net-_C3-Pad2_ 400x
+C4 GND Net-_C4-Pad2_ 4.7u
+D2 Net-_C3-Pad2_ Net-_C4-Pad2_ 1N5062
+C5 Net-_C3-Pad2_ Net-_C5-Pad2_ 4.7u
+D3 Net-_C4-Pad2_ Net-_C5-Pad2_ 1N5062
+C6 Net-_C4-Pad2_ Net-_C6-Pad2_ 4.7u
+D4 Net-_C5-Pad2_ Net-_C6-Pad2_ 1N5062
+C7 Net-_C5-Pad2_ Net-_C7-Pad2_ 4.7u
+D5 Net-_C6-Pad2_ Net-_C7-Pad2_ 1N5062
+C8 Net-_C6-Pad2_ Net-_C10-Pad1_ 4.7u
+D6 Net-_C7-Pad2_ Net-_C10-Pad1_ 1N5062
+C9 Net-_C7-Pad2_ Net-_C11-Pad1_ 4.7u
+D7 Net-_C10-Pad1_ Net-_C11-Pad1_ 1N5062
+C10 Net-_C10-Pad1_ Net-_C10-Pad2_ 4.7u
+D8 Net-_C11-Pad1_ Net-_C10-Pad2_ 1N5062
+C11 Net-_C11-Pad1_ Net-_C11-Pad2_ 4.7u
+D9 Net-_C10-Pad2_ Net-_C11-Pad2_ 1N5062
+C12 Net-_C10-Pad2_ Net-_C12-Pad2_ 4.7u
+D10 Net-_C11-Pad2_ Net-_C12-Pad2_ 1N5062
+C13 Net-_C11-Pad2_ Net-_C13-Pad2_ 4.7u
+D11 Net-_C12-Pad2_ Net-_C13-Pad2_ 1N5062
+D12 Net-_C13-Pad2_ Output 400x
+C14 GND Output 4.7u
+.end

@@ -1,0 +1,5 @@
+.title KiCad schematic
+P1 GND Net-_P1-Pad2_ Net-_P1-Pad3_ CONN_01X03
+R1 VCC Net-_P1-Pad3_ R
+P2 GND Net-_P1-Pad2_ VCC CONN_01X03
+.end

@@ -1,0 +1,32 @@
+.title KiCad schematic
+U1 Net-_J1-Pad2_ Net-_J4-Pad1_ Net-_J3-Pad1_ Net-_J4-Pad2_ Net-_J3-Pad2_ Net-_J4-Pad3_ +5V Earth Net-_C3-Pad1_ Net-_C2-Pad1_ Net-_J3-Pad3_ Net-_J4-Pad4_ Net-_J3-Pad4_ Net-_J5-Pad1_ Net-_J6-Pad1_ Net-_J5-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad6_ Net-_J1-Pad4_ +5V NC_01 Earth Net-_J5-Pad4_ Net-_J5-Pad5_ Net-_J6-Pad4_ Net-_J4-Pad5_ Net-_J2-Pad2_ Net-_J2-Pad1_ ATMEGA328P-PU
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ +5V Earth Power/i2c
+Y1 Net-_C2-Pad1_ Net-_C3-Pad1_ Crystal
+C2 Net-_C2-Pad1_ Earth C
+C3 Net-_C3-Pad1_ Earth C
+J1 Earth Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ +5V Net-_J1-Pad6_ ISP
+R1 +5V Net-_J1-Pad2_ R
+C1 +5V Earth C
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Earth Conn_01x05
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Conn_01x05
+J5 Net-_J5-Pad1_ Net-_J5-Pad2_ Net-_J1-Pad6_ Net-_J5-Pad4_ Net-_J5-Pad5_ Conn_01x05
+J6 Net-_J6-Pad1_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J6-Pad4_ Earth Conn_01x05
+R10 +5V Net-_J5-Pad5_ R
+R9 +5V Net-_J5-Pad4_ R
+R8 +5V Net-_J1-Pad6_ R
+R7 +5V Net-_J5-Pad2_ R
+R6 +5V Net-_J5-Pad1_ R
+R14 +5V Net-_J6-Pad4_ R
+R13 +5V Net-_J1-Pad4_ R
+R12 +5V Net-_J1-Pad3_ R
+R11 +5V Net-_J6-Pad1_ R
+R19 +5V Net-_J4-Pad5_ R
+R18 +5V Net-_J4-Pad4_ R
+R17 +5V Net-_J4-Pad3_ R
+R16 +5V Net-_J4-Pad2_ R
+R15 +5V Net-_J4-Pad1_ R
+R5 +5V Net-_J3-Pad1_ R
+R4 +5V Net-_J3-Pad2_ R
+R3 +5V Net-_J3-Pad3_ R
+R2 +5V Net-_J3-Pad4_ R
+.end

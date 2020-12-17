@@ -1,0 +1,12 @@
+.title KiCad schematic
+U1 Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ GND Net-_J1-Pad2_ Net-_TP1-Pad1_ Net-_TP2-Pad1_ +3V3 ATTINY85-20PU
+C1 +3V3 GND C_Small
+Y1 Net-_U1-Pad2_ GND Net-_U1-Pad3_ Crystal_GND2
+U3 GND +3V3 VCC +3V3 LM1117-3.3
+R1 NC_01 +3V3 R_Small
+J1 GND Net-_J1-Pad2_ VCC CONN_01X03
+J2 Net-_J1-Pad2_ Net-_J1-Pad2_ TEST_2P
+TP1 Net-_TP1-Pad1_ TEST
+TP2 Net-_TP2-Pad1_ TEST
+U2 Net-_U1-Pad1_ Net-_U1-Pad2_ Net-_U1-Pad3_ GND Net-_J1-Pad2_ Net-_TP1-Pad1_ Net-_TP2-Pad1_ +3V3 ATTINY85-20PU
+.end

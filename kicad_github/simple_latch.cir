@@ -1,0 +1,15 @@
+.title KiCad schematic
+R1 VCC Net-_C2-Pad2_ 100K
+R3 VCC Net-_C2-Pad1_ 100K
+R2 Net-_C1-Pad1_ Net-_C2-Pad2_ 5M
+C1 Net-_C1-Pad1_ GND C_Small
+J1 GND Net-_C2-Pad2_ BUTTON
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ C_Small
+Q1 Net-_J2-Pad1_ Net-_Q1-Pad2_ GND BC547
+J2 Net-_J2-Pad1_ GND CONN_01X02
+R4 Net-_Q1-Pad2_ Net-_R4-Pad2_ R_Small
+R5 GND Net-_Q1-Pad2_ R_Small
+U1 GND GND NC_01 Net-_U1-Pad13_ Net-_C1-Pad1_ Net-_R4-Pad2_ GND GND GND NC_02 Net-_R4-Pad2_ Net-_C2-Pad1_ Net-_U1-Pad13_ VCC 4011
+C3 VCC GND C_Small
+J3 VCC GND CONN_01X02
+.end

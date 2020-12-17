@@ -1,0 +1,23 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 330nF
+C8 Net-_C2-Pad1_ Net-_C8-Pad2_ 12pF
+C4 Net-_C2-Pad1_ Net-_C4-Pad2_ 12pF
+C2 Net-_C2-Pad1_ Earth 10nF
+C3 Net-_C3-Pad1_ Earth 1nF
+C6 Net-_C4-Pad2_ Net-_C6-Pad2_ 5.6pF
+C7 Net-_C7-Pad1_ Net-_C6-Pad2_ 33pF
+C5 Net-_C2-Pad1_ Net-_C4-Pad2_ 22pF
+R1 Net-_C3-Pad1_ Net-_C1-Pad1_ 10K
+R4 Net-_C2-Pad1_ Net-_C7-Pad1_ 100K
+R3 Net-_C6-Pad2_ Earth 180R
+R2 Net-_C2-Pad1_ Net-_C3-Pad1_ 68K
+L1 Net-_C2-Pad1_ Net-_C4-Pad2_ 100nH
+L2 Net-_C2-Pad1_ Net-_C8-Pad2_ 100nH
+Q1 Net-_C4-Pad2_ Net-_C3-Pad1_ Net-_C6-Pad2_ BC549
+Q2 Net-_C8-Pad2_ Net-_C7-Pad1_ Earth BC549
+C9 Net-_C8-Pad2_ Net-_A1-Pad1_ 33pF
+C10 +9V Earth 100nF
+A1 Net-_A1-Pad1_ Ant
+J1 Net-_C1-Pad2_ Earth Audio
+J2 Earth +9V Connector
+.end

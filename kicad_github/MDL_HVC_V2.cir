@@ -1,0 +1,4 @@
+.title KiCad schematic
+U1 GND GND Net-_RV1-Pad2_ Net-_RV1-Pad1_ Vout GND GND Vout Net-_RV1-Pad1_ Net-_RV1-Pad2_ +5V +5V Recom
+RV1 Net-_RV1-Pad1_ Net-_RV1-Pad2_ Vout POT
+.end

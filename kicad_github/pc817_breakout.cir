@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 Net-_R1-Pad1_ Net-_J1-Pad1_ Net-_J2-Pad3_ Net-_J2-Pad2_ PC817
+R1 Net-_R1-Pad1_ Net-_J1-Pad2_ 1k
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Conn_01x03
+R2 Net-_J2-Pad1_ Net-_J2-Pad2_ 1k
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Conn_01x02
+.end

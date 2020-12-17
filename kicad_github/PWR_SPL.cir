@@ -1,0 +1,18 @@
+.title KiCad schematic
+J2 GND Vin 5V 3.3V 12V GND Conn_01x06
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Conn_01x02
+T1 Net-_J1-Pad2_ Net-_J1-Pad1_ Net-_D1-Pad4_ Net-_D1-Pad3_ 220AC - 15AC
+D1 Vin GND Net-_D1-Pad3_ Net-_D1-Pad4_ Diode bridge
+C1 Vin GND 470uF
+U1 GND 3.3V Vin Voltage_regulator
+C2 Vin GND 100nF
+C3 3.3V GND 10uF
+U2 GND 5V Vin Voltage_regulator 5V
+C4 Vin GND 0.33uF
+C5 5V GND 0.1uF
+U3 Vin Net-_R1-Pad1_ 12V LM 317 Voltage_regulator 12V
+C6 Vin GND 0.1uF
+C7 12V GND 1uF
+R1 Net-_R1-Pad1_ GND 2K
+R2 12V Net-_R1-Pad1_ 240R
+.end

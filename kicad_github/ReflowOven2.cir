@@ -1,0 +1,22 @@
+.title KiCad schematic
+Micro1 /Reset /RX /CS2 /CS1 /LED NC_01 +5V GND Net-_C4-Pad1_ Net-_C3-Pad1_ ThermoSO ThermoSCK NC_02 /Relay /Switch1 /Switch2 /DIN NC_03 /CLK NC_04 NC_05 GND /RST /CE /DC NC_06 NC_07 NC_08 ATMEGA328P-PU
+Power1 +5V GND Conn_01x02
+Relay1 /Relay GND Conn_01x02
+Vreg1 GND +3V3 +5V LM1117-3.3
+C2 +3V3 GND CP
+C1 +5V GND CP
+Switches1 +5V /Switch1 /Switch2 Conn_01x03
+Thermocouple1 GND +5V ThermoSCK /CS1 ThermoSO Conn_01x05
+Thermocouple2 GND +5V ThermoSCK /CS2 ThermoSO Conn_01x05
+Display1 Net-_Display1-Pad1_ Net-_Display1-Pad2_ Net-_Display1-Pad3_ Net-_Display1-Pad4_ Net-_Display1-Pad5_ +3V3 Net-_Display1-Pad7_ GND Conn_01x08
+Cryistal1 Net-_C3-Pad1_ Net-_C4-Pad1_ 16k
+C4 Net-_C4-Pad1_ GND CP
+C3 Net-_C3-Pad1_ GND CP
+R6 Net-_Display1-Pad7_ /LED 330
+R1 Net-_Display1-Pad1_ /RST 10k
+R4 Net-_Display1-Pad2_ /CE 1k
+R2 Net-_Display1-Pad3_ /DC 10k
+R5 Net-_Display1-Pad4_ /DIN 10k
+R3 Net-_Display1-Pad5_ /CLK 10k
+Programing1 /Reset /RX /CS2 +5V GND Conn_01x05
+.end

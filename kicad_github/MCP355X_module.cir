@@ -1,0 +1,21 @@
+.title KiCad schematic
+U1 /Vref /Vin+filt /Vin-_filt GND Net-_R8-Pad2_ Net-_R9-Pad2_ Net-_R7-Pad2_ VDD MCP355X-E_SN
+R7 Net-_J2-Pad3_ Net-_R7-Pad2_ 100
+R9 Net-_J2-Pad2_ Net-_R9-Pad2_ 100
+R8 Net-_J2-Pad1_ Net-_R8-Pad2_ 100
+R3 /Vref_filt /Vref_in 100
+R6 /Vref /Vref_filt 100
+C4 GND /Vref_filt 1u
+C8 GND /Vref 1u
+C9 GND /Vref 10n
+R4 /Vin+filt /Vin+_in R
+R5 /Vin-_filt /Vin-_in R
+C6 /Vin+filt /Vin-_filt C
+C5 GND /Vin+filt C
+C7 /Vin-_filt GND C
+C2 VDD GND 10n
+C1 VDD GND 1u
+R1 Net-_J2-Pad4_ VDD 100
+J1 GND /Vref_in GND /Vin+_in /Vin-_in GND PINS_1X6
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ NC_01 NC_02 PINS_1X6
+.end

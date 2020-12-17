@@ -1,0 +1,4 @@
+.title KiCad schematic
+LED1 GND +3V RED
+BAT1 +3V GND CR1220
+.end

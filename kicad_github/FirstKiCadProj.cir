@@ -1,0 +1,7 @@
+.title KiCad schematic
+J1 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 Net-_J1-Pad11_ Net-_J1-Pad12_ NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 Net-_J1-Pad35_ Net-_J1-Pad36_ NC_33 NC_34 NC_35 NC_36 Raspberry_Pi_2_3
+M3 Net-_J1-Pad11_ NC_37 NC_38 Motor_Servo
+M2 Net-_J1-Pad36_ NC_39 NC_40 Motor_Servo
+M4 Net-_J1-Pad12_ NC_41 NC_42 Motor_Servo
+M1 Net-_J1-Pad35_ NC_43 NC_44 Motor_Servo
+.end

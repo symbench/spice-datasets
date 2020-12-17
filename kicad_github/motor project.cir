@@ -1,0 +1,6 @@
+.title KiCad schematic
+driver1 Net-_driver1-Pad1_ Net-_driver1-Pad2_ NC_01 NC_02 NC_03 NC_04 GND +12V Net-_driver1-Pad9_ Net-_driver1-Pad10_ Net-_driver1-Pad11_ NC_05 Net-_driver1-Pad13_ Net-_driver1-Pad13_ Net-_driver1-Pad15_ Net-_driver1-Pad16_ POLOLU_A4988
+microcontroller1 NC_06 NC_07 NC_08 Net-_driver1-Pad15_ Net-_driver1-Pad16_ Net-_driver1-Pad9_ Net-_driver1-Pad2_ Net-_driver1-Pad10_ Net-_driver1-Pad11_ NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 Net-_driver1-Pad1_ NC_26 NC_27 NC_28 ARDUINO_NANO
+C1 +12V GND CP1
+Motor1 NC_29 Stepper_motor_14HM11-0404S
+.end

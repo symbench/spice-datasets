@@ -1,0 +1,33 @@
+.title KiCad schematic
+U1 Net-_R11-Pad1_ Net-_R3-Pad1_ Net-_R4-Pad1_ GNDA Net-_C2-Pad1_ Net-_R11-Pad1_ VCC SD INA321
+R4 Net-_R4-Pad1_ Net-_J3-Pad1_ 100K
+R2 VR_0 GNDA 100K
+R6 Net-_R3-Pad1_ VR 2M
+R8 Net-_R11-Pad1_ Net-_C2-Pad2_ 1M
+R1 VCC VR_0 100K
+R5 Net-_R4-Pad1_ VR 2M
+R13 Net-_J5-Pad4_ Net-_J8-Pad3_ 1M
+R11 Net-_R11-Pad1_ Net-_J8-Pad2_ 10K
+R9 Net-_J9-Pad1_ Net-_R10-Pad1_ 10K
+R10 Net-_R10-Pad1_ Net-_R10-Pad2_ 390K
+R16 +In_D VR 10K
+R15 Net-_J6-Pad3_ Net-_J7-Pad1_ X
+R7 Net-_R10-Pad2_ Net-_J4-Pad1_ 100K
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 0.1µ
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 1.6n
+C4 Net-_C4-Pad1_ Net-_C4-Pad2_ X
+R12 Net-_J5-Pad6_ Net-_J8-Pad1_ X
+J8 Net-_J8-Pad1_ Net-_J8-Pad2_ Net-_J8-Pad3_ Net-_C3-Pad2_ Net-_J8-Pad2_ Net-_C4-Pad2_ Filtre
+J5 Net-_C4-Pad1_ Vout Net-_C3-Pad1_ Net-_J5-Pad4_ Vout Net-_J5-Pad6_ Filtre
+J1 GNDA GNDA SD VCC VCC Vout GNDA Shutdown V+ Vout
+J4 Net-_J4-Pad1_ VR Right Leg
+J3 Net-_J3-Pad1_ VR Right Arm
+J2 Net-_J2-Pad1_ VR Left Arm
+U2 VR VR VR_0 VCC VR Net-_R10-Pad1_ Net-_R10-Pad2_ NC_01 NC_02 Net-_C2-Pad1_ Net-_C2-Pad2_ VR GNDA +In_D Net-_J8-Pad2_ Vout OPA4336
+R3 Net-_R3-Pad1_ Net-_J2-Pad1_ 100K
+J6 Net-_J6-Pad1_ +In_D Net-_J6-Pad3_ Gain
+J7 Net-_J7-Pad1_ GNDA Net-_J7-Pad3_ Gain
+R14 Net-_J6-Pad1_ Net-_J7-Pad3_ 1M
+C1 VR_0 GNDA 1µF
+J9 Net-_J9-Pad1_ VR NC_03 Offset
+.end

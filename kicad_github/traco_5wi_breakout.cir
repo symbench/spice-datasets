@@ -1,0 +1,7 @@
+.title KiCad schematic
+U1 Net-_J1-Pad1_ Net-_J1-Pad1_ NC_01 Net-_J2-Pad1_ Net-_J4-Pad1_ Net-_J3-Pad1_ Net-_J3-Pad1_ TRACO_TEN5WI_S
+J1 Net-_J1-Pad1_ Net-_J1-Pad1_ IN-
+J2 Net-_J2-Pad1_ Net-_J2-Pad1_ OUT+
+J3 Net-_J3-Pad1_ Net-_J3-Pad1_ IN+
+J4 Net-_J4-Pad1_ Net-_J4-Pad1_ OUT-
+.end

@@ -1,0 +1,22 @@
+.title KiCad schematic
+D1 GND Net-_D1-Pad2_ LED
+D2 GND Net-_D2-Pad2_ LED
+D3 GND Net-_D3-Pad2_ LED
+D4 GND Net-_D4-Pad2_ LED
+D5 GND Net-_D5-Pad2_ LED
+D6 GND Net-_D6-Pad2_ LED
+D7 GND Net-_D7-Pad2_ LED
+D8 GND Net-_D8-Pad2_ LED
+D9 GND Net-_D9-Pad2_ LED
+D10 GND Net-_D10-Pad2_ LED
+D11 GND Net-_D11-Pad2_ LED
+D12 GND Net-_D12-Pad2_ LED
+D13 GND Net-_D13-Pad2_ LED
+D14 GND Net-_D14-Pad2_ LED
+D15 GND Net-_D15-Pad2_ LED
+D16 GND Net-_D16-Pad2_ LED
+P3 Net-_D1-Pad2_ Net-_D2-Pad2_ Net-_D3-Pad2_ Net-_D4-Pad2_ Net-_D5-Pad2_ Net-_D6-Pad2_ Net-_D7-Pad2_ Net-_D8-Pad2_ Net-_D9-Pad2_ Net-_D10-Pad2_ Net-_D11-Pad2_ Net-_D12-Pad2_ Net-_D13-Pad2_ Net-_D14-Pad2_ Net-_D15-Pad2_ Net-_D16-Pad2_ CONN_01X16
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ Net-_P1-Pad6_ Net-_P1-Pad7_ GND CONN_01X08
+R1 Net-_P1-Pad1_ Net-_P2-Pad1_ RTRIM
+P2 Net-_P2-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ Net-_P1-Pad6_ Net-_P1-Pad7_ GND CONN_01X08
+.end

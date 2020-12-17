@@ -1,0 +1,18 @@
+.title KiCad schematic
+U1 /1+ /1- /2+ /2- /3+ /3- /4+ /4- /5+ /5- /6- /6+ ~STBY GND ~OVERT VCC ~ALRT SDA SCK GND MAX6636
+J3 VCC SDA SCK ~ALRT GND I2C
+J1 /1- /1+ /2- /2+ /3- /3+ /4- /4+ /5- /5+ /6- /6+ Conn_01x12
+C2 /2- /2+ 2200pF
+C1 /1- /1+ 2200pF
+C3 /3- /3+ 2200pF
+C4 /4- /4+ 2200pF
+C5 /5- /5+ 2200pF
+C6 /6- /6+ 2200pF
+C7 VCC GND 100nF
+J2 ~OVERT ~STBY GND Conn_01x03
+R1 VCC SDA SD
+R2 VCC SCK SC
+R3 VCC ~ALRT AL
+R4 VCC ~OVERT OV
+R5 VCC ~STBY ST
+.end

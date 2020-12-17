@@ -1,0 +1,4 @@
+.title KiCad schematic
+D1 VCC R G B LED_ARGB
+D2 R G B VCC LED_RGBA
+.end

@@ -1,0 +1,8 @@
+.title KiCad schematic
+U1 NC_01 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ GND NC_02 Net-_J1-Pad13_ Net-_J1-Pad14_ Net-_J1-Pad15_ Net-_J1-Pad16_ Net-_J1-Pad17_ Net-_J1-Pad18_ Net-_J1-Pad19_ Net-_J1-Pad20_ Net-_J1-Pad21_ Net-_J1-Pad22_ GND Net-_J3-Pad22_ Net-_J3-Pad21_ Net-_J3-Pad20_ Net-_J3-Pad19_ Net-_J3-Pad18_ Net-_J3-Pad17_ Net-_J3-Pad16_ Net-_J3-Pad15_ Net-_J3-Pad14_ Net-_J3-Pad13_ ~BE2 VCC Net-_J3-Pad10_ Net-_J3-Pad9_ Net-_J3-Pad8_ Net-_J3-Pad7_ Net-_J3-Pad6_ Net-_J3-Pad5_ Net-_J3-Pad4_ Net-_J3-Pad3_ Net-_J3-Pad2_ Net-_J3-Pad1_ ~BE1 VCC PI5C16861
+J2 GND ~BE1 ~BE2 VCC IO
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ GND GND Net-_J1-Pad13_ Net-_J1-Pad14_ Net-_J1-Pad15_ Net-_J1-Pad16_ Net-_J1-Pad17_ Net-_J1-Pad18_ Net-_J1-Pad19_ Net-_J1-Pad20_ Net-_J1-Pad21_ Net-_J1-Pad22_ PORTA
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Net-_J3-Pad7_ Net-_J3-Pad8_ Net-_J3-Pad9_ Net-_J3-Pad10_ GND GND Net-_J3-Pad13_ Net-_J3-Pad14_ Net-_J3-Pad15_ Net-_J3-Pad16_ Net-_J3-Pad17_ Net-_J3-Pad18_ Net-_J3-Pad19_ Net-_J3-Pad20_ Net-_J3-Pad21_ Net-_J3-Pad22_ PORTB
+C1 VCC GND C_Small
+C2 VCC GND C_Small
+.end

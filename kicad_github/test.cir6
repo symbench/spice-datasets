@@ -1,0 +1,5 @@
+.title KiCad schematic
+R201 /Sheet5AE77FCA/a2 /Sheet5AE77FCA/a1 R
+R202 /Sheet5AE77FCA/a2 /Sheet5AE77FCA/a1 R
+R301 /Sheet5AE77FCA/a1 /Sheet5AE77FCA/a2 R
+.end

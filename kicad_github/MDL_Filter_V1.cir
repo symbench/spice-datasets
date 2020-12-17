@@ -1,0 +1,5 @@
+.title KiCad schematic
+C1 Net-_C1-Pad1_ NC_01 1000p
+L1 Output Net-_C1-Pad1_ 10u
+R1 Output GND 330
+.end

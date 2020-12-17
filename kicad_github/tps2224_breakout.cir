@@ -1,0 +1,16 @@
+.title KiCad schematic
+U1 Net-_J3-Pad2_ Net-_J3-Pad2_ Net-_J1-Pad7_ Net-_J1-Pad6_ Net-_J1-Pad5_ NC_01 +12V Net-_C1-Pad1_ Net-_C2-Pad1_ Net-_C2-Pad1_ GND Net-_J1-Pad2_ +3V3 +3V3 OC NC_02 Net-_C4-Pad1_ Net-_C4-Pad1_ Net-_C3-Pad2_ +12VA SHDN NC_03 NC_04 Net-_J3-Pad2_ TPS2224
+J1 GND Net-_J1-Pad2_ OC SHDN Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ +3V3 Conn_01x08
+J9 GND Net-_C4-Pad1_ BVCC
+J8 GND Net-_C3-Pad2_ BVPP
+J4 GND Net-_C2-Pad1_ AVCC
+J5 GND Net-_C1-Pad1_ AVPP
+J3 GND Net-_J3-Pad2_ 5V
+J2 GND +3V3 3V3
+J6 GND +12VA 12V2
+J7 GND +12V 12V1
+C3 GND Net-_C3-Pad2_ 100nF
+C4 Net-_C4-Pad1_ GND 100nF
+C1 Net-_C1-Pad1_ GND 100nF
+C2 Net-_C2-Pad1_ GND 100nF
+.end

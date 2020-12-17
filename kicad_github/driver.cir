@@ -1,0 +1,22 @@
+.title KiCad schematic
+CON1 NC_01 NC_02 NC_03 BARREL_JACK
+J2 5V 5V 5V Net-_J2-Padb1_ Net-_J2-Padb2_ Net-_J2-Padb3_ Conn_02x03_Row_Letter_First
+J1 3.3V 5V NC_04 5V NC_05 GND NC_06 NC_07 GND NC_08 NC_09 NC_10 NC_11 GND NC_12 NC_13 3.3V NC_14 NC_15 GND NC_16 NC_17 NC_18 NC_19 GND NC_20 NC_21 NC_22 NC_23 GND NC_24 NC_25 NC_26 GND NC_27 NC_28 NC_29 NC_30 GND NC_31 Raspberry_Pi_Pin_Out
+J15 NC_32 NC_33 Conn_01x02
+J14 NC_34 NC_35 Conn_01x02
+C1 Power_12V_+ GND CP
+J6 Net-_J4-Pad11_ Net-_J4-Pad9_ Net-_J4-Pad7_ Net-_J4-Pad5_ Conn_01x04
+J4 GND NC_36 5V NC_37 Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad6_ Net-_J4-Pad9_ Net-_J2-Padb3_ Net-_J4-Pad11_ Net-_J2-Padb2_ GND Net-_J2-Padb1_ Power_12V_+ NC_38 Conn_02x08_Odd_Even
+J3 5V 5V 5V Net-_J3-Padb1_ Net-_J3-Padb2_ Net-_J3-Padb3_ Conn_02x03_Row_Letter_First
+C2 Power_12V_+ GND CP
+J7 Net-_J5-Pad11_ Net-_J5-Pad9_ Net-_J5-Pad7_ Net-_J5-Pad5_ Conn_01x04
+J5 GND NC_39 5V NC_40 Net-_J5-Pad5_ Net-_J5-Pad6_ Net-_J5-Pad7_ Net-_J5-Pad6_ Net-_J5-Pad9_ Net-_J3-Padb3_ Net-_J5-Pad11_ Net-_J3-Padb2_ GND Net-_J3-Padb1_ Power_12V_+ NC_41 Conn_02x08_Odd_Even
+J9 5V 5V 5V Net-_J11-Pad14_ Net-_J11-Pad12_ Net-_J11-Pad10_ Conn_02x03_Row_Letter_First
+C4 Power_12V_+ GND CP
+J13 Net-_J11-Pad11_ Net-_J11-Pad9_ Net-_J11-Pad7_ Net-_J11-Pad5_ Conn_01x04
+J11 GND NC_42 5V NC_43 Net-_J11-Pad5_ Net-_J11-Pad6_ Net-_J11-Pad7_ Net-_J11-Pad6_ Net-_J11-Pad9_ Net-_J11-Pad10_ Net-_J11-Pad11_ Net-_J11-Pad12_ GND Net-_J11-Pad14_ Power_12V_+ NC_44 Conn_02x08_Odd_Even
+J8 5V 5V 5V Net-_J10-Pad14_ Net-_J10-Pad12_ Net-_J10-Pad10_ Conn_02x03_Row_Letter_First
+C3 Power_12V_+ GND CP
+J12 Net-_J10-Pad11_ Net-_J10-Pad9_ Net-_J10-Pad7_ Net-_J10-Pad5_ Conn_01x04
+J10 GND NC_45 5V NC_46 Net-_J10-Pad5_ Net-_J10-Pad6_ Net-_J10-Pad7_ Net-_J10-Pad6_ Net-_J10-Pad9_ Net-_J10-Pad10_ Net-_J10-Pad11_ Net-_J10-Pad12_ GND Net-_J10-Pad14_ Power_12V_+ NC_47 Conn_02x08_Odd_Even
+.end

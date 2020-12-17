@@ -1,0 +1,12 @@
+.title KiCad schematic
+U1 Net-_C3-Pad1_ Net-_RV3-Pad3_ GND -12V +12V NE5532
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ C
+RV4 Net-_RV3-Pad3_ GND Net-_C3-Pad2_ POT_TRIM
+RV3 Net-_C2-Pad1_ GND Net-_RV3-Pad3_ POT_TRIM
+RV2 Net-_C2-Pad2_ GND Net-_C2-Pad1_ POT_TRIM
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ C
+J1 +12V -12V GND Conn_01x03
+RV1 Net-_C1-Pad1_ GND Net-_C2-Pad2_ POT_TRIM
+C1 Net-_C1-Pad1_ +12V C
+J2 Net-_C3-Pad1_ Conn_01x01
+.end

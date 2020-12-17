@@ -1,0 +1,8 @@
+.title KiCad schematic
+U1 -VDC VCC Net-_C2-Pad2_ GND VCC Net-_C2-Pad1_ MAX1720
+J1 GND VCC Screw_Terminal_01x02
+J2 -VDC GND Screw_Terminal_01x02
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ CP1_Small
+C1 GND -VDC CP1_Small
+C3 VCC GND CP1_Small
+.end

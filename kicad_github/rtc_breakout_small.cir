@@ -1,0 +1,13 @@
+.title KiCad schematic
+U1 Net-_C1-Pad1_ Net-_C2-Pad1_ VBAT GND VCC IRQ SCL SDA RTC
+Y1 Net-_C1-Pad1_ Net-_C2-Pad1_ 32.768KHz
+JP2 VCC VCC Jumper_NC_Small
+R1 VCC SDA 4K7
+R2 SCL VCC 4K7
+JP1 VCC VCC Jumper_NC_Small
+BT1 VBAT GND Battery
+C3 VCC GND 100nF
+C2 Net-_C2-Pad1_ GND xpF
+C1 Net-_C1-Pad1_ GND xpF
+P1 GND IRQ SCL SDA VCC VBAT CONN_01X06
+.end

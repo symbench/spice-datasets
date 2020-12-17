@@ -1,0 +1,5 @@
+.title KiCad schematic
+U1 NC_01 Net-_D2-Pad2_ MD0100
+D1 NC_02 GND 1N4148
+D2 GND Net-_D2-Pad2_ IN4148
+.end

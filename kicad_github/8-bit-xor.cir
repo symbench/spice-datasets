@@ -1,0 +1,114 @@
+.title KiCad schematic
+Q1 GND /a0 Net-_Q1-Pad3_ 2N7000
+R2 VCC Net-_Q1-Pad3_ R
+Q2 GND /b0 Net-_Q1-Pad3_ 2N7000
+Q5 Net-_Q5-Pad1_ /a0 Net-_Q5-Pad3_ 2N7000
+Q7 GND /b0 Net-_Q5-Pad1_ 2N7000
+R5 VCC Net-_Q5-Pad3_ R
+J5 /a0 /a1 /a2 /a3 /a4 /a5 /a6 /a7 J8-8_bit_bus_connector
+J7 /b0 /b1 /b2 /b3 /b4 /b5 /b6 /b7 J8-8_bit_bus_connector
+Q6 GND Net-_Q5-Pad3_ Net-_Q4-Pad2_ 2N7000
+R6 VCC Net-_Q4-Pad2_ R
+Q3 GND Net-_Q1-Pad3_ /c0 2N7000
+R3 VCC /c0 R
+Q4 GND Net-_Q4-Pad2_ /c0 2N7000
+J3 /c0 /c1 /c2 /c3 /c4 /c5 /c6 /c7 J8-8_bit_bus_connector
+Q8 GND /a1 Net-_Q10-Pad2_ 2N7000
+R8 VCC Net-_Q10-Pad2_ R
+Q9 GND /b1 Net-_Q10-Pad2_ 2N7000
+Q12 Net-_Q12-Pad1_ /a1 Net-_Q12-Pad3_ 2N7000
+Q14 GND /b1 Net-_Q12-Pad1_ 2N7000
+R11 VCC Net-_Q12-Pad3_ R
+Q13 GND Net-_Q12-Pad3_ Net-_Q11-Pad2_ 2N7000
+R12 VCC Net-_Q11-Pad2_ R
+Q10 GND Net-_Q10-Pad2_ /c1 2N7000
+R9 VCC /c1 R
+Q11 GND Net-_Q11-Pad2_ /c1 2N7000
+Q15 GND /a2 Net-_Q15-Pad3_ 2N7000
+R14 VCC Net-_Q15-Pad3_ R
+Q16 GND /b2 Net-_Q15-Pad3_ 2N7000
+Q19 Net-_Q19-Pad1_ /a2 Net-_Q19-Pad3_ 2N7000
+Q21 GND /b2 Net-_Q19-Pad1_ 2N7000
+R17 VCC Net-_Q19-Pad3_ R
+Q20 GND Net-_Q19-Pad3_ Net-_Q18-Pad2_ 2N7000
+R18 VCC Net-_Q18-Pad2_ R
+Q17 GND Net-_Q15-Pad3_ /c2 2N7000
+R15 VCC /c2 R
+Q18 GND Net-_Q18-Pad2_ /c2 2N7000
+Q22 GND /a3 Net-_Q22-Pad3_ 2N7000
+R20 VCC Net-_Q22-Pad3_ R
+Q23 GND /b3 Net-_Q22-Pad3_ 2N7000
+Q26 Net-_Q26-Pad1_ /a3 Net-_Q26-Pad3_ 2N7000
+Q28 GND /b3 Net-_Q26-Pad1_ 2N7000
+R23 VCC Net-_Q26-Pad3_ R
+Q27 GND Net-_Q26-Pad3_ Net-_Q25-Pad2_ 2N7000
+R24 VCC Net-_Q25-Pad2_ R
+Q24 GND Net-_Q22-Pad3_ /c3 2N7000
+R21 VCC /c3 R
+Q25 GND Net-_Q25-Pad2_ /c3 2N7000
+Q29 GND /a4 Net-_Q29-Pad3_ 2N7000
+R26 VCC Net-_Q29-Pad3_ R
+Q30 GND /b4 Net-_Q29-Pad3_ 2N7000
+Q33 Net-_Q33-Pad1_ /a4 Net-_Q33-Pad3_ 2N7000
+Q35 GND /b4 Net-_Q33-Pad1_ 2N7000
+R29 VCC Net-_Q33-Pad3_ R
+Q34 GND Net-_Q33-Pad3_ Net-_Q32-Pad2_ 2N7000
+R30 VCC Net-_Q32-Pad2_ R
+Q31 GND Net-_Q29-Pad3_ /c4 2N7000
+R27 VCC /c4 R
+Q32 GND Net-_Q32-Pad2_ /c4 2N7000
+Q36 GND /a5 Net-_Q36-Pad3_ 2N7000
+R32 VCC Net-_Q36-Pad3_ R
+Q37 GND /b5 Net-_Q36-Pad3_ 2N7000
+Q40 Net-_Q40-Pad1_ /a5 Net-_Q40-Pad3_ 2N7000
+Q42 GND /b5 Net-_Q40-Pad1_ 2N7000
+R35 VCC Net-_Q40-Pad3_ R
+Q41 GND Net-_Q40-Pad3_ Net-_Q39-Pad2_ 2N7000
+R36 VCC Net-_Q39-Pad2_ R
+Q38 GND Net-_Q36-Pad3_ /c5 2N7000
+R33 VCC /c5 R
+Q39 GND Net-_Q39-Pad2_ /c5 2N7000
+Q43 GND /a6 Net-_Q43-Pad3_ 2N7000
+R38 VCC Net-_Q43-Pad3_ R
+Q44 GND /b6 Net-_Q43-Pad3_ 2N7000
+Q47 Net-_Q47-Pad1_ /a6 Net-_Q47-Pad3_ 2N7000
+Q49 GND /b6 Net-_Q47-Pad1_ 2N7000
+R41 VCC Net-_Q47-Pad3_ R
+Q48 GND Net-_Q47-Pad3_ Net-_Q46-Pad2_ 2N7000
+R42 VCC Net-_Q46-Pad2_ R
+Q45 GND Net-_Q43-Pad3_ /c6 2N7000
+R39 VCC /c6 R
+Q46 GND Net-_Q46-Pad2_ /c6 2N7000
+Q50 GND /a7 Net-_Q50-Pad3_ 2N7000
+R44 VCC Net-_Q50-Pad3_ R
+Q51 GND /b7 Net-_Q50-Pad3_ 2N7000
+Q54 Net-_Q54-Pad1_ /a7 Net-_Q54-Pad3_ 2N7000
+Q56 GND /b7 Net-_Q54-Pad1_ 2N7000
+R47 VCC Net-_Q54-Pad3_ R
+Q55 GND Net-_Q54-Pad3_ Net-_Q53-Pad2_ 2N7000
+R48 VCC Net-_Q53-Pad2_ R
+Q52 GND Net-_Q50-Pad3_ /c7 2N7000
+R45 VCC /c7 R
+Q53 GND Net-_Q53-Pad2_ /c7 2N7000
+R1 GND /a0 R
+R4 GND /b0 R
+R43 GND /a7 R
+R46 GND /b7 R
+R7 GND /a1 R
+R10 GND /b1 R
+R13 GND /a2 R
+R16 GND /b2 R
+R19 GND /a3 R
+R22 GND /b3 R
+R25 GND /a4 R
+R28 GND /b4 R
+R31 GND /a5 R
+R34 GND /b5 R
+R37 GND /a6 R
+R40 GND /b6 R
+J1 VCC VCC J2-power_connector
+J6 /a0 /a1 /a2 /a3 /a4 /a5 /a6 /a7 J8-8_bit_bus_connector
+J8 /b0 /b1 /b2 /b3 /b4 /b5 /b6 /b7 J8-8_bit_bus_connector
+J2 GND GND J2-2-pole_connector
+J4 /c0 /c1 /c2 /c3 /c4 /c5 /c6 /c7 J8-8_bit_bus_connector
+.end

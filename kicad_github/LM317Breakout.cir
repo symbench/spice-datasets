@@ -1,0 +1,8 @@
+.title KiCad schematic
+R1 VOUT Net-_R1-Pad2_ R
+R3 Net-_R2-Pad2_ GND R
+R2 VOUT Net-_R2-Pad2_ R
+P2 GND VOUT CONN_01X02
+P1 GND VIN CONN_01X02
+U1 Net-_R2-Pad2_ Net-_R1-Pad2_ VIN LM317
+.end

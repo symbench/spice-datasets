@@ -1,0 +1,10 @@
+.title KiCad schematic
+R2 Net-_R1-Pad2_ GND R
+R4 Net-_R3-Pad2_ GND R
+R5 Net-_J1-Pad2_ GND R
+R6 Net-_J1-Pad2_ GND R
+R1 Net-_J1-Pad2_ Net-_R1-Pad2_ R
+R3 Net-_J1-Pad2_ Net-_R3-Pad2_ R
+J1 GND Net-_J1-Pad2_ Coax
+J2 GND Net-_J1-Pad2_ Coax
+.end

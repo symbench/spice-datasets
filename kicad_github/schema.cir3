@@ -1,0 +1,12 @@
+.title KiCad schematic
+U2 GND GND -5V Net-_R3-Pad2_ NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 +5V Net-_R2-Pad2_ Net-_R1-Pad2_ Net-_C2-Pad1_ DAC08
+R2 -10V Net-_R2-Pad2_ 6.8k
+R1 GND Net-_R1-Pad2_ 6.8k
+C1 GND -5V 100n
+C2 Net-_C2-Pad1_ -5V 10n
+C3 GND +5V 100n
+R3 Net-_R3-Pad1_ Net-_R3-Pad2_ 4,7k
+U1 NC_09 Net-_R3-Pad2_ GND -5V NC_10 Net-_R3-Pad1_ +5V NC_11 OP37G
+R4 Measure_at_the_scope Net-_R3-Pad1_ 12k
+C4 Measure_at_the_scope GND 560p
+.end

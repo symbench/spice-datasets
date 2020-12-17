@@ -1,0 +1,9 @@
+.title KiCad schematic
+M1 NC_01 Vin GND GND GND Sense Vref GND LTC6655LS8
+C1 Vin GND 1u
+C3 Vref GND 6.8u
+C2 Vin GND 10n
+J1 GND GND GND GND GND Sense Vref GND PINS_1X8
+J2 GND GND GND NC_02 Vin HeaterGround HeaterGround NC_03 PINS_1X8
+R1 Sense Vref 0
+.end

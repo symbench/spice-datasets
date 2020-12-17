@@ -1,0 +1,19 @@
+.title KiCad schematic
+U1 Net-_R1-Pad1_ GND Net-_R2-Pad2_ Net-_C3-Pad1_ Net-_R3-Pad2_ +5V MAX9617
+R3 +5V Net-_R3-Pad2_ 0
+R1 Net-_R1-Pad1_ Net-_P1-Pad2_ 10k
+R2 Net-_C3-Pad1_ Net-_R2-Pad2_ 10k
+P2 GND +5V POWER
+C1 +5V GND 1u
+P1 GND Net-_P1-Pad2_ SIG_IN
+C2 +5V GND 100n
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ >1u
+U2 Net-_RV1-Pad2_ GND Net-_R4-Pad1_ Net-_P3-Pad2_ Net-_R7-Pad2_ +5V MAX9617
+R4 Net-_R4-Pad1_ Net-_C3-Pad2_ 1k
+R6 Net-_P3-Pad2_ Net-_R4-Pad1_ 10k
+P3 GND Net-_P3-Pad2_ SIG_OUT
+R7 +5V Net-_R7-Pad2_ 0
+C4 +5V GND 100n
+RV1 Net-_R5-Pad2_ Net-_RV1-Pad2_ GND 1k
+R5 +5V Net-_R5-Pad2_ 470
+.end

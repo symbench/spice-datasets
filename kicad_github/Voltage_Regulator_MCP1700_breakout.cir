@@ -1,0 +1,4 @@
+.title KiCad schematic
+U1 GND VOUT +5V MCP1700
+P1 GND VOUT +5V CONN_01X03
+.end

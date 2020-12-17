@@ -1,0 +1,21 @@
+.title KiCad schematic
+U1 Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ GND Net-_U1-Pad9_ /SCLR /SCLK /RCLK /G /SIN Net-_J1-Pad1_ VCC 74HC595
+U2 Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ GND Net-_U2-Pad9_ /SCLR /SCLK /RCLK /G Net-_U1-Pad9_ Net-_J2-Pad1_ VCC 74LS595
+U3 Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Net-_J3-Pad7_ Net-_J3-Pad8_ GND Net-_U3-Pad9_ /SCLR /SCLK /RCLK /G Net-_U2-Pad9_ Net-_J3-Pad1_ VCC 74LS595
+U4 Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ GND /SO /SCLR /SCLK /RCLK /G Net-_U3-Pad9_ Net-_J4-Pad1_ VCC 74LS595
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ CONN_01X08
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ CONN_01X08
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Net-_J3-Pad7_ Net-_J3-Pad8_ CONN_01X08
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ CONN_01X08
+J_IN1 GND /SCLR /SCLK /RCLK /G /SIN Net-_C5-Pad1_ GND CONN_01X08
+J_OUT1 GND /SCLR /SCLK /RCLK /G /SO Net-_C5-Pad1_ GND CONN_01X08
+R1 Net-_C5-Pad1_ VCC 1
+R2 Net-_C5-Pad1_ VCC 1
+R4 Net-_C5-Pad1_ VCC 1
+R3 Net-_C5-Pad1_ VCC 1
+C4 VCC GND 100n
+C3 VCC GND 100n
+C2 VCC GND 100n
+C1 VCC GND 100n
+C5 Net-_C5-Pad1_ GND 10u
+.end

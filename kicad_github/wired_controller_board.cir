@@ -1,0 +1,55 @@
+.title KiCad schematic
+SW4 Net-_R5-Pad1_ GND NC_01 NC_02 SW_Push_Dual
+R5 Net-_R5-Pad1_ Net-_C6-Pad2_ R
+C6 GND Net-_C6-Pad2_ C
+SW10 Net-_R11-Pad1_ GND NC_03 NC_04 SW_Push_Dual
+R11 Net-_R11-Pad1_ Net-_C12-Pad2_ R
+C12 GND Net-_C12-Pad2_ C
+SW5 Net-_R6-Pad1_ GND NC_05 NC_06 SW_Push_Dual
+R6 Net-_R6-Pad1_ /sw5 R
+C7 GND /sw5 C
+SW11 Net-_R12-Pad1_ GND NC_07 NC_08 SW_Push_Dual
+R12 Net-_R12-Pad1_ Net-_C13-Pad2_ R
+C13 GND Net-_C13-Pad2_ C
+SW6 Net-_R7-Pad1_ GND NC_09 NC_10 SW_Push_Dual
+R7 Net-_R7-Pad1_ /1 R
+C8 GND /1 C
+SW12 Net-_R13-Pad1_ GND NC_11 NC_12 SW_Push_Dual
+R13 Net-_R13-Pad1_ Net-_C14-Pad2_ R
+C14 GND Net-_C14-Pad2_ C
+SW7 Net-_R8-Pad1_ GND NC_13 NC_14 SW_Push_Dual
+R8 Net-_R8-Pad1_ /17 R
+C9 GND /17 C
+SW13 Net-_R14-Pad1_ GND NC_15 NC_16 SW_Push_Dual
+R14 Net-_R14-Pad1_ Net-_C15-Pad2_ R
+C15 GND Net-_C15-Pad2_ C
+SW8 Net-_R9-Pad1_ GND NC_17 NC_18 SW_Push_Dual
+R9 Net-_R9-Pad1_ Net-_C10-Pad2_ R
+C10 GND Net-_C10-Pad2_ C
+SW14 Net-_R15-Pad1_ GND NC_19 NC_20 SW_Push_Dual
+R15 Net-_R15-Pad1_ Net-_C16-Pad2_ R
+C16 GND Net-_C16-Pad2_ C
+SW9 Net-_R10-Pad1_ GND NC_21 NC_22 SW_Push_Dual
+R10 Net-_R10-Pad1_ Net-_C11-Pad2_ R
+C11 GND Net-_C11-Pad2_ C
+SW15 Net-_R16-Pad1_ GND NC_23 NC_24 SW_Push_Dual
+R16 Net-_R16-Pad1_ Net-_C17-Pad2_ R
+C17 GND Net-_C17-Pad2_ C
+SW3 VCC Net-_R4-Pad1_ GND SW_Push_SPDT
+R4 Net-_R4-Pad1_ /15 R
+C5 GND /15 C
+SW2 VCC Net-_R3-Pad1_ GND SW_Push_SPDT
+R3 Net-_R3-Pad1_ /13 R
+C4 GND /13 C
+SW1 VCC Net-_R2-Pad1_ GND SW_Push_SPDT
+R2 Net-_R2-Pad1_ /3 R
+C3 GND /3 C
+C1 VCC GND C
+C2 VCC GND C
+R1 VCC Net-_D1-Pad2_ R
+D1 GND Net-_D1-Pad2_ LED
+SW16 Net-_R17-Pad1_ GND NC_25 NC_26 SW_Push_Dual
+R17 Net-_R17-Pad1_ Net-_C18-Pad2_ R
+C18 GND Net-_C18-Pad2_ C
+J1 /1 Net-_C10-Pad2_ /sw5 Net-_C17-Pad2_ Net-_C16-Pad2_ Net-_C11-Pad2_ /3 Net-_C18-Pad2_ VCC VCC GND GND /13 Net-_C15-Pad2_ /15 Net-_C14-Pad2_ /17 Net-_C13-Pad2_ Net-_C12-Pad2_ Net-_C6-Pad2_ Conn_02x10_Counter_Clockwise
+.end

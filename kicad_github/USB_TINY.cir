@@ -1,0 +1,25 @@
+.title KiCad schematic
+U1 /RST /RXD /TXD /PB1 NC_01 NC_02 VCC GND Net-_C4-Pad2_ Net-_C5-Pad2_ NC_03 NC_04 NC_05 /PB0 /PB1 Net-_J4-Pad1_ /MOSI /MISO /SCK VCC NC_06 GND Net-_D3-Pad1_ Net-_D4-Pad1_ Net-_J3-Pad2_ NC_07 NC_08 NC_09 ATMEGA88A-PU
+Y1 Net-_C4-Pad2_ Net-_C5-Pad2_ Crystal
+C4 GND Net-_C4-Pad2_ 22pF
+C5 GND Net-_C5-Pad2_ 22pF
+C1 GND VCC .1uF
+C2 GND VCC 10uF
+J5 /RXD Net-_J5-Pad2_ GND GND VCOM VCOM /SCK Net-_J4-Pad1_ /MISO /MOSI Conn_02x05_Odd_Even
+R4 VCC /RST 10K
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED
+R6 Net-_D4-Pad2_ VCC 1K
+R5 Net-_D3-Pad2_ VCC 1K
+J3 GND Net-_J3-Pad2_ SLOW_SCK
+J4 Net-_J4-Pad1_ /RST SELF_PROGRAMM
+R7 /TXD Net-_J5-Pad2_ 1K
+J2 VCC Net-_D1-Pad1_ Net-_D2-Pad1_ GND GND USB_B
+J1 VCC VCOM SUPPLY TARGET
+R2 /PB1 Net-_D2-Pad1_ 68
+R3 /PB0 Net-_D1-Pad1_ 68
+C3 VCC GND 4u7F
+R1 Net-_D1-Pad1_ VCC 2k2
+D1 Net-_D1-Pad1_ GND D
+D2 Net-_D2-Pad1_ GND D
+.end

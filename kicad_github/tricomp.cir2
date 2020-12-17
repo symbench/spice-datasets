@@ -1,0 +1,46 @@
+.title KiCad schematic
+U1 Net-_J1-Pad2_ Net-_D11-Pad2_ Net-_D16-Pad2_ Net-_D12-Pad2_ Net-_D17-Pad2_ Net-_D13-Pad2_ +5V Earth Net-_C3-Pad1_ Net-_C2-Pad1_ Net-_D18-Pad2_ Net-_D14-Pad2_ Net-_D10-Pad2_ NC_01 Net-_D1-Pad10_ NC_02 Net-_D1-Pad11_ Net-_J1-Pad6_ Net-_D1-Pad14_ +5V NC_03 Earth NC_04 NC_05 Net-_D1-Pad13_ Net-_D15-Pad2_ Net-_J2-Pad2_ Net-_J2-Pad1_ ATMEGA328P-PU
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ +5V Earth Power/i2c
+Y1 Net-_C2-Pad1_ Net-_C3-Pad1_ Crystal
+C2 Net-_C2-Pad1_ Earth C
+C3 Net-_C3-Pad1_ Earth C
+R1 +5V Net-_J1-Pad2_ 4.4K
+C1 +5V Earth C
+J3 Net-_D16-Pad2_ Net-_D17-Pad2_ Net-_D18-Pad2_ Net-_D10-Pad2_ Earth Conn_01x05
+J4 Net-_D11-Pad2_ Net-_D12-Pad2_ Net-_D13-Pad2_ Net-_D14-Pad2_ Net-_D15-Pad2_ Conn_01x05
+R19 +5V Net-_D10-Pad2_ R
+R18 +5V Net-_D18-Pad2_ R
+R17 +5V Net-_D17-Pad2_ R
+R16 +5V Net-_D16-Pad2_ R
+R15 +5V Net-_D15-Pad2_ R
+D1 Earth NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 Net-_D1-Pad8_ Net-_D1-Pad9_ Net-_D1-Pad10_ Net-_D1-Pad11_ Earth Net-_D1-Pad13_ Net-_D1-Pad14_ +5V NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 +5V 74HC4067
+R2 +5V Net-_D14-Pad2_ R
+R3 +5V Net-_D13-Pad2_ R
+R4 +5V Net-_D12-Pad2_ R
+R5 +5V Net-_D11-Pad2_ 10M
+SW1 Net-_D2-Pad1_ Net-_D3-Pad1_ Net-_D4-Pad1_ Net-_D1-Pad9_ Net-_D1-Pad9_ Net-_D1-Pad9_ SW_DIP_x03
+D2 Net-_D2-Pad1_ Net-_D11-Pad2_ D
+D3 Net-_D3-Pad1_ Net-_D12-Pad2_ D
+D4 Net-_D4-Pad1_ Net-_D13-Pad2_ D
+SW2 Net-_D5-Pad1_ Net-_D6-Pad1_ Net-_D7-Pad1_ Net-_D1-Pad9_ Net-_D1-Pad9_ Net-_D1-Pad9_ SW_DIP_x03
+D5 Net-_D5-Pad1_ Net-_D14-Pad2_ D
+D6 Net-_D6-Pad1_ Net-_D15-Pad2_ D
+D7 Net-_D7-Pad1_ Net-_D16-Pad2_ D
+SW3 Net-_D8-Pad1_ Net-_D9-Pad1_ Net-_D10-Pad1_ Net-_D1-Pad9_ Net-_D1-Pad9_ Net-_D1-Pad9_ SW_DIP_x03
+D8 Net-_D8-Pad1_ Net-_D17-Pad2_ D
+D9 Net-_D9-Pad1_ Net-_D18-Pad2_ D
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ D
+J1 Earth Net-_J1-Pad2_ Net-_D1-Pad11_ Net-_D1-Pad14_ +5V Net-_J1-Pad6_ ISP
+SW4 Net-_D11-Pad1_ Net-_D12-Pad1_ Net-_D13-Pad1_ Net-_D1-Pad8_ Net-_D1-Pad8_ Net-_D1-Pad8_ SW_DIP_x03
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ D
+D12 Net-_D12-Pad1_ Net-_D12-Pad2_ D
+D13 Net-_D13-Pad1_ Net-_D13-Pad2_ D
+SW5 Net-_D14-Pad1_ Net-_D15-Pad1_ Net-_D16-Pad1_ Net-_D1-Pad8_ Net-_D1-Pad8_ Net-_D1-Pad8_ SW_DIP_x03
+D14 Net-_D14-Pad1_ Net-_D14-Pad2_ D
+D15 Net-_D15-Pad1_ Net-_D15-Pad2_ D
+D16 Net-_D16-Pad1_ Net-_D16-Pad2_ D
+SW6 Net-_D17-Pad1_ Net-_D18-Pad1_ Net-_D19-Pad1_ Net-_D1-Pad8_ Net-_D1-Pad8_ Net-_D1-Pad8_ SW_DIP_x03
+D17 Net-_D17-Pad1_ Net-_D17-Pad2_ D
+D18 Net-_D18-Pad1_ Net-_D18-Pad2_ D
+D19 Net-_D19-Pad1_ Net-_D10-Pad2_ D
+.end

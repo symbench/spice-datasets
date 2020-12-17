@@ -1,0 +1,41 @@
+.title KiCad schematic
+J1 /S3 /S2 Net-_D3-Pad1_ Net-_D2-Pad1_ Earth +5V NC_01 NC_02 Net-_D1-Pad1_ Conn_01x09
+R17 Net-_D3-Pad1_ +5V R
+R18 Net-_D2-Pad1_ +5V R
+R19 Net-_D1-Pad1_ +5V R
+R16 Net-_J17-Pad2_ +5V R
+J17 Earth Net-_J17-Pad2_ Earth Net-_D2-Pad17_ Net-_D2-Pad16_ Net-_D3-Pad9_ Conn_01x06
+R15 Net-_J16-Pad2_ +5V R
+J16 Earth Net-_J16-Pad2_ Earth Net-_D3-Pad8_ Net-_D3-Pad7_ Net-_D3-Pad6_ Conn_01x06
+R14 Net-_J15-Pad2_ +5V R
+J15 Earth Net-_J15-Pad2_ Earth Net-_D3-Pad5_ Net-_D3-Pad4_ Net-_D3-Pad3_ Conn_01x06
+R13 Net-_J14-Pad2_ +5V R
+J14 Earth Net-_J14-Pad2_ Earth Net-_D3-Pad2_ Net-_D3-Pad23_ Net-_D3-Pad22_ Conn_01x06
+R12 Net-_J13-Pad2_ +5V R
+J13 Earth Net-_J13-Pad2_ Earth Net-_D3-Pad21_ Net-_D3-Pad20_ Net-_D3-Pad19_ Conn_01x06
+R11 Net-_J12-Pad2_ +5V R
+J12 Earth Net-_J12-Pad2_ Earth Net-_D3-Pad18_ Net-_D3-Pad17_ Net-_D3-Pad16_ Conn_01x06
+R10 Net-_J11-Pad2_ +5V R
+J11 Earth Net-_J11-Pad2_ Earth Net-_D1-Pad16_ Net-_D2-Pad9_ Net-_D2-Pad8_ Conn_01x06
+R9 Net-_J10-Pad2_ +5V R
+J10 Earth Net-_J10-Pad2_ Earth Net-_D2-Pad7_ Net-_D2-Pad6_ Net-_D2-Pad5_ Conn_01x06
+R8 Net-_J9-Pad2_ +5V R
+J9 Earth Net-_J9-Pad2_ Earth Net-_D2-Pad4_ Net-_D2-Pad3_ Net-_D2-Pad2_ Conn_01x06
+R7 Net-_J8-Pad2_ +5V R
+J8 Earth Net-_J8-Pad2_ Earth Net-_D2-Pad23_ Net-_D2-Pad22_ NC_03 Conn_01x06
+R6 Net-_J7-Pad2_ +5V R
+J7 Earth Net-_J7-Pad2_ Earth Net-_D2-Pad20_ Net-_D2-Pad19_ Net-_D2-Pad18_ Conn_01x06
+R5 Net-_J6-Pad2_ +5V R
+J6 Earth Net-_J6-Pad2_ Earth Net-_D1-Pad9_ Net-_D1-Pad8_ Net-_D1-Pad7_ Conn_01x06
+R4 Net-_J5-Pad2_ +5V R
+J5 Earth Net-_J5-Pad2_ Earth Net-_D1-Pad6_ Net-_D1-Pad5_ Net-_D1-Pad4_ Conn_01x06
+R3 Net-_J4-Pad2_ +5V R
+J4 Earth Net-_J4-Pad2_ Earth Net-_D1-Pad3_ Net-_D1-Pad2_ Net-_D1-Pad23_ Conn_01x06
+R2 Net-_J3-Pad2_ +5V R
+J3 Earth Net-_J3-Pad2_ Earth Net-_D1-Pad22_ Net-_D1-Pad21_ Net-_D1-Pad20_ Conn_01x06
+R1 Net-_J2-Pad2_ +5V R
+J2 Earth Net-_J2-Pad2_ Earth Net-_D1-Pad19_ Net-_D1-Pad18_ Net-_D1-Pad17_ Conn_01x06
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ Net-_D1-Pad3_ Net-_D1-Pad4_ Net-_D1-Pad5_ Net-_D1-Pad6_ Net-_D1-Pad7_ Net-_D1-Pad8_ Net-_D1-Pad9_ /S0 /S1 Earth /S3 /S2 Earth Net-_D1-Pad16_ Net-_D1-Pad17_ Net-_D1-Pad18_ Net-_D1-Pad19_ Net-_D1-Pad20_ Net-_D1-Pad21_ Net-_D1-Pad22_ Net-_D1-Pad23_ +5V 74HC4067
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ Net-_D3-Pad3_ Net-_D3-Pad4_ Net-_D3-Pad5_ Net-_D3-Pad6_ Net-_D3-Pad7_ Net-_D3-Pad8_ Net-_D3-Pad9_ /S0 /S1 Earth /S3 /S2 Earth Net-_D3-Pad16_ Net-_D3-Pad17_ Net-_D3-Pad18_ Net-_D3-Pad19_ Net-_D3-Pad20_ Net-_D3-Pad21_ Net-_D3-Pad22_ Net-_D3-Pad23_ +5V 74HC4067
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ Net-_D2-Pad3_ Net-_D2-Pad4_ Net-_D2-Pad5_ Net-_D2-Pad6_ Net-_D2-Pad7_ Net-_D2-Pad8_ Net-_D2-Pad9_ /S0 /S1 Earth /S3 /S2 Earth Net-_D2-Pad16_ Net-_D2-Pad17_ Net-_D2-Pad18_ Net-_D2-Pad19_ Net-_D2-Pad20_ NC_04 Net-_D2-Pad22_ Net-_D2-Pad23_ +5V 74HC4067
+.end

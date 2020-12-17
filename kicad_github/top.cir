@@ -1,0 +1,25 @@
+.title KiCad schematic
+U1 GND Android
+U3 GND Foot
+U2 GND EyeCam
+U4 GND EyepieceBreakout
+P2 Net-_P2-Pad1_ Net-_P2-Pad2_ CON_SHD
+P5 /Eyepiece/EyepieceMCU/MT_EN /Eyepiece/EyepieceMCU/MT_DIR CON_MT_STOP
+P4 Net-_P4-Pad1_ Net-_P4-Pad2_ CON_MT
+P7 /Eyepiece/STEP_STOP GND CON_STEP_STOP
+P9 Net-_P8-Pad1_ Net-_P9-Pad2_ /Eyepiece/EyepieceMCU/SRV2 GND CON_SRV1
+P8 Net-_P8-Pad1_ /Eyepiece/EyepieceMCU/SRV2 GND CON_SRV2
+P6 Net-_P6-Pad1_ Net-_P6-Pad2_ Net-_P6-Pad3_ Net-_P6-Pad4_ CON_STEP
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ /Eyepiece/EyepieceMCU/BL_CS /Eyepiece/VIN GND CON_BL
+P3 Net-_P3-Pad1_ Net-_P3-Pad2_ CON_SOL
+U7 NC_01 NC_02 NC_03 NC_04 /Eyepiece/STEP_STOP /Eyepiece/EyepieceMCU/SHD_DRV /Eyepiece/EyepieceMCU/~MT_DIR /Eyepiece/EyepieceMCU/MT_EN /Eyepiece/EyepieceMCU/PWR_SEL Net-_U5-Pad~_ /Eyepiece/EyepieceMCU/SRV2 Net-_P11-Pad1_ Net-_U6-Pad1_ /Eyepiece/EyepieceMCU/MOSI/STEP_DIR/SOL_DIR /Eyepiece/EyepieceMCU/MISO /Eyepiece/EyepieceMCU/SCLK /Eyepiece/EyepieceMCU/MT_DIR /Eyepiece/EyepieceMCU/STEP/SOL_EN /Eyepiece/EyepieceMCU/~STEP_SLP Net-_R1-Pad2_ NC_05 NC_06 Net-_R1-Pad1_ NC_07 NC_08 GND /Eyepiece/VIN /Eyepiece/RXD /Eyepiece/TXD NC_09 /Eyepiece/EyepieceMCU/LIGHT NC_10 Net-_U6-Pad3_ Net-_U6-Pad2_ NC_11 NC_12 NC_13 Net-_C1-Pad1_ /Eyepiece/EyepieceMCU/BL_CS /Eyepiece/EyepieceMCU/~SHD_SLP ProMini
+U6 Net-_U6-Pad1_ Net-_U6-Pad2_ Net-_U6-Pad3_ GND Net-_U5-Pad~_ Net-_U5-Pad~_ Net-_U5-Pad~_ Net-_C1-Pad1_ MCP4151
+U5 GND Pololu_S7V8A
+C1 Net-_C1-Pad1_ GND 0.1uF
+C2 Net-_C1-Pad1_ GND 33uF
+R3 /Eyepiece/EyepieceMCU/MISO /Eyepiece/EyepieceMCU/MOSI/STEP_DIR/SOL_DIR 3.9K
+R1 Net-_R1-Pad1_ Net-_R1-Pad2_ 10K
+R2 /Eyepiece/EyepieceMCU/VREG Net-_R1-Pad2_ 20K
+P10 /Eyepiece/EyepieceMCU/~MT_DIR /Eyepiece/EyepieceMCU/MT_EN CON_MT_STOP2
+P11 Net-_P11-Pad1_ NC_14 GND CONN_01X03
+.end

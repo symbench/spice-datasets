@@ -1,0 +1,13 @@
+.title KiCad schematic
+U2 GND GND -5V Net-_R3-Pad2_ /D7 /D6 /D5 /D4 /D3 /D2 /D1 /D0 +5V Net-_R2-Pad2_ Net-_R1-Pad2_ Net-_C2-Pad1_ DAC08
+R2 -10V Net-_R2-Pad2_ 6.8k
+R1 GND Net-_R1-Pad2_ 6.8k
+C1 GND -5V 100n
+C2 Net-_C2-Pad1_ -5V 10n
+C3 GND +5V 100n
+R3 Net-_R3-Pad1_ Net-_R3-Pad2_ 4,7k
+U1 NC_01 Net-_R3-Pad2_ GND -5V NC_02 Net-_R3-Pad1_ +5V NC_03 OP37G
+R4 Measure_at_the_scope Net-_R3-Pad1_ 12k
+C4 Measure_at_the_scope GND 560p
+U3 /D4 /D3 NC_04 NC_05 /D2 /D1 /D0 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 /D7 /D5 /D6 NC_39 FPGA_Pluto
+.end

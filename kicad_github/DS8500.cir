@@ -1,0 +1,23 @@
+.title KiCad schematic
+U2 VCC VCC GND NC_01 NC_02 GND Net-_C3-Pad2_ Net-_C4-Pad2_ GND GND VCC Net-_C8-Pad2_ Net-_C5-Pad2_ NC_03 GND GND VCC GND NC_04 Net-_R3-Pad2_ DS8500
+Y1 Net-_C4-Pad2_ Net-_C3-Pad2_ 3.6864MHz
+C3 GND Net-_C3-Pad2_ 22p
+C4 GND Net-_C4-Pad2_ 22p
+C5 GND Net-_C5-Pad2_ 100n
+JP3 Net-_C8-Pad2_ Net-_C8-Pad1_ Jumper_NO_Small
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 100n
+W1 Net-_C8-Pad1_ FSK_OUT
+C9 Net-_C8-Pad1_ Net-_C8-Pad2_ 100n
+W2 GND GND
+R4 Net-_R3-Pad2_ GND 20k
+R3 Net-_P2-Pad2_ Net-_R3-Pad2_ 10k
+P1 GND +5V POWER
+U1 GND VCC +5V AP1117V5
+C1 +5V GND 1u
+C2 VCC GND 1u
+C7 VCC GND 100n
+C6 VCC GND 100n
+W3 Net-_R3-Pad2_ FSK_IN
+W4 GND GND
+P2 GND Net-_P2-Pad2_ INTERFACE
+.end

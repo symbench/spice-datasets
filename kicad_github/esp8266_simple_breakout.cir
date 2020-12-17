@@ -1,0 +1,16 @@
+.title KiCad schematic
+U2 RST Net-_J1-Pad9_ Net-_R2-Pad1_ Net-_J1-Pad7_ Net-_J1-Pad6_ Net-_J1-Pad5_ Net-_J1-Pad4_ +3V3 GND Net-_R5-Pad2_ Net-_R4-Pad2_ GPIO0 Net-_J2-Pad4_ Net-_J2-Pad3_ Net-_J2-Pad2_ Net-_J2-Pad1_ ESP-12
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ NC_01 NC_02 NC_03 GND GND GND Conn_01x10
+J1 +5V +3V3 +3V3 Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ NC_04 Net-_J1-Pad9_ RST Conn_01x10
+U1 GND +3V3 +5V AZ1117-3.3
+C1 +5V GND C_Small
+C2 +3V3 GND C_Small
+C3 +3V3 GND C_Small
+R3 +3V3 GPIO0 R_Small
+R4 +3V3 Net-_R4-Pad2_ R_Small
+R5 GND Net-_R5-Pad2_ R_Small
+R2 Net-_R2-Pad1_ +3V3 R_Small
+R1 RST +3V3 R_Small
+SW1 RST +3V3 SW_Push
+SW2 GPIO0 +3V3 SW_Push
+.end

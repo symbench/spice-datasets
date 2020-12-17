@@ -1,0 +1,57 @@
+.title KiCad schematic
+IC1 Net-_IC1-Pad1_ Net-_IC1-Pad2_ Net-_IC1-Pad3_ ctrl_out0 ctrl_out1 ctrl_out2 ctrl_out3 GND Net-_IC1-Pad9_ NC_01 ctrl_out7 ctrl_out6 ctrl_out5 ctrl_out4 Net-_IC1-Pad15_ VCC CD4094
+J2 VCC Net-_IC1-Pad15_ Net-_IC1-Pad1_ Net-_IC1-Pad9_ Net-_IC1-Pad3_ GND OUT
+J1 VCC Net-_IC1-Pad15_ Net-_IC1-Pad1_ Net-_IC1-Pad2_ Net-_IC1-Pad3_ GND IN
+C13 VCC GND 100n
+R18 Net-_IC1-Pad15_ GND 100k
+IC2 GND VPWR VPWR ctrl_out0 OVERLOAD /Power out/out_pwr0 /Power out/out_pwr0 NC_02 AP24x1
+IC3 GND VPWR VPWR ctrl_out1 OVERLOAD /Power out/out_pwr1 /Power out/out_pwr1 NC_03 AP24x1
+IC4 GND VPWR VPWR ctrl_out2 OVERLOAD /Power out/out_pwr2 /Power out/out_pwr2 NC_04 AP24x1
+IC5 GND VPWR VPWR ctrl_out3 OVERLOAD /Power out/out_pwr3 /Power out/out_pwr3 NC_05 AP24x1
+IC6 GND VPWR VPWR ctrl_out4 OVERLOAD /Power out/out_pwr4 /Power out/out_pwr4 NC_06 AP24x1
+IC7 GND VPWR VPWR ctrl_out5 OVERLOAD /Power out/out_pwr5 /Power out/out_pwr5 NC_07 AP24x1
+IC8 GND VPWR VPWR ctrl_out6 OVERLOAD /Power out/out_pwr6 /Power out/out_pwr6 NC_08 AP24x1
+IC9 GND VPWR VPWR ctrl_out7 OVERLOAD /Power out/out_pwr7 /Power out/out_pwr7 NC_09 AP24x1
+P1 /Power out/out_pwr0 GND /Power out/out_pwr1 GND /Power out/out_pwr2 GND /Power out/out_pwr3 GND /Power out/out_pwr4 GND /Power out/out_pwr5 GND /Power out/out_pwr6 GND /Power out/out_pwr7 GND PWR_OUT
+J4 VPWR GND CONN_01X02
+J3 VPWR GND CONN_01X02
+D1 Net-_D1-Pad1_ VPWR 1N4001
+R1 Net-_D1-Pad1_ OVERLOAD R
+D2 Net-_D1-Pad1_ VPWR 1N4001
+R4 Net-_D5-Pad1_ ctrl_out2 4k7
+D5 Net-_D5-Pad1_ GND LED_Small
+R12 ctrl_out2 GND 100k
+R3 Net-_D4-Pad1_ ctrl_out1 4k7
+D4 Net-_D4-Pad1_ GND LED_Small
+R11 ctrl_out1 GND 100k
+R2 Net-_D3-Pad1_ ctrl_out0 4k7
+D3 Net-_D3-Pad1_ GND LED_Small
+R10 ctrl_out0 GND 100k
+R5 Net-_D6-Pad1_ ctrl_out3 4k7
+D6 Net-_D6-Pad1_ GND LED_Small
+R13 ctrl_out3 GND 100k
+R6 Net-_D7-Pad1_ ctrl_out4 4k7
+D7 Net-_D7-Pad1_ GND LED_Small
+R14 ctrl_out4 GND 100k
+R7 Net-_D8-Pad1_ ctrl_out5 4k7
+D8 Net-_D8-Pad1_ GND LED_Small
+R15 ctrl_out5 GND 100k
+R8 Net-_D9-Pad1_ ctrl_out6 4k7
+D9 Net-_D9-Pad1_ GND LED_Small
+R16 ctrl_out6 GND 100k
+R9 Net-_D10-Pad1_ ctrl_out7 4k7
+D10 Net-_D10-Pad1_ GND LED_Small
+R17 ctrl_out7 GND 100k
+C8 GND /Power out/out_pwr0 100n
+C9 GND /Power out/out_pwr1 100n
+C5 GND /Power out/out_pwr2 100n
+C10 GND /Power out/out_pwr3 100n
+C6 GND /Power out/out_pwr4 100n
+C11 GND /Power out/out_pwr5 100n
+C7 GND /Power out/out_pwr6 100n
+C12 GND /Power out/out_pwr7 100n
+C1 GND VPWR 100n
+C2 GND VPWR 100n
+C3 GND VPWR 100n
+C4 GND VPWR 100n
+.end

@@ -1,0 +1,15 @@
+.title KiCad schematic
+VoltageReg1 /GND /Vout /Vin /Vout AP1117
+C2 /Vout /GND CP1
+C1 /Vin /GND CP1
+P1 /Vout /GND /Vin CONN_01X03
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R1 Net-_D1-Pad2_ Net-_P2-Pad5_ 330
+D2 Net-_D1-Pad1_ Net-_D2-Pad2_ LED
+R2 Net-_D2-Pad2_ Net-_P2-Pad4_ 330
+D3 Net-_D1-Pad1_ Net-_D3-Pad2_ LED
+R3 Net-_D3-Pad2_ Net-_P2-Pad3_ 330
+D4 Net-_D1-Pad1_ Net-_D4-Pad2_ LED
+R4 Net-_D4-Pad2_ Net-_P2-Pad2_ 330
+P2 Net-_D1-Pad1_ Net-_P2-Pad2_ Net-_P2-Pad3_ Net-_P2-Pad4_ Net-_P2-Pad5_ CONN_01X05
+.end

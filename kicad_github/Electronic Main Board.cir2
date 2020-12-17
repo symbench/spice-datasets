@@ -1,0 +1,61 @@
+.title KiCad schematic
+P9 GND Net-_P9-Pad2_ +5VD Net-_P9-Pad4_ CONN_4
+L1 +5VD Net-_C3-Pad1_ INDUCTOR
+D3 Net-_D3-Pad1_ GND LED
+P8 +5VD +5V CAVALIER
+P7 GND +5V Net-_P7-Pad3_ /RS /R/W /E /D0 /D1 /D2 /D3 /D4 /D5 /D6 /D7 +5V GND HE10-16
+C8 +5VD GND 10n
+C7 +5VD GND 10n
+C6 +5VD GND 10n
+C5 +5VD GND 10n
+C4 +5VD GND 10n
+C3 Net-_C3-Pad1_ GND 10n
+K1 +5V GND CONN_2
+D2 +5V Net-_D2-Pad2_ vert
+R10 Net-_D2-Pad2_ GND 1,5k
+RVAR1 +5V GND Net-_P7-Pad3_ 10k
+K7 GND +5V /S4 CONN_3
+K8 GND +5V /S5 CONN_3
+K9 GND +5V /S6 CONN_3
+K6 GND +5V /S3 CONN_3
+K5 GND +5V /S2 CONN_3
+K4 GND +5V /S1 CONN_3
+R20 Net-_D3-Pad1_ Net-_K2-Pad1_ 1.5k
+K2 Net-_K2-Pad1_ +5VD CONN_2
+C2 Net-_C2-Pad1_ GND 22p
+C1 Net-_C1-Pad1_ GND 22p
+X1 Net-_C1-Pad1_ Net-_C2-Pad1_ 7.3728
+SW2 GND Net-_P2-Pad3_ SW_PUSH_SMALL
+P2 Net-_K3-Pad2_ Net-_P2-Pad2_ Net-_P2-Pad3_ CAVALIER2
+K3 GND Net-_K3-Pad2_ CONN_2
+R21 /RST Net-_P2-Pad2_ 100
+R19 +5VD /RST 10k
+R11 /H +5VD 8 x 10k
+R12 /G +5VD ~
+R14 /I +5VD ~
+R13 /F +5VD ~
+R17 Net-_R17-Pad1_ +5VD ~
+R18 Net-_R18-Pad1_ +5VD ~
+R16 Net-_R16-Pad1_ +5VD ~
+R15 Net-_R15-Pad1_ +5VD ~
+R5 Net-_R5-Pad1_ +5VD ~
+R6 Net-_R6-Pad1_ +5VD ~
+R8 Net-_R8-Pad1_ +5VD ~
+R7 Net-_R7-Pad1_ +5VD ~
+R3 /B +5VD ~
+R4 /A +5VD ~
+R2 /C +5VD ~
+R1 /D +5VD 8 x 10k
+R9 Net-_D1-Pad2_ GND 1,5k
+D1 +5VD Net-_D1-Pad2_ vert
+J1 /RST +5VD GND /PGD /PGC NC_01 NC_02 NC_03 RJ12
+U2 +5VD GND GND Net-_R18-Pad1_ Net-_R17-Pad1_ Net-_R16-Pad1_ Net-_R15-Pad1_ GND /I /F /G /H NC_04 /SCL /SDA +5VD PCF8574T
+U1 GND GND GND Net-_R8-Pad1_ Net-_R7-Pad1_ Net-_R6-Pad1_ Net-_R5-Pad1_ GND /A /B /C /D NC_05 /SCL /SDA +5VD PCF8574T
+P5 GND +5VD /SCL /SDA CONN_4
+P3 GND Net-_P3-Pad2_ +5VD Net-_P3-Pad4_ CONN_4
+P6 Net-_P6-Pad1_ +5VD ~
+P4 Net-_P4-Pad1_ +5VD ~
+R22 Net-_P4-Pad1_ /SDA 2.1k
+R23 Net-_P6-Pad1_ /SCL 2.1k
+U3 /RST /D0 /D1 /D2 /D3 /RS /R/W /PGC /PGD /E +5VD GND Net-_C1-Pad1_ Net-_C2-Pad1_ Net-_P9-Pad2_ Net-_P9-Pad4_ NC_06 NC_07 /S4 GND +5VD /S3 NC_08 Net-_K2-Pad1_ /SCL /SDA Net-_P3-Pad2_ Net-_P3-Pad4_ /S6 /S5 GND +5VD /S2 /S1 /D7 /D6 /D5 /D4 GND Net-_C3-Pad1_ DSPIC30F4013
+.end

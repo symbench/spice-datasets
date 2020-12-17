@@ -1,0 +1,61 @@
+.title KiCad schematic
+JP8 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 M08
+JP7 Net-_JP7-Pad1_ Net-_JP7-Pad2_ Net-_JP7-Pad3_ Net-_JP7-Pad4_ Net-_JP7-Pad5_ Net-_JP7-Pad6_ Net-_JP7-Pad7_ Net-_JP7-Pad8_ M08
+JP6 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 M08
+JP4 Net-_JP4-Pad1_ Net-_JP4-Pad2_ Net-_JP4-Pad3_ Net-_JP4-Pad4_ Net-_JP4-Pad5_ Net-_JP4-Pad6_ M06
+JP3 Net-_JP3-Pad1_ Net-_JP3-Pad2_ NC_17 Net-_JP3-Pad4_ M04
+JP5 NC_18 NC_19 NC_20 NC_21 Net-_JP5-Pad5_ Net-_JP5-Pad6_ NC_22 Net-_JP5-Pad8_ NC_23 NC_24 M10
+U1 /debug_leds/0 /debug_leds/1 /debug_leds/2 /debug_leds/3 /debug_leds/4 /debug_leds/5 VCC /debug_leds/6 /debug_leds/7 /mcu/GPIO3 /mcu/GPIO2 /mcu/GPIO1 /mcu/GPIO0 Net-_JP5-Pad5_ Net-_JP5-Pad6_ /buttons/26 /buttons/27 /buttons/28 /buttons/29 /buttons/30 /buttons/31 /buttons/32 /buttons/33 Net-_JP7-Pad1_ Net-_JP7-Pad2_ Net-_JP7-Pad3_ Net-_JP7-Pad4_ Net-_JP7-Pad5_ Net-_JP7-Pad6_ Net-_JP7-Pad7_ Net-_JP7-Pad8_ +3V3 Net-_JP2-Pad1_ Net-_JP2-Pad2_ Net-_JP2-Pad3_ Net-_JP2-Pad4_ Net-_JP2-Pad5_ Net-_JP2-Pad6_ Net-_JP4-Pad1_ Net-_JP4-Pad2_ Net-_JP4-Pad3_ Net-_JP4-Pad4_ Net-_JP4-Pad5_ Net-_JP4-Pad6_ Net-_JP5-Pad8_ GND GND GND IORef NC_25 Net-_JP1-Pad3_ /mcu/SCL /mcu/SDA Net-_JP3-Pad2_ Net-_JP3-Pad1_ VIn GNDREF Net-_JP3-Pad4_ ARDUINO_PYNQ_SHIELD
+JP1 NC_26 NC_27 Net-_JP1-Pad3_ NC_28 NC_29 NC_30 NC_31 NC_32 M08
+JP2 Net-_JP2-Pad1_ Net-_JP2-Pad2_ Net-_JP2-Pad3_ Net-_JP2-Pad4_ Net-_JP2-Pad5_ Net-_JP2-Pad6_ M06
+R10 Net-_D5-Pad2_ /debug_leds/7 R
+D5 GND Net-_D5-Pad2_ LED
+R11 Net-_D6-Pad2_ /debug_leds/6 R
+D6 GND Net-_D6-Pad2_ LED
+R12 Net-_D7-Pad2_ /debug_leds/5 R
+D7 GND Net-_D7-Pad2_ LED
+R13 Net-_D8-Pad2_ /debug_leds/4 R
+D8 GND Net-_D8-Pad2_ LED
+R14 Net-_D9-Pad2_ /debug_leds/3 R
+D9 GND Net-_D9-Pad2_ LED
+R15 Net-_D10-Pad2_ /debug_leds/2 R
+D10 GND Net-_D10-Pad2_ LED
+R16 Net-_D11-Pad2_ /debug_leds/1 R
+D11 GND Net-_D11-Pad2_ LED
+R17 Net-_D12-Pad2_ /debug_leds/0 R
+D12 GND Net-_D12-Pad2_ LED
+R3 Net-_D1-Pad2_ /buttons/29 R
+D1 GND Net-_D1-Pad2_ LED
+R4 Net-_D2-Pad2_ /buttons/28 R
+D2 GND Net-_D2-Pad2_ LED
+R5 Net-_D3-Pad2_ /buttons/27 R
+D3 GND Net-_D3-Pad2_ LED
+R6 Net-_D4-Pad2_ /buttons/26 R
+D4 GND Net-_D4-Pad2_ LED
+SW3 /buttons/32 GND SW_PUSHBUTTON
+R7 /buttons/32 +3V3 R
+SW2 /buttons/33 GND SW_PUSHBUTTON
+R2 /buttons/33 +3V3 R
+SW4 /buttons/31 GND SW_PUSHBUTTON
+R8 /buttons/31 +3V3 R
+SW5 /buttons/30 GND SW_PUSHBUTTON
+R9 /buttons/30 +3V3 R
+U2 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 NC_56 NC_57 NC_58 NC_59 NC_60 GND Net-_J1-Pad13_ NC_61 NC_62 NC_63 NC_64 NC_65 NC_66 GND +3V3 NC_67 +3V3 Net-_J1-Pad7_ NC_68 NC_69 NC_70 NC_71 NC_72 NC_73 NC_74 Net-_J1-Pad9_ /mcu/GPIO0 /mcu/GPIO1 /mcu/GPIO3 NC_75 NC_76 NC_77 NC_78 +3V3 GND /mcu/GPIO2 Net-_C1-Pad1_ NC_79 NC_80 GND +3V3 +3V3 GND NC_81 NC_82 NC_83 NC_84 /mcu/SDA NC_85 NC_86 GND +3V3 NC_87 NC_88 NC_89 NC_90 NC_91 NC_92 /mcu/SCL NC_93 NC_94 NC_95 NC_96 NC_97 /display/SCK /display/CS /display/EXTMODE NC_98 /display/EXTCOMIN NC_99 GND NC_100 Net-_J1-Pad15_ GND /mcu/decouplingAV/AVDD /mcu/decouplingAV/AVDD GND NC_101 NC_102 NC_103 NC_104 +3V3 NC_105 NC_106 GND NC_107 /mcu/CLK/HFXTAL_N /mcu/decouplingAV/AVDD /display/MOSI EFM32GG990F1024
+J1 +3V3 NC_108 NC_109 GND NC_110 GND Net-_J1-Pad7_ GND Net-_J1-Pad9_ GND NC_111 GND Net-_J1-Pad13_ GND Net-_J1-Pad15_ GND NC_112 GND NC_113 GND CONN_02X10
+C1 Net-_C1-Pad1_ GND 10u
+Y1 +3V3 GND /mcu/CLK/HFXTAL_N +3V3 Crystal_GND23
+C4 +3V3 GND 100n
+C5 +3V3 GND 100n
+C6 +3V3 GND 100n
+C7 +3V3 GND 100n
+C8 +3V3 GND 100n
+C9 +3V3 GND 10u
+C10 /mcu/decouplingAV/AVDD GND 10n
+C11 /mcu/decouplingAV/AVDD GND 10n
+C12 /mcu/decouplingAV/AVDD GND 10n
+C13 /mcu/decouplingAV/AVDD GND 10u
+R1 /mcu/decouplingAV/AVDD Net-_L1-Pad2_ R
+L1 +3V3 Net-_L1-Pad2_ L
+D13 NC_114 NC_115 NC_116 NC_117 NC_118 NC_119 NC_120 NC_121 NC_122 NC_123 LS013B4DN04
+B1 /display/SCK /display/MOSI /display/CS /display/EXTCOMIN +3V3 NC_124 +3V3 /display/EXTMODE GND NC_125 Board_Connector
+.end

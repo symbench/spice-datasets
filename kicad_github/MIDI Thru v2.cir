@@ -1,0 +1,50 @@
+.title KiCad schematic
+P1 GND Net-_D1-Pad2_ 9v DC IN
+U1 GND Net-_C1-Pad1_ Net-_C2-Pad1_ 7805
+D2 Net-_C1-Pad1_ Net-_D1-Pad2_ 1N4001
+P2 GND Net-_D1-Pad1_ 9v DC OUT
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ 1N4001
+D3 Net-_C1-Pad1_ GND 1N4001
+P3 GND Net-_P3-Pad2_ POWER LED
+R1 Net-_C1-Pad1_ Net-_P3-Pad2_ R
+C1 Net-_C1-Pad1_ GND 47uF
+C2 Net-_C2-Pad1_ GND 0.1uF
+P4 Net-_P4-Pad1_ Net-_D4-Pad2_ IN 1
+U2 Net-_D4-Pad1_ Net-_D4-Pad2_ GND Net-_R5-Pad1_ NC_01 Net-_P13-Pad1_ 6N136
+R2 Net-_D4-Pad1_ Net-_P4-Pad1_ 220
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ 1n4148
+R5 Net-_R5-Pad1_ Net-_P13-Pad1_ 10K
+P5 Net-_P5-Pad1_ Net-_D5-Pad2_ IN_2
+U3 Net-_D5-Pad1_ Net-_D5-Pad2_ GND Net-_R6-Pad1_ NC_02 Net-_P13-Pad1_ 6N136
+R3 Net-_D5-Pad1_ Net-_P5-Pad1_ 220
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ 1n4148
+R6 Net-_R6-Pad1_ Net-_P13-Pad1_ 10K
+P6 Net-_P6-Pad1_ Net-_D6-Pad2_ IN_3
+U4 Net-_D6-Pad1_ Net-_D6-Pad2_ GND Net-_R7-Pad1_ NC_03 Net-_P13-Pad1_ 6N136
+R4 Net-_D6-Pad1_ Net-_P6-Pad1_ 220
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ 1n4148
+R7 Net-_R7-Pad1_ Net-_P13-Pad1_ 10K
+U5 Net-_R5-Pad1_ Net-_U5-Pad1_ Net-_P13-Pad1_ Net-_C2-Pad1_ Net-_R7-Pad1_ Net-_R6-Pad1_ Net-_P13-Pad2_ GND TeensyLC
+U6 Net-_U5-Pad1_ Net-_R8-Pad2_ Net-_R8-Pad2_ Net-_R10-Pad2_ Net-_R8-Pad2_ Net-_R11-Pad2_ GND Net-_R12-Pad2_ Net-_R8-Pad2_ Net-_R13-Pad2_ Net-_R8-Pad2_ Net-_R20-Pad2_ Net-_R8-Pad2_ Net-_C2-Pad1_ 74HCT14
+R8 Net-_Q1-Pad3_ Net-_R8-Pad2_ 10K
+Q1 GND Net-_P7-Pad2_ Net-_Q1-Pad3_ 2N3904
+P7 Net-_P7-Pad1_ Net-_P7-Pad2_ ACTIVITY_LED
+R9 Net-_C2-Pad1_ Net-_P7-Pad1_ 220
+P8 GND Net-_P8-Pad2_ Net-_P8-Pad3_ OUT1
+R10 Net-_P8-Pad2_ Net-_R10-Pad2_ 220
+R15 Net-_P8-Pad3_ Net-_C2-Pad1_ 220
+P9 GND Net-_P9-Pad2_ Net-_P9-Pad3_ OUT2
+R11 Net-_P9-Pad2_ Net-_R11-Pad2_ 220
+R16 Net-_P9-Pad3_ Net-_C2-Pad1_ 220
+P10 GND Net-_P10-Pad2_ Net-_P10-Pad3_ OUT3
+R12 Net-_P10-Pad2_ Net-_R12-Pad2_ 220
+R17 Net-_P10-Pad3_ Net-_C2-Pad1_ 220
+P11 GND Net-_P11-Pad2_ Net-_P11-Pad3_ OUT4
+R13 Net-_P11-Pad2_ Net-_R13-Pad2_ 220
+R18 Net-_P11-Pad3_ Net-_C2-Pad1_ 220
+P12 GND Net-_P12-Pad2_ Net-_P12-Pad3_ OUT5
+R19 Net-_P12-Pad3_ Net-_C2-Pad1_ 220
+R20 Net-_P12-Pad2_ Net-_R20-Pad2_ 220
+R14 Net-_P13-Pad2_ GND 10K
+P13 Net-_P13-Pad1_ Net-_P13-Pad2_ PANIC_BUTTON
+.end

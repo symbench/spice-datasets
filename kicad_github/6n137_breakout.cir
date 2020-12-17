@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 NC_01 Net-_J1-Pad2_ Net-_J1-Pad4_ NC_02 GND Net-_J2-Pad2_ Net-_JP1-Pad2_ VCC 6N137
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Conn_02x02_Odd_Even
+R3 VCC Net-_J2-Pad2_ R_Small
+J2 VCC Net-_J2-Pad2_ GND Conn_01x03
+JP1 VCC Net-_JP1-Pad2_ Jumper_NO_Small
+R1 Net-_J1-Pad1_ Net-_J1-Pad2_ R_Small
+R2 Net-_J1-Pad4_ Net-_J1-Pad3_ R_Small
+.end

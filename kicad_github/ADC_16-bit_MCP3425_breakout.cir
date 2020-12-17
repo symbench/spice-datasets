@@ -1,0 +1,4 @@
+.title KiCad schematic
+U1 VIN+ GND SCL SDA +5V VIN- MCP3425
+P1 VIN+ GND SCL SDA +5V VIN- CONN_01X06
+.end

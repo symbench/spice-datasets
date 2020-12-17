@@ -1,0 +1,52 @@
+.title KiCad schematic
+U1 Net-_U1-Pad1_ /AQ1 /AQ2 /AQ3 /AQ4 /AQ5 /AQ6 /AQ7 /AQ8 /AQ9 /AQ10 GND /AQ11 /AQ12 /AQ13 /AQ14 /AQ15 GND GND /AS3 /AS2 /AS1 /AS0 VCC 74LS154
+J1 D0 D20 D1 D21 D2 D22 D3 D23 D4 D24 D5 D25 D6 D26 D7 D27 D8 D28 D9 D29 D10 D30 D11 D31 D12 /W0 D13 /W1 D14 /W2 D15 /W3 D16 Net-_J1-Pad34_ D17 Net-_J1-Pad36_ D18 Net-_J1-Pad38_ D19 Net-_J1-Pad40_ CONN_02X20
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ Net-_J2-Pad10_ Net-_J2-Pad11_ Net-_J2-Pad12_ /CS3 /CS2 /CS1 /CS0 /BS3 /BS2 /BS1 /BS0 /AS3 /AS2 /AS1 /AS0 Net-_J2-Pad25_ Net-_J2-Pad26_ Net-_J2-Pad27_ Net-_J2-Pad28_ Net-_J2-Pad29_ Net-_J2-Pad30_ Net-_J2-Pad31_ Net-_J2-Pad32_ Net-_J2-Pad33_ Net-_J2-Pad34_ Net-_J2-Pad35_ Net-_J2-Pad36_ Net-_J2-Pad37_ Net-_J2-Pad38_ Net-_J2-Pad39_ Net-_J2-Pad40_ CONN_02X20
+J5 Net-_J12-Pad1_ Net-_J12-Pad2_ Net-_J12-Pad3_ Net-_J12-Pad4_ Net-_J12-Pad5_ Net-_J12-Pad6_ Net-_J12-Pad7_ Net-_J12-Pad8_ Net-_J12-Pad9_ Net-_J12-Pad10_ Net-_J12-Pad11_ Net-_J12-Pad12_ Net-_J12-Pad13_ Net-_J12-Pad14_ Net-_J12-Pad15_ Net-_J12-Pad16_ Net-_J12-Pad17_ Net-_J12-Pad18_ Net-_J12-Pad19_ Net-_J12-Pad20_ Net-_J12-Pad21_ Net-_J12-Pad22_ Net-_J12-Pad23_ Net-_J12-Pad24_ Net-_J12-Pad25_ Net-_J12-Pad26_ Net-_J12-Pad27_ Net-_J12-Pad28_ Net-_J12-Pad29_ Net-_J12-Pad30_ Net-_J12-Pad31_ Net-_J12-Pad32_ Net-_J12-Pad33_ Net-_J12-Pad34_ Net-_J12-Pad35_ Net-_J12-Pad36_ Net-_J12-Pad37_ Net-_J12-Pad38_ Net-_J12-Pad39_ Net-_J12-Pad40_ CONN_02X20
+J6 Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Net-_J13-Pad4_ Net-_J13-Pad5_ Net-_J13-Pad6_ Net-_J13-Pad7_ Net-_J13-Pad8_ Net-_J13-Pad9_ Net-_J13-Pad10_ Net-_J13-Pad11_ Net-_J13-Pad12_ Net-_J13-Pad13_ Net-_J13-Pad14_ Net-_J13-Pad15_ Net-_J13-Pad16_ Net-_J13-Pad17_ Net-_J13-Pad18_ Net-_J13-Pad19_ Net-_J13-Pad20_ Net-_J13-Pad21_ Net-_J13-Pad22_ Net-_J13-Pad23_ Net-_J13-Pad24_ Net-_J13-Pad25_ Net-_J13-Pad26_ Net-_J13-Pad27_ Net-_J13-Pad28_ Net-_J13-Pad29_ Net-_J13-Pad30_ Net-_J13-Pad31_ Net-_J13-Pad32_ Net-_J13-Pad33_ Net-_J13-Pad34_ Net-_J13-Pad35_ Net-_J13-Pad36_ Net-_J13-Pad37_ Net-_J13-Pad38_ Net-_J13-Pad39_ Net-_J13-Pad40_ CONN_02X20
+J7 Net-_J14-Pad1_ Net-_J14-Pad2_ Net-_J14-Pad3_ Net-_J14-Pad4_ Net-_J14-Pad5_ Net-_J14-Pad6_ Net-_J14-Pad7_ Net-_J14-Pad8_ Net-_J14-Pad9_ Net-_J14-Pad10_ Net-_J14-Pad11_ Net-_J14-Pad12_ Net-_J14-Pad13_ Net-_J14-Pad14_ Net-_J14-Pad15_ Net-_J14-Pad16_ Net-_J14-Pad17_ Net-_J14-Pad18_ Net-_J14-Pad19_ Net-_J14-Pad20_ Net-_J14-Pad21_ Net-_J14-Pad22_ Net-_J14-Pad23_ Net-_J14-Pad24_ Net-_J14-Pad25_ Net-_J14-Pad26_ Net-_J14-Pad27_ Net-_J14-Pad28_ Net-_J14-Pad29_ Net-_J14-Pad30_ Net-_J14-Pad31_ Net-_J14-Pad32_ Net-_J14-Pad33_ Net-_J14-Pad34_ Net-_J14-Pad35_ Net-_J14-Pad36_ Net-_J14-Pad37_ Net-_J14-Pad38_ Net-_J14-Pad39_ Net-_J14-Pad40_ CONN_02X20
+U3 Net-_U3-Pad1_ /BQ1 /BQ2 /BQ3 /BQ4 /BQ5 /BQ6 /BQ7 /BQ8 /BQ9 /BQ10 GND /BQ11 /BQ12 /BQ13 /BQ14 /BQ15 GND GND /BS3 /BS2 /BS1 /BS0 VCC 74LS154
+U6 Net-_U12-Pad1_ /CQ1 /CQ2 /CQ3 /CQ4 /CQ5 /CQ6 /CQ7 /CQ8 /CQ9 /CQ10 GND /CQ11 /CQ12 /CQ13 /CQ14 /CQ15 GND GND /CS3 /CS2 /CS1 /CS0 VCC 74LS154
+J3 Net-_J10-Pad1_ GND GND VCC CONN_01X04
+RN9 GND /C0 /C1 /C2 /C3 /C4 /C5 /C6 /C7 3.3K
+RN10 GND /C8 /C9 /C10 /C11 /C12 /C13 /C14 /C15 3.3K
+RN11 GND /C16 /C17 /C18 /C19 /C20 /C21 /C22 /C23 3.3K
+RN12 GND /C24 /C25 /C26 /C27 /C28 /C29 /C30 /C31 3.3K
+RN5 GND /B0 /B1 /B2 /B3 /B4 /B5 /B6 /B7 3.3K
+RN6 GND /B8 /B9 /B10 /B11 /B12 /B13 /B14 /B15 3.3K
+RN7 GND /B16 /B17 /B18 /B19 /B20 /B21 /B22 /B23 3.3K
+RN8 GND /B24 /B25 /B26 /B27 /B28 /B29 /B30 /B31 3.3K
+RN1 GND /A0 /A1 /A2 /A3 /A4 /A5 /A6 /A7 3.3K
+RN2 GND /A8 /A9 /A10 /A11 /A12 /A13 /A14 /A15 3.3K
+RN3 GND /A16 /A17 /A18 /A19 /A20 /A21 /A22 /A23 3.3K
+RN4 GND /A24 /A25 /A26 /A27 /A28 /A29 /A30 /A31 3.3K
+U4 /~Clock Net-_U10-Pad2_ /WR7 Net-_U10-Pad4_ /WR6 Net-_U10-Pad6_ /WR5 Net-_U10-Pad8_ /WR4 GND Net-_U10-Pad11_ /WR3 Net-_U10-Pad13_ /WR2 Net-_U10-Pad15_ /WR1 Net-_U10-Pad17_ Net-_U10-Pad18_ /~Clock VCC 74LS240
+U5 /~Clock Net-_U11-Pad2_ /WR15 Net-_U11-Pad4_ /WR14 Net-_U11-Pad6_ /WR13 Net-_U11-Pad8_ /WR12 GND Net-_U11-Pad11_ /WR11 Net-_U11-Pad13_ /WR10 Net-_U11-Pad15_ /WR9 Net-_U11-Pad17_ /WR8 /~Clock VCC 74LS240
+J4 /~Clock Net-_J11-Pad2_ /~RS CONN_01X03
+U2 Net-_U2-Pad1_ Net-_U10-Pad4_ Net-_U10-Pad6_ Net-_U10-Pad8_ Net-_U10-Pad11_ Net-_U10-Pad13_ Net-_U10-Pad15_ Net-_U10-Pad17_ Net-_U11-Pad2_ Net-_U11-Pad4_ Net-_U11-Pad6_ GND Net-_U11-Pad8_ Net-_U11-Pad11_ Net-_U11-Pad13_ Net-_U11-Pad15_ Net-_U11-Pad17_ GND GND /W3 /W2 /W1 /W0 VCC 74LS154
+U7 Net-_U1-Pad1_ /AQ1 /AQ2 /AQ3 /AQ4 /AQ5 /AQ6 /AQ7 /AQ8 /AQ9 /AQ10 GND /AQ11 /AQ12 /AQ13 /AQ14 /AQ15 GND GND /AS3 /AS2 /AS1 /AS0 VCC 74LS154
+J8 D0 D20 D1 D21 D2 D22 D3 D23 D4 D24 D5 D25 D6 D26 D7 D27 D8 D28 D9 D29 D10 D30 D11 D31 D12 /W0 D13 /W1 D14 /W2 D15 /W3 D16 Net-_J1-Pad34_ D17 Net-_J1-Pad36_ D18 Net-_J1-Pad38_ D19 Net-_J1-Pad40_ CONN_02X20
+J9 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ Net-_J2-Pad10_ Net-_J2-Pad11_ Net-_J2-Pad12_ /CS3 /CS2 /CS1 /CS0 /BS3 /BS2 /BS1 /BS0 /AS3 /AS2 /AS1 /AS0 Net-_J2-Pad25_ Net-_J2-Pad26_ Net-_J2-Pad27_ Net-_J2-Pad28_ Net-_J2-Pad29_ Net-_J2-Pad30_ Net-_J2-Pad31_ Net-_J2-Pad32_ Net-_J2-Pad33_ Net-_J2-Pad34_ Net-_J2-Pad35_ Net-_J2-Pad36_ Net-_J2-Pad37_ Net-_J2-Pad38_ Net-_J2-Pad39_ Net-_J2-Pad40_ CONN_02X20
+J12 Net-_J12-Pad1_ Net-_J12-Pad2_ Net-_J12-Pad3_ Net-_J12-Pad4_ Net-_J12-Pad5_ Net-_J12-Pad6_ Net-_J12-Pad7_ Net-_J12-Pad8_ Net-_J12-Pad9_ Net-_J12-Pad10_ Net-_J12-Pad11_ Net-_J12-Pad12_ Net-_J12-Pad13_ Net-_J12-Pad14_ Net-_J12-Pad15_ Net-_J12-Pad16_ Net-_J12-Pad17_ Net-_J12-Pad18_ Net-_J12-Pad19_ Net-_J12-Pad20_ Net-_J12-Pad21_ Net-_J12-Pad22_ Net-_J12-Pad23_ Net-_J12-Pad24_ Net-_J12-Pad25_ Net-_J12-Pad26_ Net-_J12-Pad27_ Net-_J12-Pad28_ Net-_J12-Pad29_ Net-_J12-Pad30_ Net-_J12-Pad31_ Net-_J12-Pad32_ Net-_J12-Pad33_ Net-_J12-Pad34_ Net-_J12-Pad35_ Net-_J12-Pad36_ Net-_J12-Pad37_ Net-_J12-Pad38_ Net-_J12-Pad39_ Net-_J12-Pad40_ CONN_02X20
+J13 Net-_J13-Pad1_ Net-_J13-Pad2_ Net-_J13-Pad3_ Net-_J13-Pad4_ Net-_J13-Pad5_ Net-_J13-Pad6_ Net-_J13-Pad7_ Net-_J13-Pad8_ Net-_J13-Pad9_ Net-_J13-Pad10_ Net-_J13-Pad11_ Net-_J13-Pad12_ Net-_J13-Pad13_ Net-_J13-Pad14_ Net-_J13-Pad15_ Net-_J13-Pad16_ Net-_J13-Pad17_ Net-_J13-Pad18_ Net-_J13-Pad19_ Net-_J13-Pad20_ Net-_J13-Pad21_ Net-_J13-Pad22_ Net-_J13-Pad23_ Net-_J13-Pad24_ Net-_J13-Pad25_ Net-_J13-Pad26_ Net-_J13-Pad27_ Net-_J13-Pad28_ Net-_J13-Pad29_ Net-_J13-Pad30_ Net-_J13-Pad31_ Net-_J13-Pad32_ Net-_J13-Pad33_ Net-_J13-Pad34_ Net-_J13-Pad35_ Net-_J13-Pad36_ Net-_J13-Pad37_ Net-_J13-Pad38_ Net-_J13-Pad39_ Net-_J13-Pad40_ CONN_02X20
+J14 Net-_J14-Pad1_ Net-_J14-Pad2_ Net-_J14-Pad3_ Net-_J14-Pad4_ Net-_J14-Pad5_ Net-_J14-Pad6_ Net-_J14-Pad7_ Net-_J14-Pad8_ Net-_J14-Pad9_ Net-_J14-Pad10_ Net-_J14-Pad11_ Net-_J14-Pad12_ Net-_J14-Pad13_ Net-_J14-Pad14_ Net-_J14-Pad15_ Net-_J14-Pad16_ Net-_J14-Pad17_ Net-_J14-Pad18_ Net-_J14-Pad19_ Net-_J14-Pad20_ Net-_J14-Pad21_ Net-_J14-Pad22_ Net-_J14-Pad23_ Net-_J14-Pad24_ Net-_J14-Pad25_ Net-_J14-Pad26_ Net-_J14-Pad27_ Net-_J14-Pad28_ Net-_J14-Pad29_ Net-_J14-Pad30_ Net-_J14-Pad31_ Net-_J14-Pad32_ Net-_J14-Pad33_ Net-_J14-Pad34_ Net-_J14-Pad35_ Net-_J14-Pad36_ Net-_J14-Pad37_ Net-_J14-Pad38_ Net-_J14-Pad39_ Net-_J14-Pad40_ CONN_02X20
+U9 Net-_U3-Pad1_ /BQ1 /BQ2 /BQ3 /BQ4 /BQ5 /BQ6 /BQ7 /BQ8 /BQ9 /BQ10 GND /BQ11 /BQ12 /BQ13 /BQ14 /BQ15 GND GND /BS3 /BS2 /BS1 /BS0 VCC 74LS154
+U12 Net-_U12-Pad1_ /CQ1 /CQ2 /CQ3 /CQ4 /CQ5 /CQ6 /CQ7 /CQ8 /CQ9 /CQ10 GND /CQ11 /CQ12 /CQ13 /CQ14 /CQ15 GND GND /CS3 /CS2 /CS1 /CS0 VCC 74LS154
+J10 Net-_J10-Pad1_ GND GND VCC CONN_01X04
+RN21 GND /C0 /C1 /C2 /C3 /C4 /C5 /C6 /C7 3.3K
+RN22 GND /C8 /C9 /C10 /C11 /C12 /C13 /C14 /C15 3.3K
+RN23 GND /C16 /C17 /C18 /C19 /C20 /C21 /C22 /C23 3.3K
+RN24 GND /C24 /C25 /C26 /C27 /C28 /C29 /C30 /C31 3.3K
+RN17 GND /B0 /B1 /B2 /B3 /B4 /B5 /B6 /B7 3.3K
+RN18 GND /B8 /B9 /B10 /B11 /B12 /B13 /B14 /B15 3.3K
+RN19 GND /B16 /B17 /B18 /B19 /B20 /B21 /B22 /B23 3.3K
+RN20 GND /B24 /B25 /B26 /B27 /B28 /B29 /B30 /B31 3.3K
+RN13 GND /A0 /A1 /A2 /A3 /A4 /A5 /A6 /A7 3.3K
+RN14 GND /A8 /A9 /A10 /A11 /A12 /A13 /A14 /A15 3.3K
+RN15 GND /A16 /A17 /A18 /A19 /A20 /A21 /A22 /A23 3.3K
+RN16 GND /A24 /A25 /A26 /A27 /A28 /A29 /A30 /A31 3.3K
+U10 /~Clock Net-_U10-Pad2_ /WR7 Net-_U10-Pad4_ /WR6 Net-_U10-Pad6_ /WR5 Net-_U10-Pad8_ /WR4 GND Net-_U10-Pad11_ /WR3 Net-_U10-Pad13_ /WR2 Net-_U10-Pad15_ /WR1 Net-_U10-Pad17_ Net-_U10-Pad18_ /~Clock VCC 74LS240
+U11 /~Clock Net-_U11-Pad2_ /WR15 Net-_U11-Pad4_ /WR14 Net-_U11-Pad6_ /WR13 Net-_U11-Pad8_ /WR12 GND Net-_U11-Pad11_ /WR11 Net-_U11-Pad13_ /WR10 Net-_U11-Pad15_ /WR9 Net-_U11-Pad17_ /WR8 /~Clock VCC 74LS240
+J11 /~Clock Net-_J11-Pad2_ /~RS CONN_01X03
+U8 Net-_U2-Pad1_ Net-_U10-Pad4_ Net-_U10-Pad6_ Net-_U10-Pad8_ Net-_U10-Pad11_ Net-_U10-Pad13_ Net-_U10-Pad15_ Net-_U10-Pad17_ Net-_U11-Pad2_ Net-_U11-Pad4_ Net-_U11-Pad6_ GND Net-_U11-Pad8_ Net-_U11-Pad11_ Net-_U11-Pad13_ Net-_U11-Pad15_ Net-_U11-Pad17_ GND GND /W3 /W2 /W1 /W0 VCC 74LS154
+.end

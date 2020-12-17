@@ -1,0 +1,5 @@
+.title KiCad schematic
+Q1 Net-_Q1-Pad1_ VCC Net-_Q1-Pad3_ IRF540N
+U1 Net-_Q1-Pad1_ NC_01 NC_02 GND +5V LM358
+R1 Net-_Q1-Pad3_ GND 1ohm
+.end

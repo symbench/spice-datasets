@@ -1,0 +1,50 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ Net-_D1-Pad3_ Net-_D1-Pad4_ Net-_D1-Pad5_ /COL3 Net-_D1-Pad7_ /COL2 /COL1 Net-_D1-Pad10_ Net-_D1-Pad11_ /COL0 7seg_4digit_cc
+U4 Net-_D1-Pad7_ Net-_D1-Pad4_ Net-_D1-Pad2_ Net-_D1-Pad1_ Net-_D1-Pad10_ Net-_D1-Pad5_ Net-_D1-Pad3_ GND /Q70 /~MR /SPI_CLK /STROBE GND /D_CHAIN_IN Net-_D1-Pad11_ +5V 74HC595_mine
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ Net-_D2-Pad3_ Net-_D2-Pad4_ Net-_D2-Pad5_ /COL3 Net-_D2-Pad7_ /COL2 /COL1 Net-_D2-Pad10_ Net-_D2-Pad11_ /COL0 7seg_4digit_cc
+U6 Net-_D2-Pad7_ Net-_D2-Pad4_ Net-_D2-Pad2_ Net-_D2-Pad1_ Net-_D2-Pad10_ Net-_D2-Pad5_ Net-_D2-Pad3_ GND /Q71 /~MR /SPI_CLK /STROBE GND /Q70 Net-_D2-Pad11_ +5V 74HC595_mine
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ Net-_D3-Pad3_ Net-_D3-Pad4_ Net-_D3-Pad5_ /COL3 Net-_D3-Pad7_ /COL2 /COL1 Net-_D3-Pad10_ Net-_D3-Pad11_ /COL0 7seg_4digit_cc
+U7 Net-_D3-Pad7_ Net-_D3-Pad4_ Net-_D3-Pad2_ Net-_D3-Pad1_ Net-_D3-Pad10_ Net-_D3-Pad5_ Net-_D3-Pad3_ GND /Q72 /~MR /SPI_CLK /STROBE GND /Q71 Net-_D3-Pad11_ +5V 74HC595_mine
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ Net-_D4-Pad3_ Net-_D4-Pad4_ Net-_D4-Pad5_ /COL3 Net-_D4-Pad7_ /COL2 /COL1 Net-_D4-Pad10_ Net-_D4-Pad11_ /COL0 7seg_4digit_cc
+U8 Net-_D4-Pad7_ Net-_D4-Pad4_ Net-_D4-Pad2_ Net-_D4-Pad1_ Net-_D4-Pad10_ Net-_D4-Pad5_ Net-_D4-Pad3_ GND /Q73 /~MR /SPI_CLK /STROBE GND /Q72 Net-_D4-Pad11_ +5V 74HC595_mine
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ Net-_D5-Pad3_ Net-_D5-Pad4_ Net-_D5-Pad5_ /COL3 Net-_D5-Pad7_ /COL2 /COL1 Net-_D5-Pad10_ Net-_D5-Pad11_ /COL0 7seg_4digit_cc
+U9 Net-_D5-Pad7_ Net-_D5-Pad4_ Net-_D5-Pad2_ Net-_D5-Pad1_ Net-_D5-Pad10_ Net-_D5-Pad5_ Net-_D5-Pad3_ GND /Q74 /~MR /SPI_CLK /STROBE GND /Q73 Net-_D5-Pad11_ +5V 74HC595_mine
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ Net-_D6-Pad3_ Net-_D6-Pad4_ Net-_D6-Pad5_ /COL3 Net-_D6-Pad7_ /COL2 /COL1 Net-_D6-Pad10_ Net-_D6-Pad11_ /COL0 7seg_4digit_cc
+U10 Net-_D6-Pad7_ Net-_D6-Pad4_ Net-_D6-Pad2_ Net-_D6-Pad1_ Net-_D6-Pad10_ Net-_D6-Pad5_ Net-_D6-Pad3_ GND /Q75 /~MR /SPI_CLK /STROBE GND /Q74 Net-_D6-Pad11_ +5V 74HC595_mine
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ Net-_D7-Pad3_ Net-_D7-Pad4_ Net-_D7-Pad5_ /COL3 Net-_D7-Pad7_ /COL2 /COL1 Net-_D7-Pad10_ Net-_D7-Pad11_ /COL0 7seg_4digit_cc
+U11 Net-_D7-Pad7_ Net-_D7-Pad4_ Net-_D7-Pad2_ Net-_D7-Pad1_ Net-_D7-Pad10_ Net-_D7-Pad5_ Net-_D7-Pad3_ GND /Q76 /~MR /SPI_CLK /STROBE GND /Q75 Net-_D7-Pad11_ +5V 74HC595_mine
+D8 Net-_D8-Pad1_ Net-_D8-Pad2_ Net-_D8-Pad3_ Net-_D8-Pad4_ Net-_D8-Pad5_ /COL3 Net-_D8-Pad7_ /COL2 /COL1 Net-_D8-Pad10_ Net-_D8-Pad11_ /COL0 7seg_4digit_cc
+U12 Net-_D8-Pad7_ Net-_D8-Pad4_ Net-_D8-Pad2_ Net-_D8-Pad1_ Net-_D8-Pad10_ Net-_D8-Pad5_ Net-_D8-Pad3_ GND NC_01 /~MR /SPI_CLK /STROBE GND /Q76 Net-_D8-Pad11_ +5V 74HC595_mine
+C12 +5V GND 100n
+C11 +5V GND 100n
+C8 +5V GND 100n
+C13 +5V GND 100n
+C14 +5V GND 100n
+C15 +5V GND 100n
+C16 +5V GND 100n
+C6 +5V GND 100n
+U5 NC_02 Net-_C9-Pad2_ Net-_C10-Pad2_ NC_03 +3V3 Net-_C7-Pad1_ /RS485_DE /RS485_TX /RS485_RX /GATE3 /SPI_CLK /GATE2 /D_CHAIN_IN NC_04 GND +3V3 /STROBE /~MR /GATE1 /GATE0 STM32F030F4Px
+U1 /RS485_RX /RS485_DE /RS485_DE /RS485_TX GND /RS485_A /RS485_B +3V3 SP3485CN
+C3 GND +3V3 100n
+U2 GND +3V3 +5V LD1117S33CTR
+C4 GND +3V3 100n
+C2 GND +5V 100n
+C1 +5V GND 1000u
+Q4 /GATE0 Net-_Q1-Pad2_ /COL0 IRLML6244
+Q3 /GATE1 Net-_Q1-Pad2_ /COL1 IRLML6244
+Q2 /GATE2 Net-_Q1-Pad2_ /COL2 IRLML6244
+Q1 /GATE3 Net-_Q1-Pad2_ /COL3 IRLML6244
+Y1 Net-_C10-Pad2_ Net-_C9-Pad2_ 8MHz
+C9 GND Net-_C9-Pad2_ 22p
+C10 GND Net-_C10-Pad2_ 22p
+R1 Net-_Q1-Pad2_ GND R
+P1 /RS485_A GND /RS485_B GND GND GND GND GND GND GND CONN_02X05
+P2 /RS485_A GND /RS485_B GND GND GND GND GND GND GND CONN_02X05
+U3 Net-_C5-Pad1_ Net-_C5-Pad2_ Net-_Q1-Pad2_ GND GND Net-_C7-Pad2_ Net-_C7-Pad1_ GND LM358
+R2 Net-_C5-Pad2_ GND R
+R3 Net-_C5-Pad1_ Net-_C5-Pad2_ R
+R4 Net-_C7-Pad2_ Net-_C5-Pad1_ R
+R5 Net-_C7-Pad1_ Net-_C7-Pad2_ R
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ C
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ C
+.end

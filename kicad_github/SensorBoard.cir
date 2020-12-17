@@ -1,0 +1,31 @@
+.title KiCad schematic
+H1 /5V NC_01 /O.S /clockPin /latchPin /dataPin NC_02 GND /3V3 /SCL /SDA /PT_TOP /PR_BOT NC_03 NC_04 GND CE_Header
+D8 Net-_D8-Pad1_ Net-_D8-Pad2_ LED
+R15 GND Net-_D8-Pad1_ 320
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ LED
+R14 GND Net-_D7-Pad1_ 320
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ LED
+R13 GND Net-_D6-Pad1_ 320
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ LED
+R12 GND Net-_D5-Pad1_ 320
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED
+R11 GND Net-_D4-Pad1_ 320
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+R10 GND Net-_D3-Pad1_ 320
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+R9 GND Net-_D2-Pad1_ 320
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R8 GND Net-_D1-Pad1_ 320
+R5 /5V /PT_TOP 10kΩ
+U1 /SDA /SCL /O.S GND Net-_R2-Pad1_ Net-_R3-Pad1_ Net-_R4-Pad1_ /3V3 DS7505
+R2 Net-_R2-Pad1_ GND 0Ω
+R3 Net-_R3-Pad1_ GND 0Ω
+R4 Net-_R4-Pad1_ GND 0Ω
+R1 /3V3 /O.S 10kΩ
+R6 /PT_TOP /PR_BOT Photo Resitor
+R7 /PR_BOT GND 0Ω
+U2 Net-_D7-Pad2_ Net-_D6-Pad2_ Net-_D5-Pad2_ Net-_D4-Pad2_ Net-_D3-Pad2_ Net-_D2-Pad2_ Net-_D1-Pad2_ GND NC_05 /3V3 /clockPin /latchPin GND /dataPin Net-_D8-Pad2_ /3V3 74HC595-PWR
+C2 /latchPin GND 100pF 50V
+C3 GND /3V3 100pF 50V
+C1 GND /3V3 100pF 50V
+.end

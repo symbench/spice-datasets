@@ -1,0 +1,32 @@
+.title KiCad schematic
+U1 NC_01 Net-_C2-Pad2_ Net-_R3-Pad2_ Net-_+5V1-PadVO_ Net-_C1-Pad2_ Net-_C2-Pad2_ Net-_R1-Pad1_ NC_02 LM555N
+C1 Net-_+12V1-PadGND_ Net-_C1-Pad2_ 10n
+R2 Net-_R1-Pad1_ Net-_C2-Pad2_ 12k
+R1 Net-_R1-Pad1_ Net-_+5V1-PadVO_ 2.2k
+1N400X1 /18V Net-_1N400X1-Pad2_ D
+C7 /18V Net-_+12V1-PadGND_ 220u
+C8 Net-_+12V1-PadVO_ Net-_+12V1-PadGND_ 47u
+C9 Net-_+5V1-PadVO_ Net-_+12V1-PadGND_ 47u
+R5 Net-_D5-Pad2_ Net-_+5V1-PadVO_ 270
+D5 Net-_+12V1-PadGND_ Net-_D5-Pad2_ LED
+2N2222 Net-_2N2222-Pad1_ Net-_2N2222-Pad2_ Net-_+12V1-PadGND_ Q_NPN_BCE
+R4 /18V Net-_2N2222-Pad2_ 1.8k
+2N2222_1 Net-_2N2222-Pad2_ /18V Net-_2N2222_1-Pad3_ Q_NPN_BCE
+2N2907 Net-_2N2222-Pad2_ Net-_+12V1-PadGND_ Net-_2N2222_1-Pad3_ Q_PNP_BCE
+C3 Net-_2N2222_1-Pad3_ Net-_1N400X2-Pad2_ 47u
+1N400X2 Net-_+12V1-PadGND_ Net-_1N400X2-Pad2_ D
+1N400X3 Net-_1N400X2-Pad2_ Net-_-12V1-PadVI_ D
+C4 Net-_+12V1-PadGND_ Net-_-12V1-PadVI_ 47u
+C5 Net-_+12V1-PadGND_ Net-_-12V1-PadVO_ 47u
+R3 Net-_2N2222-Pad1_ Net-_R3-Pad2_ 3.3k
+C2 Net-_+12V1-PadGND_ Net-_C2-Pad2_ 47n
+-12V1 Net-_+12V1-PadGND_ Net-_-12V1-PadVI_ Net-_-12V1-PadVO_ LM2990
+-5V1 Net-_+12V1-PadGND_ Net-_-12V1-PadVO_ Net-_-5V1-PadVO_ LM2990
+C6 Net-_+12V1-PadGND_ Net-_-5V1-PadVO_ 47u
++12V1 Net-_+12V1-PadGND_ /18V Net-_+12V1-PadVO_ LM2940
++5V1 Net-_+12V1-PadGND_ Net-_+12V1-PadVO_ Net-_+5V1-PadVO_ LM2940
+P1 Net-_+12V1-PadGND_ Net-_+5V1-PadVO_ NC_03 NC_04 NC_05 Net-_+12V1-PadVO_ NC_06 Net-_-12V1-PadVO_ NC_07 NC_08 NC_09 Net-_1N400X1-Pad2_ NC_10 NC_11 NC_12 NC_13 NC_14 Net-_-5V1-PadVO_ Net-_+3.3V1-PadVO_ CONN_01X19
++3.3V1 Net-_+12V1-PadGND_ Net-_+12V1-PadVO_ Net-_+3.3V1-PadVO_ LM1117T
+C10 Net-_+3.3V1-PadVO_ Net-_+12V1-PadGND_ 47u
+P2 Net-_+12V1-PadGND_ Net-_+5V1-PadVO_ NC_15 NC_16 NC_17 Net-_+12V1-PadVO_ NC_18 Net-_-12V1-PadVO_ NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 Net-_-5V1-PadVO_ Net-_+3.3V1-PadVO_ CONN_01X19
+.end

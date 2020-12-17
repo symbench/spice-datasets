@@ -1,0 +1,7 @@
+.title KiCad schematic
+K1 Net-_C1-Pad2_ NC_01 Net-_D2-Pad1_ CONN_3
+D1 Net-_C1-Pad1_ Net-_C1-Pad2_ LED ROJO
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ 1N4148
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 100n
+R1 Net-_C1-Pad1_ Net-_D2-Pad2_ 100K
+.end

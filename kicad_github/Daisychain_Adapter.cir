@@ -1,0 +1,7 @@
+.title KiCad schematic
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ CONN_01X05
+P2 Net-_P1-Pad1_ Net-_P1-Pad2_ NC_01 Net-_P1-Pad4_ Net-_P1-Pad5_ CONN_01X05
+P3 Net-_P1-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ CONN_01X05
+MTG3 MTG_HOLE
+MTG2 MTG_HOLE
+.end

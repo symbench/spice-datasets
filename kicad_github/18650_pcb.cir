@@ -1,0 +1,6 @@
+.title KiCad schematic
+BT1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ Net-_BT1-Pad3_ Net-_BT1-Pad3_ 2x_Battery_Holder
+P1 Net-_BT1-Pad3_ Net-_BT1-Pad1_ CONN_01X02
+BT2 Net-_BT1-Pad1_ Net-_BT1-Pad2_ Net-_BT1-Pad3_ Net-_BT1-Pad3_ 2x_Battery_Holder
+F1 Net-_BT1-Pad1_ Net-_BT1-Pad2_ 1A
+.end

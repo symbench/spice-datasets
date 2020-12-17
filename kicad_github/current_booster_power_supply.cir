@@ -1,0 +1,66 @@
+.title KiCad schematic
+R2 Net-_C3-Pad1_ /for_+5 10
+U2 Net-_C3-Pad1_ GND +5V L7805
+J4 +5V GND Screw_Terminal_01x02
+J5 +5V GND Screw_Terminal_01x02
+C3 Net-_C3-Pad1_ GND C
+C7 +5V GND C
+C4 Net-_C3-Pad1_ GND CP
+C9 +5V GND CP
+R1 Net-_C1-Pad1_ /for_+12 10
+U1 Net-_C5-Pad1_ +12V Net-_C1-Pad1_ LM317_3PinPackage
+C2 Net-_C1-Pad1_ GND C
+C1 Net-_C1-Pad1_ GND .1uF
+C6 +12V GND C
+C8 +12V GND 1uF
+R3 +12V Net-_C5-Pad1_ 330R
+D2 +12V Net-_C5-Pad1_ IN4001
+R4 Net-_C10-Pad1_ /for_adj1 10
+U3 Net-_C33-Pad1_ /ADJ_1 Net-_C10-Pad1_ LM317_3PinPackage
+C11 Net-_C10-Pad1_ GND C
+C10 Net-_C10-Pad1_ GND .1uF
+C13 /ADJ_1 GND C
+C14 /ADJ_1 GND 1uF
+R5 /ADJ_1 Net-_C33-Pad1_ 330R
+D4 /ADJ_1 Net-_C33-Pad1_ IN4001
+RV2 Net-_C33-Pad1_ Net-_C33-Pad1_ Net-_RV1-Pad1_ POT_TRIM
+J6 /ADJ_1 GND Screw_Terminal_01x02
+J7 /ADJ_1 GND Screw_Terminal_01x02
+D3 Net-_C10-Pad1_ /ADJ_1 IN4001
+D1 Net-_C1-Pad1_ +12V IN4001
+R6 Net-_C29-Pad1_ /for_adj2 10
+U4 Net-_C34-Pad1_ /ADJ_2 Net-_C29-Pad1_ LM317_3PinPackage
+C18 /ADJ_2 GND C
+C19 /ADJ_2 GND 1uF
+R7 /ADJ_2 Net-_C34-Pad1_ 330R
+D6 /ADJ_2 Net-_C34-Pad1_ IN4001
+RV3 Net-_C34-Pad1_ Net-_C34-Pad1_ Net-_RV3-Pad3_ POT_TRIM
+J8 /ADJ_2 GND Screw_Terminal_01x02
+J9 /ADJ_2 GND Screw_Terminal_01x02
+D5 Net-_C29-Pad1_ /ADJ_2 IN4001
+J10 +3V3 GND Screw_Terminal_01x02
+J11 +3V3 GND Screw_Terminal_01x02
+C20 /for_+3 GND .47nf
+C21 +3V3 GND .33uf
+J1 +24V Screw_Terminal_01x01
+J12 GND Screw_Terminal_01x01
+C24 +24V GND 1400uF
+C23 +24V GND 2200uF
+U12 Net-_C10-Pad1_ /ADJ_1 /for_adj1 MJE2955T
+U8 Net-_C3-Pad1_ +5V /for_+5 MJE2955T
+U7 Net-_C1-Pad1_ +12V /for_+12 MJE2955T
+U13 Net-_C29-Pad1_ /ADJ_2 /for_adj2 MJE2955T
+U6 GND +3V3 /for_+3 AZ1117-ADJ
+R8 Net-_C5-Pad1_ GND 2K838R
+C30 Net-_C29-Pad1_ GND C
+C29 Net-_C29-Pad1_ GND .1uF
+C5 Net-_C5-Pad1_ GND 10uF
+C33 Net-_C33-Pad1_ GND 10uF
+C34 Net-_C34-Pad1_ GND 10uF
+J18 NC_01 GND Screw_Terminal_01x02
+J19 +12V GND Screw_Terminal_01x02
+J2 +24V GND Screw_Terminal_01x02
+J3 +24V GND Screw_Terminal_01x02
+RV1 Net-_RV1-Pad1_ Net-_C33-Pad1_ GND POT_TRIM
+RV4 Net-_RV3-Pad3_ Net-_C34-Pad1_ GND POT_TRIM
+.end

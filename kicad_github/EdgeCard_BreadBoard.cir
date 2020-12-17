@@ -1,0 +1,4 @@
+.title KiCad schematic
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ Net-_P1-Pad6_ Net-_P1-Pad7_ Net-_P1-Pad8_ Net-_P1-Pad9_ Net-_P1-Pad10_ Net-_P1-Pad11_ Net-_P1-Pad12_ Net-_P1-Pad13_ Net-_P1-Pad14_ Net-_P1-Pad15_ Net-_P1-Pad16_ Net-_P1-Pad17_ Net-_P1-Pad18_ Net-_P1-Pad19_ Net-_P1-Pad20_ CONN_01X20
+U1 Net-_P1-Pad20_ Net-_P1-Pad18_ Net-_P1-Pad16_ Net-_P1-Pad14_ Net-_P1-Pad12_ Net-_P1-Pad10_ Net-_P1-Pad8_ Net-_P1-Pad6_ Net-_P1-Pad4_ Net-_P1-Pad2_ Net-_P1-Pad19_ Net-_P1-Pad17_ Net-_P1-Pad15_ Net-_P1-Pad13_ Net-_P1-Pad11_ Net-_P1-Pad9_ Net-_P1-Pad7_ Net-_P1-Pad5_ Net-_P1-Pad3_ Net-_P1-Pad1_ CardEdge_2x10
+.end

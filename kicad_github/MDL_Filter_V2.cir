@@ -1,0 +1,11 @@
+.title KiCad schematic
+C1 Net-_AOP2-Pad4_ NC_01 47p
+R3 Net-_AOP2-Pad4_ Net-_AOP1-Pad1_ 4.7k
+R1 +5V Net-_AOP1-Pad4_ 22k
+R2 Net-_AOP1-Pad4_ GND 22k
+AOP1 Net-_AOP1-Pad1_ GND Net-_AOP1-Pad1_ Net-_AOP1-Pad4_ GND +5V OPA625
+AOP2 Net-_AOP2-Pad1_ GND Net-_AOP2-Pad1_ Net-_AOP2-Pad4_ GND +5V OPA625
+R4 Net-_AOP3-Pad4_ Net-_AOP2-Pad1_ 4.7k
+AOP3 Output GND Output Net-_AOP3-Pad4_ GND +5V OPA625
+C2 Net-_AOP3-Pad4_ Net-_AOP1-Pad1_ 15p
+.end

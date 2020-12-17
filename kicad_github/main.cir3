@@ -1,0 +1,39 @@
+.title KiCad schematic
+U7 GND +5V Net-_P3-Pad10_ TSL235
+U9 GND +5V Net-_P3-Pad9_ TSL235
+U10 GND +5V Net-_P3-Pad8_ TSL235
+U11 GND +5V Net-_P3-Pad7_ TSL235
+U12 GND +5V Net-_P3-Pad6_ TSL235
+U13 GND +5V Net-_P3-Pad5_ TSL235
+U14 GND +5V Net-_P3-Pad4_ TSL235
+U15 GND +5V Net-_P3-Pad3_ TSL235
+U16 GND +5V Net-_P3-Pad2_ TSL235
+U17 GND +5V Net-_P3-Pad1_ TSL235
+U1 GND +5V Net-_P3-Pad16_ TSL235
+U2 GND +5V Net-_P3-Pad15_ TSL235
+U4 GND +5V Net-_P3-Pad13_ TSL235
+U6 GND +5V Net-_P3-Pad11_ TSL235
+U5 GND +5V Net-_P3-Pad12_ TSL235
+U3 GND +5V Net-_P3-Pad14_ TSL235
+U8 +5V GND NC_01 Net-_P2-Pad1_ NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 Net-_P1-Pad5_ Net-_P1-Pad4_ Net-_P1-Pad3_ Net-_P1-Pad2_ NC_09 WeMos_mini
+P3 Net-_P3-Pad1_ Net-_P3-Pad2_ Net-_P3-Pad3_ Net-_P3-Pad4_ Net-_P3-Pad5_ Net-_P3-Pad6_ Net-_P3-Pad7_ Net-_P3-Pad8_ Net-_P3-Pad9_ Net-_P3-Pad10_ Net-_P3-Pad11_ Net-_P3-Pad12_ Net-_P3-Pad13_ Net-_P3-Pad14_ Net-_P3-Pad15_ Net-_P3-Pad16_ CONN_01X16
+P2 Net-_P2-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ GND +5V GND CONN_01X08
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ Net-_P1-Pad4_ Net-_P1-Pad5_ GND +5V GND CONN_01X08
+R1 Net-_P1-Pad1_ +5V R_Variable
+C8 +5V GND C
+C4 +5V GND C
+C6 +5V GND C
+C2 +5V GND C
+C16 +5V GND C
+C12 +5V GND C
+C14 +5V GND C
+C10 +5V GND C
+C7 +5V GND C
+C3 +5V GND C
+C5 +5V GND C
+C1 +5V GND C
+C15 +5V GND C
+C11 +5V GND C
+C13 +5V GND C
+C9 +5V GND C
+.end

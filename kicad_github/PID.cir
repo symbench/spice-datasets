@@ -1,0 +1,13 @@
+.title KiCad schematic
+P5 GND +5V /SCL /SDA CONN_4
+P4 Net-_P4-Pad1_ Net-_P4-Pad2_ Net-_P4-Pad3_ Net-_P4-Pad4_ CONN_4
+P3 GND Net-_P3-Pad2_ +5V Net-_P3-Pad4_ CONN_4
+P1 GND +5V CONN_2
+D1 +5V Net-_D1-Pad2_ LED
+R1 Net-_D1-Pad2_ GND R
+P2 Net-_P2-Pad1_ Net-_P2-Pad2_ Net-_P2-Pad3_ Net-_P2-Pad4_ Net-_P2-Pad5_ Net-_P2-Pad6_ Net-_P2-Pad7_ Net-_P2-Pad8_ CONN_8
+U1 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 +5V GND Net-_C2-Pad1_ /osc2 NC_11 NC_12 NC_13 /SCL Net-_P4-Pad1_ Net-_P4-Pad2_ Net-_P4-Pad3_ Net-_P4-Pad4_ /SDA NC_14 Net-_P3-Pad2_ Net-_P3-Pad4_ NC_15 NC_16 NC_17 NC_18 GND +5V Net-_P2-Pad8_ Net-_P2-Pad7_ Net-_P2-Pad6_ Net-_P2-Pad5_ Net-_P2-Pad4_ Net-_P2-Pad3_ Net-_P2-Pad2_ Net-_P2-Pad1_ 16F877A
+X1 /osc2 Net-_C2-Pad1_ CRYSTAL
+C2 Net-_C2-Pad1_ GND C
+C1 /osc2 GND C
+.end

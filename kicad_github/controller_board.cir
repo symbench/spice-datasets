@@ -1,0 +1,59 @@
+.title KiCad schematic
+U1 /RST /RX /TX Net-_C3-Pad2_ Net-_C2-Pad2_ Net-_C6-Pad2_ VCC GND /DIN /SLIDE1 /SLIDE2 Net-_C12-Pad2_ Net-_C7-Pad2_ Net-_C11-Pad2_ /CSN /CE /MOSI /MISO /SCK VCC NC_01 GND Net-_C16-Pad2_ Net-_C9-Pad2_ Net-_C15-Pad2_ Net-_C8-Pad2_ Net-_C14-Pad2_ Net-_C13-Pad2_ ATMEGA328P-PU
+R3 VCC /RST 10K
+CON1 /MISO VCC /SCK /MOSI /RST GND AVR-ISP-6
+SW8 Net-_R9-Pad2_ GND NC_02 NC_03 SW_Push_Dual
+R9 Net-_C11-Pad2_ Net-_R9-Pad2_ R
+C11 GND Net-_C11-Pad2_ C
+SW7 Net-_R8-Pad2_ GND NC_04 NC_05 SW_Push_Dual
+R8 /SLIDE1 Net-_R8-Pad2_ R
+C10 GND /SLIDE1 C
+SW14 Net-_R15-Pad2_ GND NC_06 NC_07 SW_Push_Dual
+R15 /SLIDE2 Net-_R15-Pad2_ R
+C17 GND /SLIDE2 C
+R14 Net-_C16-Pad2_ Net-_R14-Pad2_ R
+C16 GND Net-_C16-Pad2_ C
+SW6 Net-_R7-Pad2_ GND NC_08 NC_09 SW_Push_Dual
+R7 Net-_C9-Pad2_ Net-_R7-Pad2_ R
+C9 GND Net-_C9-Pad2_ C
+SW5 Net-_R6-Pad2_ GND NC_10 NC_11 SW_Push_Dual
+R6 Net-_C8-Pad2_ Net-_R6-Pad2_ R
+C8 GND Net-_C8-Pad2_ C
+SW12 Net-_R13-Pad2_ GND NC_12 NC_13 SW_Push_Dual
+R13 Net-_C15-Pad2_ Net-_R13-Pad2_ R
+C15 GND Net-_C15-Pad2_ C
+SW11 Net-_R12-Pad2_ GND NC_14 NC_15 SW_Push_Dual
+R12 Net-_C14-Pad2_ Net-_R12-Pad2_ R
+C14 GND Net-_C14-Pad2_ C
+SW4 Net-_R5-Pad2_ GND NC_16 NC_17 SW_Push_Dual
+R5 Net-_C7-Pad2_ Net-_R5-Pad2_ R
+C7 GND Net-_C7-Pad2_ C
+SW3 Net-_R4-Pad2_ GND NC_18 NC_19 SW_Push_Dual
+R4 Net-_C6-Pad2_ Net-_R4-Pad2_ R
+C6 GND Net-_C6-Pad2_ C
+SW10 Net-_R11-Pad2_ GND NC_20 NC_21 SW_Push_Dual
+R11 NC_22 Net-_R11-Pad2_ R
+C13 GND Net-_C13-Pad2_ C
+SW9 Net-_R10-Pad2_ GND NC_23 NC_24 SW_Push_Dual
+R10 Net-_C12-Pad2_ Net-_R10-Pad2_ R
+C12 GND Net-_C12-Pad2_ C
+SW1 VCC Net-_R1-Pad2_ GND SW_SPDT
+J2 GND Net-_C18-Pad2_ /CE /CSN /SCK /MOSI /MISO NC_25 Conn_02x04_Top_Bottom
+J4 VCC Net-_C18-Pad2_ Conn_01x02_Male
+C1 /DTR /RST C
+R1 Net-_C2-Pad2_ Net-_R1-Pad2_ R
+C2 GND Net-_C2-Pad2_ C
+SW2 VCC Net-_R2-Pad2_ GND SW_SPDT
+R2 Net-_C3-Pad2_ Net-_R2-Pad2_ R
+C3 GND Net-_C3-Pad2_ C
+J3 GND /DIN VCC NEO_PIXIE
+SW13 Net-_R14-Pad2_ GND NC_26 NC_27 SW_Push_Dual
+SW15 /RST GND NC_28 NC_29 SW_Push_Dual
+D1 VCC GND D
+C20 GND VCC C
+C19 GND VCC C
+C18 GND Net-_C18-Pad2_ 10uF
+C21 GND Net-_C18-Pad2_ C
+J5 VCC GND POWER
+J1 GND GND VCC /RX /TX /DTR Conn_01x06
+.end

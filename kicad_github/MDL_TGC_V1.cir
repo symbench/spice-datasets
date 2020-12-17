@@ -1,0 +1,3 @@
+.title KiCad schematic
+U1 NC_01 +5V NC_02 GND NC_03 AD8331EVALZ
+.end

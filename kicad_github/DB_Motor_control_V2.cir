@@ -1,0 +1,10 @@
+.title KiCad schematic
+P6 Net-_P5-Pad6_ Net-_P5-Pad5_ Net-_P5-Pad4_ Net-_P5-Pad3_ CONN_01X04
+P4 Net-_P3-Pad10_ Net-_P3-Pad9_ Net-_P3-Pad8_ Net-_P3-Pad7_ Net-_P4-Pad5_ Net-_P4-Pad5_ Net-_P3-Pad4_ Net-_P3-Pad3_ CONN_01X08
+P5 Net-_C1-Pad2_ Net-_P5-Pad2_ Net-_P5-Pad3_ Net-_P5-Pad4_ Net-_P5-Pad5_ Net-_P5-Pad6_ Net-_C1-Pad2_ Net-_C1-Pad1_ CONN_01X08
+P2 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 Net-_P1-Pad2_ NC_12 Net-_P1-Pad1_ NC_13 CONN_01X15
+P3 NC_14 NC_15 Net-_P3-Pad3_ Net-_P3-Pad4_ NC_16 NC_17 Net-_P3-Pad7_ Net-_P3-Pad8_ Net-_P3-Pad9_ Net-_P3-Pad10_ NC_18 NC_19 NC_20 NC_21 NC_22 CONN_01X15
+P7 Net-_C1-Pad2_ Net-_P5-Pad2_ NC_23 NC_24 NC_25 Net-_C1-Pad1_ NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 NC_34 NC_35 NC_36 NC_37 NC_38 CONN_01X19
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ NC_39 NC_40 NC_41 NC_42 NC_43 NC_44 NC_45 NC_46 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 NC_55 CONN_01X19
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 100u
+.end

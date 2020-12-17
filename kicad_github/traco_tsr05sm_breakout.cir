@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 Net-_J1-Pad1_ Net-_J1-Pad1_ GND Net-_J2-Pad1_ Net-_J2-Pad1_ Net-_J6-Pad2_ GND GND GND Net-_J5-Pad2_ TRACO_TSR05SM
+J1 Net-_J1-Pad1_ Net-_J1-Pad1_ IN+
+J6 GND Net-_J6-Pad2_ Net-_J2-Pad1_ ADJ
+J3 GND GND IN-
+J5 Net-_J1-Pad1_ Net-_J5-Pad2_ GND EN
+J2 Net-_J2-Pad1_ Net-_J2-Pad1_ OUT+
+J4 GND GND OUT-
+.end

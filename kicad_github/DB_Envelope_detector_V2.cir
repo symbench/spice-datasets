@@ -1,0 +1,14 @@
+.title KiCad schematic
+R1 /+5V Net-_R1-Pad2_ 2800
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 10nF
+R2 Net-_R1-Pad2_ Net-_P1-Pad1_ 1000
+R3 /+5V Net-_C2-Pad2_ 330
+T1 Net-_C1-Pad1_ Net-_C2-Pad2_ Net-_T1-Pad3_ 2N2222
+T2 NC_01 /-5V Net-_T1-Pad3_ 2N2907A
+R4 Net-_C2-Pad1_ /-5V 330
+T3 Net-_C2-Pad2_ Net-_C2-Pad1_ /+5V 2N2907A
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 1nF
+C3 /-5V Net-_C2-Pad1_ 33nF
+P1 Net-_P1-Pad1_ NC_02 NC_03 Net-_C1-Pad2_ NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 CONN_01X19
+P2 NC_19 /+5V NC_20 NC_21 Net-_C2-Pad1_ NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 NC_30 NC_31 NC_32 NC_33 /-5V NC_34 CONN_01X19
+.end

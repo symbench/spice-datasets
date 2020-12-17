@@ -1,0 +1,40 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+D5 Net-_D1-Pad1_ Net-_D5-Pad2_ LED
+D2 Net-_D1-Pad1_ Net-_D2-Pad2_ LED
+D6 Net-_D10-Pad1_ Net-_D6-Pad2_ LED
+D9 Net-_D1-Pad1_ Net-_D9-Pad2_ LED
+D13 Net-_D1-Pad1_ Net-_D13-Pad2_ LED
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ LED
+D14 Net-_D10-Pad1_ Net-_D14-Pad2_ LED
+D3 Net-_D1-Pad1_ Net-_D3-Pad2_ LED
+D7 Net-_D10-Pad1_ Net-_D7-Pad2_ LED
+D4 Net-_D1-Pad1_ Net-_D4-Pad2_ LED
+D8 Net-_D1-Pad1_ Net-_D8-Pad2_ LED
+D11 Net-_D10-Pad1_ Net-_D11-Pad2_ LED
+D15 Net-_D10-Pad1_ Net-_D15-Pad2_ LED
+D12 Net-_D1-Pad1_ Net-_D12-Pad2_ LED
+D16 Net-_D1-Pad1_ Net-_D16-Pad2_ LED
+R1 Net-_R1-Pad1_ Net-_D13-Pad2_ R
+R5 Net-_R5-Pad1_ Net-_D2-Pad2_ R
+R13 Net-_R13-Pad1_ Net-_D4-Pad2_ R
+R9 Net-_R9-Pad1_ Net-_D15-Pad2_ R
+R2 Net-_R2-Pad1_ Net-_D9-Pad2_ R
+R6 Net-_R6-Pad1_ Net-_D6-Pad2_ R
+R14 Net-_R14-Pad1_ Net-_D8-Pad2_ R
+R10 Net-_R10-Pad1_ Net-_D11-Pad2_ R
+R3 Net-_R3-Pad1_ Net-_D5-Pad2_ R
+R7 Net-_R7-Pad1_ Net-_D10-Pad2_ R
+R15 Net-_R15-Pad1_ Net-_D12-Pad2_ R
+R11 Net-_R11-Pad1_ Net-_D7-Pad2_ R
+R4 Net-_R4-Pad1_ Net-_D1-Pad2_ R
+R8 Net-_R8-Pad1_ Net-_D14-Pad2_ R
+R16 Net-_R16-Pad1_ Net-_D16-Pad2_ R
+R12 Net-_R12-Pad1_ Net-_D3-Pad2_ R
+U1 Net-_R15-Pad1_ Net-_R14-Pad1_ Net-_R13-Pad1_ Net-_R12-Pad1_ Net-_R11-Pad1_ Net-_R10-Pad1_ Net-_R9-Pad1_ GND Net-_R19-Pad2_ VCC Net-_P1-Pad3_ Net-_P1-Pad2_ GND Net-_P1-Pad1_ Net-_R16-Pad1_ VCC 74HC595
+U2 Net-_R7-Pad1_ Net-_R6-Pad1_ Net-_R5-Pad1_ Net-_R4-Pad1_ Net-_R3-Pad1_ Net-_R2-Pad1_ Net-_R1-Pad1_ GND NC_01 VCC Net-_P1-Pad3_ Net-_P1-Pad2_ GND Net-_R19-Pad2_ Net-_R8-Pad1_ VCC 74HC595
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ Net-_P1-Pad3_ CONN_01X03
+R17 GND Net-_P1-Pad1_ R
+R18 GND Net-_P1-Pad3_ R
+R19 GND Net-_R19-Pad2_ R
+.end

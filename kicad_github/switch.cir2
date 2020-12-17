@@ -1,0 +1,18 @@
+.title KiCad schematic
+IC1 /But2 /But1 GND +5V GND +5V NC_01 NC_02 /R1 /R2 /R3 /R4 /R5 /R6 /R7 /R8 NC_03 NC_04 NC_05 NC_06 GND NC_07 Net-_D1-Pad1_ NC_08 /Dir NC_09 NC_10 NC_11 /Reset /DO /DI /But3 ATMEGA328P-TQFP32
+P1 +12V GND Power
+P3 Net-_IC2-Pad6_ Net-_IC2-Pad7_ RS485
+R2 /Reset +5V 1K
+P2 /DO /DI GND /Reset UART
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R1 Net-_D1-Pad2_ GND 1K
+R3 GND /Dir 10K
+R4 Net-_IC2-Pad6_ +5V 560
+R5 GND Net-_IC2-Pad7_ 560
+IC2 /DO /Dir /Dir /DI GND Net-_IC2-Pad6_ Net-_IC2-Pad7_ SP3481CN
+U2 /R8 /R7 /R6 /R5 /R4 /R3 /R2 /R1 GND NC_12 Net-_P4-Pad8_ Net-_P4-Pad7_ Net-_P4-Pad6_ Net-_P4-Pad5_ Net-_P4-Pad4_ Net-_P4-Pad3_ Net-_P4-Pad2_ Net-_P4-Pad1_ ULN2803L
+P4 Net-_P4-Pad1_ Net-_P4-Pad2_ Net-_P4-Pad3_ Net-_P4-Pad4_ Net-_P4-Pad5_ Net-_P4-Pad6_ Net-_P4-Pad7_ Net-_P4-Pad8_ Relay GND
+P5 +12V +12V +12V +12V +12V +12V +12V +12V Relay 5V
+U1 +12V GND +5V LM78L05ACZ
+P6 /But1 /But2 /But3 GND BUTTONS
+.end

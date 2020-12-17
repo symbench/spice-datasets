@@ -1,0 +1,4 @@
+.title KiCad schematic
+J2 GND D+ D- VCC Conn_01x04
+J1 GND GND D+ D- VCC VCC Conn_01x06
+.end

@@ -1,0 +1,11 @@
+.title KiCad schematic
+M1 +5V Net-_D1-Pad2_ GND +5V ITF_Encodor NC_01 DC_Motor
+U1 Net-_R5-Pad2_ ITF_Top_Tour GND TopTour
+R2 +5V Net-_D1-Pad2_ 1k
+D1 +5V Net-_D1-Pad2_ 400x
+Q1 Net-_Q1-Pad1_ Net-_D1-Pad2_ GND Q2N2222
+R1 Net-_Q1-Pad1_ NC_02 680
+R5 +5V Net-_R5-Pad2_ 2.2k
+R4 +5V ITF_Top_Tour 330
+R3 ITF_Encodor +5V 33k
+.end

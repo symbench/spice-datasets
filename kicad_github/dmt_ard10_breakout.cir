@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 NC_01 NC_02 Net-_C2-Pad2_ GND INT SCL SDA GND Net-_C1-Pad2_ NC_03 ARD10
+JP1 Net-_C1-Pad2_ +3V3 DVCC
+JP3 Net-_C2-Pad2_ +3V3 AVCC
+J1 +3V3 SDA SCL Net-_J1-Pad4_ GND I2C
+JP2 INT Net-_J1-Pad4_ INT
+C2 GND Net-_C2-Pad2_ 100nF
+C1 GND Net-_C1-Pad2_ 100nF
+.end

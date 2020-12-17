@@ -1,0 +1,5 @@
+.title KiCad schematic
+D1 Output NC_01 1N60
+R1 NC_02 GND 3.9k
+C1 Output GND 10p
+.end

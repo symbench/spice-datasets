@@ -1,0 +1,26 @@
+.title KiCad schematic
+U1 Net-_SW1-Pad2_ +5V D- D+ GND +3V3 +5V Btn1 Btn2 Btn3 Btn4 Btn5 Reset +5V GND Net-_C4-Pad1_ Net-_C5-Pad1_ SCL SDA RX TX 0001 GND +5V GND Net-_R6-Pad2_ 0010 0100 1000 GND GND GND Net-_R5-Pad2_ +5V GND Net-_R4-Pad2_ Net-_R3-Pad2_ A3 A2 A1 A0 Net-_C3-Pad2_ GND +5V ATmega32U4
+R2 D- Net-_P1-Pad2_ 22R
+C1 GND +5V 1uf
+P1 +5V Net-_P1-Pad2_ Net-_P1-Pad3_ GND NC_01 USB
+R1 D+ Net-_P1-Pad3_ 22R
+C2 GND +3V3 1uf
+R6 Net-_D3-Pad2_ Net-_R6-Pad2_ 1K
+D3 GND Net-_D3-Pad2_ Led_Small
+SW2 GND Reset Reset Btn
+C3 GND Net-_C3-Pad2_ .1uf
+R5 GND Net-_R5-Pad2_ 1K
+Y1 Net-_C4-Pad1_ Net-_C5-Pad1_ 16MHz
+C4 Net-_C4-Pad1_ GND 10pf
+C5 Net-_C5-Pad1_ GND 10pf
+U2 GND SCL SDA Btn1 Btn3 Btn5 0010 1000 A1 A3 Reset RX TX Btn2 Btn4 0001 0100 A0 A2 +5V CardEdge_2x10
+D2 GND Net-_D2-Pad2_ LedIndicator02
+D1 GND Net-_D1-Pad2_ LedIndicator01
+SW1 GND Net-_SW1-Pad2_ BtnLocal
+R3 Net-_D1-Pad2_ Net-_R3-Pad2_ 220
+R4 Net-_D2-Pad2_ Net-_R4-Pad2_ 220
+U6 GND GND SlashAndBurn-Jumper
+U5 GND GND SlashAndBurn-Jumper
+U4 GND GND SlashAndBurn-Jumper
+U3 GND GND SlashAndBurn-Jumper
+.end

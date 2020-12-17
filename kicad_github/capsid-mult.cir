@@ -1,0 +1,19 @@
+.title KiCad schematic
+R5 Net-_J6-Pad2_ /ledpow R
+J6 Earth Net-_J6-Pad2_ Earth Net-_D1-Pad9_ Net-_D1-Pad8_ Net-_D1-Pad7_ Conn_01x06
+R4 Net-_J5-Pad2_ /ledpow R
+J5 Earth Net-_J5-Pad2_ Earth Net-_D1-Pad6_ Net-_D1-Pad5_ Net-_D1-Pad4_ Conn_01x06
+R3 Net-_J4-Pad2_ /ledpow R
+J4 Earth Net-_J4-Pad2_ Earth Net-_D1-Pad3_ Net-_D1-Pad2_ Net-_D1-Pad23_ Conn_01x06
+R2 Net-_J3-Pad2_ /ledpow R
+J3 Earth Net-_J3-Pad2_ Earth Net-_D1-Pad22_ Net-_D1-Pad21_ Net-_D1-Pad20_ Conn_01x06
+R1 Net-_J2-Pad2_ /ledpow R
+J2 Earth Net-_J2-Pad2_ Earth Net-_D1-Pad19_ Net-_D1-Pad18_ Net-_D1-Pad17_ Conn_01x06
+D1 /output Net-_D1-Pad2_ Net-_D1-Pad3_ Net-_D1-Pad4_ Net-_D1-Pad5_ Net-_D1-Pad6_ Net-_D1-Pad7_ Net-_D1-Pad8_ Net-_D1-Pad9_ /S0 /S1 Earth /S3 /S2 /enable NC_01 Net-_D1-Pad17_ Net-_D1-Pad18_ Net-_D1-Pad19_ Net-_D1-Pad20_ Net-_D1-Pad21_ Net-_D1-Pad22_ Net-_D1-Pad23_ +5V 74HC4067
+R6 /output +5V R
+J1 /S3 /S2 /S1 /S0 +5V Earth Conn_01x06
+J7 /S3 /S2 /S1 /S0 +5V Earth Conn_01x06
+Q1 /ledpow Net-_Q1-Pad2_ +5V BC558
+J8 /output /enable Conn_01x02
+R7 Net-_Q1-Pad2_ /enable R
+.end

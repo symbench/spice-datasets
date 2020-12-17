@@ -1,0 +1,6 @@
+.title KiCad schematic
+U2 NC_01 NC_02 Vin_N NC_03 Vin_N NC_04 NC_05 NC_06 NC_07 LT3580
+D1 NC_08 NC_09 D_Schottky
+U3 NC_10 NC_11 Vin_P NC_12 Vin_P NC_13 NC_14 NC_15 NC_16 LT3580
+D2 NC_17 NC_18 D_Schottky
+.end

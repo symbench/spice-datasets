@@ -1,0 +1,12 @@
+.title KiCad schematic
+R3 +12V Net-_C3-Pad1_ 4.7k
+R4 Net-_C2-Pad1_ GND 1.8k
+R2 Net-_C1-Pad2_ GND 6.8k
+R1 +12V Net-_C1-Pad2_ 22k
+Q1 Net-_C3-Pad1_ Net-_C1-Pad2_ Net-_C2-Pad1_ BC548
+J1 GND Net-_C1-Pad1_ Conn_01x02
+J2 Net-_C3-Pad2_ GND Conn_01x02
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 22uF
+C2 Net-_C2-Pad1_ GND 47uF
+C3 Net-_C3-Pad1_ Net-_C3-Pad2_ 22uF
+.end

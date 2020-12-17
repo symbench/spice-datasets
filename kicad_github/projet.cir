@@ -1,0 +1,12 @@
+.title KiCad schematic
+R1 /+5V Net-_R1-Pad2_ 2800
+C1 Net-_C1-Pad1_ NC_01 10nF
+R2 Net-_R1-Pad2_ Earth 1000
+R3 /+5V Net-_C2-Pad2_ 330
+T1 Net-_C1-Pad1_ Net-_C2-Pad2_ Net-_T1-Pad3_ 2N2222
+T2 NC_02 /-5V Net-_T1-Pad3_ 2N2907A
+R4 Output /-5V 330
+T3 Net-_C2-Pad2_ Output /+5V 2N2907A
+C2 Output Net-_C2-Pad2_ 1nF
+C3 /-5V Output 33nF
+.end

@@ -1,0 +1,21 @@
+.title KiCad schematic
+U1 Net-_R1-Pad1_ Net-_TP1-Pad1_ Net-_TP5-Pad1_ Net-_R2-Pad1_ Net-_TP2-Pad1_ Net-_TP6-Pad1_ GND Net-_TP7-Pad1_ Net-_TP3-Pad1_ Net-_R3-Pad1_ Net-_TP8-Pad1_ Net-_TP4-Pad1_ Net-_R4-Pad1_ VCC 74LS125
+R1 Net-_R1-Pad1_ GND 10K
+TP1 Net-_TP1-Pad1_ I1
+TP5 Net-_TP5-Pad1_ O1
+R5 VCC Net-_R1-Pad1_ 10K
+R2 Net-_R2-Pad1_ GND 10K
+TP2 Net-_TP2-Pad1_ I1
+TP6 Net-_TP6-Pad1_ O1
+R6 VCC Net-_R2-Pad1_ 10K
+R3 Net-_R3-Pad1_ GND 10K
+TP3 Net-_TP3-Pad1_ I1
+TP7 Net-_TP7-Pad1_ O1
+R7 VCC Net-_R3-Pad1_ 10K
+R4 Net-_R4-Pad1_ GND 10K
+TP4 Net-_TP4-Pad1_ I1
+TP8 Net-_TP8-Pad1_ O1
+R8 VCC Net-_R4-Pad1_ 10K
+C1 VCC GND C_Small
+C2 VCC GND C_Small
+.end

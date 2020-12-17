@@ -1,0 +1,48 @@
+.title KiCad schematic
+J1 Net-_C2-Pad1_ GND /SCL /SDA /ADDR1 bh1750
+XA1 +5V +3V3 Net-_XA1-PadA0_ Net-_XA1-PadA1_ Net-_XA1-PadA2_ Net-_XA1-PadA3_ /SDA /SCL Net-_XA1-PadA6_ Net-_XA1-PadA7_ Net-_XA1-PadAREF_ /RXD /TXD Net-_XA1-PadD2_ Net-_XA1-PadD3_ /ADDR1 /ADDR2 Net-_XA1-PadD6_ Net-_XA1-PadD7_ Net-_XA1-PadD8_ Net-_XA1-PadD9_ Net-_XA1-PadD10_ Net-_XA1-PadD11_ Net-_XA1-PadD12_ Net-_XA1-PadD13_ GND GND Net-_XA1-PadRST1_ Net-_XA1-PadRST2_ Net-_C4-Pad1_ Arduino_Nano_Socket
+J2 Net-_C2-Pad1_ GND /SCL /SDA /ADDR2 bh1750(2)
+J3 +5V GND /SCL /SDA Conn_01x04_Male
+U1 /RXD485 /E /E /TXD GND /A /B +5V MAX485E
+J5 /RXD485 /RXD Conn_01x02_Male
+C2 Net-_C2-Pad1_ GND CP1_Small
+C1 +5V GND CP1_Small
+C5 +5V GND .1uF
+R1 +5V /E 560
+R3 /A +5V 560
+R2 GND /B 560
+Q1 /E Net-_Q1-Pad2_ GND BC547
+R5 /TXD Net-_Q1-Pad2_ 1k
+R6 Net-_C2-Pad1_ +3V3 1k
+U2 /Vin GND Net-_C4-Pad1_ L7805
+C3 /Vin GND .1uF
+C4 Net-_C4-Pad1_ GND .1uF
+J4 /Vin GND GND Jack-DC
+R4 Net-_D1-Pad2_ Net-_C4-Pad1_ 1k
+D1 GND Net-_D1-Pad2_ LED
+J6 /A /B GND +5V Screw_Terminal_01x04
+R7 /B /A 560
+J7 Net-_C2-Pad1_ GND /SCL /SDA /ADDR1 bh1750
+XA2 +5V +3V3 Net-_XA1-PadA0_ Net-_XA1-PadA1_ Net-_XA1-PadA2_ Net-_XA1-PadA3_ /SDA /SCL Net-_XA1-PadA6_ Net-_XA1-PadA7_ Net-_XA1-PadAREF_ /RXD /TXD Net-_XA1-PadD2_ Net-_XA1-PadD3_ /ADDR1 /ADDR2 Net-_XA1-PadD6_ Net-_XA1-PadD7_ Net-_XA1-PadD8_ Net-_XA1-PadD9_ Net-_XA1-PadD10_ Net-_XA1-PadD11_ Net-_XA1-PadD12_ Net-_XA1-PadD13_ GND GND Net-_XA1-PadRST1_ Net-_XA1-PadRST2_ Net-_C4-Pad1_ Arduino_Nano_Socket
+J8 Net-_C2-Pad1_ GND /SCL /SDA /ADDR2 bh1750(2)
+J9 +5V GND /SCL /SDA Conn_01x04_Male
+U4 /RXD485 /E /E /TXD GND /A /B +5V MAX485E
+J11 /RXD485 /RXD Conn_01x02_Male
+C8 Net-_C2-Pad1_ GND CP1_Small
+C7 +5V GND CP1_Small
+C10 +5V GND .1uF
+R11 +5V /E 560
+R13 /A +5V 560
+R12 GND /B 560
+Q2 /E Net-_Q1-Pad2_ GND BC547
+R10 /TXD Net-_Q1-Pad2_ 1k
+R8 Net-_C2-Pad1_ +3V3 1k
+U3 /Vin GND Net-_C4-Pad1_ L7805
+C6 /Vin GND .1uF
+C9 Net-_C4-Pad1_ GND .1uF
+J10 /Vin GND GND Jack-DC
+R9 Net-_D1-Pad2_ Net-_C4-Pad1_ 1k
+D2 GND Net-_D1-Pad2_ LED
+J12 /A /B GND +5V Screw_Terminal_01x04
+R14 /B /A 560
+.end

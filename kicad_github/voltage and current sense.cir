@@ -1,0 +1,18 @@
+.title KiCad schematic
+U2 Net-_J2-Pad1_ Net-_R3-Pad1_ Net-_R2-Pad2_ GND +5V LM358
+J2 Net-_J2-Pad1_ LINE +5V Conn_01x03
+R4 Net-_J2-Pad1_ Net-_R3-Pad1_ 10K
+R2 LINE Net-_R2-Pad2_ Net-_R2-Pad3_ GND R_Shunt
+R3 Net-_R3-Pad1_ Net-_R2-Pad3_ 1K
+J1 GND LINE Conn_01x02
+U1 NC_01 NC_02 GND +5V GND +5V Net-_C4-Pad2_ Net-_C5-Pad2_ NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 /MOSI /MISO /SCK +5V NC_09 Net-_C3-Pad2_ GND NC_10 NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 /RST NC_17 NC_18 NC_19 ATMEGA328P-AU
+R1 +5V /RST R_Small
+SW1 /RST GND SW_Push
+Y1 Net-_C4-Pad2_ Net-_C5-Pad2_ Crystal
+C4 GND Net-_C4-Pad2_ 22pF
+C5 GND Net-_C5-Pad2_ 22pF
+C2 GND +5V .1uF
+C1 GND +5V 4.7uF
+C3 GND Net-_C3-Pad2_ .1uF
+CON1 /MISO +5V /SCK /MOSI /RST GND AVR-ISP-6
+.end

@@ -1,0 +1,4 @@
+.title KiCad schematic
+U1 SDA GND NC_01 NC_02 VDD SCL SI7006
+P1 GND SDA SCL VDD CONN_01X04
+.end

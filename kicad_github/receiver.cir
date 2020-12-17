@@ -1,0 +1,54 @@
+.title KiCad schematic
+D1 /Stage 1/in Net-_C1-Pad2_ MTD3010PM
+L1 -9V Net-_C1-Pad2_ 10 uH
+C1 GND Net-_C1-Pad2_ 47 uF
+J1 NC_01 NC_02 NC_03 RD GND GND RB1-125BAG1A
+U2 in_3 GND -9V out3 +9V LM7171
+U3 in_4 GND -9V out4 +9V LM7171
+C7 n6 /Stage 2/out2 330nF
+C11 n10 out3 330nF
+R6 in_3 n6 100
+R10 in_4 n10 100
+R9 out3 in_3 1k
+R11 out4 in_4 1k
+C9 out3 in_3 2pF
+C13 out4 in_4 2pF
+C10 GND +9V 0.1u
+C14 GND +9V 0.1u
+C8 -9V GND 0.1u
+C12 -9V GND 0.1u
+R12 RD out4 100
+C3 +5V GND 0.1uF
+C2 +9V GND 0.33uF
+BT1 +9V GND 9V
+BT2 GND -9V 9V
+C4 +9V GND 47uF
+C6 GND -9V 47uF
+U4 GND Physical_Mount
+U5 GND Physical_Mount
+U1 +9V GND +5V MC7805CTG
+Q2 b1 b2 +5V 2N3904
+Q3 e3 /Stage 1/mirror /Stage 1/in 2N3904
+Q4 e4 /Stage 1/mirror /Stage 1/mirror 2N3904
+Q1 /Stage 1/in b1 /Stage 2/in2 PN2369A
+Rc1 +5V /Stage 2/in2 100
+R1 +5V b2 723
+R2 b2 GND 884
+R3 e3 GND 10.6
+R4 e4 GND 106
+R0 +5V /Stage 1/mirror 1.7k
+L5 n5 /Stage 2/in2 0.1 uH
+C5 b7 n5 100nF
+Q5 e5 /Stage 1/mirror b7 2N3904
+Q6 e6 /Stage 1/mirror e7 2N3904
+Q8 b9 b8 +5V 2N3904
+Q9 c7 b9 /Stage 2/out2 PN2369A
+Q7 e7 b7 c7 PN2369A
+R5 +5V b7 2.7k
+R7 +5V b8 667
+R8 b8 GND 2k
+R_E5 e5 GND 342
+R_E6 e6 GND 25
+R_dif1 +5V /Stage 2/out2 100
+C_E7 e7 GND 100 uF
+.end

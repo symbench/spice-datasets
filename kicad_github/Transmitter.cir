@@ -1,0 +1,29 @@
+.title KiCad schematic
+U1 Net-_C5-Pad2_ GND GND Net-_C6-Pad2_ NC_01 /FPOT +3V3 Net-_C9-Pad2_ MAX7044
+L2 +3V3 Net-_C6-Pad2_ 100nH
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 100pF
+C4 +3V3 GND 680pF
+C3 +3V3 GND 220pF
+C2 +3V3 GND 100nF
+AE1 Net-_AE1-Pad1_ Antenna
+L1 Net-_C6-Pad1_ Net-_AE1-Pad1_ 47nH
+C7 +3V3 GND 100nF
+C5 GND Net-_C5-Pad2_ 10pF
+C9 GND Net-_C9-Pad2_ 10pF
+U3 Net-_C11-Pad1_ Net-_C10-Pad1_ GND +3V3 Net-_RV1-Pad2_ +3V3 /FPOT GND AD7740
+RV1 +3V3 Net-_RV1-Pad2_ GND POT
+C12 GND +3V3 .1uF
+C13 GND +3V3 10uF
+Y2 Net-_C10-Pad1_ Net-_C11-Pad1_ 3MHz
+C10 Net-_C10-Pad1_ GND 22pF
+C11 Net-_C11-Pad1_ GND 22pF
+BT1 +BATT GND Battery_Cell
+U2 Net-_L3-Pad1_ GND NC_02 Net-_R1-Pad2_ +3V3 +BATT AAT1217-3.3
+L3 Net-_L3-Pad1_ +BATT 4.7uH
+C1 GND +BATT 4.7uF
+R1 +BATT Net-_R1-Pad2_ 1M
+C8 +3V3 GND 4.7uF
+Y1 Net-_C5-Pad2_ GND Net-_C9-Pad2_ GND 13.56MHz
+D1 Net-_D1-Pad1_ +3V3 LED
+R2 Net-_D1-Pad1_ GND 100
+.end

@@ -1,0 +1,95 @@
+.title KiCad schematic
+U1 Net-_C7-Pad1_ Net-_C7-Pad2_ Net-_C3-Pad1_ -12V Net-_C4-Pad1_ Net-_C8-Pad2_ Net-_C8-Pad1_ +12V LM833
+Q1 Net-_C7-Pad1_ Net-_C7-Pad1_ Net-_C13-Pad1_ BC847CW
+C3 Net-_C3-Pad1_ GNDA 10n
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ 10n
+R5 Net-_C13-Pad1_ V_ENV_BIAS 10M
+R1 Net-_C7-Pad2_ GNDA 4.7
+L1 GNDA Net-_C3-Pad1_ Input Coil
+RV1 Net-_C7-Pad2_ Net-_C7-Pad1_ Net-_C7-Pad1_ 10k
+C13 Net-_C13-Pad1_ GNDA 10n
+C15 Net-_C15-Pad1_ Net-_C13-Pad1_ 10n
+R8 Net-_Q3-Pad1_ Net-_C15-Pad1_ 1M
+R11 Net-_Q3-Pad1_ GNDA 1M
+Q3 Net-_Q3-Pad1_ GNDA Net-_Q3-Pad3_ BC847CW
+R10 Net-_Q3-Pad3_ Net-_Q3-Pad1_ 10M
+R14 +12V Net-_Q3-Pad3_ 100k
+R16 Net-_R16-Pad1_ Net-_Q3-Pad3_ 100k
+U4 Net-_R17-Pad1_ Net-_J6-Pad1_ GND NC_01 Net-_R16-Pad1_ Net-_J5-Pad1_ GND Net-_J12-Pad1_ Net-_R33-Pad1_ NC_02 GND Net-_J11-Pad1_ Net-_R32-Pad1_ VCC 74HC14
+J1 Net-_J1-Pad1_ AUDIO
+R3 Net-_J1-Pad1_ Net-_C7-Pad1_ 10k
+J3 Net-_J3-Pad1_ ENV
+J5 Net-_J5-Pad1_ PULSE
+U3 Net-_J4-Pad1_ Net-_J4-Pad1_ Net-_C14-Pad1_ +12V Net-_C13-Pad1_ Net-_J3-Pad1_ Net-_J3-Pad1_ Net-_J10-Pad1_ Net-_J10-Pad1_ Net-_C24-Pad1_ -12V Net-_C23-Pad1_ Net-_J9-Pad1_ Net-_J9-Pad1_ TL084
+C11 +12V GND 10n
+U5 Net-_C21-Pad1_ Net-_C21-Pad2_ Net-_C19-Pad1_ -12V Net-_C20-Pad1_ Net-_C22-Pad2_ Net-_C22-Pad1_ +12V LM833
+Q5 Net-_C21-Pad1_ Net-_C21-Pad1_ Net-_C23-Pad1_ BC847CW
+C19 Net-_C19-Pad1_ GNDA 10n
+C21 Net-_C21-Pad1_ Net-_C21-Pad2_ 10n
+R22 Net-_C23-Pad1_ V_ENV_BIAS 10M
+R18 Net-_C21-Pad2_ GNDA 4.7
+L3 GNDA Net-_C19-Pad1_ Input Coil
+RV3 Net-_C21-Pad2_ Net-_C21-Pad1_ Net-_C21-Pad1_ 10k
+C23 Net-_C23-Pad1_ GNDA 10n
+C25 Net-_C25-Pad1_ Net-_C23-Pad1_ 10n
+R24 Net-_Q7-Pad1_ Net-_C25-Pad1_ 1M
+R27 Net-_Q7-Pad1_ GNDA 1M
+Q7 Net-_Q7-Pad1_ GNDA Net-_Q7-Pad3_ BC847CW
+R26 Net-_Q7-Pad3_ Net-_Q7-Pad1_ 10M
+R30 +12V Net-_Q7-Pad3_ 100k
+R32 Net-_R32-Pad1_ Net-_Q7-Pad3_ 100k
+J7 Net-_J7-Pad1_ AUDIO
+R20 Net-_J7-Pad1_ Net-_C21-Pad1_ 10k
+J9 Net-_J9-Pad1_ ENV
+J11 Net-_J11-Pad1_ PULSE
+Q2 Net-_C8-Pad1_ Net-_C8-Pad1_ Net-_C14-Pad1_ BC847CW
+C4 Net-_C4-Pad1_ GNDA 10n
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 10n
+R6 Net-_C14-Pad1_ V_ENV_BIAS 10M
+R2 Net-_C8-Pad2_ GNDA 4.7
+L2 GNDA Net-_C4-Pad1_ Input Coil
+RV2 Net-_C8-Pad2_ Net-_C8-Pad1_ Net-_C8-Pad1_ 10k
+C14 Net-_C14-Pad1_ GNDA 10n
+C16 Net-_C16-Pad1_ Net-_C14-Pad1_ 10n
+R9 Net-_Q4-Pad1_ Net-_C16-Pad1_ 1M
+R13 Net-_Q4-Pad1_ GNDA 1M
+Q4 Net-_Q4-Pad1_ GNDA Net-_Q4-Pad3_ BC847CW
+R12 Net-_Q4-Pad3_ Net-_Q4-Pad1_ 10M
+R15 +12V Net-_Q4-Pad3_ 100k
+R17 Net-_R17-Pad1_ Net-_Q4-Pad3_ 100k
+J2 Net-_J2-Pad1_ AUDIO
+R4 Net-_J2-Pad1_ Net-_C8-Pad1_ 10k
+J4 Net-_J4-Pad1_ ENV
+J6 Net-_J6-Pad1_ PULSE
+Q6 Net-_C22-Pad1_ Net-_C22-Pad1_ Net-_C24-Pad1_ BC847CW
+C20 Net-_C20-Pad1_ GNDA 10n
+C22 Net-_C22-Pad1_ Net-_C22-Pad2_ 10n
+R23 Net-_C24-Pad1_ V_ENV_BIAS 10M
+R19 Net-_C22-Pad2_ GNDA 4.7
+L4 GNDA Net-_C20-Pad1_ Input Coil
+RV4 Net-_C22-Pad2_ Net-_C22-Pad1_ Net-_C22-Pad1_ 10k
+C24 Net-_C24-Pad1_ GNDA 10n
+C26 Net-_C26-Pad1_ Net-_C24-Pad1_ 10n
+R25 Net-_Q8-Pad1_ Net-_C26-Pad1_ 1M
+R29 Net-_Q8-Pad1_ GNDA 1M
+Q8 Net-_Q8-Pad1_ GNDA Net-_Q8-Pad3_ BC847CW
+R28 Net-_Q8-Pad3_ Net-_Q8-Pad1_ 10M
+R31 +12V Net-_Q8-Pad3_ 100k
+R33 Net-_R33-Pad1_ Net-_Q8-Pad3_ 100k
+J8 Net-_J8-Pad1_ AUDIO
+R21 Net-_J8-Pad1_ Net-_C22-Pad1_ 10k
+J10 Net-_J10-Pad1_ ENV
+J12 Net-_J12-Pad1_ PULSE
+C17 VCC GND 10n
+C18 VCC GND 10µ
+C12 GND -12V 10n
+R7 GNDA GND 0
+C1 +12V -12V 10n
+C6 +12V -12V 10n
+C10 +12V -12V 10n
+U2 VCC GND +12V 78L05
+J13 +12V GND -12V Power In
+J14 +12V GND -12V Power Out
+Q9 GNDA GNDA V_ENV_BIAS BC847CW
+R34 V_ENV_BIAS -12V 10k
+.end

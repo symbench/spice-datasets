@@ -1,0 +1,525 @@
+.title KiCad schematic
+R2 ~ SYSTEM_SDA 10k
+R1 ~ SYSTEM_SCL 10k
+P3 /cookie/mega3/SPI_MISO /cookie/mega3/SPI_MOSI /cookie/mega3/SPI_SCK /cookie/mega3/SPI_SS SPI_3
+P2 /cookie/mega2/SPI_MISO /cookie/mega2/SPI_MOSI /cookie/mega2/SPI_SCK /cookie/mega2/SPI_SS SPI_2
+P1 /cookie/mega1/SPI_MISO /cookie/mega1/SPI_MOSI /cookie/mega1/SPI_SCK /cookie/mega1/SPI_SS SPI_1
+R3 ~ /cookie/INTERNAL_SCL 10k
+R4 ~ /cookie/INTERNAL_SDA 10k
+JP1 NC_01 /cookie/INTERNAL_SDA DNP
+JP2 NC_02 /cookie/INTERNAL_SCL DNP
+K1 /cookie/INTERNAL_SCL /cookie/INTERNAL_SDA GND INT_I2C
+U1 NC_03 NC_04 NC_05 GND Net-_R11-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad1_ ~ FM24CL16B
+C3 ~ GND 100n
+U2 NC_06 NC_07 NC_08 GND Net-_R11-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad1_ ~ FM24CL16B
+C4 ~ GND 100n
+U3 NC_09 NC_10 NC_11 GND Net-_R11-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad1_ ~ FM24CL16B
+C5 ~ GND 100n
+U4 NC_12 NC_13 NC_14 GND Net-_R11-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad1_ ~ FM24CL16B
+C6 ~ GND 100n
+U5 NC_15 NC_16 NC_17 GND Net-_R11-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad1_ ~ FM24CL16B
+C7 ~ GND 100n
+U6 NC_18 NC_19 NC_20 GND Net-_R11-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad1_ ~ FM24CL16B
+C8 ~ GND 100n
+U8 ~ Net-_R8-Pad2_ Net-_R11-Pad2_ GND /cookie/cookie_internal_bus/mem_EN_vote /cookie/INTERNAL_SDA /cookie/INTERNAL_SCL ~ PCA9517
+C15 ~ GND 100n
+C16 ~ GND 100n
+R8 ~ Net-_R8-Pad2_ 10k
+R11 ~ Net-_R11-Pad2_ 10k
+C18 ~ GND 100n
+R19 ~ /cookie/VOTE_1_A 10k
+R22 ~ /cookie/VOTE_1_B 10k
+R25 ~ /cookie/VOTE_1_C 10k
+T1 /cookie/cookie_internal_bus/mem_WP_vote ~ Net-_R9-Pad1_ NPN
+R9 Net-_R9-Pad1_ GND 10k
+R21 /cookie/VOTE_2_A GND 10k
+R24 /cookie/VOTE_2_B GND 10k
+R27 /cookie/VOTE_2_C GND 10k
+U10 /cookie/VOTE_2_C /cookie/VOTE_2_B Net-_D7-Pad1_ /cookie/VOTE_1_A /cookie/VOTE_1_C Net-_D5-Pad1_ GND Net-_D9-Pad1_ /cookie/VOTE_2_B /cookie/VOTE_2_A Net-_D6-Pad1_ /cookie/VOTE_1_B /cookie/VOTE_1_A ~ CD74HC08E
+U11 /cookie/VOTE_3_A /cookie/VOTE_3_B Net-_D10-Pad1_ /cookie/VOTE_2_A /cookie/VOTE_2_C Net-_D8-Pad1_ GND Net-_D11-Pad1_ /cookie/VOTE_3_C /cookie/VOTE_3_A Net-_D12-Pad1_ /cookie/VOTE_3_B /cookie/VOTE_3_C ~ CD74HC08E
+R17 Net-_D7-Pad2_ /cookie/cookie_internal_bus/mem_WP_vote 1k
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ BAS86
+D8 Net-_D8-Pad1_ Net-_D7-Pad2_ BAS86
+D9 Net-_D9-Pad1_ Net-_D7-Pad2_ BAS86
+C17 ~ GND 100n
+U9 /cookie/VOTE_1_C /cookie/VOTE_1_B Net-_D4-Pad1_ /cookie/VOTE_4_B /cookie/VOTE_4_A Net-_D1-Pad1_ GND Net-_D2-Pad1_ /cookie/VOTE_4_C /cookie/VOTE_4_B Net-_D3-Pad1_ /cookie/VOTE_4_A /cookie/VOTE_4_C ~ CD74HC08E
+R16 Net-_D4-Pad2_ /cookie/cookie_internal_bus/mem_EN_vote 1k
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ BAS86
+D5 Net-_D5-Pad1_ Net-_D4-Pad2_ BAS86
+D6 Net-_D6-Pad1_ Net-_D4-Pad2_ BAS86
+MAG1 Net-_ACC1-Pad4_ ~ NC_21 ~ NC_22 NC_23 NC_24 Net-_C11-Pad2_ /cookie/cookie_internal_bus/gnd_sw Net-_C12-Pad1_ /cookie/cookie_internal_bus/gnd_sw Net-_C11-Pad1_ ~ NC_25 NC_26 Net-_ACC1-Pad6_ HMC5883L
+ACC1 ~ NC_27 NC_28 Net-_ACC1-Pad4_ /cookie/cookie_internal_bus/gnd_sw Net-_ACC1-Pad6_ Net-_ACC1-Pad7_ Net-_ACC1-Pad8_ NC_29 /cookie/cookie_internal_bus/gnd_sw NC_30 /cookie/cookie_internal_bus/gnd_sw NC_31 ~ NC_32 NC_33 LIS3DH
+C9 ~ /cookie/cookie_internal_bus/gnd_sw 100n
+U7 ~ Net-_ACC1-Pad4_ Net-_ACC1-Pad6_ GND /cookie/cookie_internal_bus/ADS_cut_vote /cookie/INTERNAL_SDA /cookie/INTERNAL_SCL ~ PCA9517
+C13 ~ GND 100n
+C14 ~ GND 100n
+R5 ~ Net-_ACC1-Pad6_ 10k
+R7 ~ Net-_ACC1-Pad4_ 10k
+C11 Net-_C11-Pad1_ Net-_C11-Pad2_ 220n
+C12 Net-_C12-Pad1_ /cookie/cookie_internal_bus/gnd_sw 4,7u
+C1 ~ /cookie/cookie_internal_bus/gnd_sw 10u
+C10 ~ /cookie/cookie_internal_bus/gnd_sw 100n
+C2 ~ /cookie/cookie_internal_bus/gnd_sw 10u
+R6 ~ Net-_ACC1-Pad8_ 10k
+JP3 Net-_JP3-Pad1_ ~ DNP
+JP4 Net-_JP3-Pad1_ /cookie/cookie_internal_bus/gnd_sw DNP
+R10 Net-_JP3-Pad1_ Net-_ACC1-Pad7_ 1k
+R20 ~ /cookie/VOTE_3_C 10k
+R23 ~ /cookie/VOTE_3_B 10k
+R26 ~ /cookie/VOTE_3_A 10k
+C19 ~ GND 100n
+R18 Net-_D10-Pad2_ /cookie/cookie_internal_bus/ADS_cut_vote 1k
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ BAS86
+D11 Net-_D11-Pad1_ Net-_D10-Pad2_ BAS86
+D12 Net-_D12-Pad1_ Net-_D10-Pad2_ BAS86
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ BAS86
+D2 Net-_D2-Pad1_ Net-_D1-Pad2_ BAS86
+D3 Net-_D3-Pad1_ Net-_D1-Pad2_ BAS86
+R12 Net-_D1-Pad2_ Net-_R12-Pad2_ 1k
+R13 ~ /cookie/VOTE_4_A 10k
+R14 ~ /cookie/VOTE_4_B 10k
+R15 ~ /cookie/VOTE_4_C 10k
+T2 /cookie/cookie_internal_bus/gnd_sw Net-_R12-Pad2_ GND MOS_N
+C20 /cookie/ADC0 GND DNP
+R28 /cookie/ADC0 /cookie/ESU_ADC_0 DNP
+JP5 /cookie/ESU_ADC_0 /cookie/ADC0 POP
+C21 /cookie/ADC1 GND DNP
+R29 /cookie/ADC1 /cookie/ESU_ADC_1 DNP
+JP6 /cookie/ESU_ADC_1 /cookie/ADC1 POP
+C22 /cookie/ADC2 GND DNP
+R30 /cookie/ADC2 /cookie/ESU_ADC_2 DNP
+JP7 /cookie/ESU_ADC_2 /cookie/ADC2 POP
+C23 /cookie/ADC3 GND DNP
+R31 /cookie/ADC3 /cookie/ESU_ADC_3 DNP
+JP8 /cookie/ESU_ADC_3 /cookie/ADC3 POP
+C24 /cookie/ADC4 GND DNP
+R32 /cookie/ADC4 /cookie/ESU_ADC_4 DNP
+JP9 /cookie/ESU_ADC_4 /cookie/ADC4 POP
+C25 /cookie/ADC5 GND DNP
+R33 /cookie/ADC5 /cookie/ESU_ADC_5 DNP
+JP10 /cookie/ESU_ADC_5 /cookie/ADC5 POP
+C26 /cookie/ADC6 GND DNP
+R34 /cookie/ADC6 /cookie/ESU_ADC_6 DNP
+JP11 /cookie/ESU_ADC_6 /cookie/ADC6 POP
+C27 /cookie/ADC7 GND DNP
+R35 /cookie/ADC7 /cookie/ESU_ADC_7 DNP
+JP12 /cookie/ESU_ADC_7 /cookie/ADC7 POP
+P4 GND /cookie/ESU_ADC_0 GND /cookie/ESU_ADC_1 GND /cookie/ESU_ADC_2 GND /cookie/ESU_ADC_3 GND /cookie/ESU_ADC_4 GND /cookie/ESU_ADC_5 GND /cookie/ESU_ADC_6 GND /cookie/ESU_ADC_7 GND /cookie/ESU_ADC_8 GND /cookie/ESU_ADC_9 GND /cookie/ESU_ADC_10 GND /cookie/ESU_ADC_11 CONN_12X2
+C28 /cookie/ADC8 GND DNP
+R36 /cookie/ADC8 /cookie/ESU_ADC_8 DNP
+JP13 /cookie/ESU_ADC_8 /cookie/ADC8 POP
+C29 /cookie/ADC9 GND DNP
+R37 /cookie/ADC9 /cookie/ESU_ADC_9 DNP
+JP14 /cookie/ESU_ADC_9 /cookie/ADC9 POP
+C30 /cookie/ADC10 GND DNP
+R38 /cookie/ADC10 /cookie/ESU_ADC_10 DNP
+JP15 /cookie/ESU_ADC_10 /cookie/ADC10 POP
+C31 /cookie/ADC11 GND DNP
+R39 /cookie/ADC11 /cookie/ESU_ADC_11 DNP
+JP16 /cookie/ESU_ADC_11 /cookie/ADC11 POP
+JP17 /cookie/mega1/MOSI NC_34 /cookie/mega1/gnd_switch /cookie/mega1/gnd_switch /cookie/mega1/RESET /cookie/mega1/gnd_switch /cookie/mega1/SCK /cookie/mega1/gnd_switch /cookie/mega1/MISO /cookie/mega1/gnd_switch AVR-ISP-10R
+Y1 Net-_C33-Pad1_ Net-_C34-Pad1_ 16MHz
+L1 ~ /cookie/mega1/AVCC Inductor
+C33 Net-_C33-Pad1_ /cookie/mega1/gnd_switch 22p
+C34 Net-_C34-Pad1_ /cookie/mega1/gnd_switch 22p
+C32 Net-_C32-Pad1_ /cookie/mega1/gnd_switch 100n
+C35 /cookie/mega1/AVCC /cookie/mega1/gnd_switch 100n
+P5 /cookie/mega1/gnd_switch Net-_JP35-Pad1_ Net-_JP34-Pad1_ Net-_JP33-Pad1_ Net-_JP32-Pad1_ ~ /cookie/mega1/RESET DNP
+JP32 Net-_JP32-Pad1_ /cookie/mega1/ADC7 DNP
+JP33 Net-_JP33-Pad1_ /cookie/mega1/ADC6 DNP
+JP34 Net-_JP34-Pad1_ /cookie/mega1/ADC5 DNP
+JP35 Net-_JP35-Pad1_ /cookie/mega1/ADC4 DNP
+SW1 Net-_R40-Pad2_ /cookie/mega1/RESET RESET_BUTTON
+C38 /cookie/mega1/RESET /cookie/mega1/gnd_switch DNP
+R40 /cookie/mega1/gnd_switch Net-_R40-Pad2_ 100R
+U12 /cookie/VOTE_8_B /cookie/VOTE_8_C Net-_R55-Pad2_ /cookie/VOTE_7_B /cookie/VOTE_7_C Net-_R41-Pad1_ GND Net-_U12-Pad8_ /cookie/VOTE_6_C /cookie/VOTE_6_B Net-_U12-Pad11_ /cookie/VOTE_5_C /cookie/VOTE_5_B ~ CD74HC08E
+R41 Net-_R41-Pad1_ Net-_R41-Pad2_ 1k
+JP20 Net-_JP20-Pad1_ /cookie/mega1/SCK POP
+JP19 Net-_JP19-Pad1_ /cookie/mega1/MOSI POP
+JP18 Net-_JP18-Pad1_ /cookie/mega1/MISO POP
+JP21 Net-_JP18-Pad1_ /cookie/mega1/SPI_MISO DNP
+JP22 Net-_JP19-Pad1_ /cookie/mega1/SPI_MOSI DNP
+JP23 Net-_JP20-Pad1_ /cookie/mega1/SPI_SCK DNP
+C42 ~ GND 100n
+U13 ~ /cookie/mega1/SCL_0_5V /cookie/mega1/SDA_0_5V GND Net-_U12-Pad11_ /cookie/INTERNAL_SDA /cookie/INTERNAL_SCL ~ PCA9517
+U14 ~ /cookie/mega1/SCL_1_5V /cookie/mega1/SDA_1_5V GND Net-_U12-Pad8_ SYSTEM_SDA SYSTEM_SCL ~ PCA9517
+C36 ~ GND 100n
+C37 ~ GND 100n
+C39 ~ GND 100n
+C40 ~ GND 100n
+C41 ~ /cookie/mega1/gnd_switch 100n
+C43 ~ /cookie/mega1/gnd_switch 100n
+C44 ~ /cookie/mega1/gnd_switch 100n
+K2 /cookie/mega1/TX0 /cookie/mega1/RX0 /cookie/mega1/gnd_switch SERIAL_0
+K3 /cookie/mega1/TX1 /cookie/mega1/RX1 /cookie/mega1/gnd_switch SERIAL_1
+P7 /cookie/mega1/PG0 /cookie/mega1/PG1 /cookie/mega1/PG2 /cookie/mega1/PG3 /cookie/mega1/PG4 CONN_5
+P6 /cookie/mega1/PB4 /cookie/mega1/PB5 /cookie/mega1/PB6 /cookie/mega1/PB7 /cookie/mega1/PD4 /cookie/mega1/PD5 Net-_JP24-Pad2_ Net-_JP25-Pad2_ Net-_JP26-Pad2_ Net-_JP27-Pad2_ Net-_JP28-Pad2_ Net-_JP29-Pad2_ Net-_JP30-Pad2_ Net-_JP31-Pad2_ CONN_14
+JP41 /cookie/mega1/PE7 /cookie/VOTE_6_A POP
+JP40 /cookie/mega1/PE6 /cookie/VOTE_5_A POP
+JP39 /cookie/mega1/PE5 /cookie/VOTE_4_A POP
+JP38 /cookie/mega1/PE4 /cookie/VOTE_3_A POP
+JP37 /cookie/mega1/PE3 /cookie/VOTE_2_A POP
+JP36 /cookie/mega1/PE2 /cookie/VOTE_1_A POP
+JP26 /cookie/mega1/PE2 Net-_JP26-Pad2_ DNP
+JP27 /cookie/mega1/PE3 Net-_JP27-Pad2_ DNP
+JP28 /cookie/mega1/PE4 Net-_JP28-Pad2_ DNP
+JP29 /cookie/mega1/PE5 Net-_JP29-Pad2_ DNP
+JP30 /cookie/mega1/PE6 Net-_JP30-Pad2_ DNP
+JP31 /cookie/mega1/PE7 Net-_JP31-Pad2_ DNP
+JP25 /cookie/mega1/PD7 Net-_JP25-Pad2_ DNP
+JP24 /cookie/mega1/PD6 Net-_JP24-Pad2_ DNP
+JP43 /cookie/mega1/PD7 /cookie/VOTE_8_A POP
+JP42 /cookie/mega1/PD6 /cookie/VOTE_7_A POP
+T4 /cookie/mega1/gnd_switch Net-_R55-Pad2_ GND MOS_N
+R55 GND Net-_R55-Pad2_ 10k
+T3 /cookie/mega1/RESET Net-_R41-Pad2_ Net-_R40-Pad2_ MOS_N
+R54 /cookie/VOTE_8_B ~ 10k
+R53 /cookie/VOTE_8_C ~ 10k
+R52 /cookie/VOTE_5_B ~ 10k
+R50 /cookie/VOTE_5_C ~ 10k
+R48 /cookie/VOTE_6_B ~ 10k
+R47 /cookie/VOTE_6_C ~ 10k
+R46 /cookie/mega1/RESET ~ 10k
+uC1 NC_35 /cookie/mega1/RX0 /cookie/mega1/TX0 /cookie/mega1/PE2 /cookie/mega1/PE3 /cookie/mega1/PE4 /cookie/mega1/PE5 /cookie/mega1/PE6 /cookie/mega1/PE7 /cookie/mega1/SPI_SS Net-_JP20-Pad1_ Net-_JP19-Pad1_ Net-_JP18-Pad1_ /cookie/mega1/PB4 /cookie/mega1/PB5 /cookie/mega1/PB6 /cookie/mega1/PB7 /cookie/mega1/PG3 /cookie/mega1/PG4 /cookie/mega1/RESET ~ /cookie/mega1/gnd_switch Net-_C33-Pad1_ Net-_C34-Pad1_ /cookie/mega1/SCL_0_5V /cookie/mega1/SDA_0_5V /cookie/mega1/RX1 /cookie/mega1/TX1 /cookie/mega1/PD4 /cookie/mega1/PD5 /cookie/mega1/PD6 /cookie/mega1/PD7 /cookie/mega1/PG0 /cookie/mega1/PG1 /cookie/mega1/SCL_1_5V /cookie/mega1/SDA_1_5V /cookie/OUT_0A /cookie/OUT_1A /cookie/OUT_2A /cookie/OUT_3A /cookie/OUT_4A /cookie/OUT_5A /cookie/mega1/PG2 NC_36 NC_37 NC_38 NC_39 NC_40 NC_41 NC_42 NC_43 ~ /cookie/mega1/gnd_switch /cookie/mega1/ADC7 /cookie/mega1/ADC6 /cookie/mega1/ADC5 /cookie/mega1/ADC4 /cookie/mega1/ADC3 /cookie/mega1/ADC2 /cookie/mega1/ADC1 /cookie/mega1/ADC0 Net-_C32-Pad1_ /cookie/mega1/gnd_switch /cookie/mega1/AVCC MEGA128-A
+R45 /cookie/mega1/SDA_1_5V ~ 47k
+R44 /cookie/mega1/SCL_1_5V ~ 47k
+R43 /cookie/mega1/SDA_0_5V ~ 47k
+R42 /cookie/mega1/SCL_0_5V ~ 47k
+R51 GND /cookie/VOTE_7_C 10k
+R49 GND /cookie/VOTE_7_B 10k
+U15 /cookie/mega1/ADC0 Net-_JP44-Pad1_ /cookie/ADC0 GND /cookie/ADC1 Net-_JP45-Pad1_ /cookie/mega1/ADC1 ~ LM393
+C45 ~ GND 100n
+R58 Net-_JP44-Pad1_ GND DNP
+R61 /cookie/mega1/ADC1 Net-_JP45-Pad1_ DNP
+JP45 Net-_JP45-Pad1_ /cookie/mega1/ADC1 POP
+R56 Net-_JP45-Pad1_ GND DNP
+R60 /cookie/mega1/ADC0 Net-_JP44-Pad1_ DNP
+JP44 Net-_JP44-Pad1_ /cookie/mega1/ADC0 POP
+U16 /cookie/mega1/ADC2 Net-_JP46-Pad1_ /cookie/ADC3 GND /cookie/ADC4 Net-_JP47-Pad1_ /cookie/mega1/ADC3 ~ LM393
+C46 ~ GND 100n
+R59 Net-_JP46-Pad1_ GND DNP
+R63 /cookie/mega1/ADC3 Net-_JP47-Pad1_ DNP
+JP47 Net-_JP47-Pad1_ /cookie/mega1/ADC3 POP
+R57 Net-_JP47-Pad1_ GND DNP
+R62 /cookie/mega1/ADC2 Net-_JP46-Pad1_ DNP
+JP46 Net-_JP46-Pad1_ /cookie/mega1/ADC2 POP
+U17 Net-_JP48-Pad2_ Net-_JP48-Pad1_ /cookie/ADC5 GND /cookie/ADC6 Net-_JP49-Pad1_ Net-_JP49-Pad2_ ~ LM393
+C47 ~ GND 100n
+R65 Net-_JP48-Pad1_ GND DNP
+R67 Net-_JP49-Pad2_ Net-_JP49-Pad1_ DNP
+JP49 Net-_JP49-Pad1_ Net-_JP49-Pad2_ POP
+R64 Net-_JP49-Pad1_ GND DNP
+R66 Net-_JP48-Pad2_ Net-_JP48-Pad1_ DNP
+JP48 Net-_JP48-Pad1_ Net-_JP48-Pad2_ POP
+U18 Net-_JP52-Pad2_ Net-_JP52-Pad1_ /cookie/ADC7 GND NC_44 Net-_JP53-Pad1_ Net-_JP53-Pad2_ ~ LM393
+C48 ~ GND 100n
+R69 Net-_JP52-Pad1_ GND DNP
+R71 Net-_JP53-Pad2_ Net-_JP53-Pad1_ DNP
+JP53 Net-_JP53-Pad1_ Net-_JP53-Pad2_ POP
+R68 Net-_JP53-Pad1_ GND DNP
+R70 Net-_JP52-Pad2_ Net-_JP52-Pad1_ DNP
+JP52 Net-_JP52-Pad1_ Net-_JP52-Pad2_ POP
+JP54 Net-_JP52-Pad2_ /cookie/mega1/ADC6 POP
+JP55 Net-_JP53-Pad2_ /cookie/mega1/ADC7 POP
+JP50 Net-_JP48-Pad2_ /cookie/mega1/ADC4 POP
+JP51 Net-_JP49-Pad2_ /cookie/mega1/ADC5 POP
+JP56 /cookie/mega2/MOSI NC_45 /cookie/mega2/gnd_switch /cookie/mega2/gnd_switch /cookie/mega2/RESET /cookie/mega2/gnd_switch /cookie/mega2/SCK /cookie/mega2/gnd_switch /cookie/mega2/MISO /cookie/mega2/gnd_switch AVR-ISP-10R
+Y2 Net-_C50-Pad1_ Net-_C51-Pad1_ 16MHz
+L2 ~ /cookie/mega2/AVCC Inductor
+C50 Net-_C50-Pad1_ /cookie/mega2/gnd_switch 22p
+C51 Net-_C51-Pad1_ /cookie/mega2/gnd_switch 22p
+C49 Net-_C49-Pad1_ /cookie/mega2/gnd_switch 100n
+C52 /cookie/mega2/AVCC /cookie/mega2/gnd_switch 100n
+P8 /cookie/mega2/gnd_switch Net-_JP74-Pad1_ Net-_JP73-Pad1_ Net-_JP72-Pad1_ Net-_JP71-Pad1_ ~ /cookie/mega2/RESET DNP
+JP71 Net-_JP71-Pad1_ /cookie/mega2/ADC7 DNP
+JP72 Net-_JP72-Pad1_ /cookie/mega2/ADC6 DNP
+JP73 Net-_JP73-Pad1_ /cookie/mega2/ADC5 DNP
+JP74 Net-_JP74-Pad1_ /cookie/mega2/ADC4 DNP
+SW2 Net-_R72-Pad2_ /cookie/mega2/RESET RESET_BUTTON
+C55 /cookie/mega2/RESET /cookie/mega2/gnd_switch DNP
+R72 /cookie/mega2/gnd_switch Net-_R72-Pad2_ 100R
+U19 /cookie/VOTE_8_A /cookie/VOTE_8_C Net-_R87-Pad2_ /cookie/VOTE_7_A /cookie/VOTE_7_C Net-_R73-Pad1_ GND Net-_U19-Pad8_ /cookie/VOTE_6_C /cookie/VOTE_6_A Net-_U19-Pad11_ /cookie/VOTE_5_C /cookie/VOTE_5_A ~ CD74HC08E
+R73 Net-_R73-Pad1_ Net-_R73-Pad2_ 1k
+JP59 Net-_JP59-Pad1_ /cookie/mega2/SCK POP
+JP58 Net-_JP58-Pad1_ /cookie/mega2/MOSI POP
+JP57 Net-_JP57-Pad1_ /cookie/mega2/MISO POP
+JP60 Net-_JP57-Pad1_ /cookie/mega2/SPI_MISO DNP
+JP61 Net-_JP58-Pad1_ /cookie/mega2/SPI_MOSI DNP
+JP62 Net-_JP59-Pad1_ /cookie/mega2/SPI_SCK DNP
+C59 ~ GND 100n
+U20 ~ /cookie/mega2/SCL_0_5V /cookie/mega2/SDA_0_5V GND Net-_U19-Pad11_ /cookie/INTERNAL_SDA /cookie/INTERNAL_SCL ~ PCA9517
+U21 ~ /cookie/mega2/SCL_1_5V /cookie/mega2/SDA_1_5V GND Net-_U19-Pad8_ SYSTEM_SDA SYSTEM_SCL ~ PCA9517
+C53 ~ GND 100n
+C54 ~ GND 100n
+C56 ~ GND 100n
+C57 ~ GND 100n
+C58 ~ /cookie/mega2/gnd_switch 100n
+C60 ~ /cookie/mega2/gnd_switch 100n
+C61 ~ /cookie/mega2/gnd_switch 100n
+K4 /cookie/mega2/TX0 /cookie/mega2/RX0 /cookie/mega2/gnd_switch SERIAL_0
+K5 /cookie/mega2/TX1 /cookie/mega2/RX1 /cookie/mega2/gnd_switch SERIAL_1
+P10 /cookie/mega2/PG0 /cookie/mega2/PG1 /cookie/mega2/PG2 /cookie/mega2/PG3 /cookie/mega2/PG4 CONN_5
+P9 /cookie/mega2/PB4 /cookie/mega2/PB5 /cookie/mega2/PB6 /cookie/mega2/PB7 /cookie/mega2/PD4 /cookie/mega2/PD5 Net-_JP63-Pad2_ Net-_JP64-Pad2_ Net-_JP65-Pad2_ Net-_JP66-Pad2_ Net-_JP67-Pad2_ Net-_JP68-Pad2_ Net-_JP69-Pad2_ Net-_JP70-Pad2_ CONN_14
+JP80 /cookie/mega2/PE7 /cookie/VOTE_6_B POP
+JP79 /cookie/mega2/PE6 /cookie/VOTE_5_B POP
+JP78 /cookie/mega2/PE5 /cookie/VOTE_4_B POP
+JP77 /cookie/mega2/PE4 /cookie/VOTE_3_B POP
+JP76 /cookie/mega2/PE3 /cookie/VOTE_2_B POP
+JP75 /cookie/mega2/PE2 /cookie/VOTE_1_B POP
+JP65 /cookie/mega2/PE2 Net-_JP65-Pad2_ DNP
+JP66 /cookie/mega2/PE3 Net-_JP66-Pad2_ DNP
+JP67 /cookie/mega2/PE4 Net-_JP67-Pad2_ DNP
+JP68 /cookie/mega2/PE5 Net-_JP68-Pad2_ DNP
+JP69 /cookie/mega2/PE6 Net-_JP69-Pad2_ DNP
+JP70 /cookie/mega2/PE7 Net-_JP70-Pad2_ DNP
+JP64 /cookie/mega2/PD7 Net-_JP64-Pad2_ DNP
+JP63 /cookie/mega2/PD6 Net-_JP63-Pad2_ DNP
+JP82 /cookie/mega2/PD7 /cookie/VOTE_8_B POP
+JP81 /cookie/mega2/PD6 /cookie/VOTE_7_B POP
+T6 /cookie/mega2/gnd_switch Net-_R87-Pad2_ GND MOS_N
+R87 GND Net-_R87-Pad2_ 10k
+T5 /cookie/mega2/RESET Net-_R73-Pad2_ Net-_R72-Pad2_ MOS_N
+R86 /cookie/VOTE_8_A ~ 10k
+R85 /cookie/VOTE_8_C ~ 10k
+R84 /cookie/VOTE_5_A ~ 10k
+R82 /cookie/VOTE_5_C ~ 10k
+R80 /cookie/VOTE_6_A ~ 10k
+R79 /cookie/VOTE_6_C ~ 10k
+R78 /cookie/mega2/RESET ~ 10k
+uC2 NC_46 /cookie/mega2/RX0 /cookie/mega2/TX0 /cookie/mega2/PE2 /cookie/mega2/PE3 /cookie/mega2/PE4 /cookie/mega2/PE5 /cookie/mega2/PE6 /cookie/mega2/PE7 /cookie/mega2/SPI_SS Net-_JP59-Pad1_ Net-_JP58-Pad1_ Net-_JP57-Pad1_ /cookie/mega2/PB4 /cookie/mega2/PB5 /cookie/mega2/PB6 /cookie/mega2/PB7 /cookie/mega2/PG3 /cookie/mega2/PG4 /cookie/mega2/RESET ~ /cookie/mega2/gnd_switch Net-_C50-Pad1_ Net-_C51-Pad1_ /cookie/mega2/SCL_0_5V /cookie/mega2/SDA_0_5V /cookie/mega2/RX1 /cookie/mega2/TX1 /cookie/mega2/PD4 /cookie/mega2/PD5 /cookie/mega2/PD6 /cookie/mega2/PD7 /cookie/mega2/PG0 /cookie/mega2/PG1 /cookie/mega2/SCL_1_5V /cookie/mega2/SDA_1_5V /cookie/OUT_0B /cookie/OUT_1B /cookie/OUT_2B /cookie/OUT_3B /cookie/OUT_4B /cookie/OUT_5B /cookie/mega2/PG2 NC_47 NC_48 NC_49 NC_50 NC_51 NC_52 NC_53 NC_54 ~ /cookie/mega2/gnd_switch /cookie/mega2/ADC7 /cookie/mega2/ADC6 /cookie/mega2/ADC5 /cookie/mega2/ADC4 /cookie/mega2/ADC3 /cookie/mega2/ADC2 /cookie/mega2/ADC1 /cookie/mega2/ADC0 Net-_C49-Pad1_ /cookie/mega2/gnd_switch /cookie/mega2/AVCC MEGA128-A
+R77 /cookie/mega2/SDA_1_5V ~ 47k
+R76 /cookie/mega2/SCL_1_5V ~ 47k
+R75 /cookie/mega2/SDA_0_5V ~ 47k
+R74 /cookie/mega2/SCL_0_5V ~ 47k
+R83 GND /cookie/VOTE_7_C 10k
+R81 GND /cookie/VOTE_7_A 10k
+U22 /cookie/mega2/ADC0 Net-_JP83-Pad1_ /cookie/ADC0 GND /cookie/ADC1 Net-_JP84-Pad1_ /cookie/mega2/ADC1 ~ LM393
+C62 ~ GND 100n
+R90 Net-_JP83-Pad1_ GND DNP
+R93 /cookie/mega2/ADC1 Net-_JP84-Pad1_ DNP
+JP84 Net-_JP84-Pad1_ /cookie/mega2/ADC1 POP
+R88 Net-_JP84-Pad1_ GND DNP
+R92 /cookie/mega2/ADC0 Net-_JP83-Pad1_ DNP
+JP83 Net-_JP83-Pad1_ /cookie/mega2/ADC0 POP
+U23 /cookie/mega2/ADC2 Net-_JP85-Pad1_ /cookie/ADC3 GND /cookie/ADC8 Net-_JP86-Pad1_ /cookie/mega2/ADC3 ~ LM393
+C63 ~ GND 100n
+R91 Net-_JP85-Pad1_ GND DNP
+R95 /cookie/mega2/ADC3 Net-_JP86-Pad1_ DNP
+JP86 Net-_JP86-Pad1_ /cookie/mega2/ADC3 POP
+R89 Net-_JP86-Pad1_ GND DNP
+R94 /cookie/mega2/ADC2 Net-_JP85-Pad1_ DNP
+JP85 Net-_JP85-Pad1_ /cookie/mega2/ADC2 POP
+U24 Net-_JP87-Pad2_ Net-_JP87-Pad1_ /cookie/ADC9 GND /cookie/ADC10 Net-_JP88-Pad1_ Net-_JP88-Pad2_ ~ LM393
+C64 ~ GND 100n
+R97 Net-_JP87-Pad1_ GND DNP
+R99 Net-_JP88-Pad2_ Net-_JP88-Pad1_ DNP
+JP88 Net-_JP88-Pad1_ Net-_JP88-Pad2_ POP
+R96 Net-_JP88-Pad1_ GND DNP
+R98 Net-_JP87-Pad2_ Net-_JP87-Pad1_ DNP
+JP87 Net-_JP87-Pad1_ Net-_JP87-Pad2_ POP
+U25 Net-_JP91-Pad2_ Net-_JP91-Pad1_ /cookie/ADC11 GND NC_55 Net-_JP92-Pad1_ Net-_JP92-Pad2_ ~ LM393
+C65 ~ GND 100n
+R101 Net-_JP91-Pad1_ GND DNP
+R103 Net-_JP92-Pad2_ Net-_JP92-Pad1_ DNP
+JP92 Net-_JP92-Pad1_ Net-_JP92-Pad2_ POP
+R100 Net-_JP92-Pad1_ GND DNP
+R102 Net-_JP91-Pad2_ Net-_JP91-Pad1_ DNP
+JP91 Net-_JP91-Pad1_ Net-_JP91-Pad2_ POP
+JP93 Net-_JP91-Pad2_ /cookie/mega2/ADC6 POP
+JP94 Net-_JP92-Pad2_ /cookie/mega2/ADC7 POP
+JP89 Net-_JP87-Pad2_ /cookie/mega2/ADC4 POP
+JP90 Net-_JP88-Pad2_ /cookie/mega2/ADC5 POP
+JP95 /cookie/mega3/MOSI NC_56 /cookie/mega3/gnd_switch /cookie/mega3/gnd_switch /cookie/mega3/RESET /cookie/mega3/gnd_switch /cookie/mega3/SCK /cookie/mega3/gnd_switch /cookie/mega3/MISO /cookie/mega3/gnd_switch AVR-ISP-10R
+Y3 Net-_C67-Pad1_ Net-_C68-Pad1_ 16MHz
+L3 ~ /cookie/mega3/AVCC Inductor
+C67 Net-_C67-Pad1_ /cookie/mega3/gnd_switch 22p
+C68 Net-_C68-Pad1_ /cookie/mega3/gnd_switch 22p
+C66 Net-_C66-Pad1_ /cookie/mega3/gnd_switch 100n
+C69 /cookie/mega3/AVCC /cookie/mega3/gnd_switch 100n
+P11 /cookie/mega3/gnd_switch Net-_JP113-Pad1_ Net-_JP112-Pad1_ Net-_JP111-Pad1_ Net-_JP110-Pad1_ ~ /cookie/mega3/RESET DNP
+JP110 Net-_JP110-Pad1_ /cookie/mega3/ADC7 DNP
+JP111 Net-_JP111-Pad1_ /cookie/mega3/ADC6 DNP
+JP112 Net-_JP112-Pad1_ /cookie/mega3/ADC5 DNP
+JP113 Net-_JP113-Pad1_ /cookie/mega3/ADC4 DNP
+SW3 Net-_R104-Pad2_ /cookie/mega3/RESET RESET_BUTTON
+C72 /cookie/mega3/RESET /cookie/mega3/gnd_switch DNP
+R104 /cookie/mega3/gnd_switch Net-_R104-Pad2_ 100R
+U26 /cookie/VOTE_8_A /cookie/VOTE_8_B Net-_R119-Pad2_ /cookie/VOTE_7_A /cookie/VOTE_7_B Net-_R105-Pad1_ GND Net-_U26-Pad8_ /cookie/VOTE_6_B /cookie/VOTE_6_A Net-_U26-Pad11_ /cookie/VOTE_5_B /cookie/VOTE_5_A ~ CD74HC08E
+R105 Net-_R105-Pad1_ Net-_R105-Pad2_ 1k
+JP98 Net-_JP101-Pad1_ /cookie/mega3/SCK POP
+JP97 Net-_JP100-Pad1_ /cookie/mega3/MOSI POP
+JP96 Net-_JP96-Pad1_ /cookie/mega3/MISO POP
+JP99 Net-_JP96-Pad1_ /cookie/mega3/SPI_MISO DNP
+JP100 Net-_JP100-Pad1_ /cookie/mega3/SPI_MOSI DNP
+JP101 Net-_JP101-Pad1_ /cookie/mega3/SPI_SCK DNP
+C76 ~ GND 100n
+U27 ~ /cookie/mega3/SCL_0_5V /cookie/mega3/SDA_0_5V GND Net-_U26-Pad11_ /cookie/INTERNAL_SDA /cookie/INTERNAL_SCL ~ PCA9517
+U28 ~ /cookie/mega3/SCL_1_5V /cookie/mega3/SDA_1_5V GND Net-_U26-Pad8_ SYSTEM_SDA SYSTEM_SCL ~ PCA9517
+C70 ~ GND 100n
+C71 ~ GND 100n
+C73 ~ GND 100n
+C74 ~ GND 100n
+C75 ~ /cookie/mega3/gnd_switch 100n
+C77 ~ /cookie/mega3/gnd_switch 100n
+C78 ~ /cookie/mega3/gnd_switch 100n
+K6 /cookie/mega3/TX0 /cookie/mega3/RX0 /cookie/mega3/gnd_switch SERIAL_0
+K7 /cookie/mega3/TX1 /cookie/mega3/RX1 /cookie/mega3/gnd_switch SERIAL_1
+P13 /cookie/mega3/PG0 /cookie/mega3/PG1 /cookie/mega3/PG2 /cookie/mega3/PG3 /cookie/mega3/PG4 CONN_5
+P12 /cookie/mega3/PB4 /cookie/mega3/PB5 /cookie/mega3/PB6 /cookie/mega3/PB7 /cookie/mega3/PD4 /cookie/mega3/PD5 Net-_JP102-Pad2_ Net-_JP103-Pad2_ Net-_JP104-Pad2_ Net-_JP105-Pad2_ Net-_JP106-Pad2_ Net-_JP107-Pad2_ Net-_JP108-Pad2_ Net-_JP109-Pad2_ CONN_14
+JP119 /cookie/mega3/PE7 /cookie/VOTE_6_C POP
+JP118 /cookie/mega3/PE6 /cookie/VOTE_5_C POP
+JP117 /cookie/mega3/PE5 /cookie/VOTE_4_C POP
+JP116 /cookie/mega3/PE4 /cookie/VOTE_3_C POP
+JP115 /cookie/mega3/PE3 /cookie/VOTE_2_C POP
+JP114 /cookie/mega3/PE2 /cookie/VOTE_1_C POP
+JP104 /cookie/mega3/PE2 Net-_JP104-Pad2_ DNP
+JP105 /cookie/mega3/PE3 Net-_JP105-Pad2_ DNP
+JP106 /cookie/mega3/PE4 Net-_JP106-Pad2_ DNP
+JP107 /cookie/mega3/PE5 Net-_JP107-Pad2_ DNP
+JP108 /cookie/mega3/PE6 Net-_JP108-Pad2_ DNP
+JP109 /cookie/mega3/PE7 Net-_JP109-Pad2_ DNP
+JP103 /cookie/mega3/PD7 Net-_JP103-Pad2_ DNP
+JP102 /cookie/mega3/PD6 Net-_JP102-Pad2_ DNP
+JP121 /cookie/mega3/PD7 /cookie/VOTE_8_C POP
+JP120 /cookie/mega3/PD6 /cookie/VOTE_7_C POP
+T8 /cookie/mega3/gnd_switch Net-_R119-Pad2_ GND MOS_N
+R119 GND Net-_R119-Pad2_ 10k
+T7 /cookie/mega3/RESET Net-_R105-Pad2_ Net-_R104-Pad2_ MOS_N
+R118 /cookie/VOTE_8_A ~ 10k
+R117 /cookie/VOTE_8_B ~ 10k
+R116 /cookie/VOTE_5_A ~ 10k
+R114 /cookie/VOTE_5_B ~ 10k
+R112 /cookie/VOTE_6_A ~ 10k
+R111 /cookie/VOTE_6_B ~ 10k
+R110 /cookie/mega3/RESET ~ 10k
+uC3 NC_57 /cookie/mega3/RX0 /cookie/mega3/TX0 /cookie/mega3/PE2 /cookie/mega3/PE3 /cookie/mega3/PE4 /cookie/mega3/PE5 /cookie/mega3/PE6 /cookie/mega3/PE7 /cookie/mega3/SPI_SS Net-_JP101-Pad1_ Net-_JP100-Pad1_ Net-_JP96-Pad1_ /cookie/mega3/PB4 /cookie/mega3/PB5 /cookie/mega3/PB6 /cookie/mega3/PB7 /cookie/mega3/PG3 /cookie/mega3/PG4 /cookie/mega3/RESET ~ /cookie/mega3/gnd_switch Net-_C67-Pad1_ Net-_C68-Pad1_ /cookie/mega3/SCL_0_5V /cookie/mega3/SDA_0_5V /cookie/mega3/RX1 /cookie/mega3/TX1 /cookie/mega3/PD4 /cookie/mega3/PD5 /cookie/mega3/PD6 /cookie/mega3/PD7 /cookie/mega3/PG0 /cookie/mega3/PG1 /cookie/mega3/SCL_1_5V /cookie/mega3/SDA_1_5V /cookie/OUT_0C /cookie/OUT_1C /cookie/OUT_2C /cookie/OUT_3C /cookie/OUT_4C /cookie/OUT_5C /cookie/mega3/PG2 NC_58 NC_59 NC_60 NC_61 NC_62 NC_63 NC_64 NC_65 ~ /cookie/mega3/gnd_switch /cookie/mega3/ADC7 /cookie/mega3/ADC6 /cookie/mega3/ADC5 /cookie/mega3/ADC4 /cookie/mega3/ADC3 /cookie/mega3/ADC2 /cookie/mega3/ADC1 /cookie/mega3/ADC0 Net-_C66-Pad1_ /cookie/mega3/gnd_switch /cookie/mega3/AVCC MEGA128-A
+R109 /cookie/mega3/SDA_1_5V ~ 47k
+R108 /cookie/mega3/SCL_1_5V ~ 47k
+R107 /cookie/mega3/SDA_0_5V ~ 47k
+R106 /cookie/mega3/SCL_0_5V ~ 47k
+R115 GND /cookie/VOTE_7_B 10k
+R113 GND /cookie/VOTE_7_A 10k
+U29 /cookie/mega3/ADC0 Net-_JP122-Pad1_ /cookie/ADC4 GND /cookie/ADC5 Net-_JP123-Pad1_ /cookie/mega3/ADC1 ~ LM393
+C79 ~ GND 100n
+R122 Net-_JP122-Pad1_ GND DNP
+R125 /cookie/mega3/ADC1 Net-_JP123-Pad1_ DNP
+JP123 Net-_JP123-Pad1_ /cookie/mega3/ADC1 POP
+R120 Net-_JP123-Pad1_ GND DNP
+R124 /cookie/mega3/ADC0 Net-_JP122-Pad1_ DNP
+JP122 Net-_JP122-Pad1_ /cookie/mega3/ADC0 POP
+U30 /cookie/mega3/ADC2 Net-_JP124-Pad1_ /cookie/ADC7 GND /cookie/ADC8 Net-_JP125-Pad1_ /cookie/mega3/ADC3 ~ LM393
+C80 ~ GND 100n
+R123 Net-_JP124-Pad1_ GND DNP
+R127 /cookie/mega3/ADC3 Net-_JP125-Pad1_ DNP
+JP125 Net-_JP125-Pad1_ /cookie/mega3/ADC3 POP
+R121 Net-_JP125-Pad1_ GND DNP
+R126 /cookie/mega3/ADC2 Net-_JP124-Pad1_ DNP
+JP124 Net-_JP124-Pad1_ /cookie/mega3/ADC2 POP
+U31 Net-_JP126-Pad2_ Net-_JP126-Pad1_ /cookie/ADC9 GND /cookie/ADC10 Net-_JP127-Pad1_ Net-_JP127-Pad2_ ~ LM393
+C81 ~ GND 100n
+R129 Net-_JP126-Pad1_ GND DNP
+R131 Net-_JP127-Pad2_ Net-_JP127-Pad1_ DNP
+JP127 Net-_JP127-Pad1_ Net-_JP127-Pad2_ POP
+R128 Net-_JP127-Pad1_ GND DNP
+R130 Net-_JP126-Pad2_ Net-_JP126-Pad1_ DNP
+JP126 Net-_JP126-Pad1_ Net-_JP126-Pad2_ POP
+U32 Net-_JP130-Pad2_ Net-_JP130-Pad1_ /cookie/ADC11 GND NC_66 Net-_JP131-Pad1_ Net-_JP131-Pad2_ ~ LM393
+C82 ~ GND 100n
+R133 Net-_JP130-Pad1_ GND DNP
+R135 Net-_JP131-Pad2_ Net-_JP131-Pad1_ DNP
+JP131 Net-_JP131-Pad1_ Net-_JP131-Pad2_ POP
+R132 Net-_JP131-Pad1_ GND DNP
+R134 Net-_JP130-Pad2_ Net-_JP130-Pad1_ DNP
+JP130 Net-_JP130-Pad1_ Net-_JP130-Pad2_ POP
+JP132 Net-_JP130-Pad2_ /cookie/mega3/ADC6 POP
+JP133 Net-_JP131-Pad2_ /cookie/mega3/ADC7 POP
+JP128 Net-_JP126-Pad2_ /cookie/mega3/ADC4 POP
+JP129 Net-_JP127-Pad2_ /cookie/mega3/ADC5 POP
+U35 Net-_U34-Pad3_ Net-_U34-Pad6_ Net-_U35-Pad3_ Net-_U35-Pad3_ Net-_U33-Pad8_ NC_67 GND Net-_U35-Pad12_ Net-_U33-Pad3_ Net-_U33-Pad6_ NC_68 Net-_U35-Pad12_ Net-_U33-Pad11_ ~ 74AHC32D.112
+U37 Net-_U36-Pad3_ Net-_U36-Pad8_ Net-_U37-Pad3_ Net-_U37-Pad3_ Net-_U36-Pad11_ NC_69 GND Net-_U37-Pad12_ Net-_U36-Pad6_ Net-_U34-Pad8_ NC_70 Net-_U37-Pad12_ Net-_U34-Pad11_ ~ 74AHC32D.112
+C83 ~ GND 100n
+C84 ~ GND 100n
+C86 ~ GND 100n
+C85 ~ GND 100n
+C87 ~ GND 100n
+U33 /cookie/OUT_5A /cookie/OUT_5B Net-_U33-Pad3_ /cookie/OUT_5A /cookie/OUT_5C Net-_U33-Pad6_ GND Net-_U33-Pad8_ /cookie/OUT_4B /cookie/OUT_4C Net-_U33-Pad11_ /cookie/OUT_5B /cookie/OUT_5C ~ 74HCT02D.652
+U34 /cookie/OUT_4A /cookie/OUT_4B Net-_U34-Pad3_ /cookie/OUT_4A /cookie/OUT_4C Net-_U34-Pad6_ GND Net-_U34-Pad8_ /cookie/cookie_voter2/4A /cookie/cookie_voter2/4C Net-_U34-Pad11_ /cookie/cookie_voter2/4B /cookie/cookie_voter2/4C ~ 74HCT02D.652
+U36 /cookie/cookie_voter2/3A /cookie/cookie_voter2/3B Net-_U36-Pad3_ /cookie/cookie_voter2/4A /cookie/cookie_voter2/4B Net-_U36-Pad6_ GND Net-_U36-Pad8_ /cookie/cookie_voter2/3A /cookie/cookie_voter2/3C Net-_U36-Pad11_ /cookie/cookie_voter2/3B /cookie/cookie_voter2/3C ~ 74HCT02D.652
+R142 ~ /cookie/OUT_5A 22k
+R144 ~ /cookie/OUT_5B 22k
+R146 ~ /cookie/OUT_5C 22k
+R136 ~ /cookie/OUT_4A 22k
+R138 ~ /cookie/OUT_4B 22k
+R140 ~ /cookie/OUT_4C 22k
+R137 ~ /cookie/cookie_voter2/3A 22k
+R139 ~ /cookie/cookie_voter2/3B 22k
+R141 ~ /cookie/cookie_voter2/3C 22k
+R143 ~ /cookie/cookie_voter2/4A 22k
+R145 ~ /cookie/cookie_voter2/4B 22k
+R147 ~ /cookie/cookie_voter2/4C 22k
+U40 Net-_U39-Pad3_ Net-_U39-Pad6_ Net-_U40-Pad3_ Net-_U40-Pad3_ Net-_U38-Pad8_ NC_71 GND Net-_U40-Pad12_ Net-_U38-Pad3_ Net-_U38-Pad6_ NC_72 Net-_U40-Pad12_ Net-_U38-Pad11_ ~ 74AHC32D.112
+U42 Net-_U41-Pad3_ Net-_U41-Pad8_ Net-_U42-Pad3_ Net-_U42-Pad3_ Net-_U41-Pad11_ NC_73 GND Net-_U42-Pad12_ Net-_U41-Pad6_ Net-_U39-Pad8_ NC_74 Net-_U42-Pad12_ Net-_U39-Pad11_ ~ 74AHC32D.112
+C88 ~ GND 100n
+C89 ~ GND 100n
+C91 ~ GND 100n
+C90 ~ GND 100n
+C92 ~ GND 100n
+U38 /cookie/OUT_1A /cookie/OUT_1B Net-_U38-Pad3_ /cookie/OUT_1A /cookie/OUT_1C Net-_U38-Pad6_ GND Net-_U38-Pad8_ /cookie/OUT_0B /cookie/OUT_0C Net-_U38-Pad11_ /cookie/OUT_1B /cookie/OUT_1C ~ 74HCT02D.652
+U39 /cookie/OUT_0A /cookie/OUT_0B Net-_U39-Pad3_ /cookie/OUT_0A /cookie/OUT_0C Net-_U39-Pad6_ GND Net-_U39-Pad8_ /cookie/OUT_3A /cookie/OUT_3C Net-_U39-Pad11_ /cookie/OUT_3B /cookie/OUT_3C ~ 74HCT02D.652
+U41 /cookie/OUT_2A /cookie/OUT_2B Net-_U41-Pad3_ /cookie/OUT_3A /cookie/OUT_3B Net-_U41-Pad6_ GND Net-_U41-Pad8_ /cookie/OUT_2A /cookie/OUT_2C Net-_U41-Pad11_ /cookie/OUT_2B /cookie/OUT_2C ~ 74HCT02D.652
+R154 ~ /cookie/OUT_1A 22k
+R156 ~ /cookie/OUT_1B 22k
+R158 ~ /cookie/OUT_1C 22k
+R148 ~ /cookie/OUT_0A 22k
+R150 ~ /cookie/OUT_0B 22k
+R152 ~ /cookie/OUT_0C 22k
+R149 ~ /cookie/OUT_2A 22k
+R151 ~ /cookie/OUT_2B 22k
+R153 ~ /cookie/OUT_2C 22k
+R155 ~ /cookie/OUT_3A 22k
+R157 ~ /cookie/OUT_3B 22k
+R159 ~ /cookie/OUT_3C 22k
+uC4 NC_75 NC_76 NC_77 NC_78 NC_79 ~ NC_80 Net-_C97-Pad1_ Net-_C96-Pad1_ /catalyst/stm32_1/gnd_sw ~ NC_81 NC_82 /catalyst/stm32_1/nrst NC_83 NC_84 NC_85 NC_86 ~ /catalyst/stm32_1/gnd_sw ~ Net-_C95-Pad1_ NC_87 NC_88 NC_89 NC_90 /catalyst/stm32_1/gnd_sw ~ NC_91 NC_92 NC_93 NC_94 NC_95 NC_96 NC_97 NC_98 NC_99 NC_100 NC_101 NC_102 NC_103 NC_104 NC_105 NC_106 NC_107 NC_108 NC_109 Net-_C94-Pad1_ /catalyst/stm32_1/gnd_sw ~ NC_110 NC_111 NC_112 NC_113 NC_114 NC_115 NC_116 NC_117 NC_118 NC_119 NC_120 NC_121 NC_122 NC_123 NC_124 NC_125 NC_126 NC_127 NC_128 NC_129 NC_130 NC_131 Net-_C93-Pad1_ /catalyst/stm32_1/gnd_sw ~ NC_132 NC_133 NC_134 NC_135 NC_136 NC_137 NC_138 NC_139 NC_140 NC_141 NC_142 NC_143 NC_144 NC_145 NC_146 NC_147 NC_148 NC_149 Net-_R160-Pad1_ NC_150 NC_151 NC_152 NC_153 /catalyst/stm32_1/gnd_sw ~ STM32F401RE
+L4 ~ Net-_C95-Pad1_ Inductor
+C95 Net-_C95-Pad1_ /catalyst/stm32_1/gnd_sw 100n
+C94 Net-_C94-Pad1_ /catalyst/stm32_1/gnd_sw 2.2u
+C93 Net-_C93-Pad1_ /catalyst/stm32_1/gnd_sw 2.2u
+C104 ~ /catalyst/stm32_1/gnd_sw 100n
+C105 ~ /catalyst/stm32_1/gnd_sw 100n
+C106 ~ /catalyst/stm32_1/gnd_sw 100n
+C107 ~ /catalyst/stm32_1/gnd_sw 100n
+C108 ~ /catalyst/stm32_1/gnd_sw 100n
+C109 ~ /catalyst/stm32_1/gnd_sw 100n
+T10 /catalyst/stm32_1/gnd_sw Net-_R162-Pad1_ GND MOS_N
+R161 ~ Net-_R161-Pad2_ 22k
+X1 Net-_C97-Pad1_ Net-_C96-Pad1_ DNP
+C96 Net-_C96-Pad1_ /catalyst/stm32_1/gnd_sw DNP
+C97 Net-_C97-Pad1_ /catalyst/stm32_1/gnd_sw DNP
+K8 /catalyst/stm32_1/gnd_sw Net-_K8-Pad2_ ~ CONN_3
+R160 Net-_R160-Pad1_ Net-_K8-Pad2_ 10k
+SW4 /catalyst/stm32_1/nrst /catalyst/stm32_1/gnd_sw SW_PUSH
+T12 /catalyst/stm32_1/nrst Net-_R172-Pad2_ /catalyst/stm32_1/gnd_sw MOS_N
+C102 /catalyst/stm32_1/nrst /catalyst/stm32_1/gnd_sw DNP
+R172 Net-_R172-Pad1_ Net-_R172-Pad2_ 1k
+C103 ~ GND 100n
+U45 ~ /catalyst/stm32_1/buf_int_SCL /catalyst/stm32_1/buf_int_SDA GND Net-_R171-Pad2_ NC_154 NC_155 ~ PCA9517
+U44 ~ NC_156 NC_157 GND Net-_R169-Pad2_ NC_158 NC_159 ~ PCA9517
+T11 Net-_R169-Pad2_ Net-_R170-Pad2_ GND MOS_N
+R170 Net-_R170-Pad1_ Net-_R170-Pad2_ 1k
+R169 ~ Net-_R169-Pad2_ 22k
+C98 ~ GND 100n
+C99 ~ GND 100n
+U43 /catalyst/stm32_1/KILL_SIG /catalyst/stm32_1/internal_cutoff Net-_R170-Pad1_ /catalyst/stm32_1/RESET_SIG /catalyst/stm32_1/internal_reset Net-_R172-Pad1_ GND NC_160 NC_161 NC_162 NC_163 NC_164 NC_165 ~ 74AHC00D.112
+C100 ~ GND 100n
+C101 ~ GND 100n
+T13 Net-_R171-Pad2_ /catalyst/stm32_1/internal_cutoff GND MOS_N
+R171 ~ Net-_R171-Pad2_ 22k
+T9 Net-_R161-Pad2_ /catalyst/stm32_1/KILL_SIG GND MOS_N
+R162 Net-_R162-Pad1_ Net-_R161-Pad2_ 1k
+R168 ~ /catalyst/stm32_1/RESET_SIG 22k
+R167 ~ /catalyst/stm32_1/internal_reset 22k
+R166 ~ /catalyst/stm32_1/KILL_SIG 22k
+R165 ~ /catalyst/stm32_1/internal_cutoff 22k
+R164 ~ /catalyst/stm32_1/buf_int_SCL 22k
+R163 ~ /catalyst/stm32_1/buf_int_SDA 22k
+.end

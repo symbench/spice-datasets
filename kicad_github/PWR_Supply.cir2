@@ -1,0 +1,19 @@
+.title KiCad schematic
+P2 /1 /2 /3 /4 CONN_01X04
+T1 Net-_P1-Pad2_ Net-_P1-Pad1_ Net-_D1-Pad4_ Net-_D1-Pad3_ Transformer_1P_1S
+D1 /220V_AC/+12V /220V_AC/GND Net-_D1-Pad3_ Net-_D1-Pad4_ D_Bridge_+-AA
+C1 /220V_AC/+12V /220V_AC/GND 470uF
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ CONN_01X02
+U1 GND /5Vreg/+12V /2 7805
+C3 /2 GND 0.01uF
+C2 /5Vreg/+12V GND 0.01uF
+C9 /3 GND 0.1V
+C8 /9Vreg/+12V GND 0.33uF
+U4 /9Vreg/+12V GND /3 LM7809
+U2 GND /12Vreg/+12V /4 LM7812
+C5 /4 GND 0.1uF
+C4 /12Vreg/+12V GND 0.33uF
+U3 /3_3Vreg/+12V /1 GND LT1086-3.3
+C6 /3_3Vreg/+12V GND 10uF
+C7 /1 GND 10uF
+.end

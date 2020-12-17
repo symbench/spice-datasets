@@ -1,0 +1,23 @@
+.title KiCad schematic
+Pin2 GND Net-_P1-Pad7_ CONN_01X02
+U1 GND VCC Net-_GS1-Pad1_ 78L05
+P1 GND NC_01 NC_02 NC_03 NC_04 NC_05 Net-_P1-Pad7_ Net-_P1-Pad8_ Net-_P1-Pad9_ Net-_P1-Pad10_ NC_06 NC_07 CONN_01X12
+P2 Net-_GS1-Pad1_ NC_08 Net-_P2-Pad3_ Net-_P2-Pad4_ Net-_P2-Pad5_ Net-_P2-Pad6_ NC_09 NC_10 NC_11 NC_12 NC_13 NC_14 CONN_01X12
+P3 GND Net-_P2-Pad3_ Net-_P3-Pad3_ CONN_01X03
+GS1 Net-_GS1-Pad1_ VCC GS2
+R1 Net-_P1-Pad7_ Net-_GS1-Pad1_ R
+Pin5 GND Net-_P1-Pad8_ CONN_01X02
+Pin3 GND Net-_P1-Pad9_ CONN_01X02
+Pin4 GND Net-_P1-Pad10_ CONN_01X02
+P6 GND Net-_P2-Pad4_ Net-_P6-Pad3_ CONN_01X03
+P4 GND Net-_P2-Pad5_ Net-_P4-Pad3_ CONN_01X03
+P5 GND Net-_P2-Pad6_ Net-_P5-Pad3_ CONN_01X03
+R7 Net-_P5-Pad3_ Net-_GS1-Pad1_ R
+R5 Net-_P4-Pad3_ Net-_GS1-Pad1_ R
+R8 Net-_P6-Pad3_ Net-_GS1-Pad1_ R
+R6 Net-_P3-Pad3_ Net-_GS1-Pad1_ R
+R2 Net-_P1-Pad8_ Net-_GS1-Pad1_ R
+R3 Net-_P1-Pad9_ Net-_GS1-Pad1_ R
+R4 Net-_P1-Pad10_ Net-_GS1-Pad1_ R
+Pin1 GND VCC CONN_01X02
+.end

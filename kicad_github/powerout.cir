@@ -1,0 +1,11 @@
+.title KiCad schematic
+IC2 GND VPWR VPWR NC_01 OVERLOAD /out_pwr0 /out_pwr0 NC_02 AP24x1
+IC3 GND VPWR VPWR NC_03 OVERLOAD /out_pwr1 /out_pwr1 NC_04 AP24x1
+IC4 GND VPWR VPWR NC_05 OVERLOAD /out_pwr2 /out_pwr2 NC_06 AP24x1
+IC5 GND VPWR VPWR NC_07 OVERLOAD /out_pwr3 /out_pwr3 NC_08 AP24x1
+IC6 GND VPWR VPWR NC_09 OVERLOAD /out_pwr4 /out_pwr4 NC_10 AP24x1
+IC7 GND VPWR VPWR NC_11 OVERLOAD /out_pwr5 /out_pwr5 NC_12 AP24x1
+IC8 GND VPWR VPWR NC_13 OVERLOAD /out_pwr6 /out_pwr6 NC_14 AP24x1
+IC9 GND VPWR VPWR NC_15 OVERLOAD /out_pwr7 /out_pwr7 NC_16 AP24x1
+P1 /out_pwr0 GND /out_pwr1 GND /out_pwr2 GND /out_pwr3 GND /out_pwr4 GND /out_pwr5 GND /out_pwr6 GND /out_pwr7 GND PWR_OUT
+.end

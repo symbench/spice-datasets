@@ -1,0 +1,6 @@
+.title KiCad schematic
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Screw_Terminal_1x02
+U1 NC_01 Earth Net-_J2-Pad1_ Net-_J1-Pad2_ NC_02 Net-_J3-Pad1_ Net-_J1-Pad1_ NC_03 TL081
+J2 Net-_J2-Pad1_ Screw_Terminal_1x01
+J3 Net-_J3-Pad1_ Screw_Terminal_1x01
+.end

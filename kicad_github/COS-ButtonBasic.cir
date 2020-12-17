@@ -1,0 +1,6 @@
+.title KiCad schematic
+P1 Net-_P1-Pad1_ Net-_P1-Pad2_ CONN_01X02
+SW1 Net-_P1-Pad2_ Net-_P1-Pad1_ SW_PUSH
+SW2 Net-_P1-Pad2_ Net-_P1-Pad1_ SW_PUSH
+SW3 Net-_P1-Pad2_ Net-_P1-Pad1_ SW_PUSH
+.end

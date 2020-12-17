@@ -1,0 +1,19 @@
+.title KiCad schematic
+U1 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 Net-_R7-Pad1_ Net-_R1-Pad1_ NC_11 NC_12 NC_13 NC_14 NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 Net-_U1-Pad24_ Net-_R8-Pad1_ NC_22 NC_23 NC_24 NC_25 NC_26 Net-_U1-Pad31_ Net-_U1-Pad32_ Net-_U1-Pad33_ NC_27 NC_28 Net-_U1-Pad36_ Net-_U1-Pad37_ NC_29 Net-_R2-Pad1_ Net-_U1-Pad40_ STM32F103C8T6
+U4 Net-_R2-Pad1_ GND GND Net-_R4-Pad1_ tcrt5000
+U7 Net-_U1-Pad24_ GND VCC lm393
+U2 Net-_U1-Pad40_ GND VCC lm393
+U6 Net-_U1-Pad31_ GND VCC lm393
+U9 Net-_R8-Pad1_ GND GND Net-_R5-Pad1_ tcrt5000
+U3 Net-_R1-Pad1_ GND GND Net-_R3-Pad2_ tcrt5000
+U8 Net-_R7-Pad1_ GND GND Net-_R6-Pad2_ tcrt5000
+R2 Net-_R2-Pad1_ VCC R
+R8 Net-_R8-Pad1_ VCC R
+R1 Net-_R1-Pad1_ VCC R
+R7 Net-_R7-Pad1_ VCC R
+R6 NC_30 Net-_R6-Pad2_ R
+R3 VCC Net-_R3-Pad2_ R
+R4 Net-_R4-Pad1_ VCC R
+R5 Net-_R5-Pad1_ VCC R
+U5 Net-_U1-Pad32_ Net-_U1-Pad33_ Net-_U1-Pad36_ Net-_U1-Pad37_ l298mini
+.end

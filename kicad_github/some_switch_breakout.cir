@@ -1,0 +1,15 @@
+.title KiCad schematic
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ Net-_J1-Pad11_ Net-_J1-Pad12_ switch
+J8 Net-_J1-Pad12_ Net-_J1-Pad12_ W
+J10 Net-_J1-Pad11_ Net-_J1-Pad11_ W
+J12 Net-_J1-Pad10_ Net-_J1-Pad10_ W
+J9 Net-_J1-Pad7_ Net-_J1-Pad7_ W
+J11 Net-_J1-Pad8_ Net-_J1-Pad8_ W
+J13 Net-_J1-Pad9_ Net-_J1-Pad9_ W
+J6 Net-_J1-Pad1_ Net-_J1-Pad1_ W
+J4 Net-_J1-Pad2_ Net-_J1-Pad2_ W
+J2 Net-_J1-Pad3_ Net-_J1-Pad3_ W
+J7 Net-_J1-Pad6_ Net-_J1-Pad6_ W
+J5 Net-_J1-Pad5_ Net-_J1-Pad5_ W
+J3 Net-_J1-Pad4_ Net-_J1-Pad4_ W
+.end

@@ -1,0 +1,14 @@
+.title KiCad schematic
+U1 Net-_J1-Pad9_ Net-_J1-Pad8_ Net-_J1-Pad7_ Net-_J1-Pad6_ Net-_J1-Pad5_ Net-_J1-Pad4_ Net-_J1-Pad3_ Net-_J1-Pad2_ +3V3 GND Net-_J6-Pad3_ Net-_J6-Pad2_ Net-_J3-Pad2_ Net-_J4-Pad2_ Net-_J5-Pad2_ +3V3 Net-_J6-Pad4_ Net-_J6-Pad4_ Net-_J2-Pad9_ Net-_J2-Pad8_ Net-_J2-Pad7_ Net-_J2-Pad6_ Net-_J2-Pad5_ Net-_J2-Pad4_ Net-_J2-Pad3_ Net-_J2-Pad2_ MCP23017
+JP1 Net-_J6-Pad4_ Net-_J6-Pad4_ JMP
+J6 +3V3 Net-_J6-Pad2_ Net-_J6-Pad3_ Net-_J6-Pad4_ GND Conn_01x05
+R1 +3V3 Net-_J6-Pad3_ 10K
+R2 +3V3 Net-_J6-Pad2_ 10K
+C1 +3V3 GND 100nF
+J3 GND Net-_J3-Pad2_ +3V3 A0
+J4 GND Net-_J4-Pad2_ +3V3 A1
+J5 GND Net-_J5-Pad2_ +3V3 A2
+J1 GND Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ +3V3 Conn_01x10
+J2 +3V3 Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ GND Conn_01x10
+R3 +3V3 Net-_J6-Pad4_ 10K
+.end

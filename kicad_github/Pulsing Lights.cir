@@ -1,0 +1,13 @@
+.title KiCad schematic
+U1 GND THR/TRIG LED VCC Net-_Cb1-Pad1_ THR/TRIG Net-_D1-Pad1_ VCC LM555
+Cb1 Net-_Cb1-Pad1_ GND C
+R1 VCC Net-_D1-Pad1_ R
+R2 Net-_D1-Pad1_ THR/TRIG R
+C1 THR/TRIG GND C
+D1 Net-_D1-Pad1_ THR/TRIG D
+D2 Net-_D2-Pad1_ LED LED
+D3 Net-_D3-Pad1_ Net-_D2-Pad1_ LED
+D4 Net-_D4-Pad1_ Net-_D3-Pad1_ LED
+D5 Net-_D5-Pad1_ Net-_D4-Pad1_ LED
+R3 Net-_D5-Pad1_ GND R
+.end

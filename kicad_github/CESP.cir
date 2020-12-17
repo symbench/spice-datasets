@@ -1,0 +1,13 @@
+.title KiCad schematic
+R1 Net-_C1-Pad1_ Net-_L1-Pad1_ R
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ C
+L1 Net-_L1-Pad1_ Net-_C1-Pad2_ INDUCTOR
+U1 NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 LM741
+IC1 NC_08 Net-_IC1-Pad2_ Net-_IC1-Pad3_ Net-_IC1-Pad4_ Net-_IC1-Pad5_ Net-_IC1-Pad6_ Net-_IC1-Pad7_ Net-_IC1-Pad8_ Net-_IC1-Pad9_ Net-_IC1-Pad10_ Net-_IC1-Pad11_ Net-_IC1-Pad12_ Net-_IC1-Pad13_ Net-_IC1-Pad14_ Net-_IC1-Pad15_ Net-_IC1-Pad16_ Net-_IC1-Pad17_ Net-_IC1-Pad18_ Net-_IC1-Pad19_ Net-_IC1-Pad20_ Net-_IC1-Pad21_ Net-_IC1-Pad22_ Net-_IC1-Pad23_ Net-_IC1-Pad24_ Net-_IC1-Pad25_ Net-_IC1-Pad26_ Net-_IC1-Pad27_ Net-_IC1-Pad28_ Net-_IC1-Pad29_ Net-_IC1-Pad30_ Net-_IC1-Pad31_ Net-_IC1-Pad32_ ATMEGA168-A
+J2 Net-_IC1-Pad11_ Net-_IC1-Pad2_ Net-_IC1-Pad3_ Net-_IC1-Pad4_ Net-_IC1-Pad5_ Net-_IC1-Pad6_ Net-_IC1-Pad7_ Net-_IC1-Pad8_ Net-_IC1-Pad9_ Net-_IC1-Pad10_ NC_09 Net-_IC1-Pad12_ Net-_IC1-Pad13_ Net-_IC1-Pad14_ Net-_IC1-Pad15_ Net-_IC1-Pad16_ CONN16
+J1 Net-_IC1-Pad17_ Net-_IC1-Pad18_ Net-_IC1-Pad19_ Net-_IC1-Pad20_ Net-_IC1-Pad21_ Net-_IC1-Pad22_ Net-_IC1-Pad23_ Net-_IC1-Pad24_ Net-_IC1-Pad25_ Net-_IC1-Pad26_ Net-_IC1-Pad27_ Net-_IC1-Pad28_ Net-_IC1-Pad29_ Net-_IC1-Pad30_ Net-_IC1-Pad31_ Net-_IC1-Pad32_ CONN16
+U3 NC_10 NC_11 NC_12 NC_13 NC_14 LM2902N
+U2 NC_15 NC_16 NC_17 7805
+U4 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 LM741
+U5 NC_25 NC_26 NC_27 NC_28 NC_29 TLC274
+.end

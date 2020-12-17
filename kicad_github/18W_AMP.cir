@@ -1,0 +1,26 @@
+.title KiCad schematic
+P1 GND Net-_C1-Pad1_ INPUT
+P2 Net-_C8-Pad2_ GND OUTPUT
+Q2 Net-_C6-Pad1_ Net-_C8-Pad1_ GND BD907
+Q1 Net-_C6-Pad2_ VSS Net-_C8-Pad1_ BD908
+D1 VSS Net-_C8-Pad1_ 1N4001
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 0.22uF
+R1 VSS Net-_C2-Pad1_ 56K
+R6 VSS Net-_C6-Pad2_ 1.5
+C3 Net-_C3-Pad1_ GND 10uF
+R4 Net-_R4-Pad1_ Net-_C3-Pad1_ 3.3K
+C2 Net-_C2-Pad1_ GND 47uF
+R5 Net-_R4-Pad1_ Net-_C8-Pad1_ 30K
+R8 Net-_C8-Pad1_ Net-_C7-Pad2_ 1
+C8 Net-_C8-Pad1_ Net-_C8-Pad2_ 2200uF
+C4 GND VSS 0.22uF
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 0.22uF
+C7 GND Net-_C7-Pad2_ 0.22uF
+D2 Net-_C8-Pad1_ GND 1N4001
+C5 VSS GND 2200uF
+R7 Net-_C6-Pad1_ GND 1.5
+P3 VSS GND CONN_01X02
+U1 Net-_C1-Pad2_ Net-_R4-Pad1_ Net-_C6-Pad1_ Net-_C8-Pad1_ Net-_C6-Pad2_ TDA2030A
+R3 Net-_C1-Pad2_ Net-_C2-Pad1_ 56K
+R2 Net-_C2-Pad1_ GND 56K
+.end

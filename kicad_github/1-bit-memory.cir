@@ -1,0 +1,19 @@
+.title KiCad schematic
+Q1 GND /I /notI 2N7000
+Q2 GND /notI /IandW 2N7000
+Q3 GND /notW /IandW 2N7000
+Q4 GND /notW /InornotW 2N7000
+Q5 GND /I /InornotW 2N7000
+Q8 GND /OnorIandW /O 2N7000
+Q9 GND /InornotW /O 2N7000
+Q6 GND /IandW /OnorIandW 2N7000
+Q7 GND /O /OnorIandW 2N7000
+R1 VCC /notI R
+R2 VCC /IandW R
+R4 VCC /OnorIandW R
+R3 VCC /InornotW R
+R5 VCC /O R
+J1 /notW /I J2-2_bit_bus
+J3 /O J1-1_bit_bus
+J2 GND VCC J2-2_pole_connector
+.end

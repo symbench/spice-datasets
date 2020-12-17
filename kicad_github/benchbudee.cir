@@ -1,0 +1,105 @@
+.title KiCad schematic
+U4 /Thermocouple/CH0+ Net-_R7-Pad2_ Net-_R10-Pad1_ +12V Net-_Q2-PadD_ /Arduino/CURR_MEAS Net-_Q4-PadG_ Net-_R11-Pad1_ Net-_P3-Pad1_ NC_01 -12V NC_02 Net-_R12-Pad2_ Net-_R10-Pad2_ OPA4170
+R12 Net-_P3-Pad6_ Net-_R12-Pad2_ R
+R11 Net-_R11-Pad1_ Net-_P3-Pad1_ R
+R13 Net-_R12-Pad2_ Net-_R10-Pad2_ R
+R9 Net-_R7-Pad2_ Net-_R11-Pad1_ R
+R7 /Thermocouple/CH0+ Net-_R7-Pad2_ R
+R8 AGND Net-_R10-Pad1_ R
+R10 Net-_R10-Pad1_ Net-_R10-Pad2_ R
+U2 /Arduino/~RESET +5V +5V /Thermocouple/CH0+ /Thermocouple/CH0- /Thermocouple/CH1- /Thermocouple/CH1+ AGND NC_03 NC_04 AGND Net-_P2-Pad1_ Net-_P2-Pad2_ /Arduino/~DR NC_05 NC_06 NC_07 /Arduino/SCLK /Arduino/MISO /Arduino/MOSI MCP3901
+R44 Net-_P3-Pad4_ Net-_R12-Pad2_ R
+R45 Net-_P3-Pad2_ Net-_R12-Pad2_ R
+P3 Net-_P3-Pad1_ Net-_P3-Pad2_ Net-_P3-Pad1_ Net-_P3-Pad4_ Net-_P3-Pad1_ Net-_P3-Pad6_ CONN_3X2
+U3 AGND AGND /Thermocouple/CH1+ +5V AGND LMT84
+C10 +5V AGND C
+C9 +12V /Thermocouple/CH0- C
+C8 -12V AGND C
+C7 AGND +5V C
+C6 AGND +5V C
+P2 Net-_P2-Pad1_ Net-_P2-Pad2_ CONN_2
+R51 /Thermocouple/CH0- AGND 0
+R50 /Thermocouple/CH1- AGND 0
+R4 Net-_D1-Pad1_ Net-_Q1-Pad2_ 100
+Q1 Net-_Q1-Pad1_ Net-_Q1-Pad2_ Net-_D2-Pad1_ 2N3904
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LG 0971-KN-1
+K1 NC_08 Net-_D2-Pad2_ NC_09 NC_10 Net-_D2-Pad1_ 1461069-5
+R6 GND Net-_Q1-Pad1_ 0
+R2 GND Net-_D1-Pad2_ 200
+R3 Net-_R3-Pad1_ +12P 0
+R1 Net-_R1-Pad1_ GND 500
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ B130-13-F
+U1 /Arduino/RELAY+ Net-_R1-Pad1_ Net-_D1-Pad1_ Net-_R3-Pad1_ LTV-816S
+R5 Net-_D2-Pad2_ +12P 0
+P1 Net-_P1-Pad1_ Net-_P1-Pad1_ GND Net-_P1-Pad4_ GND Net-_P1-Pad4_ NC_11 NC_12 NC_13 +12C NC_14 NC_15 NC_16 Net-_P1-Pad14_ NC_17 Net-_P1-Pad16_ NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 CONN_12X2
+C2 +12V GND C
+C3 GND -12V C
+L3 -12P -12V INDUCTOR
+L2 +12P +12V INDUCTOR
+SW1 Net-_P1-Pad16_ GND SPST
+TH1 +3.3VP Net-_P1-Pad1_ THERMISTOR
+TH2 +5P Net-_P1-Pad4_ THERMISTOR
+TH3 +12P +12C THERMISTOR
+TH4 -12P Net-_P1-Pad14_ THERMISTOR
+C1 +5V GND C
+L1 +5P +5V INDUCTOR
+U5 Net-_D4-Pad1_ GND /LED_Driver/LED_STRING- /Arduino/LED_EN_PWM /LED_Driver/LED_STRING+ +5V AP5726
+C4 +5V GND C
+L4 +5V Net-_D4-Pad1_ INDUCTOR
+D4 Net-_D4-Pad1_ /LED_Driver/LED_STRING+ DIODESCH
+C5 /LED_Driver/LED_STRING+ GND C
+R14 /LED_Driver/LED_STRING- GND R
+U9 -12V Net-_R17-Pad2_ /PowerMonitor/V-_MON LM317
+JP2 +12V FE_V+ JUMPER
+JP3 FE_V- -12V JUMPER
+JP1 GND AGND JUMPER
+U7 AGND +12V FE_V+ LM7812
+U8 AGND -12V FE_V- LM7812
+R17 AGND Net-_R17-Pad2_ R
+U6 +12V Net-_R15-Pad2_ /PowerMonitor/V+_MON LM317
+R16 AGND Net-_R15-Pad2_ R
+R21 /PowerMonitor/V+_ADJ /Arduino/V+_ADJ_MON R
+R22 /Arduino/V+_ADJ_MON AGND R
+R23 AGND /Arduino/V-_ADJ_MON R
+R19 /PowerMonitor/V-_MON /PowerMonitor/V-_ADJ R
+R20 /PowerMonitor/V+_ADJ /PowerMonitor/V+_MON R
+U10 /PowerMonitor/V+_CURRENT_MON /PowerMonitor/V+_CURRENT_MON /PowerMonitor/V+_MON +12V /PowerMonitor/V-_MON /PowerMonitor/V-_CURRENT_MON /PowerMonitor/V-_CURRENT_MON -12V LM324
+R24 /Arduino/V-_ADJ_MON /PowerMonitor/V-_ADJ R
+R15 /PowerMonitor/V+_MON Net-_R15-Pad2_ RVAR
+R18 Net-_R17-Pad2_ /PowerMonitor/V-_MON RVAR
+Q4 /Fan/FAN_OUT- Net-_Q4-PadG_ /Arduino/CURR_MEAS MOSFET_N
+R25 NC_26 Net-_Q2-PadD_ R
+TH5 +12C /Fan/FAN_OUT+ THERMISTOR
+D5 /Fan/FAN_OUT- /Fan/FAN_OUT+ DIODE
+Q3 /Arduino/CURR_MEAS /Arduino/FAN_MODE AGND MOSFET_N
+R26 /Arduino/CURR_MEAS AGND R
+Q2 Net-_Q2-PadD_ /Arduino/FAN_PWM AGND MOSFET_N
+U13 Net-_Q7-PadG_ /Arduino/CURR_MEAS Net-_Q5-PadD_ +12V -12V OPA4170
+Q7 /Fan/FAN_OUT- Net-_Q7-PadG_ /Arduino/CURR_MEAS MOSFET_N
+R48 NC_27 Net-_Q5-PadD_ R
+TH6 +12C /Fan/FAN_OUT+ THERMISTOR
+D3 /Fan/FAN_OUT- /Fan/FAN_OUT+ DIODE
+Q6 /Arduino/CURR_MEAS /Arduino/FAN_MODE AGND MOSFET_N
+R49 /Arduino/CURR_MEAS AGND R
+Q5 Net-_Q5-PadD_ /Arduino/FAN_PWM AGND MOSFET_N
+ARD1 Net-_ARD1-Pad1_ Net-_ARD1-Pad2_ Net-_ARD1-Pad3_ Net-_ARD1-Pad4_ Net-_ARD1-Pad5_ Net-_ARD1-Pad6_ Net-_ARD1-Pad7_ Net-_ARD1-Pad8_ NC_28 NC_29 Net-_ARD1-Pad11_ Net-_ARD1-Pad12_ NC_30 NC_31 Net-_ARD1-Pad15_ Net-_ARD1-Pad16_ NC_32 Net-_ARD1-Pad18_ Net-_ARD1-Pad19_ Net-_ARD1-Pad20_ Net-_ARD1-Pad21_ Net-_ARD1-Pad22_ Net-_ARD1-Pad23_ Net-_ARD1-Pad24_ NC_33 NC_34 ARDUINO_PINS
+R38 /Arduino/FAN_PWM Net-_ARD1-Pad21_ R
+R42 /Arduino/RELAY+ Net-_ARD1-Pad12_ R
+R34 Net-_ARD1-Pad8_ /Arduino/CURR_MEAS R
+R33 Net-_ARD1-Pad7_ NC_35 R
+R32 Net-_ARD1-Pad6_ /Arduino/V-_ADJ_MON R
+R31 Net-_ARD1-Pad5_ /Arduino/V+_ADJ_MON R
+R35 /Arduino/SCLK Net-_ARD1-Pad24_ R
+R36 /Arduino/MISO Net-_ARD1-Pad23_ R
+R37 /Arduino/MOSI Net-_ARD1-Pad22_ R
+R41 NC_36 Net-_ARD1-Pad18_ R
+R39 /Arduino/LED_EN_PWM Net-_ARD1-Pad20_ R
+R40 NC_37 Net-_ARD1-Pad19_ R
+R43 /Arduino/FAN_MODE Net-_ARD1-Pad11_ R
+R30 Net-_ARD1-Pad4_ +12P R
+R28 Net-_ARD1-Pad2_ GND R
+R29 Net-_ARD1-Pad3_ GND R
+R27 Net-_ARD1-Pad1_ +5V R
+R46 /Arduino/~RESET Net-_ARD1-Pad16_ R
+R47 /Arduino/~DR Net-_ARD1-Pad15_ R
+.end

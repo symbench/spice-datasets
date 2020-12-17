@@ -1,0 +1,25 @@
+.title KiCad schematic
+P103 /Current Control/Current_Sink+ GND CONN_01X02
+P102 Net-_P101-Pad2_ /Power Regulation/Vin /Current Control/Current_Sink+ CONN_01X03
+P101 GND Net-_P101-Pad2_ CONN_01X02
+U201 Net-_D201-Pad1_ Net-_R202-Pad2_ Net-_R201-Pad2_ GND Net-_R301-Pad2_ Net-_Q301-Pad3_ Net-_R302-Pad2_ 2.7V LMV358
+R201 2.7V Net-_R201-Pad2_ 28.7K
+RV201 NC_01 Net-_R201-Pad2_ GND 10K
+C201 2.7V GND .1
+D201 Net-_D201-Pad1_ /Current Control/FET_Gate 1N4148
+R202 /Current Control/Current_Sink+ Net-_R202-Pad2_ 9K
+R203 Net-_R202-Pad2_ GND 1K
+R303 Net-_Q301-Pad3_ GND .1
+R301 2.7V Net-_R301-Pad2_ 68k
+RV301 Net-_R301-Pad2_ NC_02 GND 10K
+C301 2.7V GND C
+R302 /Current Control/FET_Gate Net-_R302-Pad2_ 1k
+P301 NC_03 HEATSINK
+Q301 /Current Control/FET_Gate /Current Control/Current_Sink+ Net-_Q301-Pad3_ BUK9575
+C402 2.7V GND .1
+C401 /Power Regulation/Vin GND .1
+R401 Net-_R401-Pad1_ GND 0
+U401 2.7V GND GND Net-_R402-Pad2_ Net-_R401-Pad1_ GND GND /Power Regulation/Vin LM2931
+R402 2.7V Net-_R402-Pad2_ 27k
+R403 Net-_R402-Pad2_ GND 21.6k
+.end

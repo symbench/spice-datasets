@@ -1,0 +1,19 @@
+.title KiCad schematic
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ D_Photo
+D2 Net-_D1-Pad2_ Net-_D2-Pad2_ D_Photo
+D3 Net-_D2-Pad2_ Net-_D3-Pad2_ D_Photo
+D4 Net-_D3-Pad2_ Net-_D4-Pad2_ D_Photo
+U1 Net-_D1-Pad1_ GND Net-_L1-Pad1_ Net-_C1-Pad2_ Net-_R4-Pad2_ Net-_R2-Pad2_ Net-_R1-Pad2_ Net-_D1-Pad1_ SPV1040
+L1 Net-_L1-Pad1_ Net-_D1-Pad1_ L
+D5 Net-_D5-Pad1_ GND D_Schottky
+R4 Net-_D5-Pad1_ Net-_R4-Pad2_ R_Small
+C1 GND Net-_C1-Pad2_ C
+R5 Net-_R4-Pad2_ GND R_Small
+R3 Net-_C1-Pad2_ Net-_D5-Pad1_ Shunt 1%
+R2 Net-_D5-Pad1_ Net-_R2-Pad2_ R_Small
+R1 Net-_C1-Pad2_ Net-_R1-Pad2_ R_Small
+P1 Net-_D5-Pad1_ GND Net-_D4-Pad2_ GND CONN_01X04
+R6 GND Net-_D4-Pad2_ 0
+R8 Net-_D4-Pad2_ GND 0
+R7 Net-_D5-Pad1_ Net-_D1-Pad1_ 0
+.end

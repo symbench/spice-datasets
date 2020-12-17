@@ -1,0 +1,37 @@
+.title KiCad schematic
+R3 Net-_D2-Pad2_ Net-_C8-Pad1_ 1k
+U4 /RXD485 /E /E /TXD GND /A /B +5V MAX485E
+C12 +5V GND .1uF
+R8 +5V /E 560
+R12 /A +5V 560
+R10 GND /B 560
+Q2 /E Net-_Q2-Pad2_ GND BC547
+U2 Net-_C3-Pad1_ GND Net-_C8-Pad1_ L7805
+C3 Net-_C3-Pad1_ GND .1uF
+C8 Net-_C8-Pad1_ GND .1uF
+D2 GND Net-_D2-Pad2_ LED
+J18 /A /B GND +5V Screw_Terminal_01x04
+R14 /B /A 560
+J6 +5V /TEMP GND 18b20
+J12 +3V3 GND Screw_Terminal_01x02
+J13 +5V GND Screw_Terminal_01x02
+J11 /SCL /SDA Screw_Terminal_01x02
+J1 NC_01 Net-_J1-Pad2_ Net-_J1-Pad3_ +3V3 Net-_J1-Pad5_ GND /MISO NC_02 GND Micro_SD_Card
+J16 /RXD485 /RXD Conn_01x02_Male
+R6 /TXD Net-_Q2-Pad2_ 1k
+R9 Net-_J1-Pad3_ /MOSI 4K7
+R11 GND Net-_J1-Pad3_ 10K
+R1 Net-_J1-Pad5_ /SCK 4K7
+R5 GND Net-_J1-Pad5_ 10K
+R4 Net-_J1-Pad2_ /CS 4K7
+R7 GND Net-_J1-Pad2_ 10K
+R2 /TEMP +5V 4K7
+J2 Net-_J2-Pad1_ Net-_C3-Pad1_ POWER
+C1 +5V GND CP1_Small
+C2 +3V3 GND CP1_Small
+C4 +5V GND CP1_Small
+J3 GND Net-_J2-Pad1_ POWER
+J8 Net-_J2-Pad1_ GND GND Jack-DC
+J4 /ADDR1 /ADDR2 Screw_Terminal_01x02
+XA1 +5V +3V3 NC_03 NC_04 NC_05 NC_06 /SDA /SCL NC_07 NC_08 NC_09 /RXD /TXD /TEMP NC_10 /ADDR1 /ADDR2 NC_11 NC_12 NC_13 NC_14 /CS /MOSI /MISO /SCK GND GND NC_15 NC_16 Net-_C8-Pad1_ Arduino_Nano_Socket
+.end

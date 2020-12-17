@@ -1,0 +1,54 @@
+.title KiCad schematic
+U1 /4a /5a /6a /7a GND /s2a /s1a GND /s0a VCC /1a /2a /3a NC_01 NC_02 VCC 74LS148(A)
+SW8 /1a GND NC_03 NC_04 SW_Push_Dual
+R8 VCC /1a R
+SW9 /2a GND NC_05 NC_06 SW_Push_Dual
+R9 VCC /2a R
+SW10 /3a GND NC_07 NC_08 SW_Push_Dual
+R10 VCC /3a R
+SW11 /4a GND NC_09 NC_10 SW_Push_Dual
+R11 VCC /4a R
+SW12 /5a GND NC_11 NC_12 SW_Push_Dual
+R12 VCC /5a R
+SW13 /6a GND NC_13 NC_14 SW_Push_Dual
+R13 VCC /6a R
+SW14 /7a GND NC_15 NC_16 SW_Push_Dual
+R14 VCC /7a R
+SW1 /1b GND NC_17 NC_18 SW_Push_Dual
+R1 VCC /1b R
+SW2 /3b GND NC_19 NC_20 SW_Push_Dual
+R2 VCC /3b R
+SW3 /2b GND NC_21 NC_22 SW_Push_Dual
+R3 VCC /2b R
+SW4 /4b GND NC_23 NC_24 SW_Push_Dual
+R4 VCC /4b R
+SW5 /5b GND NC_25 NC_26 SW_Push_Dual
+R5 VCC /5b R
+SW6 /6b GND NC_27 NC_28 SW_Push_Dual
+R6 VCC /6b R
+SW7 /7b GND NC_29 NC_30 SW_Push_Dual
+R7 VCC /7b R
+U2 /4b /5b /6b /7b GND /s2b /s1b GND /s0b VCC /1b /2b /3b NC_31 NC_32 VCC 74LS148(B)
+C2 VCC GND C_Small
+R15 VCC Net-_D1-Pad2_ R
+D1 GND Net-_D1-Pad2_ LED
+J1 VCC GND /s0b /s0a /s1b /s1a /s2b /s2a /4 /3 Conn_02x05_Odd_Even
+SW15 VCC /4 GND SW_SPDT
+SW16 VCC /3 GND SW_SPDT
+C3 VCC GND C_Small
+C1 VCC GND C_Small
+C11 /1a GND C_Small
+C12 /2a GND C_Small
+C15 /5a GND C_Small
+C14 /4a GND C_Small
+C13 /3a GND C_Small
+C16 /6a GND C_Small
+C17 /7a GND C_Small
+C10 /7b GND C_Small
+C9 /6b GND C_Small
+C8 /5b GND C_Small
+C7 /4b GND C_Small
+C6 /2b GND C_Small
+C5 /3b GND C_Small
+C4 /1b GND C_Small
+.end

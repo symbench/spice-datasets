@@ -1,0 +1,50 @@
+.title KiCad schematic
+P1 Net-_P1-Pad1_ /CLK CAVALIER
+U4 NC_01 GND Net-_P1-Pad1_ +5VD OSC
+U7 GND Net-_U7-Pad2_ /CNTCASX GND /CY Net-_U7-Pad2_ GND Net-_U7-Pad12_ /CX GND /CNTCASY Net-_U7-Pad12_ GND +5VD 74HC74
+U5 GND Net-_U5-Pad2_ /CNTDECY GND /DY Net-_U5-Pad2_ GND Net-_U5-Pad12_ /DX GND /CNTDECX Net-_U5-Pad12_ GND +5VD 74HC74
+R2 +5VD Net-_D2-Pad2_ R
+R4 +5VD Net-_D4-Pad2_ R
+R6 +5VD Net-_D6-Pad2_ R
+R8 +5VD Net-_D8-Pad2_ R
+R10 +5VD Net-_D10-Pad2_ R
+R12 +5VD Net-_D12-Pad2_ R
+R14 +5VD Net-_D14-Pad2_ R
+R16 +5VD Net-_D16-Pad2_ R
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+D4 Net-_D4-Pad1_ Net-_D4-Pad2_ LED
+D6 Net-_D6-Pad1_ Net-_D6-Pad2_ LED
+D8 Net-_D8-Pad1_ Net-_D8-Pad2_ LED
+D10 Net-_D10-Pad1_ Net-_D10-Pad2_ LED
+D12 Net-_D12-Pad1_ Net-_D12-Pad2_ LED
+D14 Net-_D14-Pad1_ Net-_D14-Pad2_ LED
+D16 Net-_D16-Pad1_ Net-_D16-Pad2_ LED
+U3 GND /UDX Net-_D16-Pad1_ /UDY Net-_D14-Pad1_ /DY Net-_D12-Pad1_ /DX Net-_D10-Pad1_ GND /CY Net-_D8-Pad1_ /CX Net-_D6-Pad1_ NC_02 Net-_D4-Pad1_ NC_03 Net-_D2-Pad1_ GND +5VD 74LS240
+R24 /SEL1 +5VD R
+R23 /SEL2 +5VD R
+R22 /EN1 +5VD R
+R21 /EN2 +5VD R
+R20 /OE +5VD R
+R19 /RSTY +5VD R
+R18 /RSTX +5VD R
+R17 /X/Y +5VD R
+U2 GND /D0 Net-_D15-Pad1_ /D1 Net-_D13-Pad1_ /D2 Net-_D11-Pad1_ /D3 Net-_D9-Pad1_ GND /D4 Net-_D7-Pad1_ /D5 Net-_D5-Pad1_ /D6 Net-_D3-Pad1_ /D7 Net-_D1-Pad1_ GND +5VD 74LS240
+D15 Net-_D15-Pad1_ Net-_D15-Pad2_ LED
+D13 Net-_D13-Pad1_ Net-_D13-Pad2_ LED
+D11 Net-_D11-Pad1_ Net-_D11-Pad2_ LED
+D9 Net-_D9-Pad1_ Net-_D9-Pad2_ LED
+D7 Net-_D7-Pad1_ Net-_D7-Pad2_ LED
+D5 Net-_D5-Pad1_ Net-_D5-Pad2_ LED
+D3 Net-_D3-Pad1_ Net-_D3-Pad2_ LED
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+R15 +5VD Net-_D15-Pad2_ R
+R13 +5VD Net-_D13-Pad2_ R
+R11 +5VD Net-_D11-Pad2_ R
+R9 +5VD Net-_D9-Pad2_ R
+R7 +5VD Net-_D7-Pad2_ R
+R5 +5VD Net-_D5-Pad2_ R
+R3 +5VD Net-_D3-Pad2_ R
+R1 +5VD Net-_D1-Pad2_ R
+U1 +5VD /EN1 /EN2 /D0 /CLK /SEL1 /OE /UDX /UDY /D7 /RSTY /RSTX /CHBY /CHBX /CHAX /CHAY /CHIX GND /CHIY /D6 /D5 /D4 /TEST /CNTCASY /CNTCASX /SEL2 /CNTDECX /CNTDECY /D3 /D2 /D1 /X/Y HCTL-2032
+U6 +5VD /EN1 /EN2 /D0 /CLK /SEL1 /OE /UDX /UDY /D7 /RSTY /RSTX /CHBY /CHBX /CHAX /CHAY /CHIX GND /CHIY /D6 /D5 /D4 /TEST /CNTCASY /CNTCASX /SEL2 /CNTDECX /CNTDECY /D3 /D2 /D1 /X/Y HCTL-2032
+.end

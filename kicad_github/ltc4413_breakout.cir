@@ -1,0 +1,18 @@
+.title KiCad schematic
+W1 Net-_Q1-Pad2_ CH_IN
+W4 Net-_C2-Pad2_ VBAT
+W9 Net-_C4-Pad2_ OUTB
+C1 GND Net-_C1-Pad2_ 10uF
+W2 Net-_U1-Pad2_ ENBA
+W3 Net-_U1-Pad4_ ENBB
+C3 GND Net-_C3-Pad2_ 4.7uF
+C4 GND Net-_C4-Pad2_ 4.7uF
+W7 Net-_U1-Pad8_ OVI
+W10 Net-_U1-Pad9_ STAT
+Q1 OVP Net-_Q1-Pad2_ Net-_C1-Pad2_ IRLML6401
+W5 OVP OVP
+U1 Net-_C1-Pad2_ Net-_U1-Pad2_ GND Net-_U1-Pad4_ Net-_C2-Pad2_ Net-_C4-Pad2_ OVP Net-_U1-Pad8_ Net-_U1-Pad9_ Net-_C3-Pad2_ GND LTC4413
+W8 Net-_C3-Pad2_ OUTA
+C2 GND Net-_C2-Pad2_ 1uF
+W6 GND GND
+.end

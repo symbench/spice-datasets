@@ -1,0 +1,83 @@
+.title KiCad schematic
+U3 GND /XT1 /XT2 /RST +3V3 NC_01 /RS485_DE /RS485_TX /RS485_RX NC_02 /SCK /~OE /MOSI_C0 NC_03 GND +3V3 /STROBE /AUX_STROBE /SWDIO /SWCLK STM32F030F4Px
+U2 /RS485_RX /RS485_DE /RS485_DE /RS485_TX GND /RS485_A /RS485_B +3V3 SP3485CN
+C5 GND +3V3 100n
+U1 GND +3V3 +5V LD1117S33CTR
+C6 GND +3V3 100n
+C4 GND +5V 100n
+C3 +5V GND 1000u
+C12 GND /XT1 22p
+C13 GND /XT2 22p
+Q1 /SEG_C_CTRL /SEG_C_COM +5V AO3415A
+Q2 /SEG_G_CTLR /SEG_G_COM +5V AO3415A
+Q3 /SEG_B_CTRL /SEG_B_COM +5V AO3415A
+Q4 /SEG_DP_CTRL /SEG_DP_COM +5V AO3415A
+Q5 /SEG_F_CTRL /SEG_F_COM +5V AO3415A
+Q6 /SEG_D_CTRL /SEG_D_COM +5V AO3415A
+Q7 /SEG_A_CTRL /SEG_A_COM +5V AO3415A
+Q8 /SEG_E_CTRL /SEG_E_COM +5V AO3415A
+U7 /SEG_C_CTRL /SEG_DP_CTRL /SEG_D_CTRL /SEG_F_CTRL /SEG_E_CTRL /SEG_B_CTRL /SEG_A_CTRL GND NC_04 +5V /SCK /AUX_STROBE GND /MOSI_C2 /SEG_G_CTLR +5V 74HC595_mine
+P5 /SWDIO /SWCLK GND +3V3 SWD
+R35 /LED_ID NC_05 100
+R36 /LED_ERROR NC_06 140
+R37 /LED_COMM NC_07 100
+C11 /RST GND 10n
+R3 +3V3 /RST 47k
+C7 GND +5V 100n
+C8 GND +5V 100n
+C9 GND +3V3 100n
+C10 +3V3 GND 47u
+C19 +5V GND 1000u
+C2 GND +5V 100n
+P1 /in_left SUP
+P3 /in_right SUP
+R5 /~OE +3V3 10k
+D2 /~WD_RST /RST D_Small
+R19 Net-_Q14-Pad1_ /~WD_RST 10k
+R33 Net-_Q15-Pad1_ /R_SET_CTRL0 100k
+R34 Net-_Q16-Pad1_ /R_SET_CTRL1 100k
+U5 /LED_ERROR /LED_COMM /LED_ID NC_08 NC_09 /R_SET_CTRL0 /R_SET_CTRL1 GND /MOSI_C2 +3V3 /SCK /AUX_STROBE GND /MOSI_C0 NC_10 +3V3 74HC595_mine
+R4 /RS485_DE GND 100k
+F1 +5V Net-_F1-Pad2_ 2.5A MT
+D1 +5V GND 6.4V 1.3W
+R23 /WD_REF1 /~WD_RST1 470k
+R32 /WD_COMP1 /SEG_DP_CTRL 100k
+R29 GND /WD_REF1 47k
+R25 /WD_REF1 +5V 47k
+U6 /~WD_RST1 Net-_R1-Pad2_ /WD_REF1 GND /WD_REF2 /WD_COMP1 /~WD_RST2 +5V LM393
+C20 /WD_COMP1 GND 100n
+R21 /WD_REF2 /~WD_RST2 470k
+R24 GND /WD_REF2 10k
+R22 /WD_REF2 +5V 100k
+D3 /~WD_RST1 /~WD_RST D_Small
+D4 /~WD_RST2 /~WD_RST D_Small
+R20 +5V /~WD_RST 47k
+Q15 Net-_Q15-Pad1_ GND /mux_mod_right/R_SET_0 Q_NPN_BEC
+Q16 Net-_Q16-Pad1_ GND /mux_mod_right/R_SET_1 Q_NPN_BEC
+Q14 Net-_Q14-Pad1_ +5V /~OE_HV_CB Q_PNP_BEC
+U10 GND /STROBE /STROBE_HV GND /~OE /~OE_HV GND /MOSI_C0_HV /MOSI_C0 GND /SCK_HV /SCK GND +5V 74HCT125
+R44 /~OE_HV_CB /~OE_HV 1k
+R1 GND Net-_R1-Pad2_ 47k
+P4 GND +5V /RS485_A /RS485_B +5V GND CONN_02X03
+C1 GND +3V3 100n
+JP1 /in_left Net-_F1-Pad2_ rpos
+JP2 /in_left GND rneg
+JP4 /in_right GND lneg
+JP3 /in_right Net-_F1-Pad2_ lpos
+P6 /in_right SUP
+P2 /in_left SUP
+D10 /mux_mod_right/SEG_E /mux_mod_right/SEG_D /mux_mod_right/SEG_DP /mux_mod_right/SEG_C /mux_mod_right/SEG_G Net-_D10-Pad6_ /mux_mod_right/SEG_B Net-_D10-Pad8_ Net-_D10-Pad9_ /mux_mod_right/SEG_F /mux_mod_right/SEG_A Net-_D10-Pad12_ 7seg_4digit_cc
+D11 /mux_mod_right/SEG_E /mux_mod_right/SEG_D /mux_mod_right/SEG_DP /mux_mod_right/SEG_C /mux_mod_right/SEG_G Net-_D11-Pad6_ /mux_mod_right/SEG_B Net-_D11-Pad8_ Net-_D11-Pad9_ /mux_mod_right/SEG_F /mux_mod_right/SEG_A Net-_D11-Pad12_ 7seg_4digit_cc
+D12 /mux_mod_right/SEG_E /mux_mod_right/SEG_D /mux_mod_right/SEG_DP /mux_mod_right/SEG_C /mux_mod_right/SEG_G Net-_D12-Pad6_ /mux_mod_right/SEG_B Net-_D12-Pad8_ Net-_D12-Pad9_ /mux_mod_right/SEG_F /mux_mod_right/SEG_A Net-_D12-Pad12_ 7seg_4digit_cc
+D13 /mux_mod_right/SEG_E /mux_mod_right/SEG_D /mux_mod_right/SEG_DP /mux_mod_right/SEG_C /mux_mod_right/SEG_G Net-_D13-Pad6_ /mux_mod_right/SEG_B Net-_D13-Pad8_ Net-_D13-Pad9_ /mux_mod_right/SEG_F /mux_mod_right/SEG_A Net-_D13-Pad12_ 7seg_4digit_cc
+U8 GND /MOSI_C1_HV /SCK_HV /STROBE_HV Net-_D13-Pad12_ Net-_D13-Pad9_ Net-_D13-Pad8_ Net-_D13-Pad6_ Net-_D12-Pad12_ Net-_D12-Pad9_ Net-_D12-Pad8_ Net-_D12-Pad6_ Net-_D11-Pad12_ Net-_D11-Pad9_ Net-_D11-Pad8_ Net-_D11-Pad6_ Net-_D10-Pad12_ Net-_D10-Pad9_ Net-_D10-Pad8_ Net-_D10-Pad6_ /~OE_HV_CB NC_11 Net-_R38-Pad2_ +5V MBI5026
+R39 /mux_mod_right/R_SET_1 Net-_R38-Pad2_ R
+R38 /mux_mod_right/R_SET_0 Net-_R38-Pad2_ R
+D14 /SEG_E_COM /SEG_D_COM /SEG_DP_COM /SEG_C_COM /SEG_G_COM Net-_D14-Pad6_ /SEG_B_COM Net-_D14-Pad8_ Net-_D14-Pad9_ /SEG_F_COM /SEG_A_COM Net-_D14-Pad12_ 7seg_4digit_cc
+D15 /SEG_E_COM /SEG_D_COM /SEG_DP_COM /SEG_C_COM /SEG_G_COM Net-_D15-Pad6_ /SEG_B_COM Net-_D15-Pad8_ Net-_D15-Pad9_ /SEG_F_COM /SEG_A_COM Net-_D15-Pad12_ 7seg_4digit_cc
+D16 /SEG_E_COM /SEG_D_COM /SEG_DP_COM /SEG_C_COM /SEG_G_COM Net-_D16-Pad6_ /SEG_B_COM Net-_D16-Pad8_ Net-_D16-Pad9_ /SEG_F_COM /SEG_A_COM Net-_D16-Pad12_ 7seg_4digit_cc
+D17 /SEG_E_COM /SEG_D_COM /SEG_DP_COM /SEG_C_COM /SEG_G_COM Net-_D17-Pad6_ /SEG_B_COM Net-_D17-Pad8_ Net-_D17-Pad9_ /SEG_F_COM /SEG_A_COM Net-_D17-Pad12_ 7seg_4digit_cc
+U9 NC_12 /MOSI_C0_HV NC_13 NC_14 Net-_D17-Pad12_ Net-_D17-Pad9_ Net-_D17-Pad8_ Net-_D17-Pad6_ Net-_D16-Pad12_ Net-_D16-Pad9_ Net-_D16-Pad8_ Net-_D16-Pad6_ Net-_D15-Pad12_ Net-_D15-Pad9_ Net-_D15-Pad8_ Net-_D15-Pad6_ Net-_D14-Pad12_ Net-_D14-Pad9_ Net-_D14-Pad8_ Net-_D14-Pad6_ NC_15 /MOSI_C1_HV Net-_R40-Pad2_ NC_16 MBI5026
+R41 NC_17 Net-_R40-Pad2_ R
+R40 NC_18 Net-_R40-Pad2_ R
+.end

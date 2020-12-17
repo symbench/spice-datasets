@@ -1,0 +1,6 @@
+.title KiCad schematic
+L1 PWR DOUT GND Net-_L1-Pad4_ WS2812B
+C1 PWR GND 104
+P1 PWR DOUT DIN GND CONN_01X04
+R1 DIN Net-_L1-Pad4_ 470
+.end

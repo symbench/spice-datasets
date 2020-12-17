@@ -1,0 +1,20 @@
+.title KiCad schematic
+J1 +5V D- D+ GND Earth IN
+J3 +5VD D- D+ GND Earth OUT
+R2 +5V CTRL 10K
+J2 +5V CTRL GND +5VD Conn_01x04
+R3 CTRL GND 10K
+J4 D+ D+ D+
+J5 D- D- D-
+R1 Net-_Q1-Pad1_ CTRL 1K
+Q2 Net-_Q1-Pad3_ +5V +5VD Q_PMOS_GSD
+R4 Net-_Q1-Pad3_ +5V 10K
+D1 Net-_D1-Pad1_ +5V LED
+R5 GND Net-_D1-Pad1_ 1K
+D2 Net-_D2-Pad1_ +5VD LED
+R6 GND Net-_D2-Pad1_ 1K
+D3 Net-_D3-Pad1_ CTRL LED
+R7 GND Net-_D3-Pad1_ 1K
+J6 +5V D- D+ NC_01 GND Earth USB_OTG
+Q1 Net-_Q1-Pad1_ GND Net-_Q1-Pad3_ Q_NPN_BEC
+.end

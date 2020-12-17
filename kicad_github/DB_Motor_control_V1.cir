@@ -1,0 +1,13 @@
+.title KiCad schematic
+R2 Net-_D1-Pad1_ Net-_D1-Pad2_ 1k
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ 400x
+Q1 Net-_Q1-Pad1_ Net-_D1-Pad2_ Net-_P1-Pad1_ Q2N2222
+R1 Net-_Q1-Pad1_ Net-_P1-Pad14_ 680
+R5 Net-_D1-Pad1_ Net-_P3-Pad1_ 2.2k
+R4 Net-_D1-Pad1_ Net-_P1-Pad13_ 330
+R3 Net-_P2-Pad5_ Net-_D1-Pad1_ 33k
+P2 Net-_D1-Pad1_ Net-_D1-Pad2_ Net-_P1-Pad1_ Net-_D1-Pad1_ Net-_P2-Pad5_ CONN_01X05
+P3 Net-_P3-Pad1_ Net-_P1-Pad13_ Net-_P1-Pad1_ CONN_01X03
+P1 Net-_P1-Pad1_ Net-_D1-Pad1_ NC_01 NC_02 NC_03 NC_04 NC_05 NC_06 NC_07 NC_08 NC_09 NC_10 Net-_P1-Pad13_ Net-_P1-Pad14_ NC_11 NC_12 NC_13 NC_14 NC_15 CONN_01X19
+P4 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 NC_23 NC_24 NC_25 NC_26 NC_27 NC_28 NC_29 Net-_P2-Pad5_ NC_30 NC_31 NC_32 NC_33 CONN_01X19
+.end

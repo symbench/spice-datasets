@@ -1,0 +1,16 @@
+.title KiCad schematic
+U1 NC_01 Vin RefTemp GND Net-_C2-Pad1_ Vref NC_02 NC_03 REF50X0
+C2 Net-_C2-Pad1_ GND 1u
+C1 GND Vin 1u
+C3 GND Net-_C3-Pad2_ 10u
+C4 GND Vref 1u
+R1 Net-_R1-Pad1_ Net-_C2-Pad1_ 470k
+R3 Net-_R3-Pad1_ GND 1k
+R2 Net-_C3-Pad2_ Vref 1
+J1 GND GND GND GND GND Sense Vref GND PINS_1X8
+J2 GND GND GND RefTemp Vin HeaterGround HeaterGround NC_04 PINS_1X8
+R4 Sense Vref 0
+RV1 Net-_R3-Pad1_ Net-_R1-Pad1_ Net-_R5-Pad2_ 10k
+R5 Vref Net-_R5-Pad2_ 0
+C5 GND Net-_C3-Pad2_ 4.7u
+.end

@@ -1,0 +1,10 @@
+.title KiCad schematic
+U1 Net-_SW1-Pad2_ Net-_SW2-Pad2_ Net-_U1-Pad3_ Net-_SW2-Pad2_ Net-_SW1-Pad2_ Net-_U1-Pad13_ GND Net-_R1-Pad2_ Net-_U1-Pad3_ Net-_D1-Pad1_ Net-_R2-Pad2_ Net-_D2-Pad1_ Net-_U1-Pad13_ VCC 7400
+D2 Net-_D2-Pad1_ Net-_D2-Pad2_ LED
+D1 Net-_D1-Pad1_ Net-_D1-Pad2_ LED
+SW1 +5V Net-_SW1-Pad2_ SW_Push
+SW2 +5V Net-_SW2-Pad2_ SW_Push
+J1 +5V GND Conn_01x02
+R1 Net-_D2-Pad2_ Net-_R1-Pad2_ R
+R2 Net-_D1-Pad2_ Net-_R2-Pad2_ R
+.end

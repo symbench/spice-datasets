@@ -1,0 +1,29 @@
+.title KiCad schematic
+C4 +5V GND C
+C3 +5V GND C
+R4 GND Net-_R4-Pad2_ 680R
+Y1 Net-_C7-Pad2_ Net-_C6-Pad1_ Crystal
+C6 Net-_C6-Pad1_ GND C_Small
+C7 GND Net-_C7-Pad2_ C_Small
+RN1 Net-_RN1-Pad1_ +3V3 +3V3 +3V3 +3V3 Net-_RN1-Pad6_ Net-_RN1-Pad7_ +5V R_Pack04
+U2 +3V3 U2- U2+ Net-_R4-Pad2_ +3V3 Net-_C6-Pad1_ Net-_C7-Pad2_ U3- U3+ +3V3 U4- U4+ Net-_RN1-Pad1_ GND GND +3V3 Net-_RN1-Pad7_ Net-_RN1-Pad6_ Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad4_ +5V +3V3 U0- U0+ U1- U1+ GL850G
+C8 +3V3 GND C
+Y2 Net-_C7-Pad2_ Net-_C6-Pad1_ Crystal
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Conn_01x04
+TP1 U0- TEST
+TP2 U0+ TEST
+TP3 GND TEST
+TP4 U1- TEST
+TP5 U1+ TEST
+TP6 GND TEST
+TP7 U2- TEST
+TP8 U2+ TEST
+TP9 GND TEST
+TP10 U3- TEST
+TP11 U3+ TEST
+TP12 GND TEST
+TP13 U4- TEST
+TP14 U4+ TEST
+TP15 GND TEST
+TP16 +5V TEST
+.end

@@ -1,0 +1,6 @@
+.title KiCad schematic
+DIS1 GND Net-_DIS1-Pad2_ Net-_DIS1-Pad3_ SW_SPDT
+R2 Net-_J1-Pad1_ Net-_DIS1-Pad2_ 10K
+J1 Net-_J1-Pad1_ Net-_DIS1-Pad2_ Net-_DIS1-Pad3_ GND Conn_01x04
+R1 Net-_DIS1-Pad3_ GND 0R
+.end

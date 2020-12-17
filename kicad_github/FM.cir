@@ -1,0 +1,54 @@
+.title KiCad schematic
+J1 Net-_C10-Pad2_ Net-_C10-Pad2_ GND JACK_2P
+C10 Net-_C10-Pad1_ Net-_C10-Pad2_ 220nF
+R11 Net-_L1-Pad2_ Net-_C10-Pad1_ 22k
+R12 Net-_L1-Pad2_ Net-_R12-Pad2_ 56k
+RV1 GND Net-_R12-Pad2_ Net-_C11-Pad1_ 10K
+U2 GND Net-_C11-Pad1_ +12V LM7805
+C11 Net-_C11-Pad1_ GND 10uF
+C12 +12V GND 100uF
+L1 Net-_D1-Pad1_ Net-_L1-Pad2_ L_Core_Ferrite
+D2 Net-_D1-Pad1_ Net-_C14-Pad2_ bb139
+D1 Net-_D1-Pad1_ Net-_C6-Pad2_ bb139
+L2 Net-_C6-Pad2_ Net-_C14-Pad2_ L
+C6 Net-_C6-Pad1_ Net-_C6-Pad2_ 10pF
+R6 Net-_C6-Pad1_ Net-_C14-Pad2_ 6k8
+R3 Net-_C4-Pad1_ Net-_C6-Pad1_ 18k
+C4 Net-_C4-Pad1_ GND 100nF
+C8 Net-_C8-Pad1_ Net-_C6-Pad1_ 33pF
+Q1 Net-_C5-Pad2_ Net-_C6-Pad1_ Net-_C8-Pad1_ BC547
+R10 Net-_C8-Pad1_ Net-_C14-Pad2_ 1k
+R1 Net-_C4-Pad1_ Net-_C5-Pad2_ 330
+U1 Net-_C1-Pad2_ GND Net-_C4-Pad1_ LM7809ACT
+R2 Net-_C1-Pad2_ Net-_C5-Pad1_ 22k
+C5 Net-_C5-Pad1_ Net-_C5-Pad2_ 15pF
+R5 Net-_C5-Pad1_ Net-_C14-Pad2_ 10k
+C9 Net-_C8-Pad1_ Net-_C14-Pad2_ 22pF
+Q2 Net-_C1-Pad2_ Net-_C5-Pad1_ Net-_C7-Pad2_ BC547
+Q3 Net-_C13-Pad1_ Net-_C7-Pad1_ Net-_C14-Pad1_ BC547
+Q4 Net-_C16-Pad1_ Net-_C18-Pad1_ Net-_C14-Pad2_ 2n4427, BLX65, 2n3866, 2n3553
+R9 Net-_C14-Pad1_ Net-_C14-Pad2_ 100
+R8 Net-_C7-Pad1_ Net-_C14-Pad2_ 10k
+R7 Net-_C7-Pad2_ Net-_C14-Pad2_ 560
+R4 Net-_C1-Pad2_ Net-_C7-Pad1_ 22k
+C1 GND Net-_C1-Pad2_ 1nF
+C2 GND Net-_C1-Pad2_ 10nF
+C3 GND Net-_C1-Pad2_ 100nF
+C7 Net-_C7-Pad1_ Net-_C7-Pad2_ 47pF
+C13 Net-_C13-Pad1_ GND 6-40pF
+L3 Net-_C1-Pad2_ Net-_C13-Pad1_ L
+C16 Net-_C16-Pad1_ Net-_C16-Pad2_ 47pF
+D3 GND Net-_C15-Pad1_ 1n4148
+C15 Net-_C15-Pad1_ GND 1nF
+R13 Net-_C1-Pad2_ Net-_C15-Pad1_ 2k2
+L4 Net-_C15-Pad1_ Net-_C16-Pad1_ L_Core_Ferrite
+L5 Net-_C17-Pad2_ Net-_C18-Pad1_ L
+R14 Net-_C1-Pad2_ Net-_C17-Pad2_ 22R
+C17 GND Net-_C17-Pad2_ 1nF
+C18 Net-_C18-Pad1_ Net-_C18-Pad2_ 6-40pF
+L6 /RF_OUT Net-_C18-Pad2_ L
+C19 /RF_OUT Net-_C14-Pad2_ 6-40pF
+C14 Net-_C14-Pad1_ Net-_C14-Pad2_ 1nF
+J3 Net-_C1-Pad2_ GND Screw_Terminal_1x02
+J2 Net-_C16-Pad2_ asd
+.end

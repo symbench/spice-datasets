@@ -1,0 +1,39 @@
+.title KiCad schematic
+U1 Net-_R6-Pad2_ Net-_R7-Pad2_ Net-_R8-Pad2_ Net-_R9-Pad2_ Net-_R10-Pad2_ Net-_R11-Pad2_ Net-_R13-Pad1_ Net-_R15-Pad1_ Net-_R17-Pad1_ Net-_R19-Pad1_ Net-_R21-Pad1_ Net-_R23-Pad1_ Net-_R25-Pad1_ Net-_R27-Pad1_ Net-_R29-Pad1_ Net-_R31-Pad1_ Net-_R32-Pad1_ Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ Net-_J4-Pad9_ Net-_J4-Pad10_ Net-_J4-Pad11_ Net-_J2-Pad1_ Net-_R30-Pad2_ Net-_R28-Pad2_ Net-_R26-Pad2_ Net-_R24-Pad2_ Net-_R22-Pad2_ Net-_R20-Pad2_ Net-_R18-Pad2_ Net-_R16-Pad2_ Net-_R14-Pad2_ Net-_R12-Pad2_ Net-_R1-Pad2_ Net-_R2-Pad2_ Net-_R3-Pad2_ Net-_R4-Pad2_ Net-_R5-Pad2_ 32bitShifter
+R16 Net-_J2-Pad9_ Net-_R16-Pad2_ R_Small
+R18 Net-_J2-Pad8_ Net-_R18-Pad2_ R_Small
+R14 Net-_J2-Pad10_ Net-_R14-Pad2_ R_Small
+R12 Net-_J2-Pad11_ Net-_R12-Pad2_ R_Small
+R30 Net-_J2-Pad2_ Net-_R30-Pad2_ R_Small
+R28 Net-_J2-Pad3_ Net-_R28-Pad2_ R_Small
+R26 Net-_J2-Pad4_ Net-_R26-Pad2_ R_Small
+R24 Net-_J2-Pad5_ Net-_R24-Pad2_ R_Small
+R22 Net-_J2-Pad6_ Net-_R22-Pad2_ R_Small
+R20 Net-_J2-Pad7_ Net-_R20-Pad2_ R_Small
+R8 Net-_J1-Pad8_ Net-_R8-Pad2_ R_Small
+R7 Net-_J1-Pad7_ Net-_R7-Pad2_ R_Small
+R9 Net-_J1-Pad9_ Net-_R9-Pad2_ R_Small
+R10 Net-_J1-Pad10_ Net-_R10-Pad2_ R_Small
+R1 Net-_J1-Pad1_ Net-_R1-Pad2_ R_Small
+R2 Net-_J1-Pad2_ Net-_R2-Pad2_ R_Small
+R3 Net-_J1-Pad3_ Net-_R3-Pad2_ R_Small
+R4 Net-_J1-Pad4_ Net-_R4-Pad2_ R_Small
+R5 Net-_J1-Pad5_ Net-_R5-Pad2_ R_Small
+R6 Net-_J1-Pad6_ Net-_R6-Pad2_ R_Small
+R11 Net-_J1-Pad11_ Net-_R11-Pad2_ R_Small
+R19 Net-_R19-Pad1_ Net-_J3-Pad4_ R_Small
+R21 Net-_R21-Pad1_ Net-_J3-Pad5_ R_Small
+R17 Net-_R17-Pad1_ Net-_J3-Pad3_ R_Small
+R15 Net-_R15-Pad1_ Net-_J3-Pad2_ R_Small
+R32 Net-_R32-Pad1_ Net-_J3-Pad11_ R_Small
+R31 Net-_R31-Pad1_ Net-_J3-Pad10_ R_Small
+R29 Net-_R29-Pad1_ Net-_J3-Pad9_ R_Small
+R27 Net-_R27-Pad1_ Net-_J3-Pad8_ R_Small
+R25 Net-_R25-Pad1_ Net-_J3-Pad7_ R_Small
+R23 Net-_R23-Pad1_ Net-_J3-Pad6_ R_Small
+R13 Net-_R13-Pad1_ Net-_J3-Pad1_ R_Small
+J1 Net-_J1-Pad1_ Net-_J1-Pad2_ Net-_J1-Pad3_ Net-_J1-Pad4_ Net-_J1-Pad5_ Net-_J1-Pad6_ Net-_J1-Pad7_ Net-_J1-Pad8_ Net-_J1-Pad9_ Net-_J1-Pad10_ Net-_J1-Pad11_ Conn_01x11_Male
+J2 Net-_J2-Pad1_ Net-_J2-Pad2_ Net-_J2-Pad3_ Net-_J2-Pad4_ Net-_J2-Pad5_ Net-_J2-Pad6_ Net-_J2-Pad7_ Net-_J2-Pad8_ Net-_J2-Pad9_ Net-_J2-Pad10_ Net-_J2-Pad11_ Conn_01x11_Male
+J3 Net-_J3-Pad1_ Net-_J3-Pad2_ Net-_J3-Pad3_ Net-_J3-Pad4_ Net-_J3-Pad5_ Net-_J3-Pad6_ Net-_J3-Pad7_ Net-_J3-Pad8_ Net-_J3-Pad9_ Net-_J3-Pad10_ Net-_J3-Pad11_ Conn_01x11_Male
+J4 Net-_J4-Pad1_ Net-_J4-Pad2_ Net-_J4-Pad3_ Net-_J4-Pad4_ Net-_J4-Pad5_ Net-_J4-Pad6_ Net-_J4-Pad7_ Net-_J4-Pad8_ Net-_J4-Pad9_ Net-_J4-Pad10_ Net-_J4-Pad11_ Conn_01x11_Male
+.end

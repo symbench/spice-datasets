@@ -1,0 +1,23 @@
+.title KiCad schematic
+R2 Net-_C1-Pad1_ ITF_Pulse_ON 22
+C1 Net-_C1-Pad1_ ITF_Pulse_ON 100p
+C5 ITF_Pulse_ON Net-_C5-Pad2_ 220p
+D1 Net-_D1-Pad1_ Net-_C1-Pad1_ BAT48 0.6V
+D3 Net-_D3-Pad1_ Net-_C5-Pad2_ D1N4148
+R6 Net-_C5-Pad2_ Net-_D3-Pad1_ 100k
+R1 Net-_D3-Pad1_ Net-_D1-Pad1_ 1k
+Q1 GND Net-_C1-Pad1_ Net-_D1-Pad1_ Q2N2222
+Q2 Net-_D3-Pad1_ Net-_C5-Pad2_ Net-_D1-Pad1_ Q2N2907
+Q4 Net-_Q3-Pad1_ Net-_D1-Pad1_ GND Q2N2907
+Q6 Net-_C2-Pad2_ Net-_Q3-Pad1_ GND Q2N2907
+Q3 Net-_Q3-Pad1_ Net-_D1-Pad1_ Net-_D3-Pad1_ Q2N2222
+Q5 Net-_C2-Pad2_ Net-_Q3-Pad1_ Net-_D3-Pad1_ Q2N2222
+C2 Net-_C2-Pad1_ Net-_C2-Pad2_ 100n
+C4 Net-_C4-Pad1_ Net-_C2-Pad2_ 100n
+D5 GND Net-_C4-Pad1_ BZD23-18
+D2 Net-_C2-Pad1_ OUTPUT BZD23-18
+R5 GND Net-_C4-Pad1_ 1M
+R3 Net-_C2-Pad1_ OUTPUT 1M
+Q7 Net-_C4-Pad1_ Net-_Q7-Pad2_ GND IRF9610
+Q8 Net-_C2-Pad1_ Net-_Q7-Pad2_ OUTPUT IRF610
+.end

@@ -1,0 +1,22 @@
+.title KiCad schematic
+U2 Net-_R4-Pad2_ Net-_R5-Pad1_ /Y /VCC- /Y Net-_R7-Pad1_ Net-_R8-Pad1_ /VCC+ TL082
+U1 Net-_C1-Pad1_ Net-_R2-Pad2_ /X /VCC- Net-_C1-Pad2_ Net-_R2-Pad2_ /P /VCC+ TL082
+R4 /Y Net-_R4-Pad2_ 220
+R8 Net-_R8-Pad1_ /Y 22K
+R5 Net-_R5-Pad1_ Net-_R4-Pad2_ 220
+R9 Net-_R8-Pad1_ Net-_R7-Pad1_ 22K
+R6 Net-_R5-Pad1_ GND 2.2K
+R7 Net-_R7-Pad1_ GND 3.3K
+R2 /P Net-_R2-Pad2_ 1K
+R1 /X /P 100
+R3 Net-_R2-Pad2_ Net-_C1-Pad1_ 1K
+RV1 NC_01 Net-_C1-Pad2_ GND POT
+RV2 /X /Y NC_02 POT
+C3 /Y GND 10n
+C2 /X GND 100n
+C1 Net-_C1-Pad1_ Net-_C1-Pad2_ 100n
+P1 /VCC- GND /VCC+ CONN_01X03
+BT1 /VCC+ GND Battery_Cell
+BT2 GND /VCC- Battery_Cell
+P2 /X /Y /P GND CONN_01X04
+.end
