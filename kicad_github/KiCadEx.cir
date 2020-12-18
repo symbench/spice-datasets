@@ -1,0 +1,7 @@
+.title KiCad schematic
+P3 NC_01 NC_02 ADC
+P5 NC_03 NC_04 ADC
+P2 NC_05 /1_Tx_ /0_Rx_ VCC GND GND COM
+P1 /1_Tx_ /0_Rx_ /Reset GND NC_06 NC_07 NC_08 NC_09 NC_10 NC_11 NC_12 NC_13 Digital
+P4 NC_14 GND /Reset VCC NC_15 NC_16 NC_17 NC_18 NC_19 NC_20 NC_21 NC_22 Analog
+.end

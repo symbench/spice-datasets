@@ -1,0 +1,9 @@
+.title KiCad schematic
+U1 GND Net-_C1-Pad1_ Net-_R3-Pad1_ /VDD NC_01 Net-_C1-Pad1_ Net-_R1-Pad2_ /VDD 7555
+R1 /VDD Net-_R1-Pad2_ 1K
+R2 Net-_R1-Pad2_ Net-_C1-Pad1_ 470K
+C1 Net-_C1-Pad1_ GND 1u
+R3 Net-_R3-Pad1_ Net-_D1-Pad2_ 1K
+D1 GND Net-_D1-Pad2_ LED
+BT1 /VDD GND Battery
+.end
