@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>Dataset Metrics: Demo Circuits from LTspice</title>
+        <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+    </head>
+    <body>
+        <h1 style="text-align:center">Dataset Metrics: Demo Circuits from LTspice</h1>
+    </body>
+    <script type="text/javascript">
+        function createBarChart(data, labels) {
+            const layout = {
+                title: labels.title,
+                xaxis: {title: labels.x},
+                yaxis: {title: labels.y},
+            };
+            const div = document.createElement('div');
+            const id = labels.title + Date.now();
+            div.setAttribute('id', id);
+            document.body.appendChild(div);
+            Plotly.newPlot(id, data, layout);
+        }
+
+        function createDatasetVisualizations(dataset) {
+            delete dataset.componentCounts['0'];  // remove empty files
+            createBarChart([{
+                x: Object.keys(dataset.componentCounts),
+                y: Object.values(dataset.componentCounts),
+                type: 'bar',
+            }], {
+                title: 'Component Count Distribution',
+                x: '# of Components',
+                y: 'Count',
+            });
+
+            createBarChart([
+                {
+                    x: Object.keys(dataset.componentTypeCounts),
+                    y: Object.values(dataset.componentTypeCounts),
+                    type: 'bar'
+                }
+            ], {
+                title: 'Dataset Component Counts',
+                x: 'Component Type',
+                y: 'Frequency',
+            });
+
+
+            // TODO: maybe add a switcher?
+            Object.keys(dataset.componentTypesByNetlist).sort().forEach(componentType => {
+                const counts = dataset.componentTypesByNetlist[componentType];
+                createBarChart([
+                    {
+                        x: Object.keys(counts),
+                        y: Object.values(counts),
+                        type: 'bar'
+                    }
+                ], {
+                    title: `Usage of ${componentType} per Netlist`,
+                    x: `# of ${componentType} Components in Netlist`,
+                    y: '# of Netlists',
+                });
+            });
+        }
+
+        createDatasetVisualizations({"componentCounts": {"20": 26, "15": 79, "14": 59, "7": 47, "9": 49, "10": 62, "11": 64, "16": 51, "8": 49, "35": 8, "12": 58, "47": 12, "6": 23, "82": 1, "21": 24, "30": 10, "17": 28, "26": 16, "13": 60, "38": 9, "19": 41, "28": 14, "22": 29, "27": 17, "52": 7, "25": 15, "4": 3, "39": 14, "23": 24, "32": 4, "5": 18, "24": 23, "41": 6, "42": 6, "18": 25, "43": 8, "36": 7, "37": 10, "29": 11, "50": 2, "71": 2, "45": 7, "84": 2, "64": 2, "46": 3, "57": 2, "34": 4, "40": 9, "44": 2, "49": 1, "61": 5, "31": 4, "33": 8, "63": 2, "48": 4, "51": 3, "62": 1, "70": 2, "69": 2, "55": 1}, "componentTypeCounts": {"V": 1548, "R": 7608, "M": 852, "C": 6603, "D": 1162, "X": 1467, "L": 1124, "I": 170, "Q": 89, "K": 137, "E": 6, "S": 40, "A": 7, "J": 6, "B": 7, "G": 2}, "componentTypesByNetlist": {"V": {"1": 791, "2": 176, "3": 81, "4": 25, "5": 10, "6": 2}, "R": {"11": 44, "6": 88, "7": 84, "3": 132, "2": 88, "5": 113, "9": 45, "13": 26, "8": 75, "32": 3, "1": 61, "10": 59, "4": 138, "12": 10, "27": 4, "14": 17, "15": 18, "17": 15, "20": 8, "16": 19, "19": 5, "18": 8, "22": 2, "37": 2, "21": 4, "24": 4, "26": 4, "23": 1, "31": 1, "25": 2, "29": 1}, "M": {"2": 87, "1": 125, "4": 65, "6": 15, "12": 1, "3": 21, "5": 15, "9": 2, "11": 1, "8": 3}, "C": {"4": 133, "5": 98, "2": 149, "1": 45, "6": 97, "16": 10, "8": 60, "22": 2, "3": 142, "7": 92, "11": 23, "12": 14, "13": 33, "10": 40, "9": 43, "15": 18, "17": 17, "19": 8, "14": 7, "20": 3, "24": 4, "23": 3, "18": 6, "21": 2, "29": 1, "25": 1, "27": 1}, "D": {"1": 249, "8": 7, "2": 160, "6": 15, "3": 44, "4": 43, "7": 5, "5": 12, "9": 4, "12": 1}, "X": {"1": 854, "2": 125, "3": 79, "5": 4, "4": 16, "6": 7}, "L": {"1": 424, "2": 173, "4": 29, "6": 3, "3": 30, "5": 10, "8": 4, "10": 2, "7": 4}, "I": {"1": 128, "2": 21}, "Q": {"8": 4, "3": 5, "2": 6, "1": 24, "6": 1}, "K": {"1": 93, "2": 12, "3": 4, "4": 2}, "E": {"1": 4, "2": 1}, "S": {"1": 35, "3": 1, "2": 1}, "A": {"1": 1, "6": 1}, "J": {"1": 6}, "B": {"2": 2, "1": 3}, "G": {"1": 2}}});
+    </script>
+</html>
+
